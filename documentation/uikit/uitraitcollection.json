@@ -40,25 +40,30 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UITraitCollection",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -297,7 +302,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The interface type for the device or an object that has a trait environment, such as a view and view controller."
+          "text": "Constants that indicate the interface type for the device or an object that has a trait environment, such as a view and view controller."
         }
       ]
     },
@@ -311,7 +316,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Defines the size class of a view."
+          "text": "Constants that indicate the size class of a view."
         }
       ]
     },
@@ -362,8 +367,8 @@
             "2x"
           ],
           "size": {
-            "width": 606,
-            "height": 644
+            "width": 465,
+            "height": 493
           },
           "url": "https://docs-assets.developer.apple.com/published/f85dff2bbd/110734d0-900d-43e9-ac0f-d32bfa4fc30c.png"
         },
@@ -372,8 +377,8 @@
             "1x"
           ],
           "size": {
-            "width": 606,
-            "height": 644
+            "width": 465,
+            "height": 493
           },
           "url": "https://docs-assets.developer.apple.com/published/ec54d1af61/5a654d46-f860-41c4-853f-2307581a3c33.png"
         }
@@ -409,7 +414,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new trait collection consisting of traits merged from a specified array of trait collections."
+          "text": "Creates a trait collection that consists of traits merged from a specified array of trait collections."
         }
       ],
       "fragments": [
@@ -517,7 +522,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new trait collection whose traits are set to their default (unspecified) values. "
+          "text": "Creates a trait collection whose traits are set to their default (unspecified) values. "
         }
       ],
       "fragments": [
@@ -541,7 +546,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new trait collection containing only a specified interface idiom."
+          "text": "Creates a trait collection that contains only a specified interface idiom."
         }
       ],
       "fragments": [
@@ -565,7 +570,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new trait collection containing only a specified horizontal size class."
+          "text": "Creates a trait collection that contains only a specified horizontal size class."
         }
       ],
       "fragments": [
@@ -589,7 +594,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new trait collection containing only a specified vertical size class."
+          "text": "Creates a trait collection that contains only a specified vertical size class."
         }
       ],
       "fragments": [
@@ -613,7 +618,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new trait collection containing only the specified user interface style trait."
+          "text": "Creates a trait collection that contains only the specified user interface style trait."
         }
       ],
       "fragments": [
@@ -637,7 +642,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new trait collection containing only the specified accessibility contrast trait."
+          "text": "Creates a trait collection that contains only the specified accessibility contrast trait."
         }
       ],
       "fragments": [
@@ -661,7 +666,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new trait collection containing only the specified user interface level trait."
+          "text": "Creates a trait collection that contains only the specified user interface level trait."
         }
       ],
       "fragments": [
@@ -685,7 +690,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new trait collection containing only the specified legibility weight trait."
+          "text": "Creates a trait collection that contains only the specified legibility weight trait."
         }
       ],
       "fragments": [
@@ -709,7 +714,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a trait collection containing only a specified force touch capability trait."
+          "text": "Creates a trait collection that contains only a specified force touch capability trait."
         }
       ],
       "fragments": [
@@ -733,7 +738,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new trait collection containing only a specified display scale."
+          "text": "Creates a trait collection that contains only a specified display scale."
         }
       ],
       "fragments": [
@@ -757,7 +762,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new trait collection containing only the specified display gamut trait."
+          "text": "Creates a trait collection that contains only the specified display gamut trait."
         }
       ],
       "fragments": [
@@ -781,7 +786,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new trait collection containing only the specified layout direction trait."
+          "text": "Creates a trait collection that contains only the specified layout direction trait."
         }
       ],
       "fragments": [
@@ -805,7 +810,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new trait collection containing only the specified content size category trait."
+          "text": "Creates a trait collection that contains only the specified content size category trait."
         }
       ],
       "fragments": [
@@ -826,6 +831,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uitraitcollection/3618953-traitcollectionwithactiveappeara",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a trait collection that contains only the specified active appearance trait."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -844,6 +855,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uitraitcollection/1623504-initwithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a trait collection from data in an unarchiver."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -893,7 +910,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants indicating the gamut of the current display."
+          "text": "Constants that indicate the gamut of the current display."
         }
       ]
     },
@@ -921,7 +938,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants indicating the interface style for the app."
+          "text": "Constants that indicate the interface style for the app."
         }
       ]
     },
@@ -949,7 +966,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants indicating the visual level for content in the window."
+          "text": "Constants that indicate the visual level for content in the window."
         }
       ]
     },
@@ -977,7 +994,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants indicating the layout direction associated with the current environment."
+          "text": "Constants that indicate the layout direction associated with the current environment."
         }
       ]
     },
@@ -1005,7 +1022,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants indicating the accessibility contrast setting. "
+          "text": "Constants that indicate the accessibility contrast setting. "
         }
       ]
     },
@@ -1033,7 +1050,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants indicating the weight to apply to text in your interface."
+          "text": "Constants that indicate the weight to apply to text in your interface."
         }
       ]
     },
@@ -1043,7 +1060,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uitraitcollection/3618952-activeappearance",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uitraitcollection/3618952-activeappearance"
+      "url": "/documentation/uikit/uitraitcollection/3618952-activeappearance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A property that indicates whether the user interface has an active appearance."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiuserinterfaceactiveappearance": {
       "title": "UIUserInterfaceActiveAppearance",
@@ -1051,7 +1074,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiuserinterfaceactiveappearance",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiuserinterfaceactiveappearance"
+      "url": "/documentation/uikit/uiuserinterfaceactiveappearance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that indicate whether the user interface has an active appearance."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uitraitcollection/1771746-preferredcontentsizecategory": {
       "title": "preferredContentSizeCategory",
@@ -1077,7 +1106,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants indicating the preferred size of your content."
+          "text": "Constants that indicate the preferred size of your content."
         }
       ]
     },
@@ -1105,7 +1134,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the content size category belongs to the group of accessibility-related sizes. "
+          "text": "Returns a Boolean value that indicates whether the content size category belongs to the group of accessibility-related sizes. "
         }
       ]
     },
@@ -1119,7 +1148,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value that indicates whether a trait collection contains all of another trait collection’s values."
+          "text": "Queries whether a trait collection contains all of another trait collection’s values."
         }
       ],
       "fragments": [
@@ -1143,7 +1172,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether changing between the specified and current trait collections would affect color values. "
+          "text": "Queries whether changing between the specified and current trait collections would affect color values. "
         }
       ],
       "fragments": [
@@ -1271,14 +1300,16 @@
         "doc://com.apple.documentation/documentation/uikit/uitraitcollection/1771748-traitcollectionwithpreferredcont",
         "doc://com.apple.documentation/documentation/uikit/uitraitcollection/3618953-traitcollectionwithactiveappeara",
         "doc://com.apple.documentation/documentation/uikit/uitraitcollection/1623504-initwithcoder"
-      ]
+      ],
+      "anchor": "1652808"
     },
     {
       "kind": "taskGroup",
       "title": "Getting the Current Traits",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uitraitcollection/3238080-currenttraitcollection"
-      ]
+      ],
+      "anchor": "3240277"
     },
     {
       "kind": "taskGroup",
@@ -1287,7 +1318,8 @@
         "doc://com.apple.documentation/documentation/uikit/uitraitcollection/1623508-horizontalsizeclass",
         "doc://com.apple.documentation/documentation/uikit/uitraitcollection/1623513-verticalsizeclass",
         "doc://com.apple.documentation/documentation/uikit/uiuserinterfacesizeclass"
-      ]
+      ],
+      "anchor": "1652882"
     },
     {
       "kind": "taskGroup",
@@ -1296,7 +1328,8 @@
         "doc://com.apple.documentation/documentation/uikit/uitraitcollection/1623519-displayscale",
         "doc://com.apple.documentation/documentation/uikit/uitraitcollection/1771749-displaygamut",
         "doc://com.apple.documentation/documentation/uikit/uidisplaygamut"
-      ]
+      ],
+      "anchor": "2888130"
     },
     {
       "kind": "taskGroup",
@@ -1316,7 +1349,8 @@
         "doc://com.apple.documentation/documentation/uikit/uilegibilityweight",
         "doc://com.apple.documentation/documentation/uikit/uitraitcollection/3618952-activeappearance",
         "doc://com.apple.documentation/documentation/uikit/uiuserinterfaceactiveappearance"
-      ]
+      ],
+      "anchor": "2859061"
     },
     {
       "kind": "taskGroup",
@@ -1324,7 +1358,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uitraitcollection/1623515-forcetouchcapability",
         "doc://com.apple.documentation/documentation/uikit/uiforcetouchcapability"
-      ]
+      ],
+      "anchor": "3240278"
     },
     {
       "kind": "taskGroup",
@@ -1334,7 +1369,8 @@
         "doc://com.apple.documentation/documentation/uikit/uicontentsizecategory",
         "doc://com.apple.documentation/documentation/uikit/2877504-uicontentsizecategorycomparetoca",
         "doc://com.apple.documentation/documentation/uikit/2877505-uicontentsizecategoryisaccessibi"
-      ]
+      ],
+      "anchor": "2882267"
     },
     {
       "kind": "taskGroup",
@@ -1342,21 +1378,24 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uitraitcollection/1623506-containstraitsincollection",
         "doc://com.apple.documentation/documentation/uikit/uitraitcollection/3238081-hasdifferentcolorappearancecompa"
-      ]
+      ],
+      "anchor": "1652939"
     },
     {
       "kind": "taskGroup",
       "title": "Getting an Image Configuration Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uitraitcollection/3295976-imageconfiguration"
-      ]
+      ],
+      "anchor": "3309775"
     },
     {
       "kind": "taskGroup",
       "title": "Performing Actions with the Current Traits",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uitraitcollection/3238082-performascurrenttraitcollection"
-      ]
+      ],
+      "anchor": "3240276"
     }
   ],
   "seeAlsoSections": [
@@ -1405,6 +1444,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -1845,7 +1885,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

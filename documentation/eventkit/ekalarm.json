@@ -33,30 +33,35 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.8",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)EKAlarm",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -90,20 +95,6 @@
       "type": "topic",
       "kind": "symbol",
       "role": "collection"
-    },
-    "doc://com.apple.documentation/documentation/eventkit/ekalarm/1507242-type": {
-      "title": "type",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekalarm/1507242-type",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/eventkit/ekalarm/1507242-type",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The type of action to trigger when the alarm fires."
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/eventkit/ekalarm": {
       "title": "EKAlarm",
@@ -263,16 +254,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Possible values that can be read from the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/eventkit/ekalarm/1507242-type"
-        },
+          "text": "A value that specifies what type of action occurs when the alarm triggers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekalarm/1507242-type": {
+      "title": "type",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekalarm/1507242-type",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekalarm/1507242-type",
+      "abstract": [
         {
           "type": "text",
-          "text": " property."
+          "text": "The type of action to trigger when the alarm fires."
         }
       ]
     },
@@ -347,7 +343,7 @@
         },
         {
           "type": "text",
-          "text": " class that specifies a geofence used to trigger the alarm of a calendar item. "
+          "text": " class that specifies a geofence to trigger the alarm of a calendar item."
         }
       ]
     },
@@ -357,16 +353,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0 beta 5",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -394,7 +380,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/eventkit/ekalarm/1507130-alarmwithabsolutedate",
         "doc://com.apple.documentation/documentation/eventkit/ekalarm/1507338-alarmwithrelativeoffset"
-      ]
+      ],
+      "anchor": "1664789"
     },
     {
       "kind": "taskGroup",
@@ -402,7 +389,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/eventkit/ekalarm/1507486-absolutedate",
         "doc://com.apple.documentation/documentation/eventkit/ekalarm/1507491-relativeoffset"
-      ]
+      ],
+      "anchor": "1664838"
     },
     {
       "kind": "taskGroup",
@@ -411,7 +399,8 @@
         "doc://com.apple.documentation/documentation/eventkit/ekalarmproximity",
         "doc://com.apple.documentation/documentation/eventkit/ekalarm/1507123-proximity",
         "doc://com.apple.documentation/documentation/eventkit/ekalarm/1507331-structuredlocation"
-      ]
+      ],
+      "anchor": "1664888"
     },
     {
       "kind": "taskGroup",
@@ -423,6 +412,7 @@
         "doc://com.apple.documentation/documentation/eventkit/ekalarm/1507227-soundname",
         "doc://com.apple.documentation/documentation/eventkit/ekalarm/1589757-url"
       ],
+      "anchor": "1664936",
       "abstract": [
         {
           "type": "text",
@@ -475,6 +465,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "watchOS"
@@ -555,7 +546,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

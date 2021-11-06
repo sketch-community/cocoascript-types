@@ -39,25 +39,30 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UINavigationBar",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -141,7 +146,7 @@
       "url": "/documentation/uikit/uinavigationcontroller"
     },
     "doc://com.apple.documentation/documentation/uikit/uinavigationbar#1654191": {
-      "title": "Customizing the Appearance of a Navigation Bar",
+      "title": "Customize the Appearance of a Navigation Bar",
       "type": "section",
       "identifier": "doc://com.apple.documentation/documentation/uikit/uinavigationbar#1654191",
       "kind": "article",
@@ -155,36 +160,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uinavigationitem"
-    },
-    "link-media-2759891": {
-      "identifier": "link-media-2759891",
-      "type": "link",
-      "title": "Figure 1",
-      "url": "/documentation/uikit/uinavigationbar#2759891"
-    },
-    "media-2759891": {
-      "identifier": "media-2759891",
-      "type": "image",
-      "variants": [
-        {
-          "traits": [
-            "2x"
-          ],
-          "size": {
-            "width": 387,
-            "height": 175
-          },
-          "url": "https://docs-assets.developer.apple.com/published/dde7452123/3abba22e-4aef-47dd-b4e2-a9965c424338.png"
-        }
-      ],
-      "alt": "Navigation bar",
-      "title": "Figure 1",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Navigation bar"
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uinavigationbar/1624952-pushnavigationitem": {
       "title": "pushNavigationItem:animated:",
@@ -307,14 +282,8 @@
           "url": "https://docs-assets.developer.apple.com/published/dde7452123/536711f8-0b4b-4ecd-a086-3b8c6feb1a6c.png"
         }
       ],
-      "alt": "Navigation bar stack management",
-      "title": "Figure 2",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Navigation bar stack management"
-        }
-      ]
+      "alt": "A flowchart diagram of the navigation bar and a stack of navigation items. A new navigation item enters the navigation bar from the left side of the diagram. In the center, the UINavigationBar contains properties that provide access to items in the stack, and methods that allow mutation by pushing on and popping off the stack, depicted on the right of the diagram.",
+      "title": "Figure 2"
     },
     "doc://com.apple.documentation/documentation/uikit/uinavigationbar/1624951-delegate": {
       "title": "delegate",
@@ -340,24 +309,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The "
-        },
-        {
-          "type": "codeVoice",
-          "code": "UINavigationBarDelegate"
-        },
-        {
-          "type": "text",
-          "text": " protocol defines optional methods that a "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/uikit/uinavigationbar"
-        },
-        {
-          "type": "text",
-          "text": " delegate should implement to update its views when items are pushed and popped from the stack. The navigation bar represents only the bar at the top of the screen, not the view below. It’s the application’s responsibility to implement the behavior when the top item changes."
+          "text": "Methods that a navigation bar calls before and after it modifies its stack of navigation items."
         }
       ]
     },
@@ -379,25 +331,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value indicating whether the navigation bar is translucent ("
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-        },
-        {
-          "type": "text",
-          "text": ") or not ("
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
-        },
-        {
-          "type": "text",
-          "text": ")."
+          "text": "A Boolean value that indicates whether the navigation bar is translucent."
         }
       ]
     },
@@ -512,14 +446,8 @@
           "url": "https://docs-assets.developer.apple.com/published/dde7452123/e8608c12-1a29-47c9-95c5-984a0ca17bce.png"
         }
       ],
-      "alt": "Navigation bar fonts and colors",
-      "title": "Figure 3",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Navigation bar fonts and colors"
-        }
-      ]
+      "alt": "A navigation bar diagram that depicts the fonts, color, and layout of a navigation bar, including the tint color, title text atributes, bar tint color, and the title vertical position.",
+      "title": "Figure 3"
     },
     "doc://com.apple.documentation/documentation/uikit/uinavigationbar/1624968-setbackgroundimage": {
       "title": "setBackgroundImage:forBarPosition:barMetrics:",
@@ -600,14 +528,8 @@
           "url": "https://docs-assets.developer.apple.com/published/dde7452123/01969d1a-db6b-4ef5-b86b-45ffa1730b85.png"
         }
       ],
-      "alt": "Navigation bar with custom background and shadow images",
-      "title": "Figure 4",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Navigation bar with custom background and shadow images"
-        }
-      ]
+      "alt": "A screenshot of a navigation bar with the location of a background image and a shadow image labeled.",
+      "title": "Figure 4"
     },
     "doc://com.apple.documentation/documentation/uikit/uinavigationcontroller/customizing_your_app_s_navigation_bar": {
       "title": "Customizing Your App’s Navigation Bar",
@@ -623,13 +545,7 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uinavigationbar#2793387",
       "kind": "article",
       "role": "table",
-      "url": "/documentation/uikit/uinavigationbar#2793387",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Core Attributes"
-        }
-      ]
+      "url": "/documentation/uikit/uinavigationbar#2793387"
     },
     "doc://com.apple.documentation/documentation/uikit/uinavigationbar#2793388": {
       "title": "Table 2",
@@ -637,13 +553,7 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uinavigationbar#2793388",
       "kind": "article",
       "role": "table",
-      "url": "/documentation/uikit/uinavigationbar#2793388",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Title attributes"
-        }
-      ]
+      "url": "/documentation/uikit/uinavigationbar#2793388"
     },
     "doc://com.apple.documentation/documentation/uikit/uinavigationbar/1624942-backindicatorimage": {
       "title": "backIndicatorImage",
@@ -673,6 +583,30 @@
       "title": "Accessibility Programming Guide for iOS",
       "url": "https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/iPhoneAccessibility/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008785"
     },
+    "link-media-2759891": {
+      "identifier": "link-media-2759891",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/uinavigationbar#2759891"
+    },
+    "media-2759891": {
+      "identifier": "media-2759891",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 387,
+            "height": 175
+          },
+          "url": "https://docs-assets.developer.apple.com/published/dde7452123/3abba22e-4aef-47dd-b4e2-a9965c424338.png"
+        }
+      ],
+      "alt": "A diagram that identifies the primary components of a navigation bar, including the back item title that connects to the previous view controller, shown on the left side of the diagram, the top item title of the navigation bar and the navigation bar prompt in the middle, and the right bar button item, with the text Done.",
+      "title": "Figure 1"
+    },
     "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621364-title": {
       "title": "title",
       "type": "topic",
@@ -680,14 +614,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiviewcontroller/1621364-title"
-    },
-    "doc://com.apple.documentation/documentation/objectivec/yes": {
-      "title": "YES",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/yes"
     },
     "doc://com.apple.documentation/documentation/uikit/uibarpositioning": {
       "title": "UIBarPositioning",
@@ -749,7 +675,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value indicating whether the title should be displayed in a large format."
+          "text": "A Boolean value that indicates whether the title displays in a large format."
         }
       ]
     },
@@ -791,7 +717,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The appearance settings to use when the edge of any scrollable content reaches the matching edge of the navigation bar."
+          "text": "The appearance settings for the navigation bar when the edge of scrollable content aligns with the edge of the navigation bar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uinavigationbar/3750865-compactscrolledgeappearance": {
+      "title": "compactScrollEdgeAppearance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uinavigationbar/3750865-compactscrolledgeappearance",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uinavigationbar/3750865-compactscrolledgeappearance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The appearance settings for a compact-height navigation bar when the edge of scrollable content aligns with the edge of the navigation bar."
         }
       ]
     },
@@ -903,7 +843,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An item in a tab bar."
+          "text": "An object that describes an item in a tab bar."
         }
       ]
     },
@@ -938,16 +878,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -974,7 +904,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uinavigationbar/1624951-delegate",
         "doc://com.apple.documentation/documentation/uikit/uinavigationbardelegate"
-      ]
+      ],
+      "anchor": "1654215"
     },
     {
       "kind": "taskGroup",
@@ -986,7 +917,8 @@
         "doc://com.apple.documentation/documentation/uikit/uinavigationbar/1624961-items",
         "doc://com.apple.documentation/documentation/uikit/uinavigationbar/1624967-topitem",
         "doc://com.apple.documentation/documentation/uikit/uinavigationbar/1624925-backitem"
-      ]
+      ],
+      "anchor": "1654249"
     },
     {
       "kind": "taskGroup",
@@ -996,9 +928,11 @@
         "doc://com.apple.documentation/documentation/uikit/uinavigationbar/3198028-standardappearance",
         "doc://com.apple.documentation/documentation/uikit/uinavigationbar/3198026-compactappearance",
         "doc://com.apple.documentation/documentation/uikit/uinavigationbar/3198027-scrolledgeappearance",
+        "doc://com.apple.documentation/documentation/uikit/uinavigationbar/3750865-compactscrolledgeappearance",
         "doc://com.apple.documentation/documentation/uikit/uinavigationbar/1624928-translucent",
         "doc://com.apple.documentation/documentation/uikit/uinavigationbar/legacy_customizations"
-      ]
+      ],
+      "anchor": "1654334"
     }
   ],
   "seeAlsoSections": [
@@ -1052,6 +986,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -1093,13 +1028,7 @@
               "identifier": "media-2759891",
               "metadata": {
                 "anchor": "2759891",
-                "title": "Figure 1",
-                "abstract": [
-                  {
-                    "type": "text",
-                    "text": "Navigation bar"
-                  }
-                ]
+                "title": "Figure 1"
               }
             }
           ]
@@ -1310,7 +1239,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Using a Navigation Bar with a Navigation Controller",
+          "text": "Use a Navigation Bar with a Navigation Controller",
           "anchor": "1654165"
         },
         {
@@ -1433,7 +1362,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Adding Content to a Standalone Navigation Bar",
+          "text": "Add Content to a Standalone Navigation Bar",
           "anchor": "2759889"
         },
         {
@@ -1459,16 +1388,7 @@
             },
             {
               "type": "text",
-              "text": " class) to specify what buttons or custom views you want displayed. A navigation item has properties for specifying views on the left, right, and center of the navigation bar and for specifying a custom prompt string. "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "link-media-2759891"
-            },
-            {
-              "type": "text",
-              "text": " shows how the navigation item properties manifest themselves in a navigation bar."
+              "text": " class) to specify what buttons or custom views you want displayed. A navigation item has properties for specifying views on the left, right, and center of the navigation bar and for specifying a custom prompt string."
             }
           ]
         },
@@ -1531,16 +1451,7 @@
             },
             {
               "type": "text",
-              "text": " method. You might use this method at launch time to restore your interface to its previous state or to push or pop more than one navigation item at a time."
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "link-media-2759892"
-            },
-            {
-              "type": "text",
-              "text": " shows the part of the "
+              "text": " method. You might use this method at launch time to restore your interface to its previous state or to push or pop more than one navigation item at a time. The following figure shows the part of the "
             },
             {
               "type": "reference",
@@ -1561,13 +1472,7 @@
               "identifier": "media-2759892",
               "metadata": {
                 "anchor": "2759892",
-                "title": "Figure 2",
-                "abstract": [
-                  {
-                    "type": "text",
-                    "text": "Navigation bar stack management"
-                  }
-                ]
+                "title": "Figure 2"
               }
             }
           ]
@@ -1629,7 +1534,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Customizing the Appearance of a Navigation Bar",
+          "text": "Customize the Appearance of a Navigation Bar",
           "anchor": "1654191"
         },
         {
@@ -1789,16 +1694,7 @@
             },
             {
               "type": "text",
-              "text": " enum."
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "link-media-2759893"
-            },
-            {
-              "type": "text",
-              "text": " shows a navigation bar with custom tint color, title text attributes and bar tint color."
+              "text": " enum. The following figure shows a navigation bar with custom tint color, title text attributes, and bar tint color."
             }
           ]
         },
@@ -1810,13 +1706,7 @@
               "identifier": "media-2759893",
               "metadata": {
                 "anchor": "2759893",
-                "title": "Figure 3",
-                "abstract": [
-                  {
-                    "type": "text",
-                    "text": "Navigation bar fonts and colors"
-                  }
-                ]
+                "title": "Figure 3"
               }
             }
           ]
@@ -1893,16 +1783,7 @@
             },
             {
               "type": "text",
-              "text": " property. To use the custom shadow image, you need to have specified a custom background image. "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "link-media-2759894"
-            },
-            {
-              "type": "text",
-              "text": " shows a navigation bar with a custom background image, supplied using "
+              "text": " property. To use the custom shadow image, you need to have specified a custom background image. The following figure shows a navigation bar with a custom background image, supplied using "
             },
             {
               "type": "reference",
@@ -1950,13 +1831,7 @@
               "identifier": "media-2759894",
               "metadata": {
                 "anchor": "2759894",
-                "title": "Figure 4",
-                "abstract": [
-                  {
-                    "type": "text",
-                    "text": "Navigation bar with custom background and shadow images"
-                  }
-                ]
+                "title": "Figure 4"
               }
             }
           ]
@@ -1982,20 +1857,15 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Interface Builder Attributes",
+          "text": "Customize a Navigation Bar with Interface Builder",
           "anchor": "2759887"
         },
         {
           "type": "paragraph",
           "inlineContent": [
             {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/uikit/uinavigationbar#2793387"
-            },
-            {
               "type": "text",
-              "text": " lists the core attributes that you configure for navigations bars in the Attributes Inspector within Interface Builder."
+              "text": "The following table lists the core attributes that you configure for navigations bars in the Attributes Inspector within Interface Builder."
             }
           ]
         },
@@ -2204,26 +2074,15 @@
           ],
           "metadata": {
             "anchor": "2793387",
-            "title": "Table 1",
-            "abstract": [
-              {
-                "type": "text",
-                "text": "Core Attributes"
-              }
-            ]
+            "title": "Table 1"
           }
         },
         {
           "type": "paragraph",
           "inlineContent": [
             {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/uikit/uinavigationbar#2793388"
-            },
-            {
               "type": "text",
-              "text": " lists the Interface Builder attributes that affect the appearance of the navigation bar’s title."
+              "text": "The following table lists the Interface Builder attributes that affect the appearance of the navigation bar’s title."
             }
           ]
         },
@@ -2384,13 +2243,7 @@
           ],
           "metadata": {
             "anchor": "2793388",
-            "title": "Table 2",
-            "abstract": [
-              {
-                "type": "text",
-                "text": "Title attributes"
-              }
-            ]
+            "title": "Table 2"
           }
         },
         {
@@ -2400,7 +2253,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Internationalization",
+          "text": "Internationalize a Navigation Bar",
           "anchor": "2759888"
         },
         {
@@ -2433,7 +2286,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Accessibility",
+          "text": "Make a Navation Bar Accessible",
           "anchor": "2759890"
         },
         {
@@ -2476,7 +2329,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

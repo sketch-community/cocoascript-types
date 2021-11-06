@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns an array of associated tracks with the specified association type."
+      "text": "Returns an array of associated tracks that have the specified association type."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVAssetTrack(im)associatedTracksOfType:",
+    "parent": {
+      "title": "AVAssetTrack"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,6 +122,24 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avassettrack"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avassettrack/3746538-loadassociatedtracksoftype": {
+      "title": "loadAssociatedTracksOfType:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack/3746538-loadassociatedtracksoftype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassettrack/3746538-loadassociatedtracksoftype",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadAssociatedTracksOfType:completionHandler:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1388065-availabletrackassociationtypes": {
       "title": "availableTrackAssociationTypes",
       "type": "topic",
@@ -124,7 +150,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An array of association types used to associate the track with other tracks."
+          "text": "An array of association types that the track uses to associate with other tracks."
         }
       ]
     },
@@ -146,7 +172,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants that define the possible track association types."
+          "text": "Constants that define track association types."
         }
       ]
     },
@@ -160,7 +186,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an array of associated tracks with the specified association type."
+          "text": "Returns an array of associated tracks that have the specified association type."
         }
       ],
       "fragments": [
@@ -188,7 +214,7 @@
         "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1388065-availabletrackassociationtypes",
         "doc://com.apple.documentation/documentation/avfoundation/avtrackassociationtype"
       ],
-      "title": "Working with Associated Tracks",
+      "title": "Accessing Track Associations",
       "generated": true
     }
   ],
@@ -258,6 +284,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -322,6 +349,24 @@
           "inlineContent": [
             {
               "type": "text",
+              "text": "Apple discourages using this method in iOS 15, tvOS 15, macOS 12, and watchOS 8 or later. Load associated tracks asynchronously using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack/3746538-loadassociatedtracksoftype"
+            },
+            {
+              "type": "text",
+              "text": " instead."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
               "text": "You can call this method without blocking the current thread after you’ve loaded the "
             },
             {
@@ -343,7 +388,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

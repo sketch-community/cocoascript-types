@@ -39,25 +39,30 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UITabBar",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -190,7 +195,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An item in a tab bar."
+          "text": "An object that describes an item in a tab bar."
         }
       ]
     },
@@ -471,6 +476,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uitabbar/3750912-scrolledgeappearance": {
+      "title": "scrollEdgeAppearance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitabbar/3750912-scrolledgeappearance",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitabbar/3750912-scrolledgeappearance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The appearance settings for the tab bar when the edge of scrollable content aligns with the edge of the tab bar."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uitabbar/3213944-leadingaccessoryview": {
       "title": "leadingAccessoryView",
       "type": "topic",
@@ -652,16 +671,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -679,7 +688,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uitabbar/1623444-delegate",
         "doc://com.apple.documentation/documentation/uikit/uitabbardelegate"
-      ]
+      ],
+      "anchor": "1653187"
     },
     {
       "kind": "taskGroup",
@@ -688,18 +698,21 @@
         "doc://com.apple.documentation/documentation/uikit/uitabbar/1623466-items",
         "doc://com.apple.documentation/documentation/uikit/uitabbar/1623455-setitems",
         "doc://com.apple.documentation/documentation/uikit/uitabbar/1623453-selecteditem"
-      ]
+      ],
+      "anchor": "1653020"
     },
     {
       "kind": "taskGroup",
       "title": "Customizing Tab Bar Appearance",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uitabbar/3198046-standardappearance",
+        "doc://com.apple.documentation/documentation/uikit/uitabbar/3750912-scrolledgeappearance",
         "doc://com.apple.documentation/documentation/uikit/uitabbar/3213944-leadingaccessoryview",
         "doc://com.apple.documentation/documentation/uikit/uitabbar/3213945-trailingaccessoryview",
         "doc://com.apple.documentation/documentation/uikit/uitabbar/1623458-translucent",
         "doc://com.apple.documentation/documentation/uikit/uitabbar/legacy_customizations"
-      ]
+      ],
+      "anchor": "1653077"
     },
     {
       "kind": "taskGroup",
@@ -708,7 +721,8 @@
         "doc://com.apple.documentation/documentation/uikit/uitabbar/1623462-begincustomizingitems",
         "doc://com.apple.documentation/documentation/uikit/uitabbar/1623448-endcustomizinganimated",
         "doc://com.apple.documentation/documentation/uikit/uitabbar/2102237-customizing"
-      ]
+      ],
+      "anchor": "1653214"
     }
   ],
   "seeAlsoSections": [
@@ -762,6 +776,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -903,7 +918,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Configuring the Items of a Tab Bar",
+          "text": "Configure the Tab Bar Items",
           "anchor": "1777668"
         },
         {
@@ -1110,7 +1125,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Responding to Tab Selections",
+          "text": "Respond to Tab Selections",
           "anchor": "1777669"
         },
         {
@@ -1152,7 +1167,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Interface Builder Attributes",
+          "text": "Configure a Tab Bar with Interface Builder",
           "anchor": "1777670"
         },
         {
@@ -1452,7 +1467,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Internationalization",
+          "text": "Internationalize a Tab Bar",
           "anchor": "1777671"
         },
         {
@@ -1485,7 +1500,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Accessibility",
+          "text": "Make a Tab Bar Accessible",
           "anchor": "1777672"
         },
         {
@@ -1528,7 +1543,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

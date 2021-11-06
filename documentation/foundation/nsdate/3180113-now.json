@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The current date and time, as of the time of access."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSDate(cpy)now",
+    "parent": {
+      "title": "NSDate"
+    },
     "symbolKind": "cldata"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -108,6 +122,20 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsdate"
     },
+    "doc://com.apple.documentation/documentation/foundation/nsdate/3180113-now": {
+      "title": "now",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdate/3180113-now",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdate/3180113-now",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The current date and time, as of the time of access."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -154,6 +182,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -161,10 +190,47 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This is equivalent to initializing a new instance with "
+            },
+            {
+              "type": "codeVoice",
+              "code": "[[NSDate alloc] init]"
+            },
+            {
+              "type": "text",
+              "text": ". The "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdate"
+            },
+            {
+              "type": "text",
+              "text": " instance doesn’t automatically update its time after you retrieve it."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

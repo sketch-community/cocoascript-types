@@ -10,13 +10,7 @@
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/custom_ui"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/intents_and_related_classes"
+        "doc://com.apple.documentation/documentation/sirikit"
       ]
     ]
   },
@@ -39,20 +33,25 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)INParameter",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -86,22 +85,6 @@
       "type": "topic",
       "kind": "symbol",
       "role": "collection"
-    },
-    "doc://com.apple.documentation/documentation/sirikit/custom_ui": {
-      "title": "Custom UI",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/custom_ui",
-      "url": "/documentation/sirikit/custom_ui",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/sirikit/intents_and_related_classes": {
-      "title": "Intents and Related Classes",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/intents_and_related_classes",
-      "url": "/documentation/sirikit/intents_and_related_classes",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/sirikit/ininteraction": {
       "title": "INInteraction",
@@ -277,6 +260,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_ui_extension": {
+      "title": "Creating an Intents UI Extension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_ui_extension",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/creating_an_intents_ui_extension",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create an Intents UI app extension to customize the interfaces displayed by Siri and Maps."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/sirikit/inuihostedviewcontrolling": {
       "title": "INUIHostedViewControlling",
       "type": "topic",
@@ -352,7 +349,8 @@
       "title": "Creating a Parameter Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/inparameter/2908772-parameterforclass"
-      ]
+      ],
+      "anchor": "2909546"
     },
     {
       "kind": "taskGroup",
@@ -360,7 +358,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/inparameter/2908771-parameterkeypath",
         "doc://com.apple.documentation/documentation/sirikit/inparameter/2908773-parameterclass"
-      ]
+      ],
+      "anchor": "2909547"
     },
     {
       "kind": "taskGroup",
@@ -368,23 +367,26 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/inparameter/2908767-indexforsubkeypath",
         "doc://com.apple.documentation/documentation/sirikit/inparameter/2908766-setindex"
-      ]
+      ],
+      "anchor": "2909548"
     },
     {
       "kind": "taskGroup",
       "title": "Comparing Parameters",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/inparameter/2908764-isequaltoparameter"
-      ]
+      ],
+      "anchor": "2910014"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_ui_extension",
         "doc://com.apple.documentation/documentation/sirikit/inuihostedviewcontrolling",
         "doc://com.apple.documentation/documentation/sirikit/inuihostedviewsiriproviding"
       ],
-      "title": "Custom UI",
+      "title": "Custom UI for Siri and Maps",
       "generated": true
     }
   ],
@@ -422,6 +424,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -485,7 +488,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

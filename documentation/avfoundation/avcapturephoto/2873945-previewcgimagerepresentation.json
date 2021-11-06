@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Extracts and returns the captured photo's preview image as a CoreGraphics image object."
+      "text": "Extracts and returns the captured photo's preview image as a Core Graphics image object."
     }
   ],
   "documentVersion": 0,
@@ -35,20 +35,28 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "introducedAt": "14.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVCapturePhoto(im)previewCGImageRepresentation",
+    "parent": {
+      "title": "AVCapturePhoto"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -101,25 +109,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A container for image data collected by a photo capture output."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2977522-filedatarepresentationwithcustom": {
-      "title": "fileDataRepresentationWithCustomizer:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2977522-filedatarepresentationwithcustom",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturephoto/2977522-filedatarepresentationwithcustom",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "fileDataRepresentationWithCustomizer:"
+          "text": "A container for image data from a photo capture output."
         }
       ]
     },
@@ -131,6 +121,30 @@
       "role": "symbol",
       "url": "/documentation/coregraphics/cgimageref"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2977522-filedatarepresentationwithcustom": {
+      "title": "fileDataRepresentationWithCustomizer:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2977522-filedatarepresentationwithcustom",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephoto/2977522-filedatarepresentationwithcustom",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets a customized representation of the photo data."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "fileDataRepresentationWithCustomizer:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avcapturephotofiledatarepresentationcustomizer": {
       "title": "AVCapturePhotoFileDataRepresentationCustomizer",
       "type": "topic",
@@ -141,16 +155,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of delegate callbacks to be implemented by callers of "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2977522-filedatarepresentationwithcustom"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "A protocol that defines the methods to implement to customize the packaging of photo data."
         }
       ]
     },
@@ -212,7 +217,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Extracts and returns the captured photo's preview image as a CoreGraphics image object."
+          "text": "Extracts and returns the captured photo's preview image as a Core Graphics image object."
         }
       ],
       "fragments": [
@@ -236,7 +241,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Generates and returns a flat data representation of the photo, using the specified replacements for some or all of its attachments."
+          "text": "Generates and returns a flat data representation of the photo using the specified replacements for some or all of its attachments."
         }
       ],
       "fragments": [
@@ -306,6 +311,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -325,7 +331,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "A CoreGraphics image representation of the captured photo, or "
+              "text": "A Core Graphics image representation of the captured photo, or "
             },
             {
               "type": "codeVoice",
@@ -341,7 +347,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)INSendMessageIntent",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -101,35 +106,7 @@
       "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent#2279065",
       "kind": "article",
       "role": "table",
-      "url": "/documentation/sirikit/insendmessageintent#2279065",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Send message intent attributes"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent#2527205": {
-      "title": "Table 2",
-      "type": "section",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent#2527205",
-      "kind": "article",
-      "role": "table",
-      "url": "/documentation/sirikit/insendmessageintent#2527205",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Siri phrases that trigger the sending of a message"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/invocabulary": {
-      "title": "INVocabulary",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/invocabulary",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/invocabulary"
+      "url": "/documentation/sirikit/insendmessageintent#2279065"
     },
     "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling": {
       "title": "INSendMessageIntentHandling",
@@ -223,17 +200,17 @@
       "role": "symbol",
       "url": "/documentation/sirikit/inintent"
     },
-    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866587-initwithrecipients": {
-      "title": "initWithRecipients:content:speakableGroupName:conversationIdentifier:serviceName:sender:",
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3621863-initwithrecipients": {
+      "title": "initWithRecipients:outgoingMessageType:content:speakableGroupName:conversationIdentifier:serviceName:sender:attachments:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866587-initwithrecipients",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3621863-initwithrecipients",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/insendmessageintent/2866587-initwithrecipients",
+      "url": "/documentation/sirikit/insendmessageintent/3621863-initwithrecipients",
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes a send message intent object with the specified content and recipients."
+          "text": "Creates a send message intent object with the specified content and recipients."
         }
       ],
       "fragments": [
@@ -243,35 +220,9 @@
         },
         {
           "kind": "identifier",
-          "text": "initWithRecipients:content:speakableGroupName:conversationIdentifier:serviceName:sender:"
+          "text": "initWithRecipients:outgoingMessageType:content:speakableGroupName:conversationIdentifier:serviceName:sender:attachments:"
         }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1778238-initwithrecipients": {
-      "title": "initWithRecipients:content:groupName:serviceName:sender:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1778238-initwithrecipients",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/insendmessageintent/1778238-initwithrecipients",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Initializes a send message intent object with the specified content and recipients."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithRecipients:content:groupName:serviceName:sender:"
-        }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1639316-recipients": {
       "title": "recipients",
@@ -287,6 +238,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3552232-outgoingmessagetype": {
+      "title": "outgoingMessageType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3552232-outgoingmessagetype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insendmessageintent/3552232-outgoingmessagetype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The format of the message contents."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866586-conversationidentifier": {
       "title": "conversationIdentifier",
       "type": "topic",
@@ -297,7 +262,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The identifier associated with the conversation."
+          "text": "The identifier for the conversation."
         }
       ]
     },
@@ -353,9 +318,98 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The person or account that is sending the message."
+          "text": "The person or account that’s sending the message."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3621862-attachments": {
+      "title": "attachments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3621862-attachments",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insendmessageintent/3621862-attachments",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Audio files to include in the message."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866587-initwithrecipients": {
+      "title": "initWithRecipients:content:speakableGroupName:conversationIdentifier:serviceName:sender:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866587-initwithrecipients",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insendmessageintent/2866587-initwithrecipients",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a send message intent object with the specified content and recipients."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithRecipients:content:speakableGroupName:conversationIdentifier:serviceName:sender:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1778238-initwithrecipients": {
+      "title": "initWithRecipients:content:groupName:serviceName:sender:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1778238-initwithrecipients",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insendmessageintent/1778238-initwithrecipients",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a send message intent object with the specified content and recipients."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithRecipients:content:groupName:serviceName:sender:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3552231-initwithrecipients": {
+      "title": "initWithRecipients:outgoingMessageType:content:speakableGroupName:conversationIdentifier:serviceName:sender:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3552231-initwithrecipients",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insendmessageintent/3552231-initwithrecipients",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a send message intent object with the specified content and recipients."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithRecipients:outgoingMessageType:content:speakableGroupName:conversationIdentifier:serviceName:sender:"
+        }
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1778199-groupname": {
       "title": "groupName",
@@ -372,58 +426,19 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3552231-initwithrecipients": {
-      "title": "initWithRecipients:outgoingMessageType:content:speakableGroupName:conversationIdentifier:serviceName:sender:",
+    "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype": {
+      "title": "INOutgoingMessageType",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3552231-initwithrecipients",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/insendmessageintent/3552231-initwithrecipients",
-      "fragments": [
+      "url": "/documentation/sirikit/inoutgoingmessagetype",
+      "abstract": [
         {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithRecipients:outgoingMessageType:content:speakableGroupName:conversationIdentifier:serviceName:sender:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3621863-initwithrecipients": {
-      "title": "initWithRecipients:outgoingMessageType:content:speakableGroupName:conversationIdentifier:serviceName:sender:attachments:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3621863-initwithrecipients",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/insendmessageintent/3621863-initwithrecipients",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithRecipients:outgoingMessageType:content:speakableGroupName:conversationIdentifier:serviceName:sender:attachments:"
+          "type": "text",
+          "text": "The format of the message."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3621862-attachments": {
-      "title": "attachments",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3621862-attachments",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/insendmessageintent/3621862-attachments"
-    },
-    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3552232-outgoingmessagetype": {
-      "title": "outgoingMessageType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3552232-outgoingmessagetype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/insendmessageintent/3552232-outgoingmessagetype"
     },
     "doc://com.apple.documentation/documentation/sirikit/insendmessageattachment": {
       "title": "INSendMessageAttachment",
@@ -431,7 +446,13 @@
       "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageattachment",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/insendmessageattachment"
+      "url": "/documentation/sirikit/insendmessageattachment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A file to include in a message."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -439,16 +460,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -466,38 +477,35 @@
       "kind": "taskGroup",
       "title": "Creating the Intent Object",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866587-initwithrecipients",
-        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1778238-initwithrecipients"
-      ]
+        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3621863-initwithrecipients"
+      ],
+      "anchor": "2527197"
     },
     {
       "kind": "taskGroup",
       "title": "Specifying Details About a Message",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1639316-recipients",
+        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3552232-outgoingmessagetype",
         "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866586-conversationidentifier",
         "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866589-speakablegroupname",
         "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1639106-content",
         "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1639342-servicename",
         "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1639248-sender",
-        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1778199-groupname"
-      ]
+        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3621862-attachments"
+      ],
+      "anchor": "2527200"
     },
     {
       "kind": "taskGroup",
-      "title": "Initializers",
+      "title": "Deprecated Symbols",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866587-initwithrecipients",
+        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1778238-initwithrecipients",
         "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3552231-initwithrecipients",
-        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3621863-initwithrecipients"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Properties",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3621862-attachments",
-        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3552232-outgoingmessagetype"
-      ]
+        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1778199-groupname"
+      ],
+      "anchor": "3793210"
     }
   ],
   "seeAlsoSections": [
@@ -505,9 +513,10 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling",
         "doc://com.apple.documentation/documentation/sirikit/insendmessageintentresponse",
+        "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype",
         "doc://com.apple.documentation/documentation/sirikit/insendmessageattachment"
       ],
-      "title": "Send a Message",
+      "title": "Sending a Message",
       "generated": true
     }
   ],
@@ -545,6 +554,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -592,7 +602,7 @@
             },
             {
               "type": "text",
-              "text": " protocol. Your handler should confirm the request and create an "
+              "text": " protocol. Your handler confirms the request and creates an "
             },
             {
               "type": "reference",
@@ -613,7 +623,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "To have messages automatically heard by a user wearing AirPods, you must implement both "
+                  "text": "To allow a user wearing AirPods to automatically hear messages, you must implement both "
                 },
                 {
                   "type": "reference",
@@ -685,13 +695,8 @@
           "type": "paragraph",
           "inlineContent": [
             {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent#2279065"
-            },
-            {
               "type": "text",
-              "text": " lists additional attributes of this intent object. "
+              "text": "Additional attributes of this intent object include the following:"
             }
           ]
         },
@@ -774,13 +779,7 @@
           ],
           "metadata": {
             "anchor": "2279065",
-            "title": "Table 1",
-            "abstract": [
-              {
-                "type": "text",
-                "text": "Send message intent attributes"
-              }
-            ]
+            "title": "Table 1"
           }
         },
         {
@@ -807,1426 +806,12 @@
               "text": " file."
             }
           ]
-        },
-        {
-          "level": 3,
-          "type": "heading",
-          "text": "Example Phrases",
-          "anchor": "2527194"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "Users can ask Siri to send a message in a variety of ways. "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent#2527205"
-            },
-            {
-              "type": "text",
-              "text": " provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list is not exhaustive and Siri may recognize many other phrases."
-            }
-          ]
-        },
-        {
-          "type": "table",
-          "header": "row",
-          "rows": [
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Locale"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Example 1"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Example 2"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "en"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Send a message to Corey on "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Using "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " send a message to Jenny saying I’m almost there"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "zh_CN"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "用"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "发信息给芳芳"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "用微信发信息给芳芳"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "zh_HK"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "喺微信發訊息俾小明 → 買個蛋糕"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "喺"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "發短訊俾陳家傑"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "zh_TW"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "傳"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "訊息給John"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "用"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "傳簡訊給John說哈囉"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "yue_CN"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "喺微信发讯息俾小明 → 买个蛋糕"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "喺发短讯俾陈家杰"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ar"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "أرسل رسالة "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " إلى رامي"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "أرسل رسالة  إلى رامي باستخدام "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "da"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "send en besked til john på "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "send en besked med "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " til Peter"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "de"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Schreib eine "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " Nachricht an Tanja"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Sende eine Nachricht mit "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " an Thomas"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "es"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Envía un mensaje de "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " a Raúl"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Mandar mensaje a Julián Serrano por "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "fi"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Pistä "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " viesti Jaakolle"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Kirjoita viesti "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "ssa Julialle"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "fr"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Envoie un message à John via "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Envoie un message "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " à John"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "he"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "שלח הודעת "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " ל-bluesky"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "באמצעות "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " תשלח הודעה ליוני"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "it"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Invia un messaggio a Giovanni su "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Invia un messaggio usando "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " a Nadia che dice sto arrivando"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ja"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "で一郎にメッセージを送信"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "一郎に"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "のメッセージを送って"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ko"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "충헌한테 "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " 메세지 보내"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "에서 충헌이한테 문자 보내"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ms"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Gunakan "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " untuk hantar mesej kepada John"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Hantar mesej "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " kepada John"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "nb"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Send en melding til Bjørn med "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Send en "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " melding til Jon og si jeg er nesten fremme"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "nl"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Stuur een bericht naar Jan met "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Kun je met "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " een bericht sturen naar Sara waarin staat ik ben er bijna"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "pt"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Envia uma mensagem no "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " pro João"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Usando "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " mande uma mensagem para Maria dizendo estou quase chegando"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ru"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Создашь "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " сообщение Анне"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Написать сообщение Ивану с помощью "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "sv"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Skicka ett meddelande på "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " till Johanna"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Skicka ett meddelande till Anders med "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "th"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ส่งข้อความให้สมชายโดย "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ส่งข้อความด้วย  "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " ให้สมหญิง"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "tr"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Elif'e "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " mesajı at"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Elif'e "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " mesajı gönder"
-                    }
-                  ]
-                }
-              ]
-            ]
-          ],
-          "metadata": {
-            "anchor": "2527205",
-            "title": "Table 2",
-            "abstract": [
-              {
-                "type": "text",
-                "text": "Siri phrases that trigger the sending of a message"
-              }
-            ]
-          }
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "In "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent#2527205"
-            },
-            {
-              "type": "text",
-              "text": ", "
-            },
-            {
-              "type": "emphasis",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "<appName>"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": " represents the name of the app whose Intents extension sends the message. If your app uses custom names for contacts, you can tell Siri about those names using the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/sirikit/invocabulary"
-            },
-            {
-              "type": "text",
-              "text": " class."
-            }
-          ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

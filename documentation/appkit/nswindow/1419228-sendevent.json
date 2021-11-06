@@ -2,15 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "This action method dispatches mouse and keyboard events sent to the window by the "
-    },
-    {
-      "type": "codeVoice",
-      "code": "NSApplication"
-    },
-    {
-      "type": "text",
-      "text": " object."
+      "text": "This action method dispatches mouse and keyboard events the global application object sends to the window."
     }
   ],
   "documentVersion": 0,
@@ -43,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSWindow(im)sendEvent:",
+    "parent": {
+      "title": "NSWindow"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -107,14 +102,6 @@
           "text": "A window that an app displays on the screen."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsapplication": {
-      "title": "NSApplication",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsapplication"
     },
     "doc://com.apple.documentation/documentation/appkit/nsapplication/1428359-sendevent": {
       "title": "sendEvent:",
@@ -190,23 +177,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Forwards the message to the global "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSApplication"
-        },
-        {
-          "type": "text",
-          "text": " object, "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSApp"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "Forwards the message to the global application object."
         }
       ],
       "fragments": [
@@ -230,23 +201,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Forwards the message to the "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSApplication"
-        },
-        {
-          "type": "text",
-          "text": " object, "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSApp"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "Forwards the message to the global application object."
         }
       ],
       "fragments": [
@@ -270,23 +225,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Forwards the message to the global "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSApplication"
-        },
-        {
-          "type": "text",
-          "text": " object, "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSApp"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "Forwards the message to the global application object."
         }
       ],
       "fragments": [
@@ -310,15 +249,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "This action method dispatches mouse and keyboard events sent to the window by the "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSApplication"
-        },
-        {
-          "type": "text",
-          "text": " object."
+          "text": "This action method dispatches mouse and keyboard events the global application object sends to the window."
         }
       ],
       "fragments": [
@@ -472,7 +403,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Never invoke this method directly. A right mouse-down event in a window of an inactive application is not delivered to the corresponding "
+              "text": "Never invoke this method directly. A right mouse-down event in a window of an inactive application isn’t delivered to the corresponding "
             },
             {
               "type": "codeVoice",
@@ -480,16 +411,7 @@
             },
             {
               "type": "text",
-              "text": " object. It is instead delivered to the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication"
-            },
-            {
-              "type": "text",
-              "text": " object through a "
+              "text": " object. Instead, a "
             },
             {
               "type": "reference",
@@ -498,7 +420,15 @@
             },
             {
               "type": "text",
-              "text": " message with a window number of 0."
+              "text": " message with a window number of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0"
+            },
+            {
+              "type": "text",
+              "text": " delivers it to the NSApplication object."
             }
           ]
         }
@@ -506,7 +436,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

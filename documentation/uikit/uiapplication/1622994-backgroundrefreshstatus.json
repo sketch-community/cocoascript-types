@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIApplication(py)backgroundRefreshStatus",
+    "parent": {
+      "title": "UIApplication"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -128,7 +136,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants indicating whether background execution is enabled for the app."
+          "text": "Constants that indicate whether background execution is enabled for the app."
         }
       ]
     },
@@ -156,7 +164,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the app’s status for downloading content in the background changes."
+          "text": "A notification that posts when the app’s status for downloading content in the background changes."
         }
       ]
     },
@@ -170,7 +178,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Mark the start of a task that should continue if the app enters the background."
+          "text": "Marks the start of a task with a custom name that should continue if the app enters the background."
         }
       ],
       "fragments": [
@@ -194,7 +202,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Mark the start of a task that should continue if the app enters the background."
+          "text": "Marks the start of a task that should continue if the app enters the background."
         }
       ],
       "fragments": [
@@ -256,7 +264,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The maximum amount of  time remaining for the app to run in the background."
+          "text": "The maximum amount of time remaining for the app to run in the background."
         }
       ]
     },
@@ -321,6 +329,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -367,7 +376,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

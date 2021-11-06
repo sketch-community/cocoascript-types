@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Combine, edit, and remix audio and video tracks from multiple sources in a single composition."
+      "text": "Combine, edit, and remix audio and video tracks from multiple sources into a single composition."
     }
   ],
   "documentVersion": 0,
@@ -30,8 +30,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -76,7 +76,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that combines media data from multiple file-based sources to present or process media data from multiple sources."
+          "text": "An object that combines and arranges media from multiple assets into a single composite asset that you can play or process."
         }
       ]
     },
@@ -90,7 +90,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A track in a composition object, consisting of a media type, a track identifier, and track segments."
+          "text": "A track in a composition that presents media of a uniform type."
         }
       ]
     },
@@ -104,7 +104,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A segment of a track, consisting of a URL, a track identifier, and a time mapping from the source track to the composition track."
+          "text": "A track segment that maps a time from the source media track to the composition track."
         }
       ]
     },
@@ -118,7 +118,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A mutable object used to create a new composition from existing assets."
+          "text": "An object that you use to create a new composition from existing assets."
         }
       ]
     },
@@ -132,7 +132,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A mutable track in a composition object that you use to insert, remove, and scale track segments without affecting their low-level representation."
+          "text": "A mutable track in a composition that you use to insert, remove, and scale track segments without affecting their low-level representation."
         }
       ]
     },
@@ -146,7 +146,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that represents the audiovisual containers that conform to a QuickTime or ISO-based media file format."
+          "text": "An object that represents an audiovisual container that conforms to the QuickTime movie file format or a related format like MPEG-4."
         }
       ]
     },
@@ -160,7 +160,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A track that conforms to a QuickTime or ISO-based media file format."
+          "text": "A track in a movie that conforms to the QuickTime or ISO base media file format."
         }
       ]
     },
@@ -174,7 +174,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A mutable object that represents the audiovisual containers that conform to a QuickTime- or ISO-based media file format."
+          "text": "A mutable object that represents an audiovisual container that conforms to the QuickTime movie file format or a related format like MPEG-4."
         }
       ]
     },
@@ -188,7 +188,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A mutable track that conforms to a QuickTime- or ISO-based media file format."
+          "text": "A mutable track that conforms to the QuickTime or ISO base media file format."
         }
       ]
     },
@@ -202,7 +202,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to handle fragmented movie files."
+          "text": "An object that represents a fragmented movie file."
         }
       ]
     },
@@ -216,7 +216,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to handle the tracks of fragmented movie files."
+          "text": "An object that represents a track in a fragmented movie."
         }
       ]
     },
@@ -230,7 +230,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to check whether additional movie fragments have been appended to a fragmented movie file."
+          "text": "An object that checks whether a fragmented movie appends additional movie fragments."
         }
       ]
     },
@@ -244,7 +244,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to create a sample data file."
+          "text": "An object that represents the media sample data storage file."
         }
       ]
     },
@@ -304,20 +304,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionlayerinstruction": {
-      "title": "AVVideoCompositionLayerInstruction",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionlayerinstruction",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocompositionlayerinstruction",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object used to modify the transform, cropping, and opacity ramps applied to a given track in a composition."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocompositioninstruction": {
       "title": "AVMutableVideoCompositionInstruction",
       "type": "topic",
@@ -329,6 +315,20 @@
         {
           "type": "text",
           "text": "An operation performed by a compositor."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionlayerinstruction": {
+      "title": "AVVideoCompositionLayerInstruction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionlayerinstruction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avvideocompositionlayerinstruction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to modify the transform, cropping, and opacity ramps applied to a given track in a composition."
         }
       ]
     },
@@ -388,20 +388,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avaudiomixinputparameters": {
-      "title": "AVAudioMixInputParameters",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiomixinputparameters",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avaudiomixinputparameters",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that represents the parameters that you apply when adding an audio track to a mix."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avmutableaudiomix": {
       "title": "AVMutableAudioMix",
       "type": "topic",
@@ -413,6 +399,20 @@
         {
           "type": "text",
           "text": "An object that manages the input parameters for mixing audio tracks."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiomixinputparameters": {
+      "title": "AVAudioMixInputParameters",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiomixinputparameters",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiomixinputparameters",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that represents the parameters that you apply when adding an audio track to a mix."
         }
       ]
     },
@@ -440,7 +440,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Combine, edit, and remix audio and video tracks from multiple sources in a single composition."
+          "text": "Combine, edit, and remix audio and video tracks from multiple sources into a single composition."
         }
       ]
     },
@@ -450,16 +450,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "topicSections": [
@@ -472,7 +462,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcompositiontracksegment",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack"
-      ]
+      ],
+      "anchor": "2935290"
     },
     {
       "kind": "taskGroup",
@@ -486,7 +477,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avfragmentedmovietrack",
         "doc://com.apple.documentation/documentation/avfoundation/avfragmentedmovieminder",
         "doc://com.apple.documentation/documentation/avfoundation/avmediadatastorage"
-      ]
+      ],
+      "anchor": "2939898"
     },
     {
       "kind": "taskGroup",
@@ -496,32 +488,35 @@
         "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition",
         "doc://com.apple.documentation/documentation/avfoundation/avvideocompositioninstruction",
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionlayerinstruction",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocompositioninstruction",
+        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionlayerinstruction",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocompositionlayerinstruction",
         "doc://com.apple.documentation/documentation/avfoundation/avvideocompositioncoreanimationtool"
-      ]
+      ],
+      "anchor": "2935289"
     },
     {
       "kind": "taskGroup",
       "title": "Custom Video Compositing",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing"
-      ]
+      ],
+      "anchor": "3701708"
     },
     {
       "kind": "taskGroup",
       "title": "Audio Mixing",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avaudiomix",
-        "doc://com.apple.documentation/documentation/avfoundation/avaudiomixinputparameters",
         "doc://com.apple.documentation/documentation/avfoundation/avmutableaudiomix",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiomixinputparameters",
         "doc://com.apple.documentation/documentation/avfoundation/avmutableaudiomixinputparameters"
-      ]
+      ],
+      "anchor": "2940139"
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

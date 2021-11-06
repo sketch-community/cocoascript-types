@@ -37,16 +37,19 @@
         "name": "macOS",
         "introducedAt": "10.0",
         "deprecatedAt": "10.13",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSWindow(im)discardCachedImage",
+    "parent": {
+      "title": "NSWindow"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -121,7 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Passes a display message down the window’s view hierarchy, thus redrawing all views within the window, including the frame view that draws the border, title bar, and other peripheral elements."
+          "text": "Passes a display message down the window’s view hierarchy, thus redrawing all views within the window."
         }
       ],
       "fragments": [
@@ -530,6 +533,30 @@
       ],
       "deprecated": true
     },
+    "doc://com.apple.documentation/documentation/appkit/nswindow/1419446-initwithwindowref": {
+      "title": "initWithWindowRef:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419446-initwithwindowref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindow/1419446-initwithwindowref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Cocoa window created from a Carbon window."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithWindowRef:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -553,7 +580,8 @@
         "doc://com.apple.documentation/documentation/appkit/nswindow/1419306-useoptimizeddrawing",
         "doc://com.apple.documentation/documentation/appkit/nswindow/1419550-convertbasetoscreen",
         "doc://com.apple.documentation/documentation/appkit/nswindow/1419414-convertscreentobase",
-        "doc://com.apple.documentation/documentation/appkit/nswindow/1419616-userspacescalefactor"
+        "doc://com.apple.documentation/documentation/appkit/nswindow/1419616-userspacescalefactor",
+        "doc://com.apple.documentation/documentation/appkit/nswindow/1419446-initwithwindowref"
       ],
       "title": "Methods",
       "generated": true
@@ -632,7 +660,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Registers a CloudKit share for the user to modify."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -35,15 +41,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSItemProvider(im)registerCloudKitShare:container:",
+    "parent": {
+      "title": "NSItemProvider"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,13 +125,13 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckshare": {
-      "title": "CKShare",
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation": {
+      "title": "CKFetchShareMetadataOperation",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckshare"
+      "url": "/documentation/cloudkit/ckfetchsharemetadataoperation"
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckcontainer": {
       "title": "CKContainer",
@@ -132,6 +141,86 @@
       "role": "symbol",
       "url": "/documentation/cloudkit/ckcontainer"
     },
+    "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640400-containeridentifier": {
+      "title": "containerIdentifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640400-containeridentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/cksharemetadata/1640400-containeridentifier"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate": {
+      "title": "NSCloudSharingServiceDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscloudsharingservicedelegate"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1644475-registercloudkitsharewithprepara": {
+      "title": "registerCloudKitShareWithPreparationHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1644475-registercloudkitsharewithprepara",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider/1644475-registercloudkitsharewithprepara",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registers a handler that prepares a new CloudKit share."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "registerCloudKitShareWithPreparationHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1644692-registercloudkitshare#3737994": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1644692-registercloudkitshare#3737994",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/nsitemprovider/1644692-registercloudkitshare#3737994"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare": {
+      "title": "CKShare",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckshare"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1644692-registercloudkitshare": {
+      "title": "registerCloudKitShare:container:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1644692-registercloudkitshare",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider/1644692-registercloudkitshare",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registers a CloudKit share for the user to modify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "registerCloudKitShare:container:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -140,6 +229,15 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1644475-registercloudkitsharewithprepara"
+      ],
+      "title": "Registering CloudKit Shares",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -227,10 +325,182 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "share",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The CloudKit share to modify."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "container",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The CloudKit container that stores the shared records."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use this method when the CloudKit share already exists on the server and you want to update it. The behavior of the sharing service depends on the role of the current user. An owner can edit the share’s configuration, which includes managing participants and their permissions. A participant can view the share’s configuration and choose to stop participating."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you’re unsure which container to use, fetch the share’s metadata using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation"
+            },
+            {
+              "type": "text",
+              "text": ". Then initialize an instance of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckcontainer"
+            },
+            {
+              "type": "text",
+              "text": " using the metadata’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640400-containeridentifier"
+            },
+            {
+              "type": "text",
+              "text": " property."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate"
+            },
+            {
+              "type": "text",
+              "text": " protocol to respond to any changes the sharing service makes."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "To create a new share, use the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1644475-registercloudkitsharewithprepara"
+                },
+                {
+                  "type": "text",
+                  "text": " method instead."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following example shows how to create an item provider with an existing share. It then invokes the cloud-sharing service with the provider and presents the share’s configuration to the user."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func modifyShare(_ share: CKShare, in container: CKContainer) {",
+            "",
+            "    // Create an item provider and register a share that",
+            "    // already exists on the server.",
+            "    let itemProvider = NSItemProvider()",
+            "    itemProvider.registerCloudKitShare(share, container: container)",
+            "        ",
+            "    // Create and invoke the cloud-sharing service to",
+            "    // present the share configuration to the user.",
+            "    if let service = NSSharingService(named: .cloudSharing),",
+            "       service.canPerform(withItems: [itemProvider]) {",
+            "        service.perform(withItems: [itemProvider])",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3737994",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

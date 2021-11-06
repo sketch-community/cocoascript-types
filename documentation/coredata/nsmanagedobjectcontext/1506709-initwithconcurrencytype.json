@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Initializes a context with a given concurrency type."
+      "text": "Creates a context that uses the specified concurrency type."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "5.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSManagedObjectContext(im)initWithConcurrencyType:",
+    "parent": {
+      "title": "NSManagedObjectContext"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,6 +122,20 @@
       "role": "symbol",
       "url": "/documentation/coredata/nsmanagedobjectcontext"
     },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype": {
+      "title": "NSManagedObjectContextConcurrencyType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontextconcurrencytype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The concurrency types you can use with a managed object context."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext#1654001": {
       "title": "Concurrency",
       "type": "section",
@@ -122,27 +144,13 @@
       "role": "subsection",
       "url": "/documentation/coredata/nsmanagedobjectcontext#1654001"
     },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506792-concurrencytype": {
-      "title": "concurrencyType",
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/3747518-init": {
+      "title": "init(_:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506792-concurrencytype",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/3747518-init",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontext/1506792-concurrencytype",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The concurrency type for the context."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype": {
-      "title": "NSManagedObjectContextConcurrencyType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontextconcurrencytype"
+      "url": "/documentation/coredata/nsmanagedobjectcontext/3747518-init"
     },
     "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506709-initwithconcurrencytype": {
       "title": "initWithConcurrencyType:",
@@ -154,7 +162,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes a context with a given concurrency type."
+          "text": "Creates a context that uses the specified concurrency type."
         }
       ],
       "fragments": [
@@ -168,100 +176,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506618-persistentstorecoordinator": {
-      "title": "persistentStoreCoordinator",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506618-persistentstorecoordinator",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontext/1506618-persistentstorecoordinator",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The persistent store coordinator of the context."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506529-parentcontext": {
-      "title": "parentContext",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506529-parentcontext",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontext/1506529-parentcontext",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The parent of the context."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506231-name": {
-      "title": "name",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506231-name",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontext/1506231-name",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The developer-provided name of the context."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506740-userinfo": {
-      "title": "userInfo",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506740-userinfo",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontext/1506740-userinfo",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The user information for the context."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506673-init": {
-      "title": "init",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506673-init",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontext/1506673-init",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "init"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506632-new": {
-      "title": "new",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506632-new",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontext/1506632-new",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "+ "
-        },
-        {
-          "kind": "identifier",
-          "text": "new"
-        }
-      ],
-      "deprecated": true
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -270,25 +184,33 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/3747518-init"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506618-persistentstorecoordinator",
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506529-parentcontext",
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506231-name",
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506740-userinfo",
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506673-init",
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506632-new"
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype"
       ],
-      "title": "Configuring a Context",
+      "title": "Creating a Context",
       "generated": true
-    },
-    {
-      "title": "Related Documentation",
-      "generated": false,
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506792-concurrencytype"
-      ]
     }
   ],
   "primaryContentSections": [
@@ -341,6 +263,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -363,29 +286,18 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The concurrency pattern with which context will be used."
+                  "text": "The context’s concurrency type. For possible values, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype"
+                },
+                {
+                  "type": "text",
+                  "text": "."
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "return_value",
-          "level": 2,
-          "text": "Return Value",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "A context initialized to use the given concurrency type."
             }
           ]
         }
@@ -405,7 +317,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "For more details on use of this method, see "
+              "text": "For more information, see "
             },
             {
               "type": "reference",
@@ -422,7 +334,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

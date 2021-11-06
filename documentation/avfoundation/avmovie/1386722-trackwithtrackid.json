@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Provides a movie track associated with the specified track ID."
+      "text": "Retrieves a track in the movie that contains the specified identifier."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVMovie(im)trackWithTrackID:",
+    "parent": {
+      "title": "AVMovie"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,7 +119,25 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that represents the audiovisual containers that conform to a QuickTime or ISO-based media file format."
+          "text": "An object that represents an audiovisual container that conforms to the QuickTime movie file format or a related format like MPEG-4."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmovie/3746571-loadtrackwithtrackid": {
+      "title": "loadTrackWithTrackID:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmovie/3746571-loadtrackwithtrackid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmovie/3746571-loadtrackwithtrackid",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadTrackWithTrackID:completionHandler:"
         }
       ]
     },
@@ -131,6 +157,20 @@
       "role": "symbol",
       "url": "/documentation/coremedia/cmpersistenttrackid"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avmovie/1386485-tracks": {
+      "title": "tracks",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmovie/1386485-tracks",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmovie/1386485-tracks",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The tracks that a movie contains."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avmovie/1386722-trackwithtrackid": {
       "title": "trackWithTrackID:",
       "type": "topic",
@@ -141,7 +181,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Provides a movie track associated with the specified track ID."
+          "text": "Retrieves a track in the movie that contains the specified identifier."
         }
       ],
       "fragments": [
@@ -155,30 +195,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmovie/1386839-trackswithmediacharacteristic": {
-      "title": "tracksWithMediaCharacteristic:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmovie/1386839-trackswithmediacharacteristic",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmovie/1386839-trackswithmediacharacteristic",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Provides the movie tracks of the specified media characteristic associated with an asset."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "tracksWithMediaCharacteristic:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avmovie/1388667-trackswithmediatype": {
       "title": "tracksWithMediaType:",
       "type": "topic",
@@ -189,7 +205,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Provides the movie tracks of the specified media type associated with an asset."
+          "text": "Retrieves tracks in the movie that present media of the specified type."
         }
       ],
       "fragments": [
@@ -200,6 +216,30 @@
         {
           "kind": "identifier",
           "text": "tracksWithMediaType:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmovie/1386839-trackswithmediacharacteristic": {
+      "title": "tracksWithMediaCharacteristic:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmovie/1386839-trackswithmediacharacteristic",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmovie/1386839-trackswithmediacharacteristic",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves tracks in the movie that present media of the specified characteristic."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tracksWithMediaCharacteristic:"
         }
       ]
     },
@@ -214,10 +254,11 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avmovie/1386839-trackswithmediacharacteristic",
-        "doc://com.apple.documentation/documentation/avfoundation/avmovie/1388667-trackswithmediatype"
+        "doc://com.apple.documentation/documentation/avfoundation/avmovie/1386485-tracks",
+        "doc://com.apple.documentation/documentation/avfoundation/avmovie/1388667-trackswithmediatype",
+        "doc://com.apple.documentation/documentation/avfoundation/avmovie/1386839-trackswithmediacharacteristic"
       ],
-      "title": "Creating Movie Tracks",
+      "title": "Accessing Tracks",
       "generated": true
     }
   ],
@@ -277,6 +318,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "watchOS"
@@ -320,16 +362,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "An instance of "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmovietrack"
-            },
-            {
-              "type": "text",
-              "text": " that contains the track associated with the track ID or "
+              "text": "A movie track, or "
             },
             {
               "type": "codeVoice",
@@ -337,15 +370,48 @@
             },
             {
               "type": "text",
-              "text": " when no track is available."
+              "text": " if there is no track with the identifier."
             }
           ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Apple discourages using this method in iOS 15, tvOS 15, macOS 12, and watchOS 8 or later. Load a track asynchronously using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmovie/3746571-loadtrackwithtrackid"
+            },
+            {
+              "type": "text",
+              "text": " instead."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

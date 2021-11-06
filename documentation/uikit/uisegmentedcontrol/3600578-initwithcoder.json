@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates a segmented control with data from an unarchiver."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UISegmentedControl(im)initWithCoder:",
+    "parent": {
+      "title": "UISegmentedControl"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -112,6 +126,102 @@
       "role": "symbol",
       "url": "/documentation/foundation/nscoder"
     },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618569-initwithitems": {
+      "title": "initWithItems:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618569-initwithitems",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol/1618569-initwithitems",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a segmented control with segments having the given titles or images."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithItems:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600580-initwithframe": {
+      "title": "initWithFrame:actions:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600580-initwithframe",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol/3600580-initwithframe",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a segmented control with the given frame and adds segments for the actions you specify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithFrame:actions:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600579-initwithframe": {
+      "title": "initWithFrame:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600579-initwithframe",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol/3600579-initwithframe",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an empty segmented control with the frame you specify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithFrame:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600578-initwithcoder": {
+      "title": "initWithCoder:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600578-initwithcoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol/3600578-initwithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a segmented control with data from an unarchiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithCoder:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -120,6 +230,17 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618569-initwithitems",
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600580-initwithframe",
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600579-initwithframe"
+      ],
+      "title": "Initializing a Segmented Control",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -174,15 +295,38 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "coder",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The unarchiver to read data from."
+                }
+              ]
+            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

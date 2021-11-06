@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIEvent",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -413,16 +418,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -443,14 +438,16 @@
         "doc://com.apple.documentation/documentation/uikit/uievent/1613794-touchesforwindow",
         "doc://com.apple.documentation/documentation/uikit/uievent/1613808-coalescedtouchesfortouch",
         "doc://com.apple.documentation/documentation/uikit/uievent/1613814-predictedtouchesfortouch"
-      ]
+      ],
+      "anchor": "1658390"
     },
     {
       "kind": "taskGroup",
       "title": "Getting Event Attributes",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uievent/1613790-timestamp"
-      ]
+      ],
+      "anchor": "1658446"
     },
     {
       "kind": "taskGroup",
@@ -458,14 +455,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uievent/1613840-type",
         "doc://com.apple.documentation/documentation/uikit/uievent/1613824-subtype"
-      ]
+      ],
+      "anchor": "1658476"
     },
     {
       "kind": "taskGroup",
       "title": "Getting the Touches for a Gesture Recognizer",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uievent/1613832-touchesforgesturerecognizer"
-      ]
+      ],
+      "anchor": "1658513"
     },
     {
       "kind": "taskGroup",
@@ -473,7 +472,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uievent/3538960-buttonmask",
         "doc://com.apple.documentation/documentation/uikit/uieventbuttonmask"
-      ]
+      ],
+      "anchor": "3633659"
     },
     {
       "kind": "taskGroup",
@@ -481,14 +481,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uieventtype",
         "doc://com.apple.documentation/documentation/uikit/uieventsubtype"
-      ]
+      ],
+      "anchor": "1674117"
     },
     {
       "kind": "taskGroup",
       "title": "Instance Properties",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uievent/3538961-modifierflags"
-      ]
+      ],
+      "anchor": "3539728"
     }
   ],
   "seeAlsoSections": [
@@ -535,6 +537,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -555,7 +558,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Apps can receive many different types of events, including touch events, motion events, remote-control events, and press events. Touch events are the most common and are delivered to the view in which the touch originally occurred. Motion events are UIKit triggered and are separate from the motion events reported by the Core Motion framework. Remote-control events allow a responder object to receive commands from an external accessory or headset so that it can manage manage audio and video—for example, playing a video or skipping to the next audio track. Press events represent interactions with a game controller, AppleTV remote, or other device that has physical buttons. You can determine the type of an event using the "
+              "text": "Apps can receive many different types of events, including touch events, motion events, remote-control events, and press events. Touch events are the most common and are delivered to the view in which the touch originally occurred. Motion events are UIKit triggered and are separate from the motion events reported by the Core Motion framework. Remote-control events allow a responder object to receive commands from an external accessory or headset so that it can manage audio and video—for example, playing a video or skipping to the next audio track. Press events represent interactions with a game controller, AppleTV remote, or other device that has physical buttons. You can determine the type of an event using the "
             },
             {
               "type": "reference",
@@ -660,7 +663,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

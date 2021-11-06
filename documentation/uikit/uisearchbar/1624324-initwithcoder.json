@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates a search bar from data in a given unarchiver."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -35,20 +41,28 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UISearchBar(im)initWithCoder:",
+    "parent": {
+      "title": "UISearchBar"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -152,6 +166,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uisearchbar/1624324-initwithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a search bar from data in a given unarchiver."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -170,6 +190,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uisearchbar/1624269-initwithframe",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a search bar with a specified frame."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -253,14 +279,37 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "coder",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "An unarchiver object."
+                }
+              ]
+            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

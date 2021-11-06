@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Unified type information for files and data transfer."
+      "text": "Provide uniform type identifiers (UTI) to identify types for files and data transfer."
     }
   ],
   "documentVersion": 0,
@@ -27,33 +27,38 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,6 +125,20 @@
       "role": "symbol",
       "url": "/documentation/uniformtypeidentifiers/uttypeitem"
     },
+    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers": {
+      "title": "System Declared Uniform Type Identifiers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Common system declared types."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uniformtypeidentifiers/defining_file_and_data_types_for_your_app": {
       "title": "Defining File and Data Types for Your App",
       "type": "topic",
@@ -130,7 +149,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Declare Uniform Type Identifiers to support your app’s proprietary data formats."
+          "text": "Declare uniform type identifiers to support your app’s proprietary data formats."
         }
       ]
     },
@@ -144,17 +163,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that represents a type of data to load, send or receive. "
+          "text": "An object that represents a type of data to load, send, or receive. "
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uniformtypeidentifiers_constants": {
-      "title": "UniformTypeIdentifiers Constants",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uniformtypeidentifiers_constants",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/uniformtypeidentifiers/uniformtypeidentifiers_constants"
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -169,22 +180,18 @@
       "kind": "taskGroup",
       "title": "Essentials",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/defining_file_and_data_types_for_your_app"
-      ]
+      ],
+      "anchor": "3590375"
     },
     {
       "kind": "taskGroup",
       "title": "Uniform Type Identifiers",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Reference",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uniformtypeidentifiers_constants"
-      ]
+      ],
+      "anchor": "3587584"
     }
   ],
   "primaryContentSections": [
@@ -202,7 +209,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The Uniform Type Identifiers framework provides a collection of common types, and maps them to MIME and file types. Use these types to describe file formats or in-memory data for transfer; for example, transfering data to or from the pasteboard. You can also use these types to identify other resources, such as directories, volumes, or packages."
+              "text": "The uniform type identifiers framework provides a collection of common types and maps them to MIME and file types. Use these types to describe file formats or in-memory data for transfer — for example, transfering data to or from the pasteboard. You can also use these types to identify other resources, such as directories, volumes, or packages."
             }
           ]
         },
@@ -249,7 +256,7 @@
             },
             {
               "type": "reference",
-              "isActive": false,
+              "isActive": true,
               "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttypecontent"
             },
             {
@@ -262,7 +269,7 @@
             },
             {
               "type": "text",
-              "text": ") that implies the type can be document. "
+              "text": ") that implies the type can be a document. "
             },
             {
               "type": "reference",
@@ -292,7 +299,7 @@
             },
             {
               "type": "reference",
-              "isActive": false,
+              "isActive": true,
               "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttypeitem"
             },
             {
@@ -305,7 +312,7 @@
             },
             {
               "type": "text",
-              "text": ") that implies the type is representable in the filesystem."
+              "text": ") that implies the type is representable in the file system."
             }
           ]
         },
@@ -321,7 +328,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

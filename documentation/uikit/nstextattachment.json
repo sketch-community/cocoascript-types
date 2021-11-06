@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The values for the attachment attributes of attributed strings and related objects."
+      "text": "The values for the attachment characteristics of attributed strings and related objects."
     }
   ],
   "documentVersion": 0,
@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_storage"
+        "doc://com.apple.documentation/documentation/uikit/textkit"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
@@ -42,30 +42,35 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)NSTextAttachment",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -102,10 +107,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/text_storage": {
-      "title": "Text Storage",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage",
-      "url": "/documentation/uikit/text_storage",
+    "doc://com.apple.documentation/documentation/uikit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit",
+      "url": "/documentation/uikit/textkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -173,6 +178,50 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nstextview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextattachmentviewprovider": {
+      "title": "NSTextAttachmentViewProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextattachmentviewprovider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextattachmentviewprovider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A container object that associates a text attachment at a particular document location with a view object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextattachmentlayout": {
+      "title": "NSTextAttachmentLayout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextattachmentlayout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextattachmentlayout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of methods that define the interface to attachment objects from a text layout manager."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextlocation": {
+      "title": "NSTextLocation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextlocation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextlocation"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextrange": {
+      "title": "NSTextRange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextrange"
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
@@ -328,7 +377,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An image that represents the text attachment contents."
+          "text": "An instance of the relevant image class that represents the contents of the text attachment object."
         }
       ]
     },
@@ -343,6 +392,48 @@
         {
           "type": "text",
           "text": "The text attachment’s file wrapper."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextattachment/3857584-allowstextattachmentview": {
+      "title": "allowsTextAttachmentView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextattachment/3857584-allowstextattachmentview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextattachment/3857584-allowstextattachmentview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines whether the text attachment uses text attachment views."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextattachment/3857588-usestextattachmentview": {
+      "title": "usesTextAttachmentView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextattachment/3857588-usestextattachmentview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextattachment/3857588-usestextattachmentview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the text attachment uses text attachment views."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextattachment/3857585-linelayoutpadding": {
+      "title": "lineLayoutPadding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextattachment/3857585-linelayoutpadding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextattachment/3857585-linelayoutpadding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The layout padding before and after the text attachment bounds."
         }
       ]
     },
@@ -374,6 +465,54 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/nstextattachment/3857586-registertextattachmentviewprovid": {
+      "title": "registerTextAttachmentViewProviderClass:forFileType:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextattachment/3857586-registertextattachmentviewprovid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextattachment/3857586-registertextattachmentviewprovid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registers a specific file type with the attachment view provider."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "registerTextAttachmentViewProviderClass:forFileType:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextattachment/3857587-textattachmentviewproviderclassf": {
+      "title": "textAttachmentViewProviderClassForFileType:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextattachment/3857587-textattachmentviewproviderclassf",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextattachment/3857587-textattachmentviewproviderclassf",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the text attachment view provider class, if any, for the file type you specify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "textAttachmentViewProviderClassForFileType:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/nstextattachment": {
       "title": "NSTextAttachment",
       "type": "topic",
@@ -384,7 +523,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The values for the attachment attributes of attributed strings and related objects."
+          "text": "The values for the attachment characteristics of attributed strings and related objects."
         }
       ]
     },
@@ -394,16 +533,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -421,7 +550,8 @@
       "type": "conformsTo",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nssecurecoding",
-        "doc://com.apple.documentation/documentation/uikit/nstextattachmentcontainer"
+        "doc://com.apple.documentation/documentation/uikit/nstextattachmentcontainer",
+        "doc://com.apple.documentation/documentation/uikit/nstextattachmentlayout"
       ]
     }
   ],
@@ -433,38 +563,56 @@
         "doc://com.apple.documentation/documentation/appkit/nstextattachment/1508373-initwithfilewrapper",
         "doc://com.apple.documentation/documentation/uikit/nstextattachment/1508374-initwithdata",
         "doc://com.apple.documentation/documentation/uikit/nstextattachment/3327290-textattachmentwithimage"
-      ]
+      ],
+      "anchor": "1665990"
     },
     {
       "kind": "taskGroup",
-      "title": "Defining the Contents",
+      "title": "Defining the Attachment’s Contents",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nstextattachment/1508394-bounds",
         "doc://com.apple.documentation/documentation/uikit/nstextattachment/1508401-contents",
         "doc://com.apple.documentation/documentation/uikit/nstextattachment/1508416-filetype",
         "doc://com.apple.documentation/documentation/uikit/nstextattachment/1508378-image",
-        "doc://com.apple.documentation/documentation/uikit/nstextattachment/1508398-filewrapper"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/nstextattachment/1508398-filewrapper",
+        "doc://com.apple.documentation/documentation/uikit/nstextattachment/3857584-allowstextattachmentview",
+        "doc://com.apple.documentation/documentation/uikit/nstextattachment/3857588-usestextattachmentview",
+        "doc://com.apple.documentation/documentation/uikit/nstextattachment/3857585-linelayoutpadding"
+      ],
+      "anchor": "1666042"
     },
     {
       "kind": "taskGroup",
       "title": "Setting the Attachment Cell",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nstextattachment/1508413-attachmentcell"
-      ]
+      ],
+      "anchor": "1666119"
     },
     {
       "kind": "taskGroup",
       "title": "Constants",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/1508411-attachment_character"
-      ]
+      ],
+      "anchor": "1666155"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Convenience Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/nstextattachment/3857586-registertextattachmentviewprovid",
+        "doc://com.apple.documentation/documentation/uikit/nstextattachment/3857587-textattachmentviewproviderclassf"
+      ],
+      "anchor": "3865837"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/nstextattachmentcontainer"
+        "doc://com.apple.documentation/documentation/uikit/nstextattachmentcontainer",
+        "doc://com.apple.documentation/documentation/uikit/nstextattachmentviewprovider",
+        "doc://com.apple.documentation/documentation/uikit/nstextattachmentlayout"
       ],
       "title": "Attachments",
       "generated": true
@@ -504,6 +652,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -534,7 +683,7 @@
             },
             {
               "type": "text",
-              "text": " class cluster uses text attachment objects as the values for attachment attributes (stored in the attributed string under the key named "
+              "text": " class uses text attachment objects as the values for attachment attributes (stored in the attributed string under the "
             },
             {
               "type": "reference",
@@ -543,7 +692,7 @@
             },
             {
               "type": "text",
-              "text": "). "
+              "text": " key). "
             }
           ]
         },
@@ -570,7 +719,7 @@
             },
             {
               "type": "text",
-              "text": " object, which in turn holds the contents of the attached file. The properties of this class configure the appearance of the text attachment in your interface. In macOS, the text attachment also uses a cell object conforming to the "
+              "text": " object, which in turn holds the contents of the attached file. The properties of this class configure the appearance of the text attachment in your interface. In macOS, the text attachment also uses a cell object that conforms to the "
             },
             {
               "type": "reference",
@@ -579,16 +728,7 @@
             },
             {
               "type": "text",
-              "text": " protocol to draw and handle mouse events. "
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "For more information about text attachments, see the "
+              "text": " protocol to draw the image that represents the text and handles mouse events. For more information about text attachments, see the "
             },
             {
               "type": "reference",
@@ -609,12 +749,57 @@
               "text": "."
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In macOS 12 and iOS 15 and later, "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nstextattachmentviewprovider"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nstextattachmentlayout"
+            },
+            {
+              "type": "text",
+              "text": " provide additional capabilities to represent document locations in terms of an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nstextlocation"
+            },
+            {
+              "type": "text",
+              "text": " or an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nstextrange"
+            },
+            {
+              "type": "text",
+              "text": ", and provide support for view-based text attachments."
+            }
+          ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

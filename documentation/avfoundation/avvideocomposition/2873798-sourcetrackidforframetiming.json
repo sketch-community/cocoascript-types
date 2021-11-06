@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A value that indicates whether frame timing for the video composition is derived from the source's asset track."
+      "text": "An identifier of the source track from which the video composition derives frame timing."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVVideoComposition(py)sourceTrackIDForFrameTiming",
+    "parent": {
+      "title": "AVVideoComposition"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -121,13 +129,7 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1388013-frameduration",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocomposition/1388013-frameduration",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A time interval for which the video composition should render composed video frames."
-        }
-      ]
+      "url": "/documentation/avfoundation/avvideocomposition/1388013-frameduration"
     },
     "doc://com.apple.documentation/documentation/coremedia/cmpersistenttrackid": {
       "title": "CMPersistentTrackID",
@@ -136,90 +138,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/coremedia/cmpersistenttrackid"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1388705-rendersize": {
-      "title": "renderSize",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1388705-rendersize",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocomposition/1388705-rendersize",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The size at which the video composition should render."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1615786-renderscale": {
-      "title": "renderScale",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1615786-renderscale",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocomposition/1615786-renderscale",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The scale at which the video composition should render."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1389211-instructions": {
-      "title": "instructions",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1389211-instructions",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocomposition/1389211-instructions",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The video composition instructions."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/1386654-avvideocompositioninstruction": {
-      "title": "AVVideoCompositionInstruction",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/1386654-avvideocompositioninstruction",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/1386654-avvideocompositioninstruction",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Methods you can implement to represent operations to be performed by a compositor."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1387030-animationtool": {
-      "title": "animationTool",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1387030-animationtool",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocomposition/1387030-animationtool",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A video composition tool to use with Core Animation in offline rendering."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1389622-customvideocompositorclass": {
-      "title": "customVideoCompositorClass",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1389622-customvideocompositorclass",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocomposition/1389622-customvideocompositorclass",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A custom compositor class to use."
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/2873798-sourcetrackidforframetiming": {
       "title": "sourceTrackIDForFrameTiming",
@@ -231,49 +149,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A value that indicates whether frame timing for the video composition is derived from the source's asset track."
+          "text": "An identifier of the source track from which the video composition derives frame timing."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1643235-colorprimaries": {
-      "title": "colorPrimaries",
+    "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/3750318-sourcesampledatatrackids": {
+      "title": "sourceSampleDataTrackIDs",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1643235-colorprimaries",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/3750318-sourcesampledatatrackids",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocomposition/1643235-colorprimaries",
+      "url": "/documentation/avfoundation/avvideocomposition/3750318-sourcesampledatatrackids",
       "abstract": [
         {
           "type": "text",
-          "text": "The color primaries used for video composition."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1643230-colortransferfunction": {
-      "title": "colorTransferFunction",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1643230-colortransferfunction",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocomposition/1643230-colortransferfunction",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The transfer function used for video composition."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1643236-colorycbcrmatrix": {
-      "title": "colorYCbCrMatrix",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1643236-colorycbcrmatrix",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocomposition/1643236-colorycbcrmatrix",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The YCbCr matrix used for video composition."
+          "text": "The identifiers of source sample data tracks in the composition that the compositor requires to compose frames."
         }
       ]
     },
@@ -288,18 +178,9 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1388013-frameduration",
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1388705-rendersize",
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1615786-renderscale",
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1389211-instructions",
-        "doc://com.apple.documentation/documentation/avfoundation/1386654-avvideocompositioninstruction",
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1387030-animationtool",
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1389622-customvideocompositorclass",
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1643235-colorprimaries",
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1643230-colortransferfunction",
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1643236-colorycbcrmatrix"
+        "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/3750318-sourcesampledatatrackids"
       ],
-      "title": "Configuring Video Composition Properties",
+      "title": "Identifying Source Tracks",
       "generated": true
     }
   ],
@@ -341,6 +222,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -371,7 +253,7 @@
             },
             {
               "type": "text",
-              "text": " property. Otherwise the frame timing for the video composition is derived from the source asset's track with the corresponding ID."
+              "text": " property. Otherwise the frame timing for the video composition is derived from the source asset’s track with the corresponding ID."
             }
           ]
         }
@@ -379,7 +261,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

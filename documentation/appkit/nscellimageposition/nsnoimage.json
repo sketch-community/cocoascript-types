@@ -12,6 +12,13 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
         "doc://com.apple.documentation/documentation/appkit/views_and_controls",
+        "doc://com.apple.documentation/documentation/appkit/nscontrol",
+        "doc://com.apple.documentation/documentation/appkit/nscellimageposition"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls",
         "doc://com.apple.documentation/documentation/appkit/nscell",
         "doc://com.apple.documentation/documentation/appkit/nscellimageposition"
       ],
@@ -43,15 +50,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@E@NSCellImagePosition@NSNoImage",
+    "parent": {
+      "title": "NSCellImagePosition"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -94,10 +104,10 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/appkit/nscell": {
-      "title": "NSCell",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscell",
-      "url": "/documentation/appkit/nscell",
+    "doc://com.apple.documentation/documentation/appkit/nscontrol": {
+      "title": "NSControl",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol",
+      "url": "/documentation/appkit/nscontrol",
       "type": "topic",
       "kind": "symbol",
       "role": "symbol"
@@ -112,9 +122,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants for specifying the position of a button’s image relative to its title. "
+          "text": "A constant for specifying the position of a button’s image relative to its title. "
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscell": {
+      "title": "NSCell",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscell",
+      "url": "/documentation/appkit/nscell",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/appkit/nsbutton": {
       "title": "NSButton",
@@ -124,6 +142,132 @@
       "kind": "symbol",
       "role": "symbol"
     },
+    "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsnoimage": {
+      "title": "NSNoImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsnoimage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscellimageposition/nsnoimage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The cell doesn’t display an image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsimageonly": {
+      "title": "NSImageOnly",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsimageonly",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscellimageposition/nsimageonly",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The cell displays an image but not a title."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsimageleading": {
+      "title": "NSImageLeading",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsimageleading",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscellimageposition/nsimageleading",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The image is on the title’s leading edge."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsimagetrailing": {
+      "title": "NSImageTrailing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsimagetrailing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscellimageposition/nsimagetrailing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The image is on the title’s trailing edge."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsimageleft": {
+      "title": "NSImageLeft",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsimageleft",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscellimageposition/nsimageleft",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The image is to the left of the title."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsimageright": {
+      "title": "NSImageRight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsimageright",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscellimageposition/nsimageright",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The image is to the right of the title."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsimagebelow": {
+      "title": "NSImageBelow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsimagebelow",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscellimageposition/nsimagebelow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The image is below the title."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsimageabove": {
+      "title": "NSImageAbove",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsimageabove",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscellimageposition/nsimageabove",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The image is above the title."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsimageoverlaps": {
+      "title": "NSImageOverlaps",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsimageoverlaps",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscellimageposition/nsimageoverlaps",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The image overlaps the title."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -132,6 +276,22 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsimageonly",
+        "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsimageleading",
+        "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsimagetrailing",
+        "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsimageleft",
+        "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsimageright",
+        "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsimagebelow",
+        "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsimageabove",
+        "doc://com.apple.documentation/documentation/appkit/nscellimageposition/nsimageoverlaps"
+      ],
+      "title": "Positioning a Control’s Image",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -158,7 +318,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -30,8 +30,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -66,31 +66,17 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/about_the_asset_model": {
-      "title": "About the Asset Model",
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously": {
+      "title": "Loading Media Data Asynchronously",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/about_the_asset_model",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously",
       "kind": "article",
       "role": "article",
-      "url": "/documentation/avfoundation/media_assets_and_metadata/about_the_asset_model",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously",
       "abstract": [
         {
           "type": "text",
-          "text": "Understand how you use assets as the building blocks for various media use cases."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avasset": {
-      "title": "AVAsset",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasset",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An abstract class that models timed audiovisual media."
+          "text": "Simplify asynchronous property loading using language-level concurrency features."
         }
       ]
     },
@@ -104,7 +90,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that provides the track-level interface to inspect an asset’s media tracks."
+          "text": "An object that models a track of media that an asset contains."
         }
       ]
     },
@@ -118,7 +104,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An asset subclass used to initialize an asset from a local or remote URL."
+          "text": "An asset that represents media at a local or remote URL."
         }
       ]
     },
@@ -132,7 +118,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A protocol you use to load an asset’s or asset track’s media and metadata without blocking the calling thread."
+          "text": "A protocol for loading the media and metadata of an asset or asset track without blocking the calling thread."
         }
       ]
     },
@@ -146,7 +132,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An asset whose duration the system can extend without modifying its existing media data."
+          "text": "An asset with a duration that the system can extend without modifying its existing media data."
         }
       ]
     },
@@ -174,7 +160,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that periodically checks whether the system added new fragments to a fragmented asset."
+          "text": "An object that periodically checks whether the system adds new fragments to a fragmented asset."
         }
       ]
     },
@@ -202,7 +188,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Retrieve and filter all of the metadata associated with an asset."
+          "text": "Retrieve and filter all of the metadata for an asset."
         }
       ]
     },
@@ -216,7 +202,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A metadata item associated with an audiovisual asset or one of its tracks."
+          "text": "A metadata item for an audiovisual asset or one of its tracks."
         }
       ]
     },
@@ -230,7 +216,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A mutable metadata item associated with an audiovisual asset or with one of its tracks."
+          "text": "A mutable metadata item for an audiovisual asset or for one of its tracks."
         }
       ]
     },
@@ -244,7 +230,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A value that defines a metadata format."
+          "text": "A structure that defines metadata formats."
         }
       ]
     },
@@ -259,20 +245,6 @@
         {
           "type": "text",
           "text": "An object that filters selected information from a metadata item."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitemvaluerequest": {
-      "title": "AVMetadataItemValueRequest",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitemvaluerequest",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataitemvaluerequest",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object used to respond to a request to load the value of a metadata item."
         }
       ]
     },
@@ -300,7 +272,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that transcodes the contents of an asset source object to create an output of the form described by a specified export preset."
+          "text": "An object that transcodes the contents of an asset in a format that you specify using an export preset."
         }
       ]
     },
@@ -342,7 +314,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Methods you can implement to handle resource loading requests coming from a URL asset. "
+          "text": "Methods you can implement to handle resource-loading requests coming from a URL asset. "
         }
       ]
     },
@@ -356,7 +328,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that encapsulates information about a resource request issued by a resource loader object."
+          "text": "An object that encapsulates information about a resource request from a resource loader object."
         }
       ]
     },
@@ -370,7 +342,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that encapsulates information about a resource request issued by a resource loader to renew a previously issued request."
+          "text": "An object that encapsulates information about a resource request from a resource loader to renew a previously issued request."
         }
       ]
     },
@@ -384,7 +356,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that contains information about the originator of a loading request."
+          "text": "An object that contains information about the originator of a resource-loading request."
         }
       ]
     },
@@ -398,7 +370,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to request data from a resource referenced by an asset resource loading request."
+          "text": "An object for requesting data from a resource that an asset resource-loading request references."
         }
       ]
     },
@@ -412,7 +384,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A query used to get essential information about a resource referenced by an asset resource loading request."
+          "text": "A query for retrieving essential information about a resource that an asset resource-loading request references."
         }
       ]
     },
@@ -427,6 +399,20 @@
         {
           "type": "text",
           "text": "Read and write media sample data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/caption_authoring": {
+      "title": "Caption Authoring",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/caption_authoring",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/caption_authoring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create captions and subtitles in industry-standard formats."
         }
       ]
     },
@@ -454,7 +440,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A value that describes attributes of a media sample for consideration when resynchronizing a decoder."
+          "text": "A structure that describes the attributes of media samples to consider when resynchronizing a decoder."
         }
       ]
     },
@@ -482,7 +468,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": " A structure that describes the independent decodability of audio samples."
+          "text": "A structure that describes the independent decodability of audio samples."
         }
       ]
     },
@@ -496,7 +482,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A structure indicating the offset and length of storage occupied by a media sample or its chunk."
+          "text": "A structure that indicates the offset and length of storage for a media sample or its chunk."
         }
       ]
     },
@@ -538,7 +524,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The options for specifying media type characteristics."
+          "text": "A structure that defines media data characteristics."
         }
       ]
     },
@@ -552,7 +538,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A uniform type identifier for various file formats."
+          "text": "The uniform type identifiers for various file formats."
         }
       ]
     },
@@ -580,17 +566,31 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that specifies a set of parameters for configuring objects that use output settings dictionaries."
+          "text": "An object that builds audio and video output settings dictionaries."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings": {
+    "doc://com.apple.documentation/documentation/avfoundation/1390116-avmakerectwithaspectratioinsider": {
+      "title": "AVMakeRectWithAspectRatioInsideRect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/1390116-avmakerectwithaspectratioinsider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/1390116-avmakerectwithaspectratioinsider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a scaled rectangle that maintains the specified aspect ratio within a bounding rectangle."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/video_settings": {
       "title": "Video Settings",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/video_settings",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/avfoundation/avassetwriterinput/video_settings",
+      "url": "/documentation/avfoundation/avcapturephotosettings/video_settings",
       "abstract": [
         {
           "type": "text",
@@ -621,12 +621,20 @@
     }
   },
   "diffAvailability": {
+    "minor": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "13.1",
+        "13.2 beta 1"
+      ]
+    },
     "major": {
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+        "13.0",
+        "13.2 beta 1"
       ]
     }
   },
@@ -635,12 +643,12 @@
       "kind": "taskGroup",
       "title": "Assets",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/about_the_asset_model",
-        "doc://com.apple.documentation/documentation/avfoundation/avasset",
+        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously",
         "doc://com.apple.documentation/documentation/avfoundation/avassettrack",
         "doc://com.apple.documentation/documentation/avfoundation/avurlasset",
         "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading"
-      ]
+      ],
+      "anchor": "3697447"
     },
     {
       "kind": "taskGroup",
@@ -650,7 +658,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avfragmentedassettrack",
         "doc://com.apple.documentation/documentation/avfoundation/avfragmentedassetminder",
         "doc://com.apple.documentation/documentation/avfoundation/avfragmentminding"
-      ]
+      ],
+      "anchor": "3643892"
     },
     {
       "kind": "taskGroup",
@@ -660,9 +669,9 @@
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataformat",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataitemfilter",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataitemvaluerequest"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataitemfilter"
+      ],
+      "anchor": "3643898"
     },
     {
       "kind": "taskGroup",
@@ -670,14 +679,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/exporting_video_to_alternative_formats",
         "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession"
-      ]
+      ],
+      "anchor": "3643895"
     },
     {
       "kind": "taskGroup",
       "title": "Image Generation",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetimagegenerator"
-      ]
+      ],
+      "anchor": "3643900"
     },
     {
       "kind": "taskGroup",
@@ -690,14 +701,24 @@
         "doc://com.apple.documentation/documentation/avfoundation/avassetresourceloadingrequestor",
         "doc://com.apple.documentation/documentation/avfoundation/avassetresourceloadingdatarequest",
         "doc://com.apple.documentation/documentation/avfoundation/avassetresourceloadingcontentinformationrequest"
-      ]
+      ],
+      "anchor": "3698272"
     },
     {
       "kind": "taskGroup",
       "title": "Reading and Writing",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing"
-      ]
+      ],
+      "anchor": "3643897"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Captions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/caption_authoring"
+      ],
+      "anchor": "3760740"
     },
     {
       "kind": "taskGroup",
@@ -709,7 +730,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avsamplecursoraudiodependencyinfo",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorstoragerange",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorchunkinfo"
-      ]
+      ],
+      "anchor": "3643927"
     },
     {
       "kind": "taskGroup",
@@ -720,12 +742,14 @@
         "doc://com.apple.documentation/documentation/avfoundation/avfiletype",
         "doc://com.apple.documentation/documentation/avfoundation/avfiletypeprofile",
         "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/1390116-avmakerectwithaspectratioinsider",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/video_settings"
+      ],
+      "anchor": "2936461"
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

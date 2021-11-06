@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts",
+        "doc://com.apple.documentation/documentation/uikit/textkit",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager"
       ],
       [
@@ -44,30 +44,38 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)NSLayoutManager(py)usesDefaultHyphenation",
+    "parent": {
+      "title": "NSLayoutManager"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -104,10 +112,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts": {
-      "title": "Text Display and Fonts",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts",
-      "url": "/documentation/uikit/text_display_and_fonts",
+    "doc://com.apple.documentation/documentation/uikit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit",
+      "url": "/documentation/uikit/textkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -268,7 +276,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the layout manager aborts the layout for unusually long or suspicious input. "
+          "text": "A Boolean value that indicates whether the layout manager avoids laying out unusually long or suspicious input."
         }
       ]
     },
@@ -345,6 +353,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -410,7 +419,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

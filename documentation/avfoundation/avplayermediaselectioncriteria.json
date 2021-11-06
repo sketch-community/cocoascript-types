@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVPlayerMediaSelectionCriteria",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,14 +110,6 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayer": {
-      "title": "AVPlayer",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayer"
-    },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
       "type": "topic",
@@ -131,7 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates an initialized media selection criteria instance with the specified settings."
+          "text": "Creates media selection criteria with the preferred languages and media characteristics."
         }
       ],
       "fragments": [
@@ -152,6 +149,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/avfoundation/avplayermediaselectioncriteria/3042657-initwithprincipalmediacharacteri",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates media selection criteria with the principal media characteristics, and preferred languages and media characteristics."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -173,7 +176,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An array of preferred languages in the order of desirability."
+          "text": "An array of language identifiers in preferred order."
         }
       ]
     },
@@ -187,7 +190,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An array of preferred media characteristics in the order of desirability."
+          "text": "An array of media characteristics in preferred order."
         }
       ]
     },
@@ -197,7 +200,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayermediaselectioncriteria/3042658-principalmediacharacteristics",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayermediaselectioncriteria/3042658-principalmediacharacteristics"
+      "url": "/documentation/avfoundation/avplayermediaselectioncriteria/3042658-principalmediacharacteristics",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of media characteristics that are essential to select when choosing media with a particular characteristic."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/selecting_subtitles_and_alternative_audio_tracks": {
       "title": "Selecting Subtitles and Alternative Audio Tracks",
@@ -291,16 +300,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -318,7 +317,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avplayermediaselectioncriteria/1387627-initwithpreferredlanguages",
         "doc://com.apple.documentation/documentation/avfoundation/avplayermediaselectioncriteria/3042657-initwithprincipalmediacharacteri"
-      ]
+      ],
+      "anchor": "1668724"
     },
     {
       "kind": "taskGroup",
@@ -327,7 +327,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avplayermediaselectioncriteria/1388559-preferredlanguages",
         "doc://com.apple.documentation/documentation/avfoundation/avplayermediaselectioncriteria/1385734-preferredmediacharacteristics",
         "doc://com.apple.documentation/documentation/avfoundation/avplayermediaselectioncriteria/3042658-principalmediacharacteristics"
-      ]
+      ],
+      "anchor": "1668747"
     }
   ],
   "seeAlsoSections": [
@@ -377,6 +378,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -399,16 +401,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The languages and media characteristics of assets containing media selection options that an "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer"
-            },
-            {
-              "type": "text",
-              "text": " instance should attempt to select automatically when preparing and playing items. The languages and media characteristics are specified in the preferred order."
+              "text": "An instance of this object represents the languages and media characteristics of assets that contain media selection options that a player attempts to select automatically when preparing and playing items. It lists the languages and media characteristics in their preferred order."
             }
           ]
         }
@@ -416,7 +409,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The announcement, as a localized string."
+      "text": "The announcement as a localized string."
     }
   ],
   "documentVersion": 0,
@@ -11,41 +11,29 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/accessibility_notifcations_and_error_codes"
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitynotificationuserinfokey"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/accessibility_functions",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitynotificationuserinfokey"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accessibility",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitynotificationuserinfokey"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/accessibility_notifcations_and_error_codes"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/accessibility_functions",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitynotificationuserinfokey"
       ]
     ]
@@ -69,15 +57,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@NSAccessibilityAnnouncementKey",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -112,10 +100,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -128,27 +116,21 @@
       "role": "symbol",
       "url": "/documentation/appkit/nsaccessibility"
     },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/accessibility_notifcations_and_error_codes": {
-      "title": "Accessibility Notifcations and Error Codes",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/accessibility_notifcations_and_error_codes",
-      "url": "/documentation/appkit/nsaccessibility/accessibility_notifcations_and_error_codes",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibilitynotificationuserinfokey": {
       "title": "NSAccessibilityNotificationUserInfoKey",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitynotificationuserinfokey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitynotificationuserinfokey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The key used in the user info dictionary for notifications."
-        }
-      ]
+      "url": "/documentation/appkit/nsaccessibilitynotificationuserinfokey"
+    },
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/accessibility_functions": {
+      "title": "Accessibility Functions",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/accessibility_functions",
+      "url": "/documentation/appkit/accessibility_for_appkit/accessibility_functions",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/accessibility": {
       "title": "Accessibility",
@@ -164,55 +146,7 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprioritykey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprioritykey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A priority level that can help an assistive app determine how to handle the corresponding notification."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityuielementskey": {
-      "title": "NSAccessibilityUIElementsKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityuielementskey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityuielementskey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An array of elements that are associated with the notification."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityannouncementkey": {
-      "title": "NSAccessibilityAnnouncementKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityannouncementkey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityannouncementkey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The announcement, as a localized string."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitynotificationname": {
-      "title": "NSAccessibilityNotificationName",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitynotificationname",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitynotificationname",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The name of the notification."
-        }
-      ]
+      "url": "/documentation/appkit/nsaccessibilityprioritykey"
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -222,18 +156,6 @@
       "title": "Technologies"
     }
   },
-  "seeAlsoSections": [
-    {
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityuielementskey",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprioritykey",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitynotificationname",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitynotificationuserinfokey"
-      ],
-      "title": "Managing Notifications",
-      "generated": true
-    }
-  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -316,7 +238,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

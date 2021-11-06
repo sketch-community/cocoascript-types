@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An object that customizes the behavior of the large content viewer interactions."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -28,20 +34,25 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UILargeContentViewerInteractionDelegate",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -100,6 +111,12 @@
       "role": "symbol",
       "url": "/documentation/uikit/uilargecontentviewerinteractiondelegate/3183927-largecontentviewerinteraction",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs an action when the large content viewer gesture ends at the location of the specified item."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -119,6 +136,12 @@
       "role": "symbol",
       "url": "/documentation/uikit/uilargecontentviewerinteractiondelegate/3183928-largecontentviewerinteraction",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the large content viewer item for the specified interaction and location."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -138,6 +161,12 @@
       "role": "symbol",
       "url": "/documentation/uikit/uilargecontentviewerinteractiondelegate/3183929-viewcontrollerforlargecontentvie",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies which view controller should display the large content viewer."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -155,7 +184,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteraction",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uilargecontentviewerinteraction"
+      "url": "/documentation/uikit/uilargecontentviewerinteraction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interaction that enables a gesture to present the large content viewer for cases when supporting the largest dynamic type sizes isn’t appropriate."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteractiondelegate": {
       "title": "UILargeContentViewerInteractionDelegate",
@@ -163,7 +198,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteractiondelegate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uilargecontentviewerinteractiondelegate"
+      "url": "/documentation/uikit/uilargecontentviewerinteractiondelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that customizes the behavior of the large content viewer interactions."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem": {
       "title": "UILargeContentViewerItem",
@@ -171,7 +212,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uilargecontentvieweritem"
+      "url": "/documentation/uikit/uilargecontentvieweritem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods that provide details about how to display your custom content in the large content viewer."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -194,12 +241,13 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Instance Methods",
+      "title": "Customizing Large Content Viewer Interactions",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteractiondelegate/3183927-largecontentviewerinteraction",
         "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteractiondelegate/3183928-largecontentviewerinteraction",
         "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteractiondelegate/3183929-viewcontrollerforlargecontentvie"
-      ]
+      ],
+      "anchor": "3184674"
     }
   ],
   "seeAlsoSections": [
@@ -236,6 +284,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -243,7 +292,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

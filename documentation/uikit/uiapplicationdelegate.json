@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A set of methods that you use to manage shared behaviors for your app. "
+      "text": "A set of methods to manage shared behaviors for your app. "
     }
   ],
   "documentVersion": 0,
@@ -40,25 +40,30 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UIApplicationDelegate",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,39 +119,6 @@
           "text": "The centralized point of control and coordination for apps running in iOS. "
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application": {
-      "title": "application:didFinishLaunchingWithOptions:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplicationdelegate/1622921-application",
-      "required": false,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Tells the delegate that the launch process is almost done and the app is almost ready to run."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "application:didFinishLaunchingWithOptions:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621438-preferredinterfaceorientationfor": {
-      "title": "preferredInterfaceOrientationForPresentation",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621438-preferredinterfaceorientationfor",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiviewcontroller/1621438-preferredinterfaceorientationfor"
     },
     "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_foreground": {
       "title": "Preparing Your UI to Run in the Foreground",
@@ -233,6 +205,31 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application": {
+      "title": "application:didFinishLaunchingWithOptions:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/1622921-application",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the launch process is almost done and the app is almost ready to run."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:didFinishLaunchingWithOptions:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uiapplicationlaunchoptionskey": {
       "title": "UIApplicationLaunchOptionsKey",
       "type": "topic",
@@ -243,41 +240,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Keys used to access values in the launch options dictionary passed to your app at initialization time."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623053-applicationdidfinishlaunching": {
-      "title": "applicationDidFinishLaunching:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623053-applicationdidfinishlaunching",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplicationdelegate/1623053-applicationdidfinishlaunching",
-      "required": false,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Tells the delegate when the app has finished launching. Don’t use. Instead, use "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application"
-        },
-        {
-          "type": "text",
-          "text": "."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "applicationDidFinishLaunching:"
+          "text": "Keys you use to access values in the launch options dictionary that is passed to your app at initialization time."
         }
       ]
     },
@@ -291,7 +254,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted immediately after the app finishes launching."
+          "text": "A notification that posts immediately after the app finishes launching."
         }
       ]
     },
@@ -306,7 +269,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the configuration data for UIKit to use when creating a new scene. "
+          "text": "Retrieves the configuration data for UIKit to use when creating a new scene. "
         }
       ],
       "fragments": [
@@ -480,7 +443,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the app becomes active. "
+          "text": "A notification that posts when the app becomes active. "
         }
       ]
     },
@@ -494,7 +457,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the app enters the background."
+          "text": "A notification that posts when the app enters the background."
         }
       ]
     },
@@ -508,7 +471,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted shortly before an app leaves the background state on its way to becoming the active app."
+          "text": "A notification that posts shortly before an app leaves the background state on its way to becoming the active app."
         }
       ]
     },
@@ -522,7 +485,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the app is no longer active and loses focus."
+          "text": "A notification that posts when the app is no longer active and loses focus."
         }
       ]
     },
@@ -536,7 +499,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the app is about to terminate."
+          "text": "A notification that posts when the app is about to terminate."
         }
       ]
     },
@@ -650,7 +613,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the protected files become available for your code to access."
+          "text": "A notification that posts when the protected files become available for your code to access."
         }
       ]
     },
@@ -664,7 +627,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted shortly before protected files are locked down and become inaccessible."
+          "text": "A notification that posts shortly before protected files are locked down and become inaccessible."
         }
       ]
     },
@@ -678,7 +641,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the app receives a warning from the operating system about low memory availability."
+          "text": "A notification that posts when the app receives a warning from the operating system about low memory availability."
         }
       ]
     },
@@ -692,7 +655,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when there is a significant change in time, for example, change to a new day (midnight), carrier time update, and change to or from daylight savings time."
+          "text": "A notification that posts when there is a significant change in time, for example, change to a new day (midnight), carrier time update, and change to or from daylight savings time."
         }
       ]
     },
@@ -1116,7 +1079,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Called when the user selects a Home screen quick action for your app, except when you’ve intercepted the interaction in a launch method."
+          "text": "Tells the delegate that the user selected a Home screen quick action for your app, except when you’ve intercepted the interaction in a launch method."
         }
       ],
       "fragments": [
@@ -1166,7 +1129,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Called when your app should ask the user for access to his or her HealthKit data."
+          "text": "Tells the delegate when your app should ask the user for access to his or her HealthKit data."
         }
       ],
       "fragments": [
@@ -1215,7 +1178,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Keys used to access values in the options dictionary when opening a URL."
+          "text": "Keys you use to access values in the options dictionary when opening a URL."
         }
       ]
     },
@@ -1250,7 +1213,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationextensionpointidentifier",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiapplicationextensionpointidentifier"
+      "url": "/documentation/uikit/uiapplicationextensionpointidentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that identifies types of extensions."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiapplicationkeyboardextensionpointidentifier": {
       "title": "UIApplicationKeyboardExtensionPointIdentifier",
@@ -1277,7 +1246,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the object capable of handling the specified intent."
+          "text": "Asks the delegate for an intent handler capable of handling the specified intent."
         }
       ],
       "fragments": [
@@ -1351,7 +1320,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The orientation of the app's user interface."
+          "text": "Constants that specify the orientation of the app's user interface."
         }
       ]
     },
@@ -1365,7 +1334,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "These constants are mask bits for specifying a view controller’s supported interface orientations."
+          "text": "Constants that specify a view controller’s supported interface orientations."
         }
       ]
     },
@@ -1379,24 +1348,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "This exception is thrown if a view controller or the app returns "
-        },
-        {
-          "type": "codeVoice",
-          "code": "0"
-        },
-        {
-          "type": "text",
-          "text": " instead of a valid set of supported interface orientation values. It is also thrown if the orientation returned by a view controller’s "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621438-preferredinterfaceorientationfor"
-        },
-        {
-          "type": "text",
-          "text": " method does not match one of the view controller’s supported orientations."
+          "text": "An exception that’s thrown if a view controller or the app returns an invalid set of supported interface orientations. "
         }
       ]
     },
@@ -1415,6 +1367,31 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623053-applicationdidfinishlaunching": {
+      "title": "applicationDidFinishLaunching:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623053-applicationdidfinishlaunching",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/1623053-applicationdidfinishlaunching",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate when the app has finished launching. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "applicationDidFinishLaunching:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/deprecated_symbols": {
       "title": "Deprecated Symbols",
       "type": "topic",
@@ -1429,6 +1406,25 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/3783574-applicationshouldautomaticallylo": {
+      "title": "applicationShouldAutomaticallyLocalizeKeyCommands:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/3783574-applicationshouldautomaticallylo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/3783574-applicationshouldautomaticallylo",
+      "required": false,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "applicationShouldAutomaticallyLocalizeKeyCommands:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate": {
       "title": "UIApplicationDelegate",
       "type": "topic",
@@ -1439,7 +1435,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of methods that you use to manage shared behaviors for your app. "
+          "text": "A set of methods to manage shared behaviors for your app. "
         }
       ]
     },
@@ -1463,16 +1459,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -1501,9 +1487,9 @@
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623032-application",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationlaunchoptionskey",
-        "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623053-applicationdidfinishlaunching",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdidfinishlaunchingnotification"
-      ]
+      ],
+      "anchor": "2927041"
     },
     {
       "kind": "taskGroup",
@@ -1511,7 +1497,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/3197905-application",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/3197906-application"
-      ]
+      ],
+      "anchor": "3198654"
     },
     {
       "kind": "taskGroup",
@@ -1527,7 +1514,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiapplicationwillenterforegroundnotification",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationwillresignactivenotification",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationwillterminatenotification"
-      ]
+      ],
+      "anchor": "1656902"
     },
     {
       "kind": "taskGroup",
@@ -1541,7 +1529,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiapplicationprotecteddatawillbecomeunavailable",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdidreceivememorywarningnotification",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationsignificanttimechangenotification"
-      ]
+      ],
+      "anchor": "3199883"
     },
     {
       "kind": "taskGroup",
@@ -1557,7 +1546,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiapplicationstaterestorationtimestampkey",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationstaterestorationuserinterfaceidiomkey",
         "doc://com.apple.documentation/documentation/uikit/uistaterestorationviewcontrollerstoryboardkey"
-      ]
+      ],
+      "anchor": "1657087"
     },
     {
       "kind": "taskGroup",
@@ -1565,7 +1555,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622941-application",
         "doc://com.apple.documentation/documentation/uikit/uibackgroundfetchresult"
-      ]
+      ],
+      "anchor": "1657161"
     },
     {
       "kind": "taskGroup",
@@ -1574,7 +1565,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622958-application",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622962-application",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623013-application"
-      ]
+      ],
+      "anchor": "1657193"
     },
     {
       "kind": "taskGroup",
@@ -1585,21 +1577,24 @@
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622963-application",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622927-application",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622935-application"
-      ]
+      ],
+      "anchor": "1657290"
     },
     {
       "kind": "taskGroup",
       "title": "Interacting With WatchKit",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623041-application"
-      ]
+      ],
+      "anchor": "1657341"
     },
     {
       "kind": "taskGroup",
       "title": "Interacting With HealthKit",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622998-applicationshouldrequesthealthau"
-      ]
+      ],
+      "anchor": "1657359"
     },
     {
       "kind": "taskGroup",
@@ -1607,7 +1602,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623112-application",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationopenurloptionskey"
-      ]
+      ],
+      "anchor": "1657379"
     },
     {
       "kind": "taskGroup",
@@ -1616,21 +1612,24 @@
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623122-application",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationextensionpointidentifier",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationkeyboardextensionpointidentifier"
-      ]
+      ],
+      "anchor": "1657403"
     },
     {
       "kind": "taskGroup",
       "title": "Handling SiriKit Intents",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/3548063-application"
-      ]
+      ],
+      "anchor": "2888111"
     },
     {
       "kind": "taskGroup",
       "title": "Handling CloudKit Invitations",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/2206721-application"
-      ]
+      ],
+      "anchor": "2888119"
     },
     {
       "kind": "taskGroup",
@@ -1640,21 +1639,33 @@
         "doc://com.apple.documentation/documentation/uikit/uiinterfaceorientation",
         "doc://com.apple.documentation/documentation/uikit/uiinterfaceorientationmask",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationinvalidinterfaceorientationexception"
-      ]
+      ],
+      "anchor": "1657426"
     },
     {
       "kind": "taskGroup",
       "title": "Providing a Window for Storyboarding",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623056-window"
-      ]
+      ],
+      "anchor": "1657483"
     },
     {
       "kind": "taskGroup",
-      "title": "Deprecated Symbols",
+      "title": "Deprecated",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623053-applicationdidfinishlaunching",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/deprecated_symbols"
-      ]
+      ],
+      "anchor": "1657508"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/3783574-applicationshouldautomaticallylo"
+      ],
+      "anchor": "3785677"
     }
   ],
   "seeAlsoSections": [
@@ -1693,6 +1704,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -1843,7 +1855,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Life Cycle Management in iOS 12 and Earlier",
+          "text": "Life-Cycle Management in iOS 12 and Earlier",
           "anchor": "3222113"
         },
         {
@@ -1934,7 +1946,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

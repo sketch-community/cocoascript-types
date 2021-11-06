@@ -35,25 +35,30 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UITableViewCell",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -146,23 +151,24 @@
       "variants": [
         {
           "traits": [
-            "1x"
+            "2x"
           ],
           "size": {
-            "width": 1360,
-            "height": 1363
+            "width": 385,
+            "height": 392
           },
-          "url": "https://docs-assets.developer.apple.com/published/310a87e953/2c2d1f54-d155-4975-86bd-552625e7eac5.png"
+          "url": "https://docs-assets.developer.apple.com/published/54966b99b3/content-only@2x.png"
         },
         {
           "traits": [
-            "1x"
+            "dark",
+            "2x"
           ],
           "size": {
-            "width": 1360,
-            "height": 1363
+            "width": 385,
+            "height": 392
           },
-          "url": "https://docs-assets.developer.apple.com/published/2128ef91ee/a27538d0-bc9a-4972-aa83-8616889d7959.png"
+          "url": "https://docs-assets.developer.apple.com/published/6da9972ff1/content-only~dark@2x.png"
         }
       ],
       "alt": "Illustration showing the area of a cell by itself and with an accessory view and edit control. The content area of a cell shrinks as needed to accommodate the accessory view or edit controls.",
@@ -534,6 +540,34 @@
         {
           "kind": "identifier",
           "text": "updateConfigurationUsingState:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3750915-configurationupdatehandler": {
+      "title": "configurationUpdateHandler",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3750915-configurationupdatehandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/3750915-configurationupdatehandler",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A block for handling updates to the cell’s configuration using the current state.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcellconfigurationupdatehandler": {
+      "title": "UITableViewCellConfigurationUpdateHandler",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcellconfigurationupdatehandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcellconfigurationupdatehandler",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The type of block for handling updates to the cell’s configuration using the current state.  "
         }
       ]
     },
@@ -985,7 +1019,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The style for cells used as separators."
+          "text": "The style for cells to use as separators."
         }
       ]
     },
@@ -1286,16 +1320,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -1323,7 +1347,8 @@
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623276-initwithstyle",
         "doc://com.apple.documentation/documentation/uikit/uitableviewcellstyle",
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623220-initwithcoder"
-      ]
+      ],
+      "anchor": "1652991"
     },
     {
       "kind": "taskGroup",
@@ -1331,7 +1356,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623246-reuseidentifier",
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623223-prepareforreuse"
-      ]
+      ],
+      "anchor": "1653024"
     },
     {
       "kind": "taskGroup",
@@ -1342,7 +1368,8 @@
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623260-backgroundview",
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623226-selectedbackgroundview",
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623275-multipleselectionbackgroundview"
-      ]
+      ],
+      "anchor": "1653133"
     },
     {
       "kind": "taskGroup",
@@ -1355,7 +1382,8 @@
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623210-textlabel",
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623273-detailtextlabel",
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623270-imageview"
-      ]
+      ],
+      "anchor": "1653080"
     },
     {
       "kind": "taskGroup",
@@ -1363,8 +1391,11 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600587-configurationstate",
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600590-setneedsupdateconfiguration",
-        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600591-updateconfigurationusingstate"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600591-updateconfigurationusingstate",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3750915-configurationupdatehandler",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcellconfigurationupdatehandler"
+      ],
+      "anchor": "3618367"
     },
     {
       "kind": "taskGroup",
@@ -1375,7 +1406,8 @@
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623266-editingaccessorytype",
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623264-editingaccessoryview",
         "doc://com.apple.documentation/documentation/uikit/uitableviewcellaccessorytype"
-      ]
+      ],
+      "anchor": "1653209"
     },
     {
       "kind": "taskGroup",
@@ -1387,7 +1419,8 @@
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623255-setselected",
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623241-highlighted",
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623280-sethighlighted"
-      ]
+      ],
+      "anchor": "1653277"
     },
     {
       "kind": "taskGroup",
@@ -1399,7 +1432,8 @@
         "doc://com.apple.documentation/documentation/uikit/uitableviewcelleditingstyle",
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623211-showingdeleteconfirmation",
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623243-showsreordercontrol"
-      ]
+      ],
+      "anchor": "1653361"
     },
     {
       "kind": "taskGroup",
@@ -1408,7 +1442,8 @@
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/2897414-userinteractionenabledwhiledragg",
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/2897452-dragstatedidchange",
         "doc://com.apple.documentation/documentation/uikit/uitableviewcelldragstate"
-      ]
+      ],
+      "anchor": "2901069"
     },
     {
       "kind": "taskGroup",
@@ -1417,7 +1452,8 @@
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623240-willtransitiontostate",
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623274-didtransitiontostate",
         "doc://com.apple.documentation/documentation/uikit/uitableviewcellstatemask"
-      ]
+      ],
+      "anchor": "1653454"
     },
     {
       "kind": "taskGroup",
@@ -1428,7 +1464,8 @@
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623214-shouldindentwhileediting",
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623250-separatorinset",
         "doc://com.apple.documentation/documentation/uikit/uitableviewcellseparatorstyle"
-      ]
+      ],
+      "anchor": "1653498"
     },
     {
       "kind": "taskGroup",
@@ -1436,7 +1473,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623248-focusstyle",
         "doc://com.apple.documentation/documentation/uikit/uitableviewcellfocusstyle"
-      ]
+      ],
+      "anchor": "1681911"
     },
     {
       "kind": "taskGroup",
@@ -1455,7 +1493,8 @@
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623272-target",
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623206-editaction",
         "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623249-accessoryaction"
-      ]
+      ],
+      "anchor": "1653586"
     }
   ],
   "seeAlsoSections": [
@@ -1504,6 +1543,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -1746,7 +1786,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

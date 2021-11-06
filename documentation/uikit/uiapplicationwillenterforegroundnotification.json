@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Posted shortly before an app leaves the background state on its way to becoming the active app."
+      "text": "A notification that posts shortly before an app leaves the background state on its way to becoming the active app."
     }
   ],
   "documentVersion": 0,
@@ -49,25 +49,30 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@UIApplicationWillEnterForegroundNotification",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,11 +125,11 @@
     },
     "doc://com.apple.documentation/documentation/uikit/uiapplication": {
       "title": "UIApplication",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication",
-      "url": "/documentation/uikit/uiapplication",
       "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication",
       "kind": "symbol",
-      "role": "symbol"
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication"
     },
     "doc://com.apple.documentation/documentation/foundation": {
       "title": "Foundation",
@@ -293,7 +298,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the app becomes active. "
+          "text": "A notification that posts when the app becomes active. "
         }
       ]
     },
@@ -307,7 +312,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the app enters the background."
+          "text": "A notification that posts when the app enters the background."
         }
       ]
     },
@@ -321,7 +326,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted shortly before an app leaves the background state on its way to becoming the active app."
+          "text": "A notification that posts shortly before an app leaves the background state on its way to becoming the active app."
         }
       ]
     },
@@ -335,7 +340,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the app is no longer active and loses focus."
+          "text": "A notification that posts when the app is no longer active and loses focus."
         }
       ]
     },
@@ -349,7 +354,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the app is about to terminate."
+          "text": "A notification that posts when the app is about to terminate."
         }
       ]
     },
@@ -416,6 +421,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -447,8 +453,9 @@
               "text": " of the notification is the "
             },
             {
-              "type": "codeVoice",
-              "code": "UIApplication"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication"
             },
             {
               "type": "text",
@@ -468,7 +475,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

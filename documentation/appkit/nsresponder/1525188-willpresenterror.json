@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns a custom version of the supplied error object that is more suitable for presentation in alert sheets and dialogs."
+      "text": "Returns a custom version of the supplied error object that’s more suitable for presentation in alert sheets and dialogs."
     }
   ],
   "documentVersion": 0,
@@ -35,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSResponder(im)willPresentError:",
+    "parent": {
+      "title": "NSResponder"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -96,7 +99,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An abstract class that forms the basis of event and command processing in AppKit. "
+          "text": "An abstract class that forms the basis of event and command processing in AppKit."
         }
       ]
     },
@@ -107,30 +110,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nserror"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsresponder/1534705-presenterror": {
-      "title": "presentError:modalForWindow:delegate:didPresentSelector:contextInfo:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/1534705-presenterror",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsresponder/1534705-presenterror",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Presents an error alert to the user as a document-modal sheet attached to document window."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "presentError:modalForWindow:delegate:didPresentSelector:contextInfo:"
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsresponder/1531294-presenterror": {
       "title": "presentError:",
@@ -156,6 +135,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nsresponder/1534705-presenterror": {
+      "title": "presentError:modalForWindow:delegate:didPresentSelector:contextInfo:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/1534705-presenterror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsresponder/1534705-presenterror",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Presents an error alert to the user as a document-modal sheet attached to document window."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "presentError:modalForWindow:delegate:didPresentSelector:contextInfo:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nsresponder/1525188-willpresenterror": {
       "title": "willPresentError:",
       "type": "topic",
@@ -166,7 +169,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a custom version of the supplied error object that is more suitable for presentation in alert sheets and dialogs."
+          "text": "Returns a custom version of the supplied error object that’s more suitable for presentation in alert sheets and dialogs."
         }
       ],
       "fragments": [
@@ -276,7 +279,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The error object to be customized."
+                  "text": "The error object to customize."
                 }
               ]
             }
@@ -351,7 +354,7 @@
             },
             {
               "type": "text",
-              "text": " object to distinguish between errors whose presentation you want to customize and those you do not. Don’t make decisions based on the localized description, recovery suggestion, or recovery options because parsing localized text is problematic. "
+              "text": " object to distinguish between errors whose presentation you want to customize and those you don’t. Don’t make decisions based on the localized description, recovery suggestion, or recovery options because parsing localized text is problematic. "
             }
           ]
         },
@@ -360,7 +363,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The default implementation of this method simply returns "
+              "text": "The default implementation of this method returns "
             },
             {
               "type": "codeVoice",
@@ -368,7 +371,7 @@
             },
             {
               "type": "text",
-              "text": " unchanged. "
+              "text": " unchanged."
             }
           ]
         }
@@ -376,7 +379,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

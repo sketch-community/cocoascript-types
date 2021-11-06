@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Force an expression that was securely decoded to allow evaluation."
+      "text": "Forces a securely decoded expression to allow evaluation."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSExpression(im)allowEvaluation",
+    "parent": {
+      "title": "NSExpression"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -138,7 +146,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Evaluates an expression using a given object and context."
+          "text": "Evaluates an expression using a specified object and context."
         }
       ],
       "fragments": [
@@ -162,7 +170,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Force an expression that was securely decoded to allow evaluation."
+          "text": "Forces a securely decoded expression to allow evaluation."
         }
       ],
       "fragments": [
@@ -173,6 +181,34 @@
         {
           "kind": "identifier",
           "text": "allowEvaluation"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsexpression/1416488-falseexpression": {
+      "title": "falseExpression",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsexpression/1416488-falseexpression",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsexpression/1416488-falseexpression",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An expression to evalutate if a conditional expression’s predicate evaluates to false."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsexpression/1411874-trueexpression": {
+      "title": "trueExpression",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsexpression/1411874-trueexpression",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsexpression/1411874-trueexpression",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An expression to evalutate if a conditional expression’s predicate evaluates to true."
         }
       ]
     },
@@ -187,7 +223,9 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsexpression/1410363-expressionvaluewithobject"
+        "doc://com.apple.documentation/documentation/foundation/nsexpression/1410363-expressionvaluewithobject",
+        "doc://com.apple.documentation/documentation/foundation/nsexpression/1416488-falseexpression",
+        "doc://com.apple.documentation/documentation/foundation/nsexpression/1411874-trueexpression"
       ],
       "title": "Evaluating an Expression",
       "generated": true
@@ -225,6 +263,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -289,7 +328,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

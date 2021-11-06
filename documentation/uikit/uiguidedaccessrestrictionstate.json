@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The state of a restriction, either allow or deny."
+      "text": "Constants that describe the state of a restriction, either allow or deny."
     }
   ],
   "documentVersion": 0,
@@ -35,25 +35,30 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@T@UIGuidedAccessRestrictionState",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -140,6 +145,45 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiguidedaccessrestrictiondelegate/1621156-guidedaccessrestrictionwithident": {
+      "title": "guidedAccessRestrictionWithIdentifier:didChangeState:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiguidedaccessrestrictiondelegate/1621156-guidedaccessrestrictionwithident",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiguidedaccessrestrictiondelegate/1621156-guidedaccessrestrictionwithident",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the restriction associated with the identifier has changed state."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "guidedAccessRestrictionWithIdentifier:didChangeState:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiguidedaccessrestrictionstate": {
+      "title": "UIGuidedAccessRestrictionState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiguidedaccessrestrictionstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiguidedaccessrestrictionstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that describe the state of a restriction, either allow or deny."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -155,7 +199,17 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiguidedaccessrestrictionstate/uiguidedaccessrestrictionstateallow",
         "doc://com.apple.documentation/documentation/uikit/uiguidedaccessrestrictionstate/uiguidedaccessrestrictionstatedeny"
-      ]
+      ],
+      "anchor": "1625300"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiguidedaccessrestrictiondelegate/1621156-guidedaccessrestrictionwithident"
+      ],
+      "title": "Implementing Restrictions",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -220,6 +274,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -228,7 +283,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -70,25 +70,30 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UISceneDelegate",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -157,7 +162,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that represents one instance of your app's user interface."
+          "text": "An object that represents one instance of your app’s user interface."
         }
       ]
     },
@@ -583,6 +588,25 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3821025-scene": {
+      "title": "scene:restoreInteractionStateWithUserActivity:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3821025-scene",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiscenedelegate/3821025-scene",
+      "required": false,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "scene:restoreInteractionStateWithUserActivity:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uiwindowscene": {
       "title": "UIWindowScene",
       "type": "topic",
@@ -593,7 +617,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A specific type of scene that manages one or more windows for your app.  "
+          "text": "A scene that manages one or more windows for your app."
         }
       ]
     },
@@ -603,16 +627,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -643,7 +657,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3197914-scene",
         "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3197916-scenediddisconnect",
         "doc://com.apple.documentation/documentation/uikit/uisceneconnectionoptions"
-      ]
+      ],
+      "anchor": "3198962"
     },
     {
       "kind": "taskGroup",
@@ -651,7 +666,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3197918-scenewillenterforeground",
         "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3197915-scenedidbecomeactive"
-      ]
+      ],
+      "anchor": "3198956"
     },
     {
       "kind": "taskGroup",
@@ -659,14 +675,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3197919-scenewillresignactive",
         "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3197917-scenedidenterbackground"
-      ]
+      ],
+      "anchor": "3198958"
     },
     {
       "kind": "taskGroup",
       "title": "Opening URLs",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3238059-scene"
-      ]
+      ],
+      "anchor": "3239972"
     },
     {
       "kind": "taskGroup",
@@ -675,7 +693,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3238060-scene",
         "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3238056-scene",
         "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3238057-scene"
-      ]
+      ],
+      "anchor": "3239976"
     },
     {
       "kind": "taskGroup",
@@ -684,7 +703,16 @@
         "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/restoring_your_app_s_state",
         "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3238061-staterestorationactivityforscene",
         "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3238058-scene"
-      ]
+      ],
+      "anchor": "3239974"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3821025-scene"
+      ],
+      "anchor": "3829279"
     }
   ],
   "seeAlsoSections": [
@@ -722,6 +750,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -812,7 +841,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

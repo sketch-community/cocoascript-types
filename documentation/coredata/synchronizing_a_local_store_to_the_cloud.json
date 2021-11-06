@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Share data between a user’s devices using Core Data with CloudKit."
+      "text": "Share data between a user’s devices and other iCloud users."
     }
   ],
   "documentVersion": 0,
@@ -32,24 +32,29 @@
     "platforms": [
       {
         "name": "iOS",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
       },
       {
         "name": "Xcode",
-        "introducedAt": "11.0",
-        "current": "12.3"
+        "introducedAt": "13.0",
+        "current": "13.2"
       },
       {
         "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "introducedAt": "15.0",
+        "current": "15.2"
       }
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -84,13 +89,13 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "link-3314655": {
-      "title": "202: Using Core Data with CloudKit ",
+    "link-3835245": {
+      "title": "10015: Build Apps that Share Data Through CloudKit and Core Data ",
       "type": "topic",
-      "identifier": "link-3314655",
+      "identifier": "link-3835245",
       "kind": "article",
       "role": "link",
-      "url": "https://developer.apple.com/videos/play/wwdc19/202/"
+      "url": "https://developer.apple.com/videos/play/wwdc2021/10015/"
     },
     "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit": {
       "title": "Mirroring a Core Data Store with CloudKit",
@@ -116,7 +121,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Share data between a user’s devices using Core Data with CloudKit."
+          "text": "Share data between a user’s devices and other iCloud users."
         }
       ]
     },
@@ -130,7 +135,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A container that encapsulates the Core Data stack in your app and mirrors select persistent stores to a CloudKit private database."
+          "text": "A container that encapsulates the Core Data stack in your app, and mirrors select persistent stores to a CloudKit private database."
         }
       ]
     },
@@ -148,11 +153,11 @@
         }
       ]
     },
-    "https://docs-assets.developer.apple.com/published/78a040fc17/SynchronizingALocalStoreToTheCloud.zip": {
+    "https://docs-assets.developer.apple.com/published/3c1bd406dd/SynchronizingALocalStoreToTheCloud.zip": {
       "type": "download",
-      "identifier": "https://docs-assets.developer.apple.com/published/78a040fc17/SynchronizingALocalStoreToTheCloud.zip",
-      "checksum": "1e5a540b2b67f4477cd9ec04b22f0fb5f98ea539dd37d4e4d833647c27afbfc1530dcb37131aba795c8810db9d7a6c74c8b548ff7131320ae5d4e725c559d902",
-      "url": "https://docs-assets.developer.apple.com/published/78a040fc17/SynchronizingALocalStoreToTheCloud.zip"
+      "identifier": "https://docs-assets.developer.apple.com/published/3c1bd406dd/SynchronizingALocalStoreToTheCloud.zip",
+      "checksum": "1beb0e3dc2fc941b76761846fc1706ebd6bc3f8862a21072f7df749ae58cff3042bb11755ef1e030b9d889f126a0c0ce1ca620a3599343d88cef0ff4b1ad1554",
+      "url": "https://docs-assets.developer.apple.com/published/3c1bd406dd/SynchronizingALocalStoreToTheCloud.zip"
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -167,7 +172,7 @@
       "overridingTitle": "Download",
       "type": "reference",
       "isActive": true,
-      "identifier": "https://docs-assets.developer.apple.com/published/78a040fc17/SynchronizingALocalStoreToTheCloud.zip"
+      "identifier": "https://docs-assets.developer.apple.com/published/3c1bd406dd/SynchronizingALocalStoreToTheCloud.zip"
     }
   },
   "seeAlsoSections": [
@@ -199,12 +204,12 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "This sample code project is associated with WWDC 2019 session "
+                  "text": "This sample code project is associated with the WWDC21 session "
                 },
                 {
                   "type": "link",
-                  "title": "202: Using Core Data with CloudKit ",
-                  "destination": "https://developer.apple.com/videos/play/wwdc19/202/"
+                  "title": "10015: Build Apps that Share Data Through CloudKit and Core Data ",
+                  "destination": "https://developer.apple.com/videos/play/wwdc2021/10015/"
                 },
                 {
                   "type": "text",
@@ -220,7 +225,7 @@
           "level": 3,
           "type": "heading",
           "text": "Configure the Sample Code Project",
-          "anchor": "3376623"
+          "anchor": "3878741"
         },
         {
           "type": "paragraph",
@@ -241,7 +246,51 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "Set your bundle identifier. In the project settings, under General, in the Identity section, set the Bundle Identifier to your reverse domain name followed by the project name."
+                      "text": "Set your bundle identifier."
+                    }
+                  ]
+                },
+                {
+                  "type": "unorderedList",
+                  "items": [
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "Select the CoreDataCloudKitDemo project."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "Select the General tab."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "In the Identity section, set the Bundle Identifier to your reverse domain name followed by the project name."
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
@@ -254,7 +303,289 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "Set your development team. In the project settings, under Signing & Capabilities, select your development team from the dropdown list."
+                      "text": "Set your development team."
+                    }
+                  ]
+                },
+                {
+                  "type": "unorderedList",
+                  "items": [
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "Select the CoreDataCloudKitDemo project"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "unorderedList",
+                          "items": [
+                            {
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "inlineContent": [
+                                    {
+                                      "type": "text",
+                                      "text": "Select the Signing & Capabilities tab."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "inlineContent": [
+                                    {
+                                      "type": "text",
+                                      "text": "Select your development team from the dropdown list."
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Update the product bundle identifier for the test targets."
+                    }
+                  ]
+                },
+                {
+                  "type": "unorderedList",
+                  "items": [
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "Select the CoreDataCloudKitDemoUnitTests target."
+                            }
+                          ]
+                        },
+                        {
+                          "type": "unorderedList",
+                          "items": [
+                            {
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "inlineContent": [
+                                    {
+                                      "type": "text",
+                                      "text": "Select the Signing & Capabilities tab."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "inlineContent": [
+                                    {
+                                      "type": "text",
+                                      "text": "Select your development team from the dropdown list."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "inlineContent": [
+                                    {
+                                      "type": "text",
+                                      "text": "Select the Build Settings Tab."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "inlineContent": [
+                                    {
+                                      "type": "text",
+                                      "text": "Find product bundle identifier and change it to a value appropriate for your team."
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configuration Options",
+          "anchor": "3878742"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To facilitate testing the application supports the following configuration options parsed in to properties by the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AppDelegate"
+            },
+            {
+              "type": "text",
+              "text": " class:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "-CDCKDTesting"
+                    }
+                  ]
+                },
+                {
+                  "type": "unorderedList",
+                  "items": [
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "Set to "
+                            },
+                            {
+                              "type": "codeVoice",
+                              "code": "1"
+                            },
+                            {
+                              "type": "text",
+                              "text": " to store files in a special directory, "
+                            },
+                            {
+                              "type": "codeVoice",
+                              "code": "TestStores"
+                            },
+                            {
+                              "type": "text",
+                              "text": ", so that tests do not overwrite user data."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "-CDCKDAllowCloudKitSync"
+                    }
+                  ]
+                },
+                {
+                  "type": "unorderedList",
+                  "items": [
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "Set to "
+                            },
+                            {
+                              "type": "codeVoice",
+                              "code": "0"
+                            },
+                            {
+                              "type": "text",
+                              "text": " to disable CloudKit sync during testing"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "com.apple.CoreData.ConcurrencyDebug"
+                    }
+                  ]
+                },
+                {
+                  "type": "unorderedList",
+                  "items": [
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "Enables Core Data multi-threading assertions to verify the correct queue is used for all Core Data operations."
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
@@ -266,7 +597,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

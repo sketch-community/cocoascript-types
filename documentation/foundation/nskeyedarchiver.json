@@ -38,35 +38,40 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.2",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSKeyedArchiver",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -801,7 +806,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nssecureunarchivefromdatatransformer",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nssecureunarchivefromdatatransformer"
+      "url": "/documentation/foundation/nssecureunarchivefromdatatransformer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value transformer that converts data to and from classes that support secure coding."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -829,7 +840,8 @@
         "doc://com.apple.documentation/documentation/foundation/nskeyedarchiver/2962881-initrequiringsecurecoding",
         "doc://com.apple.documentation/documentation/foundation/nskeyedarchiver/1642790-init",
         "doc://com.apple.documentation/documentation/foundation/nskeyedarchiver/1409579-initforwritingwithmutabledata"
-      ]
+      ],
+      "anchor": "1651112"
     },
     {
       "kind": "taskGroup",
@@ -842,7 +854,8 @@
         "doc://com.apple.documentation/documentation/foundation/nskeyedarchiver/1417084-requiressecurecoding",
         "doc://com.apple.documentation/documentation/foundation/nskeyedarchiver/1413189-archiveddatawithrootobject",
         "doc://com.apple.documentation/documentation/foundation/nskeyedarchiver/1410621-archiverootobject"
-      ]
+      ],
+      "anchor": "1651130"
     },
     {
       "kind": "taskGroup",
@@ -857,14 +870,16 @@
         "doc://com.apple.documentation/documentation/foundation/nskeyedarchiver/1418280-encodeint32",
         "doc://com.apple.documentation/documentation/foundation/nskeyedarchiver/1416972-encodeint64",
         "doc://com.apple.documentation/documentation/foundation/nskeyedarchiver/1412067-encodeobject"
-      ]
+      ],
+      "anchor": "1651235"
     },
     {
       "kind": "taskGroup",
       "title": "Managing the Delegate",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nskeyedarchiver/1412809-delegate"
-      ]
+      ],
+      "anchor": "1651387"
     },
     {
       "kind": "taskGroup",
@@ -874,7 +889,8 @@
         "doc://com.apple.documentation/documentation/foundation/nskeyedarchiver/1407748-classnameforclass",
         "doc://com.apple.documentation/documentation/foundation/nskeyedarchiver/1414746-setclassname",
         "doc://com.apple.documentation/documentation/foundation/nskeyedarchiver/1407245-classnameforclass"
-      ]
+      ],
+      "anchor": "1651431"
     },
     {
       "kind": "taskGroup",
@@ -882,7 +898,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nskeyedarchiver/keyed_archiving_exception_names",
         "doc://com.apple.documentation/documentation/foundation/nskeyedarchiver/keyed_archiver_root_object_key"
-      ]
+      ],
+      "anchor": "1681370"
     }
   ],
   "seeAlsoSections": [
@@ -932,6 +949,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -968,7 +986,7 @@
             },
             {
               "type": "text",
-              "text": ", provides a way to encode objects (and scalar values) into an architecture-independent suitable for storage in a file. When you archive a set of objects, the archiver writes the class information and instance variables for each object to the archive. The companion class "
+              "text": ", provides a way to encode objects (and scalar values) into an architecture-independent format suitable for storage in a file. When you archive a set of objects, the archiver writes the class information and instance variables for each object to the archive. The companion class "
             },
             {
               "type": "reference",
@@ -1030,7 +1048,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -45,15 +45,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@T@NSBezelStyle",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -134,45 +134,19 @@
       "role": "symbol",
       "url": "/documentation/objectivec/nsuinteger"
     },
-    "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylecircular": {
-      "title": "NSBezelStyleCircular",
+    "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylerounded": {
+      "title": "NSBezelStyleRounded",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylecircular",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylerounded",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsbezelstyle/nsbezelstylecircular"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyledisclosure": {
-      "title": "NSBezelStyleDisclosure",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyledisclosure",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsbezelstyle/nsbezelstyledisclosure"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylehelpbutton": {
-      "title": "NSBezelStyleHelpButton",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylehelpbutton",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsbezelstyle/nsbezelstylehelpbutton"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleinline": {
-      "title": "NSBezelStyleInline",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleinline",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsbezelstyle/nsbezelstyleinline"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylerecessed": {
-      "title": "NSBezelStyleRecessed",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylerecessed",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsbezelstyle/nsbezelstylerecessed"
+      "url": "/documentation/appkit/nsbezelstyle/nsbezelstylerounded",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A rounded rectangle button, designed for text."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleregularsquare": {
       "title": "NSBezelStyleRegularSquare",
@@ -180,31 +154,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleregularsquare",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsbezelstyle/nsbezelstyleregularsquare"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleroundrect": {
-      "title": "NSBezelStyleRoundRect",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleroundrect",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsbezelstyle/nsbezelstyleroundrect"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylerounded": {
-      "title": "NSBezelStyleRounded",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylerounded",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsbezelstyle/nsbezelstylerounded"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleroundeddisclosure": {
-      "title": "NSBezelStyleRoundedDisclosure",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleroundeddisclosure",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsbezelstyle/nsbezelstyleroundeddisclosure"
+      "url": "/documentation/appkit/nsbezelstyle/nsbezelstyleregularsquare",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A rectangular button with a two-point border, designed for icons."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleshadowlesssquare": {
       "title": "NSBezelStyleShadowlessSquare",
@@ -212,7 +168,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleshadowlesssquare",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsbezelstyle/nsbezelstyleshadowlesssquare"
+      "url": "/documentation/appkit/nsbezelstyle/nsbezelstyleshadowlesssquare",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A rectangular button with no shadow, so it can abut the cells without overlapping shadows."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylesmallsquare": {
       "title": "NSBezelStyleSmallSquare",
@@ -220,7 +182,111 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylesmallsquare",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsbezelstyle/nsbezelstylesmallsquare"
+      "url": "/documentation/appkit/nsbezelstyle/nsbezelstylesmallsquare",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A simple square bezel style that can scale to any size. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleroundrect": {
+      "title": "NSBezelStyleRoundRect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleroundrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsbezelstyle/nsbezelstyleroundrect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A bezel style appropriate for use as an action or auxiliary button in scope bars and title bar accessories."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleinline": {
+      "title": "NSBezelStyleInline",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleinline",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsbezelstyle/nsbezelstyleinline",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A button that has a solid round-rectangle border background."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylerecessed": {
+      "title": "NSBezelStyleRecessed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylerecessed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsbezelstyle/nsbezelstylerecessed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A bezel style appropriate for use in scope bars and title bar accessories, similar to the bookmarks bar in Safari."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyledisclosure": {
+      "title": "NSBezelStyleDisclosure",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyledisclosure",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsbezelstyle/nsbezelstyledisclosure",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A bezel style for use with a disclosure triangle."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleroundeddisclosure": {
+      "title": "NSBezelStyleRoundedDisclosure",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleroundeddisclosure",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsbezelstyle/nsbezelstyleroundeddisclosure",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A bezel style for use with a vertically expanding and collapsing disclosure button. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylecircular": {
+      "title": "NSBezelStyleCircular",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylecircular",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsbezelstyle/nsbezelstylecircular",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A round button with room for a small icon or a single character."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylehelpbutton": {
+      "title": "NSBezelStyleHelpButton",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylehelpbutton",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsbezelstyle/nsbezelstylehelpbutton",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A round button with a question mark providing the standard Help button look."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyletexturedrounded": {
       "title": "NSBezelStyleTexturedRounded",
@@ -228,7 +294,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyletexturedrounded",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsbezelstyle/nsbezelstyletexturedrounded"
+      "url": "/documentation/appkit/nsbezelstyle/nsbezelstyletexturedrounded",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A bezel style appropriate for use in the toolbar or title bar regions of a window."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyletexturedsquare": {
       "title": "NSBezelStyleTexturedSquare",
@@ -236,7 +308,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyletexturedsquare",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsbezelstyle/nsbezelstyletexturedsquare"
+      "url": "/documentation/appkit/nsbezelstyle/nsbezelstyletexturedsquare",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A bezel style appropriate for use with textured (metal) windows. "
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsroundedbezelstyle": {
       "title": "NSRoundedBezelStyle",
@@ -493,24 +571,25 @@
       "kind": "taskGroup",
       "title": "Enumeration Cases",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylecircular",
-        "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyledisclosure",
-        "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylehelpbutton",
-        "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleinline",
-        "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylerecessed",
-        "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleregularsquare",
-        "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleroundrect",
         "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylerounded",
-        "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleroundeddisclosure",
+        "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleregularsquare",
         "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleshadowlesssquare",
         "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylesmallsquare",
+        "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleroundrect",
+        "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleinline",
+        "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylerecessed",
+        "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyledisclosure",
+        "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyleroundeddisclosure",
+        "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylecircular",
+        "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstylehelpbutton",
         "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyletexturedrounded",
         "doc://com.apple.documentation/documentation/appkit/nsbezelstyle/nsbezelstyletexturedsquare"
-      ]
+      ],
+      "anchor": "2558936"
     },
     {
       "kind": "taskGroup",
-      "title": "Constants",
+      "title": "Deprecated Symbols",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsroundedbezelstyle",
         "doc://com.apple.documentation/documentation/appkit/nsregularsquarebezelstyle",
@@ -528,7 +607,8 @@
         "doc://com.apple.documentation/documentation/appkit/nsinlinebezelstyle",
         "doc://com.apple.documentation/documentation/appkit/nssmalliconbuttonbezelstyle",
         "doc://com.apple.documentation/documentation/appkit/nsroundeddisclosurebezelstyle"
-      ]
+      ],
+      "anchor": "1604532"
     }
   ],
   "primaryContentSections": [
@@ -628,7 +708,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

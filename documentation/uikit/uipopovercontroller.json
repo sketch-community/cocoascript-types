@@ -79,21 +79,28 @@
         "name": "iOS",
         "introducedAt": "3.2",
         "deprecatedAt": "9.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.2",
+        "deprecatedAt": "9.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "9.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
@@ -101,8 +108,8 @@
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -300,8 +307,7 @@
           "type": "text",
           "text": ", that is displayed below a peek when a user swipes the peek upward. "
         }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiaccelerometer": {
       "title": "UIAccelerometer",
@@ -868,8 +874,7 @@
           "type": "text",
           "text": " class."
         }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiacceleration": {
       "title": "UIAcceleration",
@@ -1285,16 +1290,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -1319,7 +1314,8 @@
       "title": "Initializing the Popover",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uipopovercontroller/1624669-initwithcontentviewcontroller"
-      ]
+      ],
+      "anchor": "1653403"
     },
     {
       "kind": "taskGroup",
@@ -1328,7 +1324,8 @@
         "doc://com.apple.documentation/documentation/uikit/uipopovercontroller/1624660-presentpopoverfromrect",
         "doc://com.apple.documentation/documentation/uikit/uipopovercontroller/1624668-presentpopoverfrombarbuttonitem",
         "doc://com.apple.documentation/documentation/uikit/uipopovercontroller/1624662-dismisspopoveranimated"
-      ]
+      ],
+      "anchor": "1653437"
     },
     {
       "kind": "taskGroup",
@@ -1339,7 +1336,8 @@
         "doc://com.apple.documentation/documentation/uikit/uipopovercontroller/1624667-popovercontentsize",
         "doc://com.apple.documentation/documentation/uikit/uipopovercontroller/1624670-setpopovercontentsize",
         "doc://com.apple.documentation/documentation/uikit/uipopovercontroller/1624654-passthroughviews"
-      ]
+      ],
+      "anchor": "1653494"
     },
     {
       "kind": "taskGroup",
@@ -1347,14 +1345,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uipopovercontroller/1624656-popovervisible",
         "doc://com.apple.documentation/documentation/uikit/uipopovercontroller/1624665-popoverarrowdirection"
-      ]
+      ],
+      "anchor": "1653570"
     },
     {
       "kind": "taskGroup",
       "title": "Accessing the Delegate",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uipopovercontroller/1624666-delegate"
-      ]
+      ],
+      "anchor": "1653616"
     },
     {
       "kind": "taskGroup",
@@ -1363,14 +1363,16 @@
         "doc://com.apple.documentation/documentation/uikit/uipopovercontroller/1624657-popoverlayoutmargins",
         "doc://com.apple.documentation/documentation/uikit/uipopovercontroller/1624659-popoverbackgroundviewclass",
         "doc://com.apple.documentation/documentation/uikit/uipopovercontroller/1624673-backgroundcolor"
-      ]
+      ],
+      "anchor": "1653642"
     },
     {
       "kind": "taskGroup",
       "title": "Constants",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uipopoverarrowdirection"
-      ]
+      ],
+      "anchor": "1681868"
     }
   ],
   "seeAlsoSections": [
@@ -1430,6 +1432,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -1556,7 +1559,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

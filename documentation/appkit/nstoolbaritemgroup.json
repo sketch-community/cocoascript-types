@@ -41,20 +41,20 @@
       {
         "name": "macOS",
         "introducedAt": "10.5",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)NSToolbarItemGroup",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -135,6 +135,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nstoolbaritem": {
+      "title": "NSToolbarItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstoolbaritem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An item in a window’s toolbar."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup#2557051": {
       "title": "Listing 1",
       "type": "section",
@@ -150,20 +164,6 @@
       "kind": "article",
       "role": "codeListing",
       "url": "/documentation/appkit/nstoolbaritemgroup#2557053"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nstoolbaritem": {
-      "title": "NSToolbarItem",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritem",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nstoolbaritem",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An item in a window’s toolbar."
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup#2557054": {
       "title": "Listing 3",
@@ -181,20 +181,6 @@
       "role": "codeListing",
       "url": "/documentation/appkit/nstoolbaritemgroup#2557056"
     },
-    "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/1529923-subitems": {
-      "title": "subitems",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/1529923-subitems",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nstoolbaritemgroup/1529923-subitems",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The subitems for the receiver."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242763-groupwithitemidentifier": {
       "title": "groupWithItemIdentifier:images:selectionMode:labels:target:action:",
       "type": "topic",
@@ -202,6 +188,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nstoolbaritemgroup/3242763-groupwithitemidentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a grouped toolbar item with images."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -220,6 +212,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nstoolbaritemgroup/3242764-groupwithitemidentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a grouped toolbar item with labels."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -231,13 +229,19 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242762-controlrepresentation": {
-      "title": "controlRepresentation",
+    "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/1529923-subitems": {
+      "title": "subitems",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242762-controlrepresentation",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/1529923-subitems",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstoolbaritemgroup/3242762-controlrepresentation"
+      "url": "/documentation/appkit/nstoolbaritemgroup/1529923-subitems",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The subitems of the grouped toolbar item."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242766-selectedindex": {
       "title": "selectedIndex",
@@ -245,15 +249,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242766-selectedindex",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstoolbaritemgroup/3242766-selectedindex"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242767-selectionmode": {
-      "title": "selectionMode",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242767-selectionmode",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nstoolbaritemgroup/3242767-selectionmode"
+      "url": "/documentation/appkit/nstoolbaritemgroup/3242766-selectedindex",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The index value for the most recently selected subitem of a grouped toolbar item."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242765-isselectedatindex": {
       "title": "isSelectedAtIndex:",
@@ -262,6 +264,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nstoolbaritemgroup/3242765-isselectedatindex",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates whether a specified index is currently selected."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -280,6 +288,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nstoolbaritemgroup/3242768-setselected",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the selected state of a subitem in a grouped toolbar item."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -291,13 +305,47 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242762-controlrepresentation": {
+      "title": "controlRepresentation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242762-controlrepresentation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstoolbaritemgroup/3242762-controlrepresentation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that represents how a toolbar displays a grouped toolbar item."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupcontrolrepresentation": {
       "title": "NSToolbarItemGroupControlRepresentation",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupcontrolrepresentation",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstoolbaritemgroupcontrolrepresentation"
+      "url": "/documentation/appkit/nstoolbaritemgroupcontrolrepresentation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates the display style for a grouped toolbar item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242767-selectionmode": {
+      "title": "selectionMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242767-selectionmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstoolbaritemgroup/3242767-selectionmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The selection mode of the grouped toolbar item."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupselectionmode": {
       "title": "NSToolbarItemGroupSelectionMode",
@@ -305,7 +353,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupselectionmode",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstoolbaritemgroupselectionmode"
+      "url": "/documentation/appkit/nstoolbaritemgroupselectionmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates how a grouped toolbar item selects its subitems."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsmenutoolbaritem": {
       "title": "NSMenuToolbarItem",
@@ -313,7 +367,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsmenutoolbaritem",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsmenutoolbaritem"
+      "url": "/documentation/appkit/nsmenutoolbaritem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A control that presents a menu in a window’s toolbar."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nssearchtoolbaritem": {
       "title": "NSSearchToolbarItem",
@@ -325,7 +385,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A toolbar item that contains a text field optimized for performing text-based searches."
+          "text": "A toolbar item that contains a search field optimized for performing text-based searches."
         }
       ]
     },
@@ -364,35 +424,34 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Working with Subitems",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/1529923-subitems"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Initializers",
+      "title": "Creating Grouped Toolbar Items",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242763-groupwithitemidentifier",
         "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242764-groupwithitemidentifier"
-      ]
+      ],
+      "anchor": "3839270"
     },
     {
       "kind": "taskGroup",
-      "title": "Instance Properties",
+      "title": "Working with Subitems",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242762-controlrepresentation",
+        "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/1529923-subitems",
         "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242766-selectedindex",
-        "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242767-selectionmode"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Methods",
-      "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242765-isselectedatindex",
         "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242768-setselected"
-      ]
+      ],
+      "anchor": "1673655"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring Grouped Toolbar Items",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242762-controlrepresentation",
+        "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupcontrolrepresentation",
+        "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242767-selectionmode",
+        "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupselectionmode"
+      ],
+      "anchor": "3839268"
     }
   ],
   "seeAlsoSections": [
@@ -462,7 +521,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "In an "
+              "text": "An "
             },
             {
               "type": "reference",
@@ -471,7 +530,25 @@
             },
             {
               "type": "text",
-              "text": ", the views and labels of the subitems are used, but the parent's attributes take precedence."
+              "text": " represents a collection set of subitems in a toolbar that the system displays based on available space and settings that you specify. The system uses the views and labels of the subitems, but the parent’s attributes take precedence. This differs from other "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritem"
+            },
+            {
+              "type": "text",
+              "text": " objects because they’re attached — the user drags them together as a single item rather than separately."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If a subitem of the group has an action set on it, the group uses that action instead of its own when the user clicks or taps on that item. The system prefers the subitem’s action if it exists, otherwise it uses the group’s action."
             }
           ]
         },
@@ -489,15 +566,15 @@
             },
             {
               "type": "text",
-              "text": ", you first create the individual toolbar items that will be the subitems:"
+              "text": ", you first create the individual toolbar subitems:"
             }
           ]
         },
         {
           "type": "codeListing",
           "code": [
-            "NSToolbarItem *item1 = [[[NSToolbarItem alloc] initWithItemIdentifier:@\"Item1\"] autorelease];",
-            "NSToolbarItem *item2 = [[[NSToolbarItem alloc] initWithItemIdentifier:@\"Item2\"] autorelease];",
+            "NSToolbarItem *item1 = [[NSToolbarItem alloc] initWithItemIdentifier:@\"Item1\"];",
+            "NSToolbarItem *item2 = [[NSToolbarItem alloc] initWithItemIdentifier:@\"Item2\"];",
             "[item1 setImage:[NSImage imageNamed:@\"LeftArrow\"]];",
             "[item2 setImage:[NSImage imageNamed:@\"RightArrow\"]];",
             "[item1 setLabel:@\"Prev\"];",
@@ -521,7 +598,7 @@
         {
           "type": "codeListing",
           "code": [
-            "NSToolbarItemGroup *group = [[[NSToolbarItemGroup alloc] initWithItemIdentifier:@\"GroupItem\"] autorelease];",
+            "NSToolbarItemGroup *group = [[NSToolbarItemGroup alloc] initWithItemIdentifier:@\"GroupItem\"];",
             "[group setSubitems:[NSArray arrayWithObjects:item1, item2, nil]];"
           ],
           "syntax": "occ",
@@ -535,16 +612,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "In this configuration, you get two grouped items, and two labels. This differs from ordinary "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritem"
-            },
-            {
-              "type": "text",
-              "text": " objects because they are attached—the user drags them together as a single item rather than separately."
+              "text": "In this configuration, you get two grouped items, and two labels. "
             }
           ]
         },
@@ -553,7 +621,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "If you set a label on the parent item:"
+              "text": "If you set a label on the parent item, you get two grouped items with one shared label:"
             }
           ]
         },
@@ -567,15 +635,6 @@
             "anchor": "2557054",
             "title": "Listing 3"
           }
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "you get two grouped items with one shared label. "
-            }
-          ]
         },
         {
           "type": "paragraph",
@@ -605,7 +664,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

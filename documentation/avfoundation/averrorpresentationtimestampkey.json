@@ -1,12 +1,17 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The user information key to retrieve the presentation time stamp."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/avfoundation",
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/media_playback_errors"
+        "doc://com.apple.documentation/documentation/avfoundation/avfoundation_constants"
       ]
     ]
   },
@@ -29,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@AVErrorPresentationTimeStampKey",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -92,21 +102,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection": {
-      "title": "Media Playback and Selection",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
-      "url": "/documentation/avfoundation/media_playback_and_selection",
+    "doc://com.apple.documentation/documentation/avfoundation/avfoundation_constants": {
+      "title": "AVFoundation Constants",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfoundation_constants",
+      "url": "/documentation/avfoundation/avfoundation_constants",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/media_playback_errors": {
-      "title": "Media Playback Errors",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/media_playback_errors",
-      "url": "/documentation/avfoundation/media_playback_and_selection/media_playback_errors",
+    "doc://com.apple.documentation/documentation/coremedia/cmtime": {
+      "title": "CMTime",
       "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
+      "identifier": "doc://com.apple.documentation/documentation/coremedia/cmtime",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coremedia/cmtime"
     },
     "doc://com.apple.documentation/documentation/foundation/nsstring": {
       "title": "NSString",
@@ -116,276 +126,6 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
-    "doc://com.apple.documentation/documentation/foundation/nsnumber": {
-      "title": "NSNumber",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsnumber"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avfoundation_constants": {
-      "title": "AVFoundation Constants",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfoundation_constants",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/avfoundation/avfoundation_constants"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsvalue": {
-      "title": "NSValue",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsvalue"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/averror": {
-      "title": "AVError",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/averror",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/averror",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An enumeration of possible error codes encountered in AVCapture."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/averrordevicekey": {
-      "title": "AVErrorDeviceKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/averrordevicekey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/averrordevicekey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The corresponding value is an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring"
-        },
-        {
-          "type": "text",
-          "text": " object with the name of the device."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/averrordiscontinuityflagskey": {
-      "title": "AVErrorDiscontinuityFlagsKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/averrordiscontinuityflagskey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/averrordiscontinuityflagskey"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/averrorfilesizekey": {
-      "title": "AVErrorFileSizeKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/averrorfilesizekey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/averrorfilesizekey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The corresponding value is an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
-        },
-        {
-          "type": "text",
-          "text": " object containing the size of the file in bytes."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/averrorfiletypekey": {
-      "title": "AVErrorFileTypeKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/averrorfiletypekey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/averrorfiletypekey"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/averrormediasubtypekey": {
-      "title": "AVErrorMediaSubTypeKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/averrormediasubtypekey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/averrormediasubtypekey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The corresponding value is an array of "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
-        },
-        {
-          "type": "text",
-          "text": " objects that specify media subtypes. The types are represented by four character codes (4ccs), as defined in "
-        },
-        {
-          "type": "codeVoice",
-          "code": "CoreAudioTypes.h"
-        },
-        {
-          "type": "text",
-          "text": " for audio media and in "
-        },
-        {
-          "type": "codeVoice",
-          "code": "CMFormatDescription.h"
-        },
-        {
-          "type": "text",
-          "text": " for video media."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/averrormediatypekey": {
-      "title": "AVErrorMediaTypeKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/averrormediatypekey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/averrormediatypekey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The corresponding value is an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring"
-        },
-        {
-          "type": "text",
-          "text": " object that specifies a media type such as video, audio, or metadata. For a list of possible values, see "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfoundation_constants"
-        },
-        {
-          "type": "text",
-          "text": ". "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/averrorpidkey": {
-      "title": "AVErrorPIDKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/averrorpidkey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/averrorpidkey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The corresponding value is an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
-        },
-        {
-          "type": "text",
-          "text": " object containing a process ID number."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/averrorpersistenttrackidkey": {
-      "title": "AVErrorPersistentTrackIDKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/averrorpersistenttrackidkey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/averrorpersistenttrackidkey"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/averrorpresentationtimestampkey": {
-      "title": "AVErrorPresentationTimeStampKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/averrorpresentationtimestampkey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/averrorpresentationtimestampkey"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/averrorrecordingsuccessfullyfinishedkey": {
-      "title": "AVErrorRecordingSuccessfullyFinishedKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/averrorrecordingsuccessfullyfinishedkey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/averrorrecordingsuccessfullyfinishedkey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The corresponding value is an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
-        },
-        {
-          "type": "text",
-          "text": " object with a Boolean value indicating whether recording finished successfully."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/averrortimekey": {
-      "title": "AVErrorTimeKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/averrortimekey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/averrortimekey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The corresponding value is an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue"
-        },
-        {
-          "type": "text",
-          "text": " object containing a CMTime. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avfoundationerrordomain": {
-      "title": "AVFoundationErrorDomain",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfoundationerrordomain",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avfoundationerrordomain",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Domain for AVFoundation errors."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -394,26 +134,6 @@
       "title": "Technologies"
     }
   },
-  "seeAlsoSections": [
-    {
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/averror",
-        "doc://com.apple.documentation/documentation/avfoundation/averrordevicekey",
-        "doc://com.apple.documentation/documentation/avfoundation/averrordiscontinuityflagskey",
-        "doc://com.apple.documentation/documentation/avfoundation/averrorfilesizekey",
-        "doc://com.apple.documentation/documentation/avfoundation/averrorfiletypekey",
-        "doc://com.apple.documentation/documentation/avfoundation/averrormediasubtypekey",
-        "doc://com.apple.documentation/documentation/avfoundation/averrormediatypekey",
-        "doc://com.apple.documentation/documentation/avfoundation/averrorpidkey",
-        "doc://com.apple.documentation/documentation/avfoundation/averrorpersistenttrackidkey",
-        "doc://com.apple.documentation/documentation/avfoundation/averrorrecordingsuccessfullyfinishedkey",
-        "doc://com.apple.documentation/documentation/avfoundation/averrortimekey",
-        "doc://com.apple.documentation/documentation/avfoundation/avfoundationerrordomain"
-      ],
-      "title": "Errors",
-      "generated": true
-    }
-  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -452,6 +172,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -459,10 +180,39 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The associated value is of type "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coremedia/cmtime"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

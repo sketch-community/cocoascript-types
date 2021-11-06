@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The specialized interface element type represented by the accessibility element."
+      "text": "The specialized interface element type that the accessibility element represents."
     }
   ],
   "documentVersion": 0,
@@ -11,13 +11,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
       ]
     ]
@@ -42,15 +42,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSAccessibility(py)accessibilitySubrole",
+    "parent": {
+      "title": "NSAccessibility"
+    },
     "symbolKind": "intfp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -75,10 +78,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -93,7 +96,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The complete list of properties and methods implemented by accessible elements."
+          "text": "The complete list of properties and methods for accessible elements."
         }
       ]
     },
@@ -104,14 +107,6 @@
       "type": "topic",
       "kind": "symbol",
       "role": "collection"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/subroles": {
-      "title": "Subroles",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/subroles",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/appkit/nsaccessibility/subroles"
     },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535005-accessibilityrole": {
       "title": "accessibilityRole",
@@ -124,7 +119,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The type of interface element represented by the accessibility element."
+          "text": "The type of interface element that the accessibility element represents."
         }
       ]
     },
@@ -134,35 +129,11 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitysubrole",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitysubrole"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/2869551-accessibilitycustomactions": {
-      "title": "accessibilityCustomActions",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/2869551-accessibilitycustomactions",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/2869551-accessibilitycustomactions",
-      "required": true,
+      "url": "/documentation/appkit/nsaccessibilitysubrole",
       "abstract": [
         {
           "type": "text",
-          "text": "The  custom actions of the current element."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/2876053-accessibilitycustomrotors": {
-      "title": "accessibilityCustomRotors",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/2876053-accessibilitycustomrotors",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/2876053-accessibilitycustomrotors",
-      "required": true,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The custom rotors of the current element."
+          "text": "Values that describe specialized object subtypes that accessibility elements represent."
         }
       ]
     },
@@ -177,7 +148,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that determines whether the element is required to have content for successful submission of a form."
+          "text": "A Boolean value that determines whether the accessibility element must have content for successful submission of a form."
         }
       ]
     },
@@ -192,7 +163,20 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A localized, human-intelligible description of the element’s role, such as \"radio button.”"
+          "text": "A localized, human-intelligible description of the accessibility element’s role, such as "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "radio button"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
         }
       ]
     },
@@ -207,7 +191,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The specialized interface element type represented by the accessibility element."
+          "text": "The specialized interface element type that the accessibility element represents."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrole": {
+      "title": "NSAccessibilityRole",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrole",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityrole",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values that describe types of objects that accessibility elements represent."
         }
       ]
     },
@@ -222,13 +220,13 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/2869551-accessibilitycustomactions",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/2876053-accessibilitycustomrotors",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1646618-accessibilityrequired",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535005-accessibilityrole",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535144-accessibilityroledescription"
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535144-accessibilityroledescription",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrole",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitysubrole"
       ],
-      "title": "Assigning Actions and Roles",
+      "title": "Assigning Roles",
       "generated": true
     }
   ],
@@ -291,9 +289,8 @@
               "text": "For a list of possible subroles, see "
             },
             {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/subroles"
+              "type": "codeVoice",
+              "code": "Subroles"
             },
             {
               "type": "text",
@@ -305,7 +302,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

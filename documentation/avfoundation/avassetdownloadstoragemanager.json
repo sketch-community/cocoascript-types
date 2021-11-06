@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A manager of policies used to automatically purge downloaded assets."
+      "text": "An object that manages policies to automatically purge downloaded assets."
     }
   ],
   "documentVersion": 0,
@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetDownloadStorageManager",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -95,30 +100,6 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanager/2865557-setstoragemanagementpolicy": {
-      "title": "setStorageManagementPolicy:forURL:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanager/2865557-setstoragemanagementpolicy",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetdownloadstoragemanager/2865557-setstoragemanagementpolicy",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sets the storage policy for the downloaded asset."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setStorageManagementPolicy:forURL:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
       "type": "topic",
@@ -137,7 +118,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a singleton instance of the shared storage manager."
+          "text": "Returns the shared storage manager instance."
         }
       ],
       "fragments": [
@@ -175,6 +156,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanager/2865557-setstoragemanagementpolicy": {
+      "title": "setStorageManagementPolicy:forURL:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanager/2865557-setstoragemanagementpolicy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetdownloadstoragemanager/2865557-setstoragemanagementpolicy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets a storage policy for the downloaded asset."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setStorageManagementPolicy:forURL:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams": {
       "title": "Using AVFoundation to Play and Persist HTTP Live Streams",
       "type": "topic",
@@ -199,7 +204,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A URL session used to support the creation and execution of asset download tasks."
+          "text": "A URL session that creates and executes asset download tasks."
         }
       ]
     },
@@ -227,7 +232,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A single task that downloads multiple media selections for a single asset."
+          "text": "A task that downloads multiple media selections for an asset."
         }
       ]
     },
@@ -241,7 +246,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to inspect the state of an asset’s locally cached media data."
+          "text": "An object that you use to inspect locally cached media data."
         }
       ]
     },
@@ -255,7 +260,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A manager of policies used to automatically purge downloaded assets."
+          "text": "An object that manages policies to automatically purge downloaded assets."
         }
       ]
     },
@@ -269,7 +274,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of properties that defines a policy to automatically purge downloaded assets."
+          "text": "An object that defines a policy to automatically manage the storage of downloaded assets."
         }
       ]
     },
@@ -283,7 +288,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A mutable set of properties that defines a policy to automatically purge downloaded assets."
+          "text": "A mutable object that you use to create a new storage management policy."
         }
       ]
     },
@@ -311,15 +316,17 @@
       "title": "Accessing the Shared Manager",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanager/2865563-shareddownloadstoragemanager"
-      ]
+      ],
+      "anchor": "2868750"
     },
     {
       "kind": "taskGroup",
       "title": "Setting the Storage Policy",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanager/2865557-setstoragemanagementpolicy",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanager/2865562-storagemanagementpolicyforurl"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanager/2865562-storagemanagementpolicyforurl",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanager/2865557-setstoragemanagementpolicy"
+      ],
+      "anchor": "2868749"
     }
   ],
   "seeAlsoSections": [
@@ -371,44 +378,16 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "overview",
-          "level": 2,
-          "text": "Overview",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "Fetch the shared singleton when setting a storage management policy. Set new policy using "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanager/2865557-setstoragemanagementpolicy"
-            },
-            {
-              "type": "text",
-              "text": " and the location of the downloaded asset."
-            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

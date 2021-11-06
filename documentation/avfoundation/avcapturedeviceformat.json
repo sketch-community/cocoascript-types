@@ -35,25 +35,30 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "introducedAt": "14.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVCaptureDeviceFormat",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -140,14 +145,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcaptureoutput": {
-      "title": "AVCaptureOutput",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureoutput",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcaptureoutput"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avcapturemulticamsession": {
       "title": "AVCaptureMultiCamSession",
       "type": "topic",
@@ -224,16 +221,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The list of "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureoutput"
-        },
-        {
-          "type": "text",
-          "text": " subclasses not allowed for capture with this format, if any."
+          "text": "The list of capture output subclasses not allowed for capture with this format, if any."
         }
       ]
     },
@@ -247,7 +235,245 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The highest resolution still image that can be produced by this format."
+          "text": "The highest resolution still image the system can produce for this format."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624597-videobinned": {
+      "title": "videoBinned",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624597-videobinned",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedeviceformat/1624597-videobinned",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates whether video data is produced in a binned format."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3153006-multicamsupported": {
+      "title": "multiCamSupported",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3153006-multicamsupported",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedeviceformat/3153006-multicamsupported",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturemulticamsession"
+        },
+        {
+          "type": "text",
+          "text": " supports this format."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3153005-highestphotoqualitysupported": {
+      "title": "highestPhotoQualitySupported",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3153005-highestphotoqualitysupported",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedeviceformat/3153005-highestphotoqualitysupported",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether this format supports the highest photo quality that the platform can deliver."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avframeraterange": {
+      "title": "AVFrameRateRange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avframeraterange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avframeraterange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An "
+        },
+        {
+          "type": "codeVoice",
+          "code": "AVFrameRateRange"
+        },
+        {
+          "type": "text",
+          "text": " object expresses a range of valid frame rates as minimum and maximum rate and minimum and maximum duration."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1387592-videosupportedframerateranges": {
+      "title": "videoSupportedFrameRateRanges",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1387592-videosupportedframerateranges",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedeviceformat/1387592-videosupportedframerateranges",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates the format’s supported frame rate ranges."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode": {
+      "title": "AVCaptureVideoStabilizationMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturevideostabilizationmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that describe the video stabilization modes that the device and format support."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3194616-geometricdistortioncorrectedvide": {
+      "title": "geometricDistortionCorrectedVideoFieldOfView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3194616-geometricdistortioncorrectedvide",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedeviceformat/3194616-geometricdistortioncorrectedvide",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The format’s horizontal field of view after correction for geometric distortion."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3375757-globaltonemappingsupported": {
+      "title": "globalToneMappingSupported",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3375757-globaltonemappingsupported",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedeviceformat/3375757-globaltonemappingsupported",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the format supports global tone mapping."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624587-isvideostabilizationmodesupporte": {
+      "title": "isVideoStabilizationModeSupported:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624587-isvideostabilizationmodesupporte",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedeviceformat/1624587-isvideostabilizationmodesupporte",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the format supports a given video stabilization mode."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "isVideoStabilizationModeSupported:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624634-videostabilizationsupported": {
+      "title": "videoStabilizationSupported",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624634-videostabilizationsupported",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedeviceformat/1624634-videostabilizationsupported",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates whether the device supports video stabilization."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3751763-highphotoqualitysupported": {
+      "title": "highPhotoQualitySupported",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3751763-highphotoqualitysupported",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedeviceformat/3751763-highphotoqualitysupported",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether this format supports high-quality capture with the current quality prioritization setting."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3738420-centerstagesupported": {
+      "title": "centerStageSupported",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3738420-centerstagesupported",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedeviceformat/3738420-centerstagesupported",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the format supports Center Stage."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3738421-videoframeraterangeforcenterstag": {
+      "title": "videoFrameRateRangeForCenterStage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3738421-videoframeraterangeforcenterstag",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedeviceformat/3738421-videoframeraterangeforcenterstag",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The range of frame rates available when Center Stage is active."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3738423-videominzoomfactorforcenterstage": {
+      "title": "videoMinZoomFactorForCenterStage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3738423-videominzoomfactorforcenterstage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedeviceformat/3738423-videominzoomfactorforcenterstage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The minimum zoom factor available when Center Stage is active."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3738422-videomaxzoomfactorforcenterstage": {
+      "title": "videoMaxZoomFactorForCenterStage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3738422-videomaxzoomfactorforcenterstage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedeviceformat/3738422-videomaxzoomfactorforcenterstage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The maximum zoom factor available when Center Stage is active."
         }
       ]
     },
@@ -385,171 +611,31 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624597-videobinned": {
-      "title": "videoBinned",
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3875312-portraiteffectsupported": {
+      "title": "portraitEffectSupported",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624597-videobinned",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3875312-portraiteffectsupported",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturedeviceformat/1624597-videobinned",
+      "url": "/documentation/avfoundation/avcapturedeviceformat/3875312-portraiteffectsupported",
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates whether video data is produced in a binned format."
+          "text": "A Boolean value that indicates whether the format supports the Portrait Effect feature."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3153006-multicamsupported": {
-      "title": "multiCamSupported",
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3875313-videoframeraterangeforportraitef": {
+      "title": "videoFrameRateRangeForPortraitEffect",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3153006-multicamsupported",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3875313-videoframeraterangeforportraitef",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturedeviceformat/3153006-multicamsupported",
+      "url": "/documentation/avfoundation/avcapturedeviceformat/3875313-videoframeraterangeforportraitef",
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturemulticamsession"
-        },
-        {
-          "type": "text",
-          "text": " supports this format."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3153005-highestphotoqualitysupported": {
-      "title": "highestPhotoQualitySupported",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3153005-highestphotoqualitysupported",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturedeviceformat/3153005-highestphotoqualitysupported",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether this format supports the highest photo quality that the platform can deliver."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avframeraterange": {
-      "title": "AVFrameRateRange",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avframeraterange",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avframeraterange",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An "
-        },
-        {
-          "type": "codeVoice",
-          "code": "AVFrameRateRange"
-        },
-        {
-          "type": "text",
-          "text": " object expresses a range of valid frame rates as minimum and maximum rate and minimum and maximum duration."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1387592-videosupportedframerateranges": {
-      "title": "videoSupportedFrameRateRanges",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1387592-videosupportedframerateranges",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturedeviceformat/1387592-videosupportedframerateranges",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Indicates the format’s supported frame rate ranges."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode": {
-      "title": "AVCaptureVideoStabilizationMode",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturevideostabilizationmode",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Constants that describe the modes of video stabilization supported by the device's format."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624587-isvideostabilizationmodesupporte": {
-      "title": "isVideoStabilizationModeSupported:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624587-isvideostabilizationmodesupporte",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturedeviceformat/1624587-isvideostabilizationmodesupporte",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the format supports a given video stabilization mode."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "isVideoStabilizationModeSupported:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3194616-geometricdistortioncorrectedvide": {
-      "title": "geometricDistortionCorrectedVideoFieldOfView",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3194616-geometricdistortioncorrectedvide",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturedeviceformat/3194616-geometricdistortioncorrectedvide",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The format’s horizontal field of view after correction for geometric distortion."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624634-videostabilizationsupported": {
-      "title": "videoStabilizationSupported",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624634-videostabilizationsupported",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturedeviceformat/1624634-videostabilizationsupported",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Indicates whether the device supports video stabilization."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3375757-globaltonemappingsupported": {
-      "title": "globalToneMappingSupported",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3375757-globaltonemappingsupported",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturedeviceformat/3375757-globaltonemappingsupported",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the format supports global tone mapping."
+          "text": "The range of frame rates available when Portrait Effect is active."
         }
       ]
     },
@@ -659,6 +745,16 @@
       "title": "Technologies"
     }
   },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "13.0",
+        "13.2 beta 1"
+      ]
+    }
+  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -680,28 +776,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624571-videohdrsupported",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/2865757-unsupportedcaptureoutputclasses",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624620-highresolutionstillimagedimensio"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Examining Focus and Exposure Attributes",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624592-minexposureduration",
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624582-maxexposureduration",
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624603-miniso",
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624601-maxiso",
-        "doc://com.apple.documentation/documentation/avfoundation/avcaptureautofocussystem",
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624600-autofocussystem"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Examining Zoom Attributes",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624569-videofieldofview",
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624635-videomaxzoomfactor",
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624638-videozoomfactorupscalethreshold"
-      ]
+      ],
+      "anchor": "2882722"
     },
     {
       "kind": "taskGroup",
@@ -713,11 +789,63 @@
         "doc://com.apple.documentation/documentation/avfoundation/avframeraterange",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1387592-videosupportedframerateranges",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode",
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624587-isvideostabilizationmodesupporte",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3194616-geometricdistortioncorrectedvide",
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624634-videostabilizationsupported",
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3375757-globaltonemappingsupported"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3375757-globaltonemappingsupported",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624587-isvideostabilizationmodesupporte",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624634-videostabilizationsupported"
+      ],
+      "anchor": "2882720"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Examining Quality Attributes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3751763-highphotoqualitysupported"
+      ],
+      "anchor": "3761254"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Examining Center Stage Attributes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3738420-centerstagesupported",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3738421-videoframeraterangeforcenterstag",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3738423-videominzoomfactorforcenterstage",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3738422-videomaxzoomfactorforcenterstage"
+      ],
+      "anchor": "3742767"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Examining Focus and Exposure Attributes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624592-minexposureduration",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624582-maxexposureduration",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624603-miniso",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624601-maxiso",
+        "doc://com.apple.documentation/documentation/avfoundation/avcaptureautofocussystem",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624600-autofocussystem"
+      ],
+      "anchor": "2882721"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Examining Zoom Attributes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624569-videofieldofview",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624635-videomaxzoomfactor",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624638-videozoomfactorupscalethreshold"
+      ],
+      "anchor": "2882723"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Accessing Portrait Effects Settings",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3875312-portraiteffectsupported",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3875313-videoframeraterangeforportraitef"
+      ],
+      "anchor": "3875775"
     },
     {
       "kind": "taskGroup",
@@ -728,7 +856,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/2865752-videominzoomfactorfordepthdatade",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/2865756-videomaxzoomfactorfordepthdatade",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturelensstabilizationstatus"
-      ]
+      ],
+      "anchor": "2882719"
     }
   ],
   "seeAlsoSections": [
@@ -775,6 +904,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -848,7 +978,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

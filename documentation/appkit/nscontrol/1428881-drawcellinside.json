@@ -12,7 +12,8 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
         "doc://com.apple.documentation/documentation/appkit/views_and_controls",
-        "doc://com.apple.documentation/documentation/appkit/nscontrol"
+        "doc://com.apple.documentation/documentation/appkit/nscontrol",
+        "doc://com.apple.documentation/documentation/appkit/nscontrol/deprecated_symbols"
       ]
     ]
   },
@@ -36,16 +37,19 @@
         "name": "macOS",
         "introducedAt": "10.0",
         "deprecatedAt": "10.10",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSControl(im)drawCellInside:",
+    "parent": {
+      "title": "NSControl"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -98,9 +102,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A definition of the fundamental behavior for controls, which are specialized views that notify your app of relevant events by using the target-action design pattern. "
+          "text": "A specialized view, such as a button or text field, that notifies your app of relevant events using the target-action design pattern."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscontrol/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol/deprecated_symbols",
+      "url": "/documentation/appkit/nscontrol/deprecated_symbols",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/appkit/nscell/1531274-drawinteriorwithframe": {
       "title": "drawInteriorWithFrame:inView:",
@@ -202,21 +214,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nscell"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nscontrol/1428960-cell": {
-      "title": "cell",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol/1428960-cell",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nscontrol/1428960-cell",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The receiver’s cell object."
-        }
-      ],
-      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/appkit/nscontrol/1428964-selectedcell": {
       "title": "selectedCell",
@@ -368,6 +365,81 @@
       ],
       "deprecated": true
     },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1428934-controltextdidbeginediting": {
+      "title": "controlTextDidBeginEditing:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1428934-controltextdidbeginediting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1428934-controltextdidbeginediting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sent when a control with editable text begins an editing session."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "controlTextDidBeginEditing:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1428982-controltextdidchange": {
+      "title": "controlTextDidChange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1428982-controltextdidchange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1428982-controltextdidchange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sent when the text in the receiving control changes. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "controlTextDidChange:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1428847-controltextdidendediting": {
+      "title": "controlTextDidEndEditing:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1428847-controltextdidendediting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1428847-controltextdidendediting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sent when a control with editable text ends an editing session."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "controlTextDidEndEditing:"
+        }
+      ],
+      "deprecated": true
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -379,7 +451,6 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428960-cell",
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428964-selectedcell",
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428845-selectedtag",
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428879-setneedsdisplay",
@@ -387,9 +458,12 @@
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428966-selectcell",
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428869-drawcell",
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428893-updatecell",
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428923-updatecellinside"
+        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428923-updatecellinside",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1428934-controltextdidbeginediting",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1428982-controltextdidchange",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1428847-controltextdidendediting"
       ],
-      "title": "Deprecated",
+      "title": "Deprecated Methods",
       "generated": true
     }
   ],
@@ -520,7 +594,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

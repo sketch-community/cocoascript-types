@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Constants indicating the preferred size of your content."
+      "text": "Constants that indicate the preferred size of your content."
     }
   ],
   "documentVersion": 0,
@@ -48,25 +48,30 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@T@UIContentSizeCategory",
     "symbolKind": "tdef"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -141,20 +146,6 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory": {
-      "title": "preferredContentSizeCategory",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The font sizing option preferred by the user."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryunspecified": {
       "title": "UIContentSizeCategoryUnspecified",
       "type": "topic",
@@ -179,7 +170,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An extra small font."
+          "text": "An extra-small font."
         }
       ]
     },
@@ -235,7 +226,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An extra large font. "
+          "text": "An extra-large font. "
         }
       ]
     },
@@ -249,7 +240,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An increasingly large font. "
+          "text": "A font that is larger than the extra-large font but smaller than the largest font size available."
         }
       ]
     },
@@ -263,77 +254,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The largest font option."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryaccessibilitymedium": {
-      "title": "UIContentSizeCategoryAccessibilityMedium",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryaccessibilitymedium",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uicontentsizecategoryaccessibilitymedium",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A medium font size reflecting the current accessibility settings."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryaccessibilitylarge": {
-      "title": "UIContentSizeCategoryAccessibilityLarge",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryaccessibilitylarge",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uicontentsizecategoryaccessibilitylarge",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A large font size reflecting the current accessibility settings."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryaccessibilityextralarge": {
-      "title": "UIContentSizeCategoryAccessibilityExtraLarge",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryaccessibilityextralarge",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uicontentsizecategoryaccessibilityextralarge",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An extra large font size reflecting the current accessibility settings."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryaccessibilityextraextralarge": {
-      "title": "UIContentSizeCategoryAccessibilityExtraExtraLarge",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryaccessibilityextraextralarge",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uicontentsizecategoryaccessibilityextraextralarge",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An extra extra large font size reflecting the current accessibility settings."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryaccessibilityextraextraextralarge": {
-      "title": "UIContentSizeCategoryAccessibilityExtraExtraExtraLarge",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryaccessibilityextraextraextralarge",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uicontentsizecategoryaccessibilityextraextraextralarge",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A really huge font size reflecting the current accessibility settings."
+          "text": "The largest font size."
         }
       ]
     },
@@ -347,7 +268,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the user changes the preferred content size setting. "
+          "text": "A notification that posts when the user changes the preferred content size setting. "
         }
       ]
     },
@@ -361,25 +282,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A key whose value is an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring"
-        },
-        {
-          "type": "text",
-          "text": " object reflecting the new value of the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory"
-        },
+          "text": "A key that reflects the new preferred content size."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory": {
+      "title": "preferredContentSizeCategory",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory",
+      "abstract": [
         {
           "type": "text",
-          "text": " property. "
+          "text": "The font sizing option preferred by the user."
         }
       ]
     },
@@ -393,7 +310,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants indicating the preferred size of your content."
+          "text": "Constants that indicate the preferred size of your content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryadjusting": {
+      "title": "UIContentSizeCategoryAdjusting",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryadjusting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicontentsizecategoryadjusting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A collection of methods that give controls an easy way to adopt automatic adjustment to content category changes."
         }
       ]
     },
@@ -408,7 +339,7 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Sizes",
+      "title": "Font Sizes",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryunspecified",
         "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryextrasmall",
@@ -417,29 +348,27 @@
         "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorylarge",
         "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryextralarge",
         "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryextraextralarge",
-        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryextraextraextralarge",
-        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryaccessibilitymedium",
-        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryaccessibilitylarge",
-        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryaccessibilityextralarge",
-        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryaccessibilityextraextralarge",
-        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryaccessibilityextraextraextralarge"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryextraextraextralarge"
+      ],
+      "anchor": "2211358"
     },
     {
       "kind": "taskGroup",
-      "title": "Size Change Notifications",
+      "title": "Font Size Change Notifications",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorydidchangenotification",
         "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorynewvaluekey"
-      ]
+      ],
+      "anchor": "2984377"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory",
-        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorynewvaluekey",
-        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorydidchangenotification"
+        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryadjusting",
+        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorydidchangenotification",
+        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorynewvaluekey"
       ],
       "title": "Getting the Font Sizing Preference",
       "generated": true
@@ -483,6 +412,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -491,7 +421,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -34,30 +34,35 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVMutableVideoComposition",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -156,7 +161,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a new mutable video composition with the specified asset properties."
+          "text": "Creates a mutable video composition with the specified asset properties."
         }
       ],
       "fragments": [
@@ -167,6 +172,30 @@
         {
           "kind": "identifier",
           "text": "videoCompositionWithPropertiesOfAsset:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/3200159-videocompositionwithpropertiesof": {
+      "title": "videoCompositionWithPropertiesOfAsset:prototypeInstruction:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/3200159-videocompositionwithpropertiesof",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablevideocomposition/3200159-videocompositionwithpropertiesof",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a mutable video composition with the specified asset properties and a prototype video composition instruction."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "videoCompositionWithPropertiesOfAsset:prototypeInstruction:"
         }
       ]
     },
@@ -191,24 +220,6 @@
         {
           "kind": "identifier",
           "text": "videoCompositionWithAsset:applyingCIFiltersWithHandler:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/3200159-videocompositionwithpropertiesof": {
-      "title": "videoCompositionWithPropertiesOfAsset:prototypeInstruction:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/3200159-videocompositionwithpropertiesof",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablevideocomposition/3200159-videocompositionwithpropertiesof",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "+ "
-        },
-        {
-          "kind": "identifier",
-          "text": "videoCompositionWithPropertiesOfAsset:prototypeInstruction:"
         }
       ]
     },
@@ -278,7 +289,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Methods you can implement to represent operations to be performed by a compositor."
+          "text": "A protocol that defines the interface for a video composition instruction."
         }
       ]
     },
@@ -307,20 +318,6 @@
         {
           "type": "text",
           "text": "The custom compositor class to use."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/2873799-sourcetrackidforframetiming": {
-      "title": "sourceTrackIDForFrameTiming",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/2873799-sourcetrackidforframetiming",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablevideocomposition/2873799-sourcetrackidforframetiming",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A value that indicates whether frame timing for the video composition is derived from the source's asset track."
         }
       ]
     },
@@ -366,6 +363,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/2873799-sourcetrackidforframetiming": {
+      "title": "sourceTrackIDForFrameTiming",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/2873799-sourcetrackidforframetiming",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablevideocomposition/2873799-sourcetrackidforframetiming",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier of the source track from which the video composition derives frame timing."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/3750316-sourcesampledatatrackids": {
+      "title": "sourceSampleDataTrackIDs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/3750316-sourcesampledatatrackids",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablevideocomposition/3750316-sourcesampledatatrackids",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The identifiers of source sample data tracks in the composition that the compositor requires to compose frames."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/media_composition_and_editing/editing_and_playing_hdr_video": {
       "title": "Editing and Playing HDR Video",
       "type": "topic",
@@ -408,20 +433,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionlayerinstruction": {
-      "title": "AVVideoCompositionLayerInstruction",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionlayerinstruction",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocompositionlayerinstruction",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object used to modify the transform, cropping, and opacity ramps applied to a given track in a composition."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocompositioninstruction": {
       "title": "AVMutableVideoCompositionInstruction",
       "type": "topic",
@@ -433,6 +444,20 @@
         {
           "type": "text",
           "text": "An operation performed by a compositor."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionlayerinstruction": {
+      "title": "AVVideoCompositionLayerInstruction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionlayerinstruction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avvideocompositionlayerinstruction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to modify the transform, cropping, and opacity ramps applied to a given track in a composition."
         }
       ]
     },
@@ -472,16 +497,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -499,9 +514,10 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1519720-videocomposition",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1388430-videocompositionwithpropertiesof",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1387006-videocompositionwithasset",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/3200159-videocompositionwithpropertiesof"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/3200159-videocompositionwithpropertiesof",
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1387006-videocompositionwithasset"
+      ],
+      "anchor": "1668816"
     },
     {
       "kind": "taskGroup",
@@ -514,11 +530,20 @@
         "doc://com.apple.documentation/documentation/avfoundation/1386654-avvideocompositioninstruction",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1390395-animationtool",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1390649-customvideocompositorclass",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/2873799-sourcetrackidforframetiming",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1643234-colorprimaries",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1643237-colortransferfunction",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1643231-colorycbcrmatrix"
-      ]
+      ],
+      "anchor": "1668869"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Identifying Source Tracks",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/2873799-sourcetrackidforframetiming",
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/3750316-sourcesampledatatrackids"
+      ],
+      "anchor": "3762260"
     }
   ],
   "seeAlsoSections": [
@@ -527,8 +552,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/media_composition_and_editing/editing_and_playing_hdr_video",
         "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition",
         "doc://com.apple.documentation/documentation/avfoundation/avvideocompositioninstruction",
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionlayerinstruction",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocompositioninstruction",
+        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionlayerinstruction",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocompositionlayerinstruction",
         "doc://com.apple.documentation/documentation/avfoundation/avvideocompositioncoreanimationtool"
       ],
@@ -570,6 +595,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -626,7 +652,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

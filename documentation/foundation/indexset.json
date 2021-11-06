@@ -34,32 +34,37 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "8.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Foundation8IndexSetV",
@@ -76,8 +81,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -3978,6 +3983,28 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/indexset/3802320-compare": {
+      "title": "compare(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/indexset/3802320-compare",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/indexset/3802320-compare",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "compare"
+        },
+        {
+          "kind": "text",
+          "text": "<Comparator>(Comparator.Compared, Comparator.Compared) -> ComparisonResult"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/indexset/2983366-contains": {
       "title": "contains(integersIn:)",
       "type": "topic",
@@ -4456,6 +4483,28 @@
         {
           "kind": "text",
           "text": ": Index) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/indexset/3766805-formatted": {
+      "title": "formatted(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/indexset/3766805-formatted",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/indexset/3766805-formatted",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "formatted"
+        },
+        {
+          "kind": "text",
+          "text": "<S>(S) -> S.FormatOutput"
         }
       ]
     },
@@ -5098,6 +5147,66 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/indexset/3802321-sorted": {
+      "title": "sorted(using:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/indexset/3802321-sorted",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/indexset/3802321-sorted",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "sorted"
+        },
+        {
+          "kind": "text",
+          "text": "<Comparator>("
+        },
+        {
+          "kind": "identifier",
+          "text": "using"
+        },
+        {
+          "kind": "text",
+          "text": ": Comparator) -> [Int]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/indexset/3802322-sorted": {
+      "title": "sorted(using:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/indexset/3802322-sorted",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/indexset/3802322-sorted",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "sorted"
+        },
+        {
+          "kind": "text",
+          "text": "<S, Comparator>("
+        },
+        {
+          "kind": "identifier",
+          "text": "using"
+        },
+        {
+          "kind": "text",
+          "text": ": S) -> [Int]"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/indexset/2983375-starts": {
       "title": "starts(with:by:)",
       "type": "topic",
@@ -5369,21 +5478,24 @@
         "doc://com.apple.documentation/documentation/foundation/indexset/1779813-init",
         "doc://com.apple.documentation/documentation/foundation/indexset/1780018-init",
         "doc://com.apple.documentation/documentation/foundation/indexset/1779657-init"
-      ]
+      ],
+      "anchor": "2850619"
     },
     {
       "kind": "taskGroup",
       "title": "Counting Items in a Set",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/indexset/1779633-count"
-      ]
+      ],
+      "anchor": "2902213"
     },
     {
       "kind": "taskGroup",
       "title": "Accessing Elements",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/indexset/1779836-subscript"
-      ]
+      ],
+      "anchor": "2850622"
     },
     {
       "kind": "taskGroup",
@@ -5395,7 +5507,8 @@
         "doc://com.apple.documentation/documentation/foundation/indexset/1780212-intersection",
         "doc://com.apple.documentation/documentation/foundation/indexset/1780135-symmetricdifference",
         "doc://com.apple.documentation/documentation/foundation/indexset/1780461-union"
-      ]
+      ],
+      "anchor": "2902224"
     },
     {
       "kind": "taskGroup",
@@ -5404,7 +5517,8 @@
         "doc://com.apple.documentation/documentation/foundation/indexset/1780092-insert",
         "doc://com.apple.documentation/documentation/foundation/indexset/1780157-insert",
         "doc://com.apple.documentation/documentation/foundation/indexset/1780238-update"
-      ]
+      ],
+      "anchor": "2902214"
     },
     {
       "kind": "taskGroup",
@@ -5416,7 +5530,8 @@
         "doc://com.apple.documentation/documentation/foundation/indexset/1780199-removeall",
         "doc://com.apple.documentation/documentation/foundation/indexset/1780485-subtract",
         "doc://com.apple.documentation/documentation/foundation/indexset/1780163-subtracting"
-      ]
+      ],
+      "anchor": "2902215"
     },
     {
       "kind": "taskGroup",
@@ -5433,7 +5548,8 @@
         "doc://com.apple.documentation/documentation/foundation/indexset/1779941-isstrictsuperset",
         "doc://com.apple.documentation/documentation/foundation/indexset/1780362-issubset",
         "doc://com.apple.documentation/documentation/foundation/indexset/1780452-issuperset"
-      ]
+      ],
+      "anchor": "2902225"
     },
     {
       "kind": "taskGroup",
@@ -5446,7 +5562,8 @@
         "doc://com.apple.documentation/documentation/foundation/indexset/1779619-formindex",
         "doc://com.apple.documentation/documentation/foundation/indexset/1780386-formindex",
         "doc://com.apple.documentation/documentation/foundation/indexset/1780216-indexrange"
-      ]
+      ],
+      "anchor": "2902223"
     },
     {
       "kind": "taskGroup",
@@ -5461,7 +5578,8 @@
         "doc://com.apple.documentation/documentation/foundation/indexset/1779840-integergreaterthan",
         "doc://com.apple.documentation/documentation/foundation/indexset/1779673-integergreaterthanorequalto",
         "doc://com.apple.documentation/documentation/foundation/indexset/1780356-integerlessthan"
-      ]
+      ],
+      "anchor": "2902216"
     },
     {
       "kind": "taskGroup",
@@ -5477,7 +5595,8 @@
         "doc://com.apple.documentation/documentation/foundation/indexset/2832893-prefix",
         "doc://com.apple.documentation/documentation/foundation/indexset/1780354-suffix",
         "doc://com.apple.documentation/documentation/foundation/indexset/1779598-suffix"
-      ]
+      ],
+      "anchor": "2902217"
     },
     {
       "kind": "taskGroup",
@@ -5486,7 +5605,8 @@
         "doc://com.apple.documentation/documentation/foundation/indexset/1779954-droplast",
         "doc://com.apple.documentation/documentation/foundation/indexset/1779772-dropfirst",
         "doc://com.apple.documentation/documentation/foundation/indexset/2832817-drop"
-      ]
+      ],
+      "anchor": "2902218"
     },
     {
       "kind": "taskGroup",
@@ -5494,7 +5614,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/indexset/2293358-reduce",
         "doc://com.apple.documentation/documentation/foundation/indexset/1780133-lazy"
-      ]
+      ],
+      "anchor": "2902219"
     },
     {
       "kind": "taskGroup",
@@ -5503,7 +5624,8 @@
         "doc://com.apple.documentation/documentation/foundation/indexset/1780248-foreach",
         "doc://com.apple.documentation/documentation/foundation/indexset/1780173-enumerated",
         "doc://com.apple.documentation/documentation/foundation/indexset/1780426-makeiterator"
-      ]
+      ],
+      "anchor": "2902220"
     },
     {
       "kind": "taskGroup",
@@ -5512,14 +5634,16 @@
         "doc://com.apple.documentation/documentation/foundation/indexset/1779787-sorted",
         "doc://com.apple.documentation/documentation/foundation/indexset/2293322-sorted",
         "doc://com.apple.documentation/documentation/foundation/indexset/1780267-reversed"
-      ]
+      ],
+      "anchor": "2902221"
     },
     {
       "kind": "taskGroup",
       "title": "Shifting Index Groups",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/indexset/1780041-shift"
-      ]
+      ],
+      "anchor": "2902559"
     },
     {
       "kind": "taskGroup",
@@ -5527,7 +5651,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/indexset/2293205-split",
         "doc://com.apple.documentation/documentation/foundation/indexset/1780446-split"
-      ]
+      ],
+      "anchor": "2902222"
     },
     {
       "kind": "taskGroup",
@@ -5535,7 +5660,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/indexset/2883172",
         "doc://com.apple.documentation/documentation/foundation/indexset/2293410"
-      ]
+      ],
+      "anchor": "2850623"
     },
     {
       "kind": "taskGroup",
@@ -5544,7 +5670,8 @@
         "doc://com.apple.documentation/documentation/foundation/indexset/1780154-rangeview",
         "doc://com.apple.documentation/documentation/foundation/indexset/2293483-rangeview",
         "doc://com.apple.documentation/documentation/foundation/indexset/rangeview"
-      ]
+      ],
+      "anchor": "2902226"
     },
     {
       "kind": "taskGroup",
@@ -5554,7 +5681,8 @@
         "doc://com.apple.documentation/documentation/foundation/indexset/1779731-debugdescription",
         "doc://com.apple.documentation/documentation/foundation/indexset/2427242-custommirror",
         "doc://com.apple.documentation/documentation/foundation/indexset/1779674-hashvalue"
-      ]
+      ],
+      "anchor": "2902212"
     },
     {
       "kind": "taskGroup",
@@ -5563,7 +5691,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsindexset",
         "doc://com.apple.documentation/documentation/foundation/nsmutableindexset",
         "doc://com.apple.documentation/documentation/foundation/indexset/referencetype"
-      ]
+      ],
+      "anchor": "2878630"
     },
     {
       "kind": "taskGroup",
@@ -5574,7 +5703,8 @@
         "doc://com.apple.documentation/documentation/foundation/indexset/indices",
         "doc://com.apple.documentation/documentation/foundation/indexset/iterator",
         "doc://com.apple.documentation/documentation/foundation/indexset/subsequence"
-      ]
+      ],
+      "anchor": "2850618"
     },
     {
       "kind": "taskGroup",
@@ -5583,7 +5713,8 @@
         "doc://com.apple.documentation/documentation/foundation/indexset/3126692-init",
         "doc://com.apple.documentation/documentation/foundation/indexset/2908867-init",
         "doc://com.apple.documentation/documentation/foundation/indexset/2983369-init"
-      ]
+      ],
+      "anchor": "2909370"
     },
     {
       "kind": "taskGroup",
@@ -5598,7 +5729,8 @@
         "doc://com.apple.documentation/documentation/foundation/indexset/1780087-last",
         "doc://com.apple.documentation/documentation/foundation/indexset/3344771-publisher",
         "doc://com.apple.documentation/documentation/foundation/indexset/3017450-underestimatedcount"
-      ]
+      ],
+      "anchor": "2850620"
     },
     {
       "kind": "taskGroup",
@@ -5606,6 +5738,7 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/indexset/2994559-allsatisfy",
         "doc://com.apple.documentation/documentation/foundation/indexset/2957830-compactmap",
+        "doc://com.apple.documentation/documentation/foundation/indexset/3802320-compare",
         "doc://com.apple.documentation/documentation/foundation/indexset/2983366-contains",
         "doc://com.apple.documentation/documentation/foundation/indexset/2983367-count",
         "doc://com.apple.documentation/documentation/foundation/indexset/3200267-difference",
@@ -5620,6 +5753,7 @@
         "doc://com.apple.documentation/documentation/foundation/indexset/3126690-flatmap",
         "doc://com.apple.documentation/documentation/foundation/indexset/2946874-formindex",
         "doc://com.apple.documentation/documentation/foundation/indexset/2946890-formindex",
+        "doc://com.apple.documentation/documentation/foundation/indexset/3766805-formatted",
         "doc://com.apple.documentation/documentation/foundation/indexset/3236753-hash",
         "doc://com.apple.documentation/documentation/foundation/indexset/2946846-index",
         "doc://com.apple.documentation/documentation/foundation/indexset/2946883-index",
@@ -5639,9 +5773,12 @@
         "doc://com.apple.documentation/documentation/foundation/indexset/3126695-reduce",
         "doc://com.apple.documentation/documentation/foundation/indexset/2994576-shuffled",
         "doc://com.apple.documentation/documentation/foundation/indexset/2994578-shuffled",
+        "doc://com.apple.documentation/documentation/foundation/indexset/3802321-sorted",
+        "doc://com.apple.documentation/documentation/foundation/indexset/3802322-sorted",
         "doc://com.apple.documentation/documentation/foundation/indexset/2983375-starts",
         "doc://com.apple.documentation/documentation/foundation/indexset/3126697-withcontiguousstorageifavailable"
-      ]
+      ],
+      "anchor": "2850621"
     },
     {
       "kind": "taskGroup",
@@ -5651,14 +5788,16 @@
         "doc://com.apple.documentation/documentation/foundation/indexset/2946912-subscript",
         "doc://com.apple.documentation/documentation/foundation/indexset/3017446-subscript",
         "doc://com.apple.documentation/documentation/foundation/indexset/3017447-subscript"
-      ]
+      ],
+      "anchor": "2947345"
     },
     {
       "kind": "taskGroup",
       "title": "Structures",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/indexset/index"
-      ]
+      ],
+      "anchor": "2872732"
     }
   ],
   "seeAlsoSections": [
@@ -5694,6 +5833,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -5716,7 +5856,15 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The range of valid integer values is 0..<INT_MAX-1. Anything outside this range is an error."
+              "text": "The range of valid integer values is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0...Int.max-1"
+            },
+            {
+              "type": "text",
+              "text": ". Anything outside this range is an error."
             }
           ]
         }
@@ -5724,7 +5872,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

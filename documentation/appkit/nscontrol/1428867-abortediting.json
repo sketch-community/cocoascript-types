@@ -35,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSControl(im)abortEditing",
+    "parent": {
+      "title": "NSControl"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -96,7 +99,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A definition of the fundamental behavior for controls, which are specialized views that notify your app of relevant events by using the target-action design pattern. "
+          "text": "A specialized view, such as a button or text field, that notifies your app of relevant events using the target-action design pattern."
         }
       ]
     },
@@ -115,6 +118,24 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/objectivec/no"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate/3005178-controltextdidendediting": {
+      "title": "controlTextDidEndEditing:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate/3005178-controltextdidendediting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscontroltexteditingdelegate/3005178-controltextdidendediting",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "controlTextDidEndEditing:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nscontrol/1428980-currenteditor": {
       "title": "currentEditor",
@@ -368,12 +389,30 @@
               "text": "If there was a field editor, this method removes the field editor’s delegate. "
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because the control discards any edits, it doesn’t call "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate/3005178-controltextdidendediting"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

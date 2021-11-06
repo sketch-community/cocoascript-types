@@ -34,8 +34,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -231,6 +231,14 @@
       ],
       "title": "Figure 7"
     },
+    "doc://com.apple.documentation/documentation/sirikit/inintent": {
+      "title": "INIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inintent"
+    },
     "doc://com.apple.documentation/documentation/sirikit/soup_chef_accelerating_app_interactions_with_shortcuts": {
       "title": "Soup Chef: Accelerating App Interactions with Shortcuts",
       "type": "topic",
@@ -242,6 +250,20 @@
         {
           "type": "text",
           "text": "Make it easy for people to use Siri with your app by providing shortcuts to your app’s actions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/offering_actions_in_the_shortcuts_app": {
+      "title": "Offering Actions in the Shortcuts App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/offering_actions_in_the_shortcuts_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/offering_actions_in_the_shortcuts_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Suggest shortcuts users may want to add to Siri or combine with other actions in their own shortcuts."
         }
       ]
     },
@@ -287,45 +309,59 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/shortcut_management": {
-      "title": "Shortcut Management",
+    "doc://com.apple.documentation/documentation/sirikit/adding_shortcuts_for_wind_down": {
+      "title": "Adding Shortcuts for Wind Down",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/shortcut_management",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/adding_shortcuts_for_wind_down",
       "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/sirikit/shortcut_management",
+      "role": "sampleCode",
+      "url": "/documentation/sirikit/adding_shortcuts_for_wind_down",
       "abstract": [
         {
           "type": "text",
-          "text": "Enable users to add shortcuts to Siri, and have your app suggest shortcuts to users."
+          "text": "Reveal your app’s shortcuts inside the Health app."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face": {
-      "title": "Relevant Shortcuts for the Siri Watch Face",
+    "doc://com.apple.documentation/documentation/sirikit/ininteraction": {
+      "title": "INInteraction",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Display shortcuts on the Siri watch face."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/inshortcut": {
-      "title": "INShortcut",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inshortcut",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ininteraction",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/inshortcut",
+      "url": "/documentation/sirikit/ininteraction",
       "abstract": [
         {
           "type": "text",
-          "text": "An object representing an action available in your app that the system may suggest to a user or a user may add to Siri."
+          "text": "An interaction between the user and your app involving an intent object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/invoiceshortcutcenter": {
+      "title": "INVoiceShortcutCenter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/invoiceshortcutcenter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/invoiceshortcutcenter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieve the user's shortcuts and make shortcut suggestions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/invoiceshortcut": {
+      "title": "INVoiceShortcut",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/invoiceshortcut",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/invoiceshortcut",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A shortcut the user added to Siri."
         }
       ]
     },
@@ -343,17 +379,59 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/adding_shortcuts_for_wind_down": {
-      "title": "Adding Shortcuts for Wind Down",
+    "doc://com.apple.documentation/documentation/sirikit/inshortcut": {
+      "title": "INShortcut",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/adding_shortcuts_for_wind_down",
-      "kind": "article",
-      "role": "sampleCode",
-      "url": "/documentation/sirikit/adding_shortcuts_for_wind_down",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inshortcut",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inshortcut",
       "abstract": [
         {
           "type": "text",
-          "text": "Reveal your app’s shortcuts inside the Health app."
+          "text": "An object representing an action available in your app that the system may suggest to a user or a user may add to Siri."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/shortcut-related_ui": {
+      "title": "Shortcut-Related UI",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/shortcut-related_ui",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/shortcut-related_ui",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Incorporate standard buttons and interfaces into your user interface to offer easy shortcut creation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support": {
+      "title": "Watch and Widget Support",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/watch_and_widget_support",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Display relevant shortcuts on the Siri watch face and suggest widgets in Smart Stacks."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/siri_event_suggestions": {
+      "title": "Siri Event Suggestions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/siri_event_suggestions",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/siri_event_suggestions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide users with current, actionable information connected to a reservation."
         }
       ]
     },
@@ -368,16 +446,21 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/offering_actions_in_the_shortcuts_app",
         "doc://com.apple.documentation/documentation/sirikit/donating_shortcuts",
         "doc://com.apple.documentation/documentation/sirikit/deleting_donated_shortcuts",
         "doc://com.apple.documentation/documentation/sirikit/soup_chef_accelerating_app_interactions_with_shortcuts",
-        "doc://com.apple.documentation/documentation/sirikit/shortcut_management",
-        "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face",
-        "doc://com.apple.documentation/documentation/sirikit/inshortcut",
+        "doc://com.apple.documentation/documentation/sirikit/adding_shortcuts_for_wind_down",
+        "doc://com.apple.documentation/documentation/sirikit/ininteraction",
+        "doc://com.apple.documentation/documentation/sirikit/invoiceshortcutcenter",
+        "doc://com.apple.documentation/documentation/sirikit/invoiceshortcut",
         "doc://com.apple.documentation/documentation/sirikit/inshortcutavailabilityoptions",
-        "doc://com.apple.documentation/documentation/sirikit/adding_shortcuts_for_wind_down"
+        "doc://com.apple.documentation/documentation/sirikit/inshortcut",
+        "doc://com.apple.documentation/documentation/sirikit/shortcut-related_ui",
+        "doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support",
+        "doc://com.apple.documentation/documentation/sirikit/siri_event_suggestions"
       ],
-      "title": "Shortcuts",
+      "title": "Shortcuts and Donations",
       "generated": true
     }
   ],
@@ -396,7 +479,34 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "By adding custom intents with parameters to your app, you can offer shortcuts that support conversational interaction in Siri and user customization in the Shortcuts app. When the user invokes your shortcut with their voice, Siri starts a dialog to collect the additional information needed to complete the shortcut. In the Shortcuts app, the user can make changes to what the shortcut will do when it’s invoked. To get an app that integrates custom intents and parameters, see "
+              "text": "You can offer your app’s unique capabilities throughout the system by designing custom intents. You may also want to create a custom intent that provides the same functionality as a system intent, to offer users more flexibility for incorporating that functionality into a multi-step shortcut."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Define custom intents and their parameters in an intents definition file. Xcode uses this file to generate an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inintent"
+            },
+            {
+              "type": "text",
+              "text": " subclass and related data types for each of your intents. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user invokes your shortcut with their voice, Siri starts a dialog to collect the additional information needed to complete the shortcut. In the Shortcuts app, the user can make changes to what the shortcut will do when it’s invoked. To get an app that integrates custom intents and parameters, see "
             },
             {
               "type": "reference",
@@ -522,7 +632,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "In the title field, add a human-readable title for the Intent."
+                      "text": "In the title field, add a human-readable title for the intent."
                     }
                   ]
                 }
@@ -985,7 +1095,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Setting Intent Responses and Outputs",
+          "text": "Set Intent Responses and Outputs",
           "anchor": "3239049"
         },
         {
@@ -1002,7 +1112,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The voice-only dialog is spoken instead of the printed dialog in circumstances where the user is not looking at a screen, such as on HomePod, CarPlay, and AirPods."
+              "text": "The voice-only dialog is spoken instead of the printed dialog in circumstances where the user isn’t looking at a screen, such as on HomePod, CarPlay, and AirPods."
             }
           ]
         },
@@ -1032,7 +1142,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

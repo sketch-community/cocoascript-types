@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_storage",
+        "doc://com.apple.documentation/documentation/uikit/textkit",
         "doc://com.apple.documentation/documentation/uikit/nstextattachment"
       ],
       [
@@ -41,25 +41,33 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)NSTextAttachment(cm)textAttachmentWithImage:",
+    "parent": {
+      "title": "NSTextAttachment"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -94,10 +102,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/text_storage": {
-      "title": "Text Storage",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage",
-      "url": "/documentation/uikit/text_storage",
+    "doc://com.apple.documentation/documentation/uikit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit",
+      "url": "/documentation/uikit/textkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -133,6 +141,22 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiimage"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring": {
+      "title": "NSMutableAttributedString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsmutableattributedstring"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextattachment/3327290-textattachmentwithimage#3853011": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextattachment/3327290-textattachmentwithimage#3853011",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/nstextattachment/3327290-textattachmentwithimage#3853011"
     },
     "doc://com.apple.documentation/documentation/appkit/nstextattachment/1508373-initwithfilewrapper": {
       "title": "initWithFileWrapper:",
@@ -284,6 +308,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -326,15 +351,91 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "A new text attachment object initialized with the image. "
+              "text": "A new text attachment object initialized with the image."
             }
           ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Attachments created with this method automatically adapt to the surrounding font and color attributes in attributed strings."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, the following code creates a text attachment from the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage"
+            },
+            {
+              "type": "text",
+              "text": " class using an SF symbol in a blue headline style and embeds it at the end of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring"
+            },
+            {
+              "type": "text",
+              "text": " class:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let content = NSMutableAttributedString(string: \"Open \")",
+            "guard let lockImage = UIImage(systemName: \"lock\") else {",
+            "    return",
+            "}",
+            "let attributes: [NSAttributedString.Key: Any] = [",
+            "    .foregroundColor: UIColor.blue,",
+            "    .font: UIFont.preferredFont(forTextStyle: .headline)",
+            "]",
+            "let lockSymbol = NSMutableAttributedString(",
+            "    attachment: NSTextAttachment(image: lockImage)",
+            ")",
+            "lockSymbol.addAttributes(attributes, ",
+            "                         range: NSRange(location: 0, length: 1))",
+            "content.insert(lockSymbol, at: 5)",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3853011",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

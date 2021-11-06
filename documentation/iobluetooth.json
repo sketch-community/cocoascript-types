@@ -27,18 +27,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.2",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -119,7 +119,13 @@
       "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceref",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/iobluetooth/iobluetoothdeviceref"
+      "url": "/documentation/iobluetooth/iobluetoothdeviceref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that represents a Bluetooth I/O device."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfree": {
       "title": "IOBluetoothHandsFree",
@@ -141,7 +147,13 @@
       "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway"
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that sends data to a connected Bluetooth hands-free phone or headset and processes commands from it."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice": {
       "title": "IOBluetoothHandsFreeDevice",
@@ -149,7 +161,13 @@
       "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevice"
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevice",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object you use to manage phone calls on a connected Bluetooth hands-free phone or headset."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontroller": {
       "title": "IOBluetoothHostController",
@@ -405,7 +423,13 @@
       "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogatewaydelegate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/iobluetooth/iobluetoothhandsfreeaudiogatewaydelegate"
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreeaudiogatewaydelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of optional methods for receiving information about status changes for a connected Bluetooth hands-free phone or headset."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedelegate": {
       "title": "IOBluetoothHandsFreeDelegate",
@@ -421,7 +445,13 @@
       "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate"
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of optional methods for receiving status change updates and information about a connected Bluetooth hands-free phone or headset."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontrollerdelegate": {
       "title": "IOBluetoothHostControllerDelegate",
@@ -575,6 +605,24 @@
       "title": "Technologies"
     }
   },
+  "diffAvailability": {
+    "minor": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "13.1",
+        "13.2 beta 1"
+      ]
+    },
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "13.0",
+        "13.2 beta 1"
+      ]
+    }
+  },
   "topicSections": [
     {
       "kind": "taskGroup",
@@ -606,7 +654,8 @@
         "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothusernotificationref",
         "doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices",
         "doc://com.apple.documentation/documentation/iobluetooth/obexsession"
-      ]
+      ],
+      "anchor": "1612518"
     },
     {
       "kind": "taskGroup",
@@ -621,7 +670,8 @@
         "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontrollerdelegate",
         "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchanneldelegate",
         "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchanneldelegate"
-      ]
+      ],
+      "anchor": "1612519"
     },
     {
       "kind": "taskGroup",
@@ -638,7 +688,8 @@
         "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_constants",
         "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_functions",
         "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_data_types"
-      ]
+      ],
+      "anchor": "1612521"
     }
   ],
   "seeAlsoSections": [
@@ -673,7 +724,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

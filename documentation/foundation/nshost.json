@@ -34,15 +34,17 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "deprecatedAt": "12.0",
+        "current": "12.1",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSHost",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -97,7 +99,8 @@
           "type": "text",
           "text": "A representation of an individual host on the network."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/nshost/1408946-currenthost": {
       "title": "currentHost",
@@ -129,7 +132,8 @@
           "kind": "identifier",
           "text": "currentHost"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/nshost/1416437-hostwithaddress": {
       "title": "hostWithAddress:",
@@ -169,7 +173,8 @@
           "kind": "identifier",
           "text": "hostWithAddress:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/nshost/1409654-hostwithname": {
       "title": "hostWithName:",
@@ -193,7 +198,8 @@
           "kind": "identifier",
           "text": "hostWithName:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
@@ -215,7 +221,8 @@
           "type": "text",
           "text": "Returns one of the network addresses of the receiver."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/nshost/1417599-addresses": {
       "title": "addresses",
@@ -229,7 +236,8 @@
           "type": "text",
           "text": "Returns all the network addresses of the receiver."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/nshost/1416949-name": {
       "title": "name",
@@ -243,7 +251,8 @@
           "type": "text",
           "text": "Returns one of the hostnames of the receiver."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/nshost/1409624-localizedname": {
       "title": "localizedName",
@@ -265,7 +274,8 @@
           "type": "text",
           "text": "."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/nshost/1416026-names": {
       "title": "names",
@@ -279,7 +289,8 @@
           "type": "text",
           "text": "Returns all the hostnames of the receiver."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/nshost/1414786-isequaltohost": {
       "title": "isEqualToHost:",
@@ -311,7 +322,8 @@
           "kind": "identifier",
           "text": "isEqualToHost:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/nshost/1428335-ishostcacheenabled": {
       "title": "isHostCacheEnabled",
@@ -440,16 +452,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0 beta 5",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -468,7 +470,8 @@
         "doc://com.apple.documentation/documentation/foundation/nshost/1408946-currenthost",
         "doc://com.apple.documentation/documentation/foundation/nshost/1416437-hostwithaddress",
         "doc://com.apple.documentation/documentation/foundation/nshost/1409654-hostwithname"
-      ]
+      ],
+      "anchor": "1651125"
     },
     {
       "kind": "taskGroup",
@@ -479,14 +482,16 @@
         "doc://com.apple.documentation/documentation/foundation/nshost/1416949-name",
         "doc://com.apple.documentation/documentation/foundation/nshost/1409624-localizedname",
         "doc://com.apple.documentation/documentation/foundation/nshost/1416026-names"
-      ]
+      ],
+      "anchor": "1651160"
     },
     {
       "kind": "taskGroup",
       "title": "Comparing Hosts",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nshost/1414786-isequaltohost"
-      ]
+      ],
+      "anchor": "1651232"
     },
     {
       "kind": "taskGroup",
@@ -495,7 +500,8 @@
         "doc://com.apple.documentation/documentation/foundation/nshost/1428335-ishostcacheenabled",
         "doc://com.apple.documentation/documentation/foundation/nshost/1428339-sethostcacheenabled",
         "doc://com.apple.documentation/documentation/foundation/nshost/1428342-flushhostcache"
-      ]
+      ],
+      "anchor": "1651269"
     }
   ],
   "seeAlsoSections": [
@@ -760,7 +766,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

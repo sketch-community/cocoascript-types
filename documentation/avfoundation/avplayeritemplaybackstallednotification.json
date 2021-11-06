@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A notification that’s posted when some media doesn’t arrive in time to continue playback."
+      "text": "A notification the system posts when a player item media doesn’t arrive in time to continue playback."
     }
   ],
   "documentVersion": 0,
@@ -42,35 +42,40 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@AVPlayerItemPlaybackStalledNotification",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -171,7 +176,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that’s posted when the item plays to its end time."
+          "text": "A notification the system posts when a player item plays to its end time."
         }
       ]
     },
@@ -185,7 +190,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that’s posted when the item fails to play to its end time."
+          "text": "A notification that the system posts when a player item fails to play to its end time."
         }
       ]
     },
@@ -199,7 +204,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that’s posted when the item’s current time has changed discontinuously."
+          "text": "A notification the system posts when a player item’s time changes discontinuously."
         }
       ]
     },
@@ -213,7 +218,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that’s posted when some media doesn’t arrive in time to continue playback."
+          "text": "A notification the system posts when a player item media doesn’t arrive in time to continue playback."
         }
       ]
     },
@@ -223,7 +228,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemmediaselectiondidchangenotification",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritemmediaselectiondidchangenotification"
+      "url": "/documentation/avfoundation/avplayeritemmediaselectiondidchangenotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification the player item posts when its media selection changes."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritemrecommendedtimeoffsetfromlivedidchangenotification": {
       "title": "AVPlayerItemRecommendedTimeOffsetFromLiveDidChangeNotification",
@@ -231,7 +242,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemrecommendedtimeoffsetfromlivedidchangenotification",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritemrecommendedtimeoffsetfromlivedidchangenotification"
+      "url": "/documentation/avfoundation/avplayeritemrecommendedtimeoffsetfromlivedidchangenotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification the player item posts when its offset from the live time changes."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritemnewaccesslogentrynotification": {
       "title": "AVPlayerItemNewAccessLogEntryNotification",
@@ -243,7 +260,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that’s posted when the player item adds a new access log entry."
+          "text": "A notification the system posts when a player item adds a new entry to its access log."
         }
       ]
     },
@@ -257,7 +274,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that’s posted when the player item adds a new error log entry."
+          "text": "A notification the system posts when a player item adds a new entry to its error log."
         }
       ]
     },
@@ -322,6 +339,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -344,7 +362,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The notification’s object is the player item whose playback is unable to continue due to network delays. Streaming-media playback continues once the player receives a sufficient amount of data. File-based playback doesn’t continue."
+              "text": "The notification’s object is the player item whose playback is unable to continue due to network delays. Streaming-media playback continues after the player item retrieves a sufficient amount of data. File-based playback doesn’t continue."
             }
           ]
         },
@@ -356,7 +374,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The system may post this notification on a thread other than the one used to registered the observer."
+                  "text": "The system may post this notification on a thread other than the one you use to register the observer."
                 }
               ]
             }
@@ -375,7 +393,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

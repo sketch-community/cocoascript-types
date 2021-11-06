@@ -11,13 +11,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
       ]
     ]
@@ -42,15 +42,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSAccessibility(py)accessibilityMenuBar",
+    "parent": {
+      "title": "NSAccessibility"
+    },
     "symbolKind": "intfp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -75,10 +78,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -93,7 +96,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The complete list of properties and methods implemented by accessible elements."
+          "text": "The complete list of properties and methods for accessible elements."
         }
       ]
     },
@@ -131,7 +134,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that determines whether this app is the frontmost app."
+          "text": "A Boolean value that determines whether the app is the frontmost app."
         }
       ]
     },
@@ -146,7 +149,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that determines whether this app is hidden."
+          "text": "A Boolean value that determines whether the app is in a hidden state."
         }
       ]
     },
@@ -191,7 +194,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An array containing all the app’s windows."
+          "text": "An array that contains all the app’s windows."
         }
       ]
     },
@@ -258,7 +261,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

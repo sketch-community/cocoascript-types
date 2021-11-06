@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A definition of the fundamental behavior for controls, which are specialized views that notify your app of relevant events by using the target-action design pattern. "
+      "text": "A specialized view, such as a button or text field, that notifies your app of relevant events using the target-action design pattern."
     }
   ],
   "documentVersion": 0,
@@ -34,15 +34,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSControl",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -85,14 +85,6 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/objectivec/nsinteger": {
-      "title": "NSInteger",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsinteger",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/nsinteger"
-    },
     "doc://com.apple.documentation/documentation/objectivec/nsobject/1428934-controltextdidbeginediting": {
       "title": "controlTextDidBeginEditing:",
       "type": "topic",
@@ -100,12 +92,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/objectivec/nsobject/1428934-controltextdidbeginediting",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sent when a control with editable text begins an editing session."
-        }
-      ],
       "fragments": [
         {
           "kind": "text",
@@ -115,8 +101,7 @@
           "kind": "identifier",
           "text": "controlTextDidBeginEditing:"
         }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject/1428982-controltextdidchange": {
       "title": "controlTextDidChange:",
@@ -125,12 +110,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/objectivec/nsobject/1428982-controltextdidchange",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sent when the text in the receiving control changes. "
-        }
-      ],
       "fragments": [
         {
           "kind": "text",
@@ -140,8 +119,7 @@
           "kind": "identifier",
           "text": "controlTextDidChange:"
         }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject/1428847-controltextdidendediting": {
       "title": "controlTextDidEndEditing:",
@@ -150,12 +128,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/objectivec/nsobject/1428847-controltextdidendediting",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sent when a control with editable text ends an editing session."
-        }
-      ],
       "fragments": [
         {
           "kind": "text",
@@ -165,8 +137,7 @@
           "kind": "identifier",
           "text": "controlTextDidEndEditing:"
         }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate": {
       "title": "NSControlTextEditingDelegate",
@@ -186,9 +157,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A definition of the fundamental behavior for controls, which are specialized views that notify your app of relevant events by using the target-action design pattern. "
+          "text": "A specialized view, such as a button or text field, that notifies your app of relevant events using the target-action design pattern."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsinteger": {
+      "title": "NSInteger",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsinteger",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsinteger"
     },
     "doc://com.apple.documentation/documentation/appkit/nsview": {
       "title": "NSView",
@@ -214,7 +193,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an NSControl object initialized with the specified frame rectangle. "
+          "text": "Initializes a control with the specified frame rectangle. "
         }
       ],
       "fragments": [
@@ -235,6 +214,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nscontrol/1428861-initwithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a control with data in an unarchiver."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -245,21 +230,6 @@
           "text": "initWithCoder:"
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nscontrol/1428891-cellclass": {
-      "title": "cellClass",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol/1428891-cellclass",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nscontrol/1428891-cellclass",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the type of cell used by the receiver."
-        }
-      ],
-      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/appkit/nscontrol/1428970-enabled": {
       "title": "enabled",
@@ -858,6 +828,48 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nscontroltextdidbegineditingnotification": {
+      "title": "NSControlTextDidBeginEditingNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontroltextdidbegineditingnotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscontroltextdidbegineditingnotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sent when a control with editable cells begins an edit session. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscontroltextdidchangenotification": {
+      "title": "NSControlTextDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontroltextdidchangenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscontroltextdidchangenotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sent when the text in the receiving control changes. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscontroltextdidendeditingnotification": {
+      "title": "NSControlTextDidEndEditingNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontroltextdidendeditingnotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscontroltextdidendeditingnotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sent when a control with editable cells ends an editing session. "
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nscontrol/1428871-controlsize": {
       "title": "controlSize",
       "type": "topic",
@@ -882,7 +894,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants for specifying a cell’s size. "
+          "text": "A constant for specifying a cell’s size. "
         }
       ]
     },
@@ -920,7 +932,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Resizes the receiver’s frame so that it is the minimum size needed to contain its cell."
+          "text": "Resizes the receiver’s frame so that it’s the minimum size needed to contain its cell."
         }
       ],
       "fragments": [
@@ -945,6 +957,34 @@
         {
           "type": "text",
           "text": "A Boolean value that indicates whether the cell is highlighted."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscellimageposition": {
+      "title": "NSCellImagePosition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscellimageposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscellimageposition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A constant for specifying the position of a button’s image relative to its title. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscontrolstatevalue": {
+      "title": "NSControlStateValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrolstatevalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscontrolstatevalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A constant that indicates whether a control is on, off, or in a mixed state."
         }
       ]
     },
@@ -1000,7 +1040,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Causes the specified action to be sent the target."
+          "text": "Causes the specified action to be sent to the target."
         }
       ],
       "fragments": [
@@ -1152,287 +1192,19 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nscontroltextdidbegineditingnotification": {
-      "title": "NSControlTextDidBeginEditingNotification",
+    "doc://com.apple.documentation/documentation/appkit/nscontrol/deprecated_symbols": {
+      "title": "Deprecated Symbols",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontroltextdidbegineditingnotification",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nscontroltextdidbegineditingnotification",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol/deprecated_symbols",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/nscontrol/deprecated_symbols",
       "abstract": [
         {
           "type": "text",
-          "text": "Sent when a control with editable cells begins an edit session. "
+          "text": "Review unsupported symbols and their replacements."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nscontroltextdidchangenotification": {
-      "title": "NSControlTextDidChangeNotification",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontroltextdidchangenotification",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nscontroltextdidchangenotification",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sent when the text in the receiving control changes. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nscontroltextdidendeditingnotification": {
-      "title": "NSControlTextDidEndEditingNotification",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontroltextdidendeditingnotification",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nscontroltextdidendeditingnotification",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sent when a control with editable cells ends an editing session. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nscontrol/1428960-cell": {
-      "title": "cell",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol/1428960-cell",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nscontrol/1428960-cell",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The receiver’s cell object."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/appkit/nscontrol/1428964-selectedcell": {
-      "title": "selectedCell",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol/1428964-selectedcell",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nscontrol/1428964-selectedcell",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the receiver’s selected cell."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "selectedCell"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/appkit/nscontrol/1428845-selectedtag": {
-      "title": "selectedTag",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol/1428845-selectedtag",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nscontrol/1428845-selectedtag",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the tag of the receiver’s selected cell.  "
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "selectedTag"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/appkit/nscontrol/1428879-setneedsdisplay": {
-      "title": "setNeedsDisplay",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol/1428879-setneedsdisplay",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nscontrol/1428879-setneedsdisplay",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Marks the receiver as needing redisplay (assuming automatic display is enabled)."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setNeedsDisplay"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/appkit/nscontrol/1428857-calcsize": {
-      "title": "calcSize",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol/1428857-calcsize",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nscontrol/1428857-calcsize",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Recomputes any internal sizing information for the receiver, if necessary. "
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "calcSize"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/appkit/nscontrol/1428966-selectcell": {
-      "title": "selectCell:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol/1428966-selectcell",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nscontrol/1428966-selectcell",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Selects the specified cell and redraws the control as needed. "
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "selectCell:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/appkit/nscontrol/1428869-drawcell": {
-      "title": "drawCell:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol/1428869-drawcell",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nscontrol/1428869-drawcell",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Draws the specified cell, as long as it belongs to the receiver."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "drawCell:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/appkit/nscontrol/1428881-drawcellinside": {
-      "title": "drawCellInside:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol/1428881-drawcellinside",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nscontrol/1428881-drawcellinside",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Draws the inside of the receiver’s cell (the area within the bezel or border) "
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "drawCellInside:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/appkit/nscontrol/1428893-updatecell": {
-      "title": "updateCell:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol/1428893-updatecell",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nscontrol/1428893-updatecell",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Marks the specified cell as in need of redrawing."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "updateCell:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/appkit/nscontrol/1428923-updatecellinside": {
-      "title": "updateCellInside:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol/1428923-updatecellinside",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nscontrol/1428923-updatecellinside",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Marks the inside of the specified cell as in need of redrawing."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "updateCellInside:"
-        }
-      ],
-      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/appkit/nscell": {
       "title": "NSCell",
@@ -1496,21 +1268,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428900-initwithframe",
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428861-initwithcoder"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Accessing the Control’s Cell",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428891-cellclass"
-      ]
+      ],
+      "anchor": "1651304"
     },
     {
       "kind": "taskGroup",
       "title": "Enabling and Disabling the Control",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428970-enabled"
-      ]
+      ],
+      "anchor": "1651375"
     },
     {
       "kind": "taskGroup",
@@ -1523,7 +1290,8 @@
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428849-objectvalue",
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428950-stringvalue",
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428916-attributedstringvalue"
-      ]
+      ],
+      "anchor": "1651436"
     },
     {
       "kind": "taskGroup",
@@ -1535,7 +1303,8 @@
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428875-takeintegervaluefrom",
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428853-takeobjectvaluefrom",
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428912-takestringvaluefrom"
-      ]
+      ],
+      "anchor": "1651533"
     },
     {
       "kind": "taskGroup",
@@ -1548,7 +1317,8 @@
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428931-setfloatingpointformat",
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428887-formatter",
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428921-basewritingdirection"
-      ]
+      ],
+      "anchor": "1651994"
     },
     {
       "kind": "taskGroup",
@@ -1557,7 +1327,8 @@
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428895-drawwithexpansionframe",
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428962-allowsexpansiontooltips",
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428932-expansionframewithframe"
-      ]
+      ],
+      "anchor": "1652111"
     },
     {
       "kind": "taskGroup",
@@ -1569,83 +1340,18 @@
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428919-editwithframe",
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428936-endediting",
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428968-selectwithframe"
-      ]
+      ],
+      "anchor": "1652156"
     },
     {
       "kind": "taskGroup",
-      "title": "Resizing the Control",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428871-controlsize",
-        "doc://com.apple.documentation/documentation/appkit/nscontrolsize",
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428902-sizethatfits",
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428877-sizetofit"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Displaying a Cell",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428927-highlighted"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Implementing the Target/Action Mechanism",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428956-action",
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428885-target",
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428952-continuous",
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428851-sendaction",
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428972-sendactionon"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Accessing Tags",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428910-tag"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Activating from the Keyboard",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428974-performclick",
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428976-refusesfirstresponder"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Tracking the Mouse",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428918-mousedown",
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428863-ignoresmulticlick"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Control Editing Notifications",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/1428934-controltextdidbeginediting",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/1428982-controltextdidchange",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/1428847-controltextdidendediting"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Supporting Constraint-Based Layout",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1526876-invalidateintrinsiccontentsizefo"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Notifications",
+      "title": "Control-Editing Notifications",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscontroltextdidbegineditingnotification",
         "doc://com.apple.documentation/documentation/appkit/nscontroltextdidchangenotification",
         "doc://com.apple.documentation/documentation/appkit/nscontroltextdidendeditingnotification"
       ],
+      "anchor": "1652599",
       "discussion": {
         "kind": "content",
         "content": [
@@ -1670,7 +1376,7 @@
               },
               {
                 "type": "text",
-                "text": " class defines delegate methods, it does not itself have a delegate. Any subclass that uses these methods must have a delegate and the methods to get and set it."
+                "text": " class defines delegate methods, it doesn’t itself have a delegate. Any subclass that uses these methods must have a delegate and the methods to get and set it."
               }
             ]
           }
@@ -1679,19 +1385,78 @@
     },
     {
       "kind": "taskGroup",
+      "title": "Resizing the Control",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428871-controlsize",
+        "doc://com.apple.documentation/documentation/appkit/nscontrolsize",
+        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428902-sizethatfits",
+        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428877-sizetofit"
+      ],
+      "anchor": "1652222"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Displaying a Cell",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428927-highlighted",
+        "doc://com.apple.documentation/documentation/appkit/nscellimageposition",
+        "doc://com.apple.documentation/documentation/appkit/nscontrolstatevalue"
+      ],
+      "anchor": "1652289"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Implementing the Target-Action Mechanism",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428956-action",
+        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428885-target",
+        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428952-continuous",
+        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428851-sendaction",
+        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428972-sendactionon"
+      ],
+      "anchor": "1652395"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Accessing Tags",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428910-tag"
+      ],
+      "anchor": "1652453"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Activating from the Keyboard",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428974-performclick",
+        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428976-refusesfirstresponder"
+      ],
+      "anchor": "1652480"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Tracking the Mouse",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428918-mousedown",
+        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428863-ignoresmulticlick"
+      ],
+      "anchor": "1652507"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Supporting Constraint-Based Layout",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nscontrol/1526876-invalidateintrinsiccontentsizefo"
+      ],
+      "anchor": "1652583"
+    },
+    {
+      "kind": "taskGroup",
       "title": "Deprecated",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428960-cell",
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428964-selectedcell",
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428845-selectedtag",
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428879-setneedsdisplay",
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428857-calcsize",
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428966-selectcell",
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428869-drawcell",
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428881-drawcellinside",
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428893-updatecell",
-        "doc://com.apple.documentation/documentation/appkit/nscontrol/1428923-updatecellinside"
-      ]
+        "doc://com.apple.documentation/documentation/appkit/nscontrol/deprecated_symbols"
+      ],
+      "anchor": "2877861"
     }
   ],
   "seeAlsoSections": [
@@ -1849,7 +1614,7 @@
             },
             {
               "type": "text",
-              "text": " defines delegate methods, it does not itself have a delegate. Any subclass that uses these methods must have a delegate and the methods to get and set it. In addition, a formal delegate protocol "
+              "text": " defines delegate methods, it doesn’t itself have a delegate. Any subclass that uses these methods must have a delegate and the methods to get and set it. In addition, a formal delegate protocol "
             },
             {
               "type": "reference",
@@ -1866,7 +1631,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

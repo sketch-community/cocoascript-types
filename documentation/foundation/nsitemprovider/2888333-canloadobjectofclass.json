@@ -41,35 +41,43 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSItemProvider(im)canLoadObjectOfClass:",
+    "parent": {
+      "title": "NSItemProvider"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -166,22 +174,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsdata": {
-      "title": "NSData",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsdata"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsprogress": {
-      "title": "NSProgress",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsprogress"
-    },
     "doc://com.apple.documentation/documentation/foundation/nsitemproviderreading": {
       "title": "NSItemProviderReading",
       "type": "topic",
@@ -263,168 +255,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403900-loaditemfortypeidentifier": {
-      "title": "loadItemForTypeIdentifier:options:completionHandler:",
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403923-registeredtypeidentifiers": {
+      "title": "registeredTypeIdentifiers",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403900-loaditemfortypeidentifier",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403923-registeredtypeidentifiers",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider/1403900-loaditemfortypeidentifier",
+      "url": "/documentation/foundation/nsitemprovider/1403923-registeredtypeidentifiers",
       "abstract": [
         {
           "type": "text",
-          "text": "Loads the item’s data and coerces it (as needed) to the specified type."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "loadItemForTypeIdentifier:options:completionHandler:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888331-loaddatarepresentationfortypeide": {
-      "title": "loadDataRepresentationForTypeIdentifier:completionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888331-loaddatarepresentationfortypeide",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider/2888331-loaddatarepresentationfortypeide",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Asynchronously copies the provided, typed data into an "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata"
-        },
-        {
-          "type": "text",
-          "text": " object, returning an "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress"
-        },
-        {
-          "type": "text",
-          "text": " object."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "loadDataRepresentationForTypeIdentifier:completionHandler:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888338-loadfilerepresentationfortypeide": {
-      "title": "loadFileRepresentationForTypeIdentifier:completionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888338-loadfilerepresentationfortypeide",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider/2888338-loadfilerepresentationfortypeide",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Asynchronously writes a copy of the provided, typed data to a temporary file, returning an "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress"
-        },
-        {
-          "type": "text",
-          "text": " object."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "loadFileRepresentationForTypeIdentifier:completionHandler:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888335-loadinplacefilerepresentationfor": {
-      "title": "loadInPlaceFileRepresentationForTypeIdentifier:completionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888335-loadinplacefilerepresentationfor",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider/2888335-loadinplacefilerepresentationfor",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Asynchronously opens a file in place, if doing so is possible, returning an "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress"
-        },
-        {
-          "type": "text",
-          "text": " object."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "loadInPlaceFileRepresentationForTypeIdentifier:completionHandler:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888336-loadobjectofclass": {
-      "title": "loadObjectOfClass:completionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888336-loadobjectofclass",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider/2888336-loadobjectofclass",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Asynchronously loads an object of a specified class to an item provider, returning an "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress"
-        },
-        {
-          "type": "text",
-          "text": " object."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "loadObjectOfClass:completionHandler:"
+          "text": "Returns the array of type identifiers for the item provider, listed in the same order in which they were registered."
         }
       ]
     },
@@ -464,15 +305,11 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403921-hasitemconformingtotypeidentifie",
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403900-loaditemfortypeidentifier",
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888331-loaddatarepresentationfortypeide",
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888338-loadfilerepresentationfortypeide",
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888335-loadinplacefilerepresentationfor",
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888336-loadobjectofclass",
         "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888320-hasrepresentationconformingtotyp",
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403923-registeredtypeidentifiers",
         "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888334-registeredtypeidentifierswithfil"
       ],
-      "title": "Getting the Item’s Data",
+      "title": "Querying the Provider’s Contents",
       "generated": true
     }
   ],
@@ -538,6 +375,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -548,7 +386,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -34,20 +34,25 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UITextInputAssistantItem",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -200,6 +205,48 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uitextinput": {
+      "title": "UITextInput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextinput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of methods for interacting with the text input system and enabling features, such as autocorrect and multistage text input, in documents."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextinputdelegate": {
+      "title": "UITextInputDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextinputdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An intermediary between a document and the text input system."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uikeyinput": {
+      "title": "UIKeyInput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyinput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uikeyinput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of methods a responder uses to implement simple text entry.  "
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uitextinputtraits": {
       "title": "UITextInputTraits",
       "type": "topic",
@@ -211,6 +258,34 @@
         {
           "type": "text",
           "text": "A set of methods that defines features for keyboard input to a text object. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextinputmode": {
+      "title": "UITextInputMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextinputmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The current text input mode. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidictationphrase": {
+      "title": "UIDictationPhrase",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidictationphrase",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidictationphrase",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that represents the textual interpretation of a spoken phrase that the user dictates."
         }
       ]
     },
@@ -240,15 +315,21 @@
         "doc://com.apple.documentation/documentation/uikit/uitextinputassistantitem/1614575-leadingbarbuttongroups",
         "doc://com.apple.documentation/documentation/uikit/uitextinputassistantitem/1614532-trailingbarbuttongroups",
         "doc://com.apple.documentation/documentation/uikit/uitextinputassistantitem/1614529-allowshidingshortcuts"
-      ]
+      ],
+      "anchor": "1652912"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uitextinputtraits"
+        "doc://com.apple.documentation/documentation/uikit/uitextinput",
+        "doc://com.apple.documentation/documentation/uikit/uitextinputdelegate",
+        "doc://com.apple.documentation/documentation/uikit/uikeyinput",
+        "doc://com.apple.documentation/documentation/uikit/uitextinputtraits",
+        "doc://com.apple.documentation/documentation/uikit/uitextinputmode",
+        "doc://com.apple.documentation/documentation/uikit/uidictationphrase"
       ],
-      "title": "Configuration",
+      "title": "Text Input",
       "generated": true
     }
   ],
@@ -286,6 +367,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -495,7 +577,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

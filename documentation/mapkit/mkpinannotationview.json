@@ -34,30 +34,45 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "deprecatedAt": "12.0",
+        "current": "12.1",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.2",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)MKPinAnnotationView",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -156,7 +171,8 @@
           "kind": "identifier",
           "text": "redPinColor"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/mapkit/mkpinannotationview/1452568-greenpincolor": {
       "title": "greenPinColor",
@@ -180,7 +196,8 @@
           "kind": "identifier",
           "text": "greenPinColor"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/mapkit/mkpinannotationview/1452110-purplepincolor": {
       "title": "purplePinColor",
@@ -204,7 +221,8 @@
           "kind": "identifier",
           "text": "purplePinColor"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/mapkit/mkpinannotationcolor": {
       "title": "MKPinAnnotationColor",
@@ -233,7 +251,8 @@
           "type": "text",
           "text": "The color of the pin head."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/mapkit/mkpinannotationview/1452654-animatesdrop": {
       "title": "animatesDrop",
@@ -247,7 +266,8 @@
           "type": "text",
           "text": "A Boolean value indicating whether the annotation view is animated onto the screen."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/mapkit/mkpinannotationview/1452530-pincolor": {
       "title": "pinColor",
@@ -288,7 +308,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A string-based annotation that you apply to a specific map point."
+          "text": "A string-based piece of location-specific data that you apply to a specific point on a map."
         }
       ]
     },
@@ -318,7 +338,8 @@
           "type": "text",
           "text": "An annotation view that displays a pin image on the map.  "
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -347,7 +368,8 @@
         "doc://com.apple.documentation/documentation/mapkit/mkpinannotationview/1452568-greenpincolor",
         "doc://com.apple.documentation/documentation/mapkit/mkpinannotationview/1452110-purplepincolor",
         "doc://com.apple.documentation/documentation/mapkit/mkpinannotationcolor"
-      ]
+      ],
+      "anchor": "1657930"
     },
     {
       "kind": "taskGroup",
@@ -356,7 +378,8 @@
         "doc://com.apple.documentation/documentation/mapkit/mkpinannotationview/1452042-pintintcolor",
         "doc://com.apple.documentation/documentation/mapkit/mkpinannotationview/1452654-animatesdrop",
         "doc://com.apple.documentation/documentation/mapkit/mkpinannotationview/1452530-pincolor"
-      ]
+      ],
+      "anchor": "1657868"
     }
   ],
   "seeAlsoSections": [
@@ -404,6 +427,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -467,7 +491,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A Boolean value indicating whether the table view supports drags and drops between apps."
+      "text": "A Boolean value that indicates whether the table view supports dragging content."
     }
   ],
   "documentVersion": 0,
@@ -36,20 +36,28 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UITableView(py)dragInteractionEnabled",
+    "parent": {
+      "title": "UITableView"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -110,7 +118,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A view that presents data using rows arranged in a single column."
+          "text": "A view that presents data using rows in a single column."
         }
       ]
     },
@@ -168,7 +176,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value indicating whether rows were lifted from the table view and have not yet been dropped."
+          "text": "A Boolean value that indicates whether the table view is currently tracking a drag session."
         }
       ]
     },
@@ -182,7 +190,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value indicating whether the table view supports drags and drops between apps."
+          "text": "A Boolean value that indicates whether the table view supports dragging content."
         }
       ]
     },
@@ -241,6 +249,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -260,7 +269,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The default value of this property is "
+              "text": "To support dragging content from the table view to a view in your app or another app, set this property value to "
             },
             {
               "type": "reference",
@@ -269,7 +278,7 @@
             },
             {
               "type": "text",
-              "text": " on iPad and "
+              "text": ". To disable this behavior, set the value to "
             },
             {
               "type": "reference",
@@ -278,7 +287,69 @@
             },
             {
               "type": "text",
-              "text": " on iPhone. Changing the value to true on iPhone makes it possible to drag content from the table view to another app on iPhone and to receive content from other apps."
+              "text": ". The default value is "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In iOS 14 and earlier, the default value is "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": " for iPad and "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+            },
+            {
+              "type": "text",
+              "text": " for iPhone. Setting the value to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": " on iPhone enables dragging within your app only. Dragging content to other apps isn’t possible on iPhone prior to iOS 15."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": " "
             }
           ]
         }
@@ -286,7 +357,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

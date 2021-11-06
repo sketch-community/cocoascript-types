@@ -35,20 +35,28 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIDevice(py)batteryLevel",
+    "parent": {
+      "title": "UIDevice"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -123,25 +131,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value indicating whether battery monitoring is enabled ("
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-        },
-        {
-          "type": "text",
-          "text": ") or not ("
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
-        },
-        {
-          "type": "text",
-          "text": ")."
+          "text": "A Boolean value that indicates whether battery monitoring is enabled."
         }
       ]
     },
@@ -158,22 +148,6 @@
           "text": "The battery state for the device."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/objectivec/yes": {
-      "title": "YES",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/yes"
-    },
-    "doc://com.apple.documentation/documentation/objectivec/no": {
-      "title": "NO",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/no"
     },
     "doc://com.apple.documentation/documentation/uikit/uidevice/1620042-batterylevel": {
       "title": "batteryLevel",
@@ -199,7 +173,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The battery power state of the device."
+          "text": "Constants that describe the battery power state of the device."
         }
       ]
     },
@@ -258,6 +232,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -303,7 +278,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

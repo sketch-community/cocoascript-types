@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns a newly initialized view controller with the nib file in the specified bundle."
+      "text": "Creates a view controller with the nib file in the specified bundle."
     }
   ],
   "documentVersion": 0,
@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIViewController(im)initWithNibName:bundle:",
+    "parent": {
+      "title": "UIViewController"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -262,7 +270,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a newly initialized view controller with the nib file in the specified bundle."
+          "text": "Creates a view controller with the nib file in the specified bundle."
         }
       ],
       "fragments": [
@@ -283,6 +291,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiviewcontroller/1621403-initwithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a view controller with data in an unarchiver."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -407,6 +421,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -631,7 +646,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -30,8 +30,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -89,8 +89,8 @@
             "2x"
           ],
           "size": {
-            "width": 708,
-            "height": 116
+            "width": 543,
+            "height": 90
           },
           "url": "https://docs-assets.developer.apple.com/published/058e665a6c/4ecf0924-ea2b-4faa-aea8-7bfc0b3fe419.png"
         },
@@ -99,8 +99,8 @@
             "1x"
           ],
           "size": {
-            "width": 708,
-            "height": 116
+            "width": 543,
+            "height": 90
           },
           "url": "https://docs-assets.developer.apple.com/published/917b2fd9cf/47df73b5-5cba-4c41-894d-b0a2fb600d1c.png"
         }
@@ -150,6 +150,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avkit/accessing_the_camera_while_multitasking": {
+      "title": "Accessing the Camera While Multitasking",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avkit/accessing_the_camera_while_multitasking",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avkit/accessing_the_camera_while_multitasking",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Operate the camera in Split View, Slide Over, or Picture in Picture mode."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app": {
       "title": "AVCam: Building a Camera App",
       "type": "topic",
@@ -175,6 +189,20 @@
         {
           "type": "text",
           "text": "Simultaneously record the output from the front and back cameras into a single movie file by using a multi-camera capture session."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcambarcode_detecting_barcodes_and_faces": {
+      "title": "AVCamBarcode: Detecting Barcodes and Faces",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcambarcode_detecting_barcodes_and_faces",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcambarcode_detecting_barcodes_and_faces",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identify machine readable codes or faces by using the camera."
         }
       ]
     },
@@ -272,7 +300,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Support professional photography workflows by enabling RAW capture in your camera app."
+          "text": "Support professional photography workflows by enabling minimally processed image capture in your camera app."
         }
       ]
     },
@@ -286,7 +314,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Incorporate scanned documents and pictures taken with a user's iPhone, iPad, or iPod touch into your Mac app using Continuity Camera."
+          "text": "Incorporate scanned documents and pictures from a user's iPhone, iPad, or iPod touch into your Mac app using Continuity Camera."
         }
       ]
     },
@@ -300,7 +328,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A container for image data collected by a photo capture output."
+          "text": "A container for image data from a photo capture output."
         }
       ]
     },
@@ -314,7 +342,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A capture output for still image, Live Photo, and other photography workflows."
+          "text": "A capture output for still image, Live Photos, and other photography workflows."
         }
       ]
     },
@@ -902,20 +930,12 @@
     }
   },
   "diffAvailability": {
-    "minor": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.1.1 Release Candidate",
-        "12.3 Release Candidate"
-      ]
-    },
     "major": {
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+        "13.0",
+        "13.2 beta 1"
       ]
     }
   },
@@ -926,18 +946,22 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_ios",
         "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_macos"
-      ]
+      ],
+      "anchor": "3197348"
     },
     {
       "kind": "taskGroup",
       "title": "Capture Sessions",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/setting_up_a_capture_session",
+        "doc://com.apple.documentation/documentation/avkit/accessing_the_camera_while_multitasking",
         "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app",
         "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avmulticampip_capturing_from_multiple_cameras",
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcambarcode_detecting_barcodes_and_faces",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesession",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturemulticamsession"
-      ]
+      ],
+      "anchor": "2865435"
     },
     {
       "kind": "taskGroup",
@@ -946,7 +970,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/choosing_a_capture_device",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceinput"
-      ]
+      ],
+      "anchor": "2958848"
     },
     {
       "kind": "taskGroup",
@@ -958,7 +983,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate"
-      ]
+      ],
+      "anchor": "2865436"
     },
     {
       "kind": "taskGroup",
@@ -971,7 +997,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avdepthdata",
         "doc://com.apple.documentation/documentation/avfoundation/avportraiteffectsmatte",
         "doc://com.apple.documentation/documentation/avfoundation/avsemanticsegmentationmatte"
-      ]
+      ],
+      "anchor": "2877303"
     },
     {
       "kind": "taskGroup",
@@ -980,7 +1007,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_video_in_alternative_formats",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturemoviefileoutput",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput"
-      ]
+      ],
+      "anchor": "2865438"
     },
     {
       "kind": "taskGroup",
@@ -988,7 +1016,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcaptureaudiofileoutput",
         "doc://com.apple.documentation/documentation/avfoundation/avcaptureaudiodataoutput"
-      ]
+      ],
+      "anchor": "2865439"
     },
     {
       "kind": "taskGroup",
@@ -1004,7 +1033,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avmetadatafaceobject",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadatamachinereadablecodeobject",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataobject"
-      ]
+      ],
+      "anchor": "2865440"
     },
     {
       "kind": "taskGroup",
@@ -1016,7 +1046,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesynchronizedmetadataobjectdata",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesynchronizedsamplebufferdata",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesynchronizeddata"
-      ]
+      ],
+      "anchor": "2877304"
     },
     {
       "kind": "taskGroup",
@@ -1024,7 +1055,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideopreviewlayer",
         "doc://com.apple.documentation/documentation/avfoundation/avcaptureaudiopreviewoutput"
-      ]
+      ],
+      "anchor": "2865441"
     },
     {
       "kind": "taskGroup",
@@ -1032,7 +1064,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturescreeninput",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturestillimageoutput"
-      ]
+      ],
+      "anchor": "2865442"
     },
     {
       "kind": "taskGroup",
@@ -1042,7 +1075,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcaptureoutput",
         "doc://com.apple.documentation/documentation/avfoundation/avcaptureconnection",
         "doc://com.apple.documentation/documentation/avfoundation/avcaptureaudiochannel"
-      ]
+      ],
+      "anchor": "2865444"
     },
     {
       "kind": "taskGroup",
@@ -1051,7 +1085,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturefileoutput",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturefileoutputdelegate",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturefileoutputrecordingdelegate"
-      ]
+      ],
+      "anchor": "2870877"
     }
   ],
   "primaryContentSections": [
@@ -1179,42 +1214,13 @@
         },
         {
           "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": " "
-            }
-          ]
-        },
-        {
-          "type": "aside",
-          "content": [
-            {
-              "type": "paragraph",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "Mac apps built with Mac Catalyst can’t use the AVFoundation Capture classes. These apps should use "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller"
-                },
-                {
-                  "type": "text",
-                  "text": " for photo and video capture, instead."
-                }
-              ]
-            }
-          ],
-          "style": "important"
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

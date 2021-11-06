@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Signifies the composition request succeeded"
+      "text": "Finishes the request to compose the frame."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAsynchronousVideoCompositionRequest(im)finishWithComposedVideoFrame:",
+    "parent": {
+      "title": "AVAsynchronousVideoCompositionRequest"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,7 +128,39 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that contains the information necessary for a video compositor to render an output pixel buffer."
+          "text": "An object that contains information a video compositor needs to render an output pixel buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferref": {
+      "title": "CVPixelBufferRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/cvpixelbufferref"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1387450-finishwithcomposedvideoframe": {
+      "title": "finishWithComposedVideoFrame:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1387450-finishwithcomposedvideoframe",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/1387450-finishwithcomposedvideoframe",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Finishes the request to compose the frame."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "finishWithComposedVideoFrame:"
         }
       ]
     },
@@ -134,7 +174,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Signifies the composition request encountered an error."
+          "text": "Finishes the request with an error."
         }
       ],
       "fragments": [
@@ -158,7 +198,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Signifies the composition request was canceled."
+          "text": "Cancels the request to compose a video frame."
         }
       ],
       "fragments": [
@@ -169,38 +209,6 @@
         {
           "kind": "identifier",
           "text": "finishCancelledRequest"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferref": {
-      "title": "CVPixelBufferRef",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferref",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corevideo/cvpixelbufferref"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1387450-finishwithcomposedvideoframe": {
-      "title": "finishWithComposedVideoFrame:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1387450-finishwithcomposedvideoframe",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/1387450-finishwithcomposedvideoframe",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Signifies the composition request succeeded"
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "finishWithComposedVideoFrame:"
         }
       ]
     },
@@ -215,10 +223,10 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386261-finishcancelledrequest",
-        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1390797-finishwitherror"
+        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1390797-finishwitherror",
+        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386261-finishcancelledrequest"
       ],
-      "title": "Finishing the Composition Request",
+      "title": "Finishing the Request",
       "generated": true
     }
   ],
@@ -272,6 +280,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -315,7 +324,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This method should be called by the custom composition when the composition request has succeeded."
+              "text": "A custom compositor calls this method to indicate that it’s composed a frame successfully."
             }
           ]
         }
@@ -323,7 +332,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

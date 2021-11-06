@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An object that represents the criteria CloudKit uses when fetching user identities."
+      "text": "The criteria to use when searching for discoverable iCloud users."
     }
   ],
   "documentVersion": 0,
@@ -10,8 +10,11 @@
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/cloudkit"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/cloudkit",
-        "doc://com.apple.documentation/documentation/cloudkit/database_operations",
         "doc://com.apple.documentation/documentation/cloudkit/ckuseridentity"
       ]
     ]
@@ -35,35 +38,40 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKUserIdentityLookupInfo",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -98,21 +106,65 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/database_operations": {
-      "title": "Database Operations",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/database_operations",
-      "url": "/documentation/cloudkit/database_operations",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
     "doc://com.apple.documentation/documentation/cloudkit/ckuseridentity": {
       "title": "CKUserIdentity",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckuseridentity",
-      "url": "/documentation/cloudkit/ckuseridentity",
       "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckuseridentity",
       "kind": "symbol",
-      "role": "symbol"
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckuseridentity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The identity of a user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckdiscoveruseridentitiesoperation": {
+      "title": "CKDiscoverUserIdentitiesOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckdiscoveruseridentitiesoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckdiscoveruseridentitiesoperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An operation that uses the provided criteria to search for discoverable iCloud users."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchshareparticipantsoperation": {
+      "title": "CKFetchShareParticipantsOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchshareparticipantsoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchshareparticipantsoperation"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640439-lookupinfoswithemails": {
+      "title": "lookupInfosWithEmails:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640439-lookupinfoswithemails",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckuseridentitylookupinfo/1640439-lookupinfoswithemails",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array of lookup infos for the specifed email addresses."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "lookupInfosWithEmails:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
@@ -210,30 +262,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640439-lookupinfoswithemails": {
-      "title": "lookupInfosWithEmails:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640439-lookupinfoswithemails",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckuseridentitylookupinfo/1640439-lookupinfoswithemails",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns an array of lookup infos for the specifed email addresses."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "+ "
-        },
-        {
-          "kind": "identifier",
-          "text": "lookupInfosWithEmails:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640429-lookupinfoswithphonenumbers": {
       "title": "lookupInfosWithPhoneNumbers:",
       "type": "topic",
@@ -324,34 +352,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckuseridentity/1640513-hasicloudaccount": {
-      "title": "hasiCloudAccount",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckuseridentity/1640513-hasicloudaccount",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckuseridentity/1640513-hasicloudaccount",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the user has an iCloud account."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckuseridentity/1640371-lookupinfo": {
-      "title": "lookupInfo",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckuseridentity/1640371-lookupinfo",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckuseridentity/1640371-lookupinfo",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The lookup info for retrieving the user identity."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo": {
       "title": "CKUserIdentityLookupInfo",
       "type": "topic",
@@ -362,7 +362,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that represents the criteria CloudKit uses when fetching user identities."
+          "text": "The criteria to use when searching for discoverable iCloud users."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckdiscoveralluseridentitiesoperation": {
+      "title": "CKDiscoverAllUserIdentitiesOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckdiscoveralluseridentitiesoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckdiscoveralluseridentitiesoperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An operation that uses the device’s contacts to search for discoverable iCloud users."
         }
       ]
     },
@@ -372,16 +386,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -411,7 +415,8 @@
         "doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640484-initwithemailaddress",
         "doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640402-initwithphonenumber",
         "doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640419-initwithuserrecordid"
-      ]
+      ],
+      "anchor": "2530628"
     },
     {
       "kind": "taskGroup",
@@ -420,7 +425,8 @@
         "doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640439-lookupinfoswithemails",
         "doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640429-lookupinfoswithphonenumbers",
         "doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640407-lookupinfoswithrecordids"
-      ]
+      ],
+      "anchor": "3695170"
     },
     {
       "kind": "taskGroup",
@@ -429,16 +435,18 @@
         "doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640462-emailaddress",
         "doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640482-phonenumber",
         "doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640405-userrecordid"
-      ]
+      ],
+      "anchor": "2530626"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/cloudkit/ckuseridentity/1640513-hasicloudaccount",
-        "doc://com.apple.documentation/documentation/cloudkit/ckuseridentity/1640371-lookupinfo"
+        "doc://com.apple.documentation/documentation/cloudkit/ckuseridentity",
+        "doc://com.apple.documentation/documentation/cloudkit/ckdiscoveralluseridentitiesoperation",
+        "doc://com.apple.documentation/documentation/cloudkit/ckdiscoveruseridentitiesoperation"
       ],
-      "title": "Accessing iCloud Information",
+      "title": "User Discovery",
       "generated": true
     }
   ],
@@ -476,6 +484,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -483,10 +492,66 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use this object when you want to discover the identities of your app’s users with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckdiscoveruseridentitiesoperation"
+            },
+            {
+              "type": "text",
+              "text": ", or to create a share’s participants with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchshareparticipantsoperation"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You create individual instances by providing an email address, phone number, or user record ID. Alternatively, create an array of objects all at once by using one of the convenience methods, such as "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640439-lookupinfoswithemails"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

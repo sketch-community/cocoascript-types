@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The device is in portrait mode but upside down, with the device held upright and the home button at the top."
+      "text": "The device is in portrait mode but upside down, with the device held upright and the Home button at the top."
     }
   ],
   "documentVersion": 0,
@@ -36,20 +36,28 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@E@UIDeviceOrientation@UIDeviceOrientationPortraitUpsideDown",
+    "parent": {
+      "title": "UIDeviceOrientation"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -110,7 +118,105 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The physical orientation of the device. "
+          "text": "Constants that describe the physical orientation of the device. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uideviceorientation/uideviceorientationunknown": {
+      "title": "UIDeviceOrientationUnknown",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uideviceorientation/uideviceorientationunknown",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uideviceorientation/uideviceorientationunknown",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The orientation of the device cannot be determined."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uideviceorientation/uideviceorientationportrait": {
+      "title": "UIDeviceOrientationPortrait",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uideviceorientation/uideviceorientationportrait",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uideviceorientation/uideviceorientationportrait",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The device is in portrait mode, with the device held upright and the Home button at the bottom."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uideviceorientation/uideviceorientationportraitupsidedown": {
+      "title": "UIDeviceOrientationPortraitUpsideDown",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uideviceorientation/uideviceorientationportraitupsidedown",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uideviceorientation/uideviceorientationportraitupsidedown",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The device is in portrait mode but upside down, with the device held upright and the Home button at the top."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uideviceorientation/uideviceorientationlandscapeleft": {
+      "title": "UIDeviceOrientationLandscapeLeft",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uideviceorientation/uideviceorientationlandscapeleft",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uideviceorientation/uideviceorientationlandscapeleft",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The device is in landscape mode, with the device held upright and the Home button on the right side."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uideviceorientation/uideviceorientationlandscaperight": {
+      "title": "UIDeviceOrientationLandscapeRight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uideviceorientation/uideviceorientationlandscaperight",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uideviceorientation/uideviceorientationlandscaperight",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The device is in landscape mode, with the device held upright and the Home button on the left side."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uideviceorientation/uideviceorientationfaceup": {
+      "title": "UIDeviceOrientationFaceUp",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uideviceorientation/uideviceorientationfaceup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uideviceorientation/uideviceorientationfaceup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The device is held parallel to the ground with the screen facing upwards."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uideviceorientation/uideviceorientationfacedown": {
+      "title": "UIDeviceOrientationFaceDown",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uideviceorientation/uideviceorientationfacedown",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uideviceorientation/uideviceorientationfacedown",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The device is held parallel to the ground with the screen facing downwards."
         }
       ]
     },
@@ -122,6 +228,20 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uideviceorientation/uideviceorientationunknown",
+        "doc://com.apple.documentation/documentation/uikit/uideviceorientation/uideviceorientationportrait",
+        "doc://com.apple.documentation/documentation/uikit/uideviceorientation/uideviceorientationlandscapeleft",
+        "doc://com.apple.documentation/documentation/uikit/uideviceorientation/uideviceorientationlandscaperight",
+        "doc://com.apple.documentation/documentation/uikit/uideviceorientation/uideviceorientationfaceup",
+        "doc://com.apple.documentation/documentation/uikit/uideviceorientation/uideviceorientationfacedown"
+      ],
+      "title": "Device Orientation",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -138,6 +258,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -145,7 +266,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

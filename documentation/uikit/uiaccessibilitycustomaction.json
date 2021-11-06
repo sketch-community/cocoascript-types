@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A custom action to be performed on an accessible object. "
+      "text": "A custom action to perform on an accessible object. "
     }
   ],
   "documentVersion": 0,
@@ -11,12 +11,12 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit"
       ]
     ]
   },
@@ -39,25 +39,30 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIAccessibilityCustomAction",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -92,10 +97,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -124,6 +129,30 @@
       "role": "symbol",
       "url": "/documentation/objectivec/nsobject"
     },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3043557-initwithname": {
+      "title": "initWithName:actionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3043557-initwithname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibilitycustomaction/3043557-initwithname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a custom action object with the specified name and action handler.  "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithName:actionHandler:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/1620499-initwithname": {
       "title": "initWithName:target:selector:",
       "type": "topic",
@@ -134,7 +163,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an initialized custom action object with the specified name. "
+          "text": "Creates a custom action object with the specified name, target, and selector. "
         }
       ],
       "fragments": [
@@ -148,6 +177,78 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650220-initwithname": {
+      "title": "initWithName:image:actionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650220-initwithname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibilitycustomaction/3650220-initwithname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a custom action object with the specified name, image, and action handler."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithName:image:actionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650221-initwithname": {
+      "title": "initWithName:image:target:selector:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650221-initwithname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibilitycustomaction/3650221-initwithname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a custom action object with the specified name, image, target, and selector. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithName:image:target:selector:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3043556-initwithattributedname": {
+      "title": "initWithAttributedName:actionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3043556-initwithattributedname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibilitycustomaction/3043556-initwithattributedname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a custom action object with the specified attributed name and action handler.  "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithAttributedName:actionHandler:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/2865951-initwithattributedname": {
       "title": "initWithAttributedName:target:selector:",
       "type": "topic",
@@ -158,7 +259,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an initialized custom action object with the specified name. "
+          "text": "Creates a custom action object with the specified attributed name, target, and selector.  "
         }
       ],
       "fragments": [
@@ -169,6 +270,54 @@
         {
           "kind": "identifier",
           "text": "initWithAttributedName:target:selector:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650218-initwithattributedname": {
+      "title": "initWithAttributedName:image:actionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650218-initwithattributedname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibilitycustomaction/3650218-initwithattributedname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a custom action object with the specified attributed name, image, and action handler.  "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithAttributedName:image:actionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650219-initwithattributedname": {
+      "title": "initWithAttributedName:image:target:selector:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650219-initwithattributedname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibilitycustomaction/3650219-initwithattributedname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a custom action object with the specified attributed name, image, target, and selector.  "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithAttributedName:image:target:selector:"
         }
       ]
     },
@@ -196,7 +345,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The localized name of the action specified as an attributed string."
+          "text": "The localized name of the action as an attributed string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650217-image": {
+      "title": "image",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650217-image",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibilitycustomaction/3650217-image",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An image that represents the action in assistive apps."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3043555-actionhandler": {
+      "title": "actionHandler",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3043555-actionhandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibilitycustomaction/3043555-actionhandler",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A handler to perform for the action."
         }
       ]
     },
@@ -228,129 +405,19 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3043556-initwithattributedname": {
-      "title": "initWithAttributedName:actionHandler:",
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomactionhandler": {
+      "title": "UIAccessibilityCustomActionHandler",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3043556-initwithattributedname",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomactionhandler",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibilitycustomaction/3043556-initwithattributedname",
-      "fragments": [
+      "url": "/documentation/uikit/uiaccessibilitycustomactionhandler",
+      "abstract": [
         {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithAttributedName:actionHandler:"
+          "type": "text",
+          "text": "A closure type that defines a handler to perform for an action."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650218-initwithattributedname": {
-      "title": "initWithAttributedName:image:actionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650218-initwithattributedname",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibilitycustomaction/3650218-initwithattributedname",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithAttributedName:image:actionHandler:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650219-initwithattributedname": {
-      "title": "initWithAttributedName:image:target:selector:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650219-initwithattributedname",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibilitycustomaction/3650219-initwithattributedname",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithAttributedName:image:target:selector:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3043557-initwithname": {
-      "title": "initWithName:actionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3043557-initwithname",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibilitycustomaction/3043557-initwithname",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithName:actionHandler:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650220-initwithname": {
-      "title": "initWithName:image:actionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650220-initwithname",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibilitycustomaction/3650220-initwithname",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithName:image:actionHandler:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650221-initwithname": {
-      "title": "initWithName:image:target:selector:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650221-initwithname",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibilitycustomaction/3650221-initwithname",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithName:image:target:selector:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3043555-actionhandler": {
-      "title": "actionHandler",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3043555-actionhandler",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibilitycustomaction/3043555-actionhandler"
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650217-image": {
-      "title": "image",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650217-image",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibilitycustomaction/3650217-image"
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibilityaction": {
       "title": "UIAccessibilityAction",
@@ -376,25 +443,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A custom action to be performed on an accessible object. "
+          "text": "A custom action to perform on an accessible object. "
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomactionhandler": {
-      "title": "UIAccessibilityCustomActionHandler",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomactionhandler",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibilitycustomactionhandler"
-    },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/delivering_an_exceptional_accessibility_experience": {
+    "doc://com.apple.documentation/documentation/accessibility/delivering_an_exceptional_accessibility_experience": {
       "title": "Delivering an Exceptional Accessibility Experience",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/delivering_an_exceptional_accessibility_experience",
+      "identifier": "doc://com.apple.documentation/documentation/accessibility/delivering_an_exceptional_accessibility_experience",
       "kind": "article",
       "role": "sampleCode",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos/delivering_an_exceptional_accessibility_experience",
+      "url": "/documentation/accessibility/delivering_an_exceptional_accessibility_experience",
       "abstract": [
         {
           "type": "text",
@@ -410,16 +469,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -433,11 +482,18 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Initializing a Custom Action",
+      "title": "Creating a Custom Action",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3043557-initwithname",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/1620499-initwithname",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/2865951-initwithattributedname"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650220-initwithname",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650221-initwithname",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3043556-initwithattributedname",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/2865951-initwithattributedname",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650218-initwithattributedname",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650219-initwithattributedname"
+      ],
+      "anchor": "1657061"
     },
     {
       "kind": "taskGroup",
@@ -445,29 +501,13 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/1620502-name",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/2865932-attributedname",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/1620501-target",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/1620498-selector"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Initializers",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3043556-initwithattributedname",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650218-initwithattributedname",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650219-initwithattributedname",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3043557-initwithname",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650220-initwithname",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650221-initwithname"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Properties",
-      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650217-image",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3043555-actionhandler",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650217-image"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/1620501-target",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/1620498-selector",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomactionhandler"
+      ],
+      "anchor": "1657095"
     }
   ],
   "seeAlsoSections": [
@@ -475,7 +515,7 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibilityaction",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomactionhandler",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/delivering_an_exceptional_accessibility_experience"
+        "doc://com.apple.documentation/documentation/accessibility/delivering_an_exceptional_accessibility_experience"
       ],
       "title": "Actions",
       "generated": true
@@ -515,6 +555,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -535,7 +576,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Apps that support custom actions can create instances of this class, specifying the user-readable name of the action and the object and selector to use when performing the action. Assistive technologies display custom actions in response to specific user cues. For example, VoiceOver lets users access actions quickly using the Actions rotor. "
+              "text": "Apps that support custom actions can create instances of this class, specifying the user-readable name of the action and the object and selector to use when performing the action. Assistive apps display custom actions in response to specific user cues. For example, VoiceOver lets users access actions quickly using the Actions rotor. "
             }
           ]
         },
@@ -561,7 +602,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

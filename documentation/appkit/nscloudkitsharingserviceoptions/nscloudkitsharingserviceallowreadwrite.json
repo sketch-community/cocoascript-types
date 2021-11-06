@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Indicates that the user is allowed to grant share participants read/write permissions."
+      "text": "An option that allows the participant to grant other participants read-write permissions."
     }
   ],
   "documentVersion": 0,
@@ -13,6 +13,13 @@
         "doc://com.apple.documentation/documentation/appkit",
         "doc://com.apple.documentation/documentation/appkit/app_and_environment",
         "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate",
+        "doc://com.apple.documentation/documentation/appkit/nscloudkitsharingserviceoptions"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/app_and_environment",
+        "doc://com.apple.documentation/documentation/appkit/nssharingservice",
         "doc://com.apple.documentation/documentation/appkit/nscloudkitsharingserviceoptions"
       ]
     ]
@@ -36,15 +43,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@E@NSCloudKitSharingServiceOptions@NSCloudKitSharingServiceAllowReadWrite",
+    "parent": {
+      "title": "NSCloudKitSharingServiceOptions"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,31 +115,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Possible values returned by "
-        },
-        {
-          "type": "text",
-          "text": " that describe how the user is allowed to configure the related share."
+          "text": "Constants that describe how a participant can configure a CloudKit share."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644694-optionsforsharingservice": {
-      "title": "optionsForSharingService:shareProvider:",
+    "doc://com.apple.documentation/documentation/appkit/nssharingservice": {
+      "title": "NSSharingService",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nssharingservice",
+      "url": "/documentation/appkit/nssharingservice",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644694-optionsforsharingservice",
       "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nscloudsharingservicedelegate/1644694-optionsforsharingservice",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "optionsForSharingService:shareProvider:"
-        }
-      ]
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/appkit/nscloudkitsharingserviceoptions/nscloudkitsharingserviceallowprivate": {
       "title": "NSCloudKitSharingServiceAllowPrivate",
@@ -141,7 +137,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates that the user is allowed to share privately."
+          "text": "An option that allows the participant to privately distribute the share to other iCloud users."
         }
       ]
     },
@@ -155,7 +151,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates that the user is allowed to share publicly."
+          "text": "An option that allows the participant to publicly distribute the share to other iCloud users."
         }
       ]
     },
@@ -169,7 +165,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates that the user is allowed to grant share participants read-only permissions."
+          "text": "An option that allows the participant to grant other participants read-only permissions."
         }
       ]
     },
@@ -183,7 +179,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates that the user is allowed to grant share participants read/write permissions."
+          "text": "An option that allows the participant to grant other participants read-write permissions."
         }
       ]
     },
@@ -197,7 +193,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates the user can configure the share with the standard set of options."
+          "text": "An option that allows the participant to configure the share with a standard set of options."
         }
       ]
     },
@@ -217,7 +213,7 @@
         "doc://com.apple.documentation/documentation/appkit/nscloudkitsharingserviceoptions/nscloudkitsharingserviceallowreadonly",
         "doc://com.apple.documentation/documentation/appkit/nscloudkitsharingserviceoptions/nscloudkitsharingservicestandard"
       ],
-      "title": "Options",
+      "title": "CloudKit Options",
       "generated": true
     }
   ],
@@ -247,7 +243,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

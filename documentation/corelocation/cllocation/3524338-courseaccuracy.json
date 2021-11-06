@@ -34,35 +34,43 @@
       {
         "name": "iOS",
         "introducedAt": "13.4",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.4",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.4",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.4",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.2",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CLLocation(py)courseAccuracy",
+    "parent": {
+      "title": "CLLocation"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -119,73 +127,17 @@
       "role": "symbol",
       "url": "/documentation/corelocation/cllocationdirectionaccuracy"
     },
-    "doc://com.apple.documentation/documentation/corelocation/cllocation/1423504-coordinate": {
-      "title": "coordinate",
+    "doc://com.apple.documentation/documentation/corelocation/cllocation/1423798-speed": {
+      "title": "speed",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation/1423504-coordinate",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation/1423798-speed",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/corelocation/cllocation/1423504-coordinate",
+      "url": "/documentation/corelocation/cllocation/1423798-speed",
       "abstract": [
         {
           "type": "text",
-          "text": "The geographical coordinate information."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corelocation/cllocation/1423820-altitude": {
-      "title": "altitude",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation/1423820-altitude",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corelocation/cllocation/1423820-altitude",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The altitude, measured in meters."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corelocation/cllocation/1616762-floor": {
-      "title": "floor",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation/1616762-floor",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corelocation/cllocation/1616762-floor",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The logical floor of the building in which the user is located."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corelocation/cllocation/1423599-horizontalaccuracy": {
-      "title": "horizontalAccuracy",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation/1423599-horizontalaccuracy",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corelocation/cllocation/1423599-horizontalaccuracy",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The radius of uncertainty for the location, measured in meters."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corelocation/cllocation/1423550-verticalaccuracy": {
-      "title": "verticalAccuracy",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation/1423550-verticalaccuracy",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corelocation/cllocation/1423550-verticalaccuracy",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The accuracy of the altitude value, measured in meters."
+          "text": "The instantaneous speed of the device, measured in meters per second. "
         }
       ]
     },
@@ -203,6 +155,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/corelocation/cllocation/1423832-course": {
+      "title": "course",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation/1423832-course",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocation/1423832-course",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The direction in which the device is traveling, measured in degrees and relative to due north. "
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/corelocation/cllocation/3524338-courseaccuracy": {
       "title": "courseAccuracy",
       "type": "topic",
@@ -217,20 +183,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/corelocation/cllocation/1423589-timestamp": {
-      "title": "timestamp",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation/1423589-timestamp",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corelocation/cllocation/1423589-timestamp",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The time at which this location was determined."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -242,15 +194,11 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/corelocation/cllocation/1423504-coordinate",
-        "doc://com.apple.documentation/documentation/corelocation/cllocation/1423820-altitude",
-        "doc://com.apple.documentation/documentation/corelocation/cllocation/1616762-floor",
-        "doc://com.apple.documentation/documentation/corelocation/cllocation/1423599-horizontalaccuracy",
-        "doc://com.apple.documentation/documentation/corelocation/cllocation/1423550-verticalaccuracy",
+        "doc://com.apple.documentation/documentation/corelocation/cllocation/1423798-speed",
         "doc://com.apple.documentation/documentation/corelocation/cllocation/3524340-speedaccuracy",
-        "doc://com.apple.documentation/documentation/corelocation/cllocation/1423589-timestamp"
+        "doc://com.apple.documentation/documentation/corelocation/cllocation/1423832-course"
       ],
-      "title": "Getting the Location Attributes",
+      "title": "Getting Speed and Course Information",
       "generated": true
     }
   ],
@@ -292,6 +240,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -330,7 +279,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "5.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSManagedObjectContext(py)concurrencyType",
+    "parent": {
+      "title": "NSManagedObjectContext"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -132,7 +140,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes a context with a given concurrency type."
+          "text": "Creates a context that uses the specified concurrency type."
         }
       ],
       "fragments": [
@@ -152,11 +160,43 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontextconcurrencytype",
+      "url": "/documentation/coredata/nsmanagedobjectcontextconcurrencytype"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextquerygenerationkey": {
+      "title": "NSManagedObjectContextQueryGenerationKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextquerygenerationkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontextquerygenerationkey",
       "abstract": [
         {
           "type": "text",
-          "text": "Constants to indicate the concurrency pattern with which a context will be used. "
+          "text": "Constant used to reference the query generation token."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506546-mergechangesfromremotecontextsav": {
+      "title": "mergeChangesFromRemoteContextSave:intoContexts:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506546-mergechangesfromremotecontextsav",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506546-mergechangesfromremotecontextsav",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Handles changes from other processes or from a serialized state."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "mergeChangesFromRemoteContextSave:intoContexts:"
         }
       ]
     },
@@ -188,20 +228,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1640477-querygenerationtoken": {
-      "title": "queryGenerationToken",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1640477-querygenerationtoken",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontext/1640477-querygenerationtoken",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the token associated with the query generation currently in use by this context."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506490-mergepolicy": {
       "title": "mergePolicy",
       "type": "topic",
@@ -213,6 +239,20 @@
         {
           "type": "text",
           "text": "The merge policy of the context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1640477-querygenerationtoken": {
+      "title": "queryGenerationToken",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1640477-querygenerationtoken",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1640477-querygenerationtoken",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the token associated with the query generation currently in use by this context."
         }
       ]
     },
@@ -278,44 +318,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506546-mergechangesfromremotecontextsav": {
-      "title": "mergeChangesFromRemoteContextSave:intoContexts:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506546-mergechangesfromremotecontextsav",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontext/1506546-mergechangesfromremotecontextsav",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Handles changes from other processes or from a serialized state."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "+ "
-        },
-        {
-          "kind": "identifier",
-          "text": "mergeChangesFromRemoteContextSave:intoContexts:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextquerygenerationkey": {
-      "title": "NSManagedObjectContextQueryGenerationKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextquerygenerationkey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontextquerygenerationkey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Constant used to reference the query generation token."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -327,15 +329,14 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextquerygenerationkey",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506546-mergechangesfromremotecontextsav",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1845237-automaticallymergeschangesfrompa",
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1640477-querygenerationtoken",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506490-mergepolicy",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1640477-querygenerationtoken",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/2892348-transactionauthor",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506606-mergechangesfromcontextdidsaveno",
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1640469-setquerygenerationfromtoken",
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506546-mergechangesfromremotecontextsav",
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype",
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextquerygenerationkey"
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1640469-setquerygenerationfromtoken"
       ],
       "title": "Managing Concurrency",
       "generated": true
@@ -386,6 +387,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -425,7 +427,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

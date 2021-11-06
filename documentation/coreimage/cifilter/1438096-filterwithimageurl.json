@@ -40,30 +40,48 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.5",
-        "current": "11.1"
+        "deprecatedAt": "12.0",
+        "current": "12.1",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)CIFilter(cm)filterWithImageURL:options:",
+    "parent": {
+      "title": "CIFilter"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -152,7 +170,8 @@
           "kind": "identifier",
           "text": "filterWithImageData:options:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/cifilter/1438096-filterwithimageurl": {
       "title": "filterWithImageURL:options:",
@@ -176,7 +195,8 @@
           "kind": "identifier",
           "text": "filterWithImageURL:options:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/cifilter/1438169-outputimage": {
       "title": "outputImage",
@@ -262,7 +282,8 @@
           "kind": "identifier",
           "text": "filterWithCVPixelBuffer:properties:options:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -392,6 +413,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -634,7 +656,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

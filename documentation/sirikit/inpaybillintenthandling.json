@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/payments"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -34,25 +34,38 @@
       {
         "name": "iOS",
         "introducedAt": "10.3",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.3",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(pl)INPayBillIntentHandling",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -87,13 +100,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/payments": {
-      "title": "Payments",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/payments",
-      "url": "/documentation/sirikit/payments",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "link-3872884": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3872884",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling": {
       "title": "INPayBillIntentHandling",
@@ -107,7 +128,8 @@
           "type": "text",
           "text": "The handler interface for paying a bill using money from the user’s account."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintent": {
       "title": "INPayBillIntent",
@@ -119,9 +141,10 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A request to transfer of money to facilitate payment of a bill."
+          "text": "A request to transfer money to facilitate payment of a bill."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject": {
       "title": "NSObject",
@@ -162,7 +185,8 @@
           "kind": "identifier",
           "text": "resolveBillPayeeForPayBill:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799065-resolvebilltypeforpaybill": {
       "title": "resolveBillTypeForPayBill:withCompletion:",
@@ -187,7 +211,8 @@
           "kind": "identifier",
           "text": "resolveBillTypeForPayBill:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799069-resolvefromaccountforpaybill": {
       "title": "resolveFromAccountForPayBill:withCompletion:",
@@ -212,7 +237,8 @@
           "kind": "identifier",
           "text": "resolveFromAccountForPayBill:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799076-resolvetransactionamountforpaybi": {
       "title": "resolveTransactionAmountForPayBill:withCompletion:",
@@ -237,7 +263,8 @@
           "kind": "identifier",
           "text": "resolveTransactionAmountForPayBill:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799068-resolveduedateforpaybill": {
       "title": "resolveDueDateForPayBill:withCompletion:",
@@ -262,7 +289,8 @@
           "kind": "identifier",
           "text": "resolveDueDateForPayBill:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799074-resolvetransactionscheduleddatef": {
       "title": "resolveTransactionScheduledDateForPayBill:withCompletion:",
@@ -275,7 +303,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Resolves the date on which the payment will occur."
+          "text": "Resolves the date for the payment to occur."
         }
       ],
       "fragments": [
@@ -287,7 +315,8 @@
           "kind": "identifier",
           "text": "resolveTransactionScheduledDateForPayBill:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799078-resolvetransactionnoteforpaybill": {
       "title": "resolveTransactionNoteForPayBill:withCompletion:",
@@ -312,7 +341,8 @@
           "kind": "identifier",
           "text": "resolveTransactionNoteForPayBill:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799070-confirmpaybill": {
       "title": "confirmPayBill:completion:",
@@ -337,7 +367,8 @@
           "kind": "identifier",
           "text": "confirmPayBill:completion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799072-handlepaybill": {
       "title": "handlePayBill:completion:",
@@ -362,7 +393,8 @@
           "kind": "identifier",
           "text": "handlePayBill:completion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintentresponse": {
       "title": "INPayBillIntentResponse",
@@ -376,7 +408,8 @@
           "type": "text",
           "text": "Your app’s response to a request to pay a bill."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -386,6 +419,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -416,21 +469,24 @@
         "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799068-resolveduedateforpaybill",
         "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799074-resolvetransactionscheduleddatef",
         "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799078-resolvetransactionnoteforpaybill"
-      ]
+      ],
+      "anchor": "2826077"
     },
     {
       "kind": "taskGroup",
       "title": "Confirming the Response",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799070-confirmpaybill"
-      ]
+      ],
+      "anchor": "2826076"
     },
     {
       "kind": "taskGroup",
       "title": "Handling the Intent",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799072-handlepaybill"
-      ]
+      ],
+      "anchor": "2806300"
     }
   ],
   "seeAlsoSections": [
@@ -439,7 +495,7 @@
         "doc://com.apple.documentation/documentation/sirikit/inpaybillintent",
         "doc://com.apple.documentation/documentation/sirikit/inpaybillintentresponse"
       ],
-      "title": "Pay a Bill",
+      "title": "Bill Payment",
       "generated": true
     }
   ],
@@ -467,6 +523,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -496,7 +553,7 @@
             },
             {
               "type": "text",
-              "text": " protocol to resolve, confirm, and handle requests to pay bills. Adopt this protocol in an object of your Intents extension that is capable of initiating the bill-payment process. "
+              "text": " protocol to resolve, confirm, and handle requests to pay bills. Adopt this protocol in an object of your Intents extension that’s capable of initiating the bill-payment process. "
             }
           ]
         },
@@ -522,7 +579,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An operation for retrieving zones from a CloudKit database."
+      "text": "An operation for retrieving record zones from a database."
     }
   ],
   "documentVersion": 0,
@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/cloudkit",
-        "doc://com.apple.documentation/documentation/cloudkit/record_operations"
+        "doc://com.apple.documentation/documentation/cloudkit/local_records"
       ]
     ]
   },
@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKFetchRecordZonesOperation",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -97,10 +102,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/record_operations": {
-      "title": "Record Operations",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/record_operations",
-      "url": "/documentation/cloudkit/record_operations",
+    "doc://com.apple.documentation/documentation/cloudkit/local_records": {
+      "title": "Local Records",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/local_records",
+      "url": "/documentation/cloudkit/local_records",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -221,6 +226,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonesoperation/3793699-perrecordzonecompletionblock": {
+      "title": "perRecordZoneCompletionBlock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonesoperation/3793699-perrecordzonecompletionblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchrecordzonesoperation/3793699-perrecordzonecompletionblock"
+    },
     "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonesoperation": {
       "title": "CKFetchRecordZonesOperation",
       "type": "topic",
@@ -231,7 +244,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An operation for retrieving zones from a CloudKit database."
+          "text": "An operation for retrieving record zones from a database."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordsoperation": {
+      "title": "CKFetchRecordsOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordsoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchrecordsoperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An operation for retrieving records from a database."
         }
       ]
     },
@@ -241,16 +268,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -270,28 +287,49 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonesoperation/1515299-initwithrecordzoneids",
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonesoperation/1515256-init"
-      ]
+      ],
+      "anchor": "1666116"
     },
     {
       "kind": "taskGroup",
       "title": "Getting All Record Zones",
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonesoperation/1514890-fetchallrecordzonesoperation"
-      ]
+      ],
+      "anchor": "1666158"
     },
     {
       "kind": "taskGroup",
       "title": "Configuring a Zone Fetch Operation",
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonesoperation/1515084-recordzoneids"
-      ]
+      ],
+      "anchor": "1666198"
     },
     {
       "kind": "taskGroup",
       "title": "Processing Zone Fetch Results",
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonesoperation/1515145-fetchrecordzonescompletionblock"
-      ]
+      ],
+      "anchor": "1666252"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonesoperation/3793699-perrecordzonecompletionblock"
+      ],
+      "anchor": "3796738"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordsoperation"
+      ],
+      "title": "Fetch Requests",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -328,6 +366,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -376,7 +415,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

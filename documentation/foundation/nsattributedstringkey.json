@@ -17,7 +17,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_storage",
+        "doc://com.apple.documentation/documentation/uikit/textkit",
         "doc://com.apple.documentation/documentation/foundation/nsattributedstring"
       ]
     ]
@@ -41,35 +41,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@NSAttributedStringKey",
     "symbolKind": "tdef"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -128,10 +133,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/text_storage": {
-      "title": "Text Storage",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage",
-      "url": "/documentation/uikit/text_storage",
+    "doc://com.apple.documentation/documentation/uikit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit",
+      "url": "/documentation/uikit/textkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -822,7 +827,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilityspeechattributeipanotation",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibilityspeechattributeipanotation"
+      "url": "/documentation/uikit/uiaccessibilityspeechattributeipanotation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that indicates the pronunciation of a specific word or phrase, such as a proper name."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiaccessibilityspeechattributelanguage": {
       "title": "UIAccessibilitySpeechAttributeLanguage",
@@ -834,7 +845,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A key indicating the language to use when speaking a string. "
+          "text": "A key that indicates the language to use when speaking a string. "
         }
       ]
     },
@@ -848,7 +859,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A key indicating the pitch to apply to spoken content. "
+          "text": "A key that indicates the pitch to apply to spoken content. "
         }
       ]
     },
@@ -862,7 +873,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A key indicating whether punctuation is spoken. "
+          "text": "A key that indicates whether to speak punctuation. "
         }
       ]
     },
@@ -876,7 +887,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A key indicating whether the spoken text is queued behind, or interrupts, existing spoken content. "
+          "text": "A key that indicates whether to queue an announcement behind existing speech or to interrupt it."
         }
       ]
     },
@@ -1064,6 +1075,78 @@
       ],
       "deprecated": true
     },
+    "doc://com.apple.documentation/documentation/foundation/nsalternatedescriptionattributename": {
+      "title": "NSAlternateDescriptionAttributeName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsalternatedescriptionattributename",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsalternatedescriptionattributename"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsimageurlattributename": {
+      "title": "NSImageURLAttributeName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsimageurlattributename",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsimageurlattributename"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsinflectionalternativeattributename": {
+      "title": "NSInflectionAlternativeAttributeName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsinflectionalternativeattributename",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsinflectionalternativeattributename"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsinflectionruleattributename": {
+      "title": "NSInflectionRuleAttributeName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsinflectionruleattributename",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsinflectionruleattributename"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsinlinepresentationintentattributename": {
+      "title": "NSInlinePresentationIntentAttributeName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsinlinepresentationintentattributename",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsinlinepresentationintentattributename"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslanguageidentifierattributename": {
+      "title": "NSLanguageIdentifierAttributeName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslanguageidentifierattributename",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nslanguageidentifierattributename"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsmorphologyattributename": {
+      "title": "NSMorphologyAttributeName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsmorphologyattributename",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsmorphologyattributename"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nspresentationintentattributename": {
+      "title": "NSPresentationIntentAttributeName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nspresentationintentattributename",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nspresentationintentattributename"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsreplacementindexattributename": {
+      "title": "NSReplacementIndexAttributeName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsreplacementindexattributename",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsreplacementindexattributename"
+    },
     "doc://com.apple.documentation/documentation/uikit/nstrackingattributename": {
       "title": "NSTrackingAttributeName",
       "type": "topic",
@@ -1197,7 +1280,8 @@
         "doc://com.apple.documentation/documentation/uikit/nsunderlinestyleattributename",
         "doc://com.apple.documentation/documentation/uikit/nsverticalglyphformattributename",
         "doc://com.apple.documentation/documentation/uikit/nswritingdirectionattributename"
-      ]
+      ],
+      "anchor": "2901396"
     },
     {
       "kind": "taskGroup",
@@ -1233,7 +1317,8 @@
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilityunderlinetextattribute",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilityunderlinecolortextattribute",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilitytextattributecontext"
-      ]
+      ],
+      "anchor": "3665798"
     },
     {
       "kind": "taskGroup",
@@ -1241,14 +1326,25 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscharactershapeattributename",
         "doc://com.apple.documentation/documentation/appkit/nsusesscreenfontsdocumentattribute"
-      ]
+      ],
+      "anchor": "3665215"
     },
     {
       "kind": "taskGroup",
       "title": "Type Properties",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsalternatedescriptionattributename",
+        "doc://com.apple.documentation/documentation/foundation/nsimageurlattributename",
+        "doc://com.apple.documentation/documentation/foundation/nsinflectionalternativeattributename",
+        "doc://com.apple.documentation/documentation/foundation/nsinflectionruleattributename",
+        "doc://com.apple.documentation/documentation/foundation/nsinlinepresentationintentattributename",
+        "doc://com.apple.documentation/documentation/foundation/nslanguageidentifierattributename",
+        "doc://com.apple.documentation/documentation/foundation/nsmorphologyattributename",
+        "doc://com.apple.documentation/documentation/foundation/nspresentationintentattributename",
+        "doc://com.apple.documentation/documentation/foundation/nsreplacementindexattributename",
         "doc://com.apple.documentation/documentation/uikit/nstrackingattributename"
-      ]
+      ],
+      "anchor": "2984379"
     }
   ],
   "seeAlsoSections": [
@@ -1302,6 +1398,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1312,7 +1409,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

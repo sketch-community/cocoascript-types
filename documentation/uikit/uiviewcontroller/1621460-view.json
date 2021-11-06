@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIViewController(py)view",
+    "parent": {
+      "title": "UIViewController"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -152,6 +160,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/2097563-viewloaded": {
+      "title": "viewLoaded",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/2097563-viewloaded",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller/2097563-viewloaded",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value indicating whether the view is currently loaded into memory."
+        }
+      ]
+    },
     "devLink-1735389": {
       "identifier": "devLink-1735389",
       "type": "link",
@@ -223,20 +245,6 @@
         {
           "type": "text",
           "text": " if the view is not yet loaded."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/2097563-viewloaded": {
-      "title": "viewLoaded",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/2097563-viewloaded",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiviewcontroller/2097563-viewloaded",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value indicating whether the view is currently loaded into memory."
         }
       ]
     },
@@ -360,6 +368,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -380,7 +389,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The view stored in this property represents the root view for the view controller's view hierarchy. The default value of this property is "
+              "text": "This property represents the root view of the view controller's view hierarchy. The default value of this property is "
             },
             {
               "type": "codeVoice",
@@ -397,7 +406,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "If you access this property and its value is currently "
+              "text": "If you access this property when its value is "
             },
             {
               "type": "codeVoice",
@@ -423,7 +432,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Each view controller object is the sole owner of its view. You must not associate the same view object with multiple view controller objects. The only exception to this rule is that a container view controller implementation may add this view as a subview in its own view hierarchy. Before adding the subview, the container must first call its "
+              "text": "Each view controller is the sole owner of its view object. Don’t associate the same view object with multiple view controllers. The only exception is that a container view controller implementation may add another view controller’s view object to its own view hierarchy. Before adding the subview, the container must first call its "
             },
             {
               "type": "reference",
@@ -441,48 +450,25 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Because accessing this property can cause the view to be loaded automatically, you can use the "
+              "text": "Because accessing this property can cause the view to be loaded automatically, you can use "
             },
             {
-              "type": "codeVoice",
-              "code": "isViewLoaded"
-            },
-            {
-              "type": "text",
-              "text": " method to determine if the view is currently in memory. Unlike this property, the "
-            },
-            {
-              "type": "codeVoice",
-              "code": "isViewLoaded"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/2097563-viewloaded"
             },
             {
               "type": "text",
-              "text": " property does not force the loading of the view if it is not currently in memory.  "
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "The "
+              "text": " to determine if the view is currently in memory. Unlike this property, "
             },
             {
-              "type": "codeVoice",
-              "code": "UIViewController"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/2097563-viewloaded"
             },
             {
               "type": "text",
-              "text": " class can automatically set this property to "
-            },
-            {
-              "type": "codeVoice",
-              "code": "nil"
-            },
-            {
-              "type": "text",
-              "text": " during low-memory conditions and also when the view controller itself is finally released."
+              "text": " doesn’t force the loading of the view if it’s not currently in memory."
             }
           ]
         },
@@ -508,7 +494,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

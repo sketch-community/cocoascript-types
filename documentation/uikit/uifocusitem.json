@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UIFocusItem",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -88,7 +93,7 @@
       "role": "collection"
     },
     "doc://com.apple.documentation/documentation/uikit/focus-based_navigation": {
-      "title": "Focus-based Navigation",
+      "title": "Focus-Based Navigation",
       "identifier": "doc://com.apple.documentation/documentation/uikit/focus-based_navigation",
       "url": "/documentation/uikit/focus-based_navigation",
       "type": "topic",
@@ -202,6 +207,47 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uifocusitem/3778560-focuseffect": {
+      "title": "focusEffect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifocusitem/3778560-focuseffect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uifocusitem/3778560-focuseffect",
+      "required": false
+    },
+    "doc://com.apple.documentation/documentation/uikit/uifocusitem/3778561-focusgrouppriority": {
+      "title": "focusGroupPriority",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifocusitem/3778561-focusgrouppriority",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uifocusitem/3778561-focusgrouppriority",
+      "required": false
+    },
+    "doc://com.apple.documentation/documentation/uikit/uifocusitem/3778562-istransparentfocusitem": {
+      "title": "isTransparentFocusItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifocusitem/3778562-istransparentfocusitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uifocusitem/3778562-istransparentfocusitem",
+      "required": false
+    },
+    "doc://com.apple.documentation/documentation/uikit/uikeycommand/navigating_an_app_s_user_interface_using_a_keyboard": {
+      "title": "Navigating an App’s User Interface Using a Keyboard",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeycommand/navigating_an_app_s_user_interface_using_a_keyboard",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/uikeycommand/navigating_an_app_s_user_interface_using_a_keyboard",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Navigate between user interface elements using a keyboard and focusable UI elements in iPad apps and apps built with Mac Catalyst."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/focus-based_navigation/about_focus_interactions_for_apple_tv": {
       "title": "About Focus Interactions for Apple TV",
       "type": "topic",
@@ -300,6 +346,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uifocusgrouppriority": {
+      "title": "UIFocusGroupPriority",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifocusgrouppriority",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uifocusgrouppriority"
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -334,26 +388,40 @@
       "title": "Determining Focusability",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uifocusitem/1648965-canbecomefocused"
-      ]
+      ],
+      "anchor": "1650501"
     },
     {
       "kind": "taskGroup",
       "title": "Retrieving the Item Frame",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uifocusitem/2976952-frame"
-      ]
+      ],
+      "anchor": "3000617"
     },
     {
       "kind": "taskGroup",
       "title": "Providing Movement Hints",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uifocusitem/2976951-didhintfocusmovement"
-      ]
+      ],
+      "anchor": "3000616"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uifocusitem/3778560-focuseffect",
+        "doc://com.apple.documentation/documentation/uikit/uifocusitem/3778561-focusgrouppriority",
+        "doc://com.apple.documentation/documentation/uikit/uifocusitem/3778562-istransparentfocusitem"
+      ],
+      "anchor": "3780603"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uikeycommand/navigating_an_app_s_user_interface_using_a_keyboard",
         "doc://com.apple.documentation/documentation/uikit/focus-based_navigation/about_focus_interactions_for_apple_tv",
         "doc://com.apple.documentation/documentation/uikit/focus-based_navigation/adding_user-focusable_elements_to_a_tvos_app",
         "doc://com.apple.documentation/documentation/uikit/uifocusenvironment",
@@ -361,7 +429,8 @@
         "doc://com.apple.documentation/documentation/uikit/uifocusupdatecontext",
         "doc://com.apple.documentation/documentation/uikit/uifocusmovementhint",
         "doc://com.apple.documentation/documentation/uikit/uifocusitemcontainer",
-        "doc://com.apple.documentation/documentation/uikit/uifocusitemscrollablecontainer"
+        "doc://com.apple.documentation/documentation/uikit/uifocusitemscrollablecontainer",
+        "doc://com.apple.documentation/documentation/uikit/uifocusgrouppriority"
       ],
       "title": "Focus Interactions",
       "generated": true
@@ -391,6 +460,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -473,7 +543,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

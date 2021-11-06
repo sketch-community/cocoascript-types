@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Initializes and returns an activity-indicator object."
+      "text": "Creates an activity-indicator view."
     }
   ],
   "documentVersion": 0,
@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIActivityIndicatorView(im)initWithActivityIndicatorStyle:",
+    "parent": {
+      "title": "UIActivityIndicatorView"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -110,14 +118,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiactivityindicatorview/1622847-activityindicatorviewstyle": {
-      "title": "activityIndicatorViewStyle",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityindicatorview/1622847-activityindicatorviewstyle",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiactivityindicatorview/1622847-activityindicatorviewstyle"
-    },
     "doc://com.apple.documentation/documentation/uikit/uiactivityindicatorviewstyle": {
       "title": "UIActivityIndicatorViewStyle",
       "type": "topic",
@@ -126,11 +126,13 @@
       "role": "symbol",
       "url": "/documentation/uikit/uiactivityindicatorviewstyle"
     },
-    "devLink-1748559": {
-      "identifier": "devLink-1748559",
-      "type": "link",
-      "title": "Activity Indicators",
-      "url": "https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/UIKitUICatalog/UIActivityIndicatorView.html#//apple_ref/doc/uid/TP40012857-UIActivityIndicatorView"
+    "doc://com.apple.documentation/documentation/uikit/uiactivityindicatorview/1622847-activityindicatorviewstyle": {
+      "title": "activityIndicatorViewStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityindicatorview/1622847-activityindicatorviewstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiactivityindicatorview/1622847-activityindicatorviewstyle"
     },
     "doc://com.apple.documentation/documentation/uikit/uiactivityindicatorview/1622840-initwithactivityindicatorstyle": {
       "title": "initWithActivityIndicatorStyle:",
@@ -142,7 +144,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes and returns an activity-indicator object."
+          "text": "Creates an activity-indicator view."
         }
       ],
       "fragments": [
@@ -163,6 +165,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiactivityindicatorview/1622841-initwithframe",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an activity-indicator view with the specified frame rectangle."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -181,6 +189,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiactivityindicatorview/1622844-initwithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an activity-indicator view using data from a decoder."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -208,13 +222,6 @@
       ],
       "title": "Initializing an Activity Indicator",
       "generated": true
-    },
-    {
-      "title": "Related Documentation",
-      "generated": false,
-      "identifiers": [
-        "devLink-1748559"
-      ]
     }
   ],
   "primaryContentSections": [
@@ -267,6 +274,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -366,7 +374,7 @@
             },
             {
               "type": "text",
-              "text": ". You can set and retrieve the style of a activity indicator through the "
+              "text": ". You can set and retrieve the style of an activity indicator through the "
             },
             {
               "type": "reference",
@@ -383,7 +391,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

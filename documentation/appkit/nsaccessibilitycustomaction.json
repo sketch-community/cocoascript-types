@@ -1,16 +1,24 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A custom action to perform on an accessible object."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos"
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos"
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
       ]
     ]
   },
@@ -33,15 +41,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSAccessibilityCustomAction",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -76,13 +84,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility": {
+      "title": "NSAccessibility",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
+      "url": "/documentation/appkit/nsaccessibility",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/accessibility": {
       "title": "Accessibility",
@@ -91,6 +107,21 @@
       "type": "topic",
       "kind": "symbol",
       "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/2869551-accessibilitycustomactions": {
+      "title": "accessibilityCustomActions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/2869551-accessibilitycustomactions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibility/2869551-accessibilitycustomactions",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The custom actions of the current accessibility element."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
@@ -107,6 +138,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nsaccessibilitycustomaction/2870120-initwithname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a custom action object with the specified name and handler."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -125,6 +162,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nsaccessibilitycustomaction/2870146-initwithname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a custom action object with the specified name, target, and selector."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -142,15 +185,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction/2870118-name",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitycustomaction/2870118-name"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityactionname": {
-      "title": "NSAccessibilityActionName",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityactionname",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityactionname"
+      "url": "/documentation/appkit/nsaccessibilitycustomaction/2870118-name",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A localized name that describes the action."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction/2870157-handler": {
       "title": "handler",
@@ -158,15 +199,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction/2870157-handler",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitycustomaction/2870157-handler"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction/2870110-selector": {
-      "title": "selector",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction/2870110-selector",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitycustomaction/2870110-selector"
+      "url": "/documentation/appkit/nsaccessibilitycustomaction/2870157-handler",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The closure that handles the execution of the action."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction/2870105-target": {
       "title": "target",
@@ -174,33 +213,25 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction/2870105-target",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitycustomaction/2870105-target"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement": {
-      "title": "NSAccessibilityElement",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityelement",
+      "url": "/documentation/appkit/nsaccessibilitycustomaction/2870105-target",
       "abstract": [
         {
           "type": "text",
-          "text": "The basic infrastructure required to interact with an accessibility client. "
+          "text": "The object that performs the action through a selector. "
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitygroup": {
-      "title": "NSAccessibilityGroup",
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction/2870110-selector": {
+      "title": "selector",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitygroup",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction/2870110-selector",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitygroup",
+      "url": "/documentation/appkit/nsaccessibilitycustomaction/2870110-selector",
       "abstract": [
         {
           "type": "text",
-          "text": "A role-based protocol that declares the minimum interface required to act as a container for other user interface elements. "
+          "text": "The method to call on the target to perform the action."
         }
       ]
     },
@@ -210,81 +241,11 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitycustomaction"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor": {
-      "title": "NSAccessibilityCustomRotor",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitycustomrotor"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemresult": {
-      "title": "NSAccessibilityCustomRotorItemResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitycustomrotoritemresult"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotorsearchparameters": {
-      "title": "NSAccessibilityCustomRotorSearchParameters",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotorsearchparameters",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitycustomrotorsearchparameters"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotortype": {
-      "title": "NSAccessibilityCustomRotorType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotortype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitycustomrotortype"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotorsearchdirection": {
-      "title": "NSAccessibilityCustomRotorSearchDirection",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotorsearchdirection",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitycustomrotorsearchdirection"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemsearchdelegate": {
-      "title": "NSAccessibilityCustomRotorItemSearchDelegate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemsearchdelegate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitycustomrotoritemsearchdelegate"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitylayoutarea": {
-      "title": "NSAccessibilityLayoutArea",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitylayoutarea",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitylayoutarea",
+      "url": "/documentation/appkit/nsaccessibilitycustomaction",
       "abstract": [
         {
           "type": "text",
-          "text": "A role-based protocol that declares the minimum interface required for an accessibility element to act as a layout area. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitylayoutitem": {
-      "title": "NSAccessibilityLayoutItem",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitylayoutitem",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitylayoutitem",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A role-based protocol that declares the minimum interface required for an accessibility element to act as a layout item. "
+          "text": "A custom action to perform on an accessible object."
         }
       ]
     },
@@ -313,41 +274,34 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction/2870120-initwithname",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction/2870146-initwithname"
-      ]
+      ],
+      "anchor": "2874398"
     },
     {
       "kind": "taskGroup",
       "title": "Getting the Action Name",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction/2870118-name",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityactionname"
-      ]
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction/2870118-name"
+      ],
+      "anchor": "2874399"
     },
     {
       "kind": "taskGroup",
       "title": "Getting the Action",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction/2870157-handler",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction/2870110-selector",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction/2870105-target"
-      ]
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction/2870105-target",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction/2870110-selector"
+      ],
+      "anchor": "3014318"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitygroup",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemresult",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotorsearchparameters",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotortype",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotorsearchdirection",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemsearchdelegate",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitylayoutarea",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitylayoutitem"
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/2869551-accessibilitycustomactions"
       ],
-      "title": "Custom Elements",
+      "title": "Assigning Actions",
       "generated": true
     }
   ],
@@ -388,10 +342,48 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Apps that support custom actions can create instances of this class, specifying the user-readable name of the action, and either a handler closure or the object and selector to use when performing the action. Assistive apps display custom actions in response to specific user cues. For example, VoiceOver lets users access actions quickly using the Actions rotor."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After creating an instance of this class, add it to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/2869551-accessibilitycustomactions"
+            },
+            {
+              "type": "text",
+              "text": " property of an appropriate accessible object."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

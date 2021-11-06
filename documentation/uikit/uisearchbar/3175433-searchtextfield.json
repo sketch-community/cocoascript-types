@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The text field that the user enters a search query into."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -35,20 +41,28 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UISearchBar(py)searchTextField",
+    "parent": {
+      "title": "UISearchBar"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -121,6 +135,70 @@
       "role": "symbol",
       "url": "/documentation/uikit/uisearchtextfield"
     },
+    "doc://com.apple.documentation/documentation/uikit/uisearchtoken": {
+      "title": "UISearchToken",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchtoken",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisearchtoken"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624322-placeholder": {
+      "title": "placeholder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624322-placeholder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisearchbar/1624322-placeholder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The string that is displayed when there is no other text in the text field."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624326-prompt": {
+      "title": "prompt",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624326-prompt",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisearchbar/1624326-prompt",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A single line of text displayed at the top of the search bar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624282-text": {
+      "title": "text",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624282-text",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisearchbar/1624282-text",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The current or starting search text."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisearchbar/3175433-searchtextfield": {
+      "title": "searchTextField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar/3175433-searchtextfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisearchbar/3175433-searchtextfield",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The text field that the user enters a search query into."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -129,6 +207,17 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624322-placeholder",
+        "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624326-prompt",
+        "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624282-text"
+      ],
+      "title": "Getting the Search Text",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -167,14 +256,53 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For details about interacting with the text field, accessing its content, and using tokens, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchtextfield"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchtoken"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

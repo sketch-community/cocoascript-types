@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.1",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)SCNLevelOfDetail",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -319,7 +324,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/scenekit/scnlevelofdetail/1523557-levelofdetailwithgeometry",
         "doc://com.apple.documentation/documentation/scenekit/scnlevelofdetail/1522802-levelofdetailwithgeometry"
-      ]
+      ],
+      "anchor": "1654992"
     },
     {
       "kind": "taskGroup",
@@ -328,7 +334,8 @@
         "doc://com.apple.documentation/documentation/scenekit/scnlevelofdetail/1522819-geometry",
         "doc://com.apple.documentation/documentation/scenekit/scnlevelofdetail/1523554-screenspaceradius",
         "doc://com.apple.documentation/documentation/scenekit/scnlevelofdetail/1524159-worldspacedistance"
-      ]
+      ],
+      "anchor": "1655033"
     }
   ],
   "seeAlsoSections": [
@@ -374,6 +381,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -451,7 +459,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "For each level of detail, you specify either a world-space distance or a screen-space radius. The measure you specify determines the threshold where SceneKit automatically renders that level of detail’s alternate geometry instead of the original geometry. If you specify a distance, the alternate geometry appears when the node containing the geometry is moved that distance away from the camera. If you specify a radius, the alternate geometry appears when the pixel area covered by the rendered by the geometry is smaller than a circle of that radius."
+              "text": "For each level of detail, you specify either a world-space distance or a screen-space radius. The measure you specify determines the threshold where SceneKit automatically renders that level of detail’s alternate geometry instead of the original geometry. If you specify a distance, the alternate geometry appears when the node containing the geometry is moved that distance away from the camera. If you specify a radius, the alternate geometry appears when the pixel area covered by the rendered geometry is smaller than a circle of that radius."
             }
           ]
         },
@@ -468,7 +476,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

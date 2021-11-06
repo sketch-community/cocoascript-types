@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The child element representing the window’s close button."
+      "text": "The child accessibility element that represents the window’s close button."
     }
   ],
   "documentVersion": 0,
@@ -11,13 +11,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
       ]
     ]
@@ -42,15 +42,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSAccessibility(py)accessibilityCloseButton",
+    "parent": {
+      "title": "NSAccessibility"
+    },
     "symbolKind": "intfp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -75,10 +78,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -93,7 +96,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The complete list of properties and methods implemented by accessible elements."
+          "text": "The complete list of properties and methods for accessible elements."
         }
       ]
     },
@@ -116,7 +119,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The activation point for this user interface element."
+          "text": "The activation point for the user interface element."
         }
       ]
     },
@@ -131,7 +134,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that determines whether the element’s alternative UI is currently visible."
+          "text": "A Boolean value that determines whether the accessibility element’s alternative UI is currently visible."
         }
       ]
     },
@@ -146,7 +149,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The child element representing the window’s cancel button."
+          "text": "The child accessibility element that represents the window’s cancel button."
         }
       ]
     },
@@ -161,7 +164,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The child element representing the window’s close button."
+          "text": "The child accessibility element that represents the window’s close button."
         }
       ]
     },
@@ -176,7 +179,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The child element representing the window’s default button."
+          "text": "The child accessibility element that represents the window’s default button."
         }
       ]
     },
@@ -191,7 +194,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The child element representing the window’s full screen button."
+          "text": "The child accessibility element that represents the window’s full-screen button."
         }
       ]
     },
@@ -206,7 +209,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The child element representing the window’s grow area."
+          "text": "The child accessibility element that represents the window’s grow area."
         }
       ]
     },
@@ -221,7 +224,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that determines whether this window is the app’s main window."
+          "text": "A Boolean value that determines whether the window is the app’s main window."
         }
       ]
     },
@@ -236,7 +239,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The child element representing the window’s minimize button."
+          "text": "The child accessibility element that represents the window’s minimize button."
         }
       ]
     },
@@ -251,7 +254,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that determines whether this window is minimized."
+          "text": "A Boolean value that determines whether this window is in a minimized state."
         }
       ]
     },
@@ -281,7 +284,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The child element representing the window’s proxy icon."
+          "text": "The child accessibility element that represents the window’s proxy icon."
         }
       ]
     },
@@ -296,7 +299,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The menu currently being displayed for the element."
+          "text": "The menu currently displaying for the accessibility element."
         }
       ]
     },
@@ -311,7 +314,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The child element representing the window’s toolbar button."
+          "text": "The child accessibility element that represents the window’s toolbar button."
         }
       ]
     },
@@ -326,7 +329,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The window that contains the element."
+          "text": "The window that contains the accessibility element."
         }
       ]
     },
@@ -341,7 +344,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The child element representing the window’s zoom button."
+          "text": "The child accessibility element that represents the window’s zoom button."
         }
       ]
     },
@@ -418,7 +421,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

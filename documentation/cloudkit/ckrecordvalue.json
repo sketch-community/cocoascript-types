@@ -33,35 +33,40 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(pl)CKRecordValue",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -158,31 +163,45 @@
       "role": "symbol",
       "url": "/documentation/objectivec/1418956-nsobject"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckrecord": {
-      "title": "CKRecord",
+    "doc://com.apple.documentation/documentation/cloudkit/ckcontainer": {
+      "title": "CKContainer",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckcontainer",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckrecord",
+      "url": "/documentation/cloudkit/ckcontainer",
       "abstract": [
         {
           "type": "text",
-          "text": "A dictionary of key-value pairs for persisting your app’s data."
+          "text": "A conduit to your app’s databases."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckrecordzone": {
-      "title": "CKRecordZone",
+    "doc://com.apple.documentation/documentation/cloudkit/ckdatabase": {
+      "title": "CKDatabase",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordzone",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckdatabase",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckrecordzone",
+      "url": "/documentation/cloudkit/ckdatabase",
       "abstract": [
         {
           "type": "text",
-          "text": "The definition of a custom area for organizing related records in a database."
+          "text": "A collection of record zones and subscriptions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckoperationgroup": {
+      "title": "CKOperationGroup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckoperationgroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckoperationgroup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An explicit association between two or more operations."
         }
       ]
     },
@@ -197,20 +216,6 @@
         {
           "type": "text",
           "text": "The protocol that provides strong type-checking for objects that the CloudKit framework stores on the server."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/record_operations": {
-      "title": "Record Operations",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/record_operations",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/cloudkit/record_operations",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Asynchronously fetch or modify records."
         }
       ]
     },
@@ -235,11 +240,11 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/cloudkit/ckrecord",
-        "doc://com.apple.documentation/documentation/cloudkit/ckrecordzone",
-        "doc://com.apple.documentation/documentation/cloudkit/record_operations"
+        "doc://com.apple.documentation/documentation/cloudkit/ckcontainer",
+        "doc://com.apple.documentation/documentation/cloudkit/ckdatabase",
+        "doc://com.apple.documentation/documentation/cloudkit/ckoperationgroup"
       ],
-      "title": "Records",
+      "title": "Core Objects",
       "generated": true
     }
   ],
@@ -267,6 +272,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -423,7 +429,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

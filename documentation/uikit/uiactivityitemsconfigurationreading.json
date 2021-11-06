@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A set of methods adopted by an object so that the object can act as an activity items configuration."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -35,20 +41,25 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UIActivityItemsConfigurationReading",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -129,15 +140,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368148-applicationactivitiesforactivity": {
-      "title": "applicationActivitiesForActivityItemsConfiguration",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368148-applicationactivitiesforactivity",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiactivityitemsconfigurationreading/3368148-applicationactivitiesforactivity",
-      "required": false
-    },
     "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368149-itemprovidersforactivityitemscon": {
       "title": "itemProvidersForActivityItemsConfiguration",
       "type": "topic",
@@ -145,7 +147,28 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiactivityitemsconfigurationreading/3368149-itemprovidersforactivityitemscon",
-      "required": true
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The item providers for the configuration."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368148-applicationactivitiesforactivity": {
+      "title": "applicationActivitiesForActivityItemsConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368148-applicationactivitiesforactivity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiactivityitemsconfigurationreading/3368148-applicationactivitiesforactivity",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The application activities, if any, for the configuration."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368144-activityitemsconfigurationmetada": {
       "title": "activityItemsConfigurationMetadataForKey:",
@@ -155,6 +178,12 @@
       "role": "symbol",
       "url": "/documentation/uikit/uiactivityitemsconfigurationreading/3368144-activityitemsconfigurationmetada",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the configuration for the specified metadata key."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -174,6 +203,12 @@
       "role": "symbol",
       "url": "/documentation/uikit/uiactivityitemsconfigurationreading/3368145-activityitemsconfigurationmetada",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the configuration for a particular item for the specified metadata key."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -185,22 +220,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368146-activityitemsconfigurationprevie": {
-      "title": "activityItemsConfigurationPreviewForItemAtIndex:intent:suggestedSize:",
+    "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationmetadatakey": {
+      "title": "UIActivityItemsConfigurationMetadataKey",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368146-activityitemsconfigurationprevie",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationmetadatakey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiactivityitemsconfigurationreading/3368146-activityitemsconfigurationprevie",
-      "required": false,
-      "fragments": [
+      "url": "/documentation/uikit/uiactivityitemsconfigurationmetadatakey",
+      "abstract": [
         {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "activityItemsConfigurationPreviewForItemAtIndex:intent:suggestedSize:"
+          "type": "text",
+          "text": "A structure that defines keys for the metadata associated with an activity items configuration."
         }
       ]
     },
@@ -212,6 +242,12 @@
       "role": "symbol",
       "url": "/documentation/uikit/uiactivityitemsconfigurationreading/3368147-activityitemsconfigurationsuppor",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether the activity items configuration supports the specified type of interaction."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -220,6 +256,59 @@
         {
           "kind": "identifier",
           "text": "activityItemsConfigurationSupportsInteraction:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationinteraction": {
+      "title": "UIActivityItemsConfigurationInteraction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationinteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiactivityitemsconfigurationinteraction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that describes types of interactions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368146-activityitemsconfigurationprevie": {
+      "title": "activityItemsConfigurationPreviewForItemAtIndex:intent:suggestedSize:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368146-activityitemsconfigurationprevie",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiactivityitemsconfigurationreading/3368146-activityitemsconfigurationprevie",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an activity items configuration preview for the specified item and preview size."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "activityItemsConfigurationPreviewForItemAtIndex:intent:suggestedSize:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationpreviewintent": {
+      "title": "UIActivityItemsConfigurationPreviewIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationpreviewintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiactivityitemsconfigurationpreviewintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that specifies the types of activity item previews."
         }
       ]
     },
@@ -233,7 +322,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes and returns a new activity view controller object that acts on the specified data. "
+          "text": "Initializes a new activity view controller object that acts on the specified data. "
         }
       ],
       "fragments": [
@@ -254,6 +343,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiactivityviewcontroller/3626475-initwithactivityitemsconfigurati",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a new activity view controller object that acts on the specified configuration. "
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -271,7 +366,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiactivityitemsconfigurationreading"
+      "url": "/documentation/uikit/uiactivityitemsconfigurationreading",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of methods adopted by an object so that the object can act as an activity items configuration."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -279,16 +380,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -312,21 +403,33 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Instance Properties",
+      "title": "Managing the Configuration",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368149-itemprovidersforactivityitemscon",
         "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368148-applicationactivitiesforactivity",
-        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368149-itemprovidersforactivityitemscon"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368144-activityitemsconfigurationmetada",
+        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368145-activityitemsconfigurationmetada",
+        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationmetadatakey"
+      ],
+      "anchor": "3678165"
     },
     {
       "kind": "taskGroup",
-      "title": "Instance Methods",
+      "title": "Managing Supported Interactions",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368144-activityitemsconfigurationmetada",
-        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368145-activityitemsconfigurationmetada",
+        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368147-activityitemsconfigurationsuppor",
+        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationinteraction"
+      ],
+      "anchor": "3678164"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Previews",
+      "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368146-activityitemsconfigurationprevie",
-        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368147-activityitemsconfigurationsuppor"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationpreviewintent"
+      ],
+      "anchor": "3678171"
     }
   ],
   "seeAlsoSections": [
@@ -364,6 +467,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -371,7 +475,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

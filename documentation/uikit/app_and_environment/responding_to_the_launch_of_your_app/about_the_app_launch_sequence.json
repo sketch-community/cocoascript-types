@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Learn the order that your custom code executes at launch time."
+      "text": "Learn the order in which the system executes your code at app launch time."
     }
   ],
   "documentVersion": 0,
@@ -33,8 +33,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -85,6 +85,48 @@
       "kind": "article",
       "role": "article"
     },
+    "doc://com.apple.documentation/documentation/uikit/1622933-uiapplicationmain": {
+      "title": "UIApplicationMain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/1622933-uiapplicationmain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/1622933-uiapplicationmain"
+    },
+    "link-3894624": {
+      "title": "App Startup Time: Past, Present, and Future",
+      "type": "topic",
+      "identifier": "link-3894624",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/videos/play/wwdc2017/413"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1418815-load": {
+      "title": "load",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1418815-load",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1418815-load",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "load"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/metrickit": {
+      "title": "MetricKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/metrickit",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/metrickit"
+    },
     "link-media-3004330": {
       "identifier": "link-media-3004330",
       "type": "link",
@@ -97,31 +139,36 @@
       "variants": [
         {
           "traits": [
+            "dark",
             "2x"
           ],
           "size": {
-            "width": 470,
-            "height": 302
+            "width": 469,
+            "height": 382
           },
-          "url": "https://docs-assets.developer.apple.com/published/52c7b459e7/76e68c08-6b09-4bac-8a00-44df7a097a43.png"
+          "url": "https://docs-assets.developer.apple.com/published/d83df251b7/renderedDark2x-1635759036.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 469,
+            "height": 382
+          },
+          "url": "https://docs-assets.developer.apple.com/published/dd1b7996c3/rendered2x-1635759039.png"
         }
       ],
-      "alt": "When an app launches, it loads its main UI file, asks the app delegate to initialize the app's data structures, and restores any previous interface state. ",
-      "title": "Figure 1",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The app launch and initialization sequence"
-        }
-      ]
+      "alt": "A diagram that depicts an app’s launch sequence. On the left is a box with the title Launch Time that contains a label for each step in the launch sequence, and a down arrow between each one that represents the direction of flow. From top-to-bottom, the labels are main(), UIApplicationMain(), Load the main UI file, First initialization, Restore UI state, and Final initialization. On the right is a box with the title Your code that contains three labels. From top-to-bottom, the labels are application:willFinishLaunchingWithOptions:, Various methods, and application:didFinishLaunchingWithOptions:. There is an arrow pointing right between the First initialization label in the Launch Time box and the application:willFinishLaunchingWithOptions: label in the Your code box. There’s a bidirectional arrow between the Restore UI state label in the Launch Time box and the Various methods label in the Your code box. And there’s an arrow pointing right between the Final initialization label in the Launch Time box and the application:willFinishLaunchingWithOptions: label in the Your code box.",
+      "title": "Figure 1"
     },
-    "doc://com.apple.documentation/documentation/uikit/1622933-uiapplicationmain": {
-      "title": "UIApplicationMain",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/1622933-uiapplicationmain",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/1622933-uiapplicationmain"
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/about_the_app_launch_sequence#3894431": {
+      "title": "Prepare Your App for Prewarming",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/about_the_app_launch_sequence#3894431",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/about_the_app_launch_sequence#3894431"
     },
     "doc://com.apple.documentation/documentation/uikit/uiapplication": {
       "title": "UIApplication",
@@ -148,6 +195,14 @@
           "text": "application:willFinishLaunchingWithOptions:"
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/preserving_your_app_s_ui_across_launches/about_the_ui_restoration_process": {
+      "title": "About the UI Restoration Process",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/preserving_your_app_s_ui_across_launches/about_the_ui_restoration_process",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/view_controllers/preserving_your_app_s_ui_across_launches/about_the_ui_restoration_process"
     },
     "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application": {
       "title": "application:didFinishLaunchingWithOptions:",
@@ -177,7 +232,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Learn the order that your custom code executes at launch time."
+          "text": "Learn the order in which the system executes your code at app launch time."
         }
       ]
     },
@@ -242,16 +297,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Launching an app involves a complex sequence of steps, most of which UIKit handles automatically. During the launch sequence, UIKit calls methods of your app delegate so that you can perform custom tasks. "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "link-media-3004330"
-            },
-            {
-              "type": "text",
-              "text": " illustrates the sequence of steps that occur from the time the app is launched until it is considered initialized."
+              "text": "Launching an app involves a complex sequence of steps, most of which the system handles automatically. During the launch sequence, UIKit calls methods in your app delegate so you can prepare your app for user interaction and perform any tasks specific to your app’s requirements. The following illustrates the individual steps of this launch sequence, from the time the app launches to when the sequence completes: "
             }
           ]
         },
@@ -263,20 +309,10 @@
               "identifier": "media-3004330",
               "metadata": {
                 "anchor": "3004330",
-                "title": "Figure 1",
-                "abstract": [
-                  {
-                    "type": "text",
-                    "text": "The app launch and initialization sequence"
-                  }
-                ]
+                "title": "Figure 1"
               }
             }
           ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": []
         },
         {
           "type": "orderedList",
@@ -288,7 +324,16 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "The app is launched, either explicitly by the user or implicitly by the system."
+                      "text": "The user or the system launches your app, or the system prewarms your app. For more information about prewarming, see "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/about_the_app_launch_sequence#3894431"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
                     }
                   ]
                 }
@@ -301,24 +346,15 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "The Xcode-provided "
+                      "text": "The system executes the "
                     },
                     {
                       "type": "codeVoice",
-                      "code": "main"
+                      "code": "main()"
                     },
                     {
                       "type": "text",
-                      "text": " function calls UIKit's "
-                    },
-                    {
-                      "type": "reference",
-                      "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/uikit/1622933-uiapplicationmain"
-                    },
-                    {
-                      "type": "text",
-                      "text": " function."
+                      "text": " function that Xcode provides. "
                     }
                   ]
                 }
@@ -334,13 +370,21 @@
                       "text": "The "
                     },
                     {
+                      "type": "codeVoice",
+                      "code": "main()"
+                    },
+                    {
+                      "type": "text",
+                      "text": " function calls "
+                    },
+                    {
                       "type": "reference",
                       "isActive": true,
                       "identifier": "doc://com.apple.documentation/documentation/uikit/1622933-uiapplicationmain"
                     },
                     {
                       "type": "text",
-                      "text": " function creates the "
+                      "text": ", which creates an instance of "
                     },
                     {
                       "type": "reference",
@@ -349,7 +393,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " object and your app delegate."
+                      "text": " and of your app delegate."
                     }
                   ]
                 }
@@ -362,7 +406,15 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "UIKit loads your app's default interface from the main storyboard or nib file."
+                      "text": "UIKit loads the default storyboard you specify in your app’s "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Info.plist"
+                    },
+                    {
+                      "type": "text",
+                      "text": " file, or in the target’s Custom iOS Target Properties tab of Xcode’s project editor; apps that don’t use a default storyboard skip this step."
                     }
                   ]
                 }
@@ -375,7 +427,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "UIKit calls your app delegate's "
+                      "text": "UIKit calls the "
                     },
                     {
                       "type": "reference",
@@ -384,7 +436,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " method."
+                      "text": " method in your app delegate."
                     }
                   ]
                 }
@@ -397,7 +449,16 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "UIKit performs state restoration, which calls additional methods of your app delegate and view controllers."
+                      "text": "UIKit performs state restoration, which results in the execution of additional methods in your app delegate and app’s view controllers. For more information, see "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/preserving_your_app_s_ui_across_launches/about_the_ui_restoration_process"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
                     }
                   ]
                 }
@@ -410,7 +471,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "UIKit calls your app delegate's "
+                      "text": "UIKit calls your app delegate’s "
                     },
                     {
                       "type": "reference",
@@ -419,7 +480,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " method ."
+                      "text": " method."
                     }
                   ]
                 }
@@ -432,7 +493,131 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "When initialization is complete, the system uses either your scene delegates or app delegate to display your UI and manage the life cycle for your app. "
+              "text": "After the launch sequence completes, the system uses your app or scene delegates to display your app’s user interface and to manage its life cycle."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Prepare Your App for Prewarming",
+          "anchor": "3894431"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In iOS 15 and later, the system may, depending on device conditions, "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "prewarm"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " your app — launch nonrunning application processes to reduce the amount of time the user waits before the app is usable. Prewarming executes an app’s launch sequence up until, but not including, when "
+            },
+            {
+              "type": "codeVoice",
+              "code": "main()"
+            },
+            {
+              "type": "text",
+              "text": " calls "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/1622933-uiapplicationmain"
+            },
+            {
+              "type": "text",
+              "text": ". This provides the system with an opportunity to build and cache any low-level structures it requires in anticipation of a full launch."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "For more information about the low-level structures the system requires during app launch, see the WWDC session video "
+                },
+                {
+                  "type": "link",
+                  "title": "App Startup Time: Past, Present, and Future",
+                  "destination": "https://developer.apple.com/videos/play/wwdc2017/413"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After the system prewarms your app, its launch sequence remains in a paused state until the app launches and the sequence resumes, or the system removes the prewarmed app from memory to reclaim resources. The system can prewarm your app after a device reboot, and periodically as system conditions allow."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If your app executes code before the call to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/1622933-uiapplicationmain"
+            },
+            {
+              "type": "text",
+              "text": ", such as in static initializers like "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1418815-load"
+            },
+            {
+              "type": "text",
+              "text": ", don’t make assumptions about what services and resources are available. For example, keychain items may be unavailable because their data protection policies require an unlocked device and prewarming happens even when the device is in a locked state. If your code is dependent upon access to a specific service or resource, migrate that code to a later part of the launch sequence."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Prewarming an app results in an indeterminate amount of time between when the prewarming phase completes and when the user, or system, fully launches the app. Because of this, use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/metrickit"
+            },
+            {
+              "type": "text",
+              "text": " to accurately measure user-driven launch and resume times instead of manually signposting various points of the launch sequence."
             }
           ]
         }
@@ -440,7 +625,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

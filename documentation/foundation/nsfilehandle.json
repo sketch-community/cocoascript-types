@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSFileHandle",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -425,6 +430,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172527-readdatatoendoffileandreturnerro": {
+      "title": "readDataToEndOfFileAndReturnError:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172527-readdatatoendoffileandreturnerro",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilehandle/3172527-readdatatoendoffileandreturnerro",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reads the available data synchronously up to the end of file or maximum number of bytes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "readDataToEndOfFileAndReturnError:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411490-readdatatoendoffile": {
       "title": "readDataToEndOfFile",
       "type": "topic",
@@ -435,7 +464,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Synchronously reads the available data up to the end of file or maximum number of bytes."
+          "text": "Reads the available data synchronously up to the end of file or maximum number of bytes."
         }
       ],
       "fragments": [
@@ -450,6 +479,30 @@
       ],
       "deprecated": true
     },
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172528-readdatauptolength": {
+      "title": "readDataUpToLength:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172528-readdatauptolength",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilehandle/3172528-readdatauptolength",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reads data synchronously up to the specified number of bytes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "readDataUpToLength:error:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1413916-readdataoflength": {
       "title": "readDataOfLength:",
       "type": "topic",
@@ -460,7 +513,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Synchronously reads data up to the specified number of bytes."
+          "text": "Reads data synchronously up to the specified number of bytes."
         }
       ],
       "fragments": [
@@ -475,6 +528,30 @@
       ],
       "deprecated": true
     },
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172533-writedata": {
+      "title": "writeData:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172533-writedata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilehandle/3172533-writedata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Writes the specified data synchronously to the file handle."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "writeData:error:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1410936-writedata": {
       "title": "writeData:",
       "type": "topic",
@@ -485,7 +562,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Synchronously writes the specified data to the receiver."
+          "text": "Writes the specified data synchronously to the file handle."
         }
       ],
       "fragments": [
@@ -500,33 +577,289 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1412413-readabilityhandler": {
-      "title": "readabilityHandler",
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172526-getoffset": {
+      "title": "getOffset:error:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1412413-readabilityhandler",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172526-getoffset",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsfilehandle/1412413-readabilityhandler",
+      "url": "/documentation/foundation/nsfilehandle/3172526-getoffset",
       "abstract": [
         {
           "type": "text",
-          "text": "The block to use for reading the contents of the file handle asynchronously."
+          "text": "Get the current position of the file pointer within the file."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "getOffset:error:"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1415367-writeabilityhandler": {
-      "title": "writeabilityHandler",
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1408461-offsetinfile": {
+      "title": "offsetInFile",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1415367-writeabilityhandler",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1408461-offsetinfile",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsfilehandle/1415367-writeabilityhandler",
+      "url": "/documentation/foundation/nsfilehandle/1408461-offsetinfile",
       "abstract": [
         {
           "type": "text",
-          "text": "The block to use for writing the contents of the file handle asynchronously."
+          "text": "The position of the file pointer within the file represented by the file handle."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172529-seektoendreturningoffset": {
+      "title": "seekToEndReturningOffset:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172529-seektoendreturningoffset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilehandle/3172529-seektoendreturningoffset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Places the file pointer at the end of the file referenced by the file handle and returns the new file offset."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "seekToEndReturningOffset:error:"
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411311-seektoendoffile": {
+      "title": "seekToEndOfFile",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411311-seektoendoffile",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilehandle/1411311-seektoendoffile",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Places the file pointer at the end of the file referenced by the file handle and returns the new file offset."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "seekToEndOfFile"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172530-seektooffset": {
+      "title": "seekToOffset:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172530-seektooffset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilehandle/3172530-seektooffset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Moves the file pointer to the specified offset within the file."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "seekToOffset:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1412135-seektofileoffset": {
+      "title": "seekToFileOffset:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1412135-seektofileoffset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilehandle/1412135-seektofileoffset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Moves the file pointer to the specified offset within the file represented by the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "seekToFileOffset:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172525-closeandreturnerror": {
+      "title": "closeAndReturnError:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172525-closeandreturnerror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilehandle/3172525-closeandreturnerror",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Disallows further access to the represented file or communications channel and signals end of file on communications channels that permit writing."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "closeAndReturnError:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1413393-closefile": {
+      "title": "closeFile",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1413393-closefile",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilehandle/1413393-closefile",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Disallows further access to the represented file or communications channel and signals end of file on communications channels that permit writing."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "closeFile"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172531-synchronizeandreturnerror": {
+      "title": "synchronizeAndReturnError:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172531-synchronizeandreturnerror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilehandle/3172531-synchronizeandreturnerror",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Causes all in-memory data and attributes of the file represented by the file handle to write to permanent storage."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "synchronizeAndReturnError:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411016-synchronizefile": {
+      "title": "synchronizeFile",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411016-synchronizefile",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilehandle/1411016-synchronizefile",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Causes all in-memory data and attributes of the file represented by the handle to write to permanent storage."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "synchronizeFile"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172532-truncateatoffset": {
+      "title": "truncateAtOffset:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172532-truncateatoffset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilehandle/3172532-truncateatoffset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Truncates or extends the file represented by the file handle to a specified offset within the file and puts the file pointer at that position."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "truncateAtOffset:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411716-truncatefileatoffset": {
+      "title": "truncateFileAtOffset:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411716-truncatefileatoffset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilehandle/1411716-truncatefileatoffset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Truncates or extends the file represented by the file handle to a specified offset within the file and puts the file pointer at that position."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "truncateFileAtOffset:"
+        }
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1413309-acceptconnectioninbackgroundandn": {
       "title": "acceptConnectionInBackgroundAndNotify",
@@ -720,145 +1053,33 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1408461-offsetinfile": {
-      "title": "offsetInFile",
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1412413-readabilityhandler": {
+      "title": "readabilityHandler",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1408461-offsetinfile",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1412413-readabilityhandler",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsfilehandle/1408461-offsetinfile",
+      "url": "/documentation/foundation/nsfilehandle/1412413-readabilityhandler",
       "abstract": [
         {
           "type": "text",
-          "text": "The position of the file pointer within the file represented by the receiver."
+          "text": "The block to use for reading the contents of the file handle asynchronously."
         }
-      ],
-      "deprecated": true
+      ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411311-seektoendoffile": {
-      "title": "seekToEndOfFile",
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1415367-writeabilityhandler": {
+      "title": "writeabilityHandler",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411311-seektoendoffile",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1415367-writeabilityhandler",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsfilehandle/1411311-seektoendoffile",
+      "url": "/documentation/foundation/nsfilehandle/1415367-writeabilityhandler",
       "abstract": [
         {
           "type": "text",
-          "text": "Puts the file pointer at the end of the file referenced by the receiver and returns the new file offset."
+          "text": "The block to use for writing the contents of the file handle asynchronously."
         }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "seekToEndOfFile"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1412135-seektofileoffset": {
-      "title": "seekToFileOffset:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1412135-seektofileoffset",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsfilehandle/1412135-seektofileoffset",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Moves the file pointer to the specified offset within the file represented by the receiver."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "seekToFileOffset:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1413393-closefile": {
-      "title": "closeFile",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1413393-closefile",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsfilehandle/1413393-closefile",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Disallows further access to the represented file or communications channel and signals end of file on communications channels that permit writing."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "closeFile"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411016-synchronizefile": {
-      "title": "synchronizeFile",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411016-synchronizefile",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsfilehandle/1411016-synchronizefile",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Causes all in-memory data and attributes of the file represented by the receiver to be written to permanent storage."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "synchronizeFile"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411716-truncatefileatoffset": {
-      "title": "truncateFileAtOffset:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411716-truncatefileatoffset",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsfilehandle/1411716-truncatefileatoffset",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Truncates or extends the file represented by the receiver to a specified offset within the file and puts the file pointer at that position."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "truncateFileAtOffset:"
-        }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsfilehandle/keys_for_notification_userinfo_dictionary": {
       "title": "Keys for Notification UserInfo Dictionary",
@@ -1000,168 +1221,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172525-closeandreturnerror": {
-      "title": "closeAndReturnError:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172525-closeandreturnerror",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsfilehandle/3172525-closeandreturnerror",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "closeAndReturnError:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172530-seektooffset": {
-      "title": "seekToOffset:error:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172530-seektooffset",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsfilehandle/3172530-seektooffset",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "seekToOffset:error:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172531-synchronizeandreturnerror": {
-      "title": "synchronizeAndReturnError:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172531-synchronizeandreturnerror",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsfilehandle/3172531-synchronizeandreturnerror",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "synchronizeAndReturnError:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172532-truncateatoffset": {
-      "title": "truncateAtOffset:error:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172532-truncateatoffset",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsfilehandle/3172532-truncateatoffset",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "truncateAtOffset:error:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172526-getoffset": {
-      "title": "getOffset:error:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172526-getoffset",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsfilehandle/3172526-getoffset",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "getOffset:error:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172527-readdatatoendoffileandreturnerro": {
-      "title": "readDataToEndOfFileAndReturnError:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172527-readdatatoendoffileandreturnerro",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsfilehandle/3172527-readdatatoendoffileandreturnerro",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "readDataToEndOfFileAndReturnError:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172528-readdatauptolength": {
-      "title": "readDataUpToLength:error:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172528-readdatauptolength",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsfilehandle/3172528-readdatauptolength",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "readDataUpToLength:error:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172529-seektoendreturningoffset": {
-      "title": "seekToEndReturningOffset:error:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172529-seektoendreturningoffset",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsfilehandle/3172529-seektoendreturningoffset",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "seekToEndReturningOffset:error:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172533-writedata": {
-      "title": "writeData:error:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172533-writedata",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsfilehandle/3172533-writedata",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "writeData:error:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/nsfilesecurity": {
       "title": "NSFileSecurity",
       "type": "topic",
@@ -1212,16 +1271,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -1255,7 +1304,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1413686-filehandlewithstandardinput",
         "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1416965-filehandlewithstandardoutput",
         "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1413881-filehandlewithnulldevice"
-      ]
+      ],
+      "anchor": "1651201"
     },
     {
       "kind": "taskGroup",
@@ -1263,42 +1313,67 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1409825-initwithfiledescriptor",
         "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1408522-initwithfiledescriptor"
-      ]
+      ],
+      "anchor": "1651367"
     },
     {
       "kind": "taskGroup",
       "title": "Getting a File Descriptor",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1410326-filedescriptor"
-      ]
+      ],
+      "anchor": "1651425"
     },
     {
       "kind": "taskGroup",
-      "title": "Reading from a File Handle",
+      "title": "Reading from a File Handle Synchronously",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411463-availabledata",
+        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172527-readdatatoendoffileandreturnerro",
         "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411490-readdatatoendoffile",
+        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172528-readdatauptolength",
         "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1413916-readdataoflength"
-      ]
+      ],
+      "anchor": "1651453"
     },
     {
       "kind": "taskGroup",
       "title": "Writing to a File Handle",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172533-writedata",
         "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1410936-writedata"
-      ]
+      ],
+      "anchor": "1651506"
     },
     {
       "kind": "taskGroup",
-      "title": "Reading and Writing Using Blocks",
+      "title": "Seeking Within a File",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1412413-readabilityhandler",
-        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1415367-writeabilityhandler"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172526-getoffset",
+        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1408461-offsetinfile",
+        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172529-seektoendreturningoffset",
+        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411311-seektoendoffile",
+        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172530-seektooffset",
+        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1412135-seektofileoffset"
+      ],
+      "anchor": "1651664"
     },
     {
       "kind": "taskGroup",
-      "title": "Communicating Asynchronously",
+      "title": "Operating on a File",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172525-closeandreturnerror",
+        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1413393-closefile",
+        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172531-synchronizeandreturnerror",
+        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411016-synchronizefile",
+        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172532-truncateatoffset",
+        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411716-truncatefileatoffset"
+      ],
+      "anchor": "1651711"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Reading Asynchronously with Notifications",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1413309-acceptconnectioninbackgroundandn",
         "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1412997-acceptconnectioninbackgroundandn",
@@ -1308,24 +1383,22 @@
         "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1417321-readtoendoffileinbackgroundandno",
         "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1409270-waitfordatainbackgroundandnotify",
         "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1414643-waitfordatainbackgroundandnotify"
-      ]
+      ],
+      "anchor": "1651582"
     },
     {
       "kind": "taskGroup",
-      "title": "Seeking Within a File",
+      "title": "Monitoring for Readability and Writability",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1408461-offsetinfile",
-        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411311-seektoendoffile",
-        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1412135-seektofileoffset"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Operating on a File",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1413393-closefile",
-        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411016-synchronizefile",
-        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411716-truncatefileatoffset"
+        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1412413-readabilityhandler",
+        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1415367-writeabilityhandler"
+      ],
+      "anchor": "1651530",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Set these properties if you want to use a block that reads or writes based on the file handle’s availability."
+        }
       ]
     },
     {
@@ -1335,7 +1408,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsfilehandle/keys_for_notification_userinfo_dictionary",
         "doc://com.apple.documentation/documentation/foundation/nsfilehandle/exception_names",
         "doc://com.apple.documentation/documentation/foundation/nsfilehandle/unused_constant"
-      ]
+      ],
+      "anchor": "1679827"
     },
     {
       "kind": "taskGroup",
@@ -1346,6 +1420,7 @@
         "doc://com.apple.documentation/documentation/foundation/nsfilehandlereadcompletionnotification",
         "doc://com.apple.documentation/documentation/foundation/nsfilehandlereadtoendoffilecompletionnotification"
       ],
+      "anchor": "1651843",
       "discussion": {
         "kind": "content",
         "content": [
@@ -1370,22 +1445,8 @@
       "title": "Initializers",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411174-initwithcoder"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Methods",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172525-closeandreturnerror",
-        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172530-seektooffset",
-        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172531-synchronizeandreturnerror",
-        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172532-truncateatoffset",
-        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172526-getoffset",
-        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172527-readdatatoendoffileandreturnerro",
-        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172528-readdatauptolength",
-        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172529-seektoendreturningoffset",
-        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172533-writedata"
-      ]
+      ],
+      "anchor": "2857652"
     }
   ],
   "seeAlsoSections": [
@@ -1433,6 +1494,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1549,7 +1611,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

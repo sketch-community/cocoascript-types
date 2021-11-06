@@ -34,32 +34,37 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "8.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Foundation4DataV",
@@ -76,8 +81,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -321,6 +326,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/contiguousbytes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that declares the type offers direct access to the underlying raw bytes in a contiguous manner."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -339,6 +350,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/mutabledataprotocol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that provides consistent data access to the bytes underlying contiguous and noncontiguous mutable data buffers. "
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -2985,42 +3002,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/data/2852974-index": {
-      "title": "index(_:offsetBy:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/data/2852974-index",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/data/2852974-index",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns an index that is the specified distance from the given index."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "index"
-        },
-        {
-          "kind": "text",
-          "text": "(Int, "
-        },
-        {
-          "kind": "identifier",
-          "text": "offsetBy"
-        },
-        {
-          "kind": "text",
-          "text": ": Int) -> Int"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/data/1780303-index": {
       "title": "index(after:)",
       "type": "topic",
@@ -3114,50 +3095,6 @@
         {
           "kind": "identifier",
           "text": "Data.Indices"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/data/2853008-distance": {
-      "title": "distance(from:to:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/data/2853008-distance",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/data/2853008-distance",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the distance between two indices."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "distance"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "from"
-        },
-        {
-          "kind": "text",
-          "text": ": Int, "
-        },
-        {
-          "kind": "identifier",
-          "text": "to"
-        },
-        {
-          "kind": "text",
-          "text": ": Int) -> Int"
         }
       ]
     },
@@ -3942,6 +3879,28 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/data/3802300-compare": {
+      "title": "compare(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data/3802300-compare",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data/3802300-compare",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "compare"
+        },
+        {
+          "kind": "text",
+          "text": "<Comparator>(Comparator.Compared, Comparator.Compared) -> ComparisonResult"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/data/1779860-contains": {
       "title": "contains(_:)",
       "type": "topic",
@@ -4522,6 +4481,28 @@
         {
           "kind": "text",
           "text": ": inout Int)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/data/3766065-formatted": {
+      "title": "formatted(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data/3766065-formatted",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data/3766065-formatted",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "formatted"
+        },
+        {
+          "kind": "text",
+          "text": "<S>(S) -> S.FormatOutput"
         }
       ]
     },
@@ -5538,6 +5519,126 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/data/3802301-sort": {
+      "title": "sort(using:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data/3802301-sort",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data/3802301-sort",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "sort"
+        },
+        {
+          "kind": "text",
+          "text": "<Comparator>("
+        },
+        {
+          "kind": "identifier",
+          "text": "using"
+        },
+        {
+          "kind": "text",
+          "text": ": Comparator)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/data/3802302-sort": {
+      "title": "sort(using:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data/3802302-sort",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data/3802302-sort",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "sort"
+        },
+        {
+          "kind": "text",
+          "text": "<S, Comparator>("
+        },
+        {
+          "kind": "identifier",
+          "text": "using"
+        },
+        {
+          "kind": "text",
+          "text": ": S)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/data/3802303-sorted": {
+      "title": "sorted(using:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data/3802303-sorted",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data/3802303-sorted",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "sorted"
+        },
+        {
+          "kind": "text",
+          "text": "<Comparator>("
+        },
+        {
+          "kind": "identifier",
+          "text": "using"
+        },
+        {
+          "kind": "text",
+          "text": ": Comparator) -> [UInt8]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/data/3802304-sorted": {
+      "title": "sorted(using:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data/3802304-sorted",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data/3802304-sorted",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "sorted"
+        },
+        {
+          "kind": "text",
+          "text": "<S, Comparator>("
+        },
+        {
+          "kind": "identifier",
+          "text": "using"
+        },
+        {
+          "kind": "text",
+          "text": ": S) -> [UInt8]"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/data/2983333-starts": {
       "title": "starts(with:by:)",
       "type": "topic",
@@ -6023,6 +6124,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/dataprotocol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that provides consistent data access to the bytes underlying contiguous and noncontiguous data buffers."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -6047,16 +6154,16 @@
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.1.1 Release Candidate",
-        "12.3 Release Candidate"
+        "13.1",
+        "13.2 beta 1"
       ]
     },
     "major": {
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+        "13.0",
+        "13.2 beta 1"
       ]
     }
   },
@@ -6092,7 +6199,8 @@
         "doc://com.apple.documentation/documentation/foundation/data/1780072-init",
         "doc://com.apple.documentation/documentation/foundation/data/2201934-init",
         "doc://com.apple.documentation/documentation/foundation/data/1780301-resetbytes"
-      ]
+      ],
+      "anchor": "2888217"
     },
     {
       "kind": "taskGroup",
@@ -6106,7 +6214,8 @@
         "doc://com.apple.documentation/documentation/foundation/data/1780455-init",
         "doc://com.apple.documentation/documentation/foundation/data/1780072-init",
         "doc://com.apple.documentation/documentation/foundation/data/2201934-init"
-      ]
+      ],
+      "anchor": "2850609"
     },
     {
       "kind": "taskGroup",
@@ -6117,7 +6226,8 @@
         "doc://com.apple.documentation/documentation/foundation/data/2201881-init",
         "doc://com.apple.documentation/documentation/foundation/data/1780455-init",
         "doc://com.apple.documentation/documentation/foundation/data/deallocator"
-      ]
+      ],
+      "anchor": "2888212"
     },
     {
       "kind": "taskGroup",
@@ -6126,7 +6236,8 @@
         "doc://com.apple.documentation/documentation/foundation/data/1779858-write",
         "doc://com.apple.documentation/documentation/foundation/data/readingoptions",
         "doc://com.apple.documentation/documentation/foundation/data/writingoptions"
-      ]
+      ],
+      "anchor": "2888210"
     },
     {
       "kind": "taskGroup",
@@ -6136,14 +6247,16 @@
         "doc://com.apple.documentation/documentation/foundation/data/2142853-base64encodedstring",
         "doc://com.apple.documentation/documentation/foundation/data/base64decodingoptions",
         "doc://com.apple.documentation/documentation/foundation/data/base64encodingoptions"
-      ]
+      ],
+      "anchor": "2888198"
     },
     {
       "kind": "taskGroup",
       "title": "Counting Bytes",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/data/1780284-isempty"
-      ]
+      ],
+      "anchor": "2888208"
     },
     {
       "kind": "taskGroup",
@@ -6151,7 +6264,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/data/1779919-subscript",
         "doc://com.apple.documentation/documentation/foundation/data/1780340-subscript"
-      ]
+      ],
+      "anchor": "2850612"
     },
     {
       "kind": "taskGroup",
@@ -6162,7 +6276,8 @@
         "doc://com.apple.documentation/documentation/foundation/data/1780297-copybytes",
         "doc://com.apple.documentation/documentation/foundation/data/1780201-copybytes",
         "doc://com.apple.documentation/documentation/foundation/data/1779913-copybytes"
-      ]
+      ],
+      "anchor": "2891983"
     },
     {
       "kind": "taskGroup",
@@ -6173,7 +6288,8 @@
         "doc://com.apple.documentation/documentation/foundation/data/1780344-append",
         "doc://com.apple.documentation/documentation/foundation/data/2832824-append",
         "doc://com.apple.documentation/documentation/foundation/data/2224343-reservecapacity"
-      ]
+      ],
+      "anchor": "2888196"
     },
     {
       "kind": "taskGroup",
@@ -6182,7 +6298,8 @@
         "doc://com.apple.documentation/documentation/foundation/data/2224281-remove",
         "doc://com.apple.documentation/documentation/foundation/data/2224169-removeall",
         "doc://com.apple.documentation/documentation/foundation/data/2224163-removesubrange"
-      ]
+      ],
+      "anchor": "2888197"
     },
     {
       "kind": "taskGroup",
@@ -6192,7 +6309,8 @@
         "doc://com.apple.documentation/documentation/foundation/data/2224170-replacesubrange",
         "doc://com.apple.documentation/documentation/foundation/data/2224347-replacesubrange",
         "doc://com.apple.documentation/documentation/foundation/data/2832748-replacesubrange"
-      ]
+      ],
+      "anchor": "2888207"
     },
     {
       "kind": "taskGroup",
@@ -6205,7 +6323,8 @@
         "doc://com.apple.documentation/documentation/foundation/data/2293545-min",
         "doc://com.apple.documentation/documentation/foundation/data/1780191-range",
         "doc://com.apple.documentation/documentation/foundation/data/searchoptions"
-      ]
+      ],
+      "anchor": "2888216"
     },
     {
       "kind": "taskGroup",
@@ -6218,7 +6337,8 @@
         "doc://com.apple.documentation/documentation/foundation/data/2832847-prefix",
         "doc://com.apple.documentation/documentation/foundation/data/1780343-suffix",
         "doc://com.apple.documentation/documentation/foundation/data/1779685-suffix"
-      ]
+      ],
+      "anchor": "2888205"
     },
     {
       "kind": "taskGroup",
@@ -6228,7 +6348,8 @@
         "doc://com.apple.documentation/documentation/foundation/data/1780445-dropfirst",
         "doc://com.apple.documentation/documentation/foundation/data/2832697-drop",
         "doc://com.apple.documentation/documentation/foundation/data/2832722-advanced"
-      ]
+      ],
+      "anchor": "2888206"
     },
     {
       "kind": "taskGroup",
@@ -6236,7 +6357,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/data/2293747-reduce",
         "doc://com.apple.documentation/documentation/foundation/data/1780371-lazy"
-      ]
+      ],
+      "anchor": "2888202"
     },
     {
       "kind": "taskGroup",
@@ -6247,7 +6369,8 @@
         "doc://com.apple.documentation/documentation/foundation/data/1780030-makeiterator",
         "doc://com.apple.documentation/documentation/foundation/data/iterator",
         "doc://com.apple.documentation/documentation/foundation/data/1780329-enumeratebytes"
-      ]
+      ],
+      "anchor": "2888201"
     },
     {
       "kind": "taskGroup",
@@ -6257,7 +6380,8 @@
         "doc://com.apple.documentation/documentation/foundation/data/1779722-sorted",
         "doc://com.apple.documentation/documentation/foundation/data/2293440-sorted",
         "doc://com.apple.documentation/documentation/foundation/data/1780245-reversed"
-      ]
+      ],
+      "anchor": "2888204"
     },
     {
       "kind": "taskGroup",
@@ -6266,7 +6390,8 @@
         "doc://com.apple.documentation/documentation/foundation/data/1779918-subdata",
         "doc://com.apple.documentation/documentation/foundation/data/2293250-split",
         "doc://com.apple.documentation/documentation/foundation/data/1780004-split"
-      ]
+      ],
+      "anchor": "2888200"
     },
     {
       "kind": "taskGroup",
@@ -6277,7 +6402,8 @@
         "doc://com.apple.documentation/documentation/foundation/data/2853009-starts",
         "doc://com.apple.documentation/documentation/foundation/data/2852995-lexicographicallyprecedes",
         "doc://com.apple.documentation/documentation/foundation/data/2852997-lexicographicallyprecedes"
-      ]
+      ],
+      "anchor": "2888215"
     },
     {
       "kind": "taskGroup",
@@ -6286,18 +6412,18 @@
         "doc://com.apple.documentation/documentation/foundation/data/index",
         "doc://com.apple.documentation/documentation/foundation/data/1780121-startindex",
         "doc://com.apple.documentation/documentation/foundation/data/1779752-endindex",
-        "doc://com.apple.documentation/documentation/foundation/data/2852974-index",
         "doc://com.apple.documentation/documentation/foundation/data/1780303-index",
         "doc://com.apple.documentation/documentation/foundation/data/1780188-index"
-      ]
+      ],
+      "anchor": "2888203"
     },
     {
       "kind": "taskGroup",
       "title": "Manipulating Index Ranges",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/data/indices",
-        "doc://com.apple.documentation/documentation/foundation/data/2853008-distance"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/data/indices"
+      ],
+      "anchor": "2888228"
     },
     {
       "kind": "taskGroup",
@@ -6307,7 +6433,8 @@
         "doc://com.apple.documentation/documentation/foundation/data/1779877-debugdescription",
         "doc://com.apple.documentation/documentation/foundation/data/2427377-custommirror",
         "doc://com.apple.documentation/documentation/foundation/data/1780308-hashvalue"
-      ]
+      ],
+      "anchor": "2888209"
     },
     {
       "kind": "taskGroup",
@@ -6316,7 +6443,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsdata",
         "doc://com.apple.documentation/documentation/foundation/nsmutabledata",
         "doc://com.apple.documentation/documentation/foundation/data/referencetype"
-      ]
+      ],
+      "anchor": "2878093"
     },
     {
       "kind": "taskGroup",
@@ -6325,7 +6453,8 @@
         "doc://com.apple.documentation/documentation/foundation/data/element",
         "doc://com.apple.documentation/documentation/foundation/data/regions",
         "doc://com.apple.documentation/documentation/foundation/data/subsequence"
-      ]
+      ],
+      "anchor": "3358635"
     },
     {
       "kind": "taskGroup",
@@ -6339,7 +6468,8 @@
         "doc://com.apple.documentation/documentation/foundation/data/2895150-init",
         "doc://com.apple.documentation/documentation/foundation/data/3126627-init",
         "doc://com.apple.documentation/documentation/foundation/data/2963276-init"
-      ]
+      ],
+      "anchor": "2890507"
     },
     {
       "kind": "taskGroup",
@@ -6352,7 +6482,8 @@
         "doc://com.apple.documentation/documentation/foundation/data/3344768-publisher",
         "doc://com.apple.documentation/documentation/foundation/data/3139152-regions",
         "doc://com.apple.documentation/documentation/foundation/data/3017416-underestimatedcount"
-      ]
+      ],
+      "anchor": "2850610"
     },
     {
       "kind": "taskGroup",
@@ -6364,6 +6495,7 @@
         "doc://com.apple.documentation/documentation/foundation/data/3126614-append",
         "doc://com.apple.documentation/documentation/foundation/data/3200260-applying",
         "doc://com.apple.documentation/documentation/foundation/data/2957824-compactmap",
+        "doc://com.apple.documentation/documentation/foundation/data/3802300-compare",
         "doc://com.apple.documentation/documentation/foundation/data/1779860-contains",
         "doc://com.apple.documentation/documentation/foundation/data/2293225-contains",
         "doc://com.apple.documentation/documentation/foundation/data/3139147-copybytes",
@@ -6381,6 +6513,7 @@
         "doc://com.apple.documentation/documentation/foundation/data/2946858-formindex",
         "doc://com.apple.documentation/documentation/foundation/data/2946857-formindex",
         "doc://com.apple.documentation/documentation/foundation/data/2946881-formindex",
+        "doc://com.apple.documentation/documentation/foundation/data/3766065-formatted",
         "doc://com.apple.documentation/documentation/foundation/data/3151801-hash",
         "doc://com.apple.documentation/documentation/foundation/data/2946887-index",
         "doc://com.apple.documentation/documentation/foundation/data/3126623-index",
@@ -6412,13 +6545,18 @@
         "doc://com.apple.documentation/documentation/foundation/data/2994474-shuffled",
         "doc://com.apple.documentation/documentation/foundation/data/2994476-shuffled",
         "doc://com.apple.documentation/documentation/foundation/data/2946799-sort",
+        "doc://com.apple.documentation/documentation/foundation/data/3802301-sort",
+        "doc://com.apple.documentation/documentation/foundation/data/3802302-sort",
+        "doc://com.apple.documentation/documentation/foundation/data/3802303-sorted",
+        "doc://com.apple.documentation/documentation/foundation/data/3802304-sorted",
         "doc://com.apple.documentation/documentation/foundation/data/2983333-starts",
         "doc://com.apple.documentation/documentation/foundation/data/2895039-swapat",
         "doc://com.apple.documentation/documentation/foundation/data/3126637-withcontiguousmutablestorageifav",
         "doc://com.apple.documentation/documentation/foundation/data/3126638-withcontiguousstorageifavailable",
         "doc://com.apple.documentation/documentation/foundation/data/3139154-withunsafebytes",
         "doc://com.apple.documentation/documentation/foundation/data/3139155-withunsafemutablebytes"
-      ]
+      ],
+      "anchor": "2850611"
     },
     {
       "kind": "taskGroup",
@@ -6429,7 +6567,8 @@
         "doc://com.apple.documentation/documentation/foundation/data/3017409-subscript",
         "doc://com.apple.documentation/documentation/foundation/data/3017410-subscript",
         "doc://com.apple.documentation/documentation/foundation/data/3020551-subscript"
-      ]
+      ],
+      "anchor": "2920219"
     },
     {
       "kind": "taskGroup",
@@ -6440,7 +6579,8 @@
         "doc://com.apple.documentation/documentation/foundation/data/2963269",
         "doc://com.apple.documentation/documentation/foundation/data/2963271",
         "doc://com.apple.documentation/documentation/foundation/data/2963273"
-      ]
+      ],
+      "anchor": "2850613"
     }
   ],
   "seeAlsoSections": [
@@ -6486,6 +6626,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -6557,7 +6698,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

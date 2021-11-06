@@ -36,15 +36,18 @@
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSImageSymbolConfiguration(cm)configurationWithPointSize:weight:",
+    "parent": {
+      "title": "NSImageSymbolConfiguration"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -101,7 +104,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsimagesymbolconfiguration",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsimagesymbolconfiguration"
+      "url": "/documentation/appkit/nsimagesymbolconfiguration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that contains the specific font, style, and weight attributes to apply to a symbol image."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coregraphics/cgfloat": {
       "title": "CGFloat",
@@ -215,6 +224,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nsimagesymbolconfiguration/3667455-configurationwithscale": {
+      "title": "configurationWithScale:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsimagesymbolconfiguration/3667455-configurationwithscale",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsimagesymbolconfiguration/3667455-configurationwithscale",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a symbol configuration using the scale you specify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "configurationWithScale:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nsfonttextstyle": {
       "title": "NSFontTextStyle",
       "type": "topic",
@@ -257,6 +290,7 @@
         "doc://com.apple.documentation/documentation/appkit/nsimagesymbolconfiguration/3656511-configurationwithpointsize",
         "doc://com.apple.documentation/documentation/appkit/nsimagesymbolconfiguration/3656512-configurationwithtextstyle",
         "doc://com.apple.documentation/documentation/appkit/nsimagesymbolconfiguration/3656513-configurationwithtextstyle",
+        "doc://com.apple.documentation/documentation/appkit/nsimagesymbolconfiguration/3667455-configurationwithscale",
         "doc://com.apple.documentation/documentation/appkit/nsfonttextstyle",
         "doc://com.apple.documentation/documentation/appkit/nsimagesymbolscale"
       ],
@@ -278,14 +312,8 @@
               "text": "+ ("
             },
             {
-              "kind": "typeIdentifier",
-              "preciseIdentifier": "c:objc(cs)NSImageSymbolConfiguration",
-              "identifier": "doc://com.apple.documentation/documentation/appkit/nsimagesymbolconfiguration",
-              "text": "NSImageSymbolConfiguration"
-            },
-            {
-              "kind": "text",
-              "text": " *"
+              "kind": "keyword",
+              "text": "instancetype"
             },
             {
               "kind": "text",
@@ -352,7 +380,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

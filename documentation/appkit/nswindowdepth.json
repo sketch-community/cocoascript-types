@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "This type represents the depth, or amount of memory, devoted to a single pixel in a window or screen. A depth of 0 indicates default depth. Window depths should not be made persistent as they will not be the same across systems."
+      "text": "A type that represents the depth, or amount of memory, for a single pixel in a window or screen."
     }
   ],
   "documentVersion": 0,
@@ -35,15 +35,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.6",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@T@NSWindowDepth",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -100,7 +100,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/1473594-nscolorspacefromdepth",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/1473594-nscolorspacefromdepth"
+      "url": "/documentation/appkit/1473594-nscolorspacefromdepth",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the name of the color space corresponding to the passed window depth."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/1473660-nsbitsperpixelfromdepth": {
       "title": "NSBitsPerPixelFromDepth",
@@ -108,7 +114,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/1473660-nsbitsperpixelfromdepth",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/1473660-nsbitsperpixelfromdepth"
+      "url": "/documentation/appkit/1473660-nsbitsperpixelfromdepth",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the bits per pixel for the specified window depth."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/1473820-nsplanarfromdepth": {
       "title": "NSPlanarFromDepth",
@@ -116,7 +128,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/1473820-nsplanarfromdepth",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/1473820-nsplanarfromdepth"
+      "url": "/documentation/appkit/1473820-nsplanarfromdepth",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns whether the specified window depth is planar."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/1473812-nsbestdepth": {
       "title": "NSBestDepth",
@@ -184,6 +202,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/1473674-nsbitspersamplefromdepth": {
+      "title": "NSBitsPerSampleFromDepth",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/1473674-nsbitspersamplefromdepth",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/1473674-nsbitspersamplefromdepth",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the bits per sample for the specified window depth."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -200,7 +232,19 @@
         "doc://com.apple.documentation/documentation/appkit/nswindowdepth/nswindowdepthonehundredtwentyeightbitrgb",
         "doc://com.apple.documentation/documentation/appkit/nswindowdepth/nswindowdepthsixtyfourbitrgb",
         "doc://com.apple.documentation/documentation/appkit/nswindowdepth/nswindowdepthtwentyfourbitrgb"
-      ]
+      ],
+      "anchor": "2876795"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Accessing Depth Details",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/1473660-nsbitsperpixelfromdepth",
+        "doc://com.apple.documentation/documentation/appkit/1473674-nsbitspersamplefromdepth",
+        "doc://com.apple.documentation/documentation/appkit/1473594-nscolorspacefromdepth",
+        "doc://com.apple.documentation/documentation/appkit/1473820-nsplanarfromdepth"
+      ],
+      "anchor": "3733183"
     }
   ],
   "primaryContentSections": [
@@ -281,6 +325,23 @@
           "inlineContent": [
             {
               "type": "text",
+              "text": "A depth of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0"
+            },
+            {
+              "type": "text",
+              "text": " indicates default depth. Don’t make window depths persistent because they aren’t the same across systems."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
               "text": "Use the functions "
             },
             {
@@ -316,7 +377,16 @@
             },
             {
               "type": "text",
-              "text": " value. Use "
+              "text": " value. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use "
             },
             {
               "type": "reference",
@@ -329,12 +399,44 @@
             },
             {
               "type": "reference",
-              "isActive": true,
+              "isActive": false,
               "identifier": "doc://com.apple.documentation/documentation/appkit/1473812-nsbestdepth"
             },
             {
               "type": "text",
-              "text": " tries to accommodate all the parameters (match or better); if there are multiple matches, it gives the closest, with matching color space first, then bps, then planar, then "
+              "text": " tries to accommodate all the parameters (match or better). If there are multiple matches, this function uses color space first, then bits per sample ("
+            },
+            {
+              "type": "codeVoice",
+              "code": "bps"
+            },
+            {
+              "type": "text",
+              "text": "), then "
+            },
+            {
+              "type": "codeVoice",
+              "code": "planar"
+            },
+            {
+              "type": "text",
+              "text": ", then bits per pixel ("
+            },
+            {
+              "type": "codeVoice",
+              "code": "bpp)"
+            },
+            {
+              "type": "text",
+              "text": " to determine the closest match. Use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0"
+            },
+            {
+              "type": "text",
+              "text": " for "
             },
             {
               "type": "codeVoice",
@@ -342,15 +444,7 @@
             },
             {
               "type": "text",
-              "text": ". "
-            },
-            {
-              "type": "codeVoice",
-              "code": "bpp"
-            },
-            {
-              "type": "text",
-              "text": " is “bits per pixel”; 0 indicates default (same as the number of bits per plane, either "
+              "text": " to indicate the default, the same as the number of bits per plane: either "
             },
             {
               "type": "codeVoice",
@@ -375,7 +469,7 @@
             },
             {
               "type": "text",
-              "text": "); other values maybe used as hints to provide backing stores of different configuration: for instance, 8-bit color."
+              "text": ". You may use other values as hints to provide backing stores of different configurations — for instance, 8-bit color."
             }
           ]
         },
@@ -417,7 +511,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

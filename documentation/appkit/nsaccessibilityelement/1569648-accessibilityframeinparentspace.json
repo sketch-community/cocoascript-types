@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Sets the element’s frame in its parent’s coordinate system."
+      "text": "The accessibility element’s frame in its parent’s coordinate system."
     }
   ],
   "documentVersion": 0,
@@ -11,13 +11,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement"
       ]
     ]
@@ -41,15 +41,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSAccessibilityElement(py)accessibilityFrameInParentSpace",
+    "parent": {
+      "title": "NSAccessibilityElement"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -74,10 +77,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -92,7 +95,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The basic infrastructure required to interact with an accessibility client. "
+          "text": "The basic infrastructure necessary for interacting with an assistive app. "
         }
       ]
     },
@@ -111,30 +114,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsrect"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement/1533717-accessibilityaddchildelement": {
-      "title": "accessibilityAddChildElement:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement/1533717-accessibilityaddchildelement",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityelement/1533717-accessibilityaddchildelement",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Adds a child to the element in the accessibility hierarchy."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityAddChildElement:"
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement/1531178-accessibilityelementwithrole": {
       "title": "accessibilityElementWithRole:frame:label:parent:",
@@ -160,6 +139,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement/1533717-accessibilityaddchildelement": {
+      "title": "accessibilityAddChildElement:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement/1533717-accessibilityaddchildelement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityelement/1533717-accessibilityaddchildelement",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a child to the accessibility element in the accessibility hierarchy."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "accessibilityAddChildElement:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement/1569648-accessibilityframeinparentspace": {
       "title": "accessibilityFrameInParentSpace",
       "type": "topic",
@@ -170,7 +173,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Sets the element’s frame in its parent’s coordinate system."
+          "text": "The accessibility element’s frame in its parent’s coordinate system."
         }
       ]
     },
@@ -185,8 +188,8 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement/1533717-accessibilityaddchildelement",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement/1531178-accessibilityelementwithrole"
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement/1531178-accessibilityelementwithrole",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement/1533717-accessibilityaddchildelement"
       ],
       "title": "Supporting the Accessibility Hierarchy",
       "generated": true
@@ -256,7 +259,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

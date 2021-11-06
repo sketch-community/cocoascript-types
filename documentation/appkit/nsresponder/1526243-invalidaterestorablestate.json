@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Marks the responder’s interface-related state as dirty. "
+      "text": "Marks the responder’s interface-related state as dirty."
     }
   ],
   "documentVersion": 0,
@@ -35,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSResponder(im)invalidateRestorableState",
+    "parent": {
+      "title": "NSResponder"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -96,21 +99,31 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An abstract class that forms the basis of event and command processing in AppKit. "
+          "text": "An abstract class that forms the basis of event and command processing in AppKit."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsresponder/1526242-restorablestatekeypaths": {
-      "title": "restorableStateKeyPaths",
+    "doc://com.apple.documentation/documentation/appkit/nsresponder/3762523-allowedclassesforrestorablestate": {
+      "title": "allowedClassesForRestorableStateKeyPath:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/1526242-restorablestatekeypaths",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/3762523-allowedclassesforrestorablestate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsresponder/1526242-restorablestatekeypaths",
+      "url": "/documentation/appkit/nsresponder/3762523-allowedclassesforrestorablestate",
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an array of key paths representing the restorable attributes of the responder."
+          "text": "Returns the classes that support secure coding."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "allowedClassesForRestorableStateKeyPath:"
         }
       ]
     },
@@ -138,6 +151,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nsresponder/2876293-encoderestorablestatewithcoder": {
+      "title": "encodeRestorableStateWithCoder:backgroundQueue:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/2876293-encoderestorablestatewithcoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsresponder/2876293-encoderestorablestatewithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Saves the interface-related state of the responder to a keyed archiver either synchronously or asynchronously on the given operation queue."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "encodeRestorableStateWithCoder:backgroundQueue:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nsresponder/1526253-restorestatewithcoder": {
       "title": "restoreStateWithCoder:",
       "type": "topic",
@@ -162,6 +199,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nsresponder/1526242-restorablestatekeypaths": {
+      "title": "restorableStateKeyPaths",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/1526242-restorablestatekeypaths",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsresponder/1526242-restorablestatekeypaths",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array of key paths representing the restorable attributes of the responder."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nsresponder/1526243-invalidaterestorablestate": {
       "title": "invalidateRestorableState",
       "type": "topic",
@@ -172,7 +223,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Marks the responder’s interface-related state as dirty. "
+          "text": "Marks the responder’s interface-related state as dirty."
         }
       ],
       "fragments": [
@@ -197,7 +248,9 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsresponder/3762523-allowedclassesforrestorablestate",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1526236-encoderestorablestatewithcoder",
+        "doc://com.apple.documentation/documentation/appkit/nsresponder/2876293-encoderestorablestatewithcoder",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1526253-restorestatewithcoder",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1526242-restorablestatekeypaths"
       ],
@@ -255,7 +308,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Call this method whenever the restorable state of your responder changes. This method marks the responder’s state as dirty, which causes that state to be written to disk at some point in the future. Do not override this method."
+              "text": "Call this method whenever the restorable state of your responder changes. This method marks the responder’s state as dirty, which writes the state to disk at some point in the future. Don’t override this method."
             }
           ]
         }
@@ -263,7 +316,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

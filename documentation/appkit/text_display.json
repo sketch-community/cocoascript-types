@@ -30,8 +30,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -65,6 +65,20 @@
       "type": "topic",
       "kind": "symbol",
       "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstext": {
+      "title": "NSText",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The most general programmatic interface for objects that manage text. "
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsspellserver": {
       "title": "NSSpellServer",
@@ -170,21 +184,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Manage text storage and perform custom layout of text-based content in your app's views. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nstext": {
-      "title": "NSText",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstext",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nstext",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The most general programmatic interface for objects that manage text. "
+          "text": "Manage text storage and perform custom layout of text-based content in your app’s views."
         }
       ]
     },
@@ -271,6 +271,14 @@
       "role": "symbol",
       "url": "/documentation/appkit/nstextinputtraittype"
     },
+    "doc://com.apple.documentation/documentation/appkit/text_input": {
+      "title": "Text Input",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/text_input",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/text_input"
+    },
     "doc://com.apple.documentation/documentation/appkit/text_display": {
       "title": "Text Display",
       "type": "topic",
@@ -307,16 +315,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0 beta 5",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "topicSections": [
     {
       "kind": "taskGroup",
@@ -328,7 +326,8 @@
         "doc://com.apple.documentation/documentation/appkit/nstextviewdelegate",
         "doc://com.apple.documentation/documentation/appkit/nstextdelegate",
         "doc://com.apple.documentation/documentation/appkit/nstext"
-      ]
+      ],
+      "anchor": "2871744"
     },
     {
       "kind": "taskGroup",
@@ -338,7 +337,8 @@
         "doc://com.apple.documentation/documentation/appkit/nstextcheckingclient",
         "doc://com.apple.documentation/documentation/appkit/nstextinputtraits",
         "doc://com.apple.documentation/documentation/appkit/nstextinputtraittype"
-      ]
+      ],
+      "anchor": "3369876"
     },
     {
       "kind": "taskGroup",
@@ -347,12 +347,14 @@
         "doc://com.apple.documentation/documentation/appkit/nsspellchecker",
         "doc://com.apple.documentation/documentation/appkit/nschangespelling",
         "doc://com.apple.documentation/documentation/appkit/nsignoremisspelledwords"
-      ]
+      ],
+      "anchor": "2870806"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/text_input",
         "doc://com.apple.documentation/documentation/appkit/textkit",
         "doc://com.apple.documentation/documentation/appkit/fonts"
       ],
@@ -375,7 +377,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "In most cases, you can lay out your app's text using the "
+              "text": "In most cases, you can lay out your app’s text using the "
             },
             {
               "type": "reference",
@@ -402,7 +404,7 @@
             },
             {
               "type": "text",
-              "text": " class to add either a label or a simple text input. Use the  "
+              "text": " class to add either a label or a simple text input. Use the "
             },
             {
               "type": "reference",
@@ -524,7 +526,7 @@
             },
             {
               "type": "text",
-              "text": ". "
+              "text": "."
             }
           ]
         },
@@ -583,7 +585,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -36,15 +36,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSTableViewDelegate(im)tableView:heightOfRow:",
+    "parent": {
+      "title": "NSTableViewDelegate"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -250,6 +253,14 @@
           "text": "tile"
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstableview/1524258-intercellspacing": {
+      "title": "intercellSpacing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstableview/1524258-intercellspacing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstableview/1524258-intercellspacing"
     },
     "doc://com.apple.documentation/documentation/coregraphics/cgfloat": {
       "title": "CGFloat",
@@ -470,7 +481,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The height of the row. The height should not include intercell spacing and must be greater than zero."
+              "text": "The height of the row. The height doesn’t include intercell spacing and must be greater than zero."
             }
           ]
         }
@@ -490,7 +501,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You should implement this method if your table supports varying row heights. "
+              "text": "Implement this method if your table supports varying row heights. "
             }
           ]
         },
@@ -517,7 +528,7 @@
             },
             {
               "type": "text",
-              "text": " automatically invalidates its entire row height cache when "
+              "text": " automatically invalidates its entire row height cache in response to calls to "
             },
             {
               "type": "reference",
@@ -526,7 +537,7 @@
             },
             {
               "type": "text",
-              "text": " and "
+              "text": " or "
             },
             {
               "type": "reference",
@@ -535,7 +546,7 @@
             },
             {
               "type": "text",
-              "text": " are called."
+              "text": "."
             }
           ]
         },
@@ -562,7 +573,7 @@
             },
             {
               "type": "text",
-              "text": " within your implementation of this method, an exception is thrown."
+              "text": " within your implementation of this method, the table view throws an exception."
             }
           ]
         },
@@ -610,7 +621,34 @@
                 },
                 {
                   "type": "text",
-                  "text": " within your implementation of this method. "
+                  "text": " within your implementation of this method, such as "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/appkit/nstableview/1524258-intercellspacing"
+                },
+                {
+                  "type": "text",
+                  "text": ". To confirm your code isn’t inadvertently causing any calls to "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/appkit/nstableview/1528077-tile"
+                },
+                {
+                  "type": "text",
+                  "text": ", set a breakpoint on "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/appkit/nstableview/1528077-tile"
+                },
+                {
+                  "type": "text",
+                  "text": " in Xcode."
                 }
               ]
             }
@@ -621,7 +659,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

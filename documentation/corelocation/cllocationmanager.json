@@ -33,35 +33,40 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.6",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CLLocationManager",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -124,13 +129,13 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423701-locationmanager": {
-      "title": "locationManager:didChangeAuthorizationStatus:",
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/3563956-locationmanagerdidchangeauthoriz": {
+      "title": "locationManagerDidChangeAuthorization:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423701-locationmanager",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/3563956-locationmanagerdidchangeauthoriz",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/corelocation/cllocationmanagerdelegate/1423701-locationmanager",
+      "url": "/documentation/corelocation/cllocationmanagerdelegate/3563956-locationmanagerdidchangeauthoriz",
       "fragments": [
         {
           "kind": "text",
@@ -138,7 +143,29 @@
         },
         {
           "kind": "identifier",
-          "text": "locationManager:didChangeAuthorizationStatus:"
+          "text": "locationManagerDidChangeAuthorization:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrunloop": {
+      "title": "NSRunLoop",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrunloop"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager": {
+      "title": "CLLocationManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The object that you use to start and stop the delivery of location-related events to your app."
         }
       ]
     },
@@ -488,6 +515,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3563952-authorizationstatus": {
+      "title": "authorizationStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3563952-authorizationstatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanager/3563952-authorizationstatus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The current authorization status for the app."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/corelocation/clauthorizationstatus": {
       "title": "CLAuthorizationStatus",
       "type": "topic",
@@ -502,17 +543,30 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3563952-authorizationstatus": {
-      "title": "authorizationStatus",
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationdefaultaccuracyreduced": {
+      "title": "NSLocationDefaultAccuracyReduced",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3563952-authorizationstatus",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationdefaultaccuracyreduced",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/corelocation/cllocationmanager/3563952-authorizationstatus",
+      "url": "/documentation/bundleresources/information_property_list/nslocationdefaultaccuracyreduced",
       "abstract": [
         {
           "type": "text",
-          "text": "The current authorization status for the app."
+          "text": "A Boolean value that indicates whether the app requests reduced location accuracy by default."
+        }
+      ],
+      "titleStyle": "symbol",
+      "name": "NSLocationDefaultAccuracyReduced",
+      "ideTitle": "Privacy - Location Default Accuracy Reduced",
+      "fragments": [
+        {
+          "kind": "label",
+          "text": "property list key "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSLocationDefaultAccuracyReduced"
         }
       ]
     },
@@ -555,6 +609,33 @@
         }
       ],
       "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationalwaysandwheninuseusagedescription": {
+      "title": "NSLocationAlwaysAndWhenInUseUsageDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationalwaysandwheninuseusagedescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nslocationalwaysandwheninuseusagedescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A message that tells the user why the app is requesting access to the user’s location information at all times."
+        }
+      ],
+      "titleStyle": "symbol",
+      "name": "NSLocationAlwaysAndWhenInUseUsageDescription",
+      "ideTitle": "Privacy - Location Always and When In Use Usage Description",
+      "fragments": [
+        {
+          "kind": "label",
+          "text": "property list key "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSLocationAlwaysAndWhenInUseUsageDescription"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423750-startupdatinglocation": {
       "title": "startUpdatingLocation",
@@ -670,6 +751,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620567-activitytype": {
+      "title": "activityType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620567-activitytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanager/1620567-activitytype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The type of user activity associated with the location updates."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clactivitytype": {
+      "title": "CLActivityType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clactivitytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clactivitytype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants indicating the type of activity associated with location updates. "
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423500-distancefilter": {
       "title": "distanceFilter",
       "type": "topic",
@@ -712,6 +821,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationdistance": {
+      "title": "CLLocationDistance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationdistance",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationdistance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A distance measurement (measured in meters) from an existing location."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423836-desiredaccuracy": {
       "title": "desiredAccuracy",
       "type": "topic",
@@ -726,31 +849,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620567-activitytype": {
-      "title": "activityType",
+    "doc://com.apple.documentation/documentation/corelocation/cllocationaccuracy": {
+      "title": "CLLocationAccuracy",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620567-activitytype",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationaccuracy",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/corelocation/cllocationmanager/1620567-activitytype",
+      "url": "/documentation/corelocation/cllocationaccuracy",
       "abstract": [
         {
           "type": "text",
-          "text": "The type of user activity associated with the location updates."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corelocation/clactivitytype": {
-      "title": "CLActivityType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/clactivitytype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corelocation/clactivitytype",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Constants indicating the type of activity associated with location updates. "
+          "text": "The accuracy of a geographical coordinate."
         }
       ]
     },
@@ -788,7 +897,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Stops the delivery of location events based on significant location changes. "
+          "text": "Stops the delivery of location events based on significant location changes."
         }
       ],
       "fragments": [
@@ -899,6 +1008,20 @@
         {
           "type": "text",
           "text": "A constant indicating that all header values should be reported."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationdegrees": {
+      "title": "CLLocationDegrees",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationdegrees",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationdegrees",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A latitude or longitude value specified in degrees."
         }
       ]
     },
@@ -1041,7 +1164,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Retrieves the state of a region asynchronously. "
+          "text": "Retrieves the state of a region asynchronously."
         }
       ],
       "fragments": [
@@ -1230,6 +1353,126 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/creating_a_location_push_service_extension": {
+      "title": "Creating a Location Push Service Extension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/creating_a_location_push_service_extension",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/cllocationmanager/creating_a_location_push_service_extension",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add and configure an extension to enable your location sharing app to access a user’s location in response to a request from another user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_location_push": {
+      "title": "com.apple.developer.location.push",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_location_push",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/com_apple_developer_location_push",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enables a location sharing app, with a user’s authorization, to query a user’s location in response to a location push from Apple Push Notification service (APNs)."
+        }
+      ],
+      "titleStyle": "title",
+      "name": "com.apple.developer.location.push"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3746837-startmonitoringlocationpusheswit": {
+      "title": "startMonitoringLocationPushesWithCompletion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3746837-startmonitoringlocationpusheswit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanager/3746837-startmonitoringlocationpusheswit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Starts monitoring for the delivery of Apple Push Notification service (APNs) location pushes, and provides a device-specific token for sending pushes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "startMonitoringLocationPushesWithCompletion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3746838-stopmonitoringlocationpushes": {
+      "title": "stopMonitoringLocationPushes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3746838-stopmonitoringlocationpushes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanager/3746838-stopmonitoringlocationpushes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Stop monitoring for Apple Push Notification service (APNs) location pushes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "stopMonitoringLocationPushes"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationpushserviceextension": {
+      "title": "CLLocationPushServiceExtension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationpushserviceextension",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationpushserviceextension",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that provides the entry point for the Location Push Service Extension."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationpushserviceerrordomain": {
+      "title": "CLLocationPushServiceErrorDomain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationpushserviceerrordomain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationpushserviceerrordomain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The domain for Location Push Service Extension errors. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationpushserviceerror": {
+      "title": "CLLocationPushServiceError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationpushserviceerror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationpushserviceerror",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Error codes the location manager returns if starting to monitor for location push notifications fails."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423687-location": {
       "title": "location",
       "type": "topic",
@@ -1255,6 +1498,20 @@
         {
           "type": "text",
           "text": "The most recently reported heading. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cltimeintervalmax": {
+      "title": "CLTimeIntervalMax",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cltimeintervalmax",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cltimeintervalmax",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value representing an unlimited amount of time. "
         }
       ]
     },
@@ -1333,92 +1590,12 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/corelocation/cltimeintervalmax": {
-      "title": "CLTimeIntervalMax",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/cltimeintervalmax",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corelocation/cltimeintervalmax",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A value representing an unlimited amount of time. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corelocation/cllocationdegrees": {
-      "title": "CLLocationDegrees",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationdegrees",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corelocation/cllocationdegrees",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A latitude or longitude value specified in degrees."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corelocation/cllocationdistance": {
-      "title": "CLLocationDistance",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationdistance",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corelocation/cllocationdistance",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A distance measurement (measured in meters) from an existing location.  "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corelocation/cllocationaccuracy": {
-      "title": "CLLocationAccuracy",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationaccuracy",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corelocation/cllocationaccuracy",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The accuracy of a geographical coordinate. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager": {
-      "title": "CLLocationManager",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corelocation/cllocationmanager",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The object that you use to start and stop the delivery of location-related events to your app."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -1447,7 +1624,8 @@
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620566-locationservicesenabled",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423564-regionmonitoringavailable",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423585-regionmonitoringenabled"
-      ]
+      ],
+      "anchor": "1669655"
     },
     {
       "kind": "taskGroup",
@@ -1455,7 +1633,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423792-delegate",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate"
-      ]
+      ],
+      "anchor": "1669738"
     },
     {
       "kind": "taskGroup",
@@ -1465,11 +1644,14 @@
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3600217-requesttemporaryfullaccuracyauth",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3600216-requesttemporaryfullaccuracyauth",
-        "doc://com.apple.documentation/documentation/corelocation/clauthorizationstatus",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3563952-authorizationstatus",
+        "doc://com.apple.documentation/documentation/corelocation/clauthorizationstatus",
+        "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationdefaultaccuracyreduced",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423523-authorizationstatus",
-        "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423742-purpose"
-      ]
+        "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423742-purpose",
+        "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationalwaysandwheninuseusagedescription"
+      ],
+      "anchor": "1669623"
     },
     {
       "kind": "taskGroup",
@@ -1481,13 +1663,23 @@
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620553-pauseslocationupdatesautomatical",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620568-allowsbackgroundlocationupdates",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/2923541-showsbackgroundlocationindicator",
+        "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620567-activitytype",
+        "doc://com.apple.documentation/documentation/corelocation/clactivitytype"
+      ],
+      "anchor": "1669763"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Specifying Distance and Accuracy",
+      "identifiers": [
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423500-distancefilter",
         "doc://com.apple.documentation/documentation/corelocation/cllocationdistancemax",
         "doc://com.apple.documentation/documentation/corelocation/kcldistancefilternone",
+        "doc://com.apple.documentation/documentation/corelocation/cllocationdistance",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423836-desiredaccuracy",
-        "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620567-activitytype",
-        "doc://com.apple.documentation/documentation/corelocation/clactivitytype"
-      ]
+        "doc://com.apple.documentation/documentation/corelocation/cllocationaccuracy"
+      ],
+      "anchor": "3707305"
     },
     {
       "kind": "taskGroup",
@@ -1495,7 +1687,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423531-startmonitoringsignificantlocati",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423679-stopmonitoringsignificantlocatio"
-      ]
+      ],
+      "anchor": "1669874"
     },
     {
       "kind": "taskGroup",
@@ -1506,9 +1699,11 @@
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620563-dismissheadingcalibrationdisplay",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620550-headingfilter",
         "doc://com.apple.documentation/documentation/corelocation/kclheadingfilternone",
+        "doc://com.apple.documentation/documentation/corelocation/cllocationdegrees",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620556-headingorientation",
         "doc://com.apple.documentation/documentation/corelocation/cldeviceorientation"
-      ]
+      ],
+      "anchor": "1669915"
     },
     {
       "kind": "taskGroup",
@@ -1519,7 +1714,8 @@
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423790-monitoredregions",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423740-maximumregionmonitoringdistance",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620560-startmonitoringforregion"
-      ]
+      ],
+      "anchor": "1669982"
     },
     {
       "kind": "taskGroup",
@@ -1532,7 +1728,8 @@
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620554-startrangingbeaconsinregion",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620559-stoprangingbeaconsinregion",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620552-rangedregions"
-      ]
+      ],
+      "anchor": "1670019"
     },
     {
       "kind": "taskGroup",
@@ -1540,7 +1737,22 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1618692-startmonitoringvisits",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1618693-stopmonitoringvisits"
-      ]
+      ],
+      "anchor": "1670042"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Monitoring Location Pushes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/creating_a_location_push_service_extension",
+        "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_location_push",
+        "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3746837-startmonitoringlocationpusheswit",
+        "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3746838-stopmonitoringlocationpushes",
+        "doc://com.apple.documentation/documentation/corelocation/cllocationpushserviceextension",
+        "doc://com.apple.documentation/documentation/corelocation/cllocationpushserviceerrordomain",
+        "doc://com.apple.documentation/documentation/corelocation/cllocationpushserviceerror"
+      ],
+      "anchor": "3872339"
     },
     {
       "kind": "taskGroup",
@@ -1548,26 +1760,19 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423687-location",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620555-heading"
-      ]
+      ],
+      "anchor": "1670069"
     },
     {
       "kind": "taskGroup",
       "title": "Deferring Location Updates",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/corelocation/cltimeintervalmax",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423830-deferredlocationupdatesavailable",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620547-allowdeferredlocationupdatesunti",
-        "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620565-disallowdeferredlocationupdates",
-        "doc://com.apple.documentation/documentation/corelocation/cltimeintervalmax"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Related Types",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/corelocation/cllocationdegrees",
-        "doc://com.apple.documentation/documentation/corelocation/cllocationdistance",
-        "doc://com.apple.documentation/documentation/corelocation/cllocationaccuracy"
-      ]
+        "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620565-disallowdeferredlocationupdates"
+      ],
+      "anchor": "1670057"
     }
   ],
   "seeAlsoSections": [
@@ -1614,6 +1819,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1676,7 +1882,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "Monitoring distinct regions of interest and generating location events when the user enters or leaves those regions. "
+                      "text": "Monitoring distinct regions of interest and generating location-based events when the user enters or leaves those regions. "
                     }
                   ]
                 }
@@ -1720,16 +1926,61 @@
             },
             {
               "type": "text",
-              "text": " protocol. Assign the delegate before starting any location services. The system calls the delegate's "
+              "text": " protocol. Assign the delegate immediately, in order to not miss the system calling the "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423701-locationmanager"
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/3563956-locationmanagerdidchangeauthoriz"
             },
             {
               "type": "text",
-              "text": " method immediately when you create a location manager, and again when the app’s authorization changes. That delegate handles all location and heading-related updates and events."
+              "text": " method on the delegate when the location manager finishes initializing. Core Location calls the methods of your delegate object using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop"
+            },
+            {
+              "type": "text",
+              "text": " of the thread on which you initialized "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager"
+            },
+            {
+              "type": "text",
+              "text": ". That thread must itself have an active "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop"
+            },
+            {
+              "type": "text",
+              "text": ", like the one found in your app’s main thread."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The system calls the delegate’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/3563956-locationmanagerdidchangeauthoriz"
+            },
+            {
+              "type": "text",
+              "text": " method immediately when you create a location manager, and again when the app’s authorization changes. The delegate handles all location and heading-related updates and events."
             }
           ]
         },
@@ -1755,7 +2006,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

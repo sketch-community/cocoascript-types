@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A Boolean value that indicates whether the player item applies per-frame HDR display metadata during playback."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVPlayerItem(py)appliesPerFrameHDRDisplayMetadata",
+    "parent": {
+      "title": "AVPlayerItem"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,7 +119,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to model the timing and presentation state of an asset played by the player."
+          "text": "An object that models the timing and presentation state of an asset that a player object presents."
         }
       ]
     },
@@ -115,7 +129,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3656127-appliesperframehdrdisplaymetadat",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem/3656127-appliesperframehdrdisplaymetadat"
+      "url": "/documentation/avfoundation/avplayeritem/3656127-appliesperframehdrdisplaymetadat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the player item applies per-frame HDR display metadata during playback."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -123,16 +143,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "added",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "primaryContentSections": [
@@ -171,6 +181,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -180,7 +191,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

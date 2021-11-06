@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A Boolean value that indicates whether the player preserves its time offset from the live time after a buffering operation."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVPlayerItem(py)automaticallyPreservesTimeOffsetFromLive",
+    "parent": {
+      "title": "AVPlayerItem"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -110,9 +124,33 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to model the timing and presentation state of an asset played by the player."
+          "text": "An object that models the timing and presentation state of an asset that a player object presents."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/no": {
+      "title": "NO",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/no"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1386155-seekabletimeranges": {
+      "title": "seekableTimeRanges",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1386155-seekabletimeranges",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/1386155-seekabletimeranges"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3229855-automaticallypreservestimeoffset": {
       "title": "automaticallyPreservesTimeOffsetFromLive",
@@ -120,15 +158,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3229855-automaticallypreservestimeoffset",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem/3229855-automaticallypreservestimeoffset"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3227882-configuredtimeoffsetfromlive": {
-      "title": "configuredTimeOffsetFromLive",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3227882-configuredtimeoffsetfromlive",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem/3227882-configuredtimeoffsetfromlive"
+      "url": "/documentation/avfoundation/avplayeritem/3229855-automaticallypreservestimeoffset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the player preserves its time offset from the live time after a buffering operation."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3227883-recommendedtimeoffsetfromlive": {
       "title": "recommendedTimeOffsetFromLive",
@@ -136,7 +172,27 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3227883-recommendedtimeoffsetfromlive",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem/3227883-recommendedtimeoffsetfromlive"
+      "url": "/documentation/avfoundation/avplayeritem/3227883-recommendedtimeoffsetfromlive",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A recommended time offset from the live time based on observed network conditions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3227882-configuredtimeoffsetfromlive": {
+      "title": "configuredTimeOffsetFromLive",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3227882-configuredtimeoffsetfromlive",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/3227882-configuredtimeoffsetfromlive",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A time value that indicates the offset from the live time to start playback, or resume playback after a seek to positive infinity."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -149,8 +205,8 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3227882-configuredtimeoffsetfromlive",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3227883-recommendedtimeoffsetfromlive"
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3227883-recommendedtimeoffsetfromlive",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3227882-configuredtimeoffsetfromlive"
       ],
       "title": "Managing Time Offsets",
       "generated": true
@@ -192,6 +248,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -199,10 +256,77 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The default value of this property is "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+            },
+            {
+              "type": "text",
+              "text": ". If the value is "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": ", the player seeks forward after it finishes buffering to restore the position that the playhead had when buffering began, relative to the end of the player item’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1386155-seekabletimeranges"
+            },
+            {
+              "type": "text",
+              "text": " property value. "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "This property value has no effect if the asset isn’t a live stream."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)UIColor(py)CGColor",
+    "parent": {
+      "title": "UIColor"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,7 +119,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that stores color data and sometimes opacity. "
+          "text": "An object that stores color data and sometimes opacity."
         }
       ]
     },
@@ -123,13 +131,13 @@
       "role": "symbol",
       "url": "/documentation/uikit/uitraitcollection/1651063-userinterfacestyle"
     },
-    "doc://com.apple.documentation/documentation/xcode/supporting_dark_mode_in_your_interface": {
+    "doc://com.apple.documentation/documentation/uikit/appearance_customization/supporting_dark_mode_in_your_interface": {
       "title": "Supporting Dark Mode in Your Interface",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/xcode/supporting_dark_mode_in_your_interface",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/appearance_customization/supporting_dark_mode_in_your_interface",
       "kind": "article",
       "role": "article",
-      "url": "/documentation/xcode/supporting_dark_mode_in_your_interface"
+      "url": "/documentation/uikit/appearance_customization/supporting_dark_mode_in_your_interface"
     },
     "doc://com.apple.documentation/documentation/coregraphics/cgcolorref": {
       "title": "CGColorRef",
@@ -138,6 +146,20 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/coregraphics/cgcolorref"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicolor/determining_color_values_with_color_spaces": {
+      "title": "Determining Color Values with Color Spaces",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicolor/determining_color_values_with_color_spaces",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/uicolor/determining_color_values_with_color_spaces",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Change the system’s interpretation of a color value for display by selecting a color space."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uicolor/1621954-cgcolor": {
       "title": "CGColor",
@@ -288,6 +310,7 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicolor/determining_color_values_with_color_spaces",
         "doc://com.apple.documentation/documentation/uikit/uicolor/1621943-cgcolor",
         "doc://com.apple.documentation/documentation/uikit/uicolor/1621951-cicolor",
         "doc://com.apple.documentation/documentation/uikit/uicolor/1621949-gethue",
@@ -337,6 +360,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
@@ -358,7 +382,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The color object in this property does not adapt automatically to Dark Mode changes. If you use it to set the color of interface elements, you must update that color yourself when the "
+              "text": "The color object in this property doesn’t adapt automatically to Dark Mode changes. If you use it to set the color of interface elements, you must update that color yourself. You update that color when the "
             },
             {
               "type": "reference",
@@ -367,12 +391,21 @@
             },
             {
               "type": "text",
-              "text": " trait of the current trait collection changes. For information on how to apply color information reliably, see "
+              "text": " trait of the current trait collection changes. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For information on how to apply color information reliably, see "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/xcode/supporting_dark_mode_in_your_interface"
+              "identifier": "doc://com.apple.documentation/documentation/uikit/appearance_customization/supporting_dark_mode_in_your_interface"
             },
             {
               "type": "text",
@@ -384,7 +417,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns the appearance object that is active on the current thread."
+      "text": "Returns the appearance object that’s active on the current thread."
     }
   ],
   "documentVersion": 0,
@@ -35,17 +35,20 @@
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "deprecatedAt": "11.0",
-        "current": "11.1",
+        "deprecatedAt": "12.0",
+        "current": "12.1",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSAppearance(cpy)currentAppearance",
+    "parent": {
+      "title": "NSAppearance"
+    },
     "symbolKind": "cldata"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -96,6 +99,44 @@
       "role": "symbol",
       "url": "/documentation/appkit/nsappearance"
     },
+    "doc://com.apple.documentation/documentation/appkit/nsappearance/3674525-performascurrentdrawingappearanc": {
+      "title": "performAsCurrentDrawingAppearance:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsappearance/3674525-performascurrentdrawingappearanc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsappearance/3674525-performascurrentdrawingappearanc",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the appearance to be the active drawing appearance and perform the specified block."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "performAsCurrentDrawingAppearance:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsappearance/3674524-currentdrawingappearance": {
+      "title": "currentDrawingAppearance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsappearance/3674524-currentdrawingappearance",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsappearance/3674524-currentdrawingappearance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The appearance that the system uses for color and asset resolution, and that’s active for drawing, usually from locking focus on a view. "
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nsappearance/1531945-currentappearance": {
       "title": "currentAppearance",
       "type": "topic",
@@ -106,7 +147,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the appearance object that is active on the current thread."
+          "text": "Returns the appearance object that’s active on the current thread."
         }
       ],
       "deprecated": true
@@ -119,6 +160,45 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/appkit/nsappearance/3674525-performascurrentdrawingappearanc"
+        },
+        {
+          "type": "text",
+          "text": " to temporarily set the drawing appearance, or "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/appkit/nsappearance/3674524-currentdrawingappearance"
+        },
+        {
+          "type": "text",
+          "text": " to access the current drawing appearance."
+        }
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsappearance/3674524-currentdrawingappearance",
+        "doc://com.apple.documentation/documentation/appkit/nsappearance/3674525-performascurrentdrawingappearanc"
+      ],
+      "title": "Getting and Setting the Current Appearance",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -203,7 +283,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

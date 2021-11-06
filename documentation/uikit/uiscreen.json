@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIScreen",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -378,7 +383,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The maximum number of frames per second of which the screen is capable."
+          "text": "The maximum number of frames per second a screen can render."
         }
       ]
     },
@@ -502,7 +507,8 @@
           "type": "text",
           "text": "The item that is currently focused."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/uikit/uiscreen/1617831-focusedview": {
       "title": "focusedView",
@@ -516,7 +522,8 @@
           "type": "text",
           "text": "The view that is currently focused."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/uikit/uiscreen/1617816-supportsfocus": {
       "title": "supportsFocus",
@@ -530,7 +537,8 @@
           "type": "text",
           "text": "A Boolean value that indicates whether the screen supports focus-based inputs. "
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/uikit/uiscreen/3368162-calibratedlatency": {
       "title": "calibratedLatency",
@@ -638,16 +646,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -674,7 +672,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiscreen/1617815-mainscreen",
         "doc://com.apple.documentation/documentation/uikit/uiscreen/1617812-screens",
         "doc://com.apple.documentation/documentation/uikit/uiscreen/1617829-mirroredscreen"
-      ]
+      ],
+      "anchor": "1653256"
     },
     {
       "kind": "taskGroup",
@@ -682,7 +681,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiscreen/1617833-coordinatespace",
         "doc://com.apple.documentation/documentation/uikit/uiscreen/1617819-fixedcoordinatespace"
-      ]
+      ],
+      "anchor": "1653292"
     },
     {
       "kind": "taskGroup",
@@ -693,7 +693,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiscreen/1617810-nativebounds",
         "doc://com.apple.documentation/documentation/uikit/uiscreen/1617825-nativescale",
         "doc://com.apple.documentation/documentation/uikit/uiscreen/1617836-scale"
-      ]
+      ],
+      "anchor": "1653317"
     },
     {
       "kind": "taskGroup",
@@ -702,7 +703,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiscreen/1617817-currentmode",
         "doc://com.apple.documentation/documentation/uikit/uiscreen/1617823-preferredmode",
         "doc://com.apple.documentation/documentation/uikit/uiscreen/1617839-availablemodes"
-      ]
+      ],
+      "anchor": "1653380"
     },
     {
       "kind": "taskGroup",
@@ -710,7 +712,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiscreen/1617820-displaylinkwithtarget",
         "doc://com.apple.documentation/documentation/uikit/uiscreen/2806814-maximumframespersecond"
-      ]
+      ],
+      "anchor": "1653406"
     },
     {
       "kind": "taskGroup",
@@ -718,7 +721,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiscreen/1617830-brightness",
         "doc://com.apple.documentation/documentation/uikit/uiscreen/1617821-wantssoftwaredimming"
-      ]
+      ],
+      "anchor": "1653428"
     },
     {
       "kind": "taskGroup",
@@ -727,21 +731,24 @@
         "doc://com.apple.documentation/documentation/uikit/uiscreen/1617824-overscancompensationinsets",
         "doc://com.apple.documentation/documentation/uikit/uiscreen/1617818-overscancompensation",
         "doc://com.apple.documentation/documentation/uikit/uiscreenoverscancompensation"
-      ]
+      ],
+      "anchor": "1653460"
     },
     {
       "kind": "taskGroup",
       "title": "Capturing a Screen Snapshot",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiscreen/1617814-snapshotviewafterscreenupdates"
-      ]
+      ],
+      "anchor": "1653488"
     },
     {
       "kind": "taskGroup",
       "title": "Detecting Screen Recordings",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiscreen/2921651-captured"
-      ]
+      ],
+      "anchor": "2921791"
     },
     {
       "kind": "taskGroup",
@@ -750,14 +757,16 @@
         "doc://com.apple.documentation/documentation/uikit/uiscreen/1649175-focuseditem",
         "doc://com.apple.documentation/documentation/uikit/uiscreen/1617831-focusedview",
         "doc://com.apple.documentation/documentation/uikit/uiscreen/1617816-supportsfocus"
-      ]
+      ],
+      "anchor": "1770141"
     },
     {
       "kind": "taskGroup",
       "title": "Getting the Screen's Latency",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiscreen/3368162-calibratedlatency"
-      ]
+      ],
+      "anchor": "3374506"
     },
     {
       "kind": "taskGroup",
@@ -768,7 +777,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiscreenmodedidchangenotification",
         "doc://com.apple.documentation/documentation/uikit/uiscreenbrightnessdidchangenotification",
         "doc://com.apple.documentation/documentation/uikit/uiscreencaptureddidchangenotification"
-      ]
+      ],
+      "anchor": "1770143"
     }
   ],
   "seeAlsoSections": [
@@ -815,6 +825,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -1026,7 +1037,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

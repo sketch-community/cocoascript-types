@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Constants that specify an edge or a set of edges, taking the user interface layout direction into account."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,28 +35,35 @@
         "name": "iOS",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "deprecatedAt": "13.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
         "deprecatedAt": "6.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
@@ -58,8 +71,8 @@
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -102,6 +115,20 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/uikit/nsdirectionalrectedge": {
+      "title": "NSDirectionalRectEdge",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsdirectionalrectedge",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsdirectionalrectedge",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify an edge or a set of edges, taking the user interface layout direction into account. "
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/objectivec/nsuinteger": {
       "title": "NSUInteger",
       "type": "topic",
@@ -110,31 +137,19 @@
       "role": "symbol",
       "url": "/documentation/objectivec/nsuinteger"
     },
-    "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgeall": {
-      "title": "UIDirectionalRectEdgeAll",
+    "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgenone": {
+      "title": "UIDirectionalRectEdgeNone",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgeall",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgenone",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgeall",
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgebottom": {
-      "title": "UIDirectionalRectEdgeBottom",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgebottom",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgebottom",
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgeleading": {
-      "title": "UIDirectionalRectEdgeLeading",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgeleading",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgeleading",
+      "url": "/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgenone",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "No specified edge."
+        }
+      ],
       "deprecated": true
     },
     "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgetop": {
@@ -144,6 +159,42 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgetop",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The top edge."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgeleading": {
+      "title": "UIDirectionalRectEdgeLeading",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgeleading",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgeleading",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The leading edge."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgebottom": {
+      "title": "UIDirectionalRectEdgeBottom",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgebottom",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgebottom",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The bottom edge."
+        }
+      ],
       "deprecated": true
     },
     "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgetrailing": {
@@ -153,15 +204,27 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgetrailing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The trailing edge."
+        }
+      ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgenone": {
-      "title": "UIDirectionalRectEdgeNone",
+    "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgeall": {
+      "title": "UIDirectionalRectEdgeAll",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgenone",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgeall",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgenone",
+      "url": "/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgeall",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "All edges."
+        }
+      ],
       "deprecated": true
     },
     "doc://com.apple.documentation/documentation/uikit/uioffset": {
@@ -174,7 +237,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Defines a structure that specifies an amount to offset a position. "
+          "text": "A structure that specifies an amount to offset a position. "
         }
       ]
     },
@@ -202,7 +265,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Defines a structure that specifies the layout axes. "
+          "text": "A structure that specifies the layout axes. "
         }
       ]
     },
@@ -216,17 +279,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Edge insets that take language direction into account. "
+          "text": "The inset distances for views, taking the user interface layout direction into account. "
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/nsdirectionalrectedge": {
-      "title": "NSDirectionalRectEdge",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nsdirectionalrectedge",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/nsdirectionalrectedge"
     },
     "doc://com.apple.documentation/documentation/uikit/nsrectalignment": {
       "title": "NSRectAlignment",
@@ -234,7 +289,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/nsrectalignment",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/nsrectalignment"
+      "url": "/documentation/uikit/nsrectalignment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify alignment to an edge or a set of edges depending on the user interface layout direction."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge": {
       "title": "UIDirectionalRectEdge",
@@ -243,6 +304,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uidirectionalrectedge",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify an edge or a set of edges, taking the user interface layout direction into account."
+        }
+      ],
       "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
@@ -253,24 +320,39 @@
       "title": "Technologies"
     }
   },
-  "topicSections": [
+  "deprecationSummary": [
     {
-      "kind": "taskGroup",
-      "title": "Type Properties",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgeall",
-        "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgebottom",
-        "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgeleading",
-        "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgetop",
-        "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgetrailing"
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/uikit/nsdirectionalrectedge"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
       ]
-    },
+    }
+  ],
+  "topicSections": [
     {
       "kind": "taskGroup",
       "title": "Constants",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgenone"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgenone",
+        "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgetop",
+        "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgeleading",
+        "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgebottom",
+        "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgetrailing",
+        "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge/uidirectionalrectedgeall"
+      ],
+      "anchor": "3044593"
     }
   ],
   "seeAlsoSections": [
@@ -349,6 +431,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
@@ -358,7 +441,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

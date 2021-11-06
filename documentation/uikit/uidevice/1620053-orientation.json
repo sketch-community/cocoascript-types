@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns the physical orientation of the device."
+      "text": "The physical orientation of the device."
     }
   ],
   "documentVersion": 0,
@@ -35,20 +35,28 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIDevice(py)orientation",
+    "parent": {
+      "title": "UIDevice"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -115,7 +123,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The physical orientation of the device. "
+          "text": "Constants that describe the physical orientation of the device. "
         }
       ]
     },
@@ -153,43 +161,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the receiver generates orientation notifications ("
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-        },
-        {
-          "type": "text",
-          "text": ") or not ("
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
-        },
-        {
-          "type": "text",
-          "text": ")."
+          "text": "A Boolean value that indicates whether the device generates orientation notifications."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/objectivec/yes": {
-      "title": "YES",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/yes"
-    },
-    "doc://com.apple.documentation/documentation/objectivec/no": {
-      "title": "NO",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/no"
     },
     "doc://com.apple.documentation/documentation/uikit/uidevice/1620053-orientation": {
       "title": "orientation",
@@ -201,7 +175,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the physical orientation of the device."
+          "text": "The physical orientation of the device."
         }
       ]
     },
@@ -287,6 +261,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -341,7 +316,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

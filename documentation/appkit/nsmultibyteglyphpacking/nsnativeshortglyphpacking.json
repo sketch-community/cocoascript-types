@@ -11,6 +11,12 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/textkit",
+        "doc://com.apple.documentation/documentation/appkit/nsmultibyteglyphpacking"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
         "doc://com.apple.documentation/documentation/appkit/fonts",
         "doc://com.apple.documentation/documentation/appkit/nsfont",
         "doc://com.apple.documentation/documentation/appkit/nsfont/deprecated_symbols",
@@ -38,16 +44,19 @@
         "name": "macOS",
         "introducedAt": "10.0",
         "deprecatedAt": "10.13",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       }
     ],
     "externalID": "c:@E@NSMultibyteGlyphPacking@NSNativeShortGlyphPacking",
+    "parent": {
+      "title": "NSMultibyteGlyphPacking"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -82,6 +91,28 @@
       "kind": "symbol",
       "role": "collection"
     },
+    "doc://com.apple.documentation/documentation/appkit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/textkit",
+      "url": "/documentation/appkit/textkit",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsmultibyteglyphpacking": {
+      "title": "NSMultibyteGlyphPacking",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsmultibyteglyphpacking",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsmultibyteglyphpacking",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A constant for glyph packing."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/fonts": {
       "title": "Fonts",
       "identifier": "doc://com.apple.documentation/documentation/appkit/fonts",
@@ -105,20 +136,6 @@
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsmultibyteglyphpacking": {
-      "title": "NSMultibyteGlyphPacking",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsmultibyteglyphpacking",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsmultibyteglyphpacking",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A constant for glyph packing."
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsmultibyteglyphpacking/nsnativeshortglyphpacking": {
       "title": "NSNativeShortGlyphPacking",
@@ -169,7 +186,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

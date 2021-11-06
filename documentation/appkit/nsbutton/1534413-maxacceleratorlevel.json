@@ -44,15 +44,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.10.3",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSButton(py)maxAcceleratorLevel",
+    "parent": {
+      "title": "NSButton"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,7 +108,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A control that defines an area on the screen that can be used to trigger actions. "
+          "text": "A control that defines an area on the screen that a user clicks to trigger an action."
         }
       ]
     },
@@ -180,7 +183,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "On pressure-sensitive systems, such as systems with the Force Touch trackpad, an accelerator button sends repeating actions as pressure changes occur. It stops sending actions when the user releases pressure entirely.  A media player app, for example, might implement an accelerator button in order to allow a user to adjust the speed of fast forward or rewind with variable pressure. In this case, actions are sent to the app to indicate when pressure on the button has changed. The app would then determine the amount of pressure currently applied, and adjust playback speed accordingly."
+          "text": "A button that sends an action when the user first clicks the button and continues sending actions until the user releases pressure entirely."
         }
       ]
     },
@@ -349,6 +352,20 @@
       ],
       "deprecated": true
     },
+    "doc://com.apple.documentation/documentation/appkit/nsbutton/3667453-symbolconfiguration": {
+      "title": "symbolConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsbutton/3667453-symbolconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsbutton/3667453-symbolconfiguration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The combination of point size, weight, and scale to use when sizing and displaying symbol images."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nsbutton/1530910-sound": {
       "title": "sound",
       "type": "topic",
@@ -398,6 +415,7 @@
         "doc://com.apple.documentation/documentation/appkit/nsbutton/1526723-attributedalternatetitle",
         "doc://com.apple.documentation/documentation/appkit/nsbutton/1524430-title",
         "doc://com.apple.documentation/documentation/appkit/nsbutton/1579931-settitlewithmnemonic",
+        "doc://com.apple.documentation/documentation/appkit/nsbutton/3667453-symbolconfiguration",
         "doc://com.apple.documentation/documentation/appkit/nsbutton/1530910-sound",
         "doc://com.apple.documentation/documentation/appkit/nsbutton/1532300-springloaded"
       ],
@@ -544,7 +562,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

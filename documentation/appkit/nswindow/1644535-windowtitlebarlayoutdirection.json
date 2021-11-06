@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The direction the window’s title bar lays text out, either left to right or right to left."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSWindow(py)windowTitlebarLayoutDirection",
+    "parent": {
+      "title": "NSWindow"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -94,6 +103,28 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nsuserinterfacelayoutdirection/nsuserinterfacelayoutdirectionrighttoleft": {
+      "title": "NSUserInterfaceLayoutDirectionRightToLeft",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsuserinterfacelayoutdirection/nsuserinterfacelayoutdirectionrighttoleft",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsuserinterfacelayoutdirection/nsuserinterfacelayoutdirectionrighttoleft"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindow/1419167-titlebarappearstransparent": {
+      "title": "titlebarAppearsTransparent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419167-titlebarappearstransparent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindow/1419167-titlebarappearstransparent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the title bar draws its background."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nsuserinterfacelayoutdirection": {
       "title": "NSUserInterfaceLayoutDirection",
       "type": "topic",
@@ -101,6 +132,138 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nsuserinterfacelayoutdirection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindow/1419173-standardwindowbutton": {
+      "title": "standardWindowButton:forStyleMask:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419173-standardwindowbutton",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindow/1419173-standardwindowbutton",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new instance of a given standard window button, sized appropriately for a given window style."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "standardWindowButton:forStyleMask:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindow/1419491-standardwindowbutton": {
+      "title": "standardWindowButton:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419491-standardwindowbutton",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindow/1419491-standardwindowbutton",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the window button of a given window button kind in the window’s view hierarchy."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "standardWindowButton:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindow/1419196-showstoolbarbutton": {
+      "title": "showsToolbarButton",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419196-showstoolbarbutton",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindow/1419196-showstoolbarbutton",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the toolbar control button is currently displayed."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindow/3608199-toolbarstyle": {
+      "title": "toolbarStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/3608199-toolbarstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindow/3608199-toolbarstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The style that determines the appearance and location of the toolbar in relation to the title bar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindowtoolbarstyle": {
+      "title": "NSWindowToolbarStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindowtoolbarstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindowtoolbarstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Styles that determine the appearance and location of the toolbar in relation to the title bar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindow/3622489-titlebarseparatorstyle": {
+      "title": "titlebarSeparatorStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/3622489-titlebarseparatorstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindow/3622489-titlebarseparatorstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The type of separator that the app displays between the title bar and content of a window."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstitlebarseparatorstyle": {
+      "title": "NSTitlebarSeparatorStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstitlebarseparatorstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstitlebarseparatorstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Styles that determine the type of separator displayed between the title bar and content of a window."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindow/1644535-windowtitlebarlayoutdirection": {
+      "title": "windowTitlebarLayoutDirection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1644535-windowtitlebarlayoutdirection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindow/1644535-windowtitlebarlayoutdirection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The direction the window’s title bar lays text out, either left to right or right to left."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -110,6 +273,22 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nswindow/1419173-standardwindowbutton",
+        "doc://com.apple.documentation/documentation/appkit/nswindow/1419491-standardwindowbutton",
+        "doc://com.apple.documentation/documentation/appkit/nswindow/1419196-showstoolbarbutton",
+        "doc://com.apple.documentation/documentation/appkit/nswindow/1419167-titlebarappearstransparent",
+        "doc://com.apple.documentation/documentation/appkit/nswindow/3608199-toolbarstyle",
+        "doc://com.apple.documentation/documentation/appkit/nswindowtoolbarstyle",
+        "doc://com.apple.documentation/documentation/appkit/nswindow/3622489-titlebarseparatorstyle",
+        "doc://com.apple.documentation/documentation/appkit/nstitlebarseparatorstyle"
+      ],
+      "title": "Managing Title Bars",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -151,10 +330,48 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The layout direction of the window title bar includes the standard window buttons (close, minimize, maximize) and the title for the window. In general, this returns "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsuserinterfacelayoutdirection/nsuserinterfacelayoutdirectionrighttoleft"
+            },
+            {
+              "type": "text",
+              "text": " if the primary system language is right to left. The layout direction may be right to left even in applications that don’t have a right to left language localization. Refer to this value if the application uses "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419167-titlebarappearstransparent"
+            },
+            {
+              "type": "text",
+              "text": " and places controls under the title bar."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

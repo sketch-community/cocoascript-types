@@ -41,25 +41,33 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UISearchBar(py)scopeButtonTitles",
+    "parent": {
+      "title": "UISearchBar"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -182,6 +190,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uisearchbar/3152925-setshowsscopebar": {
+      "title": "setShowsScopeBar:animated:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar/3152925-setshowsscopebar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisearchbar/3152925-setshowsscopebar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies whether the scope bar is displayed, optionally using an animation."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setShowsScopeBar:animated:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -190,23 +222,14 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624287-selectedscopebuttonindex",
-        "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624319-showsscopebar"
+        "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624319-showsscopebar",
+        "doc://com.apple.documentation/documentation/uikit/uisearchbar/3152925-setshowsscopebar"
       ],
-      "title": "Scope Buttons",
+      "title": "Configuring Scope Bar Buttons",
       "generated": true
     }
   ],
@@ -258,6 +281,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -295,7 +319,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

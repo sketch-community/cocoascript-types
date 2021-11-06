@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An array of additional metadata for the player item to supplement or override that is embedded in the underlying media asset."
+      "text": "An array of additional metadata for the player item to supplement or replace an asset’s embedded metadata."
     }
   ],
   "documentVersion": 0,
@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "12.2",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "12.2",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVPlayerItem(py)externalMetadata",
+    "parent": {
+      "title": "AVPlayerItem"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -106,7 +114,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to model the timing and presentation state of an asset played by the player."
+          "text": "An object that models the timing and presentation state of an asset that a player object presents."
         }
       ]
     },
@@ -125,6 +133,22 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/avfoundation/avmetadatacommonkeytitle"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatatracksubtitle": {
+      "title": "AVMetadataIdentifieriTunesMetadataTrackSubTitle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatatracksubtitle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatatracksubtitle"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifierartwork": {
+      "title": "AVMetadataCommonIdentifierArtwork",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifierartwork",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadatacommonidentifierartwork"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeydescription": {
       "title": "AVMetadataCommonKeyDescription",
@@ -166,6 +190,34 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avmetadataitem"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1386361-tracks": {
+      "title": "tracks",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1386361-tracks",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/1386361-tracks",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of player item track objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack": {
+      "title": "AVPlayerItemTrack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritemtrack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that represents the presentation state of an asset track that the player presents."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1627623-externalmetadata": {
       "title": "externalMetadata",
       "type": "topic",
@@ -176,51 +228,24 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An array of additional metadata for the player item to supplement or override that is embedded in the underlying media asset."
+          "text": "An array of additional metadata for the player item to supplement or replace an asset’s embedded metadata."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1627626-navigationmarkergroups": {
-      "title": "navigationMarkerGroups",
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389602-timedmetadata": {
+      "title": "timedMetadata",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1627626-navigationmarkergroups",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389602-timedmetadata",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem/1627626-navigationmarkergroups",
+      "url": "/documentation/avfoundation/avplayeritem/1389602-timedmetadata",
       "abstract": [
         {
           "type": "text",
-          "text": "The time marker groups that provide ways to navigate the player item’s content."
+          "text": "An array of the most recently encountered timed metadata."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1627628-interstitialtimeranges": {
-      "title": "interstitialTimeRanges",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1627628-interstitialtimeranges",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem/1627628-interstitialtimeranges",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The time ranges of the player item’s time line that represent interstitial content."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1650942-nextcontentproposal": {
-      "title": "nextContentProposal",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1650942-nextcontentproposal",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem/1650942-nextcontentproposal",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The item proposed to follow the current content."
-        }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -233,11 +258,11 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1627626-navigationmarkergroups",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1627628-interstitialtimeranges",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1650942-nextcontentproposal"
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1386361-tracks",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389602-timedmetadata"
       ],
-      "title": "Configuring Player Items for AVKit",
+      "title": "Accessing Tracks",
       "generated": true
     }
   ],
@@ -289,6 +314,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -308,17 +334,13 @@
           "type": "paragraph",
           "inlineContent": [
             {
-              "type": "text",
-              "text": "In some cases, a media asset file may not contain the metadata you wish to present alongside it, such as description or content rating, or you may wish to override such metadata with information from an eternal source. When presenting the player item with the "
-            },
-            {
               "type": "reference",
               "isActive": true,
               "identifier": "doc://com.apple.documentation/documentation/avkit/avplayerviewcontroller"
             },
             {
               "type": "text",
-              "text": " class, you can use this property to provide displayable metadata for the following item types:"
+              "text": " suppports displaying the following metadata identifiers:"
             }
           ]
         },
@@ -345,8 +367,23 @@
                   "type": "paragraph",
                   "inlineContent": [
                     {
-                      "type": "codeVoice",
-                      "code": "AVMetadataCommonIdentifierArtwork"
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatatracksubtitle"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifierartwork"
                     }
                   ]
                 }
@@ -395,12 +432,16 @@
               ]
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

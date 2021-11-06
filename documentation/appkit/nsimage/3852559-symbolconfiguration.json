@@ -1,0 +1,240 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The configuration details for a symbol image."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/images_and_pdf",
+        "doc://com.apple.documentation/documentation/appkit/nsimage"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/appkit/nsimage/3852559-symbolconfiguration",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3852559,
+  "kind": "symbol",
+  "metadata": {
+    "title": "symbolConfiguration",
+    "role": "symbol",
+    "roleHeading": "Instance Property",
+    "modules": [
+      {
+        "name": "AppKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "12.0",
+        "current": "12.1"
+      }
+    ],
+    "externalID": "c:objc(cs)NSImage(py)symbolConfiguration",
+    "parent": {
+      "title": "NSImage"
+    },
+    "symbolKind": "instp"
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/nsimage/3852559-symbolconfiguration"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/nsimage/3852559-symbolconfiguration"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/appkit": {
+      "title": "AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit",
+      "url": "/documentation/appkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/images_and_pdf": {
+      "title": "Images and PDF",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/images_and_pdf",
+      "url": "/documentation/appkit/images_and_pdf",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsimage": {
+      "title": "NSImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsimage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsimage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A high-level interface for manipulating image data. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsimage/3656508-imagewithsymbolconfiguration": {
+      "title": "imageWithSymbolConfiguration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsimage/3656508-imagewithsymbolconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsimage/3656508-imagewithsymbolconfiguration",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "imageWithSymbolConfiguration:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsimagesymbolconfiguration": {
+      "title": "NSImageSymbolConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsimagesymbolconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsimagesymbolconfiguration"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsimage/3852559-symbolconfiguration": {
+      "title": "symbolConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsimage/3852559-symbolconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsimage/3852559-symbolconfiguration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The configuration details for a symbol image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@property"
+            },
+            {
+              "kind": "text",
+              "text": "(readonly, copy) "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSImageSymbolConfiguration",
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsimagesymbolconfiguration",
+              "text": "NSImageSymbolConfiguration"
+            },
+            {
+              "kind": "text",
+              "text": " *"
+            },
+            {
+              "kind": "identifier",
+              "text": "symbolConfiguration"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use this property to access the traits and rendering attributes the system uses with the symbol image. These details determine which variant of the image to load and draw and how to render it, falling back on the current environment for values that you don’t specify. For symbol images, the default value of this property is a symbol image configuration object with unspecified values. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can’t modify this property directly, but you can use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsimage/3656508-imagewithsymbolconfiguration"
+            },
+            {
+              "type": "text",
+              "text": " when you want to create a new image object with a specific set of traits."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

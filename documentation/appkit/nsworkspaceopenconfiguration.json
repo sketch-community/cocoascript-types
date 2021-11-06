@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The configuration options to use when opening URLs or launching apps. "
+      "text": "The configuration options for opening URLs or launching apps. "
     }
   ],
   "documentVersion": 0,
@@ -34,15 +34,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSWorkspaceOpenConfiguration",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -95,7 +95,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The configuration options to use when opening URLs or launching apps. "
+          "text": "The configuration options for opening URLs or launching apps. "
         }
       ]
     },
@@ -206,6 +206,20 @@
         {
           "type": "text",
           "text": "A Boolean value indicating whether to add the app or documents to the Recent Items menu."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspaceopenconfiguration/3375728-allowsrunningapplicationsubstitu": {
+      "title": "allowsRunningApplicationSubstitution",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspaceopenconfiguration/3375728-allowsrunningapplicationsubstitu",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsworkspaceopenconfiguration/3375728-allowsrunningapplicationsubstitu",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether to use a running instance of an application even if it’s at a different URL."
         }
       ]
     },
@@ -321,14 +335,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsworkspaceopenconfiguration/3375728-allowsrunningapplicationsubstitu": {
-      "title": "allowsRunningApplicationSubstitution",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspaceopenconfiguration/3375728-allowsrunningapplicationsubstitu",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsworkspaceopenconfiguration/3375728-allowsrunningapplicationsubstitu"
-    },
     "doc://com.apple.documentation/documentation/appkit/nsappkitversion": {
       "title": "NSAppKitVersion",
       "type": "topic",
@@ -340,6 +346,33 @@
         {
           "type": "text",
           "text": "Constants for determining which version of AppKit is available. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/lsminimumsystemversion": {
+      "title": "LSMinimumSystemVersion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/lsminimumsystemversion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/lsminimumsystemversion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The minimum version of the operating system required for the app to run in macOS."
+        }
+      ],
+      "titleStyle": "symbol",
+      "name": "LSMinimumSystemVersion",
+      "ideTitle": "Minimum system version",
+      "fragments": [
+        {
+          "kind": "label",
+          "text": "property list key "
+        },
+        {
+          "kind": "identifier",
+          "text": "LSMinimumSystemVersion"
         }
       ]
     },
@@ -375,7 +408,8 @@
       "title": "Creating a Workspace Configuration Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsworkspaceopenconfiguration/3172709-configuration"
-      ]
+      ],
+      "anchor": "3369920"
     },
     {
       "kind": "taskGroup",
@@ -383,7 +417,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsworkspaceopenconfiguration/3172716-requiresuniversallinks",
         "doc://com.apple.documentation/documentation/appkit/nsworkspaceopenconfiguration/3172712-forprinting"
-      ]
+      ],
+      "anchor": "3369918"
     },
     {
       "kind": "taskGroup",
@@ -391,17 +426,20 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsworkspaceopenconfiguration/3172704-activates",
         "doc://com.apple.documentation/documentation/appkit/nsworkspaceopenconfiguration/3172705-addstorecentitems",
+        "doc://com.apple.documentation/documentation/appkit/nsworkspaceopenconfiguration/3375728-allowsrunningapplicationsubstitu",
         "doc://com.apple.documentation/documentation/appkit/nsworkspaceopenconfiguration/3172710-createsnewapplicationinstance",
         "doc://com.apple.documentation/documentation/appkit/nsworkspaceopenconfiguration/3172713-hides",
         "doc://com.apple.documentation/documentation/appkit/nsworkspaceopenconfiguration/3172714-hidesothers"
-      ]
+      ],
+      "anchor": "3369919"
     },
     {
       "kind": "taskGroup",
       "title": "Prompting the User",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsworkspaceopenconfiguration/3172715-promptsuserifneeded"
-      ]
+      ],
+      "anchor": "3369921"
     },
     {
       "kind": "taskGroup",
@@ -411,21 +449,16 @@
         "doc://com.apple.documentation/documentation/appkit/nsworkspaceopenconfiguration/3172708-arguments",
         "doc://com.apple.documentation/documentation/appkit/nsworkspaceopenconfiguration/3172711-environment",
         "doc://com.apple.documentation/documentation/appkit/nsworkspaceopenconfiguration/3172707-architecture"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Properties",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsworkspaceopenconfiguration/3375728-allowsrunningapplicationsubstitu"
-      ]
+      ],
+      "anchor": "3369917"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsworkspace",
-        "doc://com.apple.documentation/documentation/appkit/nsappkitversion"
+        "doc://com.apple.documentation/documentation/appkit/nsappkitversion",
+        "doc://com.apple.documentation/documentation/bundleresources/information_property_list/lsminimumsystemversion"
       ],
       "title": "Environment",
       "generated": true
@@ -509,7 +542,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

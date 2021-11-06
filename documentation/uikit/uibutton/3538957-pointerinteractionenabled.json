@@ -35,20 +35,28 @@
       {
         "name": "iOS",
         "introducedAt": "13.4",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.4",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.4",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIButton(py)pointerInteractionEnabled",
+    "parent": {
+      "title": "UIButton"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -119,6 +127,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uibutton/3750771-hovered": {
+      "title": "hovered",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/3750771-hovered",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uibutton/3750771-hovered",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether a pointer effect is active."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uibutton/3538958-pointerstyleprovider": {
       "title": "pointerStyleProvider",
       "type": "topic",
@@ -129,7 +151,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The custom pointer style for a button."
+          "text": "A block that returns the pointer style to use when the pointer hovers over the button. "
         }
       ]
     },
@@ -139,7 +161,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uibuttonpointerstyleprovider",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uibuttonpointerstyleprovider"
+      "url": "/documentation/uikit/uibuttonpointerstyleprovider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type alias defining a block that returns a pointer style to apply to a button."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -152,6 +180,7 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uibutton/3750771-hovered",
         "doc://com.apple.documentation/documentation/uikit/uibutton/3538958-pointerstyleprovider",
         "doc://com.apple.documentation/documentation/uikit/uibuttonpointerstyleprovider"
       ],
@@ -195,6 +224,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -202,7 +232,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

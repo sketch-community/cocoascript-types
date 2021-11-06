@@ -78,14 +78,21 @@
         "name": "iOS",
         "introducedAt": "8.0",
         "deprecatedAt": "10.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "deprecatedAt": "10.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
@@ -93,8 +100,8 @@
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -304,8 +311,7 @@
           "type": "text",
           "text": ", that is displayed below a peek when a user swipes the peek upward. "
         }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiaccelerometer": {
       "title": "UIAccelerometer",
@@ -709,8 +715,7 @@
           "type": "text",
           "text": " class."
         }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiacceleration": {
       "title": "UIAcceleration",
@@ -1077,16 +1082,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -1104,7 +1099,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uimutableusernotificationaction/1615379-identifier",
         "doc://com.apple.documentation/documentation/uikit/uimutableusernotificationaction/1615370-title"
-      ]
+      ],
+      "anchor": "1654132"
     },
     {
       "kind": "taskGroup",
@@ -1115,7 +1111,8 @@
         "doc://com.apple.documentation/documentation/uikit/uimutableusernotificationaction/1615322-destructive",
         "doc://com.apple.documentation/documentation/uikit/uimutableusernotificationaction/1615395-behavior",
         "doc://com.apple.documentation/documentation/uikit/uimutableusernotificationaction/1615354-parameters"
-      ]
+      ],
+      "anchor": "1654166"
     }
   ],
   "seeAlsoSections": [
@@ -1175,6 +1172,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -1247,7 +1245,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

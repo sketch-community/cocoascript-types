@@ -33,35 +33,40 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSFetchedResultsController",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -106,7 +111,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Executes the fetch request."
+          "text": "Executes the controller’s fetch request."
         }
       ],
       "fragments": [
@@ -378,7 +383,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The key path on the fetched objects used to determine the section they belong to."
+          "text": "The key path of the attribute that determines which section the fetched entity belongs to."
         }
       ]
     },
@@ -616,16 +621,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -643,7 +638,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622282-initwithfetchrequest",
         "doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622305-performfetch"
-      ]
+      ],
+      "anchor": "1661562"
     },
     {
       "kind": "taskGroup",
@@ -655,7 +651,8 @@
         "doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622280-cachename",
         "doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622291-delegate",
         "doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622283-deletecachewithname"
-      ]
+      ],
+      "anchor": "1661588"
     },
     {
       "kind": "taskGroup",
@@ -664,7 +661,8 @@
         "doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622278-fetchedobjects",
         "doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622281-objectatindexpath",
         "doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622306-indexpathforobject"
-      ]
+      ],
+      "anchor": "1661638"
     },
     {
       "kind": "taskGroup",
@@ -672,7 +670,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622303-sections",
         "doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622284-sectionforsectionindextitle"
-      ]
+      ],
+      "anchor": "1661668"
     },
     {
       "kind": "taskGroup",
@@ -680,7 +679,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622308-sectionindextitleforsectionname",
         "doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622299-sectionindextitles"
-      ]
+      ],
+      "anchor": "1661684"
     },
     {
       "kind": "taskGroup",
@@ -690,7 +690,8 @@
         "doc://com.apple.documentation/documentation/coredata/nsfetchedresultssectioninfo",
         "doc://com.apple.documentation/documentation/coredata/nsfetchrequestresulttype",
         "doc://com.apple.documentation/documentation/coredata/nsfetchedresultschangetype"
-      ]
+      ],
+      "anchor": "2877846"
     }
   ],
   "seeAlsoSections": [
@@ -746,6 +747,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -776,7 +778,29 @@
             },
             {
               "type": "text",
-              "text": " expects its data source to provide cells as an array of sections made up of rows. You configure a fetch results controller using a fetch request that specifies the entity, an array containing at least one sort ordering, and optionally a filter predicate. The fetched results controller efficiently analyzes the result of the fetch request and computes all the information about sections in the result set. It also computes all the information for the index based on the result set. "
+              "text": " expects its data source to provide cells as an array of sections made up of rows. You configure a fetched results controller using a "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "fetch request"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " — an object that specifies what type of entity to fetch and how to sort the results. You can also add criteria for when to include  a specific instance of the entity."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The fetched results controller efficiently analyzes the result of the fetch request and computes all the information about sections in the result set. It also computes all the information for the index based on the result set. "
             }
           ]
         },
@@ -1639,7 +1663,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

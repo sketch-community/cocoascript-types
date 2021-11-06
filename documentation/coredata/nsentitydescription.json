@@ -39,35 +39,40 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSEntityDescription",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -298,7 +303,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nsentitydescription/2892364-corespotlightdisplaynameexpressi",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsentitydescription/2892364-corespotlightdisplaynameexpressi"
+      "url": "/documentation/coredata/nsentitydescription/2892364-corespotlightdisplaynameexpressi",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The expression that computes the CoreSpotlight display name for instances of the entity."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425123-subentitiesbyname": {
       "title": "subentitiesByName",
@@ -514,7 +525,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nsentitydescription/2887059-indexes",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsentitydescription/2887059-indexes"
+      "url": "/documentation/coredata/nsentitydescription/2887059-indexes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of fetch index descriptions for the entity."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425115-compoundindexes": {
       "title": "compoundIndexes",
@@ -537,7 +554,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425095-uniquenessconstraints",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsentitydescription/1425095-uniquenessconstraints"
+      "url": "/documentation/coredata/nsentitydescription/1425095-uniquenessconstraints",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of arrays that contains one or more attributes with a value that must be unique over the instances of that entity."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nsmanagedobject": {
       "title": "NSManagedObject",
@@ -549,7 +572,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A base class that implements the behavior required of a Core Data model object."
+          "text": "A base class that implements the behavior for a Core Data model object."
         }
       ]
     },
@@ -573,16 +596,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -617,7 +630,8 @@
         "doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425097-abstract",
         "doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425117-userinfo",
         "doc://com.apple.documentation/documentation/coredata/nsentitydescription/2892364-corespotlightdisplaynameexpressi"
-      ]
+      ],
+      "anchor": "1651131"
     },
     {
       "kind": "taskGroup",
@@ -627,7 +641,8 @@
         "doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425104-subentities",
         "doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425129-superentity",
         "doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425113-iskindofentity"
-      ]
+      ],
+      "anchor": "1651192"
     },
     {
       "kind": "taskGroup",
@@ -638,21 +653,24 @@
         "doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425099-attributesbyname",
         "doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425106-relationshipsbyname",
         "doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425127-relationshipswithdestinationenti"
-      ]
+      ],
+      "anchor": "1651250"
     },
     {
       "kind": "taskGroup",
       "title": "Retrieving an Entity with a Given Name",
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425111-entityforname"
-      ]
+      ],
+      "anchor": "1651313"
     },
     {
       "kind": "taskGroup",
       "title": "Creating a New Managed Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425093-insertnewobjectforentityforname"
-      ]
+      ],
+      "anchor": "1651332"
     },
     {
       "kind": "taskGroup",
@@ -660,14 +678,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425133-versionhash",
         "doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425119-versionhashmodifier"
-      ]
+      ],
+      "anchor": "1651359"
     },
     {
       "kind": "taskGroup",
       "title": "Copying Entity Descriptions",
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsentitydescription/1806841-copy"
-      ]
+      ],
+      "anchor": "1651393"
     },
     {
       "kind": "taskGroup",
@@ -676,7 +696,8 @@
         "doc://com.apple.documentation/documentation/coredata/nsentitydescription/2887059-indexes",
         "doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425115-compoundindexes",
         "doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425095-uniquenessconstraints"
-      ]
+      ],
+      "anchor": "1651419"
     }
   ],
   "seeAlsoSections": [
@@ -722,6 +743,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1060,7 +1082,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

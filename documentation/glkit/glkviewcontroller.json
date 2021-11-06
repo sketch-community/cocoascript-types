@@ -34,14 +34,21 @@
         "name": "iOS",
         "introducedAt": "5.0",
         "deprecatedAt": "12.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "deprecatedAt": "12.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "12.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
@@ -49,8 +56,8 @@
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -456,16 +463,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -492,14 +489,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/glkit/glkviewcontroller/1620702-preferredframespersecond",
         "doc://com.apple.documentation/documentation/glkit/glkviewcontroller/1620723-framespersecond"
-      ]
+      ],
+      "anchor": "1664397"
     },
     {
       "kind": "taskGroup",
       "title": "Configuring the Delegate",
       "identifiers": [
         "doc://com.apple.documentation/documentation/glkit/glkviewcontroller/1620711-delegate"
-      ]
+      ],
+      "anchor": "1664431"
     },
     {
       "kind": "taskGroup",
@@ -508,7 +507,8 @@
         "doc://com.apple.documentation/documentation/glkit/glkviewcontroller/1620712-paused",
         "doc://com.apple.documentation/documentation/glkit/glkviewcontroller/1620699-pauseonwillresignactive",
         "doc://com.apple.documentation/documentation/glkit/glkviewcontroller/1620734-resumeondidbecomeactive"
-      ]
+      ],
+      "anchor": "1664457"
     },
     {
       "kind": "taskGroup",
@@ -519,7 +519,8 @@
         "doc://com.apple.documentation/documentation/glkit/glkviewcontroller/1620706-timesincelastresume",
         "doc://com.apple.documentation/documentation/glkit/glkviewcontroller/1620726-timesincelastupdate",
         "doc://com.apple.documentation/documentation/glkit/glkviewcontroller/1620725-timesincelastdraw"
-      ]
+      ],
+      "anchor": "1664502"
     }
   ],
   "seeAlsoSections": [
@@ -567,6 +568,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "tvOS"
           ]
         }
@@ -838,7 +840,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

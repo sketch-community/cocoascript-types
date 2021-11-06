@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_storage"
+        "doc://com.apple.documentation/documentation/uikit/textkit"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
@@ -42,35 +42,40 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSParagraphStyle",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -107,10 +112,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/text_storage": {
-      "title": "Text Storage",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage",
-      "url": "/documentation/uikit/text_storage",
+    "doc://com.apple.documentation/documentation/uikit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit",
+      "url": "/documentation/uikit/textkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -227,6 +232,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/nstextalignment": {
+      "title": "NSTextAlignment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextalignment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextalignment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify text alignment."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1527764-firstlineheadindent": {
       "title": "firstLineHeadIndent",
       "type": "topic",
@@ -335,7 +354,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The space after the end of the paragraph."
+          "text": "Distance between the bottom of this paragraph and top of next."
         }
       ]
     },
@@ -364,6 +383,20 @@
         {
           "type": "text",
           "text": "The text tab objects that represent the paragraph’s tab stops."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstexttabtype": {
+      "title": "NSTextTabType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstexttabtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstexttabtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify the type of tab stop."
         }
       ]
     },
@@ -419,7 +452,49 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The mode for breaking lines in the paragraph."
+          "text": "The mode for breaking lines in the paragraph that don’t fit within a container."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nslinebreakmode": {
+      "title": "NSLineBreakMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nslinebreakmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nslinebreakmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify what happens when a line is too long for a container."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/3667463-linebreakstrategy": {
+      "title": "lineBreakStrategy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/3667463-linebreakstrategy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsparagraphstyle/3667463-linebreakstrategy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The strategy for breaking lines while laying out paragraphs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy": {
+      "title": "NSLineBreakStrategy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nslinebreakstrategy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify how the text system breaks lines while laying out paragraphs."
         }
       ]
     },
@@ -434,6 +509,20 @@
         {
           "type": "text",
           "text": "The paragraph’s threshold for hyphenation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/3809913-usesdefaulthyphenation": {
+      "title": "usesDefaultHyphenation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/3809913-usesdefaulthyphenation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsparagraphstyle/3809913-usesdefaulthyphenation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the paragraph style uses the system hyphenation settings."
         }
       ]
     },
@@ -461,7 +550,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the system tightens intercharacter spacing before truncating text."
+          "text": "A Boolean value that indicates whether the system tightens character spacing before truncating text."
         }
       ]
     },
@@ -517,34 +606,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/nslinebreakmode": {
-      "title": "NSLineBreakMode",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nslinebreakmode",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/nslinebreakmode",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Constants that specify what happens when a line is too long for its container."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/nstextalignment": {
-      "title": "NSTextAlignment",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextalignment",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/nstextalignment",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Constants that specify text alignment."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/nswritingdirection": {
       "title": "NSWritingDirection",
       "type": "topic",
@@ -558,28 +619,6 @@
           "text": "Constants that specify the writing direction."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nstexttabtype": {
-      "title": "NSTextTabType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstexttabtype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nstexttabtype",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Constants that specify the type of tab stop."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/3667463-linebreakstrategy": {
-      "title": "lineBreakStrategy",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/3667463-linebreakstrategy",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/nsparagraphstyle/3667463-linebreakstrategy"
     },
     "doc://com.apple.documentation/documentation/uikit/nstexttab": {
       "title": "NSTextTab",
@@ -629,13 +668,15 @@
       "title": "Creating a Paragraph Style",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1532681-defaultparagraphstyle"
-      ]
+      ],
+      "anchor": "1653540"
     },
     {
       "kind": "taskGroup",
       "title": "Accessing Style Information",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1532321-alignment",
+        "doc://com.apple.documentation/documentation/uikit/nstextalignment",
         "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1527764-firstlineheadindent",
         "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1530760-headindent",
         "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1525556-tailindent",
@@ -645,15 +686,18 @@
         "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1524635-linespacing",
         "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1530912-paragraphspacing",
         "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1533011-paragraphspacingbefore"
-      ]
+      ],
+      "anchor": "1653575"
     },
     {
       "kind": "taskGroup",
       "title": "Accessing Tab Information",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1532841-tabstops",
+        "doc://com.apple.documentation/documentation/appkit/nstexttabtype",
         "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1535614-defaulttabinterval"
-      ]
+      ],
+      "anchor": "1653724"
     },
     {
       "kind": "taskGroup",
@@ -661,49 +705,41 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsparagraphstyle/1528053-textblocks",
         "doc://com.apple.documentation/documentation/appkit/nsparagraphstyle/1534193-textlists"
-      ]
+      ],
+      "anchor": "1653784"
     },
     {
       "kind": "taskGroup",
-      "title": "Getting Line Break Information ",
+      "title": "Getting Line-Break Information ",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1529937-linebreakmode",
+        "doc://com.apple.documentation/documentation/uikit/nslinebreakmode",
+        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/3667463-linebreakstrategy",
+        "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy",
         "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1529275-hyphenationfactor",
+        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/3809913-usesdefaulthyphenation",
         "doc://com.apple.documentation/documentation/appkit/nsparagraphstyle/1529278-tighteningfactorfortruncation",
         "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1528994-allowsdefaulttighteningfortrunca"
-      ]
+      ],
+      "anchor": "1653834"
     },
     {
       "kind": "taskGroup",
-      "title": "Getting HTML Header Level",
+      "title": "Getting the HTML Header Level",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsparagraphstyle/1535869-headerlevel"
-      ]
+      ],
+      "anchor": "1653905"
     },
     {
       "kind": "taskGroup",
       "title": "Determining Writing Direction",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1535327-defaultwritingdirectionforlangua",
-        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1527354-basewritingdirection"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Constants",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/nslinebreakmode",
-        "doc://com.apple.documentation/documentation/uikit/nstextalignment",
-        "doc://com.apple.documentation/documentation/uikit/nswritingdirection",
-        "doc://com.apple.documentation/documentation/appkit/nstexttabtype"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Properties",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/3667463-linebreakstrategy"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1527354-basewritingdirection",
+        "doc://com.apple.documentation/documentation/uikit/nswritingdirection"
+      ],
+      "anchor": "1653934"
     }
   ],
   "seeAlsoSections": [
@@ -712,7 +748,7 @@
         "doc://com.apple.documentation/documentation/uikit/nsmutableparagraphstyle",
         "doc://com.apple.documentation/documentation/uikit/nstexttab"
       ],
-      "title": "Paragraphs",
+      "title": "Formatted Content",
       "generated": true
     }
   ],
@@ -750,6 +786,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -790,7 +827,7 @@
             },
             {
               "type": "text",
-              "text": " encapsulate the paragraph or ruler attributes used by the "
+              "text": " encapsulate the paragraph or ruler attributes that the "
             },
             {
               "type": "reference",
@@ -799,7 +836,7 @@
             },
             {
               "type": "text",
-              "text": " classes. Instances of these classes are often referred to as paragraph style objects or, when no confusion will result, paragraph styles."
+              "text": " classes use."
             }
           ]
         }
@@ -807,7 +844,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

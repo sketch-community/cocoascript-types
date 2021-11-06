@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A view controller for browsing and performing actions on documents stored locally and in the cloud."
+      "text": "A view controller for browsing and performing actions on documents that you store locally and in the cloud."
     }
   ],
   "documentVersion": 0,
@@ -34,20 +34,25 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIDocumentBrowserViewController",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,7 +116,7 @@
           "url": "https://docs-assets.developer.apple.com/published/7d56a83297/e6dd9306-7b19-46ee-9894-6348974e8985.png"
         }
       ],
-      "alt": "A screenshot of the document browser.",
+      "alt": "A screenshot of the document browser. The On My iPad location is in a selected state on the left, and several photos and folders appear in the pane on the right.",
       "title": "Figure 1"
     },
     "doc://com.apple.documentation/documentation/fileprovider": {
@@ -145,34 +150,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsfilecoordinator"
-    },
-    "doc://com.apple.documentation/documentation/uikit/uidocumentbrowsertransitioncontroller": {
-      "title": "UIDocumentBrowserTransitionController",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentbrowsertransitioncontroller",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uidocumentbrowsertransitioncontroller",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that implements the standard loading and transition animations for a document browser."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uidocumentbrowseraction": {
-      "title": "UIDocumentBrowserAction",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentbrowseraction",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uidocumentbrowseraction",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A custom action that you can create and add to a document browser's Edit Menu or navigation bar."
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller": {
       "title": "UIDocumentPickerViewController",
@@ -218,6 +195,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3566729-initforopeningcontenttypes": {
+      "title": "initForOpeningContentTypes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3566729-initforopeningcontenttypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidocumentbrowserviewcontroller/3566729-initforopeningcontenttypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes and returns a document browser view controller that can open the specified file types."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initForOpeningContentTypes:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874203-initforopeningfileswithcontentty": {
       "title": "initForOpeningFilesWithContentTypes:",
       "type": "topic",
@@ -228,7 +229,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes and returns a document browser view controller that can open the given file types."
+          "text": "Initializes and returns a document browser view controller that can open the specified file types."
         }
       ],
       "fragments": [
@@ -295,21 +296,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874182-allowedcontenttypes": {
-      "title": "allowedContentTypes",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874182-allowedcontenttypes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uidocumentbrowserviewcontroller/2874182-allowedcontenttypes",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The document types that the browser can open."
-        }
-      ],
-      "deprecated": true
-    },
     "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874172-allowsdocumentcreation": {
       "title": "allowsDocumentCreation",
       "type": "topic",
@@ -348,7 +334,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Reveals (and optionally imports) the document at the provided URL."
+          "text": "Reveals, and optionally imports, the document at the provided URL."
         }
       ],
       "fragments": [
@@ -362,6 +348,50 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3566728-contenttypesforrecentdocuments": {
+      "title": "contentTypesForRecentDocuments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3566728-contenttypesforrecentdocuments",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidocumentbrowserviewcontroller/3566728-contenttypesforrecentdocuments",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Content types for browsing recent documents."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3356325-recentdocumentscontenttypes": {
+      "title": "recentDocumentsContentTypes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3356325-recentdocumentscontenttypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidocumentbrowserviewcontroller/3356325-recentdocumentscontenttypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Content types for browsing recent documents."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874182-allowedcontenttypes": {
+      "title": "allowedContentTypes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874182-allowedcontenttypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidocumentbrowserviewcontroller/2874182-allowedcontenttypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The document types that the browser can open."
+        }
+      ],
+      "deprecated": true
+    },
     "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2875748-browseruserinterfacestyle": {
       "title": "browserUserInterfaceStyle",
       "type": "topic",
@@ -372,7 +402,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The visual style used by the document browser."
+          "text": "The visual style for the document browser."
         }
       ]
     },
@@ -474,6 +504,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uidocumentbrowseraction": {
+      "title": "UIDocumentBrowserAction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentbrowseraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidocumentbrowseraction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A custom action that you can create and add to a document browser's Edit menu or navigation bar."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3019587-transitioncontrollerfordocumenta": {
       "title": "transitionControllerForDocumentAtURL:",
       "type": "topic",
@@ -495,6 +539,20 @@
         {
           "kind": "identifier",
           "text": "transitionControllerForDocumentAtURL:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidocumentbrowsertransitioncontroller": {
+      "title": "UIDocumentBrowserTransitionController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentbrowsertransitioncontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidocumentbrowsertransitioncontroller",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that implements the standard loading and transition animations for a document browser."
         }
       ]
     },
@@ -533,7 +591,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The error codes for errors raised by the document browser."
+          "text": "The error codes for document browser errors."
         }
       ]
     },
@@ -547,44 +605,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The error domain for errors raised by the document browser."
+          "text": "The error domain for document browser errors."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3566729-initforopeningcontenttypes": {
-      "title": "initForOpeningContentTypes:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3566729-initforopeningcontenttypes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uidocumentbrowserviewcontroller/3566729-initforopeningcontenttypes",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initForOpeningContentTypes:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3566728-contenttypesforrecentdocuments": {
-      "title": "contentTypesForRecentDocuments",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3566728-contenttypesforrecentdocuments",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uidocumentbrowserviewcontroller/3566728-contenttypesforrecentdocuments"
-    },
-    "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3356325-recentdocumentscontenttypes": {
-      "title": "recentDocumentsContentTypes",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3356325-recentdocumentscontenttypes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uidocumentbrowserviewcontroller/3356325-recentdocumentscontenttypes",
-      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/uikit/view_controllers/providing_access_to_directories": {
       "title": "Providing Access to Directories",
@@ -638,7 +661,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A view controller for browsing and performing actions on documents stored locally and in the cloud."
+          "text": "A view controller for browsing and performing actions on documents that you store locally and in the cloud."
         }
       ]
     },
@@ -652,7 +675,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A view controller that previews, opens, or prints files whose file format cannot be handled directly by your app. "
+          "text": "A view controller that previews, opens, or prints files with a file format that your app can’t handle directly. "
         }
       ]
     },
@@ -662,16 +685,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -698,8 +711,10 @@
       "title": "Creating a Document Browser",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app",
+        "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3566729-initforopeningcontenttypes",
         "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874203-initforopeningfileswithcontentty"
-      ]
+      ],
+      "anchor": "2876021"
     },
     {
       "kind": "taskGroup",
@@ -708,17 +723,21 @@
         "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874185-delegate",
         "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontrollerdelegate",
         "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2927800-importdocumentaturl"
-      ]
+      ],
+      "anchor": "2888105"
     },
     {
       "kind": "taskGroup",
       "title": "Configuring a Document Browser",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874182-allowedcontenttypes",
         "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874172-allowsdocumentcreation",
         "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874179-allowspickingmultipleitems",
-        "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2915849-revealdocumentaturl"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2915849-revealdocumentaturl",
+        "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3566728-contenttypesforrecentdocuments",
+        "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3356325-recentdocumentscontenttypes",
+        "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874182-allowedcontenttypes"
+      ],
+      "anchor": "2887013"
     },
     {
       "kind": "taskGroup",
@@ -731,7 +750,8 @@
         "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3153159-shouldshowfileextensions",
         "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3114622-localizedcreatedocumentactiontit",
         "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3123949-defaultdocumentaspectratio"
-      ]
+      ],
+      "anchor": "2874525"
     },
     {
       "kind": "taskGroup",
@@ -739,7 +759,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874181-customactions",
         "doc://com.apple.documentation/documentation/uikit/uidocumentbrowseraction"
-      ]
+      ],
+      "anchor": "2874526"
     },
     {
       "kind": "taskGroup",
@@ -748,7 +769,8 @@
         "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3019587-transitioncontrollerfordocumenta",
         "doc://com.apple.documentation/documentation/uikit/uidocumentbrowsertransitioncontroller",
         "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874177-transitioncontrollerfordocumentu"
-      ]
+      ],
+      "anchor": "2876683"
     },
     {
       "kind": "taskGroup",
@@ -756,22 +778,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uidocumentbrowsererrorcode",
         "doc://com.apple.documentation/documentation/uikit/uidocumentbrowsererrordomain"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Initializers",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3566729-initforopeningcontenttypes"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Properties",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3566728-contenttypesforrecentdocuments",
-        "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3356325-recentdocumentscontenttypes"
-      ]
+      ],
+      "anchor": "2932043"
     }
   ],
   "seeAlsoSections": [
@@ -786,14 +794,6 @@
       ],
       "title": "Documents and Directories",
       "generated": true
-    },
-    {
-      "title": "Related Documentation",
-      "generated": false,
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uidocumentbrowsertransitioncontroller",
-        "doc://com.apple.documentation/documentation/uikit/uidocumentbrowseraction"
-      ]
     }
   ],
   "primaryContentSections": [
@@ -830,6 +830,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -849,7 +850,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "With the document browser view controller, users can browse through and access their documents. By default, the document browser can access both the system’s local file provider and its iCloud file provider."
+              "text": "With the document browser view controller, users can easily access and view their documents in the cloud. By default, the document browser can access both the system’s local file provider and its iCloud file provider."
             }
           ]
         },
@@ -927,7 +928,7 @@
             },
             {
               "type": "text",
-              "text": " directory, they're editing the document in place. The changes are saved to the other app's "
+              "text": " directory, they edit the document in place, and save the changes to the other app's "
             },
             {
               "type": "codeVoice",
@@ -944,7 +945,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The iCloud file provider creates a folder for your app in the user’s iCloud Drive. Users can access documents from this folder, or from anywhere in their iCloud Drive. The system automatically handles access to iCloud for you; you don't need to enable your app’s iCloud capabilities."
+              "text": "The iCloud file provider creates a folder for your app in the user’s iCloud Drive. Users can access documents from this folder, or from anywhere in their iCloud Drive. The system automatically handles access to iCloud for you, so you don't need to enable your app’s iCloud capabilities."
             }
           ]
         },
@@ -974,7 +975,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Don't assume that the files you access are local. Files can be stored in iCloud Drive, or on any cloud storage that provides a current File Provider extension."
+                  "text": "Don't assume that the files you access are local. Users can store files in iCloud Drive, or in any cloud storage that provides a current File Provider extension."
                 }
               ]
             },
@@ -983,7 +984,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Remember that the system (or other apps) might modify the files provided by the document browser at any time. Therefore, you must coordinate your access to these files using either a "
+                  "text": "Remember that the system (or other apps) might modify the files that the document browser provides at any time. Therefore, you must coordinate your access to these files using either a "
                 },
                 {
                   "type": "reference",
@@ -992,7 +993,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " subclass or "
+                  "text": " subclass, or "
                 },
                 {
                   "type": "reference",
@@ -1025,7 +1026,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

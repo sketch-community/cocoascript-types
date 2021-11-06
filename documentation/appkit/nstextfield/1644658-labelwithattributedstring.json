@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Initializes a text field for use as a static label that displays styled text, doesn’t wrap, and doesn’t have selectable text."
+      "text": "Creates a text field for use as a static label that displays styled text, doesn’t wrap, and doesn’t have selectable text."
     }
   ],
   "documentVersion": 0,
@@ -42,15 +42,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSTextField(cm)labelWithAttributedString:",
+    "parent": {
+      "title": "NSTextField"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -139,6 +142,22 @@
       "role": "symbol",
       "url": "/documentation/appkit/nscontrol/1428914-font"
     },
+    "doc://com.apple.documentation/documentation/appkit/nscontrol/1428906-alignment": {
+      "title": "alignment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol/1428906-alignment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscontrol/1428906-alignment"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscontrol/1428978-linebreakmode": {
+      "title": "lineBreakMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol/1428978-linebreakmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscontrol/1428978-linebreakmode"
+    },
     "doc://com.apple.documentation/documentation/uikit/nsforegroundcolorattributename": {
       "title": "NSForegroundColorAttributeName",
       "type": "topic",
@@ -154,6 +173,30 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/nsfontattributename"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsmutableparagraphstyle/1534368-alignment": {
+      "title": "alignment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsmutableparagraphstyle/1534368-alignment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsmutableparagraphstyle/1534368-alignment"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1529937-linebreakmode": {
+      "title": "lineBreakMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1529937-linebreakmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsparagraphstyle/1529937-linebreakmode"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/3667463-linebreakstrategy": {
+      "title": "lineBreakStrategy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/3667463-linebreakstrategy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsparagraphstyle/3667463-linebreakstrategy"
     },
     "doc://com.apple.documentation/documentation/foundation/nsattributedstring": {
       "title": "NSAttributedString",
@@ -173,7 +216,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes a text field for use as a static label that displays styled text, doesn’t wrap, and doesn’t have selectable text."
+          "text": "Creates a text field for use as a static label that displays styled text, doesn’t wrap, and doesn’t have selectable text."
         }
       ],
       "fragments": [
@@ -392,7 +435,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The text field determines its line break mode by inspecting the paragraph style attributes in the attributed string."
+              "text": "The text field determines its line-break mode by inspecting the paragraph style attributes in the attributed string."
             }
           ]
         },
@@ -413,12 +456,38 @@
                 },
                 {
                   "type": "text",
-                  "text": " and "
+                  "text": ", "
                 },
                 {
                   "type": "reference",
                   "isActive": false,
                   "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol/1428914-font"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol/1428906-alignment"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol/1428978-linebreakmode"
+                },
+                {
+                  "type": "text",
+                  "text": ", and "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "lineBreakStrategy"
                 },
                 {
                   "type": "text",
@@ -431,12 +500,39 @@
                 },
                 {
                   "type": "text",
-                  "text": " and "
+                  "text": ", "
                 },
                 {
                   "type": "reference",
                   "isActive": true,
                   "identifier": "doc://com.apple.documentation/documentation/uikit/nsfontattributename"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/nsmutableparagraphstyle/1534368-alignment"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1529937-linebreakmode"
+                },
+                {
+                  "type": "text",
+                  "text": ", and "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/3667463-linebreakstrategy"
                 },
                 {
                   "type": "text",
@@ -452,7 +548,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

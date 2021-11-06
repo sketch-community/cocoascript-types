@@ -41,35 +41,43 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSManagedObject(im)didSave",
+    "parent": {
+      "title": "NSManagedObject"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -122,7 +130,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A base class that implements the behavior required of a Core Data model object."
+          "text": "A base class that implements the behavior for a Core Data model object."
         }
       ]
     },
@@ -152,7 +160,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Provides an opportunity to add code into the life cycle of the managed object when it is about to be saved."
+          "text": "Provides an opportunity to add code into the life cycle of the managed object before saving it."
         }
       ],
       "fragments": [
@@ -166,14 +174,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextobjectsdidchangenotification": {
-      "title": "NSManagedObjectContextObjectsDidChangeNotification",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextobjectsdidchangenotification",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontextobjectsdidchangenotification"
-    },
     "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506727-contextshouldignoreunmodeledprop": {
       "title": "contextShouldIgnoreUnmodeledPropertyChanges",
       "type": "topic",
@@ -184,7 +184,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether instances of the class should be marked as having changes if an unmodeled property is changed."
+          "text": "A Boolean value that indicates whether to mark instances of the class as having changes when an unmodeled property changes."
         }
       ]
     },
@@ -198,7 +198,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Provides an opportunity to add code into the life cycle of the managed object when it is being fulfilled from a fault."
+          "text": "Provides an opportunity to add code into the life cycle of the managed object when fufilling it from a fault."
         }
       ],
       "fragments": [
@@ -222,7 +222,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Provides an opportunity to add code into the life cycle of the managed object when it is initially created."
+          "text": "Provides an opportunity to add code into the life cycle of the managed object when initially creating it."
         }
       ],
       "fragments": [
@@ -246,7 +246,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Provides an opportunity to add code into the life cycle of the managed object when it is being fulfilled from a snapshot."
+          "text": "Provides an opportunity to add code into the life cycle of the managed object when fulfilling it from a snapshot."
         }
       ],
       "fragments": [
@@ -270,7 +270,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a dictionary containing the keys and (old) values of persistent properties that have been changed since the last fetching or saving of the managed object."
+          "text": "Returns a dictionary containing the keys and new values of persistent properties with changes since the last fetching or saving of the managed object."
         }
       ],
       "fragments": [
@@ -294,16 +294,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a dictionary containing the keys and old values of persistent properties that have changed since the last posting of "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextobjectsdidchangenotification"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "Returns a dictionary containing the keys and new values of persistent properties with changes since the last fetching or saving of the managed object."
         }
       ],
       "fragments": [
@@ -327,7 +318,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a dictionary of the last fetched or saved values of the managed object for the properties specified by the given keys."
+          "text": "Returns a dictionary of the most recent fetched or saved values of the managed object for the properties of the specified keys."
         }
       ],
       "fragments": [
@@ -351,7 +342,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Provides an opportunity to add code into the life cycle of the managed object when it is about to be deleted."
+          "text": "Provides an opportunity to add code into the life cycle of the managed object before deleting it."
         }
       ],
       "fragments": [
@@ -399,7 +390,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Provides an opportunity to add code into the life cycle of the managed object before it is converted to a fault."
+          "text": "Provides an opportunity to add code into the life cycle of the managed object before converting it to a fault."
         }
       ],
       "fragments": [
@@ -423,7 +414,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Provides an opportunity to add code into the life cycle of the managed object when it is turned into a fault."
+          "text": "Provides an opportunity to add code into the life cycle of the managed object after converting it to a fault."
         }
       ],
       "fragments": [
@@ -447,7 +438,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new fetch request initialized with the entity represented by this subclass."
+          "text": "Returns an initialized fetch request with the entity this subclass represents."
         }
       ],
       "fragments": [
@@ -521,6 +512,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -609,7 +601,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

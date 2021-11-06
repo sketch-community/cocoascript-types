@@ -46,25 +46,30 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UIAdaptivePresentationControllerDelegate",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -154,6 +159,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uipopoverpresentationcontrollerdelegate"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisheetpresentationcontrollerdelegate": {
+      "title": "UISheetPresentationControllerDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisheetpresentationcontrollerdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisheetpresentationcontrollerdelegate"
     },
     "doc://com.apple.documentation/documentation/uikit/uiadaptivepresentationcontrollerdelegate/1618334-adaptivepresentationstyleforpres": {
       "title": "adaptivePresentationStyleForPresentationController:traitCollection:",
@@ -355,6 +368,31 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3801899-presentationcontroller": {
+      "title": "presentationController:prepareAdaptivePresentationController:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3801899-presentationcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3801899-presentationcontroller",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides an opportunity to configure the adaptive presentation controller after an adaptivity change."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "presentationController:prepareAdaptivePresentationController:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_changing_display_modes_on_apple_tv": {
       "title": "Responding to Changing Display Modes on Apple TV",
       "type": "topic",
@@ -447,7 +485,8 @@
       "title": "Inherited By",
       "type": "inheritedBy",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uipopoverpresentationcontrollerdelegate"
+        "doc://com.apple.documentation/documentation/uikit/uipopoverpresentationcontrollerdelegate",
+        "doc://com.apple.documentation/documentation/uikit/uisheetpresentationcontrollerdelegate"
       ]
     }
   ],
@@ -458,14 +497,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiadaptivepresentationcontrollerdelegate/1618334-adaptivepresentationstyleforpres",
         "doc://com.apple.documentation/documentation/uikit/uiadaptivepresentationcontrollerdelegate/1618343-adaptivepresentationstyleforpres"
-      ]
+      ],
+      "anchor": "1657004"
     },
     {
       "kind": "taskGroup",
       "title": "Adapting the View Controller",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiadaptivepresentationcontrollerdelegate/1618326-presentationcontroller"
-      ]
+      ],
+      "anchor": "1657079"
     },
     {
       "kind": "taskGroup",
@@ -476,7 +517,16 @@
         "doc://com.apple.documentation/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3229890-presentationcontrollershoulddism",
         "doc://com.apple.documentation/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3229889-presentationcontrollerdiddismiss",
         "doc://com.apple.documentation/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3229891-presentationcontrollerwilldismis"
-      ]
+      ],
+      "anchor": "1657121"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Preparing the Adaptive Presentation Controller",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3801899-presentationcontroller"
+      ],
+      "anchor": "3809511"
     }
   ],
   "seeAlsoSections": [
@@ -515,6 +565,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -570,7 +621,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

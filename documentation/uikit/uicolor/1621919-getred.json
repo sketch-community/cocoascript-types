@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "5.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)UIColor(im)getRed:green:blue:alpha:",
+    "parent": {
+      "title": "UIColor"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,7 +119,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that stores color data and sometimes opacity. "
+          "text": "An object that stores color data and sometimes opacity."
         }
       ]
     },
@@ -138,6 +146,20 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/coregraphics/cgfloat"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicolor/determining_color_values_with_color_spaces": {
+      "title": "Determining Color Values with Color Spaces",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicolor/determining_color_values_with_color_spaces",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/uicolor/determining_color_values_with_color_spaces",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Change the system’s interpretation of a color value for display by selecting a color space."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uicolor/1621954-cgcolor": {
       "title": "CGColor",
@@ -288,6 +310,7 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicolor/determining_color_values_with_color_spaces",
         "doc://com.apple.documentation/documentation/uikit/uicolor/1621954-cgcolor",
         "doc://com.apple.documentation/documentation/uikit/uicolor/1621943-cgcolor",
         "doc://com.apple.documentation/documentation/uikit/uicolor/1621951-cicolor",
@@ -443,6 +466,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
@@ -464,7 +488,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "On return, the red component of the color object. On applications linked for iOS 10 or later, the red component is specified in an extended range sRGB color space and can have any value. Values between "
+                  "text": "On return, the red component of the color object. On applications linked for iOS 10 or later, an extended range sRGB color space specifies the red component and can have any value. Values between "
                 },
                 {
                   "type": "codeVoice",
@@ -510,7 +534,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "On return, the green component of the color object. On applications linked for iOS 10 or later, the green component is specified in an extended range sRGB color space and can have any value. Values between "
+                  "text": "On return, the green component of the color object. On applications linked for iOS 10 or later,an extended range sRGB color space specifies the green component and can have any value. Values between "
                 },
                 {
                   "type": "codeVoice",
@@ -556,7 +580,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "On return, the blue component of the color object. On applications linked for iOS 10 or later, the blue component is specified in an extended range sRGB color space and can have any value. Values between "
+                  "text": "On return, the blue component of the color object. On applications linked for iOS 10 or later, an extended range sRGB color space specifies the blue component and can have any value. Values between "
                 },
                 {
                   "type": "codeVoice",
@@ -674,15 +698,19 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "If the color is in a compatible color space, the color is converted into RGB format and its components are returned to your application. If the color is not in a compatible color space, the parameters are unchanged."
+              "text": "If the color is in a compatible color space, it converts into RGB format and its components return to your application. If the color isn’t in a compatible color space, the parameters don’t change."
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

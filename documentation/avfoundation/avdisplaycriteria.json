@@ -10,8 +10,11 @@
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/avfoundation",
-        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata",
         "doc://com.apple.documentation/documentation/avfoundation/avasset"
       ]
     ]
@@ -35,15 +38,15 @@
       {
         "name": "tvOS",
         "introducedAt": "11.2",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVDisplayCriteria",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -78,14 +81,6 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata": {
-      "title": "Media Assets and Metadata",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata",
-      "url": "/documentation/avfoundation/media_assets_and_metadata",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avasset": {
       "title": "AVAsset",
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset",
@@ -104,7 +99,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The display criteria that define the optimal TV display mode for the asset."
+          "text": "The asset’s display mode preference for optimal playback of its content."
         }
       ]
     },
@@ -131,6 +126,48 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nscopying"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1389912-preferredrate": {
+      "title": "preferredRate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1389912-preferredrate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1389912-preferredrate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The asset’s rate preference for playing its media."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1390457-preferredvolume": {
+      "title": "preferredVolume",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1390457-preferredvolume",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1390457-preferredvolume",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The asset’s volume preference for playing its audible media."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1385906-preferredtransform": {
+      "title": "preferredTransform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1385906-preferredtransform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1385906-preferredtransform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The asset’s transform preference to apply to its visual content during presentation or processing."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avdisplaycriteria": {
       "title": "AVDisplayCriteria",
@@ -175,9 +212,12 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/1389912-preferredrate",
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/1390457-preferredvolume",
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/1385906-preferredtransform",
         "doc://com.apple.documentation/documentation/avfoundation/avasset/2935636-preferreddisplaycriteria"
       ],
-      "title": "Determining Display Criteria",
+      "title": "Accessing Asset Preferences",
       "generated": true
     }
   ],
@@ -279,7 +319,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

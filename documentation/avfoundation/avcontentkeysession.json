@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An object used to create and track decryption keys for media data."
+      "text": "An object that creates and tracks decryption keys for media data."
     }
   ],
   "documentVersion": 0,
@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "10.3",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.3",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.2",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVContentKeySession",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -189,6 +194,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799203-storageurl": {
+      "title": "storageURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799203-storageurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeysession/2799203-storageurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A URL that points to a writable storage directory."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799164-setdelegate": {
       "title": "setDelegate:queue:",
       "type": "topic",
@@ -199,7 +218,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Sets the receiver's delegate and indicates the dispatch queues used."
+          "text": "Sets the session’s delegate object and the dispatch queue on which to call the delegate’s methods."
         }
       ],
       "fragments": [
@@ -223,21 +242,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The delegate for the receiver."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessiondelegate": {
-      "title": "AVContentKeySessionDelegate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessiondelegate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysessiondelegate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The protocol you implement to handle content key requests."
+          "text": "The content key session’s delegate object."
         }
       ]
     },
@@ -251,31 +256,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The dispatch queue that invokes delegate callbacks."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799174-addcontentkeyrecipient": {
-      "title": "addContentKeyRecipient:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799174-addcontentkeyrecipient",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysession/2799174-addcontentkeyrecipient",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Tells the receiver that the specified recipient should have access to the decryption keys loaded with the session."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "addContentKeyRecipient:"
+          "text": "The dispatch queue the session uses to invoke delegate callbacks."
         }
       ]
     },
@@ -307,6 +288,54 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799174-addcontentkeyrecipient": {
+      "title": "addContentKeyRecipient:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799174-addcontentkeyrecipient",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeysession/2799174-addcontentkeyrecipient",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the specified recipient should have access to the decryption keys loaded with the session."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addContentKeyRecipient:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799181-removecontentkeyrecipient": {
+      "title": "removeContentKeyRecipient:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799181-removecontentkeyrecipient",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeysession/2799181-removecontentkeyrecipient",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate to remove the specified recipient."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeContentKeyRecipient:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799180-processcontentkeyrequestwithiden": {
       "title": "processContentKeyRequestWithIdentifier:initializationData:options:",
       "type": "topic",
@@ -317,7 +346,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Tells the receiver to start loading the content decryption key with the specified identifier and initialization data."
+          "text": "Tells the delegate to start loading the content decryption key with the specified identifier and initialization data."
         }
       ],
       "fragments": [
@@ -331,17 +360,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799208-renewexpiringresponsedataforcont": {
-      "title": "renewExpiringResponseDataForContentKeyRequest:",
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799171-expire": {
+      "title": "expire",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799208-renewexpiringresponsedataforcont",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799171-expire",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysession/2799208-renewexpiringresponsedataforcont",
+      "url": "/documentation/avfoundation/avcontentkeysession/2799171-expire",
       "abstract": [
         {
           "type": "text",
-          "text": "Tells the receiver that previously provided response data for a content key request is about to expire."
+          "text": "Tells the delegate that the session expired as the result of normal, intentional processes."
         }
       ],
       "fragments": [
@@ -351,7 +380,7 @@
         },
         {
           "kind": "identifier",
-          "text": "renewExpiringResponseDataForContentKeyRequest:"
+          "text": "expire"
         }
       ]
     },
@@ -379,6 +408,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799208-renewexpiringresponsedataforcont": {
+      "title": "renewExpiringResponseDataForContentKeyRequest:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799208-renewexpiringresponsedataforcont",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeysession/2799208-renewexpiringresponsedataforcont",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that previously provided response data for a content key request is about to expire."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "renewExpiringResponseDataForContentKeyRequest:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799189-contentprotectionsessionidentifi": {
       "title": "contentProtectionSessionIdentifier",
       "type": "topic",
@@ -393,17 +446,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799171-expire": {
-      "title": "expire",
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089138-invalidatepersistablecontentkey": {
+      "title": "invalidatePersistableContentKey:options:completionHandler:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799171-expire",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089138-invalidatepersistablecontentkey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysession/2799171-expire",
+      "url": "/documentation/avfoundation/avcontentkeysession/3089138-invalidatepersistablecontentkey",
       "abstract": [
         {
           "type": "text",
-          "text": "Tells the receiver that the session expired as the result of normal, intentional processes."
+          "text": "Invalidates the persistable content key and creates a secure server playback context (SPC) to verify the outcome of an invalidation request."
         }
       ],
       "fragments": [
@@ -413,21 +466,21 @@
         },
         {
           "kind": "identifier",
-          "text": "expire"
+          "text": "invalidatePersistableContentKey:options:completionHandler:"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799181-removecontentkeyrecipient": {
-      "title": "removeContentKeyRecipient:",
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089137-invalidateallpersistablecontentk": {
+      "title": "invalidateAllPersistableContentKeysForApp:options:completionHandler:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799181-removecontentkeyrecipient",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089137-invalidateallpersistablecontentk",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysession/2799181-removecontentkeyrecipient",
+      "url": "/documentation/avfoundation/avcontentkeysession/3089137-invalidateallpersistablecontentk",
       "abstract": [
         {
           "type": "text",
-          "text": "Tells the receiver to remove the specified recipient."
+          "text": "Invalidates all of an app’s persistable content keys and creates a secure server playback context (SPC) to verify the outcome of an invalidation request. "
         }
       ],
       "fragments": [
@@ -437,7 +490,21 @@
         },
         {
           "kind": "identifier",
-          "text": "removeContentKeyRecipient:"
+          "text": "invalidateAllPersistableContentKeysForApp:options:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessionserverplaybackcontextoption": {
+      "title": "AVContentKeySessionServerPlaybackContextOption",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessionserverplaybackcontextoption",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeysessionserverplaybackcontextoption",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options for specifying additional information for generating server playback context (SPC)."
         }
       ]
     },
@@ -489,70 +556,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799203-storageurl": {
-      "title": "storageURL",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799203-storageurl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysession/2799203-storageurl",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A URL that points to a writable storage directory."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089137-invalidateallpersistablecontentk": {
-      "title": "invalidateAllPersistableContentKeysForApp:options:completionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089137-invalidateallpersistablecontentk",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysession/3089137-invalidateallpersistablecontentk",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "invalidateAllPersistableContentKeysForApp:options:completionHandler:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089138-invalidatepersistablecontentkey": {
-      "title": "invalidatePersistableContentKey:options:completionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089138-invalidatepersistablecontentkey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysession/3089138-invalidatepersistablecontentkey",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "invalidatePersistableContentKey:options:completionHandler:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessionserverplaybackcontextoption": {
-      "title": "AVContentKeySessionServerPlaybackContextOption",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessionserverplaybackcontextoption",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysessionserverplaybackcontextoption",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Options for specifying additional information for generating server playback context (SPC)."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession": {
       "title": "AVContentKeySession",
       "type": "topic",
@@ -563,7 +566,49 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to create and track decryption keys for media data."
+          "text": "An object that creates and tracks decryption keys for media data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessiondelegate": {
+      "title": "AVContentKeySessionDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessiondelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeysessiondelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that handles content key requests."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkey": {
+      "title": "AVContentKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that represents the content key decryptor."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyspecifier": {
+      "title": "AVContentKeySpecifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyspecifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeyspecifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that uniquely identifies a content key."
         }
       ]
     },
@@ -609,22 +654,26 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/3726110-avsamplebufferattachcontentkey": {
+      "title": "AVSampleBufferAttachContentKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/3726110-avsamplebufferattachcontentkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/3726110-avsamplebufferattachcontentkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Attaches a content key to a sample buffer for the purpose of content decryption."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -640,71 +689,94 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Creating New Content Key Sessions",
+      "title": "Creating a Session",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2887362-contentkeysessionwithkeysystem",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799206-contentkeysessionwithkeysystem",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799167-keysystem",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysystem"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799206-contentkeysessionwithkeysystem"
+      ],
+      "anchor": "2859800"
     },
     {
       "kind": "taskGroup",
-      "title": "Initializing the Content Key Request Process",
+      "title": "Inspecting the Session",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799167-keysystem",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysystem",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799203-storageurl"
+      ],
+      "anchor": "3742761",
+      "abstract": []
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing the Delegate Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799164-setdelegate",
         "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799191-delegate",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessiondelegate",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799178-delegatequeue",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799174-addcontentkeyrecipient",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799178-delegatequeue"
+      ],
+      "anchor": "3742760"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Content Key Recipients",
+      "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799192-contentkeyrecipients",
         "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrecipient",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799180-processcontentkeyrequestwithiden"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799174-addcontentkeyrecipient",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799181-removecontentkeyrecipient"
+      ],
+      "anchor": "2923271"
     },
     {
       "kind": "taskGroup",
-      "title": "Updating Content Key Requests",
+      "title": "Processing Requests",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799208-renewexpiringresponsedataforcont",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2887476-makesecuretokenforexpirationdate",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799189-contentprotectionsessionidentifi"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799180-processcontentkeyrequestwithiden"
+      ],
+      "anchor": "3742759"
     },
     {
       "kind": "taskGroup",
-      "title": "Ending a Content Key Request Process",
+      "title": "Managing Expiration",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799171-expire",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799181-removecontentkeyrecipient",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrecipient"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2887476-makesecuretokenforexpirationdate",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799208-renewexpiringresponsedataforcont",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799189-contentprotectionsessionidentifi"
+      ],
+      "anchor": "2922714"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Invalidating Content Keys",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089138-invalidatepersistablecontentkey",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089137-invalidateallpersistablecontentk",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessionserverplaybackcontextoption"
+      ],
+      "anchor": "3698555"
     },
     {
       "kind": "taskGroup",
       "title": "Handling Expired Session Reports",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799161-pendingexpiredsessionreportswith",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799170-removependingexpiredsessionrepor",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799203-storageurl"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Invalidating Content Keys",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089137-invalidateallpersistablecontentk",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089138-invalidatepersistablecontentkey",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessionserverplaybackcontextoption"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799170-removependingexpiredsessionrepor"
+      ],
+      "anchor": "2922713"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessiondelegate",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkey",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyspecifier",
         "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequest",
         "doc://com.apple.documentation/documentation/avfoundation/avpersistablecontentkeyrequest",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyresponse"
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyresponse",
+        "doc://com.apple.documentation/documentation/avfoundation/3726110-avsamplebufferattachcontentkey"
       ],
       "title": "FairPlay Streaming",
       "generated": true
@@ -744,6 +816,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -754,7 +827,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

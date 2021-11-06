@@ -43,14 +43,21 @@
         "name": "iOS",
         "introducedAt": "2.0",
         "deprecatedAt": "5.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "deprecatedAt": "5.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
@@ -58,8 +65,8 @@
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -194,8 +201,7 @@
           "type": "text",
           "text": ", that is displayed below a peek when a user swipes the peek upward. "
         }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiaccelerometer": {
       "title": "UIAccelerometer",
@@ -599,8 +605,7 @@
           "type": "text",
           "text": " class."
         }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uidocumentmenuviewcontroller": {
       "title": "UIDocumentMenuViewController",
@@ -962,16 +967,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -988,7 +983,8 @@
       "title": "Getting the Shared Accelerometer Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiaccelerometer/1620648-sharedaccelerometer"
-      ]
+      ],
+      "anchor": "1657156"
     },
     {
       "kind": "taskGroup",
@@ -996,7 +992,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiaccelerometer/1620651-updateinterval",
         "doc://com.apple.documentation/documentation/uikit/uiaccelerometer/1620646-delegate"
-      ]
+      ],
+      "anchor": "1657173"
     }
   ],
   "seeAlsoSections": [
@@ -1056,6 +1053,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -1136,7 +1134,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

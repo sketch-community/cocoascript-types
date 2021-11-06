@@ -1,11 +1,17 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A protocol that describes specific kinds of input content types."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/textkit"
+        "doc://com.apple.documentation/documentation/appkit/text_input"
       ]
     ]
   },
@@ -28,15 +34,15 @@
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSTextContent",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -71,10 +77,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/textkit": {
-      "title": "TextKit",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/textkit",
-      "url": "/documentation/appkit/textkit",
+    "doc://com.apple.documentation/documentation/appkit/text_input": {
+      "title": "Text Input",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/text_input",
+      "url": "/documentation/appkit/text_input",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -112,101 +118,31 @@
       "role": "symbol",
       "url": "/documentation/appkit/nstextcontenttype"
     },
-    "doc://com.apple.documentation/documentation/appkit/nstextblock": {
-      "title": "NSTextBlock",
+    "doc://com.apple.documentation/documentation/appkit/nstextinputcontext": {
+      "title": "NSTextInputContext",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextblock",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextinputcontext",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstextblock",
+      "url": "/documentation/appkit/nstextinputcontext",
       "abstract": [
         {
           "type": "text",
-          "text": "A block of text laid out in a subregion of the text container."
+          "text": "An object that represents the Cocoa text input system. "
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle": {
-      "title": "NSParagraphStyle",
+    "doc://com.apple.documentation/documentation/appkit/nstextalternatives": {
+      "title": "NSTextAlternatives",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextalternatives",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/nsparagraphstyle",
+      "url": "/documentation/appkit/nstextalternatives",
       "abstract": [
         {
           "type": "text",
-          "text": "The paragraph or ruler attributes for an attributed string."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/nsmutableparagraphstyle": {
-      "title": "NSMutableParagraphStyle",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nsmutableparagraphstyle",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/nsmutableparagraphstyle",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object for changing the values of the subattributes in a paragraph style attribute."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nstexttable": {
-      "title": "NSTextTable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstexttable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nstexttable",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that represents a text table as a whole."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nstexttableblock": {
-      "title": "NSTextTableBlock",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstexttableblock",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nstexttableblock",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A text block that appears as a cell in a text table."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/nstexttab": {
-      "title": "NSTextTab",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nstexttab",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/nstexttab",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A tab in a paragraph."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nstextlist": {
-      "title": "NSTextList",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextlist",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nstextlist",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A section of text that forms a single list. "
+          "text": "A list of alternative strings for a piece of text."
         }
       ]
     },
@@ -216,7 +152,27 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nstextcontent",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstextcontent"
+      "url": "/documentation/appkit/nstextcontent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that describes specific kinds of input content types."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextinput": {
+      "title": "NSTextInput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextinput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextinput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of methods that text views must implement to interact properly with the text input management system."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -244,21 +200,18 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nstextcontent/3566859-contenttype",
         "doc://com.apple.documentation/documentation/appkit/nstextcontenttype"
-      ]
+      ],
+      "anchor": "3637435"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nstextblock",
-        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle",
-        "doc://com.apple.documentation/documentation/uikit/nsmutableparagraphstyle",
-        "doc://com.apple.documentation/documentation/appkit/nstexttable",
-        "doc://com.apple.documentation/documentation/appkit/nstexttableblock",
-        "doc://com.apple.documentation/documentation/uikit/nstexttab",
-        "doc://com.apple.documentation/documentation/appkit/nstextlist"
+        "doc://com.apple.documentation/documentation/appkit/nstextinputcontext",
+        "doc://com.apple.documentation/documentation/appkit/nstextalternatives",
+        "doc://com.apple.documentation/documentation/appkit/nstextinput"
       ],
-      "title": "Formatted Content",
+      "title": "Input Management",
       "generated": true
     }
   ],
@@ -292,7 +245,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

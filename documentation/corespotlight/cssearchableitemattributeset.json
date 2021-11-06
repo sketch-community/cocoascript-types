@@ -33,25 +33,30 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)CSSearchableItemAttributeSet",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -85,14 +90,6 @@
       "type": "topic",
       "kind": "symbol",
       "role": "collection"
-    },
-    "doc://com.apple.documentation/documentation/corespotlight/csperson": {
-      "title": "CSPerson",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corespotlight/csperson",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corespotlight/csperson"
     },
     "doc://com.apple.documentation/documentation/corespotlight/cssearchableitem": {
       "title": "CSSearchableItem",
@@ -129,6 +126,14 @@
           "text": "An attribute type that identifies a custom hierarchy of types to describe the attributes of your item."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/csperson": {
+      "title": "CSPerson",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/csperson",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/csperson"
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
@@ -261,7 +266,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A class of entity for whom the item is intended or useful. "
+          "text": "A class of entity for which the item is intended or useful. "
         }
       ]
     },
@@ -289,7 +294,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the application used to create the content."
+          "text": "The name of the app that created the content."
         }
       ]
     },
@@ -303,7 +308,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the application used to convert the original content into a PDF stream."
+          "text": "The name of the apps that converted the original content into a PDF stream."
         }
       ]
     },
@@ -331,7 +336,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An array of font names used in the document."
+          "text": "An array of font names the document uses."
         }
       ]
     },
@@ -387,7 +392,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The height of the document page in points (72 points per inch)."
+          "text": "The height of the document page, in points (72 points per inch)."
         }
       ]
     },
@@ -401,7 +406,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The width of the document page in points (72 points per inch)."
+          "text": "The width of the document page, in points (72 points per inch)."
         }
       ]
     },
@@ -415,7 +420,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The security method (that is, a type of encryption) used to protect the document file."
+          "text": "The security method (a type of encryption) that protects the document file."
         }
       ]
     },
@@ -444,6 +449,258 @@
         {
           "type": "text",
           "text": "The theme of the document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621662-alternatenames": {
+      "title": "alternateNames",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621662-alternatenames",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621662-alternatenames",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of localized strings that represent alternate display names for the item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621561-contenttype": {
+      "title": "contentType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621561-contenttype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621561-contenttype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The uniform type identifier (UTI) of the item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621651-contenturl": {
+      "title": "contentURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621651-contenturl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621651-contenturl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The file URL of the content to index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/3752013-darkthumbnailurl": {
+      "title": "darkThumbnailURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/3752013-darkthumbnailurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/3752013-darkthumbnailurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The local file URL of the thumbnail image for the item when Dark Mode is active."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621676-displayname": {
+      "title": "displayName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621676-displayname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621676-displayname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A localized string that contains the name of the item, suitable to display in the user interface."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621652-keywords": {
+      "title": "keywords",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621652-keywords",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621652-keywords",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of keywords associated with the item, such as work, birthday, important, and so on."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621657-metadatamodificationdate": {
+      "title": "metadataModificationDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621657-metadatamodificationdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621657-metadatamodificationdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The date on which the last metadata attribute was changed."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621559-path": {
+      "title": "path",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621559-path",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621559-path",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The complete path to the item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887563-rankinghint": {
+      "title": "rankingHint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887563-rankinghint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/2887563-rankinghint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A number that indicates the relative importance of the item among other items from the app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621569-relateduniqueidentifier": {
+      "title": "relatedUniqueIdentifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621569-relateduniqueidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621569-relateduniqueidentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The unique identifier for the item to which the activity is related."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621582-thumbnaildata": {
+      "title": "thumbnailData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621582-thumbnaildata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621582-thumbnaildata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Image data that represents the thumbnail of the item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621560-thumbnailurl": {
+      "title": "thumbnailURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621560-thumbnailurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621560-thumbnailurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The local file URL of the thumbnail image for the item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621615-title": {
+      "title": "title",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621615-title",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621615-title",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The title of the item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1649285-domainidentifier": {
+      "title": "domainIdentifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1649285-domainidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/1649285-domainidentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the domain or owner of the item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1649297-weakrelateduniqueidentifier": {
+      "title": "weakRelatedUniqueIdentifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1649297-weakrelateduniqueidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/1649297-weakrelateduniqueidentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The unique identifier for the item to which the activity is related, but not linked."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887561-usercreated": {
+      "title": "userCreated",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887561-usercreated",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/2887561-usercreated",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates the user created the item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887562-usercurated": {
+      "title": "userCurated",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887562-usercurated",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/2887562-usercurated",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates the user selected the item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887564-userowned": {
+      "title": "userOwned",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887564-userowned",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/2887564-userowned",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates the user purchased or owns the item."
         }
       ]
     },
@@ -531,188 +788,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621662-alternatenames": {
-      "title": "alternateNames",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621662-alternatenames",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621662-alternatenames",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An array of localized strings that represent alternate display names for the item."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621561-contenttype": {
-      "title": "contentType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621561-contenttype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621561-contenttype",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The uniform type identifier (that is, UTI) of the item."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621651-contenturl": {
-      "title": "contentURL",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621651-contenturl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621651-contenturl",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The file URL of the content to be indexed."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621676-displayname": {
-      "title": "displayName",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621676-displayname",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621676-displayname",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A localized string that contains the name of the item, suitable to display in the user interface."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621652-keywords": {
-      "title": "keywords",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621652-keywords",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621652-keywords",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An array of keywords associated with the item, such as work, birthday, important, and so on."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621657-metadatamodificationdate": {
-      "title": "metadataModificationDate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621657-metadatamodificationdate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621657-metadatamodificationdate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The date on which the last metadata attribute was changed."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621559-path": {
-      "title": "path",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621559-path",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621559-path",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The complete path to the item."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621569-relateduniqueidentifier": {
-      "title": "relatedUniqueIdentifier",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621569-relateduniqueidentifier",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621569-relateduniqueidentifier",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "For activities, the unique identifier for the item to which the activity is related."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621582-thumbnaildata": {
-      "title": "thumbnailData",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621582-thumbnaildata",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621582-thumbnaildata",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Image data that represents the thumbnail of the item."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621560-thumbnailurl": {
-      "title": "thumbnailURL",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621560-thumbnailurl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621560-thumbnailurl",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The local file URL of the thumbnail image for the item."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621615-title": {
-      "title": "title",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621615-title",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621615-title",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The title of the item."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1649285-domainidentifier": {
-      "title": "domainIdentifier",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1649285-domainidentifier",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corespotlight/cssearchableitemattributeset/1649285-domainidentifier",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An identifier that represents the domain or owner of the item."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1649297-weakrelateduniqueidentifier": {
-      "title": "weakRelatedUniqueIdentifier",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1649297-weakrelateduniqueidentifier",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corespotlight/cssearchableitemattributeset/1649297-weakrelateduniqueidentifier",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "For activities, the unique identifier for the item to which the activity is related, but not linked."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1620579-altitude": {
       "title": "altitude",
       "type": "topic",
@@ -737,7 +812,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The city of the item’s origin according to guidelines established by the provider."
+          "text": "The city of the item’s origin according to guidelines that the provider establishes."
         }
       ]
     },
@@ -751,7 +826,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The full, publishable name of the country or primary location in which the intellectual property of the item was created, according to guidelines established by the provider."
+          "text": "The full, publishable name of the country or region in which the intellectual property of the item was created, according to guidelines the provider establishes."
         }
       ]
     },
@@ -877,7 +952,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The geodetic data used by the GPS receiver. "
+          "text": "The geodetic data that the GPS receiver uses."
         }
       ]
     },
@@ -905,7 +980,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The location finding method used by the GPS receiver."
+          "text": "The location finding method that the GPS receiver uses."
         }
       ]
     },
@@ -989,7 +1064,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The latitude of the item in degrees north of the equator, expressed using the WGS84 datum."
+          "text": "The latitude of the item, in degrees north of the equator, expressed using the WGS84 datum."
         }
       ]
     },
@@ -1003,7 +1078,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The longitude of the item in degrees east of the prime meridian, expressed using the WGS84 datum. "
+          "text": "The longitude of the item, in degrees east of the prime meridian, expressed using the WGS84 datum. "
         }
       ]
     },
@@ -1031,7 +1106,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The speed of the item in kilometers per hour."
+          "text": "The speed of the item, in kilometers per hour."
         }
       ]
     },
@@ -1045,7 +1120,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The province or state of origin according to guidelines established by the provider."
+          "text": "The province or state of origin according to guidelines the provider establishes."
         }
       ]
     },
@@ -1087,7 +1162,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The postal code for the item according to guidelines established by the provider."
+          "text": "The postal code for the item according to guidelines the provider establishes."
         }
       ]
     },
@@ -1101,7 +1176,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The sublocation, such as a street number, for the item according to guidelines established by the provider."
+          "text": "The sublocation, such as a street number, for the item according to guidelines the provider establishes."
         }
       ]
     },
@@ -1115,7 +1190,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The thoroughfare associated with the location, such as a street name, for the item according to guidelines established by the provider."
+          "text": "The thoroughfare, such as a street name, associated with the location for the item according to guidelines the provider establishes."
         }
       ]
     },
@@ -1143,7 +1218,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The date on which the contents of the file was created."
+          "text": "The creation date of an edited or optimized version of the song or composition."
         }
       ]
     },
@@ -1731,7 +1806,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The number of channels in the audio data contained in the file."
+          "text": "The number of channels in the audio data that the file contains."
         }
       ]
     },
@@ -1745,7 +1820,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the application that encoded the data contained in the audio file."
+          "text": "The name of the application that encoded the data the audio file contains."
         }
       ]
     },
@@ -1759,7 +1834,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The sample rate of the audio data contained in the file as a float value representing HZ (that is, audio frames/second), such as 44100.0 or 22254.54."
+          "text": "The sample rate of the audio data the file contains, as a float value representing Hz (audio frames per second), such as 44100.0 or 22254.54."
         }
       ]
     },
@@ -1773,7 +1848,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The track number of a song or audio composition when it is part of an album."
+          "text": "The track number of a song or audio composition when part of an album."
         }
       ]
     },
@@ -1787,7 +1862,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The composer of the song or audio composition contained in the audio file."
+          "text": "The composer of the song or audio composition that the audio file contains."
         }
       ]
     },
@@ -1801,7 +1876,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The musical key of the song or audio composition contained in the file, such as C, Dm, or F#m."
+          "text": "The musical key of the song or audio composition that the file contains, such as C, Dm, or F#m."
         }
       ]
     },
@@ -1815,7 +1890,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The lyricist or text writer for the song or audio composition contained in the file."
+          "text": "The lyricist or text writer for the song or audio composition that the file contains."
         }
       ]
     },
@@ -1829,7 +1904,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The musical genre of the song or audio composition contained in the file, such as Jazz, Pop, Rock, or Classical."
+          "text": "The musical genre of the song or audio composition that the file contains, such as jazz, pop, rock, or classical."
         }
       ]
     },
@@ -1843,7 +1918,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The recording date of the song or audio composition."
+          "text": "The recording date of the song or composition."
         }
       ]
     },
@@ -1857,7 +1932,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The tempo of the music contained in the audio file in beats per minute."
+          "text": "The tempo of the music that the audio file contains, in beats per minute."
         }
       ]
     },
@@ -1871,7 +1946,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The time signature of the musical composition contained in the audio or MIDI file in a string, such as \"4/4\" or \"7/8\"."
+          "text": "The time signature of the musical composition that the audio or MIDI file contains, in a string, such as \"4/4\" or \"7/8\"."
         }
       ]
     },
@@ -1885,7 +1960,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A value that indicates whether the MIDI sequence contained in the file is set up for use with a general MIDI device."
+          "text": "A value that indicates whether the MIDI sequence the file contains is set up for use with a general MIDI device."
         }
       ]
     },
@@ -1927,7 +2002,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The ISO speed setting for the camera at the time the image was captured."
+          "text": "The ISO speed setting at the time the camera captured the image."
         }
       ]
     },
@@ -1941,7 +2016,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The manufacturer of the device that was used to capture the image."
+          "text": "The manufacturer of the device that captured the image."
         }
       ]
     },
@@ -1955,7 +2030,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The model of the device that was used to capture the image."
+          "text": "The model of the device that captured the image."
         }
       ]
     },
@@ -1969,7 +2044,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The size of the lens aperture at the time the image was captured, as a log-scale APEX value."
+          "text": "The size of the lens aperture at the time the camera captured the image, as a log-scale APEX value."
         }
       ]
     },
@@ -1997,7 +2072,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The owner of the camera used to capture the image."
+          "text": "The owner of the camera that captured the image."
         }
       ]
     },
@@ -2011,7 +2086,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The color space model used in this image, such as RGB, CMYK, YUV, or YCbCr."
+          "text": "The color space model the image uses, such as RGB, CMYK, YUV, or YCbCr."
         }
       ]
     },
@@ -2025,7 +2100,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A value that indicates if the flash was used to capture the image."
+          "text": "A value that indicates if the camera used a flash to capture the image."
         }
       ]
     },
@@ -2039,7 +2114,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The actual focal length of the lens in millimeters."
+          "text": "The actual focal length of the lens, in millimeters."
         }
       ]
     },
@@ -2081,7 +2156,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The model of the lens used to capture this image."
+          "text": "The model of the lens that captured the image."
         }
       ]
     },
@@ -2151,7 +2226,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The white balance setting of the camera when the image was acquired."
+          "text": "The white balance setting when the camera captured the image."
         }
       ]
     },
@@ -2193,7 +2268,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The mode that was used for the exposure for the image."
+          "text": "The mode the camera used for the exposure of the image."
         }
       ]
     },
@@ -2207,7 +2282,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The class of the program used by the camera to set exposure when the image is captured."
+          "text": "The class of the program the camera used to set exposure when capturing the image."
         }
       ]
     },
@@ -2249,7 +2324,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The focal length of the lens divided by the diameter of the aperture when the image was captured."
+          "text": "The focal length of the lens, divided by the diameter of the aperture when the camera captured the image."
         }
       ]
     },
@@ -2305,7 +2380,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the color profile used for the image."
+          "text": "The name of the color profile the camera used for the image."
         }
       ]
     },
@@ -2319,7 +2394,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A value that indicates if red-eye reduction was used when the image was captured."
+          "text": "A value that indicates if the camera used red-eye reduction when capturing the image."
         }
       ]
     },
@@ -2333,7 +2408,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The resolution height of this image in DPI."
+          "text": "The resolution height of the image, in DPI."
         }
       ]
     },
@@ -2347,7 +2422,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The resolution width of this image in DPI."
+          "text": "The resolution width of the image, in DPI."
         }
       ]
     },
@@ -2737,6 +2812,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/3752012-actionidentifiers": {
+      "title": "actionIdentifiers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/3752012-actionidentifiers",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/3752012-actionidentifiers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The identifiers that specify custom actions the app supports for the item."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621564-supportsnavigation": {
       "title": "supportsNavigation",
       "type": "topic",
@@ -2747,7 +2836,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A value that indicates whether it makes sense to support navigation to the location represented by the item."
+          "text": "A value that indicates whether the item contains information sufficient to provide navigation to the location it represents."
         }
       ]
     },
@@ -2761,7 +2850,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A value that indicates whether it makes sense to allow a phone call to a number associated with the item."
+          "text": "A value that indicates whether the item contains information sufficient to allow a phone call to a number associated with the item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/3752014-shareditemcontenttype": {
+      "title": "sharedItemContentType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/3752014-shareditemcontenttype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/3752014-shareditemcontenttype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The file type of the item to enable the user to share items from Spotlight."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/csactionidentifier": {
+      "title": "CSActionIdentifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/csactionidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/csactionidentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that specifies the action’s identifier in a user activity."
         }
       ]
     },
@@ -2771,7 +2888,13 @@
       "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2867859-providerdatatypeidentifiers",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/corespotlight/cssearchableitemattributeset/2867859-providerdatatypeidentifiers"
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/2867859-providerdatatypeidentifiers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of identifiers that corresponds to data representations the delegate provides."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2867861-providerfiletypeidentifiers": {
       "title": "providerFileTypeIdentifiers",
@@ -2779,7 +2902,13 @@
       "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2867861-providerfiletypeidentifiers",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/corespotlight/cssearchableitemattributeset/2867861-providerfiletypeidentifiers"
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/2867861-providerfiletypeidentifiers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of identifiers that corresponds to file representations the delegate provides."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2908990-providerinplacefiletypeidentifie": {
       "title": "providerInPlaceFileTypeIdentifiers",
@@ -2787,39 +2916,13 @@
       "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2908990-providerinplacefiletypeidentifie",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/corespotlight/cssearchableitemattributeset/2908990-providerinplacefiletypeidentifie"
-    },
-    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887563-rankinghint": {
-      "title": "rankingHint",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887563-rankinghint",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corespotlight/cssearchableitemattributeset/2887563-rankinghint"
-    },
-    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887561-usercreated": {
-      "title": "userCreated",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887561-usercreated",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corespotlight/cssearchableitemattributeset/2887561-usercreated"
-    },
-    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887562-usercurated": {
-      "title": "userCurated",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887562-usercurated",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corespotlight/cssearchableitemattributeset/2887562-usercurated"
-    },
-    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887564-userowned": {
-      "title": "userOwned",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887564-userowned",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corespotlight/cssearchableitemattributeset/2887564-userowned"
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/2908990-providerinplacefiletypeidentifie",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of identifiers that corresponds to in-place file representations the delegate provides."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/corespotlight/cscustomattributekey": {
       "title": "CSCustomAttributeKey",
@@ -2841,16 +2944,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -2879,7 +2972,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/3573909-initwithcontenttype",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616406-initwithitemcontenttype"
-      ]
+      ],
+      "anchor": "1676467"
     },
     {
       "kind": "taskGroup",
@@ -2887,7 +2981,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616395-setvalue",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616407-valueforcustomkey"
-      ]
+      ],
+      "anchor": "1676485"
     },
     {
       "kind": "taskGroup",
@@ -2907,7 +3002,41 @@
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621658-securitymethod",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621598-subject",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621574-theme"
-      ]
+      ],
+      "anchor": "1676509"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Describing General Attributes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621662-alternatenames",
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621561-contenttype",
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621660-contenttypetree",
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621651-contenturl",
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/3752013-darkthumbnailurl",
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621676-displayname",
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621652-keywords",
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621657-metadatamodificationdate",
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621559-path",
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887563-rankinghint",
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621569-relateduniqueidentifier",
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621582-thumbnaildata",
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621560-thumbnailurl",
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621615-title",
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1649285-domainidentifier",
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1649297-weakrelateduniqueidentifier"
+      ],
+      "anchor": "1676569"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Describing User Involvement",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887561-usercreated",
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887562-usercurated",
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887564-userowned"
+      ],
+      "anchor": "3793454"
     },
     {
       "kind": "taskGroup",
@@ -2919,27 +3048,8 @@
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616638-enddate",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616639-importantdates",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616640-startdate"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Describing General Attributes",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621662-alternatenames",
-        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621561-contenttype",
-        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621660-contenttypetree",
-        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621651-contenturl",
-        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621676-displayname",
-        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621652-keywords",
-        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621657-metadatamodificationdate",
-        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621559-path",
-        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621569-relateduniqueidentifier",
-        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621582-thumbnaildata",
-        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621560-thumbnailurl",
-        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621615-title",
-        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1649285-domainidentifier",
-        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1649297-weakrelateduniqueidentifier"
-      ]
+      ],
+      "anchor": "1676555"
     },
     {
       "kind": "taskGroup",
@@ -2974,7 +3084,8 @@
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1649284-postalcode",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1649290-subthoroughfare",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1649310-thoroughfare"
-      ]
+      ],
+      "anchor": "1676620"
     },
     {
       "kind": "taskGroup",
@@ -3021,7 +3132,8 @@
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616011-rating",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616037-ratingdescription",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616087-url"
-      ]
+      ],
+      "anchor": "1676686"
     },
     {
       "kind": "taskGroup",
@@ -3043,7 +3155,8 @@
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616081-generalmidisequence",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616099-musicalinstrumentcategory",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616033-musicalinstrumentname"
-      ]
+      ],
+      "anchor": "1676812"
     },
     {
       "kind": "taskGroup",
@@ -3080,7 +3193,8 @@
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621520-redeyeon",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621526-resolutionheightdpi",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621544-resolutionwidthdpi"
-      ]
+      ],
+      "anchor": "1676881"
     },
     {
       "kind": "taskGroup",
@@ -3107,7 +3221,8 @@
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621580-recipientemailaddresses",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621667-recipientnames",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621674-textcontent"
-      ]
+      ],
+      "anchor": "1676976"
     },
     {
       "kind": "taskGroup",
@@ -3117,28 +3232,30 @@
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621594-containeridentifier",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621586-containerorder",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621661-containertitle"
-      ]
+      ],
+      "anchor": "1677034"
     },
     {
       "kind": "taskGroup",
       "title": "Supporting Actions",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/3752012-actionidentifiers",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621564-supportsnavigation",
-        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621653-supportsphonecall"
-      ]
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621653-supportsphonecall",
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/3752014-shareditemcontenttype",
+        "doc://com.apple.documentation/documentation/corespotlight/csactionidentifier"
+      ],
+      "anchor": "1677058"
     },
     {
       "kind": "taskGroup",
-      "title": "Instance Properties",
+      "title": "Providing Item Representations",
       "identifiers": [
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2867859-providerdatatypeidentifiers",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2867861-providerfiletypeidentifiers",
-        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2908990-providerinplacefiletypeidentifie",
-        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887563-rankinghint",
-        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887561-usercreated",
-        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887562-usercurated",
-        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887564-userowned"
-      ]
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2908990-providerinplacefiletypeidentifie"
+      ],
+      "anchor": "2868553"
     }
   ],
   "seeAlsoSections": [
@@ -3184,6 +3301,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -3204,7 +3322,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "To make content searchable, create an attribute set with properties specifying the metadata to display about an item (represented by a "
+              "text": "To make content searchable, create an attribute set with properties specifying the metadata to display about an item that a "
             },
             {
               "type": "reference",
@@ -3213,7 +3331,7 @@
             },
             {
               "type": "text",
-              "text": " object) when it appears in a search result. "
+              "text": " object represents when it appears in a search result. "
             }
           ]
         },
@@ -3222,7 +3340,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The attributes you choose depend on your domain. You can use the properties that Core Spotlight provides in categories defined on "
+              "text": "The attributes you choose depend on your domain. You can use the properties that Core Spotlight provides in categories that "
             },
             {
               "type": "reference",
@@ -3231,7 +3349,7 @@
             },
             {
               "type": "text",
-              "text": " (such as Media and Documents), or you can define your own. If you want to define a custom attribute, be as specific as possible in your definition and use the "
+              "text": " defines (such as Media and Documents), or you can define your own. If you want to define a custom attribute, be as specific as possible in your definition and use the "
             },
             {
               "type": "reference",
@@ -3270,7 +3388,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

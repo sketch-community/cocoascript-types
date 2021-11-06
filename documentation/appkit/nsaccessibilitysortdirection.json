@@ -11,13 +11,23 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accessibility",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
       ]
     ]
@@ -41,15 +51,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@T@NSAccessibilitySortDirection",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -84,10 +94,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -114,14 +124,7 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534962-accessibilitysortdirection",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/1534962-accessibilitysortdirection",
-      "required": true,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The element’s sort direction."
-        }
-      ]
+      "url": "/documentation/appkit/nsaccessibility/1534962-accessibilitysortdirection"
     },
     "doc://com.apple.documentation/documentation/objectivec/nsinteger": {
       "title": "NSInteger",
@@ -173,6 +176,188 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityactionname": {
+      "title": "NSAccessibilityActionName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityactionname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityactionname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that describe types of actions. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityannotationattributekey": {
+      "title": "NSAccessibilityAnnotationAttributeKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityannotationattributekey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityannotationattributekey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Keys for annotation attributes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityannotationposition": {
+      "title": "NSAccessibilityAnnotationPosition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityannotationposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityannotationposition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify the position where the annotation applies."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityattributename": {
+      "title": "NSAccessibilityAttributeName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityattributename",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityattributename",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that describe attributes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityfontattributekey": {
+      "title": "NSAccessibilityFontAttributeKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityfontattributekey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityfontattributekey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Keys for font attributes. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityorientation": {
+      "title": "NSAccessibilityOrientation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityorientation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityorientation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values that indicate the orientation of accessibility elements, such as scroll bars and split views."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityorientationvalue": {
+      "title": "NSAccessibilityOrientationValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityorientationvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityorientationvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values that indicate the orientation of user interface elements, such as scroll bars and split views."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityparameterizedattributename": {
+      "title": "NSAccessibilityParameterizedAttributeName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityparameterizedattributename",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityparameterizedattributename",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values that describe parameterized attributes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrole": {
+      "title": "NSAccessibilityRole",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrole",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityrole",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values that describe types of objects that accessibility elements represent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulermarkertype": {
+      "title": "NSAccessibilityRulerMarkerType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulermarkertype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityrulermarkertype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values that indicate the marker type of an accessibility element."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulermarkertypevalue": {
+      "title": "NSAccessibilityRulerMarkerTypeValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulermarkertypevalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityrulermarkertypevalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values that describe ruler marker types."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulerunitvalue": {
+      "title": "NSAccessibilityRulerUnitValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulerunitvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityrulerunitvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values that indicate the unit values of a ruler or layout area."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitysortdirectionvalue": {
+      "title": "NSAccessibilitySortDirectionValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitysortdirectionvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilitysortdirectionvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values that indicate the sort direction of a column."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibilitysortdirection": {
       "title": "NSAccessibilitySortDirection",
       "type": "topic",
@@ -187,183 +372,31 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534988-accessibilitycolumnheaderuieleme": {
-      "title": "accessibilityColumnHeaderUIElements",
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitysubrole": {
+      "title": "NSAccessibilitySubrole",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534988-accessibilitycolumnheaderuieleme",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitysubrole",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/1534988-accessibilitycolumnheaderuieleme",
-      "required": true,
+      "url": "/documentation/appkit/nsaccessibilitysubrole",
       "abstract": [
         {
           "type": "text",
-          "text": "The column header elements for this table or outline."
+          "text": "Values that describe specialized object subtypes that accessibility elements represent."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535115-accessibilitycolumns": {
-      "title": "accessibilityColumns",
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityunits": {
+      "title": "NSAccessibilityUnits",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535115-accessibilitycolumns",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityunits",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/1535115-accessibilitycolumns",
-      "required": true,
+      "url": "/documentation/appkit/nsaccessibilityunits",
       "abstract": [
         {
           "type": "text",
-          "text": "The column elements for this table or outline."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535148-accessibilitycolumntitles": {
-      "title": "accessibilityColumnTitles",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535148-accessibilitycolumntitles",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/1535148-accessibilitycolumntitles",
-      "required": true,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The column titles for the element."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535045-accessibilityexpanded": {
-      "title": "accessibilityExpanded",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535045-accessibilityexpanded",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/1535045-accessibilityexpanded",
-      "required": true,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that determines whether the element is expanded."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534938-accessibilityheader": {
-      "title": "accessibilityHeader",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534938-accessibilityheader",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/1534938-accessibilityheader",
-      "required": true,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The header for this table view."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535067-accessibilityindex": {
-      "title": "accessibilityIndex",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535067-accessibilityindex",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/1535067-accessibilityindex",
-      "required": true,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The index of the row or column represented by the element."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535014-accessibilityrowheaderuielements": {
-      "title": "accessibilityRowHeaderUIElements",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535014-accessibilityrowheaderuielements",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/1535014-accessibilityrowheaderuielements",
-      "required": true,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The row header elements for this table or outline."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534945-accessibilityrows": {
-      "title": "accessibilityRows",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534945-accessibilityrows",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/1534945-accessibilityrows",
-      "required": true,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The row elements for this table or outline."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534978-accessibilityselectedcolumns": {
-      "title": "accessibilitySelectedColumns",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534978-accessibilityselectedcolumns",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/1534978-accessibilityselectedcolumns",
-      "required": true,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The currently selected columns for this table or outline."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535125-accessibilityselectedrows": {
-      "title": "accessibilitySelectedRows",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535125-accessibilityselectedrows",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/1535125-accessibilityselectedrows",
-      "required": true,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The currently selected rows for this table or outline."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535150-accessibilityvisiblecolumns": {
-      "title": "accessibilityVisibleColumns",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535150-accessibilityvisiblecolumns",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/1535150-accessibilityvisiblecolumns",
-      "required": true,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The visible columns for this table or outline."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535004-accessibilityvisiblerows": {
-      "title": "accessibilityVisibleRows",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535004-accessibilityvisiblerows",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/1535004-accessibilityvisiblerows",
-      "required": true,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The visible rows for this table or outline."
+          "text": "Values that indicate the unit values of a ruler or layout area. "
         }
       ]
     },
@@ -383,27 +416,30 @@
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitysortdirection/nsaccessibilitysortdirectionunknown",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitysortdirection/nsaccessibilitysortdirectionascending",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitysortdirection/nsaccessibilitysortdirectiondescending"
-      ]
+      ],
+      "anchor": "1605776"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534988-accessibilitycolumnheaderuieleme",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535115-accessibilitycolumns",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535148-accessibilitycolumntitles",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535045-accessibilityexpanded",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534938-accessibilityheader",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535067-accessibilityindex",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535014-accessibilityrowheaderuielements",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534945-accessibilityrows",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534978-accessibilityselectedcolumns",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535125-accessibilityselectedrows",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534962-accessibilitysortdirection",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535150-accessibilityvisiblecolumns",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535004-accessibilityvisiblerows"
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityactionname",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityannotationattributekey",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityannotationposition",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityattributename",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityfontattributekey",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityorientation",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityorientationvalue",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityparameterizedattributename",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrole",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulermarkertype",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulermarkertypevalue",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulerunitvalue",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitysortdirectionvalue",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitysubrole",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityunits"
       ],
-      "title": "Configuring Table and Outline Views",
+      "title": "Accessibility Types",
       "generated": true
     }
   ],
@@ -504,7 +540,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

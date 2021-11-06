@@ -10,7 +10,8 @@
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/mapkit"
+        "doc://com.apple.documentation/documentation/mapkit",
+        "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations"
       ]
     ]
   },
@@ -33,30 +34,35 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.2",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)MKAnnotationView",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -90,6 +96,14 @@
       "type": "topic",
       "kind": "symbol",
       "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations": {
+      "title": "MapKit Annotations",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations",
+      "url": "/documentation/mapkit/mapkit_annotations",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/mapkit/mkmapview/1452672-dequeuereusableannotationviewwit": {
       "title": "dequeueReusableAnnotationViewWithIdentifier:",
@@ -262,6 +276,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/mapkit/mkannotationview/1827527-initwithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an annotation view using data from the specified unarchiver."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -747,66 +767,12 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/mapkit/mkoverlay": {
-      "title": "MKOverlay",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkoverlay",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/mapkit/mkoverlay",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An interface for associating content with a specific map region.  "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer": {
-      "title": "MKOverlayRenderer",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/mapkit/mkoverlayrenderer",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The shared infrastructure used to draw overlays on the map surface. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations": {
-      "title": "MapKit Annotations",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/mapkit/mapkit_annotations"
-    },
-    "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays": {
-      "title": "MapKit Overlays",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/mapkit/mapkit_overlays"
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -829,7 +795,8 @@
         "doc://com.apple.documentation/documentation/mapkit/mkannotationview/1827527-initwithcoder",
         "doc://com.apple.documentation/documentation/mapkit/mkannotationview/1451907-prepareforreuse",
         "doc://com.apple.documentation/documentation/mapkit/mkannotationview/2921514-preparefordisplay"
-      ]
+      ],
+      "anchor": "1658045"
     },
     {
       "kind": "taskGroup",
@@ -840,7 +807,8 @@
         "doc://com.apple.documentation/documentation/mapkit/mkannotationview/3547913-zpriority",
         "doc://com.apple.documentation/documentation/mapkit/mkannotationview/3547912-selectedzpriority",
         "doc://com.apple.documentation/documentation/mapkit/mkannotationviewzpriority"
-      ]
+      ],
+      "anchor": "2880864"
     },
     {
       "kind": "taskGroup",
@@ -853,7 +821,8 @@
         "doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452144-centeroffset",
         "doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452771-calloutoffset",
         "doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452060-reuseidentifier"
-      ]
+      ],
+      "anchor": "1658084"
     },
     {
       "kind": "taskGroup",
@@ -861,7 +830,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452381-setselected",
         "doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452777-selected"
-      ]
+      ],
+      "anchor": "1658171"
     },
     {
       "kind": "taskGroup",
@@ -873,7 +843,8 @@
         "doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452543-detailcalloutaccessoryview",
         "doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452545-leftcalloutoffset",
         "doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452036-rightcalloutoffset"
-      ]
+      ],
+      "anchor": "1658193"
     },
     {
       "kind": "taskGroup",
@@ -882,7 +853,8 @@
         "doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452401-draggable",
         "doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452639-setdragstate",
         "doc://com.apple.documentation/documentation/mapkit/mkannotationview/1451941-dragstate"
-      ]
+      ],
+      "anchor": "1658239"
     },
     {
       "kind": "taskGroup",
@@ -890,7 +862,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkannotationview/2873315-collisionmode",
         "doc://com.apple.documentation/documentation/mapkit/mkannotationviewcollisionmode"
-      ]
+      ],
+      "anchor": "2880863"
     },
     {
       "kind": "taskGroup",
@@ -899,34 +872,33 @@
         "doc://com.apple.documentation/documentation/mapkit/mkannotationview/decluttering_a_map_with_mapkit_annotation_clustering",
         "doc://com.apple.documentation/documentation/mapkit/mkannotationview/2867297-clusteringidentifier",
         "doc://com.apple.documentation/documentation/mapkit/mkannotationview/2867294-clusterannotationview"
-      ]
+      ],
+      "anchor": "2880862"
     },
     {
       "kind": "taskGroup",
       "title": "Constants",
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkannotationviewdragstate"
-      ]
+      ],
+      "anchor": "1675384"
     },
     {
       "kind": "taskGroup",
       "title": "Notifications",
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkannotationcalloutinfodidchangenotification"
-      ]
+      ],
+      "anchor": "1675424"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkplacemark",
-        "doc://com.apple.documentation/documentation/mapkit/mkannotation",
-        "doc://com.apple.documentation/documentation/mapkit/mkoverlay",
-        "doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer",
-        "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations",
-        "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays"
+        "doc://com.apple.documentation/documentation/mapkit/mkannotation"
       ],
-      "title": "Annotations and Overlays",
+      "title": "Shared Behavior",
       "generated": true
     }
   ],
@@ -964,6 +936,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -1337,7 +1310,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

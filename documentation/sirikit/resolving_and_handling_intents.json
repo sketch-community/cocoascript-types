@@ -34,8 +34,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -70,17 +70,17 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handler_objects": {
-      "title": "Dispatching Intents to Handler Objects",
+    "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handlers": {
+      "title": "Dispatching Intents to Handlers",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handler_objects",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handlers",
       "kind": "article",
       "role": "article",
-      "url": "/documentation/sirikit/dispatching_intents_to_handler_objects",
+      "url": "/documentation/sirikit/dispatching_intents_to_handlers",
       "abstract": [
         {
           "type": "text",
-          "text": "Provide SiriKit with an object capable of handling a given intent."
+          "text": "Provide SiriKit with an intent handler capable of handling a given intent."
         }
       ]
     },
@@ -154,34 +154,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_app_extension": {
-      "title": "Creating an Intents App Extension",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_app_extension",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/sirikit/creating_an_intents_app_extension",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Add and configure an Intents app extension in your Xcode project."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/structuring_your_code_to_support_app_extensions": {
-      "title": "Structuring Your Code to Support App Extensions",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/structuring_your_code_to_support_app_extensions",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/sirikit/structuring_your_code_to_support_app_extensions",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Move your back-end services to a private framework so your app and app extensions can use them."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents": {
       "title": "Resolving and Handling Intents",
       "type": "topic",
@@ -196,31 +168,31 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/inintenthandlerproviding": {
-      "title": "INIntentHandlerProviding",
+    "doc://com.apple.documentation/documentation/sirikit/inintent": {
+      "title": "INIntent",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintenthandlerproviding",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintent",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/inintenthandlerproviding",
+      "url": "/documentation/sirikit/inintent",
       "abstract": [
         {
           "type": "text",
-          "text": "The interface for dispatching intents to the custom objects that handle those intents. "
+          "text": "A request to fulfill in your app or Intents extension."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/intents_and_related_classes": {
-      "title": "Intents and Related Classes",
+    "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure": {
+      "title": "Intent Handling Infrastructure",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/intents_and_related_classes",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/sirikit/intents_and_related_classes",
+      "url": "/documentation/sirikit/intent_handling_infrastructure",
       "abstract": [
         {
           "type": "text",
-          "text": "Learn about the classes you use to build your Intents extension."
+          "text": "Specify required permissions and provide handlers for the intents your app supports, and configure app extensions."
         }
       ]
     },
@@ -238,22 +210,40 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/sirikit/resolution_results": {
+      "title": "Resolution Results",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/resolution_results",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/resolution_results",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolve common types of data like strings and dates into specific values that your app recognizes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/common_data_types": {
+      "title": "Common Data Types",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/common_data_types",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/common_data_types",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage common data types such as strings, dates, currencies, images, and contacts."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "topicSections": [
@@ -264,7 +254,8 @@
         "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/resolving_the_parameters_of_an_intent",
         "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/confirming_the_details_of_an_intent",
         "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/handling_an_intent"
-      ]
+      ],
+      "anchor": "2864161"
     },
     {
       "kind": "taskGroup",
@@ -272,20 +263,22 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult",
         "doc://com.apple.documentation/documentation/sirikit/inintentresponse"
-      ]
+      ],
+      "anchor": "2864160"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_app_extension",
-        "doc://com.apple.documentation/documentation/sirikit/structuring_your_code_to_support_app_extensions",
-        "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handler_objects",
-        "doc://com.apple.documentation/documentation/sirikit/inintenthandlerproviding",
-        "doc://com.apple.documentation/documentation/sirikit/intents_and_related_classes",
-        "doc://com.apple.documentation/documentation/sirikit/providing_hands-free_app_control_with_intents"
+        "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handlers",
+        "doc://com.apple.documentation/documentation/sirikit/inintent",
+        "doc://com.apple.documentation/documentation/sirikit/inintentresponse",
+        "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure",
+        "doc://com.apple.documentation/documentation/sirikit/providing_hands-free_app_control_with_intents",
+        "doc://com.apple.documentation/documentation/sirikit/resolution_results",
+        "doc://com.apple.documentation/documentation/sirikit/common_data_types"
       ],
-      "title": "Siri Intents",
+      "title": "Intents",
       "generated": true
     }
   ],
@@ -327,7 +320,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

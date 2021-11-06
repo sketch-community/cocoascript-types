@@ -2,16 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Used to create a URL that you can pass to the "
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622961-openurl"
-    },
-    {
-      "type": "text",
-      "text": " method. When you open the URL built from this string, the system launches the Settings app and displays the app’s custom settings, if it has any. "
+      "text": "A string used to create a URL to open Settings."
     }
   ],
   "documentVersion": 0,
@@ -44,25 +35,30 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@UIApplicationOpenSettingsURLString",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -113,32 +109,6 @@
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622961-openurl": {
-      "title": "openURL:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622961-openurl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1622961-openurl",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "openURL:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsstring": {
-      "title": "NSString",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsstring"
-    },
     "doc://com.apple.documentation/documentation/uikit/uiapplication/1648685-openurl": {
       "title": "openURL:options:completionHandler:",
       "type": "topic",
@@ -146,12 +116,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiapplication/1648685-openurl",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Attempts to open the resource at the specified URL asynchronously."
-        }
-      ],
       "fragments": [
         {
           "kind": "text",
@@ -163,43 +127,21 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622952-canopenurl": {
-      "title": "canOpenURL:",
+    "link-3678626": {
+      "title": "Human Interface Guidelines",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622952-canopenurl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1622952-canopenurl",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean value indicating whether an app is available to handle a URL scheme."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "canOpenURL:"
-        }
-      ]
+      "identifier": "link-3678626",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/settings/"
     },
-    "doc://com.apple.documentation/documentation/uikit/uiapplicationopenexternalurloptionskey": {
-      "title": "UIApplicationOpenExternalURLOptionsKey",
+    "doc://com.apple.documentation/documentation/foundation/nsstring": {
+      "title": "NSString",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationopenexternalurloptionskey",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiapplicationopenexternalurloptionskey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Options for opening a URL."
-        }
-      ]
+      "url": "/documentation/foundation/nsstring"
     },
     "doc://com.apple.documentation/documentation/uikit/uiapplicationopensettingsurlstring": {
       "title": "UIApplicationOpenSettingsURLString",
@@ -211,16 +153,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Used to create a URL that you can pass to the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622961-openurl"
-        },
-        {
-          "type": "text",
-          "text": " method. When you open the URL built from this string, the system launches the Settings app and displays the app’s custom settings, if it has any. "
+          "text": "A string used to create a URL to open Settings."
         }
       ]
     },
@@ -232,17 +165,6 @@
       "title": "Technologies"
     }
   },
-  "seeAlsoSections": [
-    {
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1648685-openurl",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1622952-canopenurl",
-        "doc://com.apple.documentation/documentation/uikit/uiapplicationopenexternalurloptionskey"
-      ],
-      "title": "Opening a URL Resource",
-      "generated": true
-    }
-  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -281,15 +203,63 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you open the URL built from this string, the system launches the Settings app and displays the app’s custom settings, if it has any. Use this string with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1648685-openurl"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For design guidance, see "
+            },
+            {
+              "type": "link",
+              "title": "Human Interface Guidelines",
+              "destination": "https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/settings/"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

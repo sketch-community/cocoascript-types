@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The video composition instruction to use to compose the frame."
+      "text": "A video composition instruction that indicates how to compose the frame."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAsynchronousVideoCompositionRequest(py)videoCompositionInstruction",
+    "parent": {
+      "title": "AVAsynchronousVideoCompositionRequest"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,7 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that contains the information necessary for a video compositor to render an output pixel buffer."
+          "text": "An object that contains information a video compositor needs to render an output pixel buffer."
         }
       ]
     },
@@ -142,7 +150,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The time for which the frame should be composed."
+          "text": "A time for which to compose the frame."
         }
       ]
     },
@@ -156,21 +164,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The video composition render context making the request."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1388898-sourcetrackids": {
-      "title": "sourceTrackIDs",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1388898-sourcetrackids",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/1388898-sourcetrackids",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The track IDs of all the source buffers that are available to compose the frame."
+          "text": "The rendering context of the video composition."
         }
       ]
     },
@@ -184,7 +178,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The video composition instruction to use to compose the frame."
+          "text": "A video composition instruction that indicates how to compose the frame."
         }
       ]
     },
@@ -200,10 +194,9 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386888-compositiontime",
-        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1389112-rendercontext",
-        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1388898-sourcetrackids"
+        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1389112-rendercontext"
       ],
-      "title": "Getting the Composition Request Settings",
+      "title": "Inspecting the Request",
       "generated": true
     }
   ],
@@ -253,6 +246,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -262,7 +256,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

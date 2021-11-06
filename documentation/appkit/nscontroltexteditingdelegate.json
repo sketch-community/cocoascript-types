@@ -44,15 +44,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.6",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSControlTextEditingDelegate",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -119,6 +119,14 @@
       "role": "symbol",
       "url": "/documentation/objectivec/1418956-nsobject"
     },
+    "doc://com.apple.documentation/documentation/appkit/nstableviewdelegate": {
+      "title": "NSTableViewDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstableviewdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstableviewdelegate"
+    },
     "doc://com.apple.documentation/documentation/appkit/nstextfielddelegate": {
       "title": "NSTextFieldDelegate",
       "type": "topic",
@@ -140,14 +148,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nsmatrixdelegate"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nstableviewdelegate": {
-      "title": "NSTableViewDelegate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstableviewdelegate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nstableviewdelegate"
     },
     "doc://com.apple.documentation/documentation/appkit/nsoutlineviewdelegate": {
       "title": "NSOutlineViewDelegate",
@@ -348,6 +348,12 @@
       "role": "symbol",
       "url": "/documentation/appkit/nscontroltexteditingdelegate/3005176-controltextdidbeginediting",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the control started editing its text content."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -367,6 +373,12 @@
       "role": "symbol",
       "url": "/documentation/appkit/nscontroltexteditingdelegate/3005177-controltextdidchange",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the control made changes to its text content."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -386,6 +398,12 @@
       "role": "symbol",
       "url": "/documentation/appkit/nscontroltexteditingdelegate/3005178-controltextdidendediting",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the control finished editing its text content and committed the changes."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -456,14 +474,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate/1428873-control",
         "doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate/1428941-control"
-      ]
+      ],
+      "anchor": "1661551"
     },
     {
       "kind": "taskGroup",
       "title": "Responding to Text Formatting",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate/1428883-control"
-      ]
+      ],
+      "anchor": "1661585"
     },
     {
       "kind": "taskGroup",
@@ -471,21 +491,24 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate/1428865-control",
         "doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate/1428984-control"
-      ]
+      ],
+      "anchor": "1661605"
     },
     {
       "kind": "taskGroup",
       "title": "Working with Text Completion",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate/1428925-control"
-      ]
+      ],
+      "anchor": "1661633"
     },
     {
       "kind": "taskGroup",
       "title": "Working with Key Bindings",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate/1428898-control"
-      ]
+      ],
+      "anchor": "1661650"
     },
     {
       "kind": "taskGroup",
@@ -494,7 +517,8 @@
         "doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate/3005176-controltextdidbeginediting",
         "doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate/3005177-controltextdidchange",
         "doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate/3005178-controltextdidendediting"
-      ]
+      ],
+      "anchor": "3006920"
     }
   ],
   "seeAlsoSections": [
@@ -536,7 +560,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

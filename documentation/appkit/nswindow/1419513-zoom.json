@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "This action method toggles the size and location of the window between its standard state (provided by the application as the “best” size to display the window’s data) and its user state (a new size and location the user may have set by moving or resizing the window)."
+      "text": "Toggles the size and location of the window between its standard state (which the application provides as the best size to display the window’s data) and its user state (a new size and location the user may have set by moving or resizing the window)."
     }
   ],
   "documentVersion": 0,
@@ -35,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSWindow(im)zoom:",
+    "parent": {
+      "title": "NSWindow"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -128,7 +131,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "This action method toggles the size and location of the window between its standard state (provided by the application as the “best” size to display the window’s data) and its user state (a new size and location the user may have set by moving or resizing the window)."
+          "text": "Toggles the size and location of the window between its standard state (which the application provides as the best size to display the window’s data) and its user state (a new size and location the user may have set by moving or resizing the window)."
         }
       ],
       "fragments": [
@@ -625,7 +628,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The "
+              "text": "Typically, the system invokes the "
             },
             {
               "type": "reference",
@@ -634,7 +637,7 @@
             },
             {
               "type": "text",
-              "text": " method is typically invoked after a user clicks the window’s zoom box but may also be invoked programmatically from the "
+              "text": " method after a user clicks the window’s zoom box, and "
             },
             {
               "type": "reference",
@@ -643,7 +646,16 @@
             },
             {
               "type": "text",
-              "text": " method. It performs the following steps:"
+              "text": " may also invoke "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419513-zoom"
+            },
+            {
+              "type": "text",
+              "text": " programmatically. It performs the following steps:"
             }
           ]
         },
@@ -666,7 +678,16 @@
                     },
                     {
                       "type": "text",
-                      "text": " method, if the delegate or the window class implements it, to obtain a “best fit” frame for the window. If neither the delegate nor the window class implements the method, uses a default frame that nearly fills the current screen, which is defined to be the screen containing the largest part of the window’s current frame."
+                      "text": " method, if the delegate or the window class implements it, to obtain a “best fit” frame for the window. If neither the delegate nor the window class implements the method, "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419513-zoom"
+                    },
+                    {
+                      "type": "text",
+                      "text": " uses a default frame. The default frame nearly fills the current screen that contains the largest part of the window’s current frame."
                     }
                   ]
                 }
@@ -692,7 +713,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "Compares the resulting frame to the current frame to determine whether the window’s standard frame is currently displayed. If the current frame is within a few pixels of the standard frame in size and location, it is considered a match."
+                      "text": "Compares the resulting frame to the current frame to determine whether the window’s standard frame is currently displayed. If the current frame is within a few pixels of the standard frame in size and location, the system considers it a match."
                     }
                   ]
                 }
@@ -705,7 +726,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "Determines a new frame. If the window is currently in the standard state, the new frame represents the user state, saved during a previous zoom. If the window is currently in the user state, the new frame represents the standard state, computed in step 1 above. If there is no saved user state because there has been no previous zoom, the size and location of the window do not change."
+                      "text": "Determines a new frame. If the window is currently in the standard state, the new frame represents the user state, saved during a previous zoom. If the window is currently in the user state, the new frame represents the standard state, computed in step 1 above. If there’s no saved user state because there has been no previous zoom, the size and location of the window don’t change."
                     }
                   ]
                 }
@@ -763,7 +784,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " if zooming is not currently allowed."
+                      "text": " if zooming isn’t currently allowed."
                     }
                   ]
                 }
@@ -788,7 +809,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Constants describing the appearance of the list. "
+      "text": "Constants that describe the appearance of the list. "
     }
   ],
   "documentVersion": 0,
@@ -38,25 +38,33 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "Xcode",
         "introducedAt": "12.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:5UIKit35UICollectionLayoutListConfigurationV10AppearanceO",
+    "parent": {
+      "title": "UICollectionLayoutListConfiguration"
+    },
     "symbolKind": "enum",
     "fragments": [
       {
@@ -70,8 +78,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -263,6 +271,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uicollectionlayoutlistconfiguration/appearance/3600912",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An operator for checking whether two list appearances are equal."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -285,6 +299,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uicollectionlayoutlistconfiguration/appearance/3600911",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An operator for checking whether two list appearances are unequal."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -307,6 +327,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uicollectionlayoutlistconfiguration/appearance/3600914-hash",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Hashes the essential components of the list appearance type by feeding them into the hasher."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -337,6 +363,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uicollectionlayoutlistconfiguration/appearance/3600915-hashvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The hash value."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -408,34 +440,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/3603386-showsseparators": {
-      "title": "showsSeparators",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/3603386-showsseparators",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uicollectionlayoutlistconfiguration/3603386-showsseparators",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that determines whether the list shows separators between cells. "
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "showsSeparators"
-        },
-        {
-          "kind": "text",
-          "text": ": Bool"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/appearance": {
       "title": "UICollectionLayoutListConfiguration.Appearance",
       "type": "topic",
@@ -446,7 +450,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants describing the appearance of the list. "
+          "text": "Constants that describe the appearance of the list. "
         }
       ],
       "fragments": [
@@ -478,7 +482,8 @@
         "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/appearance/insetgrouped",
         "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/appearance/sidebar",
         "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/appearance/sidebarplain"
-      ]
+      ],
+      "anchor": "3618432"
     },
     {
       "kind": "taskGroup",
@@ -488,15 +493,15 @@
         "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/appearance/3600911",
         "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/appearance/3600914-hash",
         "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/appearance/3600915-hashvalue"
-      ]
+      ],
+      "anchor": "3618429"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/3600932-appearance",
-        "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/3600933-backgroundcolor",
-        "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/3603386-showsseparators"
+        "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/3600933-backgroundcolor"
       ],
       "title": "Configuring Appearance",
       "generated": true
@@ -536,6 +541,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -544,7 +550,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

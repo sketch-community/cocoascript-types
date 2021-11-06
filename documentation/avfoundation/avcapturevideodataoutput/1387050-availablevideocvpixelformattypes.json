@@ -2,16 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Indicates the supported video pixel formats that can be specified in "
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings"
-    },
-    {
-      "type": "text",
-      "text": "."
+      "text": "The video pixel formats the output supports."
     }
   ],
   "documentVersion": 0,
@@ -44,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "5.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "introducedAt": "14.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVCaptureVideoDataOutput(py)availableVideoCVPixelFormatTypes",
+    "parent": {
+      "title": "AVCaptureVideoDataOutput"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -109,20 +108,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings": {
-      "title": "videoSettings",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The compression settings for the output."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/corevideo/kcvpixelbufferpixelformattypekey": {
       "title": "kCVPixelBufferPixelFormatTypeKey",
       "type": "topic",
@@ -131,28 +116,13 @@
       "role": "symbol",
       "url": "/documentation/corevideo/kcvpixelbufferpixelformattypekey"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1389227-availablevideocodectypes": {
-      "title": "availableVideoCodecTypes",
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings": {
+      "title": "videoSettings",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1389227-availablevideocodectypes",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturevideodataoutput/1389227-availablevideocodectypes",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Indicates the supported video codec formats that can be specified in "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings"
-        },
-        {
-          "type": "text",
-          "text": "."
-        }
-      ]
+      "url": "/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings"
     },
     "doc://com.apple.documentation/documentation/foundation/nsarray": {
       "title": "NSArray",
@@ -180,16 +150,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates the supported video pixel formats that can be specified in "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings"
-        },
+          "text": "The video pixel formats the output supports."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1389227-availablevideocodectypes": {
+      "title": "availableVideoCodecTypes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1389227-availablevideocodectypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturevideodataoutput/1389227-availablevideocodectypes",
+      "abstract": [
         {
           "type": "text",
-          "text": "."
+          "text": "The video codecs the output supports."
         }
       ]
     },
@@ -200,6 +175,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/avfoundation/avcapturevideodataoutput/2867901-availablevideocodectypesforasset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The video codecs the output supports for writing video to the output file."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -221,7 +202,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of constants used to describe codecs for video capture."
+          "text": "A set of constants that describe the codecs the system supports for video capture."
         }
       ]
     },
@@ -242,13 +223,6 @@
       ],
       "title": "Retrieving Supported Video Types",
       "generated": true
-    },
-    {
-      "title": "Related Documentation",
-      "generated": false,
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings"
-      ]
     }
   ],
   "primaryContentSections": [
@@ -299,6 +273,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -345,7 +320,7 @@
             },
             {
               "type": "text",
-              "text": " property.  The first format in the returned list is the most efficient output format."
+              "text": " property. The first format in the returned list is the most efficient output format."
             }
           ]
         }
@@ -353,7 +328,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -41,25 +41,33 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UIActivityItemSource(im)activityViewController:thumbnailImageForActivityType:suggestedSize:",
+    "parent": {
+      "title": "UIActivityItemSource"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -132,14 +140,6 @@
       "role": "symbol",
       "url": "/documentation/uikit/uiscreen/1617836-scale"
     },
-    "doc://com.apple.documentation/documentation/foundation/nsdata": {
-      "title": "NSData",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsdata"
-    },
     "doc://com.apple.documentation/documentation/uikit/uiimage": {
       "title": "UIImage",
       "type": "topic",
@@ -208,16 +208,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "For items that are provided as "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata"
-        },
-        {
-          "type": "text",
-          "text": ", returns the UTI for the item."
+          "text": "For items that are provided as data, returns the UTI for the item."
         }
       ],
       "fragments": [
@@ -386,6 +377,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -473,7 +465,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

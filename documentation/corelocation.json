@@ -27,33 +27,38 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.6",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -104,16 +109,6 @@
       "identifier": "media-3379954",
       "type": "image",
       "variants": [
-        {
-          "traits": [
-            "1x"
-          ],
-          "size": {
-            "width": 262,
-            "height": 512
-          },
-          "url": "https://docs-assets.developer.apple.com/published/2b4891acf8/189f158a-f24f-49c6-a366-43e23c73c70e.png"
-        },
         {
           "traits": [
             "2x"
@@ -313,6 +308,33 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationdefaultaccuracyreduced": {
+      "title": "NSLocationDefaultAccuracyReduced",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationdefaultaccuracyreduced",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nslocationdefaultaccuracyreduced",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the app requests reduced location accuracy by default."
+        }
+      ],
+      "titleStyle": "symbol",
+      "name": "NSLocationDefaultAccuracyReduced",
+      "ideTitle": "Privacy - Location Default Accuracy Reduced",
+      "fragments": [
+        {
+          "kind": "label",
+          "text": "property list key "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSLocationDefaultAccuracyReduced"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationalwaysusagedescription": {
       "title": "NSLocationAlwaysUsageDescription",
       "type": "topic",
@@ -410,6 +432,14 @@
           "text": "Information about the user's location during a specific period of time. "
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationsourceinformation": {
+      "title": "CLLocationSourceInformation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationsourceinformation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationsourceinformation"
     },
     "doc://com.apple.documentation/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions": {
       "title": "Monitoring the User's Proximity to Geographic Regions",
@@ -607,20 +637,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/corelocation/kclerroruserinfoalternateregionkey": {
-      "title": "kCLErrorUserInfoAlternateRegionKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/kclerroruserinfoalternateregionkey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corelocation/kclerroruserinfoalternateregionkey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A key in the user information dictionary of an error relating to a delayed region monitoring response. "
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/corelocation/kclerrordomain": {
       "title": "kCLErrorDomain",
       "type": "topic",
@@ -635,22 +651,26 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/corelocation/kclerroruserinfoalternateregionkey": {
+      "title": "kCLErrorUserInfoAlternateRegionKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/kclerroruserinfoalternateregionkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/kclerroruserinfoalternateregionkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key in the user information dictionary of an error relating to a delayed region monitoring response. "
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "topicSections": [
@@ -661,7 +681,8 @@
         "doc://com.apple.documentation/documentation/corelocation/adding_location_services_to_your_app",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate"
-      ]
+      ],
+      "anchor": "2851644"
     },
     {
       "kind": "taskGroup",
@@ -675,8 +696,10 @@
         "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationalwaysandwheninuseusagedescription",
         "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationwheninuseusagedescription",
         "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationusagedescription",
+        "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationdefaultaccuracyreduced",
         "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationalwaysusagedescription"
-      ]
+      ],
+      "anchor": "3376462"
     },
     {
       "kind": "taskGroup",
@@ -686,8 +709,10 @@
         "doc://com.apple.documentation/documentation/corelocation/cllocation",
         "doc://com.apple.documentation/documentation/corelocation/cllocationcoordinate2d",
         "doc://com.apple.documentation/documentation/corelocation/clfloor",
-        "doc://com.apple.documentation/documentation/corelocation/clvisit"
-      ]
+        "doc://com.apple.documentation/documentation/corelocation/clvisit",
+        "doc://com.apple.documentation/documentation/corelocation/cllocationsourceinformation"
+      ],
+      "anchor": "2851645"
     },
     {
       "kind": "taskGroup",
@@ -697,6 +722,7 @@
         "doc://com.apple.documentation/documentation/corelocation/clcircularregion",
         "doc://com.apple.documentation/documentation/corelocation/clregion"
       ],
+      "anchor": "2851646",
       "abstract": [
         {
           "type": "text",
@@ -713,7 +739,8 @@
         "doc://com.apple.documentation/documentation/corelocation/clbeacon",
         "doc://com.apple.documentation/documentation/corelocation/clbeaconregion",
         "doc://com.apple.documentation/documentation/corelocation/clbeaconidentityconstraint"
-      ]
+      ],
+      "anchor": "2851647"
     },
     {
       "kind": "taskGroup",
@@ -722,6 +749,7 @@
         "doc://com.apple.documentation/documentation/corelocation/getting_heading_and_course_information",
         "doc://com.apple.documentation/documentation/corelocation/clheading"
       ],
+      "anchor": "2851642",
       "abstract": [
         {
           "type": "text",
@@ -736,16 +764,18 @@
         "doc://com.apple.documentation/documentation/corelocation/converting_between_coordinates_and_user-friendly_place_names",
         "doc://com.apple.documentation/documentation/corelocation/clgeocoder",
         "doc://com.apple.documentation/documentation/corelocation/clplacemark"
-      ]
+      ],
+      "anchor": "2851643"
     },
     {
       "kind": "taskGroup",
       "title": "Errors",
       "identifiers": [
         "doc://com.apple.documentation/documentation/corelocation/clerror",
-        "doc://com.apple.documentation/documentation/corelocation/kclerroruserinfoalternateregionkey",
-        "doc://com.apple.documentation/documentation/corelocation/kclerrordomain"
-      ]
+        "doc://com.apple.documentation/documentation/corelocation/kclerrordomain",
+        "doc://com.apple.documentation/documentation/corelocation/kclerroruserinfoalternateregionkey"
+      ],
+      "anchor": "2851650"
     }
   ],
   "seeAlsoSections": [
@@ -940,7 +970,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

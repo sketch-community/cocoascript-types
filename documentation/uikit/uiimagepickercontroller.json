@@ -34,20 +34,25 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIImagePickerController",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -780,16 +785,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -815,7 +810,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619145-delegate",
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontrollerdelegate"
-      ]
+      ],
+      "anchor": "2919380"
     },
     {
       "kind": "taskGroup",
@@ -825,7 +821,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619144-issourcetypeavailable",
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619167-sourcetype",
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontrollersourcetype"
-      ]
+      ],
+      "anchor": "1658374"
     },
     {
       "kind": "taskGroup",
@@ -834,7 +831,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619173-mediatypes",
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619137-allowsediting",
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619115-allowsimageediting"
-      ]
+      ],
+      "anchor": "1658398"
     },
     {
       "kind": "taskGroup",
@@ -843,7 +841,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619154-videoquality",
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontrollerqualitytype",
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619146-videomaximumduration"
-      ]
+      ],
+      "anchor": "1658434"
     },
     {
       "kind": "taskGroup",
@@ -852,7 +851,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619129-showscameracontrols",
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619113-cameraoverlayview",
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619142-cameraviewtransform"
-      ]
+      ],
+      "anchor": "1658463"
     },
     {
       "kind": "taskGroup",
@@ -861,7 +861,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619160-takepicture",
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619123-startvideocapture",
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619140-stopvideocapture"
-      ]
+      ],
+      "anchor": "1658493"
     },
     {
       "kind": "taskGroup",
@@ -870,7 +871,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619159-iscameradeviceavailable",
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619117-cameradevice",
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontrollercameradevice"
-      ]
+      ],
+      "anchor": "1658527"
     },
     {
       "kind": "taskGroup",
@@ -879,7 +881,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619127-availablecapturemodesforcamerade",
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619141-cameracapturemode",
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontrollercameracapturemode"
-      ]
+      ],
+      "anchor": "2919381"
     },
     {
       "kind": "taskGroup",
@@ -888,7 +891,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619118-isflashavailableforcameradevice",
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619124-cameraflashmode",
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontrollercameraflashmode"
-      ]
+      ],
+      "anchor": "2919382"
     },
     {
       "kind": "taskGroup",
@@ -897,7 +901,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/2897484-imageexportpreset",
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontrollerimageurlexportpreset",
         "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/2890964-videoexportpreset"
-      ]
+      ],
+      "anchor": "1674202"
     }
   ],
   "seeAlsoSections": [
@@ -943,6 +948,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -1520,7 +1526,7 @@
             },
             {
               "type": "text",
-              "text": " property. When a user taps the Share button to send a movie to MMS, MobileMe, YouTube, or another destination, an appropriate duration limit and an appropriate video quality are enforced."
+              "text": " property. When a user taps the Share button to send a movie to MMS, YouTube, or another destination, an appropriate duration limit and an appropriate video quality are enforced."
             }
           ]
         },
@@ -1738,7 +1744,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

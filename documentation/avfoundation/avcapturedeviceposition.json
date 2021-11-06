@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Constants to specify the position of a capture device."
+      "text": "Constants that indicate the physical position of a capture device."
     }
   ],
   "documentVersion": 0,
@@ -17,6 +17,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/arkit",
+        "doc://com.apple.documentation/documentation/arkit/configuration_objects",
         "doc://com.apple.documentation/documentation/arkit/arconfiguration",
         "doc://com.apple.documentation/documentation/arkit/arvideoformat"
       ]
@@ -41,25 +42,30 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "introducedAt": "14.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:@T@AVCaptureDevicePosition",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -118,6 +124,14 @@
       "kind": "symbol",
       "role": "collection"
     },
+    "doc://com.apple.documentation/documentation/arkit/configuration_objects": {
+      "title": "Configuration Objects",
+      "identifier": "doc://com.apple.documentation/documentation/arkit/configuration_objects",
+      "url": "/documentation/arkit/configuration_objects",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
     "doc://com.apple.documentation/documentation/arkit/arconfiguration": {
       "title": "ARConfiguration",
       "identifier": "doc://com.apple.documentation/documentation/arkit/arconfiguration",
@@ -152,7 +166,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The capture device is on the front of the unit."
+          "text": "A value that indicates a capture device is on the front side of an iOS device."
         }
       ]
     },
@@ -166,7 +180,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The capture device is on the back of the unit."
+          "text": "A value that indicates a capture device is on the back side of an iOS device."
         }
       ]
     },
@@ -180,7 +194,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The capture device’s position relative to the system hardware is unspecified."
+          "text": "A value that indicates the capture device’s position isn’t specified."
         }
       ]
     },
@@ -266,7 +280,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants to specify the position of a capture device."
+          "text": "Constants that indicate the physical position of a capture device."
         }
       ]
     },
@@ -308,7 +322,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when a new device becomes available."
+          "text": "A notification the system posts when a new capture device becomes available."
         }
       ]
     },
@@ -322,7 +336,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when an existing device becomes unavailable."
+          "text": "A notification the system posts when an existing device becomes unavailable."
         }
       ]
     },
@@ -387,12 +401,13 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Constants",
+      "title": "Positions",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceposition/avcapturedevicepositionfront",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceposition/avcapturedevicepositionback",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceposition/avcapturedevicepositionunspecified"
-      ]
+      ],
+      "anchor": "1604243"
     }
   ],
   "seeAlsoSections": [
@@ -474,6 +489,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -482,7 +498,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

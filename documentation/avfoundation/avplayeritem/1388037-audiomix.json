@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVPlayerItem(py)audioMix",
+    "parent": {
+      "title": "AVPlayerItem"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,7 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to model the timing and presentation state of an asset played by the player."
+          "text": "An object that models the timing and presentation state of an asset that a player object presents."
         }
       ]
     },
@@ -156,6 +164,49 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat": {
+      "title": "allowedAudioSpatializationFormats",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The source audio channel layouts the player item supports for spatialization."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats": {
+      "title": "AVAudioSpatializationFormats",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiospatializationformats",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that defines the spatialization formats that a player item supports."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed": {
+      "title": "audioSpatializationAllowed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the player item allows spatialized audio playback."
+        }
+      ],
+      "deprecated": true
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -164,22 +215,15 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1385855-audiotimepitchalgorithm"
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1385855-audiotimepitchalgorithm",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed"
       ],
-      "title": "Configuring Audio Rendering",
+      "title": "Configuring Audio",
       "generated": true
     }
   ],
@@ -221,6 +265,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -251,7 +296,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

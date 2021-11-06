@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An object that encapsulates information about a resource request issued by a resource loader object."
+      "text": "An object that encapsulates information about a resource request from a resource loader object."
     }
   ],
   "documentVersion": 0,
@@ -34,30 +34,35 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetResourceLoadingRequest",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -180,7 +185,8 @@
           "kind": "identifier",
           "text": "streamingContentKeyRequestDataForApp:contentIdentifier:options:error:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetresourceloadingrequest/1623676-persistentcontentkeyfromkeyvendo": {
       "title": "persistentContentKeyFromKeyVendorResponse:options:error:",
@@ -204,7 +210,8 @@
           "kind": "identifier",
           "text": "persistentContentKeyFromKeyVendorResponse:options:error:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetresourceloadingrequest/1390340-contentinformationrequest": {
       "title": "contentInformationRequest",
@@ -373,7 +380,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Methods you can implement to handle resource loading requests coming from a URL asset. "
+          "text": "Methods you can implement to handle resource-loading requests coming from a URL asset. "
         }
       ]
     },
@@ -387,7 +394,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that encapsulates information about a resource request issued by a resource loader object."
+          "text": "An object that encapsulates information about a resource request from a resource loader object."
         }
       ]
     },
@@ -401,7 +408,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that encapsulates information about a resource request issued by a resource loader to renew a previously issued request."
+          "text": "An object that encapsulates information about a resource request from a resource loader to renew a previously issued request."
         }
       ]
     },
@@ -415,7 +422,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that contains information about the originator of a loading request."
+          "text": "An object that contains information about the originator of a resource-loading request."
         }
       ]
     },
@@ -429,7 +436,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to request data from a resource referenced by an asset resource loading request."
+          "text": "An object for requesting data from a resource that an asset resource-loading request references."
         }
       ]
     },
@@ -443,7 +450,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A query used to get essential information about a resource referenced by an asset resource loading request."
+          "text": "A query for retrieving essential information about a resource that an asset resource-loading request references."
         }
       ]
     },
@@ -453,16 +460,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -487,7 +484,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avassetresourceloadingrequest/1390340-contentinformationrequest",
         "doc://com.apple.documentation/documentation/avfoundation/avassetresourceloadingrequest/1388779-datarequest",
         "doc://com.apple.documentation/documentation/avfoundation/avassetresourceloadingrequest/1390854-redirect"
-      ]
+      ],
+      "anchor": "1669732"
     },
     {
       "kind": "taskGroup",
@@ -499,7 +497,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avassetresourceloadingrequest/1389518-cancelled",
         "doc://com.apple.documentation/documentation/avfoundation/avassetresourceloadingrequest/1390491-finishloadingwitherror",
         "doc://com.apple.documentation/documentation/avfoundation/avassetresourceloadingrequest/1389270-finished"
-      ]
+      ],
+      "anchor": "1669819"
     }
   ],
   "seeAlsoSections": [
@@ -550,6 +549,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -597,7 +597,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A base class that implements the behavior required of a Core Data model object."
+      "text": "A base class that implements the behavior for a Core Data model object."
     }
   ],
   "documentVersion": 0,
@@ -39,35 +39,40 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSManagedObject",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -117,14 +122,6 @@
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextobjectsdidchangenotification": {
-      "title": "NSManagedObjectContextObjectsDidChangeNotification",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextobjectsdidchangenotification",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontextobjectsdidchangenotification"
     },
     "doc://com.apple.documentation/documentation/coredata/nsattributedescription": {
       "title": "NSAttributeDescription",
@@ -718,7 +715,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Provides an opportunity to add code into the life cycle of the managed object when it is turned into a fault."
+          "text": "Provides an opportunity to add code into the life cycle of the managed object after converting it to a fault."
         }
       ],
       "fragments": [
@@ -742,7 +739,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Provides an opportunity to add code into the life cycle of the managed object before it is converted to a fault."
+          "text": "Provides an opportunity to add code into the life cycle of the managed object before converting it to a fault."
         }
       ],
       "fragments": [
@@ -766,7 +763,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Provides an opportunity to add code into the life cycle of the managed object when it is being fulfilled from a fault."
+          "text": "Provides an opportunity to add code into the life cycle of the managed object when fufilling it from a fault."
         }
       ],
       "fragments": [
@@ -878,7 +875,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A base class that implements the behavior required of a Core Data model object."
+          "text": "A base class that implements the behavior for a Core Data model object."
         }
       ]
     },
@@ -992,7 +989,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether instances of the class should be marked as having changes if an unmodeled property is changed."
+          "text": "A Boolean value that indicates whether to mark instances of the class as having changes when an unmodeled property changes."
         }
       ]
     },
@@ -1006,7 +1003,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Provides an opportunity to add code into the life cycle of the managed object when it is initially created."
+          "text": "Provides an opportunity to add code into the life cycle of the managed object when initially creating it."
         }
       ],
       "fragments": [
@@ -1030,7 +1027,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Provides an opportunity to add code into the life cycle of the managed object when it is being fulfilled from a snapshot."
+          "text": "Provides an opportunity to add code into the life cycle of the managed object when fulfilling it from a snapshot."
         }
       ],
       "fragments": [
@@ -1054,7 +1051,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a dictionary containing the keys and (old) values of persistent properties that have been changed since the last fetching or saving of the managed object."
+          "text": "Returns a dictionary containing the keys and new values of persistent properties with changes since the last fetching or saving of the managed object."
         }
       ],
       "fragments": [
@@ -1078,16 +1075,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a dictionary containing the keys and old values of persistent properties that have changed since the last posting of "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextobjectsdidchangenotification"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "Returns a dictionary containing the keys and new values of persistent properties with changes since the last fetching or saving of the managed object."
         }
       ],
       "fragments": [
@@ -1111,7 +1099,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a dictionary of the last fetched or saved values of the managed object for the properties specified by the given keys."
+          "text": "Returns a dictionary of the most recent fetched or saved values of the managed object for the properties of the specified keys."
         }
       ],
       "fragments": [
@@ -1135,7 +1123,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Provides an opportunity to add code into the life cycle of the managed object when it is about to be deleted."
+          "text": "Provides an opportunity to add code into the life cycle of the managed object before deleting it."
         }
       ],
       "fragments": [
@@ -1159,7 +1147,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Provides an opportunity to add code into the life cycle of the managed object when it is about to be saved."
+          "text": "Provides an opportunity to add code into the life cycle of the managed object before saving it."
         }
       ],
       "fragments": [
@@ -1207,7 +1195,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new fetch request initialized with the entity represented by this subclass."
+          "text": "Returns an initialized fetch request with the entity this subclass represents."
         }
       ],
       "fragments": [
@@ -1661,16 +1649,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -1684,11 +1662,12 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Initializing a Managed Object",
+      "title": "Creating a Managed Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506357-initwithentity",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1640602-initwithcontext"
-      ]
+      ],
+      "anchor": "1654049"
     },
     {
       "kind": "taskGroup",
@@ -1697,7 +1676,8 @@
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506562-entity",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506848-objectid",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1640588-entity"
-      ]
+      ],
+      "anchor": "1654063"
     },
     {
       "kind": "taskGroup",
@@ -1712,7 +1692,8 @@
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506720-faultingstate",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506973-hasfaultforrelationshipnamed",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506240-haspersistentchangedvalues"
-      ]
+      ],
+      "anchor": "1654095"
     },
     {
       "kind": "taskGroup",
@@ -1731,7 +1712,8 @@
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506537-willturnintofault",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506470-didturnintofault",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1640605-fetchrequest"
-      ]
+      ],
+      "anchor": "1654176"
     },
     {
       "kind": "taskGroup",
@@ -1743,7 +1725,8 @@
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506728-primitivevalueforkey",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506960-setprimitivevalue",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506201-objectidsforrelationshipnamed"
-      ]
+      ],
+      "anchor": "1654288"
     },
     {
       "kind": "taskGroup",
@@ -1758,7 +1741,8 @@
         "doc://com.apple.documentation/documentation/coredata/nsvalidationobjecterrorkey",
         "doc://com.apple.documentation/documentation/coredata/nsvalidationpredicateerrorkey",
         "doc://com.apple.documentation/documentation/coredata/nsvalidationvalueerrorkey"
-      ]
+      ],
+      "anchor": "1654348"
     },
     {
       "kind": "taskGroup",
@@ -1773,14 +1757,16 @@
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506936-didchangevalueforkey",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506229-willchangevalueforkey",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506801-willchangevalueforkey"
-      ]
+      ],
+      "anchor": "1654401"
     },
     {
       "kind": "taskGroup",
       "title": "Reinitializing Values",
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nssnapshoteventtype"
-      ]
+      ],
+      "anchor": "1654510"
     }
   ],
   "seeAlsoSections": [
@@ -1826,6 +1812,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1848,7 +1835,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "A managed object is associated with an entity description ("
+              "text": "A managed object has an associated entity description ("
             },
             {
               "type": "reference",
@@ -1857,7 +1844,7 @@
             },
             {
               "type": "text",
-              "text": ") that provides metadata about the object, including the name of the entity that the object represents and the names of its attributes and relationships. A managed object is also associated with a managed object context that tracks changes to the object graph. "
+              "text": ") that provides metadata about the object, including the name of the entity that the object represents and the names of its attributes and relationships. A managed object also has an associated managed object context that tracks changes to the object graph. "
             }
           ]
         },
@@ -1875,7 +1862,7 @@
             },
             {
               "type": "text",
-              "text": " (or any other class that doesn’t inherit from "
+              "text": ", or any other class that doesn’t inherit from "
             },
             {
               "type": "reference",
@@ -1884,7 +1871,7 @@
             },
             {
               "type": "text",
-              "text": ") with a managed object context. You may create custom subclasses of "
+              "text": ", with a managed object context. You may create custom subclasses of "
             },
             {
               "type": "reference",
@@ -1893,7 +1880,7 @@
             },
             {
               "type": "text",
-              "text": ", although this isn’t always required. If no custom logic is needed, you can create a complete Object graph with "
+              "text": ", although this isn’t always necessary. If you don’t need custom logic, you can create a complete object graph with "
             },
             {
               "type": "reference",
@@ -3122,7 +3109,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

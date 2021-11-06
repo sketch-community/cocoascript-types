@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.2",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)MKMapSnapshotOptions(py)mapRect",
+    "parent": {
+      "title": "MKMapSnapshotOptions"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,7 +119,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The options to use when capturing map-based imagery. "
+          "text": "The options the snapshotter initializer uses to create a snapshotter to capture map-based imagery. "
         }
       ]
     },
@@ -125,7 +133,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The map region that you want to capture."
+          "text": "The area of the map that you want to capture."
         }
       ]
     },
@@ -221,6 +229,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -260,7 +269,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The default value of this property is set to a map rect that encompasses the user’s country, as determined by the current locale information."
+              "text": "The default value of this property is set to a map rect that encompasses the user’s country or region, as determined by the current locale information."
             }
           ]
         }
@@ -268,7 +277,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSPersistentStoreAsynchronousResult",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -125,7 +130,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstoreasynchronousresult/1404916-managedobjectcontext",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstoreasynchronousresult/1404916-managedobjectcontext"
+      "url": "/documentation/coredata/nspersistentstoreasynchronousresult/1404916-managedobjectcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The managed object context for the result."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nspersistentstoreasynchronousresult/1404904-operationerror": {
       "title": "operationError",
@@ -133,7 +144,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstoreasynchronousresult/1404904-operationerror",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstoreasynchronousresult/1404904-operationerror"
+      "url": "/documentation/coredata/nspersistentstoreasynchronousresult/1404904-operationerror",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An error that contains details if the asynchronous fetch request fails."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nspersistentstoreasynchronousresult/1404920-progress": {
       "title": "progress",
@@ -141,7 +158,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstoreasynchronousresult/1404920-progress",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstoreasynchronousresult/1404920-progress"
+      "url": "/documentation/coredata/nspersistentstoreasynchronousresult/1404920-progress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that reports progress for the asynchronous fetch request."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nspersistentstoreasynchronousresult/1404924-cancel": {
       "title": "cancel",
@@ -150,6 +173,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/coredata/nspersistentstoreasynchronousresult/1404924-cancel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Cancels the asynchronous fetch request."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -167,7 +196,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstoreasynchronousfetchresultcompletionblock",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstoreasynchronousfetchresultcompletionblock"
+      "url": "/documentation/coredata/nspersistentstoreasynchronousfetchresultcompletionblock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A completion block that an asynchronous fetch request calls with a result."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator": {
       "title": "NSPersistentStoreCoordinator",
@@ -317,16 +352,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -345,21 +370,24 @@
         "doc://com.apple.documentation/documentation/coredata/nspersistentstoreasynchronousresult/1404916-managedobjectcontext",
         "doc://com.apple.documentation/documentation/coredata/nspersistentstoreasynchronousresult/1404904-operationerror",
         "doc://com.apple.documentation/documentation/coredata/nspersistentstoreasynchronousresult/1404920-progress"
-      ]
+      ],
+      "anchor": "2860930"
     },
     {
       "kind": "taskGroup",
       "title": "Canceling the Result",
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nspersistentstoreasynchronousresult/1404924-cancel"
-      ]
+      ],
+      "anchor": "2860931"
     },
     {
       "kind": "taskGroup",
       "title": "Data Types",
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nspersistentstoreasynchronousfetchresultcompletionblock"
-      ]
+      ],
+      "anchor": "2560570"
     }
   ],
   "seeAlsoSections": [
@@ -414,6 +442,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -424,7 +453,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

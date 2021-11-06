@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates a new responder object with data in an unarchiver."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSResponder(im)initWithCoder:",
+    "parent": {
+      "title": "NSResponder"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -90,7 +99,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An abstract class that forms the basis of event and command processing in AppKit. "
+          "text": "An abstract class that forms the basis of event and command processing in AppKit."
         }
       ]
     },
@@ -102,6 +111,54 @@
       "role": "symbol",
       "url": "/documentation/foundation/nscoder"
     },
+    "doc://com.apple.documentation/documentation/appkit/nsresponder/1525437-init": {
+      "title": "init",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/1525437-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsresponder/1525437-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new responder object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "init"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsresponder/1535389-initwithcoder": {
+      "title": "initWithCoder:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/1535389-initwithcoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsresponder/1535389-initwithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new responder object with data in an unarchiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithCoder:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -110,6 +167,15 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsresponder/1525437-init"
+      ],
+      "title": "Creating Responders",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -167,10 +233,32 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "coder",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "An unarchiver object."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

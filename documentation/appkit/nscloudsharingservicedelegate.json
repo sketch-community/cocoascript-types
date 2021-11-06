@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A protocol that an iCloud-sharing service implements to handle status changes and errors."
+      "text": "A set of methods for responding to the life cycle events of the cloud-sharing service."
     }
   ],
   "documentVersion": 0,
@@ -34,15 +34,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSCloudSharingServiceDelegate",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -85,24 +85,59 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644694-optionsforsharingservice": {
-      "title": "optionsForSharingService:shareProvider:",
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider": {
+      "title": "NSItemProvider",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644694-optionsforsharingservice",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nscloudsharingservicedelegate/1644694-optionsforsharingservice",
-      "required": false,
-      "fragments": [
+      "url": "/documentation/foundation/nsitemprovider"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nssharingservice": {
+      "title": "NSSharingService",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nssharingservice",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nssharingservice",
+      "abstract": [
         {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "optionsForSharingService:shareProvider:"
+          "type": "text",
+          "text": "A service that lets users share content with other services, such as social media services, or apps, such as Mail and Safari."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare": {
+      "title": "CKShare",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckshare"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nssharingservicenamecloudsharing": {
+      "title": "NSSharingServiceNameCloudSharing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nssharingservicenamecloudsharing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nssharingservicenamecloudsharing"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nssharingservice/1402681-delegate": {
+      "title": "delegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nssharingservice/1402681-delegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nssharingservice/1402681-delegate"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/shared_records": {
+      "title": "Shared Records",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/shared_records",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/cloudkit/shared_records"
     },
     "doc://com.apple.documentation/documentation/appkit/nssharingservicedelegate": {
       "title": "NSSharingServiceDelegate",
@@ -120,6 +155,12 @@
       "role": "symbol",
       "url": "/documentation/appkit/nscloudsharingservicedelegate/1644666-sharingservice",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate when the cloud-sharing service completes."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -139,6 +180,12 @@
       "role": "symbol",
       "url": "/documentation/appkit/nscloudsharingservicedelegate/1644712-sharingservice",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate when the cloud-sharing service saves the CloudKit share."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -158,6 +205,12 @@
       "role": "symbol",
       "url": "/documentation/appkit/nscloudsharingservicedelegate/1644709-sharingservice",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate when the user stops sharing the CloudKit share."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -166,6 +219,31 @@
         {
           "kind": "identifier",
           "text": "sharingService:didStopSharing:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644694-optionsforsharingservice": {
+      "title": "optionsForSharingService:shareProvider:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644694-optionsforsharingservice",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscloudsharingservicedelegate/1644694-optionsforsharingservice",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate for the participant options for the cloud-sharing service."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "optionsForSharingService:shareProvider:"
         }
       ]
     },
@@ -179,30 +257,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Possible values returned by "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644694-optionsforsharingservice"
-        },
-        {
-          "type": "text",
-          "text": " that describe how the user is allowed to configure the related share."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nssharingservice": {
-      "title": "NSSharingService",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nssharingservice",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nssharingservice",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A service that lets users share content with other services, such as social media services, or apps, such as Mail and Safari."
+          "text": "Constants that describe how a participant can configure a CloudKit share."
         }
       ]
     },
@@ -274,7 +329,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A protocol that an iCloud-sharing service implements to handle status changes and errors."
+          "text": "A set of methods for responding to the life cycle events of the cloud-sharing service."
         }
       ]
     },
@@ -307,20 +362,15 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Managing the Sharing Service",
+      "title": "Managing the Cloud-Sharing Service",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644666-sharingservice",
         "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644712-sharingservice",
-        "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644709-sharingservice"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Providing the Sharing Service Options",
-      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644709-sharingservice",
         "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644694-optionsforsharingservice",
         "doc://com.apple.documentation/documentation/appkit/nscloudkitsharingserviceoptions"
-      ]
+      ],
+      "anchor": "3014376"
     }
   ],
   "seeAlsoSections": [
@@ -365,10 +415,102 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "CloudKit allows a user to share a hierarchy of records with other iCloud users. In macOS, you use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nssharingservice"
+            },
+            {
+              "type": "text",
+              "text": " to facilitate sharing. Register an instance of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare"
+            },
+            {
+              "type": "text",
+              "text": " with an item provider, and then use a sharing service to present it to the user. You must initialize the service with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nssharingservicenamecloudsharing"
+            },
+            {
+              "type": "text",
+              "text": " service name. If the share is new, the user can configure the share and invite other iCloud users to participate. Otherwise, they can use the service to manage the share’s participants and their permissions."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This protocol defines methods that the sharing service calls when it saves changes to a share, or deletes it. The service also asks its delegate to provide the preferred sharing options when creating a new share. Set the service’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nssharingservice/1402681-delegate"
+            },
+            {
+              "type": "text",
+              "text": " property to an object that implements this protocol. Use your implementation to provide any appropriate behavior, such as deleting a share you cache locally when the service deletes it from the server."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about CloudKit sharing, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/shared_records"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

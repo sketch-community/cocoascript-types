@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Edge insets that take language direction into account. "
+      "text": "The inset distances for views, taking the user interface layout direction into account. "
     }
   ],
   "documentVersion": 0,
@@ -37,35 +37,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@NSDirectionalEdgeInsets",
     "symbolKind": "struct"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,7 +125,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a directional edge insets struct that contains the specified values."
+          "text": "Creates a directional edge insets structure that contains the specified values."
         }
       ]
     },
@@ -180,20 +185,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/2867591-nsdirectionaledgeinsetsequaltodi": {
-      "title": "NSDirectionalEdgeInsetsEqualToDirectionalEdgeInsets",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/2867591-nsdirectionaledgeinsetsequaltodi",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/2867591-nsdirectionaledgeinsetsequaltodi",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Compares two directional edge insets to determine if they are the same."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/2865946-nsstringfromdirectionaledgeinset": {
       "title": "NSStringFromDirectionalEdgeInsets",
       "type": "topic",
@@ -218,7 +209,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a directional edge insets structure based on the data in the specified string."
+          "text": "Returns a directional edge insets structure based on data in the specified string."
         }
       ]
     },
@@ -232,7 +223,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A directional edge insets struct whose top, leading, bottom, and trailing fields are all set to "
+          "text": "A directional edge insets structure whose top, leading, bottom, and trailing fields all have a value of "
         },
         {
           "type": "codeVoice",
@@ -241,6 +232,20 @@
         {
           "type": "text",
           "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/2867591-nsdirectionaledgeinsetsequaltodi": {
+      "title": "NSDirectionalEdgeInsetsEqualToDirectionalEdgeInsets",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/2867591-nsdirectionaledgeinsetsequaltodi",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/2867591-nsdirectionaledgeinsetsequaltodi",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Compares two directional edge insets to determine if they're the same."
         }
       ]
     },
@@ -254,7 +259,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Defines a structure that specifies an amount to offset a position. "
+          "text": "A structure that specifies an amount to offset a position. "
         }
       ]
     },
@@ -282,7 +287,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Defines a structure that specifies the layout axes. "
+          "text": "A structure that specifies the layout axes. "
         }
       ]
     },
@@ -296,7 +301,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Edge insets that take language direction into account. "
+          "text": "The inset distances for views, taking the user interface layout direction into account. "
         }
       ]
     },
@@ -306,7 +311,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/nsdirectionalrectedge",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/nsdirectionalrectedge"
+      "url": "/documentation/uikit/nsdirectionalrectedge",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify an edge or a set of edges, taking the user interface layout direction into account. "
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/nsrectalignment": {
       "title": "NSRectAlignment",
@@ -314,7 +325,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/nsrectalignment",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/nsrectalignment"
+      "url": "/documentation/uikit/nsrectalignment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify alignment to an edge or a set of edges depending on the user interface layout direction."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge": {
       "title": "UIDirectionalRectEdge",
@@ -323,6 +340,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uidirectionalrectedge",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify an edge or a set of edges, taking the user interface layout direction into account."
+        }
+      ],
       "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
@@ -339,7 +362,8 @@
       "title": "Creating Directional Edge Insets",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/2867596-nsdirectionaledgeinsetsmake"
-      ]
+      ],
+      "anchor": "2881680"
     },
     {
       "kind": "taskGroup",
@@ -349,29 +373,33 @@
         "doc://com.apple.documentation/documentation/uikit/nsdirectionaledgeinsets/2866012-leading",
         "doc://com.apple.documentation/documentation/uikit/nsdirectionaledgeinsets/2865909-top",
         "doc://com.apple.documentation/documentation/uikit/nsdirectionaledgeinsets/2865833-trailing"
-      ]
+      ],
+      "anchor": "2868924"
     },
     {
       "kind": "taskGroup",
-      "title": "Comparing Directional Edge Insets",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/2867591-nsdirectionaledgeinsetsequaltodi"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Converting To and From a String",
+      "title": "Converting to and from a String",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/2865946-nsstringfromdirectionaledgeinset",
         "doc://com.apple.documentation/documentation/uikit/2865991-nsdirectionaledgeinsetsfromstrin"
-      ]
+      ],
+      "anchor": "2881679"
     },
     {
       "kind": "taskGroup",
       "title": "Getting the Empty Edge Insets",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nsdirectionaledgeinsetszero"
-      ]
+      ],
+      "anchor": "2882301"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Comparing Directional Edge Insets",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/2867591-nsdirectionaledgeinsetsequaltodi"
+      ],
+      "anchor": "2881678"
     }
   ],
   "seeAlsoSections": [
@@ -440,6 +468,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -450,7 +479,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

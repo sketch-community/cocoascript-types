@@ -34,30 +34,35 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)UIImage",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -528,17 +533,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/xcode/creating_custom_symbol_images_for_your_app": {
+    "doc://com.apple.documentation/documentation/uikit/uiimage/creating_custom_symbol_images_for_your_app": {
       "title": "Creating Custom Symbol Images for Your App",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/xcode/creating_custom_symbol_images_for_your_app",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/creating_custom_symbol_images_for_your_app",
       "kind": "article",
       "role": "article",
-      "url": "/documentation/xcode/creating_custom_symbol_images_for_your_app",
+      "url": "/documentation/uikit/uiimage/creating_custom_symbol_images_for_your_app",
       "abstract": [
         {
           "type": "text",
-          "text": "Create symbol images and augment the set of icons that SF Symbols provides."
+          "text": "Create, organize, and annotate symbol images using SF Symbols."
         }
       ]
     },
@@ -635,6 +640,20 @@
         {
           "kind": "identifier",
           "text": "systemImageNamed:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/building_high-performance_lists_and_collection_views": {
+      "title": "Building High-Performance Lists and Collection Views",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/building_high-performance_lists_and_collection_views",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/uiimage/building_high-performance_lists_and_collection_views",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Improve the performance of lists and collections in your app with prefetching and image preparation."
         }
       ]
     },
@@ -1466,7 +1485,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the image is vector-based. "
+          "text": "A Boolean value that indicates whether the image is a symbol."
         }
       ]
     },
@@ -1494,7 +1513,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The configuration details for a symbol image. "
+          "text": "The configuration details for a symbol image."
         }
       ]
     },
@@ -1805,22 +1824,108 @@
       ],
       "deprecated": true
     },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/3750844-preparefordisplaywithcompletionh": {
+      "title": "prepareForDisplayWithCompletionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/3750844-preparefordisplaywithcompletionh",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiimage/3750844-preparefordisplaywithcompletionh",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Decodes an image asynchronously and provides a new one for display in views and animations."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "prepareForDisplayWithCompletionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/3750845-preparethumbnailofsize": {
+      "title": "prepareThumbnailOfSize:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/3750845-preparethumbnailofsize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiimage/3750845-preparethumbnailofsize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a thumbnail image at the specified size asynchronously on a background thread."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "prepareThumbnailOfSize:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/3750834-imagebypreparingfordisplay": {
+      "title": "imageByPreparingForDisplay",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/3750834-imagebypreparingfordisplay",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiimage/3750834-imagebypreparingfordisplay",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Decodes an image synchronously and provides a new one for display in views and animations."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "imageByPreparingForDisplay"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/3750835-imagebypreparingthumbnailofsize": {
+      "title": "imageByPreparingThumbnailOfSize:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/3750835-imagebypreparingthumbnailofsize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiimage/3750835-imagebypreparingthumbnailofsize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new thumbnail image at the specified size."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "imageByPreparingThumbnailOfSize:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -1848,14 +1953,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiimage/providing_images_for_different_appearances",
         "doc://com.apple.documentation/documentation/uikit/uiimage/configuring_and_displaying_symbol_images_in_your_ui",
-        "doc://com.apple.documentation/documentation/xcode/creating_custom_symbol_images_for_your_app",
+        "doc://com.apple.documentation/documentation/uikit/uiimage/creating_custom_symbol_images_for_your_app",
         "doc://com.apple.documentation/documentation/uikit/uiimage/1624154-imagenamed",
         "doc://com.apple.documentation/documentation/uikit/uiimage/3294226-imagenamed",
         "doc://com.apple.documentation/documentation/uikit/uiimage/1624146-imagenamed",
         "doc://com.apple.documentation/documentation/uikit/uiimage/3294234-systemimagenamed",
         "doc://com.apple.documentation/documentation/uikit/uiimage/3295943-systemimagenamed",
-        "doc://com.apple.documentation/documentation/uikit/uiimage/3294233-systemimagenamed"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiimage/3294233-systemimagenamed",
+        "doc://com.apple.documentation/documentation/uikit/uiimage/building_high-performance_lists_and_collection_views"
+      ],
+      "anchor": "1658394"
     },
     {
       "kind": "taskGroup",
@@ -1875,7 +1982,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiimage/1624091-initwithcgimage",
         "doc://com.apple.documentation/documentation/uikit/uiimage/1624114-initwithciimage",
         "doc://com.apple.documentation/documentation/uikit/uiimage/1624150-initwithciimage"
-      ]
+      ],
+      "anchor": "1658415"
     },
     {
       "kind": "taskGroup",
@@ -1885,7 +1993,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiimage/1624149-animatedimagewithimages",
         "doc://com.apple.documentation/documentation/uikit/uiimage/1624143-animatedresizableimagenamed",
         "doc://com.apple.documentation/documentation/uikit/uiimage/1624103-animatedresizableimagenamed"
-      ]
+      ],
+      "anchor": "3309351"
     },
     {
       "kind": "taskGroup",
@@ -1903,7 +2012,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiimage/3294227-imagewithbaselineoffsetfrombotto",
         "doc://com.apple.documentation/documentation/uikit/uiimageconfiguration",
         "doc://com.apple.documentation/documentation/uikit/uiimagesymbolconfiguration"
-      ]
+      ],
+      "anchor": "1658524"
     },
     {
       "kind": "taskGroup",
@@ -1914,7 +2024,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiimage/3294219-actionsimage",
         "doc://com.apple.documentation/documentation/uikit/uiimage/3343561-checkmarkimage",
         "doc://com.apple.documentation/documentation/uikit/uiimage/3343562-strokedcheckmarkimage"
-      ]
+      ],
+      "anchor": "3309346"
     },
     {
       "kind": "taskGroup",
@@ -1925,7 +2036,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiimage/1624129-ciimage",
         "doc://com.apple.documentation/documentation/uikit/uiimage/1624117-images",
         "doc://com.apple.documentation/documentation/uikit/uiimage/1624151-imageasset"
-      ]
+      ],
+      "anchor": "2919412"
     },
     {
       "kind": "taskGroup",
@@ -1933,7 +2045,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiimage/1624110-scale",
         "doc://com.apple.documentation/documentation/uikit/uiimage/1624105-size"
-      ]
+      ],
+      "anchor": "2919414"
     },
     {
       "kind": "taskGroup",
@@ -1948,7 +2061,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiimage/1624097-capinsets",
         "doc://com.apple.documentation/documentation/uikit/uiimage/1624139-alignmentrectinsets",
         "doc://com.apple.documentation/documentation/uikit/uiimage/3294232-symbolimage"
-      ]
+      ],
+      "anchor": "1658605"
     },
     {
       "kind": "taskGroup",
@@ -1957,7 +2071,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiimage/3294223-configuration",
         "doc://com.apple.documentation/documentation/uikit/uiimage/3294231-symbolconfiguration",
         "doc://com.apple.documentation/documentation/uikit/uiimage/1624158-traitcollection"
-      ]
+      ],
+      "anchor": "3309345"
     },
     {
       "kind": "taskGroup",
@@ -1965,7 +2080,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiimage/3294224-hasbaseline",
         "doc://com.apple.documentation/documentation/uikit/uiimage/3294221-baselineoffsetfrombottom"
-      ]
+      ],
+      "anchor": "3309344"
     },
     {
       "kind": "taskGroup",
@@ -1974,7 +2090,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiimage/1624122-renderingmode",
         "doc://com.apple.documentation/documentation/uikit/uiimagerenderingmode",
         "doc://com.apple.documentation/documentation/uikit/uiimage/1649497-imagerendererformat"
-      ]
+      ],
+      "anchor": "2919415"
     },
     {
       "kind": "taskGroup",
@@ -1982,7 +2099,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiimage/3327300-imagewithtintcolor",
         "doc://com.apple.documentation/documentation/uikit/uiimage/3327301-imagewithtintcolor"
-      ]
+      ],
+      "anchor": "3374456"
     },
     {
       "kind": "taskGroup",
@@ -1993,7 +2111,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiimage/1624092-drawinrect",
         "doc://com.apple.documentation/documentation/uikit/uiimage/1624101-drawinrect",
         "doc://com.apple.documentation/documentation/uikit/uiimage/1624144-drawaspatterninrect"
-      ]
+      ],
+      "anchor": "1658777"
     },
     {
       "kind": "taskGroup",
@@ -2001,7 +2120,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/1624115-uiimagejpegrepresentation",
         "doc://com.apple.documentation/documentation/uikit/1624096-uiimagepngrepresentation"
-      ]
+      ],
+      "anchor": "3309343"
     },
     {
       "kind": "taskGroup",
@@ -2010,7 +2130,19 @@
         "doc://com.apple.documentation/documentation/uikit/uiimage/1624145-stretchableimagewithleftcapwidth",
         "doc://com.apple.documentation/documentation/uikit/uiimage/1624148-leftcapwidth",
         "doc://com.apple.documentation/documentation/uikit/uiimage/1624116-topcapheight"
-      ]
+      ],
+      "anchor": "2919413"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiimage/3750844-preparefordisplaywithcompletionh",
+        "doc://com.apple.documentation/documentation/uikit/uiimage/3750845-preparethumbnailofsize",
+        "doc://com.apple.documentation/documentation/uikit/uiimage/3750834-imagebypreparingfordisplay",
+        "doc://com.apple.documentation/documentation/uikit/uiimage/3750835-imagebypreparingthumbnailofsize"
+      ],
+      "anchor": "3758648"
     }
   ],
   "seeAlsoSections": [
@@ -2057,6 +2189,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
@@ -2624,7 +2757,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

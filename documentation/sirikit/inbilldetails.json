@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/payments"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -34,25 +34,38 @@
       {
         "name": "iOS",
         "introducedAt": "10.3",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.3",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INBillDetails",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -87,13 +100,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/payments": {
-      "title": "Payments",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/payments",
-      "url": "/documentation/sirikit/payments",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "link-3872884": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3872884",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/inbilldetails": {
       "title": "INBillDetails",
@@ -107,7 +128,8 @@
           "type": "text",
           "text": "The detailed information associated with a bill."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
@@ -155,7 +177,8 @@
           "kind": "identifier",
           "text": "initWithBillType:paymentStatus:billPayee:amountDue:minimumDue:lateFee:dueDate:paymentDate:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inbilldetails/2799228-billpayee": {
       "title": "billPayee",
@@ -169,7 +192,8 @@
           "type": "text",
           "text": "The entity receiving the payment."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inbilldetails/2799231-paymentdate": {
       "title": "paymentDate",
@@ -183,7 +207,8 @@
           "type": "text",
           "text": "The scheduled payment date for the bill."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inbilldetails/2799232-paymentstatus": {
       "title": "paymentStatus",
@@ -197,7 +222,8 @@
           "type": "text",
           "text": "The current status of the payment."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inbilldetails/2799226-billtype": {
       "title": "billType",
@@ -211,7 +237,8 @@
           "type": "text",
           "text": "The type of the bill."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inbilldetails/2799230-minimumdue": {
       "title": "minimumDue",
@@ -225,7 +252,8 @@
           "type": "text",
           "text": "The minimum amount to pay toward the bill."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inbilldetails/2799229-amountdue": {
       "title": "amountDue",
@@ -239,7 +267,8 @@
           "type": "text",
           "text": "The amount due for the bill."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inbilldetails/2799234-duedate": {
       "title": "dueDate",
@@ -253,7 +282,8 @@
           "type": "text",
           "text": "The due date of the payment."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inbilldetails/2799233-latefee": {
       "title": "lateFee",
@@ -267,7 +297,8 @@
           "type": "text",
           "text": "The late fee to apply if the payment is late."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inbilltype": {
       "title": "INBillType",
@@ -281,21 +312,8 @@
           "type": "text",
           "text": "Constants indicating the type of bill."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/inaccounttype": {
-      "title": "INAccountType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inaccounttype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/inaccounttype",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Constants indicating the type of account involved in a financial transaction."
-        }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inbillpayee": {
       "title": "INBillPayee",
@@ -309,105 +327,53 @@
           "type": "text",
           "text": "The entity that receives the proceeds from a bill payment."
         }
-      ]
+      ],
+      "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/sirikit/incurrencyamount": {
-      "title": "INCurrencyAmount",
+    "doc://com.apple.documentation/documentation/sirikit/inbilltyperesolutionresult": {
+      "title": "INBillTypeResolutionResult",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/incurrencyamount",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inbilltyperesolutionresult",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/incurrencyamount",
+      "url": "/documentation/sirikit/inbilltyperesolutionresult",
       "abstract": [
         {
           "type": "text",
-          "text": "An amount of money to transfer during a financial transaction."
+          "text": "A resolution result for the types of bills a user might pay."
         }
-      ]
+      ],
+      "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/sirikit/inpaymentaccount": {
-      "title": "INPaymentAccount",
+    "doc://com.apple.documentation/documentation/sirikit/inbillpayeeresolutionresult": {
+      "title": "INBillPayeeResolutionResult",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaymentaccount",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inbillpayeeresolutionresult",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/inpaymentaccount",
+      "url": "/documentation/sirikit/inbillpayeeresolutionresult",
       "abstract": [
         {
           "type": "text",
-          "text": "A user account that provides the funds when making a payment."
+          "text": "A resolution result for the recipient of a bill payment."
         }
-      ]
+      ],
+      "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/sirikit/inpaymentamount": {
-      "title": "INPaymentAmount",
+    "doc://com.apple.documentation/documentation/sirikit/invisualcodetyperesolutionresult": {
+      "title": "INVisualCodeTypeResolutionResult",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaymentamount",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/invisualcodetyperesolutionresult",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/inpaymentamount",
+      "url": "/documentation/sirikit/invisualcodetyperesolutionresult",
       "abstract": [
         {
           "type": "text",
-          "text": "The amount of money to apply to a bill payment."
+          "text": "A resolution result for the type of visual code used to exchange information."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/inpaymentmethod": {
-      "title": "INPaymentMethod",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaymentmethod",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/inpaymentmethod",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Information about a form of payment supported by your app."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/inpaymentrecord": {
-      "title": "INPaymentRecord",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaymentrecord",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/inpaymentrecord",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Detailed information about a financial transaction made between two users."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/inpaymentstatus": {
-      "title": "INPaymentStatus",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaymentstatus",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/inpaymentstatus",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Constants indicating the state of the financial transaction."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/inperson": {
-      "title": "INPerson",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inperson",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/inperson",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The information about a user involved in a SiriKit interaction."
-        }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -417,16 +383,26 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
       ]
     }
-  },
+  ],
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -452,7 +428,8 @@
       "title": "Initializing the Bill Details",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/inbilldetails/2852117-initwithbilltype"
-      ]
+      ],
+      "anchor": "2852155"
     },
     {
       "kind": "taskGroup",
@@ -462,7 +439,8 @@
         "doc://com.apple.documentation/documentation/sirikit/inbilldetails/2799231-paymentdate",
         "doc://com.apple.documentation/documentation/sirikit/inbilldetails/2799232-paymentstatus",
         "doc://com.apple.documentation/documentation/sirikit/inbilldetails/2799226-billtype"
-      ]
+      ],
+      "anchor": "2826081"
     },
     {
       "kind": "taskGroup",
@@ -472,30 +450,27 @@
         "doc://com.apple.documentation/documentation/sirikit/inbilldetails/2799229-amountdue",
         "doc://com.apple.documentation/documentation/sirikit/inbilldetails/2799234-duedate",
         "doc://com.apple.documentation/documentation/sirikit/inbilldetails/2799233-latefee"
-      ]
+      ],
+      "anchor": "2806285"
     },
     {
       "kind": "taskGroup",
       "title": "Constants",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/inbilltype"
-      ]
+      ],
+      "anchor": "2826071"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/sirikit/inaccounttype",
         "doc://com.apple.documentation/documentation/sirikit/inbillpayee",
-        "doc://com.apple.documentation/documentation/sirikit/incurrencyamount",
-        "doc://com.apple.documentation/documentation/sirikit/inpaymentaccount",
-        "doc://com.apple.documentation/documentation/sirikit/inpaymentamount",
-        "doc://com.apple.documentation/documentation/sirikit/inpaymentmethod",
-        "doc://com.apple.documentation/documentation/sirikit/inpaymentrecord",
-        "doc://com.apple.documentation/documentation/sirikit/inpaymentstatus",
-        "doc://com.apple.documentation/documentation/sirikit/inperson"
+        "doc://com.apple.documentation/documentation/sirikit/inbilltyperesolutionresult",
+        "doc://com.apple.documentation/documentation/sirikit/inbillpayeeresolutionresult",
+        "doc://com.apple.documentation/documentation/sirikit/invisualcodetyperesolutionresult"
       ],
-      "title": "Data Objects",
+      "title": "Bill Data Objects",
       "generated": true
     }
   ],
@@ -533,6 +508,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -562,7 +538,7 @@
             },
             {
               "type": "text",
-              "text": " object contains the details surrounding the payment of a bill. You create instances of this class when handling bill payment-related intents. For example, you create instances of this class when searching for the user’s bill payments. The details include the recipient of the funds, the amount that is due, and the date of payment. "
+              "text": " object contains the details surrounding the payment of a bill. You create instances of this class when handling bill payment-related intents. For example, you create instances of this class when searching for the user’s bill payments. The details include the recipient of the funds, the amount that’s due, and the date of payment. "
             }
           ]
         },
@@ -579,7 +555,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

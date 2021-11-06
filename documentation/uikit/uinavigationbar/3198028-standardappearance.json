@@ -41,25 +41,33 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UINavigationBar(py)standardAppearance",
+    "parent": {
+      "title": "UINavigationBar"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -124,21 +132,21 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/objectivec/yes": {
-      "title": "YES",
+    "doc://com.apple.documentation/documentation/uikit/uinavigationitem/3198042-standardappearance": {
+      "title": "standardAppearance",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uinavigationitem/3198042-standardappearance",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/objectivec/yes"
+      "url": "/documentation/uikit/uinavigationitem/3198042-standardappearance"
     },
-    "doc://com.apple.documentation/documentation/objectivec/no": {
-      "title": "NO",
+    "doc://com.apple.documentation/documentation/uikit/uinavigationitem": {
+      "title": "UINavigationItem",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uinavigationitem",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/objectivec/no"
+      "url": "/documentation/uikit/uinavigationitem"
     },
     "doc://com.apple.documentation/documentation/uikit/uinavigationbarappearance": {
       "title": "UINavigationBarAppearance",
@@ -158,7 +166,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value indicating whether the title should be displayed in a large format."
+          "text": "A Boolean value that indicates whether the title displays in a large format."
         }
       ]
     },
@@ -200,7 +208,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The appearance settings to use when the edge of any scrollable content reaches the matching edge of the navigation bar."
+          "text": "The appearance settings for the navigation bar when the edge of scrollable content aligns with the edge of the navigation bar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uinavigationbar/3750865-compactscrolledgeappearance": {
+      "title": "compactScrollEdgeAppearance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uinavigationbar/3750865-compactscrolledgeappearance",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uinavigationbar/3750865-compactscrolledgeappearance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The appearance settings for a compact-height navigation bar when the edge of scrollable content aligns with the edge of the navigation bar."
         }
       ]
     },
@@ -214,25 +236,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value indicating whether the navigation bar is translucent ("
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-        },
-        {
-          "type": "text",
-          "text": ") or not ("
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
-        },
-        {
-          "type": "text",
-          "text": ")."
+          "text": "A Boolean value that indicates whether the navigation bar is translucent."
         }
       ]
     },
@@ -264,6 +268,7 @@
         "doc://com.apple.documentation/documentation/uikit/uinavigationbar/2908999-preferslargetitles",
         "doc://com.apple.documentation/documentation/uikit/uinavigationbar/3198026-compactappearance",
         "doc://com.apple.documentation/documentation/uikit/uinavigationbar/3198027-scrolledgeappearance",
+        "doc://com.apple.documentation/documentation/uikit/uinavigationbar/3750865-compactscrolledgeappearance",
         "doc://com.apple.documentation/documentation/uikit/uinavigationbar/1624928-translucent",
         "doc://com.apple.documentation/documentation/uikit/uinavigationbar/legacy_customizations"
       ],
@@ -309,6 +314,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -329,7 +335,25 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The default value of this property is an appearance object containing the system's default appearance settings."
+              "text": "The default value of this property is an appearance object containing the system's default appearance settings. You can customize the navigation bar appearance for specific navigation items with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uinavigationitem/3198042-standardappearance"
+            },
+            {
+              "type": "text",
+              "text": " property of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uinavigationitem"
+            },
+            {
+              "type": "text",
+              "text": ". "
             }
           ]
         }
@@ -337,7 +361,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

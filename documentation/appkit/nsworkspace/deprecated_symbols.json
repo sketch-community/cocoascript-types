@@ -32,8 +32,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -318,6 +318,78 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nsrunningapplication"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1530411-activeapplication": {
+      "title": "activeApplication",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1530411-activeapplication",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsworkspace/1530411-activeapplication",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a dictionary with information about the current active app."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "activeApplication"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1579272-launchedapplications": {
+      "title": "launchedApplications",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1579272-launchedapplications",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsworkspace/1579272-launchedapplications",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array of dictionaries, one entry for each running app."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "launchedApplications"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1534059-runningapplications": {
+      "title": "runningApplications",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1534059-runningapplications",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsworkspace/1534059-runningapplications"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/deprecated_symbols#3737326": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/deprecated_symbols#3737326",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/appkit/nsworkspace/deprecated_symbols#3737326",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Dictionary keys for launched and active apps"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsworkspace/1532940-openurl": {
       "title": "openURL:options:configuration:error:",
@@ -774,17 +846,17 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1530411-activeapplication": {
-      "title": "activeApplication",
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1527879-iconforfiletype": {
+      "title": "iconForFileType:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1530411-activeapplication",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1527879-iconforfiletype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsworkspace/1530411-activeapplication",
+      "url": "/documentation/appkit/nsworkspace/1527879-iconforfiletype",
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a dictionary with information about the current active app."
+          "text": "Returns an image containing the icon for files of the specified type. "
         }
       ],
       "fragments": [
@@ -794,32 +866,7 @@
         },
         {
           "kind": "identifier",
-          "text": "activeApplication"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1579272-launchedapplications": {
-      "title": "launchedApplications",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1579272-launchedapplications",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsworkspace/1579272-launchedapplications",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns an array of dictionaries, one entry for each running app."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "launchedApplications"
+          "text": "iconForFileType:"
         }
       ],
       "deprecated": true
@@ -1052,8 +1099,10 @@
         "doc://com.apple.documentation/documentation/appkit/nsworkspace/1535898-mountedremovablemedia",
         "doc://com.apple.documentation/documentation/appkit/nsworkspace/1535834-mountedlocalvolumepaths",
         "doc://com.apple.documentation/documentation/appkit/nsworkspace/1530411-activeapplication",
-        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1579272-launchedapplications"
-      ]
+        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1579272-launchedapplications",
+        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1527879-iconforfiletype"
+      ],
+      "anchor": "3369895"
     },
     {
       "kind": "taskGroup",
@@ -1062,7 +1111,8 @@
         "doc://com.apple.documentation/documentation/appkit/nsworkspacelaunchoptions",
         "doc://com.apple.documentation/documentation/appkit/nsworkspacelaunchconfigurationkey",
         "doc://com.apple.documentation/documentation/appkit/nsworkspacefileoperationname"
-      ]
+      ],
+      "anchor": "3369915"
     },
     {
       "kind": "taskGroup",
@@ -1074,18 +1124,390 @@
         "doc://com.apple.documentation/documentation/appkit/nsfilesystemfiletype",
         "doc://com.apple.documentation/documentation/appkit/nsshellcommandfiletype",
         "doc://com.apple.documentation/documentation/appkit/nsworkspaceapplicationkey"
-      ]
+      ],
+      "anchor": "3369894"
     },
     {
       "kind": "taskGroup",
       "title": "Notifications",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsworkspacedidperformfileoperationnotification"
+      ],
+      "anchor": "3369916"
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/deprecated_symbols#3737326"
+            },
+            {
+              "type": "text",
+              "text": " describes keys for an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSDictionary"
+            },
+            {
+              "type": "text",
+              "text": " object containing information about an app. This dictionary is returned by "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1530411-activeapplication"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1579272-launchedapplications"
+            },
+            {
+              "type": "text",
+              "text": ", and is also provided in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "userInfo"
+            },
+            {
+              "type": "text",
+              "text": " of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSWorkspace"
+            },
+            {
+              "type": "text",
+              "text": " notifications for app launch and termination."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Note that these constants are considered legacy."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "It is strongly suggested that you use the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NSWorkspace"
+                },
+                {
+                  "type": "text",
+                  "text": " class’s "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1534059-runningapplications"
+                },
+                {
+                  "type": "text",
+                  "text": " method and the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/appkit/nsrunningapplication"
+                },
+                {
+                  "type": "text",
+                  "text": " class to retrieve this information in apps target macOS 10.6 and later, rather than the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1530411-activeapplication"
+                },
+                {
+                  "type": "text",
+                  "text": " and "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1579272-launchedapplications"
+                },
+                {
+                  "type": "text",
+                  "text": " methods."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Key"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Value"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "@\"NSApplicationPath\""
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The full path to the app, as a "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "NSString"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "@\"NSApplicationName\""
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The app's name, as an "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "NSString"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "@\"NSApplicationBundleIdentifier\""
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The app’s bundle identifier, as an "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "NSString"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "@\"NSApplicationProcessIdentifier\""
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The app's process ID, as an "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "NSNumber"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "@\"NSApplicationProcessSerialNumberHigh\""
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The high long of the process serial number (PSN), as an "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "NSNumber"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "@\"NSApplicationProcessSerialNumberLow\""
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The low long of the process serial number (PSN), as an "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "NSNumber"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object."
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "3737326",
+            "title": "Table 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Dictionary keys for launched and active apps"
+              }
+            ]
+          }
+        }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIViewController",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -384,7 +389,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a newly initialized view controller with the nib file in the specified bundle."
+          "text": "Creates a view controller with the nib file in the specified bundle."
         }
       ],
       "fragments": [
@@ -695,6 +700,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiviewcontroller/1621403-initwithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a view controller with data in an unarchiver."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -1694,6 +1705,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/customize_and_resize_sheets_in_uikit": {
+      "title": "Customize and Resize Sheets in UIKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/customize_and_resize_sheets_in_uikit",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/uiviewcontroller/customize_and_resize_sheets_in_uikit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Discover how to customize sheets in UIKit."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1623193-collapsesecondaryviewcontroller": {
       "title": "collapseSecondaryViewController:forSplitViewController:",
       "type": "topic",
@@ -1818,7 +1843,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants indicating the interface style for the app."
+          "text": "Constants that indicate the interface style for the app."
         }
       ]
     },
@@ -2146,7 +2171,8 @@
           "type": "text",
           "text": "The full-screen scroll view to synchronize with a scrolling tab bar."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621411-extensioncontext": {
       "title": "extensionContext",
@@ -2263,6 +2289,58 @@
         {
           "kind": "identifier",
           "text": "setNeedsUpdateOfHomeIndicatorAutoHidden"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601235-preferspointerlocked": {
+      "title": "prefersPointerLocked",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601235-preferspointerlocked",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller/3601235-preferspointerlocked",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the view controller prefers to lock the pointer to a specific scene."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601236-setneedsupdateofpreferspointerlo": {
+      "title": "setNeedsUpdateOfPrefersPointerLocked",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601236-setneedsupdateofpreferspointerlo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller/3601236-setneedsupdateofpreferspointerlo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates that the view controller changed the pointer lock preference."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setNeedsUpdateOfPrefersPointerLocked"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601234-childviewcontrollerforpointerloc": {
+      "title": "childViewControllerForPointerLock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601234-childviewcontrollerforpointerloc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller/3601234-childviewcontrollerforpointerloc",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A child view controller to query for the pointer lock preference."
         }
       ]
     },
@@ -2620,29 +2698,35 @@
       "role": "collectionGroup",
       "url": "/documentation/uikit/uiviewcontroller/deprecated_symbols"
     },
-    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601234-childviewcontrollerforpointerloc": {
-      "title": "childViewControllerForPointerLock",
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3795605-focusgroupidentifier": {
+      "title": "focusGroupIdentifier",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601234-childviewcontrollerforpointerloc",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3795605-focusgroupidentifier",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiviewcontroller/3601234-childviewcontrollerforpointerloc"
+      "url": "/documentation/uikit/uiviewcontroller/3795605-focusgroupidentifier"
     },
-    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601235-preferspointerlocked": {
-      "title": "prefersPointerLocked",
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3850571-sheetpresentationcontroller": {
+      "title": "sheetPresentationController",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601235-preferspointerlocked",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3850571-sheetpresentationcontroller",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiviewcontroller/3601235-preferspointerlocked"
+      "url": "/documentation/uikit/uiviewcontroller/3850571-sheetpresentationcontroller",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The sheet presentation controller for the view controller."
+        }
+      ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601236-setneedsupdateofpreferspointerlo": {
-      "title": "setNeedsUpdateOfPrefersPointerLocked",
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3750929-contentscrollviewforedge": {
+      "title": "contentScrollViewForEdge:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601236-setneedsupdateofpreferspointerlo",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3750929-contentscrollviewforedge",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiviewcontroller/3601236-setneedsupdateofpreferspointerlo",
+      "url": "/documentation/uikit/uiviewcontroller/3750929-contentscrollviewforedge",
       "fragments": [
         {
           "kind": "text",
@@ -2650,7 +2734,25 @@
         },
         {
           "kind": "identifier",
-          "text": "setNeedsUpdateOfPrefersPointerLocked"
+          "text": "contentScrollViewForEdge:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3750930-setcontentscrollview": {
+      "title": "setContentScrollView:forEdge:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3750930-setcontentscrollview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller/3750930-setcontentscrollview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setContentScrollView:forEdge:"
         }
       ]
     },
@@ -2718,16 +2820,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -2757,7 +2849,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621359-initwithnibname",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621403-initwithcoder"
-      ]
+      ],
+      "anchor": "1652924"
     },
     {
       "kind": "taskGroup",
@@ -2766,7 +2859,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621399-storyboard",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621487-nibname",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621489-nibbundle"
-      ]
+      ],
+      "anchor": "1652988"
     },
     {
       "kind": "taskGroup",
@@ -2780,7 +2874,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621446-loadviewifneeded",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621364-title",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621476-preferredcontentsize"
-      ]
+      ],
+      "anchor": "1653146"
     },
     {
       "kind": "taskGroup",
@@ -2794,7 +2889,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/2097564-beingpresented",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/2097565-movingfromparentviewcontroller",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/2097561-movingtoparentviewcontroller"
-      ]
+      ],
+      "anchor": "1653519"
     },
     {
       "kind": "taskGroup",
@@ -2803,7 +2899,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiview/positioning_content_relative_to_the_safe_area",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/2902284-additionalsafeareainsets",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/2891116-viewsafeareainsetsdidchange"
-      ]
+      ],
+      "anchor": "2935223"
     },
     {
       "kind": "taskGroup",
@@ -2813,7 +2910,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/2891115-viewrespectssystemminimumlayoutm",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/2865908-systemminimumlayoutmargins",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/2891114-viewlayoutmarginsdidchange"
-      ]
+      ],
+      "anchor": "2935224"
     },
     {
       "kind": "taskGroup",
@@ -2825,7 +2923,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621437-viewwilllayoutsubviews",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621398-viewdidlayoutsubviews",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621379-updateviewconstraints"
-      ]
+      ],
+      "anchor": "1653584"
     },
     {
       "kind": "taskGroup",
@@ -2835,7 +2934,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621435-supportedinterfaceorientations",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621438-preferredinterfaceorientationfor",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621400-attemptrotationtodeviceorientati"
-      ]
+      ],
+      "anchor": "1653785"
     },
     {
       "kind": "taskGroup",
@@ -2848,7 +2948,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621384-childviewcontrollercontainingseg",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3089101-canperformunwindsegueaction",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621473-unwindforsegue"
-      ]
+      ],
+      "anchor": "3289999"
     },
     {
       "kind": "taskGroup",
@@ -2867,7 +2968,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621356-providespresentationcontexttrans",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621385-disablesautomatickeyboarddismiss",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontrollershowdetailtargetdidchangenotification"
-      ]
+      ],
+      "anchor": "1653275"
     },
     {
       "kind": "taskGroup",
@@ -2878,8 +2980,10 @@
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621415-targetviewcontrollerforaction",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621426-presentationcontroller",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621428-popoverpresentationcontroller",
-        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1829440-restoresfocusaftertransition"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1829440-restoresfocusaftertransition",
+        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/customize_and_resize_sheets_in_uikit"
+      ],
+      "anchor": "1653441"
     },
     {
       "kind": "taskGroup",
@@ -2887,7 +2991,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1623193-collapsesecondaryviewcontroller",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1623191-separatesecondaryviewcontrollerf"
-      ]
+      ],
+      "anchor": "1653872"
     },
     {
       "kind": "taskGroup",
@@ -2898,7 +3003,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/2909095-childviewcontrollerforuserinterf",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/2909094-setneedsuserinterfaceappearanceu",
         "doc://com.apple.documentation/documentation/uikit/uiuserinterfacestyle"
-      ]
+      ],
+      "anchor": "2910969"
     },
     {
       "kind": "taskGroup",
@@ -2914,7 +3020,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621406-setoverridetraitcollection",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621486-overridetraitcollectionforchildv",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontrollerhierarchyinconsistencyexception"
-      ]
+      ],
+      "anchor": "1653919"
     },
     {
       "kind": "taskGroup",
@@ -2922,7 +3029,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621381-willmovetoparentviewcontroller",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621405-didmovetoparentviewcontroller"
-      ]
+      ],
+      "anchor": "1654077"
     },
     {
       "kind": "taskGroup",
@@ -2934,7 +3042,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1623187-splitviewcontroller",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621860-navigationcontroller",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621169-tabbarcontroller"
-      ]
+      ],
+      "anchor": "1654131"
     },
     {
       "kind": "taskGroup",
@@ -2944,7 +3053,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621863-hidesbottombarwhenpushed",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621874-settoolbaritems",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621867-toolbaritems"
-      ]
+      ],
+      "anchor": "1654681"
     },
     {
       "kind": "taskGroup",
@@ -2952,14 +3062,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621175-tabbaritem",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3152928-tabbarobservedscrollview"
-      ]
+      ],
+      "anchor": "1654782"
     },
     {
       "kind": "taskGroup",
       "title": "Supporting App Extensions",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621411-extensioncontext"
-      ]
+      ],
+      "anchor": "1654398"
     },
     {
       "kind": "taskGroup",
@@ -2971,7 +3083,18 @@
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/2887510-prefershomeindicatorautohidden",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/2887508-childviewcontrollerforhomeindica",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/2887509-setneedsupdateofhomeindicatoraut"
-      ]
+      ],
+      "anchor": "2887625"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Pointer Lock State",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601235-preferspointerlocked",
+        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601236-setneedsupdateofpreferspointerlo",
+        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601234-childviewcontrollerforpointerloc"
+      ],
+      "anchor": "3744907"
     },
     {
       "kind": "taskGroup",
@@ -2984,7 +3107,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621453-modalpresentationcapturesstatusb",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621434-preferredstatusbarupdateanimatio",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621354-setneedsstatusbarappearanceupdat"
-      ]
+      ],
+      "anchor": "1654546"
     },
     {
       "kind": "taskGroup",
@@ -2992,7 +3116,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3375829-childviewcontrollerfortouchbar",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3375830-setneedstouchbarupdate"
-      ]
+      ],
+      "anchor": "3677963"
     },
     {
       "kind": "taskGroup",
@@ -3001,7 +3126,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3368164-performsactionswhilepresentingmo",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621439-addkeycommand",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621410-removekeycommand"
-      ]
+      ],
+      "anchor": "1654948"
     },
     {
       "kind": "taskGroup",
@@ -3010,14 +3136,16 @@
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621498-editing",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621378-setediting",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621471-editbuttonitem"
-      ]
+      ],
+      "anchor": "1654846"
     },
     {
       "kind": "taskGroup",
       "title": "Handling Memory Warnings",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621409-didreceivememorywarning"
-      ]
+      ],
+      "anchor": "1654253"
     },
     {
       "kind": "taskGroup",
@@ -3029,29 +3157,40 @@
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621461-encoderestorablestatewithcoder",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621429-decoderestorablestatewithcoder",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621482-applicationfinishedrestoringstat"
-      ]
+      ],
+      "anchor": "1654289"
     },
     {
       "kind": "taskGroup",
       "title": "Deprecated",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/deprecated_symbols"
+      ],
+      "anchor": "1655211",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Review unsupported symbols and their replacements."
+        }
       ]
     },
     {
       "kind": "taskGroup",
       "title": "Instance Properties",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601234-childviewcontrollerforpointerloc",
-        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601235-preferspointerlocked"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3795605-focusgroupidentifier",
+        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3850571-sheetpresentationcontroller"
+      ],
+      "anchor": "3796745"
     },
     {
       "kind": "taskGroup",
       "title": "Instance Methods",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601236-setneedsupdateofpreferspointerlo"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3750929-contentscrollviewforedge",
+        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3750930-setcontentscrollview"
+      ],
+      "anchor": "3786783"
     }
   ],
   "seeAlsoSections": [
@@ -3101,6 +3240,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -3958,7 +4098,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

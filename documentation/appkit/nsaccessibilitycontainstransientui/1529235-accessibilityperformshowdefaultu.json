@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns to this element’s original UI."
+      "text": "Returns to the accessibility element’s original UI."
     }
   ],
   "documentVersion": 0,
@@ -11,13 +11,15 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycontainstransientui"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycontainstransientui"
       ]
     ]
@@ -42,15 +44,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSAccessibilityContainsTransientUI(im)accessibilityPerformShowDefaultUI",
+    "parent": {
+      "title": "NSAccessibilityContainsTransientUI"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -85,10 +90,18 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls": {
+      "title": "Custom Controls",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls",
+      "url": "/documentation/appkit/accessibility_for_appkit/custom_controls",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -103,7 +116,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of methods that support accessibility in a UI that changes dynamically—usually in response to mouse-hover events."
+          "text": "A role-based protocol that declares the minimum interface necessary for an accessibility element to support dynamic UI changes."
         }
       ]
     },
@@ -114,31 +127,6 @@
       "type": "topic",
       "kind": "symbol",
       "role": "collection"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycontainstransientui/1535134-accessibilityperformshowalternat": {
-      "title": "accessibilityPerformShowAlternateUI",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycontainstransientui/1535134-accessibilityperformshowalternat",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitycontainstransientui/1535134-accessibilityperformshowalternat",
-      "required": true,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Displays the element’s alternate UI."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityPerformShowAlternateUI"
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/objectivec/yes": {
       "title": "YES",
@@ -156,6 +144,31 @@
       "role": "symbol",
       "url": "/documentation/objectivec/no"
     },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycontainstransientui/1535134-accessibilityperformshowalternat": {
+      "title": "accessibilityPerformShowAlternateUI",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycontainstransientui/1535134-accessibilityperformshowalternat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilitycontainstransientui/1535134-accessibilityperformshowalternat",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Displays the accessibility element’s alternative UI."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "accessibilityPerformShowAlternateUI"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycontainstransientui/1529235-accessibilityperformshowdefaultu": {
       "title": "accessibilityPerformShowDefaultUI",
       "type": "topic",
@@ -167,7 +180,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns to this element’s original UI."
+          "text": "Returns to the accessibility element’s original UI."
         }
       ],
       "fragments": [
@@ -192,7 +205,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value that determines whether the element’s alternate UI is currently visible."
+          "text": "Returns a Boolean value that determines whether the accessibility element’s alternative UI is currently visible."
         }
       ],
       "fragments": [
@@ -220,7 +233,7 @@
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycontainstransientui/1535134-accessibilityperformshowalternat",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycontainstransientui/1526272-isaccessibilityalternateuivisibl"
       ],
-      "title": "Supporting Transient UI",
+      "title": "Supporting Accessibility",
       "generated": true
     }
   ],
@@ -325,7 +338,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

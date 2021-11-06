@@ -49,25 +49,33 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UIAdaptivePresentationControllerDelegate(im)presentationControllerShouldDismiss:",
+    "parent": {
+      "title": "UIAdaptivePresentationControllerDelegate"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -148,13 +156,85 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3229894-modalinpresentation": {
-      "title": "modalInPresentation",
+    "doc://com.apple.documentation/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3229891-presentationcontrollerwilldismis": {
+      "title": "presentationControllerWillDismiss:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3229894-modalinpresentation",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3229891-presentationcontrollerwilldismis",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiviewcontroller/3229894-modalinpresentation"
+      "url": "/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3229891-presentationcontrollerwilldismis",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Notifies the delegate before a presentation is dismissed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "presentationControllerWillDismiss:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3229889-presentationcontrollerdiddismiss": {
+      "title": "presentationControllerDidDismiss:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3229889-presentationcontrollerdiddismiss",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3229889-presentationcontrollerdiddismiss",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Notifies the delegate after a presentation is dismissed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "presentationControllerDidDismiss:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/no": {
+      "title": "NO",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/no"
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/disabling_the_pull-down_gesture_for_a_sheet": {
+      "title": "Disabling the Pull-Down Gesture for a Sheet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/disabling_the_pull-down_gesture_for_a_sheet",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/view_controllers/disabling_the_pull-down_gesture_for_a_sheet",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Ensure a positive user experience when presenting a view controller as a sheet."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiadaptivepresentationcontrollerdelegate/1618324-presentationcontroller": {
       "title": "presentationController:willPresentWithAdaptiveStyle:transitionCoordinator:",
@@ -231,56 +311,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3229889-presentationcontrollerdiddismiss": {
-      "title": "presentationControllerDidDismiss:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3229889-presentationcontrollerdiddismiss",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3229889-presentationcontrollerdiddismiss",
-      "required": false,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Notifies the delegate after a presentation is dismissed."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "presentationControllerDidDismiss:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3229891-presentationcontrollerwilldismis": {
-      "title": "presentationControllerWillDismiss:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3229891-presentationcontrollerwilldismis",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3229891-presentationcontrollerwilldismis",
-      "required": false,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Notifies the delegate before a presentation is dismissed."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "presentationControllerWillDismiss:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -299,6 +329,13 @@
       ],
       "title": "Responding to Adaptive Transitions",
       "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/view_controllers/disabling_the_pull-down_gesture_for_a_sheet"
+      ]
     }
   ],
   "primaryContentSections": [
@@ -355,6 +392,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -375,7 +413,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The presentation controller managing the adaptivity change."
+                  "text": "The presentation controller that manages the adaptivity change."
                 }
               ]
             }
@@ -396,16 +434,18 @@
           "type": "paragraph",
           "inlineContent": [
             {
-              "type": "codeVoice",
-              "code": "true"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
             },
             {
               "type": "text",
-              "text": " to allow the presentation to be dismissed, "
+              "text": " to allow the system to dismiss the presentation, "
             },
             {
-              "type": "codeVoice",
-              "code": "false"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
             },
             {
               "type": "text",
@@ -429,24 +469,25 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This method is not called if the presentationController "
+              "text": "The system may call this method at any time. This method isn't guaranteed to be followed by a call to "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3229894-modalinpresentation"
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3229891-presentationcontrollerwilldismis"
             },
             {
               "type": "text",
-              "text": " is "
+              "text": " or "
             },
             {
-              "type": "codeVoice",
-              "code": "true"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3229889-presentationcontrollerdiddismiss"
             },
             {
               "type": "text",
-              "text": " or if the presentation is dismissed programatically."
+              "text": ". Make sure that your implementation of this method returns quickly."
             }
           ]
         }
@@ -454,7 +495,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

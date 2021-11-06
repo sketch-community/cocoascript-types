@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face"
+        "doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support"
       ]
     ]
   },
@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "12.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "12.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "5.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)INRelevantShortcut",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -87,10 +92,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face": {
-      "title": "Relevant Shortcuts for the Siri Watch Face",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face",
-      "url": "/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face",
+    "doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support": {
+      "title": "Watch and Widget Support",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support",
+      "url": "/documentation/sirikit/watch_and_widget_support",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -213,17 +218,31 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/defining_relevant_shortcuts_for_your_app": {
-      "title": "Defining Relevant Shortcuts for Your App",
+    "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcut/3747019-widgetkind": {
+      "title": "widgetKind",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/defining_relevant_shortcuts_for_your_app",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/defining_relevant_shortcuts_for_your_app",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcut/3747019-widgetkind",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrelevantshortcut/3747019-widgetkind",
       "abstract": [
         {
           "type": "text",
-          "text": "Provide Siri relevant shortcuts to display on the Siri watch face."
+          "text": "An identifier that associates the shortcut with the widget it influences."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support/defining_relevant_shortcuts_for_the_siri_watch_face": {
+      "title": "Defining Relevant Shortcuts for the Siri Watch Face",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support/defining_relevant_shortcuts_for_the_siri_watch_face",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/watch_and_widget_support/defining_relevant_shortcuts_for_the_siri_watch_face",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inform Siri when your app’s shortcuts may be useful to the user."
         }
       ]
     },
@@ -263,16 +282,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -298,7 +307,8 @@
       "title": "Creating a Relevant Shortcut",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcut/2993343-initwithshortcut"
-      ]
+      ],
+      "anchor": "2993556"
     },
     {
       "kind": "taskGroup",
@@ -307,30 +317,41 @@
         "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcut/2993345-shortcut",
         "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcut/3017321-shortcutrole",
         "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcutrole"
-      ]
+      ],
+      "anchor": "2993553"
     },
     {
       "kind": "taskGroup",
       "title": "Managing Relevance Providers",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcut/2993344-relevanceproviders"
-      ]
+      ],
+      "anchor": "2993554"
     },
     {
       "kind": "taskGroup",
       "title": "Managing the Siri Watch Face",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcut/2993346-watchtemplate"
-      ]
+      ],
+      "anchor": "2993557"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Widget Information",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcut/3747019-widgetkind"
+      ],
+      "anchor": "3786921"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/defining_relevant_shortcuts_for_your_app",
+        "doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support/defining_relevant_shortcuts_for_the_siri_watch_face",
         "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcutstore"
       ],
-      "title": "First Steps",
+      "title": "Essentials",
       "generated": true
     }
   ],
@@ -368,6 +389,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -376,7 +398,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

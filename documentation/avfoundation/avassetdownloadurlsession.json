@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A URL session used to support the creation and execution of asset download tasks."
+      "text": "A URL session that creates and executes asset download tasks."
     }
   ],
   "documentVersion": 0,
@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetDownloadURLSession",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -95,20 +100,6 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtask": {
-      "title": "AVAssetDownloadTask",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtask",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetdownloadtask",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A session used to download HTTP Live Streaming assets."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/nsurlsession": {
       "title": "NSURLSession",
       "type": "topic",
@@ -127,7 +118,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and initializes an asset download URL session."
+          "text": "Creates a URL session to download assets."
         }
       ],
       "fragments": [
@@ -151,7 +142,45 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Methods you can implement to handle download-related events."
+          "text": "A protocol that defines the methods to implement to respond to asset-download events."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/3751761-assetdownloadtaskwithconfigurati": {
+      "title": "assetDownloadTaskWithConfiguration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/3751761-assetdownloadtaskwithconfigurati",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetdownloadurlsession/3751761-assetdownloadtaskwithconfigurati",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a download task that uses the specified configuration."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "assetDownloadTaskWithConfiguration:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadconfiguration": {
+      "title": "AVAssetDownloadConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetdownloadconfiguration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that provides the configuration for a download task."
         }
       ]
     },
@@ -165,7 +194,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and initializes an asset download task to be used with this download session."
+          "text": "Creates a download task to download the asset."
         }
       ],
       "fragments": [
@@ -189,7 +218,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and initializes a download task to download multiple media selections on a URL asset."
+          "text": "Creates a download task to download the asset and media selections."
         }
       ],
       "fragments": [
@@ -213,16 +242,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and initializes an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtask"
-        },
-        {
-          "type": "text",
-          "text": " to be used with this download session."
+          "text": "Creates a download task to download the asset to the indicated location."
         }
       ],
       "fragments": [
@@ -236,20 +256,6 @@
         }
       ],
       "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/download_task_configuration": {
-      "title": "Download Task Configuration",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/download_task_configuration",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/avfoundation/avassetdownloadurlsession/download_task_configuration",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Configuration options that configure the behavior of a download task."
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams": {
       "title": "Using AVFoundation to Play and Persist HTTP Live Streams",
@@ -275,7 +281,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A URL session used to support the creation and execution of asset download tasks."
+          "text": "A URL session that creates and executes asset download tasks."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtask": {
+      "title": "AVAssetDownloadTask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetdownloadtask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A session used to download HTTP Live Streaming assets."
         }
       ]
     },
@@ -289,7 +309,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A single task that downloads multiple media selections for a single asset."
+          "text": "A task that downloads multiple media selections for an asset."
         }
       ]
     },
@@ -303,7 +323,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to inspect the state of an asset’s locally cached media data."
+          "text": "An object that you use to inspect locally cached media data."
         }
       ]
     },
@@ -317,7 +337,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A manager of policies used to automatically purge downloaded assets."
+          "text": "An object that manages policies to automatically purge downloaded assets."
         }
       ]
     },
@@ -331,7 +351,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of properties that defines a policy to automatically purge downloaded assets."
+          "text": "An object that defines a policy to automatically manage the storage of downloaded assets."
         }
       ]
     },
@@ -345,7 +365,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A mutable set of properties that defines a policy to automatically purge downloaded assets."
+          "text": "A mutable object that you use to create a new storage management policy."
         }
       ]
     },
@@ -374,17 +394,20 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/1621015-sessionwithconfiguration",
         "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate"
-      ]
+      ],
+      "anchor": "2168847"
     },
     {
       "kind": "taskGroup",
-      "title": "Creating a Download Task",
+      "title": "Creating Download Tasks",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/3751761-assetdownloadtaskwithconfigurati",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadconfiguration",
         "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/1650938-assetdownloadtaskwithurlasset",
         "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/2897242-aggregateassetdownloadtaskwithur",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/1621018-assetdownloadtaskwithurlasset",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/download_task_configuration"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/1621018-assetdownloadtaskwithurlasset"
+      ],
+      "anchor": "2168849"
     }
   ],
   "seeAlsoSections": [
@@ -436,6 +459,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -444,7 +468,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

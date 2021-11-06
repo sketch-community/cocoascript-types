@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A special property description type intended for use with a fetch request."
+      "text": "An object that describes an expression to include with a fetch request."
     }
   ],
   "documentVersion": 0,
@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.6",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSExpressionDescription",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,6 +110,30 @@
       "kind": "symbol",
       "role": "symbol"
     },
+    "doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506851-propertiestofetch": {
+      "title": "propertiesToFetch",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506851-propertiestofetch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsfetchrequest/1506851-propertiestofetch"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425125-properties": {
+      "title": "properties",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425125-properties",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsentitydescription/1425125-properties"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsentitydescription": {
+      "title": "NSEntityDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsentitydescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsentitydescription"
+    },
     "doc://com.apple.documentation/documentation/coredata/nspropertydescription": {
       "title": "NSPropertyDescription",
       "type": "topic",
@@ -123,7 +152,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The expression for the receiver."
+          "text": "The expression to evaluate."
         }
       ]
     },
@@ -137,7 +166,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The type of the receiver."
+          "text": "The attribute type of the expression’s result."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsexpressiondescription/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsexpressiondescription/deprecated_symbols",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coredata/nsexpressiondescription/deprecated_symbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Review unsupported symbols and their replacements."
         }
       ]
     },
@@ -235,7 +278,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A special property description type intended for use with a fetch request."
+          "text": "An object that describes an expression to include with a fetch request."
         }
       ]
     },
@@ -274,11 +317,20 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Getting Information About an Expression Description",
+      "title": "Configuring the Expression Description",
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsexpressiondescription/1506817-expression",
         "doc://com.apple.documentation/documentation/coredata/nsexpressiondescription/1506706-expressionresulttype"
-      ]
+      ],
+      "anchor": "1661461"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Deprecated",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsexpressiondescription/deprecated_symbols"
+      ],
+      "anchor": "3786942"
     }
   ],
   "seeAlsoSections": [
@@ -330,6 +382,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -352,47 +405,57 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "An "
+              "text": "An expression description describes a value that a fetch request returns, which doesn’t appear as an attribute or relationship on an entity. For example, expressions can aggregate data, or  transform an attribute’s value. You add expression descriptions to a fetch request using the "
             },
             {
-              "type": "codeVoice",
-              "code": "NSExpressionDescription"
-            },
-            {
-              "type": "text",
-              "text": " describes a column to be returned from a fetch that may not appear directly as an attribute or relationship on an entity. Examples might include "
-            },
-            {
-              "type": "codeVoice",
-              "code": "upper(attribute)"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506851-propertiestofetch"
             },
             {
               "type": "text",
-              "text": " or "
-            },
-            {
-              "type": "codeVoice",
-              "code": "max(attribute)"
-            },
-            {
-              "type": "text",
-              "text": ". You cannot set an "
-            },
-            {
-              "type": "codeVoice",
-              "code": "NSExpressionDescription"
-            },
-            {
-              "type": "text",
-              "text": " object as a property of an entity."
+              "text": " method. "
             }
           ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Don’t add expression descriptions to the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425125-properties"
+                },
+                {
+                  "type": "text",
+                  "text": " array of "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/coredata/nsentitydescription"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "important"
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Converts a Core Text alignment constant value to the matching constant value that UIKit uses."
+      "text": "Converts a Core Text alignment constant value to the matching constant value in UIKit."
     }
   ],
   "documentVersion": 0,
@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_storage"
+        "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts"
       ]
     ]
   },
@@ -34,30 +34,35 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@F@NSTextAlignmentFromCTTextAlignment",
     "symbolKind": "func"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -92,10 +97,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/text_storage": {
-      "title": "Text Storage",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage",
-      "url": "/documentation/uikit/text_storage",
+    "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts": {
+      "title": "Text Display and Fonts",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts",
+      "url": "/documentation/uikit/text_display_and_fonts",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -140,7 +145,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Converts a Core Text alignment constant value to the matching constant value that UIKit uses."
+          "text": "Converts a Core Text alignment constant value to the matching constant value in UIKit."
         }
       ]
     },
@@ -201,6 +206,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
@@ -222,7 +228,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The Core text alignment constant you want to convert."
+                  "text": "The Core Text alignment constant to convert."
                 }
               ]
             }
@@ -280,7 +286,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

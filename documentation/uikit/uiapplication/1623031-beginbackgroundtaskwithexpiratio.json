@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Mark the start of a task that should continue if the app enters the background."
+      "text": "Marks the start of a task that should continue if the app enters the background."
     }
   ],
   "documentVersion": 0,
@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIApplication(im)beginBackgroundTaskWithExpirationHandler:",
+    "parent": {
+      "title": "UIApplication"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -184,7 +192,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The maximum amount of  time remaining for the app to run in the background."
+          "text": "The maximum amount of time remaining for the app to run in the background."
         }
       ]
     },
@@ -198,7 +206,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Mark the start of a task that should continue if the app enters the background."
+          "text": "Marks the start of a task with a custom name that should continue if the app enters the background."
         }
       ],
       "fragments": [
@@ -276,7 +284,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants indicating whether background execution is enabled for the app."
+          "text": "Constants that indicate whether background execution is enabled for the app."
         }
       ]
     },
@@ -290,7 +298,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the app’s status for downloading content in the background changes."
+          "text": "A notification that posts when the app’s status for downloading content in the background changes."
         }
       ]
     },
@@ -304,7 +312,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Mark the start of a task that should continue if the app enters the background."
+          "text": "Marks the start of a task that should continue if the app enters the background."
         }
       ],
       "fragments": [
@@ -410,6 +418,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -470,7 +479,7 @@
             },
             {
               "type": "text",
-              "text": " if running in the background is not possible."
+              "text": " if running in the background isn't possible."
             }
           ]
         }
@@ -490,7 +499,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This method requests additional background execution time for your app. Call this method when leaving a task unfinished might be detrimental to your app’s user experience. For example, call this method before writing data to a file to prevent the system from suspending your app while the operation is in progress. For background tasks requiring more time use "
+              "text": "This method requests additional background execution time for your app. Call this method when leaving a task unfinished might be detrimental to your app’s user experience. For example, call this method before writing data to a file to prevent the system from suspending your app while the operation is in progress. For background tasks requiring more time, use "
             },
             {
               "type": "reference",
@@ -507,8 +516,17 @@
           "type": "paragraph",
           "inlineContent": [
             {
+              "type": "inlineHead",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Call this method as early as possible before starting your task"
+                }
+              ]
+            },
+            {
               "type": "text",
-              "text": "Call this method as early as possible before starting your task, and preferably before your app actually enters the background. The method requests the task assertion for your app asynchronously. If you call this method shortly before your app is due to be suspended, there is a chance that the system might suspend your app before that task assertion is granted. For example, do not call this method at the end of your "
+              "text": ", preferably before your app actually enters the background. The method requests the task assertion for your app asynchronously. If you call this method shortly before your app is due to be suspended, there’s a chance that the system might suspend your app before that task assertion is granted. For example, don’t call this method at the very end of your "
             },
             {
               "type": "reference",
@@ -517,7 +535,7 @@
             },
             {
               "type": "text",
-              "text": " method and expect your app to continue running. If the system is unable to grant the task assertion, it calls your expiration handler. "
+              "text": " method and expect your app to continue running. If the system is unable to grant the task assertion, it calls your expiration handler."
             }
           ]
         },
@@ -525,17 +543,31 @@
           "type": "paragraph",
           "inlineContent": [
             {
-              "type": "text",
-              "text": "Each call to this method must be balanced by a matching call to the "
+              "type": "inlineHead",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Each call to this method must be balanced by a matching call to the "
+                }
+              ]
             },
             {
               "type": "reference",
-              "isActive": false,
+              "isActive": true,
               "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622970-endbackgroundtask"
             },
             {
+              "type": "inlineHead",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": " method."
+                }
+              ]
+            },
+            {
               "type": "text",
-              "text": " method. Apps running background tasks have a finite amount of time in which to run them. (You can find out the maximum background time available using the "
+              "text": " Apps running background tasks have a finite amount of time in which to run them. (You can find out the maximum background time available using the "
             },
             {
               "type": "reference",
@@ -544,7 +576,7 @@
             },
             {
               "type": "text",
-              "text": " property.) If you do not call "
+              "text": " property.) If you don't call "
             },
             {
               "type": "reference",
@@ -569,8 +601,17 @@
           "type": "paragraph",
           "inlineContent": [
             {
+              "type": "inlineHead",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "You can call this method at any point in your app’s execution."
+                }
+              ]
+            },
+            {
               "type": "text",
-              "text": "You can call this method at any point in your app’s execution. You may also call this method multiple times to mark the beginning of several background tasks that run in parallel. However, each task must be ended separately. You identify a given task using the value returned by this method."
+              "text": " You may also call this method multiple times to mark the beginning of several background tasks that run in parallel. However, each task must be ended separately. You identify a given task using the value returned by this method."
             }
           ]
         },
@@ -579,7 +620,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "To assist with debugging, this method generates a name for the task that is based on the name of the calling method or function. If you want to specify a custom name, use the "
+              "text": "To assist with debugging, this method generates a name for the task, based on the name of the calling method or function. If you want to specify a custom name, use the "
             },
             {
               "type": "reference",
@@ -596,8 +637,17 @@
           "type": "paragraph",
           "inlineContent": [
             {
+              "type": "inlineHead",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "This method can be safely called on a non-main thread."
+                }
+              ]
+            },
+            {
               "type": "text",
-              "text": "This method can be safely called on a non-main thread. To extend the execution time of an app extension, use the "
+              "text": " To extend the execution time of an app extension, use the "
             },
             {
               "type": "reference",
@@ -627,7 +677,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "If you are having trouble debugging your background task code, you might try using the "
+                  "text": "If you're having trouble debugging your background task code, you might try using the "
                 },
                 {
                   "type": "reference",
@@ -636,7 +686,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " method instead of this one. That method provides the same behavior as this one but lets you specify a debugger-visible name for your task."
+                  "text": " method instead of this one. That method provides the same behavior but lets you specify a debugger-visible name for your task."
                 }
               ]
             }
@@ -648,7 +698,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

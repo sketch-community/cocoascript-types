@@ -11,13 +11,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility"
       ],
       [
@@ -54,25 +54,33 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)NSObject(py)accessibilityNavigationStyle",
+    "parent": {
+      "title": "NSObject"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -107,10 +115,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -187,7 +195,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants that describe how an object’s elements should be navigated by an assistive technology."
+          "text": "Constants that describe how to navigate an object’s elements with an assistive app."
         }
       ]
     },
@@ -215,7 +223,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The activation point for the accessibility element, in screen coordinates."
+          "text": "The activation point for the accessibility element in screen coordinates."
         }
       ]
     },
@@ -243,7 +251,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The frame of the accessibility element, in screen coordinates."
+          "text": "The frame of the accessibility element in screen coordinates."
         }
       ]
     },
@@ -295,7 +303,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The path of the element, in screen coordinates."
+          "text": "The path of the element in screen coordinates."
         }
       ]
     },
@@ -309,7 +317,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Notifies the system that the app’s focus has changed to a new location."
+          "text": "Notifies the system when the app’s focus changes to a new location."
         }
       ]
     },
@@ -323,7 +331,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The types of system zoom that can be in effect."
+          "text": "The types of system Zoom that can be in effect."
         }
       ]
     },
@@ -333,7 +341,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiguidedaccessaccessibilityfeature/uiguidedaccessaccessibilityfeatureassistivetouch",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiguidedaccessaccessibilityfeature/uiguidedaccessaccessibilityfeatureassistivetouch"
+      "url": "/documentation/uikit/uiguidedaccessaccessibilityfeature/uiguidedaccessaccessibilityfeatureassistivetouch",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The AssistiveTouch accessibility feature."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -399,6 +413,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -445,7 +460,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

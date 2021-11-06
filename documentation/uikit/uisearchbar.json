@@ -39,25 +39,30 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UISearchBar",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -136,6 +141,22 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uisearchtextfield": {
+      "title": "UISearchTextField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchtextfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisearchtextfield"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisearchtoken": {
+      "title": "UISearchToken",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchtoken",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisearchtoken"
+    },
     "doc://com.apple.documentation/documentation/objectivec/yes": {
       "title": "YES",
       "type": "topic",
@@ -213,6 +234,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uisearchbar/1624324-initwithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a search bar from data in a given unarchiver."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -231,6 +258,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uisearchbar/1624269-initwithframe",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a search bar with a specified frame."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -295,6 +328,20 @@
         {
           "type": "text",
           "text": "The current or starting search text."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisearchbar/3175433-searchtextfield": {
+      "title": "searchTextField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar/3175433-searchtextfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisearchbar/3175433-searchtextfield",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The text field that the user enters a search query into."
         }
       ]
     },
@@ -508,48 +555,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624292-scopebuttontitles": {
-      "title": "scopeButtonTitles",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624292-scopebuttontitles",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisearchbar/1624292-scopebuttontitles",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An array of strings indicating the titles of the scope buttons."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624287-selectedscopebuttonindex": {
-      "title": "selectedScopeButtonIndex",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624287-selectedscopebuttonindex",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisearchbar/1624287-selectedscopebuttonindex",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The index of the selected scope button."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624319-showsscopebar": {
-      "title": "showsScopeBar",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624319-showsscopebar",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisearchbar/1624319-showsscopebar",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Specifies whether the scope bar is displayed."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624276-backgroundimage": {
       "title": "backgroundImage",
       "type": "topic",
@@ -722,6 +727,148 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624288-searchfieldbackgroundimageforsta": {
+      "title": "searchFieldBackgroundImageForState:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624288-searchfieldbackgroundimageforsta",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisearchbar/1624288-searchfieldbackgroundimageforsta",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the search text field image for a given state."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "searchFieldBackgroundImageForState:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624307-setsearchfieldbackgroundimage": {
+      "title": "setSearchFieldBackgroundImage:forState:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624307-setsearchfieldbackgroundimage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisearchbar/1624307-setsearchfieldbackgroundimage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the search text field image for a given state."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setSearchFieldBackgroundImage:forState:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624320-searchfieldbackgroundpositionadj": {
+      "title": "searchFieldBackgroundPositionAdjustment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624320-searchfieldbackgroundpositionadj",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisearchbar/1624320-searchfieldbackgroundpositionadj",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The offset of the search text field background in the search bar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624297-searchtextpositionadjustment": {
+      "title": "searchTextPositionAdjustment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624297-searchtextpositionadjustment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisearchbar/1624297-searchtextpositionadjustment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The offset of the text within the search text field background."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624292-scopebuttontitles": {
+      "title": "scopeButtonTitles",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624292-scopebuttontitles",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisearchbar/1624292-scopebuttontitles",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of strings indicating the titles of the scope buttons."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624287-selectedscopebuttonindex": {
+      "title": "selectedScopeButtonIndex",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624287-selectedscopebuttonindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisearchbar/1624287-selectedscopebuttonindex",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The index of the selected scope button."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624319-showsscopebar": {
+      "title": "showsScopeBar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624319-showsscopebar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisearchbar/1624319-showsscopebar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies whether the scope bar is displayed."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisearchbar/3152925-setshowsscopebar": {
+      "title": "setShowsScopeBar:animated:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar/3152925-setshowsscopebar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisearchbar/3152925-setshowsscopebar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies whether the scope bar is displayed, optionally using an animation."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setShowsScopeBar:animated:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624317-scopebarbackgroundimage": {
       "title": "scopeBarBackgroundImage",
       "type": "topic",
@@ -880,82 +1027,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624288-searchfieldbackgroundimageforsta": {
-      "title": "searchFieldBackgroundImageForState:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624288-searchfieldbackgroundimageforsta",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisearchbar/1624288-searchfieldbackgroundimageforsta",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the search text field image for a given state."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "searchFieldBackgroundImageForState:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624307-setsearchfieldbackgroundimage": {
-      "title": "setSearchFieldBackgroundImage:forState:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624307-setsearchfieldbackgroundimage",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisearchbar/1624307-setsearchfieldbackgroundimage",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sets the search text field image for a given state."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setSearchFieldBackgroundImage:forState:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624320-searchfieldbackgroundpositionadj": {
-      "title": "searchFieldBackgroundPositionAdjustment",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624320-searchfieldbackgroundpositionadj",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisearchbar/1624320-searchfieldbackgroundpositionadj",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The offset of the search text field background in the search bar."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624297-searchtextpositionadjustment": {
-      "title": "searchTextPositionAdjustment",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624297-searchtextpositionadjustment",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisearchbar/1624297-searchtextpositionadjustment",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The offset of the text within the search text field background."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/uisearchbaricon": {
       "title": "UISearchBarIcon",
       "type": "topic",
@@ -967,32 +1038,6 @@
         {
           "type": "text",
           "text": "Constants to identify the icons used in the search bar."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uisearchbar/3175433-searchtextfield": {
-      "title": "searchTextField",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar/3175433-searchtextfield",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisearchbar/3175433-searchtextfield"
-    },
-    "doc://com.apple.documentation/documentation/uikit/uisearchbar/3152925-setshowsscopebar": {
-      "title": "setShowsScopeBar:animated:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar/3152925-setshowsscopebar",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisearchbar/3152925-setshowsscopebar",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setShowsScopeBar:animated:"
         }
       ]
     },
@@ -1090,7 +1135,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An item in a tab bar."
+          "text": "An object that describes an item in a tab bar."
         }
       ]
     },
@@ -1125,16 +1170,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -1162,7 +1197,8 @@
         "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624304-init",
         "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624324-initwithcoder",
         "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624269-initwithframe"
-      ]
+      ],
+      "anchor": "2858042"
     },
     {
       "kind": "taskGroup",
@@ -1170,7 +1206,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624291-delegate",
         "doc://com.apple.documentation/documentation/uikit/uisearchbardelegate"
-      ]
+      ],
+      "anchor": "1653450"
     },
     {
       "kind": "taskGroup",
@@ -1178,8 +1215,10 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624322-placeholder",
         "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624326-prompt",
-        "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624282-text"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624282-text",
+        "doc://com.apple.documentation/documentation/uikit/uisearchbar/3175433-searchtextfield"
+      ],
+      "anchor": "1653222"
     },
     {
       "kind": "taskGroup",
@@ -1192,14 +1231,16 @@
         "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624321-translucent",
         "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624270-barstyle",
         "doc://com.apple.documentation/documentation/uikit/uibarstyle"
-      ]
+      ],
+      "anchor": "1653264"
     },
     {
       "kind": "taskGroup",
       "title": "Customizing the Keyboard Shortcut Items",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624275-inputassistantitem"
-      ]
+      ],
+      "anchor": "1653334"
     },
     {
       "kind": "taskGroup",
@@ -1210,20 +1251,12 @@
         "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624293-setshowscancelbutton",
         "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624273-showssearchresultsbutton",
         "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624285-searchresultsbuttonselected"
-      ]
+      ],
+      "anchor": "1653353"
     },
     {
       "kind": "taskGroup",
-      "title": "Scope Buttons",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624292-scopebuttontitles",
-        "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624287-selectedscopebuttonindex",
-        "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624319-showsscopebar"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Customizing the Search Appearance",
+      "title": "Customizing the Search Bar Appearance",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624276-backgroundimage",
         "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624274-backgroundimageforbarposition",
@@ -1233,39 +1266,45 @@
         "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624323-positionadjustmentforsearchbaric",
         "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624278-setpositionadjustment",
         "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624279-inputaccessoryview",
+        "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624288-searchfieldbackgroundimageforsta",
+        "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624307-setsearchfieldbackgroundimage",
+        "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624320-searchfieldbackgroundpositionadj",
+        "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624297-searchtextpositionadjustment"
+      ],
+      "anchor": "1653475"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring Scope Bar Buttons",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624292-scopebuttontitles",
+        "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624287-selectedscopebuttonindex",
+        "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624319-showsscopebar",
+        "doc://com.apple.documentation/documentation/uikit/uisearchbar/3152925-setshowsscopebar"
+      ],
+      "anchor": "1653404"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Customizing the Scope Bar Appearance",
+      "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624317-scopebarbackgroundimage",
         "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624311-scopebarbuttonbackgroundimagefor",
         "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624290-setscopebarbuttonbackgroundimage",
         "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624313-scopebarbuttondividerimageforlef",
         "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624308-setscopebarbuttondividerimage",
         "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624309-scopebarbuttontitletextattribute",
-        "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624277-setscopebarbuttontitletextattrib",
-        "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624288-searchfieldbackgroundimageforsta",
-        "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624307-setsearchfieldbackgroundimage",
-        "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624320-searchfieldbackgroundpositionadj",
-        "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624297-searchtextpositionadjustment"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uisearchbar/1624277-setscopebarbuttontitletextattrib"
+      ],
+      "anchor": "3744702"
     },
     {
       "kind": "taskGroup",
       "title": "Constants",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uisearchbaricon"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Properties",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uisearchbar/3175433-searchtextfield"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Methods",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uisearchbar/3152925-setshowsscopebar"
-      ]
+      ],
+      "anchor": "1681826"
     }
   ],
   "seeAlsoSections": [
@@ -1319,6 +1358,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -1344,7 +1384,7 @@
             },
             {
               "type": "text",
-              "text": " provides a text field for entering text, a search button, a bookmark button, and a cancel button. A search bar does not actually perform any searches. You use a delegate, an object conforming to the "
+              "text": " provides a text field for entering text, a search button, a bookmark button, and a cancel button. A search bar doesn’t actually perform any searches. You use a delegate, an object conforming to the "
             },
             {
               "type": "reference",
@@ -1353,7 +1393,25 @@
             },
             {
               "type": "text",
-              "text": " protocol, to implement the actions when text is entered and buttons are clicked."
+              "text": " protocol, to implement the actions when the user enters text or clicks buttons. For details about interacting with the text field, accessing its content, and using tokens, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchtextfield"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchtoken"
+            },
+            {
+              "type": "text",
+              "text": "."
             }
           ]
         },
@@ -1401,7 +1459,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

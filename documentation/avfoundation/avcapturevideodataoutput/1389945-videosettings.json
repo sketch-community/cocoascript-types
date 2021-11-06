@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVCaptureVideoDataOutput(py)videoSettings",
+    "parent": {
+      "title": "AVCaptureVideoDataOutput"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -144,11 +152,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates the supported video pixel formats that can be specified in "
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "The video pixel formats the output supports."
         }
       ]
     },
@@ -162,11 +166,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates the supported video codec formats that can be specified in "
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "The video codecs the output supports."
         }
       ]
     },
@@ -186,20 +186,6 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avcapturesession/1389696-sessionpreset"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings": {
-      "title": "videoSettings",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The compression settings for the output."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/nsdictionary": {
       "title": "NSDictionary",
       "type": "topic",
@@ -216,13 +202,27 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings": {
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings": {
+      "title": "videoSettings",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The compression settings for the output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/video_settings": {
       "title": "Video Settings",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/video_settings",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/avfoundation/avassetwriterinput/video_settings",
+      "url": "/documentation/avfoundation/avcapturephotosettings/video_settings",
       "abstract": [
         {
           "type": "text",
@@ -346,7 +346,7 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/video_settings",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1616296-minframeduration",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1385780-alwaysdiscardslatevideoframes",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/3153021-automaticallyconfiguresoutputbuf",
@@ -422,6 +422,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -560,7 +561,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

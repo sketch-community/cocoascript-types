@@ -13,6 +13,12 @@
         "doc://com.apple.documentation/documentation/foundation",
         "doc://com.apple.documentation/documentation/foundation/url_loading_system",
         "doc://com.apple.documentation/documentation/foundation/nsurlsession"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/url_loading_system",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask"
       ]
     ]
   },
@@ -35,35 +41,40 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(pl)NSURLSessionTaskDelegate",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -113,6 +124,80 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsurlsession"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask": {
+      "title": "NSURLSessionTask",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask",
+      "url": "/documentation/foundation/nsurlsessiontask",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/3767350-bytes": {
+      "title": "bytes(for:delegate:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/3767350-bytes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/3767350-bytes"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/3767352-data": {
+      "title": "data(for:delegate:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/3767352-data",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/3767352-data"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsession/1411554-datataskwithurl": {
+      "title": "dataTaskWithURL:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession/1411554-datataskwithurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsession/1411554-datataskwithurl",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dataTaskWithURL:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsession/1411482-downloadtaskwithurl": {
+      "title": "downloadTaskWithURL:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession/1411482-downloadtaskwithurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsession/1411482-downloadtaskwithurl",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "downloadTaskWithURL:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsession/1411530-delegate": {
+      "title": "delegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession/1411530-delegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsession/1411530-delegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The delegate assigned when this object was created."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsurlsessiondownloaddelegate": {
       "title": "NSURLSessionDownloadDelegate",
@@ -410,20 +495,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsurlsession/1411530-delegate": {
-      "title": "delegate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession/1411530-delegate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsurlsession/1411530-delegate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The delegate assigned when this object was created."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate": {
       "title": "NSURLSessionTaskDelegate",
       "type": "topic",
@@ -460,16 +531,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -498,14 +559,16 @@
       "title": "Handling Task Life Cycle Changes",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate/1411610-urlsession"
-      ]
+      ],
+      "anchor": "2952845"
     },
     {
       "kind": "taskGroup",
       "title": "Handling Redirects",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate/1411626-urlsession"
-      ]
+      ],
+      "anchor": "1660392"
     },
     {
       "kind": "taskGroup",
@@ -513,7 +576,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate/1408299-urlsession",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate/1410001-urlsession"
-      ]
+      ],
+      "anchor": "2952843"
     },
     {
       "kind": "taskGroup",
@@ -521,7 +585,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate/1411595-urlsession",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessionauthchallengedisposition"
-      ]
+      ],
+      "anchor": "2952840"
     },
     {
       "kind": "taskGroup",
@@ -530,7 +595,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate/2873415-urlsession",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiondelayedrequestdisposition",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate/2908819-urlsession"
-      ]
+      ],
+      "anchor": "2952846"
     },
     {
       "kind": "taskGroup",
@@ -538,7 +604,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate/1643148-urlsession",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskmetrics"
-      ]
+      ],
+      "anchor": "2952841"
     }
   ],
   "seeAlsoSections": [
@@ -576,6 +643,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -598,34 +666,134 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "If you’re using download tasks, also implement the methods in the "
+              "text": "You use this protocol in one of two ways, depending on how you use a "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiondownloaddelegate"
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession"
             },
             {
               "type": "text",
-              "text": " protocol."
+              "text": ":"
             }
           ]
         },
         {
-          "type": "paragraph",
-          "inlineContent": [
+          "type": "unorderedList",
+          "items": [
             {
-              "type": "text",
-              "text": "If you’re using data or upload tasks, also implement the methods in the "
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If you create tasks with Swift’s "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "async"
+                    },
+                    {
+                      "type": "text",
+                      "text": "-"
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "await"
+                    },
+                    {
+                      "type": "text",
+                      "text": " syntax, using methods like "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/3767350-bytes"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/3767352-data"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", you pass a "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "delegate"
+                    },
+                    {
+                      "type": "text",
+                      "text": " argument of this type. The delegate receives callbacks for things like task progress, while the call point awaits the completion of the task."
+                    }
+                  ]
+                }
+              ]
             },
             {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiondatadelegate"
-            },
-            {
-              "type": "text",
-              "text": " protocol."
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If you add tasks to the session with methods like "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession/1411554-datataskwithurl"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession/1411482-downloadtaskwithurl"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", then you implement this protocol’s methods in a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession/1411530-delegate"
+                    },
+                    {
+                      "type": "text",
+                      "text": " you set on the session. This session delegate may also implement other protocols as appropriate, like "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiondownloaddelegate"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiondatadelegate"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". You can also assign a delegate of this type directly to the task to intercept callbacks before the task delivers them to the session’s delegate."
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -646,7 +814,23 @@
                 },
                 {
                   "type": "text",
-                  "text": " object doesn’t need to have a delegate. If no delegate is assigned, a system-provided delegate is used, and you must provide a completion callback to obtain the data."
+                  "text": " object doesn’t need to have a delegate. If you don’t assign a delegate, the session uses a system-provided delegate. In this case, you must provide a completion callback or use the Swift "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "async"
+                },
+                {
+                  "type": "text",
+                  "text": "-"
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "await"
+                },
+                {
+                  "type": "text",
+                  "text": " methods to obtain the data."
                 }
               ]
             }
@@ -658,7 +842,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

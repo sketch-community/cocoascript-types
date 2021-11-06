@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UIGuidedAccessRestrictionDelegate",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -106,7 +111,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an array of strings identifying custom restrictions."
+          "text": "An array of strings identifying custom restrictions."
         }
       ]
     },
@@ -129,7 +134,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a succinct description of the restriction for the provided identifier."
+          "text": "Provides a succinct description of the restriction for the specified identifier."
         }
       ],
       "fragments": [
@@ -154,7 +159,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns more detailed information about the restriction for the provided identifier."
+          "text": "Provides more detailed information about the restriction for the specified identifier."
         }
       ],
       "fragments": [
@@ -225,7 +230,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The state of a restriction, either allow or deny."
+          "text": "Constants that describe the state of a restriction, either allow or deny."
         }
       ]
     },
@@ -251,16 +256,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -279,21 +274,17 @@
         "doc://com.apple.documentation/documentation/uikit/uiguidedaccessrestrictiondelegate/1621160-guidedaccessrestrictionidentifie",
         "doc://com.apple.documentation/documentation/uikit/uiguidedaccessrestrictiondelegate/1621161-textforguidedaccessrestrictionwi",
         "doc://com.apple.documentation/documentation/uikit/uiguidedaccessrestrictiondelegate/1621158-detailtextforguidedaccessrestric"
-      ]
+      ],
+      "anchor": "1658355"
     },
     {
       "kind": "taskGroup",
       "title": "Implementing Restrictions",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uiguidedaccessrestrictiondelegate/1621156-guidedaccessrestrictionwithident"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Constants",
-      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiguidedaccessrestrictiondelegate/1621156-guidedaccessrestrictionwithident",
         "doc://com.apple.documentation/documentation/uikit/uiguidedaccessrestrictionstate"
-      ]
+      ],
+      "anchor": "1658420"
     }
   ],
   "seeAlsoSections": [
@@ -329,6 +320,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -456,7 +448,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

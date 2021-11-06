@@ -35,25 +35,30 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "introducedAt": "14.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVCaptureInputPort",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -103,20 +108,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/avfoundation/avcaptureinput"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcaptureinputport/1385890-formatdescription": {
-      "title": "formatDescription",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureinputport/1385890-formatdescription",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcaptureinputport/1385890-formatdescription",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A description of the port format."
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceinput": {
       "title": "AVCaptureDeviceInput",
@@ -176,6 +167,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avcaptureinputport/1385890-formatdescription": {
+      "title": "formatDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureinputport/1385890-formatdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcaptureinputport/1385890-formatdescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A description of the port format."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avcaptureinputport/1385908-clock": {
       "title": "clock",
       "type": "topic",
@@ -228,16 +233,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted if the value of the capture input port’s"
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureinputport/1385890-formatdescription"
-        },
-        {
-          "type": "text",
-          "text": " property changes."
+          "text": "A notification the system posts when the capture input port’s format description changes."
         }
       ]
     },
@@ -277,16 +273,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -309,14 +295,16 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcaptureinputport/1385908-clock",
         "doc://com.apple.documentation/documentation/avfoundation/avcaptureinputport/3114575-sourcedevicetype",
         "doc://com.apple.documentation/documentation/avfoundation/avcaptureinputport/3114574-sourcedeviceposition"
-      ]
+      ],
+      "anchor": "1669032"
     },
     {
       "kind": "taskGroup",
       "title": "Notifications",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcaptureinputportformatdescriptiondidchangenotification"
-      ]
+      ],
+      "anchor": "1679046"
     }
   ],
   "seeAlsoSections": [
@@ -362,6 +350,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -408,7 +397,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

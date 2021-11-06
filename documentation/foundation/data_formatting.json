@@ -30,8 +30,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -65,6 +65,46 @@
       "type": "topic",
       "kind": "symbol",
       "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle": {
+      "title": "FormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsformatter": {
+      "title": "NSFormatter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsformatter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsformatter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract class that declares an interface for objects that create, interpret, and validate the textual representation of values. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsformatter/1415993-stringforobjectvalue": {
+      "title": "stringForObjectValue:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsformatter/1415993-stringforobjectvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsformatter/1415993-stringforobjectvalue",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "stringForObjectValue:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsnumberformatter": {
       "title": "NSNumberFormatter",
@@ -142,7 +182,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsrelativedatetimeformatter"
+      "url": "/documentation/foundation/nsrelativedatetimeformatter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A formatter that creates locale-aware string representations of a relative date or time."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsdateintervalformatter": {
       "title": "NSDateIntervalFormatter",
@@ -206,7 +252,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nslistformatter",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nslistformatter"
+      "url": "/documentation/foundation/nslistformatter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that provides locale-correct formatting of a list of items using the appropriate separator and conjunction."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nslocale": {
       "title": "NSLocale",
@@ -222,17 +274,45 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsformatter": {
-      "title": "NSFormatter",
+    "doc://com.apple.documentation/documentation/foundation/nsinflectionrule": {
+      "title": "NSInflectionRule",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsformatter",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsinflectionrule",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsformatter",
+      "url": "/documentation/foundation/nsinflectionrule",
       "abstract": [
         {
           "type": "text",
-          "text": "An abstract class that declares an interface for objects that create, interpret, and validate the textual representation of values. "
+          "text": "A rule that affects how an attributed string performs automatic grammatical agreement."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsinflectionruleexplicit": {
+      "title": "NSInflectionRuleExplicit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsinflectionruleexplicit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsinflectionruleexplicit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An inflection rule that uses a morphology instance to determine how to inflect attribued strings."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsmorphology": {
+      "title": "NSMorphology",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsmorphology",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsmorphology",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A description of the grammatical properties of a string."
         }
       ]
     },
@@ -384,23 +464,14 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "topicSections": [
     {
       "kind": "taskGroup",
       "title": "Numbers and Currency",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsnumberformatter"
-      ]
+      ],
+      "anchor": "2877925"
     },
     {
       "kind": "taskGroup",
@@ -408,7 +479,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponentsformatter",
         "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents"
-      ]
+      ],
+      "anchor": "2877928"
     },
     {
       "kind": "taskGroup",
@@ -419,42 +491,58 @@
         "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter",
         "doc://com.apple.documentation/documentation/foundation/nsdateintervalformatter",
         "doc://com.apple.documentation/documentation/foundation/nsiso8601dateformatter"
-      ]
+      ],
+      "anchor": "2877929"
     },
     {
       "kind": "taskGroup",
       "title": "Data Sizes",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsbytecountformatter"
-      ]
+      ],
+      "anchor": "2877938"
     },
     {
       "kind": "taskGroup",
       "title": "Measurements",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsmeasurementformatter"
-      ]
+      ],
+      "anchor": "2877930"
     },
     {
       "kind": "taskGroup",
       "title": "Lists",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nslistformatter"
-      ]
+      ],
+      "anchor": "3638508"
     },
     {
       "kind": "taskGroup",
       "title": "Internationalization",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nslocale"
-      ]
+      ],
+      "anchor": "2877752"
     },
     {
       "kind": "taskGroup",
       "title": "Custom Formatters",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsformatter"
-      ]
+      ],
+      "anchor": "2877939"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Automatic Grammar Agreement",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsinflectionrule",
+        "doc://com.apple.documentation/documentation/foundation/nsinflectionruleexplicit",
+        "doc://com.apple.documentation/documentation/foundation/nsmorphology"
+      ],
+      "anchor": "3786962"
     },
     {
       "kind": "taskGroup",
@@ -463,7 +551,8 @@
         "doc://com.apple.documentation/documentation/foundation/nslengthformatter",
         "doc://com.apple.documentation/documentation/foundation/nsmassformatter",
         "doc://com.apple.documentation/documentation/foundation/nsenergyformatter"
-      ]
+      ],
+      "anchor": "2877931"
     }
   ],
   "seeAlsoSections": [
@@ -480,8 +569,96 @@
       "generated": true
     }
   ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Foundation supports two approaches for data formatting:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "When working in Swift, use "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "formatted"
+                    },
+                    {
+                      "type": "text",
+                      "text": " methods directly on the types you want to format, optionally using "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and its subtypes to customize formatter output. This approach supports dates, integers, floating-point numbers, measurements, sequences, and person name components. Foundation caches identically-configured formatter instances internally, allowing you to focus on your app’s formatting needs."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In Objective-C, create instances of "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsformatter"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and its subtypes, and use the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsformatter/1415993-stringforobjectvalue"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method to convert objects to formatted strings."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

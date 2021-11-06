@@ -11,12 +11,8 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/automator",
+        "doc://com.apple.documentation/documentation/automator/amworkflowcontroller",
         "doc://com.apple.documentation/documentation/automator/amworkflowcontrollerdelegate"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/automator",
-        "doc://com.apple.documentation/documentation/automator/amworkflowcontroller"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
@@ -53,16 +49,19 @@
         "name": "macOS",
         "introducedAt": "10.4",
         "deprecatedAt": "10.13",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(pl)AMWorkflowControllerDelegate(im)workflowController:willRunAction:",
+    "parent": {
+      "title": "AMWorkflowControllerDelegate"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -98,14 +97,6 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/automator/amworkflowcontrollerdelegate": {
-      "title": "AMWorkflowControllerDelegate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/automator/amworkflowcontrollerdelegate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/automator/amworkflowcontrollerdelegate"
-    },
     "doc://com.apple.documentation/documentation/automator/amworkflowcontroller": {
       "title": "AMWorkflowController",
       "type": "topic",
@@ -113,6 +104,20 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/automator/amworkflowcontroller"
+    },
+    "doc://com.apple.documentation/documentation/automator/amworkflowcontrollerdelegate": {
+      "title": "AMWorkflowControllerDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/automator/amworkflowcontrollerdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/automator/amworkflowcontrollerdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of optional methods that a delegate of a workflow controller implements."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/objectivec": {
       "title": "Objective-C Runtime",
@@ -154,6 +159,14 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/automator/amworkflowcontrollerdelegate/2869892-workflowcontroller": {
+      "title": "workflowController(_:willRun:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/automator/amworkflowcontrollerdelegate/2869892-workflowcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/automator/amworkflowcontrollerdelegate/2869892-workflowcontroller"
+    },
     "doc://com.apple.documentation/documentation/automator/amaction": {
       "title": "AMAction",
       "type": "topic",
@@ -161,32 +174,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/automator/amaction"
-    },
-    "doc://com.apple.documentation/documentation/objectivec/nsobject/1419675-workflowcontroller": {
-      "title": "workflowController:didRunAction:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1419675-workflowcontroller",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/nsobject/1419675-workflowcontroller",
-      "required": false,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Invoked when an action in the receiver's workflow is finished running."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "workflowController:didRunAction:"
-        }
-      ],
-      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject/1419720-workflowcontroller": {
       "title": "workflowController:willRunAction:",
@@ -214,6 +201,162 @@
       ],
       "deprecated": true
     },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1419730-workflowcontrollerwillrun": {
+      "title": "workflowControllerWillRun:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1419730-workflowcontrollerwillrun",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1419730-workflowcontrollerwillrun",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the workflow controller object is about to run."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "workflowControllerWillRun:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1419675-workflowcontroller": {
+      "title": "workflowController:didRunAction:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1419675-workflowcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1419675-workflowcontroller",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Invoked when an action in the receiver's workflow is finished running."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "workflowController:didRunAction:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1419762-workflowcontrollerdidrun": {
+      "title": "workflowControllerDidRun:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1419762-workflowcontrollerdidrun",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1419762-workflowcontrollerdidrun",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the workflow controller object finished running."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "workflowControllerDidRun:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1419598-workflowcontrollerwillstop": {
+      "title": "workflowControllerWillStop:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1419598-workflowcontrollerwillstop",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1419598-workflowcontrollerwillstop",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the workflow controller object is about to stop."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "workflowControllerWillStop:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1419770-workflowcontrollerdidstop": {
+      "title": "workflowControllerDidStop:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1419770-workflowcontrollerdidstop",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1419770-workflowcontrollerdidstop",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the workflow controller object has stopped."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "workflowControllerDidStop:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1419652-workflowcontroller": {
+      "title": "workflowController:didError:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1419652-workflowcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1419652-workflowcontroller",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Invoked when the receiver's workflow encounters an error."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "workflowController:didError:"
+        }
+      ],
+      "deprecated": true
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -222,12 +365,37 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/automator/amworkflowcontrollerdelegate/2869892-workflowcontroller"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/1419675-workflowcontroller"
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1419730-workflowcontrollerwillrun",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1419675-workflowcontroller",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1419762-workflowcontrollerdidrun",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1419598-workflowcontrollerwillstop",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1419770-workflowcontrollerdidstop",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1419652-workflowcontroller"
       ],
-      "title": "Running an action in the workflow",
+      "title": "Deprecated",
       "generated": true
     }
   ],
@@ -358,7 +526,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

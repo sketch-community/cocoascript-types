@@ -41,30 +41,35 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@UIPreferredPresentationStyle",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -181,34 +186,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1528569-sourceframe": {
-      "title": "sourceFrame",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1528569-sourceframe",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider/1528569-sourceframe",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The rectangle (in screen coordinates) occupied by the item in the host app’s source window."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1528571-containerframe": {
-      "title": "containerFrame",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1528571-containerframe",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider/1528571-containerframe",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The rectangle (in screen coordinates) of the item’s visible content."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1528574-preferredpresentationsize": {
       "title": "preferredPresentationSize",
       "type": "topic",
@@ -251,6 +228,28 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2890244-suggestedname": {
+      "title": "suggestedName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2890244-suggestedname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider/2890244-suggestedname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The filename to use when writing the provided data to a file on disk."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2909055-teamdata": {
+      "title": "teamData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2909055-teamdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider/2909055-teamdata"
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -267,18 +266,19 @@
         "doc://com.apple.documentation/documentation/uikit/uipreferredpresentationstyle/uipreferredpresentationstyleunspecified",
         "doc://com.apple.documentation/documentation/uikit/uipreferredpresentationstyle/uipreferredpresentationstyleinline",
         "doc://com.apple.documentation/documentation/uikit/uipreferredpresentationstyle/uipreferredpresentationstyleattachment"
-      ]
+      ],
+      "anchor": "2921861"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1528569-sourceframe",
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1528571-containerframe",
         "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1528574-preferredpresentationsize",
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2921257-preferredpresentationstyle"
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2921257-preferredpresentationstyle",
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2890244-suggestedname",
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2909055-teamdata"
       ],
-      "title": "Getting the Visual Attributes",
+      "title": "Configuring the Provider",
       "generated": true
     }
   ],
@@ -344,6 +344,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
@@ -353,7 +354,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_storage",
+        "doc://com.apple.documentation/documentation/uikit/textkit",
         "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle"
       ],
       [
@@ -50,35 +50,40 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@NSWritingDirection",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -115,10 +120,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/text_storage": {
-      "title": "Text Storage",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage",
-      "url": "/documentation/uikit/text_storage",
+    "doc://com.apple.documentation/documentation/uikit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit",
+      "url": "/documentation/uikit/textkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -181,7 +186,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The writing direction is determined using the Unicode Bidi Algorithm rules P2 and P3. Default."
+          "text": "The writing direction of the current script that the system determines using the Unicode Bidi Algorithm rules P2 and P3."
         }
       ]
     },
@@ -213,6 +218,58 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1535327-defaultwritingdirectionforlangua": {
+      "title": "defaultWritingDirectionForLanguage:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1535327-defaultwritingdirectionforlangua",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsparagraphstyle/1535327-defaultwritingdirectionforlangua",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the default writing direction for the specified language."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "defaultWritingDirectionForLanguage:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1527354-basewritingdirection": {
+      "title": "baseWritingDirection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1527354-basewritingdirection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsparagraphstyle/1527354-basewritingdirection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The base writing direction for the paragraph. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nswritingdirection": {
+      "title": "NSWritingDirection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nswritingdirection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nswritingdirection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify the writing direction."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -229,7 +286,18 @@
         "doc://com.apple.documentation/documentation/uikit/nswritingdirection/nswritingdirectionnatural",
         "doc://com.apple.documentation/documentation/uikit/nswritingdirection/nswritingdirectionlefttoright",
         "doc://com.apple.documentation/documentation/uikit/nswritingdirection/nswritingdirectionrighttoleft"
-      ]
+      ],
+      "anchor": "1595611"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1535327-defaultwritingdirectionforlangua",
+        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1527354-basewritingdirection"
+      ],
+      "title": "Determining Writing Direction",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -294,6 +362,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -304,7 +373,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

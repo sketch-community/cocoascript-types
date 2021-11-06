@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The abstract class that defines the common interface for moving samples from an asset to a player."
+      "text": "An abstract class that defines the common interface to output media data from a player item."
     }
   ],
   "documentVersion": 0,
@@ -11,8 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/avfoundation",
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs"
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection"
       ]
     ]
   },
@@ -35,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.8",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVPlayerItemOutput",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -102,14 +106,6 @@
       "title": "Media Playback and Selection",
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
       "url": "/documentation/avfoundation/media_playback_and_selection",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs": {
-      "title": "Player Item Outputs",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs",
-      "url": "/documentation/avfoundation/media_playback_and_selection/player_item_outputs",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -208,6 +204,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem": {
+      "title": "AVPlayerItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that models the timing and presentation state of an asset that a player object presents."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritemoutput": {
       "title": "AVPlayerItemOutput",
       "type": "topic",
@@ -218,7 +228,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The abstract class that defines the common interface for moving samples from an asset to a player."
+          "text": "An abstract class that defines the common interface to output media data from a player item."
         }
       ]
     },
@@ -232,7 +242,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that coordinates the output of content associated with a Core Video pixel buffer."
+          "text": "An object that outputs video frames from a player item."
         }
       ]
     },
@@ -246,7 +256,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that can vend media with a legible characteristic as an attributed string."
+          "text": "An object that vends attributed strings for media with a legible characteristic."
         }
       ]
     },
@@ -260,7 +270,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to vend collections of metadata items carried in metadata tracks."
+          "text": "An object that vends collections of metadata items that a player item’s tracks carry."
         }
       ]
     },
@@ -274,7 +284,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Methods you can implement to respond to changes in the media data sequence."
+          "text": "A protocol that defines the methods to implement to respond to changes in the media data sequence."
         }
       ]
     },
@@ -304,25 +314,28 @@
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritemoutput/1386538-itemtimeforhosttime",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritemoutput/1386962-itemtimeformachabsolutetime",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritemoutput/1388333-itemtimeforcvtimestamp"
-      ]
+      ],
+      "anchor": "1668750"
     },
     {
       "kind": "taskGroup",
       "title": "Configuring the Playback Options",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritemoutput/1386133-suppressesplayerrendering"
-      ]
+      ],
+      "anchor": "1668802"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritemvideooutput",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritemlegibleoutput",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritemmetadataoutput",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritemoutputpushdelegate"
       ],
-      "title": "Outputs",
+      "title": "Player Items",
       "generated": true
     }
   ],
@@ -360,6 +373,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -394,7 +408,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Do not create instances of this class directly but instead use one of the concrete subclasses that manage specific types of assets."
+                  "text": "Don’t create instances of this class directly but instead use one of the concrete subclasses that manage specific types of assets."
                 }
               ]
             }
@@ -405,7 +419,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

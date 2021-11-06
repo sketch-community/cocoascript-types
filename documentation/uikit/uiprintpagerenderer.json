@@ -34,20 +34,25 @@
       {
         "name": "iOS",
         "introducedAt": "4.2",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.2",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIPrintPageRenderer",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -420,22 +425,52 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiprintpagerenderer/3727328-currentrenderingqualityforreques": {
+      "title": "currentRenderingQualityForRequestedRenderingQuality:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiprintpagerenderer/3727328-currentrenderingqualityforreques",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiprintpagerenderer/3727328-currentrenderingqualityforreques",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "currentRenderingQualityForRequestedRenderingQuality:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiprintrenderingquality": {
+      "title": "UIPrintRenderingQuality",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiprintrenderingquality",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiprintrenderingquality"
+    },
+    "doc://com.apple.documentation/documentation/uikit/printing/building_and_improving_your_app_with_mac_catalyst": {
+      "title": "Building and Improving Your App with Mac Catalyst",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/printing/building_and_improving_your_app_with_mac_catalyst",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/printing/building_and_improving_your_app_with_mac_catalyst",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Improve your iPadOS app with Mac Catalyst by supporting native controls, multiple windows, sharing, printing, menus and keyboard shortcuts."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -456,7 +491,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiprintpagerenderer/1621631-numberofpages",
         "doc://com.apple.documentation/documentation/uikit/uiprintpagerenderer/1621633-paperrect",
         "doc://com.apple.documentation/documentation/uikit/uiprintpagerenderer/1621628-printablerect"
-      ]
+      ],
+      "anchor": "1653294"
     },
     {
       "kind": "taskGroup",
@@ -464,7 +500,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiprintpagerenderer/1621630-headerheight",
         "doc://com.apple.documentation/documentation/uikit/uiprintpagerenderer/1621634-footerheight"
-      ]
+      ],
+      "anchor": "1653335"
     },
     {
       "kind": "taskGroup",
@@ -473,14 +510,16 @@
         "doc://com.apple.documentation/documentation/uikit/uiprintpagerenderer/1621632-addprintformatter",
         "doc://com.apple.documentation/documentation/uikit/uiprintpagerenderer/1621635-printformattersforpageatindex",
         "doc://com.apple.documentation/documentation/uikit/uiprintpagerenderer/1621640-printformatters"
-      ]
+      ],
+      "anchor": "1653364"
     },
     {
       "kind": "taskGroup",
       "title": "Preparing for Drawing",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiprintpagerenderer/1621643-preparefordrawingpages"
-      ]
+      ],
+      "anchor": "1653399"
     },
     {
       "kind": "taskGroup",
@@ -491,7 +530,26 @@
         "doc://com.apple.documentation/documentation/uikit/uiprintpagerenderer/1621641-drawcontentforpageatindex",
         "doc://com.apple.documentation/documentation/uikit/uiprintpagerenderer/1621644-drawprintformatter",
         "doc://com.apple.documentation/documentation/uikit/uiprintpagerenderer/1621638-drawfooterforpageatindex"
-      ]
+      ],
+      "anchor": "1653418"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing the Rendering Quality",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiprintpagerenderer/3727328-currentrenderingqualityforreques",
+        "doc://com.apple.documentation/documentation/uikit/uiprintrenderingquality"
+      ],
+      "anchor": "3849761"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/printing/building_and_improving_your_app_with_mac_catalyst"
+      ],
+      "title": "Renderer",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -528,6 +586,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -773,7 +832,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -30,8 +30,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -84,7 +84,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Create a simple video playback app with built-in controls."
+          "text": "Build a simple video playback app with built-in controls by using minimal code and effort."
         }
       ]
     },
@@ -154,7 +154,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Respond to changes in a player's playback state."
+          "text": "Respond to changes in a player’s playback state."
         }
       ]
     },
@@ -168,7 +168,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Observe the playback time for an asset in order to update the player's state."
+          "text": "Observe the playback time for an asset in order to update the player’s state."
         }
       ]
     },
@@ -214,48 +214,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem": {
-      "title": "AVPlayerItem",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object used to model the timing and presentation state of an asset played by the player."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack": {
-      "title": "AVPlayerItemTrack",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritemtrack",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object used to modify the presentation state of an asset track being presented by a player."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer": {
-      "title": "AVPlayerLayer",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayerlayer",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that manages a player’s visual output."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer": {
       "title": "AVQueuePlayer",
       "type": "topic",
@@ -266,7 +224,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A player used to play a number of items in sequence."
+          "text": "An object that plays a sequence of player items."
         }
       ]
     },
@@ -280,7 +238,105 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that simplifies the playing of looping media content using a queue player."
+          "text": "An object that loops media content using a queue player."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem": {
+      "title": "AVPlayerItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that models the timing and presentation state of an asset that a player object presents."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemoutput": {
+      "title": "AVPlayerItemOutput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritemoutput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract class that defines the common interface to output media data from a player item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemvideooutput": {
+      "title": "AVPlayerItemVideoOutput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemvideooutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritemvideooutput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that outputs video frames from a player item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemlegibleoutput": {
+      "title": "AVPlayerItemLegibleOutput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemlegibleoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritemlegibleoutput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that vends attributed strings for media with a legible characteristic."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemmetadataoutput": {
+      "title": "AVPlayerItemMetadataOutput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemmetadataoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritemmetadataoutput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that vends collections of metadata items that a player item’s tracks carry."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemoutputpushdelegate": {
+      "title": "AVPlayerItemOutputPushDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemoutputpushdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritemoutputpushdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that defines the methods to implement to respond to changes in the media data sequence."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer": {
+      "title": "AVPlayerLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayerlayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that presents the visual contents of a player object."
         }
       ]
     },
@@ -294,21 +350,105 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to synchronize with a specific player item."
+          "text": "A Core Animation layer that derives its timing from a player item so that you can synchronize layer animations with media playback."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs": {
-      "title": "Player Item Outputs",
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/supporting_coordinated_media_playback": {
+      "title": "Supporting Coordinated Media Playback",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/supporting_coordinated_media_playback",
       "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/avfoundation/media_playback_and_selection/player_item_outputs",
+      "role": "sampleCode",
+      "url": "/documentation/avfoundation/media_playback_and_selection/supporting_coordinated_media_playback",
       "abstract": [
         {
           "type": "text",
-          "text": "Objects that provide access to the content of a player item’s tracks."
+          "text": "Create synchronized media experiences that enable users to watch and listen across devices."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplaybackcoordinator": {
+      "title": "AVPlaybackCoordinator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplaybackcoordinator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplaybackcoordinator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that coordinates the playback of players in a connected group."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayerplaybackcoordinator": {
+      "title": "AVPlayerPlaybackCoordinator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerplaybackcoordinator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayerplaybackcoordinator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A playback coordinator subclass that coordinates the playback of player objects in a connected group."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avdelegatingplaybackcoordinator": {
+      "title": "AVDelegatingPlaybackCoordinator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avdelegatingplaybackcoordinator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avdelegatingplaybackcoordinator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A playback coordinator subclass that coordinates the playback of custom player objects in a connected group."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayerinterstitialevent": {
+      "title": "AVPlayerInterstitialEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerinterstitialevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayerinterstitialevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that provides instructions for how a player presents interstitial content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayerinterstitialeventcontroller": {
+      "title": "AVPlayerInterstitialEventController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerinterstitialeventcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayerinterstitialeventcontroller",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that schedules interstitial events for items played by the primary player."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayerinterstitialeventmonitor": {
+      "title": "AVPlayerInterstitialEventMonitor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerinterstitialeventmonitor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayerinterstitialeventmonitor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that monitors the scheduling and progress of interstitial events."
         }
       ]
     },
@@ -494,62 +634,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession": {
-      "title": "AVContentKeySession",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysession",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object used to create and track decryption keys for media data."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequest": {
-      "title": "AVContentKeyRequest",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequest",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeyrequest",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that encapsulates information about a content decryption key request issued from a content key session object."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avpersistablecontentkeyrequest": {
-      "title": "AVPersistableContentKeyRequest",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avpersistablecontentkeyrequest",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avpersistablecontentkeyrequest",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that encapsulates information about a persistable content decryption key request issued from a content key session."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyresponse": {
-      "title": "AVContentKeyResponse",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyresponse",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeyresponse",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that encapsulates information about a response to a content decryption key request."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/getting_airplay_2_into_your_app": {
       "title": "Getting AirPlay 2 into Your App",
       "type": "topic",
@@ -616,7 +700,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A URL session used to support the creation and execution of asset download tasks."
+          "text": "A URL session that creates and executes asset download tasks."
         }
       ]
     },
@@ -644,7 +728,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A single task that downloads multiple media selections for a single asset."
+          "text": "A task that downloads multiple media selections for an asset."
         }
       ]
     },
@@ -658,7 +742,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to inspect the state of an asset’s locally cached media data."
+          "text": "An object that you use to inspect locally cached media data."
         }
       ]
     },
@@ -672,7 +756,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A manager of policies used to automatically purge downloaded assets."
+          "text": "An object that manages policies to automatically purge downloaded assets."
         }
       ]
     },
@@ -686,7 +770,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of properties that defines a policy to automatically purge downloaded assets."
+          "text": "An object that defines a policy to automatically manage the storage of downloaded assets."
         }
       ]
     },
@@ -700,17 +784,129 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A mutable set of properties that defines a policy to automatically purge downloaded assets."
+          "text": "A mutable object that you use to create a new storage management policy."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player": {
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession": {
+      "title": "AVContentKeySession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeysession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that creates and tracks decryption keys for media data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessiondelegate": {
+      "title": "AVContentKeySessionDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessiondelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeysessiondelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that handles content key requests."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkey": {
+      "title": "AVContentKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that represents the content key decryptor."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyspecifier": {
+      "title": "AVContentKeySpecifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyspecifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeyspecifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that uniquely identifies a content key."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequest": {
+      "title": "AVContentKeyRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeyrequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that encapsulates information about a content decryption key request issued from a content key session object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avpersistablecontentkeyrequest": {
+      "title": "AVPersistableContentKeyRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avpersistablecontentkeyrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avpersistablecontentkeyrequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that encapsulates information about a persistable content decryption key request issued from a content key session."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyresponse": {
+      "title": "AVContentKeyResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeyresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that encapsulates information about a response to a content decryption key request."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/3726110-avsamplebufferattachcontentkey": {
+      "title": "AVSampleBufferAttachContentKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/3726110-avsamplebufferattachcontentkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/3726110-avsamplebufferattachcontentkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Attaches a content key to a sample buffer for the purpose of content decryption."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfaudio/audio_engine/playing_custom_audio_with_your_own_player": {
       "title": "Playing Custom Audio with Your Own Player",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/audio_engine/playing_custom_audio_with_your_own_player",
       "kind": "article",
       "role": "sampleCode",
-      "url": "/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player",
+      "url": "/documentation/avfaudio/audio_engine/playing_custom_audio_with_your_own_player",
       "abstract": [
         {
           "type": "text",
@@ -774,6 +970,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplebuffergenerator": {
+      "title": "AVSampleBufferGenerator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebuffergenerator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplebuffergenerator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to create sample buffer opaque objects. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequest": {
+      "title": "AVSampleBufferRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplebufferrequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that describes a sample buffer creation request."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avroutedetector": {
       "title": "AVRouteDetector",
       "type": "topic",
@@ -784,21 +1008,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that detects the presences of media playback routes."
+          "text": "An object that detects available media playback routes."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/media_playback_errors": {
-      "title": "Media Playback Errors",
+    "doc://com.apple.documentation/documentation/avfoundation/avfoundationerrordomain": {
+      "title": "AVFoundationErrorDomain",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/media_playback_errors",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/avfoundation/media_playback_and_selection/media_playback_errors",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfoundationerrordomain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avfoundationerrordomain",
       "abstract": [
         {
           "type": "text",
-          "text": "Errors generated by the framework’s playback operations."
+          "text": "The error domain of AVFoundation errors."
         }
       ]
     },
@@ -824,16 +1048,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "topicSections": [
     {
       "kind": "taskGroup",
@@ -843,11 +1057,12 @@
         "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos",
         "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/configuring_the_audio_playback_of_ios_and_tvos_apps",
         "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/guidelines_for_apple_tv_4k_development"
-      ]
+      ],
+      "anchor": "2941431"
     },
     {
       "kind": "taskGroup",
-      "title": "Media Playback",
+      "title": "Players",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/seeking_through_media",
         "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_playback_state",
@@ -855,14 +1070,53 @@
         "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers",
         "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls",
         "doc://com.apple.documentation/documentation/avfoundation/avplayer",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer",
         "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper",
-        "doc://com.apple.documentation/documentation/avfoundation/avsynchronizedlayer",
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper"
+      ],
+      "anchor": "3801351"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Player Items",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritemoutput",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritemvideooutput",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritemlegibleoutput",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritemmetadataoutput",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritemoutputpushdelegate"
+      ],
+      "anchor": "3801350"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Player Presentation",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer",
+        "doc://com.apple.documentation/documentation/avfoundation/avsynchronizedlayer"
+      ],
+      "anchor": "2938936"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Coordinated Playback ",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/supporting_coordinated_media_playback",
+        "doc://com.apple.documentation/documentation/avfoundation/avplaybackcoordinator",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayerplaybackcoordinator",
+        "doc://com.apple.documentation/documentation/avfoundation/avdelegatingplaybackcoordinator"
+      ],
+      "anchor": "3760739"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Interstitial Presentation",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayerinterstitialevent",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayerinterstitialeventcontroller",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayerinterstitialeventmonitor"
+      ],
+      "anchor": "3742739"
     },
     {
       "kind": "taskGroup",
@@ -874,7 +1128,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avmediaselectionoption",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablemediaselection",
         "doc://com.apple.documentation/documentation/avfoundation/avplayermediaselectioncriteria"
-      ]
+      ],
+      "anchor": "2935305"
     },
     {
       "kind": "taskGroup",
@@ -887,17 +1142,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avmutabledaterangemetadatagroup",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritemmediadatacollector",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritemmetadatacollector"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "FairPlay Streaming",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequest",
-        "doc://com.apple.documentation/documentation/avfoundation/avpersistablecontentkeyrequest",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyresponse"
-      ]
+      ],
+      "anchor": "2935292"
     },
     {
       "kind": "taskGroup",
@@ -906,7 +1152,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/getting_airplay_2_into_your_app",
         "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_simple_enhanced_buffering_for_your_content",
         "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_flexible_enhanced_buffering_for_your_content"
-      ]
+      ],
+      "anchor": "3701706"
     },
     {
       "kind": "taskGroup",
@@ -921,37 +1168,52 @@
         "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanagementpolicy",
         "doc://com.apple.documentation/documentation/avfoundation/avmutableassetdownloadstoragemanagementpolicy"
       ],
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Download HTTP Live Streaming (HLS) content to your iOS device and play it on your iOS device at a later time."
-        }
-      ]
+      "anchor": "3761159"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "FairPlay Streaming",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessiondelegate",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkey",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyspecifier",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequest",
+        "doc://com.apple.documentation/documentation/avfoundation/avpersistablecontentkeyrequest",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyresponse",
+        "doc://com.apple.documentation/documentation/avfoundation/3726110-avsamplebufferattachcontentkey"
+      ],
+      "anchor": "2934456"
     },
     {
       "kind": "taskGroup",
       "title": "Sample Buffer Rendering",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player",
+        "doc://com.apple.documentation/documentation/avfaudio/audio_engine/playing_custom_audio_with_your_own_player",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer",
         "doc://com.apple.documentation/documentation/avfoundation/avqueuedsamplebufferrendering",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferdisplaylayer",
-        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer",
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplebuffergenerator",
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequest"
+      ],
+      "anchor": "2935288"
     },
     {
       "kind": "taskGroup",
       "title": "Route Selection",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avroutedetector"
-      ]
+      ],
+      "anchor": "3701707"
     },
     {
       "kind": "taskGroup",
       "title": "Errors",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/media_playback_errors"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avfoundationerrordomain"
+      ],
+      "anchor": "2936460"
     }
   ],
   "primaryContentSections": [
@@ -968,17 +1230,8 @@
           "type": "paragraph",
           "inlineContent": [
             {
-              "type": "emphasis",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "Assets"
-                }
-              ]
-            },
-            {
               "type": "text",
-              "text": " are the building blocks for media players, and they provide a representation of a media resource. Assets come from many different media resources, such as local or remote media files, or from media streamed using HTTP Live Streaming. Use assets to efficiently retrieve and load audiovisual media in a timely manner. Inspect assets to learn about their properties, such as their duration and playback rate."
+              "text": "Assets are the building blocks for media players, and they provide a representation of a media resource. Assets come from many different media resources, such as local or remote media files, or from media streamed using HTTP Live Streaming. Use assets to efficiently retrieve and load audiovisual media in a timely manner. Inspect assets to learn about their properties, such as their duration and playback rate."
             }
           ]
         },
@@ -987,33 +1240,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You use a player to manage the playback and timing of an asset, for example starting and stopping playback, and seeking to a particular time. A player manages the playback of a single media asset at a time. A "
-            },
-            {
-              "type": "emphasis",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "queue player"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": " manages the queuing of media assets played sequentially. To play an asset, you need its counterpart in the "
-            },
-            {
-              "type": "emphasis",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "player item"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": ". A player item manages the timing and presentation state of an asset played by the player. A player item also contains player item tracks that correspond to the tracks in the asset. You direct the output of a player to a specialized Core Animation layer, a player layer, or a synchronized layer."
+              "text": "You use a player to manage the playback and timing of an asset, for example starting and stopping playback, and seeking to a particular time. A player manages the playback of a single media asset at a time. A queue player manages the queuing of media assets played sequentially. To play an asset, you need its counterpart in the player item. A player item manages the timing and presentation state of an asset played by the player. A player item also contains player item tracks that correspond to the tracks in the asset. You direct the output of a player to a specialized Core Animation layer, a player layer, or a synchronized layer."
             }
           ]
         },
@@ -1049,7 +1276,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

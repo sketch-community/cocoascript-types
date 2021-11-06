@@ -35,20 +35,28 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIDocumentBrowserViewController(py)allowsDocumentCreation",
+    "parent": {
+      "title": "UIDocumentBrowserViewController"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -101,7 +109,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A view controller for browsing and performing actions on documents stored locally and in the cloud."
+          "text": "A view controller for browsing and performing actions on documents that you store locally and in the cloud."
         }
       ]
     },
@@ -145,21 +153,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874182-allowedcontenttypes": {
-      "title": "allowedContentTypes",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874182-allowedcontenttypes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uidocumentbrowserviewcontroller/2874182-allowedcontenttypes",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The document types that the browser can open."
-        }
-      ],
-      "deprecated": true
-    },
     "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874179-allowspickingmultipleitems": {
       "title": "allowsPickingMultipleItems",
       "type": "topic",
@@ -184,7 +177,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Reveals (and optionally imports) the document at the provided URL."
+          "text": "Reveals, and optionally imports, the document at the provided URL."
         }
       ],
       "fragments": [
@@ -198,6 +191,50 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3566728-contenttypesforrecentdocuments": {
+      "title": "contentTypesForRecentDocuments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3566728-contenttypesforrecentdocuments",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidocumentbrowserviewcontroller/3566728-contenttypesforrecentdocuments",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Content types for browsing recent documents."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3356325-recentdocumentscontenttypes": {
+      "title": "recentDocumentsContentTypes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3356325-recentdocumentscontenttypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidocumentbrowserviewcontroller/3356325-recentdocumentscontenttypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Content types for browsing recent documents."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874182-allowedcontenttypes": {
+      "title": "allowedContentTypes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874182-allowedcontenttypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidocumentbrowserviewcontroller/2874182-allowedcontenttypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The document types that the browser can open."
+        }
+      ],
+      "deprecated": true
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -209,9 +246,11 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874182-allowedcontenttypes",
         "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874179-allowspickingmultipleitems",
-        "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2915849-revealdocumentaturl"
+        "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2915849-revealdocumentaturl",
+        "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3566728-contenttypesforrecentdocuments",
+        "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3356325-recentdocumentscontenttypes",
+        "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874182-allowedcontenttypes"
       ],
       "title": "Configuring a Document Browser",
       "generated": true
@@ -253,6 +292,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -325,7 +365,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

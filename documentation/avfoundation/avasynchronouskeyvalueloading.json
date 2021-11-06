@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A protocol you use to load an asset’s or asset track’s media and metadata without blocking the calling thread."
+      "text": "A protocol for loading the media and metadata of an asset or asset track without blocking the calling thread."
     }
   ],
   "documentVersion": 0,
@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(pl)AVAsynchronousKeyValueLoading",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,13 +116,7 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avasset",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An abstract class that models timed audiovisual media."
-        }
-      ]
+      "url": "/documentation/avfoundation/avasset"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritem": {
       "title": "AVPlayerItem",
@@ -211,7 +210,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that provides the track-level interface to inspect an asset’s media tracks."
+          "text": "An object that models a track of media that an asset contains."
         }
       ]
     },
@@ -225,21 +224,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Values that indicate the status of a property."
+          "text": "Values that indicate the loaded status of a property."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/about_the_asset_model": {
-      "title": "About the Asset Model",
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously": {
+      "title": "Loading Media Data Asynchronously",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/about_the_asset_model",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously",
       "kind": "article",
       "role": "article",
-      "url": "/documentation/avfoundation/media_assets_and_metadata/about_the_asset_model",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously",
       "abstract": [
         {
           "type": "text",
-          "text": "Understand how you use assets as the building blocks for various media use cases."
+          "text": "Simplify asynchronous property loading using language-level concurrency features."
         }
       ]
     },
@@ -253,7 +252,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An asset subclass used to initialize an asset from a local or remote URL."
+          "text": "An asset that represents media at a local or remote URL."
         }
       ]
     },
@@ -267,7 +266,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A protocol you use to load an asset’s or asset track’s media and metadata without blocking the calling thread."
+          "text": "A protocol for loading the media and metadata of an asset or asset track without blocking the calling thread."
         }
       ]
     },
@@ -296,17 +295,17 @@
       "kind": "taskGroup",
       "title": "Loading Properties",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1387321-loadvaluesasynchronouslyforkeys",
         "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1386816-statusofvalueforkey",
-        "doc://com.apple.documentation/documentation/avfoundation/avkeyvaluestatus",
-        "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1387321-loadvaluesasynchronouslyforkeys"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avkeyvaluestatus"
+      ],
+      "anchor": "1669289"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/about_the_asset_model",
-        "doc://com.apple.documentation/documentation/avfoundation/avasset",
+        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously",
         "doc://com.apple.documentation/documentation/avfoundation/avassettrack",
         "doc://com.apple.documentation/documentation/avfoundation/avurlasset"
       ],
@@ -338,6 +337,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -360,38 +360,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This protocol includes methods to find out the status of a "
-            },
-            {
-              "type": "emphasis",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "key"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": ", which is any property of an object that uses asynchronous key value loading. You can also ask the object to load its values asynchronously and inform you when the operation has completed."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "Due to the nature of timed audiovisual media, sucessfully creating an asset doesn’t necessarily mean that its data is"
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "Because of the nature of timed audiovisual media, successful initialization of an asset doesn’t necessarily mean that all of its data is immediately available. Instead, an asset waits to load its data until you perform an operation on it (for example, directly invoking any relevant "
+              "text": "Creating an asset doesn’t make all of its data immediately available. Instead, an asset waits to load its data until you perform an operation on it (for example, directly invoking any relevant "
             },
             {
               "type": "reference",
@@ -400,7 +369,7 @@
             },
             {
               "type": "text",
-              "text": " methods, playback with an "
+              "text": " methods, implementing playback with an "
             },
             {
               "type": "reference",
@@ -409,7 +378,7 @@
             },
             {
               "type": "text",
-              "text": " object, export using "
+              "text": " object, exporting with "
             },
             {
               "type": "reference",
@@ -418,7 +387,7 @@
             },
             {
               "type": "text",
-              "text": ", reading using an instance of "
+              "text": ", reading with an "
             },
             {
               "type": "reference",
@@ -427,7 +396,7 @@
             },
             {
               "type": "text",
-              "text": ", and so on). Although you can request the value of any key at any time, and it returns its value synchronously, the operation may block the calling thread until the request completes. To avoid blocking:"
+              "text": ", and so on). Although you can request the value of a property at any time, and it returns its value synchronously, the operation may block the calling thread until the request completes. To avoid blocking:"
             }
           ]
         },
@@ -450,7 +419,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " method to ask it to asynchronously load one or more of its values and notify you when loaded."
+                      "text": " method to ask it to asynchronously load one or more of its values and notify you when it loads."
                     }
                   ]
                 }
@@ -463,7 +432,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "Determine whether the value for a given key is available using the "
+                      "text": "Determine whether the value for a specified key is available using the "
                     },
                     {
                       "type": "reference",
@@ -479,52 +448,12 @@
               ]
             }
           ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "Even for use cases that may typically support ready access to some keys (such as for assets initialized with URLs for files in the local file system), slow I/O may require "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset"
-            },
-            {
-              "type": "text",
-              "text": " to block before returning the key’s values. Although blocking may be acceptable for macOS clients if you’re preparing assets on background threads or in operation queues, when blocking should be avoided, use the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1387321-loadvaluesasynchronouslyforkeys"
-            },
-            {
-              "type": "text",
-              "text": " method. iOS and tvOS applications "
-            },
-            {
-              "type": "emphasis",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "should always"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": " load values asynchronously using that method because blocking I/O requests may result in a termination of media services."
-            }
-          ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

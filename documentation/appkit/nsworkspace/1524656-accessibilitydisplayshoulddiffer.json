@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A Boolean value that indicates whether the app should avoid conveying information through color alone."
+      "text": "A Boolean value that indicates whether the app avoids conveying information through color alone."
     }
   ],
   "documentVersion": 0,
@@ -35,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSWorkspace(py)accessibilityDisplayShouldDifferentiateWithoutColor",
+    "parent": {
+      "title": "NSWorkspace"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,6 +119,14 @@
       "role": "symbol",
       "url": "/documentation/appkit/nsworkspaceaccessibilitydisplayoptionsdidchangenotification"
     },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1525071-notificationcenter": {
+      "title": "notificationCenter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1525071-notificationcenter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsworkspace/1525071-notificationcenter"
+    },
     "doc://com.apple.documentation/documentation/appkit/nsworkspace/1524656-accessibilitydisplayshoulddiffer": {
       "title": "accessibilityDisplayShouldDifferentiateWithoutColor",
       "type": "topic",
@@ -126,7 +137,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the app should avoid conveying information through color alone."
+          "text": "A Boolean value that indicates whether the app avoids conveying information through color alone."
         }
       ]
     },
@@ -140,7 +151,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the app should present a high contrast user interface."
+          "text": "A Boolean value that indicates whether the app presents a high-contrast user interface."
         }
       ]
     },
@@ -154,7 +165,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the app should avoid using semitransparent backgrounds."
+          "text": "A Boolean value that indicates whether the app avoids using semitransparent backgrounds."
         }
       ]
     },
@@ -164,7 +175,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1644068-accessibilitydisplayshouldinvert",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsworkspace/1644068-accessibilitydisplayshouldinvert"
+      "url": "/documentation/appkit/nsworkspace/1644068-accessibilitydisplayshouldinvert",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the accessibility option to invert colors is in an enabled state. "
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsworkspace/1644069-accessibilitydisplayshouldreduce": {
       "title": "accessibilityDisplayShouldReduceMotion",
@@ -172,7 +189,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1644069-accessibilitydisplayshouldreduce",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsworkspace/1644069-accessibilitydisplayshouldreduce"
+      "url": "/documentation/appkit/nsworkspace/1644069-accessibilitydisplayshouldreduce",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the accessibility option to reduce motion is in an enabled state."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsworkspace/2880322-switchcontrolenabled": {
       "title": "switchControlEnabled",
@@ -180,7 +203,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/2880322-switchcontrolenabled",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsworkspace/2880322-switchcontrolenabled"
+      "url": "/documentation/appkit/nsworkspace/2880322-switchcontrolenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether Switch Control is currently running."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsworkspace/2880317-voiceoverenabled": {
       "title": "voiceOverEnabled",
@@ -188,7 +217,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/2880317-voiceoverenabled",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsworkspace/2880317-voiceoverenabled"
+      "url": "/documentation/appkit/nsworkspace/2880317-voiceoverenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether VoiceOver is currently running."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -275,7 +310,7 @@
             },
             {
               "type": "text",
-              "text": ", the user interface should not convey information using color alone. Instead, use shapes or glyphs to convey important information. "
+              "text": ", the user interface avoids conveying information using color alone. Instead, use shapes or glyphs to convey important information. "
             }
           ]
         },
@@ -284,7 +319,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Users can change this setting by choosing System Preferences > Accessibility > Display and selecting the “Differentiate without color” option. Listen to the "
+              "text": "Users can change this setting by choosing System Preferences > Accessibility > Display and selecting the “Differentiate without color” option. To receive updates when this setting changes, register for the "
             },
             {
               "type": "reference",
@@ -293,7 +328,16 @@
             },
             {
               "type": "text",
-              "text": " notification to receive updates when this setting changes."
+              "text": " notification using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1525071-notificationcenter"
+            },
+            {
+              "type": "text",
+              "text": "."
             }
           ]
         }
@@ -301,7 +345,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

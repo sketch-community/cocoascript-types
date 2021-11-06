@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Inserts rows in the table view at the locations identified by an array of index paths, with an option to animate the insertion."
+      "text": "Inserts rows in the table view at the locations that an array of index paths identifies, with an option to animate the insertion."
     }
   ],
   "documentVersion": 0,
@@ -36,25 +36,33 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UITableView(im)insertRowsAtIndexPaths:withRowAnimation:",
+    "parent": {
+      "title": "UITableView"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -115,7 +123,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A view that presents data using rows arranged in a single column."
+          "text": "A view that presents data using rows in a single column."
         }
       ]
     },
@@ -129,7 +137,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The type of animation to use when rows are inserted or deleted."
+          "text": "The type of animation to use when inserting or deleting rows."
         }
       ]
     },
@@ -215,7 +223,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Deletes the rows specified by an array of index paths, with an option to animate the deletion."
+          "text": "Deletes the rows that an array of index paths identifies, with an option to animate the deletion."
         }
       ],
       "fragments": [
@@ -239,7 +247,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Reloads the specified rows using a given animation effect."
+          "text": "Reloads the specified rows using the provided animation effect."
         }
       ],
       "fragments": [
@@ -303,7 +311,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Inserts rows in the table view at the locations identified by an array of index paths, with an option to animate the insertion."
+          "text": "Inserts rows in the table view at the locations that an array of index paths identifies, with an option to animate the insertion."
         }
       ],
       "fragments": [
@@ -484,6 +492,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -614,7 +623,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

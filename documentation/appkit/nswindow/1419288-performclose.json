@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "This action method simulates the user clicking the close button by momentarily highlighting the button and then closing the window."
+      "text": "Simulates the user clicking the close button by momentarily highlighting the button and then closing the window."
     }
   ],
   "documentVersion": 0,
@@ -35,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSWindow(im)performClose:",
+    "parent": {
+      "title": "NSWindow"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -134,30 +137,6 @@
       "role": "symbol",
       "url": "/documentation/objectivec/yes"
     },
-    "doc://com.apple.documentation/documentation/appkit/nswindow/1419288-performclose": {
-      "title": "performClose:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419288-performclose",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nswindow/1419288-performclose",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "This action method simulates the user clicking the close button by momentarily highlighting the button and then closing the window."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "performClose:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/appkit/nswindow/1419662-close": {
       "title": "close",
       "type": "topic",
@@ -188,7 +167,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419078-stylemask",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nswindow/1419078-stylemask"
+      "url": "/documentation/appkit/nswindow/1419078-stylemask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Flags that describe the window’s current style, such as if it’s resizable or in full-screen mode."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nswindow/1419749-performminiaturize": {
       "title": "performMiniaturize:",
@@ -211,6 +196,30 @@
         {
           "kind": "identifier",
           "text": "performMiniaturize:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindow/1419288-performclose": {
+      "title": "performClose:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419288-performclose",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindow/1419288-performclose",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Simulates the user clicking the close button by momentarily highlighting the button and then closing the window."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "performClose:"
         }
       ]
     },
@@ -359,19 +368,11 @@
             },
             {
               "type": "text",
-              "text": ", that message is sent with the window as the argument. (Only one such message is sent; if both the delegate and the "
-            },
-            {
-              "type": "codeVoice",
-              "code": "NSWindow"
-            },
-            {
-              "type": "text",
-              "text": " object implement the method, only the delegate receives the message.) If the "
+              "text": ", the window sends that message with the window as the argument. The window sends only one such message; if both the delegate and the window implement the method, the delegate receives the message. If the "
             },
             {
               "type": "reference",
-              "isActive": true,
+              "isActive": false,
               "identifier": "doc://com.apple.documentation/documentation/appkit/nswindowdelegate/1419380-windowshouldclose"
             },
             {
@@ -385,7 +386,16 @@
             },
             {
               "type": "text",
-              "text": ", the window isn’t closed. If it returns "
+              "text": ", the window doesn’t close. If neither the window nor the delegate implement "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nswindowdelegate/1419380-windowshouldclose"
+            },
+            {
+              "type": "text",
+              "text": ", or it returns "
             },
             {
               "type": "reference",
@@ -394,16 +404,7 @@
             },
             {
               "type": "text",
-              "text": ", or if it isn’t implemented, "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419288-performclose"
-            },
-            {
-              "type": "text",
-              "text": " invokes the "
+              "text": ", this method invokes "
             },
             {
               "type": "reference",
@@ -412,7 +413,7 @@
             },
             {
               "type": "text",
-              "text": " method to close the window."
+              "text": " to close the window."
             }
           ]
         },
@@ -421,7 +422,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "If the window doesn’t have a close button or can’t be closed (for example, if the delegate replies "
+              "text": "If the window doesn’t have a close button or can’t close (for example, if the delegate replies "
             },
             {
               "type": "reference",
@@ -434,7 +435,7 @@
             },
             {
               "type": "reference",
-              "isActive": true,
+              "isActive": false,
               "identifier": "doc://com.apple.documentation/documentation/appkit/nswindowdelegate/1419380-windowshouldclose"
             },
             {
@@ -447,7 +448,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -36,25 +36,33 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UITableViewCell(im)prepareForReuse",
+    "parent": {
+      "title": "UITableViewCell"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -146,6 +154,24 @@
         {
           "kind": "identifier",
           "text": "tableView:cellForRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview/3801923-reconfigurerowsatindexpaths": {
+      "title": "reconfigureRowsAtIndexPaths:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/3801923-reconfigurerowsatindexpaths",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview/3801923-reconfigurerowsatindexpaths",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "reconfigureRowsAtIndexPaths:"
         }
       ]
     },
@@ -267,6 +293,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -296,7 +323,7 @@
             },
             {
               "type": "text",
-              "text": " object is reusable—that is, it has a reuse identifier—this method is invoked just before the object is returned from the "
+              "text": " object has a reuse identifier, the table view invokes this method just before returning the object from the "
             },
             {
               "type": "codeVoice",
@@ -313,7 +340,7 @@
             },
             {
               "type": "text",
-              "text": ". For performance reasons, you should only reset attributes of the cell that are not related to content, for example, alpha, editing, and selection state.  The table view's delegate in "
+              "text": ". To avoid potential performance issues, you should only reset attributes of the cell that are not related to content, for example, alpha, editing, and selection state. The table view's delegate in "
             },
             {
               "type": "reference",
@@ -335,7 +362,34 @@
             },
             {
               "type": "text",
-              "text": " reset all content when reusing a cell. If the cell object does not have an associated reuse identifier, this method is not called. If you override this method, you must be sure to invoke the superclass implementation. "
+              "text": " reset all content when reusing a cell."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The table view doesn’t call this method if the cell object doesn’t have an associated reuse identifier, or if you use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/3801923-reconfigurerowsatindexpaths"
+            },
+            {
+              "type": "text",
+              "text": " to update the contents of an existing cell."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you override this method, you must be sure to invoke the superclass implementation. "
             }
           ]
         }
@@ -343,7 +397,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,16 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An array of "
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue"
-    },
-    {
-      "type": "text",
-      "text": " ranges for the currently selected text."
+      "text": "An array of ranges for the currently selected text."
     }
   ],
   "documentVersion": 0,
@@ -20,13 +11,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
       ]
     ]
@@ -51,15 +42,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSAccessibility(py)accessibilitySelectedTextRanges",
+    "parent": {
+      "title": "NSAccessibility"
+    },
     "symbolKind": "intfp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -84,10 +78,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -102,7 +96,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The complete list of properties and methods implemented by accessible elements."
+          "text": "The complete list of properties and methods for accessible elements."
         }
       ]
     },
@@ -114,14 +108,6 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/foundation/nsvalue": {
-      "title": "NSValue",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsvalue"
-    },
     "doc://com.apple.documentation/documentation/foundation/nsarray": {
       "title": "NSArray",
       "type": "topic",
@@ -129,6 +115,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsarray"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsvalue": {
+      "title": "NSValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsvalue"
     },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535050-accessibilityinsertionpointlinen": {
       "title": "accessibilityInsertionPointLineNumber",
@@ -141,7 +135,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The line number containing the insertion point."
+          "text": "The line number that contains the insertion point."
         }
       ]
     },
@@ -171,7 +165,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The placeholder value for this accessibility element."
+          "text": "The placeholder value for the accessibility element."
         }
       ]
     },
@@ -216,16 +210,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An array of "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue"
-        },
-        {
-          "type": "text",
-          "text": " ranges for the currently selected text."
+          "text": "An array of ranges for the currently selected text."
         }
       ]
     },
@@ -240,7 +225,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The range of characters displayed by the accessibility element."
+          "text": "The range of characters that the accessibility element displays."
         }
       ]
     },
@@ -335,7 +320,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the Rich Text Format (RTF) data that describes the specified range of characters."
+          "text": "Returns the rich text format (RTF) data that describes the specified range of characters."
         }
       ],
       "fragments": [
@@ -360,7 +345,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the rectangle enclosing the specified range of characters."
+          "text": "Returns the rectangle that encloses the specified range of characters."
         }
       ],
       "fragments": [
@@ -385,7 +370,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the line number for the line holding the specified character index."
+          "text": "Returns the line number for the line that contains the specified character index."
         }
       ],
       "fragments": [
@@ -586,7 +571,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

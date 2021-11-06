@@ -49,15 +49,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSTextViewDelegate(im)textView:willChangeSelectionFromCharacterRanges:toCharacterRanges:",
+    "parent": {
+      "title": "NSTextViewDelegate"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -265,6 +268,106 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/2544692-textview": {
+      "title": "textView:candidates:forSelectedRange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/2544692-textview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextviewdelegate/2544692-textview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reutns an array of text objects to include in a text selection."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "textView:candidates:forSelectedRange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/2544744-textview": {
+      "title": "textView:candidatesForSelectedRange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/2544744-textview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextviewdelegate/2544744-textview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array of objects that represent the elements of a selection."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "textView:candidatesForSelectedRange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/2544682-textview": {
+      "title": "textView:shouldSelectCandidateAtIndex:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/2544682-textview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextviewdelegate/2544682-textview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether to select the text object at the index."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "textView:shouldSelectCandidateAtIndex:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/2544799-textview": {
+      "title": "textView:shouldUpdateTouchBarItemIdentifiers:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/2544799-textview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextviewdelegate/2544799-textview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns and array of touch bar elements for the framework to update."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "textView:shouldUpdateTouchBarItemIdentifiers:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -277,7 +380,11 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/1449227-textview",
-        "doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/1449363-textviewdidchangeselection"
+        "doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/1449363-textviewdidchangeselection",
+        "doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/2544692-textview",
+        "doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/2544744-textview",
+        "doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/2544682-textview",
+        "doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/2544799-textview"
       ],
       "title": "Managing the Selection",
       "generated": true
@@ -639,7 +746,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

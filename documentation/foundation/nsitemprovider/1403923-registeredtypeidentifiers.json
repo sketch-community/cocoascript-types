@@ -41,35 +41,43 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSItemProvider(py)registeredTypeIdentifiers",
+    "parent": {
+      "title": "NSItemProvider"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -118,7 +126,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider"
+      "url": "/documentation/foundation/nsitemprovider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An item provider for conveying data or a file between processes during drag and drop or copy/paste activities, or from a host app to an app extension."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit": {
       "title": "UIKit",
@@ -136,6 +150,30 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888320-hasrepresentationconformingtotyp": {
+      "title": "hasRepresentationConformingToTypeIdentifier:fileOptions:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888320-hasrepresentationconformingtotyp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider/2888320-hasrepresentationconformingtotyp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether an item provider contains a data representation conforming to a specified uniform type identifier (UTI) and to specified open-in-place behavior."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "hasRepresentationConformingToTypeIdentifier:fileOptions:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/nsarray": {
       "title": "NSArray",
       "type": "topic",
@@ -152,26 +190,17 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
-    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403917-registeritemfortypeidentifier": {
-      "title": "registerItemForTypeIdentifier:loadHandler:",
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888333-canloadobjectofclass": {
+      "title": "canLoadObjectOfClass:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403917-registeritemfortypeidentifier",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888333-canloadobjectofclass",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider/1403917-registeritemfortypeidentifier",
+      "url": "/documentation/foundation/nsitemprovider/2888333-canloadobjectofclass",
       "abstract": [
         {
           "type": "text",
-          "text": "Lazily registers an item, according to the "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider"
-        },
-        {
-          "type": "text",
-          "text": " type coercion policy."
+          "text": "Returns a Boolean value indicating whether an item provider can load objects of a given class."
         }
       ],
       "fragments": [
@@ -181,7 +210,56 @@
         },
         {
           "kind": "identifier",
-          "text": "registerItemForTypeIdentifier:loadHandler:"
+          "text": "canLoadObjectOfClass:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403921-hasitemconformingtotypeidentifie": {
+      "title": "hasItemConformingToTypeIdentifier:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403921-hasitemconformingtotypeidentifie",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider/1403921-hasitemconformingtotypeidentifie",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A convenience method equivalent to the "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888320-hasrepresentationconformingtotyp"
+        },
+        {
+          "type": "text",
+          "text": " method, but with the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "fileOptions"
+        },
+        {
+          "type": "text",
+          "text": " parameter set to a value of "
+        },
+        {
+          "type": "codeVoice",
+          "code": "0"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "hasItemConformingToTypeIdentifier:"
         }
       ]
     },
@@ -199,6 +277,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888334-registeredtypeidentifierswithfil": {
+      "title": "registeredTypeIdentifiersWithFileOptions:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888334-registeredtypeidentifierswithfil",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider/2888334-registeredtypeidentifierswithfil",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array with a subset of type identifiers for the item provider, according to the specified file options, listed in the same order in which they were registered."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "registeredTypeIdentifiersWithFileOptions:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -210,9 +312,12 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403917-registeritemfortypeidentifier"
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888333-canloadobjectofclass",
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403921-hasitemconformingtotypeidentifie",
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888320-hasrepresentationconformingtotyp",
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888334-registeredtypeidentifierswithfil"
       ],
-      "title": "Registering Custom Coercion Handlers",
+      "title": "Querying the Provider’s Contents",
       "generated": true
     }
   ],
@@ -264,6 +369,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -274,7 +380,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

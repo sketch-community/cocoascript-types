@@ -11,12 +11,12 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
@@ -47,8 +47,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -61,8 +61,8 @@
       ],
       "paths": [
         "documentation/objectivec/nsobject/uiaccessibilityaction",
-        "documentation/uikit/accessibility_for_ios_and_tvos/uiaccessibilityaction",
-        "documentation/accessibility/accessibility_for_ios_and_tvos/uiaccessibilityaction"
+        "documentation/uikit/accessibility_for_uikit/uiaccessibilityaction",
+        "documentation/accessibility/accessibility_for_uikit/uiaccessibilityaction"
       ]
     },
     {
@@ -73,8 +73,8 @@
       ],
       "paths": [
         "documentation/objectivec/nsobject/uiaccessibilityaction",
-        "documentation/uikit/accessibility_for_ios_and_tvos/uiaccessibilityaction",
-        "documentation/accessibility/accessibility_for_ios_and_tvos/uiaccessibilityaction"
+        "documentation/uikit/accessibility_for_uikit/uiaccessibilityaction",
+        "documentation/accessibility/accessibility_for_uikit/uiaccessibilityaction"
       ]
     }
   ],
@@ -87,10 +87,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -353,7 +353,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A custom action to be performed on an accessible object. "
+          "text": "A custom action to perform on an accessible object. "
         }
       ]
     },
@@ -363,15 +363,21 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomactionhandler",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibilitycustomactionhandler"
+      "url": "/documentation/uikit/uiaccessibilitycustomactionhandler",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A closure type that defines a handler to perform for an action."
+        }
+      ]
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/delivering_an_exceptional_accessibility_experience": {
+    "doc://com.apple.documentation/documentation/accessibility/delivering_an_exceptional_accessibility_experience": {
       "title": "Delivering an Exceptional Accessibility Experience",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/delivering_an_exceptional_accessibility_experience",
+      "identifier": "doc://com.apple.documentation/documentation/accessibility/delivering_an_exceptional_accessibility_experience",
       "kind": "article",
       "role": "sampleCode",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos/delivering_an_exceptional_accessibility_experience",
+      "url": "/documentation/accessibility/delivering_an_exceptional_accessibility_experience",
       "abstract": [
         {
           "type": "text",
@@ -387,16 +393,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "topicSections": [
     {
       "kind": "taskGroup",
@@ -408,21 +404,24 @@
         "doc://com.apple.documentation/documentation/objectivec/nsobject/1615161-accessibilityscroll",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/1615091-accessibilityperformescape",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/1615137-accessibilityperformmagictap"
-      ]
+      ],
+      "anchor": "1657103"
     },
     {
       "kind": "taskGroup",
       "title": "Accessing Custom Actions",
       "identifiers": [
         "doc://com.apple.documentation/documentation/objectivec/nsobject/1615150-accessibilitycustomactions"
-      ]
+      ],
+      "anchor": "1657211"
     },
     {
       "kind": "taskGroup",
       "title": "Constants",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilityscrolldirection"
-      ]
+      ],
+      "anchor": "1676424"
     }
   ],
   "seeAlsoSections": [
@@ -430,7 +429,7 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomactionhandler",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/delivering_an_exceptional_accessibility_experience"
+        "doc://com.apple.documentation/documentation/accessibility/delivering_an_exceptional_accessibility_experience"
       ],
       "title": "Actions",
       "generated": true
@@ -519,7 +518,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVPlayerItem(py)tracks",
+    "parent": {
+      "title": "AVPlayerItem"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,7 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to model the timing and presentation state of an asset played by the player."
+          "text": "An object that models the timing and presentation state of an asset that a player object presents."
         }
       ]
     },
@@ -134,19 +142,11 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritemtrack"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388177-asset": {
-      "title": "asset",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388177-asset",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem/1388177-asset",
+      "url": "/documentation/avfoundation/avplayeritemtrack",
       "abstract": [
         {
           "type": "text",
-          "text": "The asset provided during initialization."
+          "text": "An object that represents the presentation state of an asset track that the player presents."
         }
       ]
     },
@@ -161,6 +161,20 @@
         {
           "type": "text",
           "text": "An array of player item track objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1627623-externalmetadata": {
+      "title": "externalMetadata",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1627623-externalmetadata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/1627623-externalmetadata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of additional metadata for the player item to supplement or replace an asset’s embedded metadata."
         }
       ]
     },
@@ -190,10 +204,11 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388177-asset",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1627623-externalmetadata",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389602-timedmetadata"
       ],
-      "title": "Accessing the Asset and Tracks",
+      "title": "Accessing Tracks",
       "generated": true
     }
   ],
@@ -245,6 +260,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -267,7 +283,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This property can change dynamically during playback. When linked against iOS 7.0 or later, before the underlying tracks have been loaded, the value of this property is an empty array. Use key-value observing to obtain a valid tracks array as soon as it becomes available. "
+              "text": "The value is an empty array before the player loads the underlying tracks. Key-value observe this property value to access valid tracks as soon as they’re available."
             }
           ]
         }
@@ -275,7 +291,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

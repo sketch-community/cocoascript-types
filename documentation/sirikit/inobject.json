@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/intents_and_related_classes"
+        "doc://com.apple.documentation/documentation/sirikit/common_data_types"
       ]
     ]
   },
@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "12.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "12.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "5.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)INObject",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -87,10 +92,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/intents_and_related_classes": {
-      "title": "Intents and Related Classes",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/intents_and_related_classes",
-      "url": "/documentation/sirikit/intents_and_related_classes",
+    "doc://com.apple.documentation/documentation/sirikit/common_data_types": {
+      "title": "Common Data Types",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/common_data_types",
+      "url": "/documentation/sirikit/common_data_types",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -337,36 +342,12 @@
       "role": "symbol",
       "url": "/documentation/sirikit/inobjectsection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/inparameter": {
-      "title": "INParameter",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inparameter",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/inparameter",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A parameter of an interaction object."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -398,7 +379,8 @@
         "doc://com.apple.documentation/documentation/sirikit/inobject/2980692-initwithidentifier",
         "doc://com.apple.documentation/documentation/sirikit/inobject/3601150-initwithidentifier",
         "doc://com.apple.documentation/documentation/sirikit/inobject/2980693-initwithidentifier"
-      ]
+      ],
+      "anchor": "2993573"
     },
     {
       "kind": "taskGroup",
@@ -407,7 +389,8 @@
         "doc://com.apple.documentation/documentation/sirikit/inobject/2980690-displaystring",
         "doc://com.apple.documentation/documentation/sirikit/inobject/3552206-subtitlestring",
         "doc://com.apple.documentation/documentation/sirikit/inobject/3552205-displayimage"
-      ]
+      ],
+      "anchor": "2993571"
     },
     {
       "kind": "taskGroup",
@@ -416,17 +399,17 @@
         "doc://com.apple.documentation/documentation/sirikit/inobject/2980691-identifier",
         "doc://com.apple.documentation/documentation/sirikit/inobject/2980694-pronunciationhint",
         "doc://com.apple.documentation/documentation/sirikit/inobject/3174873-alternativespeakablematches"
-      ]
+      ],
+      "anchor": "2993570"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/inobjectcollection",
-        "doc://com.apple.documentation/documentation/sirikit/inobjectsection",
-        "doc://com.apple.documentation/documentation/sirikit/inparameter"
+        "doc://com.apple.documentation/documentation/sirikit/inobjectsection"
       ],
-      "title": "Parameters",
+      "title": "Custom Objects",
       "generated": true
     }
   ],
@@ -464,6 +447,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -542,7 +526,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

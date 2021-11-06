@@ -39,20 +39,25 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIActivity",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -113,7 +118,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An identifier for the type of service being provided."
+          "text": "The type of service being provided."
         }
       ]
     },
@@ -127,7 +132,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A user-readable string describing the service."
+          "text": "A user-readable string that describes the service."
         }
       ]
     },
@@ -155,7 +160,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean indicating whether the service can act on the specified data items."
+          "text": "Queries whether the service can act on the specified data items."
         }
       ],
       "fragments": [
@@ -203,7 +208,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the category of the activity, which may be used to group activities in the UI."
+          "text": "The category of the activity, which may be used to group activities in the UI."
         }
       ]
     },
@@ -231,7 +236,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the view controller to present to the user. "
+          "text": "The view controller to present to the user. "
         }
       ]
     },
@@ -259,6 +264,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiactivity": {
+      "title": "UIActivity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiactivity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract class that you subclass to implement app-specific services. "
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
       "type": "topic",
@@ -277,7 +296,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Activities have a defined category, and the activity UI may show activities grouped by category."
+          "text": "An enumeration that defines categories of activities."
         }
       ]
     },
@@ -291,7 +310,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Activity types for which the system has built-in support."
+          "text": "A structure that describes the types of acitivities for which the system has built-in support."
         }
       ]
     },
@@ -347,17 +366,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiactivity": {
-      "title": "UIActivity",
+    "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationproviding": {
+      "title": "UIActivityItemsConfigurationProviding",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivity",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationproviding",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiactivity",
+      "url": "/documentation/uikit/uiactivityitemsconfigurationproviding",
       "abstract": [
         {
           "type": "text",
-          "text": "An abstract class that you subclass to implement app-specific services. "
+          "text": "An interface that provides a source for shareable content to fulfill user requests to share current content."
         }
       ]
     },
@@ -367,16 +386,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -400,7 +409,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiactivitytype",
         "doc://com.apple.documentation/documentation/uikit/uiactivity/1620674-activitytitle",
         "doc://com.apple.documentation/documentation/uikit/uiactivity/1620658-activityimage"
-      ]
+      ],
+      "anchor": "1657017"
     },
     {
       "kind": "taskGroup",
@@ -411,7 +421,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiactivity/1620678-activityviewcontroller",
         "doc://com.apple.documentation/documentation/uikit/uiactivity/1620659-performactivity",
         "doc://com.apple.documentation/documentation/uikit/uiactivity/1620679-activitydidfinish"
-      ]
+      ],
+      "anchor": "1657088"
     }
   ],
   "seeAlsoSections": [
@@ -419,7 +430,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiactivityviewcontroller",
         "doc://com.apple.documentation/documentation/uikit/uiactivityitemprovider",
-        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsource"
+        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsource",
+        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationproviding"
       ],
       "title": "Activities Interface",
       "generated": true
@@ -459,6 +471,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -481,8 +494,9 @@
               "text": "You should subclass "
             },
             {
-              "type": "codeVoice",
-              "code": "UIActivity"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivity"
             },
             {
               "type": "text",
@@ -717,7 +731,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

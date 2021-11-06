@@ -33,20 +33,25 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)APActivationPayload",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -99,7 +104,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Add code to respond quickly and seamlessly when a user launches your App Clip."
+          "text": "Add code to respond to invocations and offer a focused launch experience."
         }
       ]
     },
@@ -151,7 +156,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Checks whether an App Clip’s invocation happened at an expected physical location."
+          "text": "Checks whether an App Clip invocation happened at an expected physical location."
         }
       ],
       "fragments": [
@@ -189,7 +194,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Error codes an App Clip’s activation payload returns."
+          "text": "Error codes that an App Clip activation payload returns."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/app_clips/configuring_the_launch_experience_of_your_app_clip": {
+      "title": "Configuring the Launch Experience of Your App Clip",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/configuring_the_launch_experience_of_your_app_clip",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/configuring_the_launch_experience_of_your_app_clip",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Review how users launch your App Clip, identify invocation URLs, and configure experiences in App Store Connect."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/app_clips/supporting_invocations_from_your_website_and_the_messages_app": {
+      "title": "Supporting Invocations from Your Website and the Messages App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/supporting_invocations_from_your_website_and_the_messages_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/supporting_invocations_from_your_website_and_the_messages_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Display a Smart App Banner and the App Clip card on your website that users tap to launch your App Clip, and add support for invocations from the Messages app."
         }
       ]
     },
@@ -256,16 +289,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -291,14 +314,16 @@
       "title": "Passing Data to the App Clip",
       "identifiers": [
         "doc://com.apple.documentation/documentation/app_clips/apactivationpayload/3580308-url"
-      ]
+      ],
+      "anchor": "3589327"
     },
     {
       "kind": "taskGroup",
       "title": "Confirming the User’s Physical Location",
       "identifiers": [
         "doc://com.apple.documentation/documentation/app_clips/apactivationpayload/3580309-confirmacquiredinregion"
-      ]
+      ],
+      "anchor": "3581381"
     },
     {
       "kind": "taskGroup",
@@ -306,12 +331,15 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderrordomain",
         "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderrorcode"
-      ]
+      ],
+      "anchor": "3589326"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/app_clips/configuring_the_launch_experience_of_your_app_clip",
+        "doc://com.apple.documentation/documentation/app_clips/supporting_invocations_from_your_website_and_the_messages_app",
         "doc://com.apple.documentation/documentation/app_clips/responding_to_invocations",
         "doc://com.apple.documentation/documentation/app_clips/confirming_the_user_s_physical_location",
         "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsappclip"
@@ -354,6 +382,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -408,7 +437,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

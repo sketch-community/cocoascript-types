@@ -39,35 +39,40 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSItemProvider",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -125,74 +130,6 @@
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsitemprovider": {
-      "title": "NSItemProvider",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An item provider for conveying data or a file between processes during drag and drop or copy/paste activities, or from a host app to an app extension."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888320-hasrepresentationconformingtotyp": {
-      "title": "hasRepresentationConformingToTypeIdentifier:fileOptions:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888320-hasrepresentationconformingtotyp",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider/2888320-hasrepresentationconformingtotyp",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean value indicating whether an item provider contains a data representation conforming to a specified uniform type identifier (UTI) and to specified open-in-place behavior."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "hasRepresentationConformingToTypeIdentifier:fileOptions:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsdata": {
-      "title": "NSData",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsdata"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsprogress": {
-      "title": "NSProgress",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsprogress"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsitemproviderwriting": {
-      "title": "NSItemProviderWriting",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemproviderwriting",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsitemproviderwriting",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The protocol you implement on a class to allow an item provider to retrieve data from an instance of the class."
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsextensionitem/1416690-attachments": {
       "title": "attachments",
@@ -344,6 +281,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider": {
+      "title": "NSItemProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An item provider for conveying data or a file between processes during drag and drop or copy/paste activities, or from a host app to an app extension."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/nsitemprovider#2908988": {
       "title": "Listing 1",
       "type": "section",
@@ -351,6 +302,60 @@
       "kind": "article",
       "role": "codeListing",
       "url": "/documentation/foundation/nsitemprovider#2908988"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888320-hasrepresentationconformingtotyp": {
+      "title": "hasRepresentationConformingToTypeIdentifier:fileOptions:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888320-hasrepresentationconformingtotyp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider/2888320-hasrepresentationconformingtotyp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether an item provider contains a data representation conforming to a specified uniform type identifier (UTI) and to specified open-in-place behavior."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "hasRepresentationConformingToTypeIdentifier:fileOptions:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdata": {
+      "title": "NSData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdata"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsprogress": {
+      "title": "NSProgress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprogress"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemproviderwriting": {
+      "title": "NSItemProviderWriting",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemproviderwriting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemproviderwriting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The protocol you implement on a class to allow an item provider to retrieve data from an instance of the class."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
@@ -473,6 +478,70 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1528574-preferredpresentationsize": {
+      "title": "preferredPresentationSize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1528574-preferredpresentationsize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider/1528574-preferredpresentationsize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The ideal presentation size of the item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2921257-preferredpresentationstyle": {
+      "title": "preferredPresentationStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2921257-preferredpresentationstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider/2921257-preferredpresentationstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The preferred style for presenting the item provider's data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipreferredpresentationstyle": {
+      "title": "UIPreferredPresentationStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipreferredpresentationstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipreferredpresentationstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The presentation styles that determine how a view should show an item provider's data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2890244-suggestedname": {
+      "title": "suggestedName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2890244-suggestedname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider/2890244-suggestedname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The filename to use when writing the provided data to a file on disk."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2909055-teamdata": {
+      "title": "teamData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2909055-teamdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider/2909055-teamdata"
+    },
     "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888333-canloadobjectofclass": {
       "title": "canLoadObjectOfClass:",
       "type": "topic",
@@ -494,6 +563,44 @@
         {
           "kind": "identifier",
           "text": "canLoadObjectOfClass:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403923-registeredtypeidentifiers": {
+      "title": "registeredTypeIdentifiers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403923-registeredtypeidentifiers",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider/1403923-registeredtypeidentifiers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the array of type identifiers for the item provider, listed in the same order in which they were registered."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888334-registeredtypeidentifierswithfil": {
+      "title": "registeredTypeIdentifiersWithFileOptions:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888334-registeredtypeidentifierswithfil",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider/2888334-registeredtypeidentifierswithfil",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array with a subset of type identifiers for the item provider, according to the specified file options, listed in the same order in which they were registered."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "registeredTypeIdentifiersWithFileOptions:"
         }
       ]
     },
@@ -638,17 +745,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888334-registeredtypeidentifierswithfil": {
-      "title": "registeredTypeIdentifiersWithFileOptions:",
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403925-loadpreviewimagewithoptions": {
+      "title": "loadPreviewImageWithOptions:completionHandler:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888334-registeredtypeidentifierswithfil",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403925-loadpreviewimagewithoptions",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider/2888334-registeredtypeidentifierswithfil",
+      "url": "/documentation/foundation/nsitemprovider/1403925-loadpreviewimagewithoptions",
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an array with a subset of type identifiers for the item provider, according to the specified file options, listed in the same order in which they were registered."
+          "text": "Loads the preview image for the item that is represented by the item provider."
         }
       ],
       "fragments": [
@@ -658,7 +765,55 @@
         },
         {
           "kind": "identifier",
-          "text": "registeredTypeIdentifiersWithFileOptions:"
+          "text": "loadPreviewImageWithOptions:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1644692-registercloudkitshare": {
+      "title": "registerCloudKitShare:container:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1644692-registercloudkitshare",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider/1644692-registercloudkitshare",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registers a CloudKit share for the user to modify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "registerCloudKitShare:container:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1644475-registercloudkitsharewithprepara": {
+      "title": "registerCloudKitShareWithPreparationHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1644475-registercloudkitsharewithprepara",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider/1644475-registercloudkitsharewithprepara",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registers a handler that prepares a new CloudKit share."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "registerCloudKitShareWithPreparationHandler:"
         }
       ]
     },
@@ -776,58 +931,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2890244-suggestedname": {
-      "title": "suggestedName",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2890244-suggestedname",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider/2890244-suggestedname",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The filename to use when writing the provided data to a file on disk."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403923-registeredtypeidentifiers": {
-      "title": "registeredTypeIdentifiers",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403923-registeredtypeidentifiers",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider/1403923-registeredtypeidentifiers",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the array of type identifiers for the item provider, listed in the same order in which they were registered."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403925-loadpreviewimagewithoptions": {
-      "title": "loadPreviewImageWithOptions:completionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403925-loadpreviewimagewithoptions",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider/1403925-loadpreviewimagewithoptions",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Loads the preview image for the item that is represented by the item provider."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "loadPreviewImageWithOptions:completionHandler:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1528569-sourceframe": {
       "title": "sourceFrame",
       "type": "topic",
@@ -853,48 +956,6 @@
         {
           "type": "text",
           "text": "The rectangle (in screen coordinates) of the item’s visible content."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1528574-preferredpresentationsize": {
-      "title": "preferredPresentationSize",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1528574-preferredpresentationsize",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider/1528574-preferredpresentationsize",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The ideal presentation size of the item."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2921257-preferredpresentationstyle": {
-      "title": "preferredPresentationStyle",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2921257-preferredpresentationstyle",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider/2921257-preferredpresentationstyle",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The preferred style for presenting the item provider's data."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uipreferredpresentationstyle": {
-      "title": "UIPreferredPresentationStyle",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uipreferredpresentationstyle",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uipreferredpresentationstyle",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The presentation styles that determine how a view should show an item provider's data."
         }
       ]
     },
@@ -1033,66 +1094,12 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2909055-teamdata": {
-      "title": "teamData",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2909055-teamdata",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider/2909055-teamdata"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1644692-registercloudkitshare": {
-      "title": "registerCloudKitShare:container:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1644692-registercloudkitshare",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider/1644692-registercloudkitshare",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "registerCloudKitShare:container:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1644475-registercloudkitsharewithprepara": {
-      "title": "registerCloudKitShareWithPreparationHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1644475-registercloudkitsharewithprepara",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider/1644475-registercloudkitsharewithprepara",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "registerCloudKitShareWithPreparationHandler:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -1116,66 +1123,103 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Initializing an Item Provider",
+      "title": "Creating an Item Provider",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403911-initwithcontentsofurl",
         "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403933-initwithitem",
         "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888323-init",
         "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888328-initwithobject"
-      ]
+      ],
+      "anchor": "1661312"
     },
     {
       "kind": "taskGroup",
-      "title": "Getting the Item’s Data",
+      "title": "Configuring the Provider",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1528574-preferredpresentationsize",
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2921257-preferredpresentationstyle",
+        "doc://com.apple.documentation/documentation/uikit/uipreferredpresentationstyle",
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2890244-suggestedname",
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2909055-teamdata"
+      ],
+      "anchor": "3737302"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Querying the Provider’s Contents",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888333-canloadobjectofclass",
         "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403921-hasitemconformingtotypeidentifie",
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888320-hasrepresentationconformingtotyp",
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403923-registeredtypeidentifiers",
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888334-registeredtypeidentifierswithfil"
+      ],
+      "anchor": "3737299"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Loading the Provider’s Contents",
+      "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403900-loaditemfortypeidentifier",
         "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888331-loaddatarepresentationfortypeide",
         "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888338-loadfilerepresentationfortypeide",
         "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888335-loadinplacefilerepresentationfor",
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888336-loadobjectofclass",
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888320-hasrepresentationconformingtotyp",
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888334-registeredtypeidentifierswithfil"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888336-loadobjectofclass"
+      ],
+      "anchor": "1661361"
     },
     {
       "kind": "taskGroup",
-      "title": "Providing the Item’s Data",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888319-registerdatarepresentationfortyp",
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888337-registerfilerepresentationfortyp",
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888321-registerobject",
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888329-registerobjectofclass",
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2890244-suggestedname"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Registering Custom Coercion Handlers",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403917-registeritemfortypeidentifier",
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403923-registeredtypeidentifiers"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Generating a Preview Image",
+      "title": "Loading a Preview Image",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403925-loadpreviewimagewithoptions",
         "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403904-previewimagehandler"
-      ]
+      ],
+      "anchor": "1661382"
     },
     {
       "kind": "taskGroup",
-      "title": "Getting the Visual Attributes",
+      "title": "Registering CloudKit Shares",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1644692-registercloudkitshare",
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1644475-registercloudkitsharewithprepara"
+      ],
+      "anchor": "3737305"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Registering Data",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888319-registerdatarepresentationfortyp",
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403917-registeritemfortypeidentifier"
+      ],
+      "anchor": "3737301"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Registering Files",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888337-registerfilerepresentationfortyp"
+      ],
+      "anchor": "3737303"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Registering Objects",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888321-registerobject",
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888329-registerobjectofclass"
+      ],
+      "anchor": "3737304"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting the Provider’s Frame",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1528569-sourceframe",
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1528571-containerframe",
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1528574-preferredpresentationsize",
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2921257-preferredpresentationstyle",
-        "doc://com.apple.documentation/documentation/uikit/uipreferredpresentationstyle"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1528571-containerframe"
+      ],
+      "anchor": "1661406"
     },
     {
       "kind": "taskGroup",
@@ -1191,22 +1235,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsitemproviderwriting",
         "doc://com.apple.documentation/documentation/foundation/nsitemproviderrepresentationvisibility",
         "doc://com.apple.documentation/documentation/foundation/nsitemprovidererrorcode"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Properties",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2909055-teamdata"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Methods",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1644692-registercloudkitshare",
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1644475-registercloudkitsharewithprepara"
-      ]
+      ],
+      "anchor": "1673928"
     }
   ],
   "seeAlsoSections": [
@@ -1252,6 +1282,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1413,7 +1444,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

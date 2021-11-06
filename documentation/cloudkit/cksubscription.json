@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/cloudkit",
-        "doc://com.apple.documentation/documentation/cloudkit/subscriptions"
+        "doc://com.apple.documentation/documentation/cloudkit/remote_records"
       ]
     ]
   },
@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKSubscription",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -97,10 +102,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/subscriptions": {
-      "title": "Subscriptions",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/subscriptions",
-      "url": "/documentation/cloudkit/subscriptions",
+    "doc://com.apple.documentation/documentation/cloudkit/remote_records": {
+      "title": "Remote Records",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/remote_records",
+      "url": "/documentation/cloudkit/remote_records",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -129,7 +134,13 @@
       "identifier": "doc://com.apple.documentation/documentation/cloudkit/cknotification",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/cknotification"
+      "url": "/documentation/cloudkit/cknotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The abstract base class for CloudKit notifications."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/1514931-desiredkeys": {
       "title": "desiredKeys",
@@ -277,6 +288,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/cloudkit/cksubscriptionid": {
+      "title": "CKSubscriptionID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksubscriptionid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/cksubscriptionid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type that represents a subscription’s identifier."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/cloudkit/cksubscription/1515250-subscriptiontype": {
       "title": "subscriptionType",
       "type": "topic",
@@ -319,22 +344,26 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/cloudkit/ckdatabaseoperation": {
+      "title": "CKDatabaseOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckdatabaseoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckdatabaseoperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The abstract base class for operations that act upon databases in CloudKit."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -363,16 +392,29 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/cksubscription/1514948-notificationinfo",
         "doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo"
-      ]
+      ],
+      "anchor": "1669805"
     },
     {
       "kind": "taskGroup",
       "title": "Accessing the Subscription Metadata",
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/cksubscription/1515199-subscriptionid",
+        "doc://com.apple.documentation/documentation/cloudkit/cksubscriptionid",
         "doc://com.apple.documentation/documentation/cloudkit/cksubscription/1515250-subscriptiontype",
         "doc://com.apple.documentation/documentation/cloudkit/cksubscriptiontype"
-      ]
+      ],
+      "anchor": "1669832"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkit/cknotification",
+        "doc://com.apple.documentation/documentation/cloudkit/ckdatabaseoperation"
+      ],
+      "title": "Base Objects",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -409,6 +451,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -647,7 +690,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

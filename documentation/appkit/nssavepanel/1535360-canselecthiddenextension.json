@@ -35,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.3",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSSavePanel(py)canSelectHiddenExtension",
+    "parent": {
+      "title": "NSSavePanel"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -126,7 +129,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the extension-hiding checkbox is visible and checked."
+          "text": "A Boolean value that indicates whether to display filename extensions."
         }
       ]
     },
@@ -275,7 +278,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "When the value of this property is "
+              "text": "Set the value of this property before displaying the panel. When the value of this property is "
             },
             {
               "type": "reference",
@@ -284,7 +287,16 @@
             },
             {
               "type": "text",
-              "text": ", the panel displays UI for showing or hiding filename extensions. The default value of this property is "
+              "text": ", and the Finder preference “Show all extensions” is "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+            },
+            {
+              "type": "text",
+              "text": ", the panel displays the Hide Extension menu item. The default value of this property is "
             },
             {
               "type": "reference",
@@ -302,7 +314,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Set the value of this property before displaying the panel. Use the "
+              "text": "Use the "
             },
             {
               "type": "reference",
@@ -311,7 +323,7 @@
             },
             {
               "type": "text",
-              "text": " property to get and set the value of the checkbox that hides or shows extensions."
+              "text": " property to hide or shows extensions."
             }
           ]
         }
@@ -319,7 +331,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

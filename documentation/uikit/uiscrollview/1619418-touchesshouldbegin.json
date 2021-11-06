@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIScrollView(im)touchesShouldBegin:withEvent:inContentView:",
+    "parent": {
+      "title": "UIScrollView"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -136,30 +144,6 @@
       "role": "symbol",
       "url": "/documentation/uikit/uiresponder"
     },
-    "doc://com.apple.documentation/documentation/uikit/uiscrollview/1619387-touchesshouldcancelincontentview": {
-      "title": "touchesShouldCancelInContentView:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscrollview/1619387-touchesshouldcancelincontentview",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiscrollview/1619387-touchesshouldcancelincontentview",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns whether to cancel touches related to the content subview and start dragging."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "touchesShouldCancelInContentView:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/nsset": {
       "title": "NSSet",
       "type": "topic",
@@ -205,6 +189,30 @@
         {
           "kind": "identifier",
           "text": "touchesShouldBegin:withEvent:inContentView:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiscrollview/1619387-touchesshouldcancelincontentview": {
+      "title": "touchesShouldCancelInContentView:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscrollview/1619387-touchesshouldcancelincontentview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiscrollview/1619387-touchesshouldcancelincontentview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns whether to cancel touches related to the content subview and start dragging."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesShouldCancelInContentView:"
         }
       ]
     },
@@ -394,6 +402,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -569,7 +578,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

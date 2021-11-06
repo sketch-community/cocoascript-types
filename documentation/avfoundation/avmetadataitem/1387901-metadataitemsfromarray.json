@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Provides the subset of metadata items whose locales match one of the specified language identifiers."
+      "text": "Returns metadata items whose locales match one of the specified language identifiers."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.8",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVMetadataItem(cm)metadataItemsFromArray:filteredAndSortedAccordingToPreferredLanguages:",
+    "parent": {
+      "title": "AVMetadataItem"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -146,6 +154,30 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsarray"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1385843-metadataitemsfromarray": {
+      "title": "metadataItemsFromArray:filteredByIdentifier:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1385843-metadataitemsfromarray",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataitem/1385843-metadataitemsfromarray",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns metadata items for the specified identifier."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "metadataItemsFromArray:filteredByIdentifier:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1386083-metadataitemsfromarray": {
       "title": "metadataItemsFromArray:withKey:keySpace:",
       "type": "topic",
@@ -156,7 +188,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Provides an array of metadata items that match a specified key or key space."
+          "text": "Returns metadata items that match a specified key or key space."
         }
       ],
       "fragments": [
@@ -170,20 +202,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadatakeyspace": {
-      "title": "AVMetadataKeySpace",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadatakeyspace",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadatakeyspace",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A value that defines a metadata key space."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1389374-metadataitemsfromarray": {
       "title": "metadataItemsFromArray:withLocale:",
       "type": "topic",
@@ -194,7 +212,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Provides an array of metadata items that match a specified locale."
+          "text": "Returns metadata items that match a specified locale."
         }
       ],
       "fragments": [
@@ -218,7 +236,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Provides the subset of metadata items whose locales match one of the specified language identifiers."
+          "text": "Returns metadata items whose locales match one of the specified language identifiers."
         }
       ],
       "fragments": [
@@ -242,7 +260,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Filters an array of metadata items using the metadata item filter."
+          "text": "Returns filtered metadata items."
         }
       ],
       "fragments": [
@@ -253,44 +271,6 @@
         {
           "kind": "identifier",
           "text": "metadataItemsFromArray:filteredByMetadataItemFilter:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1385843-metadataitemsfromarray": {
-      "title": "metadataItemsFromArray:filteredByIdentifier:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1385843-metadataitemsfromarray",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataitem/1385843-metadataitemsfromarray",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Filters an array of metadata items according to the supplied identifier."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "+ "
-        },
-        {
-          "kind": "identifier",
-          "text": "metadataItemsFromArray:filteredByIdentifier:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier": {
-      "title": "AVMetadataIdentifier",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifier",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A value that defines the metadata identifiers for different file formats."
         }
       ]
     },
@@ -305,12 +285,10 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1386083-metadataitemsfromarray",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadatakeyspace",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1389374-metadataitemsfromarray",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1390238-metadataitemsfromarray",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1385843-metadataitemsfromarray",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier"
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1386083-metadataitemsfromarray",
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1389374-metadataitemsfromarray",
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1390238-metadataitemsfromarray"
       ],
       "title": "Filtering Arrays of Metadata Items",
       "generated": true
@@ -436,6 +414,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -458,15 +437,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "An array of "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "AVMetadataItem"
-                },
-                {
-                  "type": "text",
-                  "text": " objects to be filtered and sorted."
+                  "text": "The metadata items to filter. "
                 }
               ]
             }
@@ -507,7 +478,7 @@
                 },
                 {
                   "type": "text",
-                  "text": ". "
+                  "text": "."
                 }
               ]
             }
@@ -529,23 +500,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "An array containing the "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVMetadataItem"
-            },
-            {
-              "type": "text",
-              "text": " objects from the "
-            },
-            {
-              "type": "codeVoice",
-              "code": "metadataItems"
-            },
-            {
-              "type": "text",
-              "text": " parameter that match one of the specified languages."
+              "text": "An array of metadata items that match the specified languages."
             }
           ]
         }
@@ -553,7 +508,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Initializes and returns a document browser view controller that can open the given file types."
+      "text": "Initializes and returns a document browser view controller that can open the specified file types."
     }
   ],
   "documentVersion": 0,
@@ -36,23 +36,33 @@
         "name": "iOS",
         "introducedAt": "11.0",
         "deprecatedAt": "14.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "deprecatedAt": "14.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "14.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)UIDocumentBrowserViewController(im)initForOpeningFilesWithContentTypes:",
+    "parent": {
+      "title": "UIDocumentBrowserViewController"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,7 +115,31 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A view controller for browsing and performing actions on documents stored locally and in the cloud."
+          "text": "A view controller for browsing and performing actions on documents that you store locally and in the cloud."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3566729-initforopeningcontenttypes": {
+      "title": "initForOpeningContentTypes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3566729-initforopeningcontenttypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidocumentbrowserviewcontroller/3566729-initforopeningcontenttypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes and returns a document browser view controller that can open the specified file types."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initForOpeningContentTypes:"
         }
       ]
     },
@@ -117,12 +151,6 @@
       "role": "subsection",
       "url": "/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app/setting_up_a_document_browser_app#2904048"
     },
-    "devLink-1741576": {
-      "identifier": "devLink-1741576",
-      "type": "link",
-      "title": "Uniform Type Identifiers Reference",
-      "url": "https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/UTIRef/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009257"
-    },
     "doc://com.apple.documentation/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app/setting_up_a_document_browser_app": {
       "title": "Setting Up a Document Browser App",
       "type": "topic",
@@ -130,6 +158,14 @@
       "kind": "article",
       "role": "article",
       "url": "/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app/setting_up_a_document_browser_app"
+    },
+    "doc://com.apple.documentation/documentation/uniformtypeidentifiers": {
+      "title": "Uniform Type Identifiers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/uniformtypeidentifiers"
     },
     "doc://com.apple.documentation/documentation/foundation/nsarray": {
       "title": "NSArray",
@@ -171,7 +207,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes and returns a document browser view controller that can open the given file types."
+          "text": "Initializes and returns a document browser view controller that can open the specified file types."
         }
       ],
       "fragments": [
@@ -194,10 +230,31 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3566729-initforopeningcontenttypes"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app"
+        "doc://com.apple.documentation/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app",
+        "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3566729-initforopeningcontenttypes"
       ],
       "title": "Creating a Document Browser",
       "generated": true
@@ -267,6 +324,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -286,7 +344,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "An array of uniform type identifiers (UTIs). The document browser can open only the document types specified by these UTIs.  If you pass "
+                  "text": "An array of uniform type identifiers (UTIs). The document browser can open only the document types that these UTIs specify.  If you pass "
                 },
                 {
                   "type": "codeVoice",
@@ -294,7 +352,7 @@
                 },
                 {
                   "type": "text",
-                  "text": ", the browser uses the document types specified by the "
+                  "text": ", the browser uses the document types that the "
                 },
                 {
                   "type": "codeVoice",
@@ -302,7 +360,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " key in the app’s "
+                  "text": " key specifies in the app’s "
                 },
                 {
                   "type": "codeVoice",
@@ -319,7 +377,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "For detailed instructions on setting the "
+                  "text": "For detailed instructions about setting the "
                 },
                 {
                   "type": "codeVoice",
@@ -327,12 +385,21 @@
                 },
                 {
                   "type": "text",
-                  "text": " key, see  "
+                  "text": " key, see the "
                 },
                 {
                   "type": "reference",
                   "isActive": true,
                   "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app/setting_up_a_document_browser_app#2904048"
+                },
+                {
+                  "type": "text",
+                  "text": " section of "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app/setting_up_a_document_browser_app"
                 },
                 {
                   "type": "text",
@@ -348,9 +415,9 @@
                   "text": "For more information about UTIs, see "
                 },
                 {
-                  "type": "link",
-                  "title": "Uniform Type Identifiers Reference",
-                  "destination": "https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/UTIRef/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009257"
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers"
                 },
                 {
                   "type": "text",
@@ -384,7 +451,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

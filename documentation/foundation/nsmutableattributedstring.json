@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A mutable string object that also contains attributes (such as visual style, hyperlinks, or accessibility data) associated with various portions of its text content. "
+      "text": "A mutable string with associated attributes (such as visual style, hyperlinks, or accessibility data) for portions of its text."
     }
   ],
   "documentVersion": 0,
@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "3.2",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.2",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSMutableAttributedString",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -639,6 +644,24 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/3746902-appendlocalizedformat": {
+      "title": "appendLocalizedFormat:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/3746902-appendlocalizedformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsmutableattributedstring/3746902-appendlocalizedformat",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "appendLocalizedFormat:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1414947-insertattributedstring": {
       "title": "insertAttributedString:atIndex:",
       "type": "topic",
@@ -1020,7 +1043,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A mutable string object that also contains attributes (such as visual style, hyperlinks, or accessibility data) associated with various portions of its text content. "
+          "text": "A mutable string with associated attributes (such as visual style, hyperlinks, or accessibility data) for portions of its text."
         }
       ]
     },
@@ -1045,22 +1068,24 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Retrieving character information",
+      "title": "Retrieving Character Information",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1416955-mutablestring"
-      ]
+      ],
+      "anchor": "1653875"
     },
     {
       "kind": "taskGroup",
-      "title": "Changing characters",
+      "title": "Changing Characters",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1418451-replacecharactersinrange",
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1410610-deletecharactersinrange"
-      ]
+      ],
+      "anchor": "1653916"
     },
     {
       "kind": "taskGroup",
-      "title": "Changing attributes",
+      "title": "Changing Attributes",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1412179-setattributes",
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1417080-addattribute",
@@ -1072,50 +1097,57 @@
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1529906-subscriptrange",
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1533592-superscriptrange",
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1530210-unscriptrange"
-      ]
+      ],
+      "anchor": "1653959"
     },
     {
       "kind": "taskGroup",
-      "title": "Changing characters and attributes",
+      "title": "Changing Characters and Attributes",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1417879-appendattributedstring",
+        "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/3746902-appendlocalizedformat",
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1414947-insertattributedstring",
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1417045-replacecharactersinrange",
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1411894-setattributedstring"
-      ]
+      ],
+      "anchor": "1654119"
     },
     {
       "kind": "taskGroup",
-      "title": "Grouping changes",
+      "title": "Grouping Changes",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1411853-beginediting",
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1416707-endediting"
-      ]
+      ],
+      "anchor": "1654219"
     },
     {
       "kind": "taskGroup",
-      "title": "Updating attachment contents ",
+      "title": "Updating Attachment Contents ",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1508389-updateattachmentsfrompath"
-      ]
+      ],
+      "anchor": "1654267"
     },
     {
       "kind": "taskGroup",
-      "title": "Fixing attributes after changes ",
+      "title": "Fixing Attributes After Changes ",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1533823-fixattributesinrange",
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1526389-fixattachmentattributeinrange",
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1534303-fixfontattributeinrange",
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1527082-fixparagraphstyleattributeinrang"
-      ]
+      ],
+      "anchor": "1654306"
     },
     {
       "kind": "taskGroup",
-      "title": "Reading content",
+      "title": "Reading Content",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1535465-readfromdata",
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1524892-readfromurl"
-      ]
+      ],
+      "anchor": "1654400"
     },
     {
       "kind": "taskGroup",
@@ -1124,7 +1156,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1525145-readfromdata",
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1530903-readfromurl",
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1620496-readfromfileurl"
-      ]
+      ],
+      "anchor": "1654462"
     }
   ],
   "seeAlsoSections": [
@@ -1170,6 +1203,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1364,7 +1398,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

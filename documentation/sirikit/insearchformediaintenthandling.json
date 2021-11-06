@@ -34,30 +34,35 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(pl)INSearchForMediaIntentHandling",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -249,21 +254,24 @@
       "title": "Resolving Details of the Intent",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insearchformediaintenthandling/3180154-resolvemediaitemsforsearchformed"
-      ]
+      ],
+      "anchor": "3193537"
     },
     {
       "kind": "taskGroup",
       "title": "Confirming the Response",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insearchformediaintenthandling/3074297-confirmsearchformedia"
-      ]
+      ],
+      "anchor": "3162186"
     },
     {
       "kind": "taskGroup",
       "title": "Handling the Intent",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insearchformediaintenthandling/3074298-handlesearchformedia"
-      ]
+      ],
+      "anchor": "3075867"
     }
   ],
   "seeAlsoSections": [
@@ -300,6 +308,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
@@ -348,7 +357,7 @@
             },
             {
               "type": "text",
-              "text": " object to your handler when the user asks to search for media using your app. Use the methods of this protocol to resolve the parameters and search for the media."
+              "text": " object to your handler when the user asks Siri to search for media using your app, or when Spotlight search results include an artist. Use the methods of this protocol to resolve the parameters and search for the media."
             }
           ]
         }
@@ -356,7 +365,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIResponder",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -286,54 +291,6 @@
       "type": "link",
       "title": "Event Handling Guide for UIKit Apps",
       "url": "https://developer.apple.com/library/archive/documentation/EventHandling/Conceptual/EventHandlingiPhoneOS/index.html#//apple_ref/doc/uid/TP40009541"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsnumber": {
-      "title": "NSNumber",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsnumber"
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiviewanimationcurve": {
-      "title": "UIViewAnimationCurve",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewanimationcurve",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiviewanimationcurve"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsvalue": {
-      "title": "NSValue",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsvalue"
-    },
-    "doc://com.apple.documentation/documentation/coregraphics/cgrect": {
-      "title": "CGRect",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgrect",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coregraphics/cgrect"
-    },
-    "doc://com.apple.documentation/documentation/objectivec/yes": {
-      "title": "YES",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/yes"
-    },
-    "doc://com.apple.documentation/documentation/objectivec/no": {
-      "title": "NO",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/no"
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
@@ -1069,25 +1026,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The key for an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
-        },
-        {
-          "type": "text",
-          "text": " object containing a "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewanimationcurve"
-        },
-        {
-          "type": "text",
-          "text": " constant that defines how the keyboard will be animated onto or off the screen."
+          "text": "A user info key to retrieve the animation curve that the system uses to animate the keyboard onto or off the screen."
         }
       ]
     },
@@ -1101,24 +1040,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The key for an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
-        },
-        {
-          "type": "text",
-          "text": " object containing a "
-        },
-        {
-          "type": "codeVoice",
-          "code": "double"
-        },
-        {
-          "type": "text",
-          "text": " that identifies the duration of the animation in seconds."
+          "text": "A user info key to retrieve the duration of the keyboard animation in seconds."
         }
       ]
     },
@@ -1174,25 +1096,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The key for an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue"
-        },
-        {
-          "type": "text",
-          "text": " object containing a "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgrect"
-        },
-        {
-          "type": "text",
-          "text": " that identifies the starting frame rectangle of the keyboard in screen coordinates. The frame rectangle reflects the current orientation of the device.  "
+          "text": "A user info key to retrieve the keyboard’s frame at the beginning of its animation."
         }
       ]
     },
@@ -1206,25 +1110,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The key for an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue"
-        },
-        {
-          "type": "text",
-          "text": " object containing a "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgrect"
-        },
-        {
-          "type": "text",
-          "text": " that identifies the ending frame rectangle of the keyboard in screen coordinates. The frame rectangle reflects the current orientation of the device. "
+          "text": "A user info key to retrieve the keyboard’s frame at the end of its animation."
         }
       ]
     },
@@ -1238,34 +1124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The key for an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
-        },
-        {
-          "type": "text",
-          "text": " object containing a Boolean that identifies whether the keyboard belongs to the current app. With multitasking on iPad, all visible apps are notified when the keyboard appears and disappears. The value of this key is "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-        },
-        {
-          "type": "text",
-          "text": " for the app that caused the keyboard to appear and "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
-        },
-        {
-          "type": "text",
-          "text": " for any other apps.  "
+          "text": "A user info key to retrieve a Boolean value that indicates whether the keyboard belongs to the current app."
         }
       ]
     },
@@ -1311,6 +1170,24 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/3778577-capturetextfromcamera": {
+      "title": "captureTextFromCamera:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/3778577-capturetextfromcamera",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/3778577-capturetextfromcamera",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "captureTextFromCamera:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events": {
       "title": "Using Responders and the Responder Chain to Handle Events",
       "type": "topic",
@@ -1331,16 +1208,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -1372,7 +1239,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621113-becomefirstresponder",
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621125-canresignfirstresponder",
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621097-resignfirstresponder"
-      ]
+      ],
+      "anchor": "1653262"
     },
     {
       "kind": "taskGroup",
@@ -1383,7 +1251,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621084-touchesended",
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621116-touchescancelled",
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621147-touchesestimatedpropertiesupdate"
-      ]
+      ],
+      "anchor": "1653447"
     },
     {
       "kind": "taskGroup",
@@ -1392,7 +1261,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621120-motionbegan",
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621090-motionended",
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621087-motioncancelled"
-      ]
+      ],
+      "anchor": "1653530"
     },
     {
       "kind": "taskGroup",
@@ -1403,6 +1273,7 @@
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621128-pressesended",
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621148-pressescancelled"
       ],
+      "anchor": "1653595",
       "abstract": [
         {
           "type": "text",
@@ -1415,7 +1286,8 @@
       "title": "Responding to Remote-Control Events",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621118-remotecontrolreceivedwithevent"
-      ]
+      ],
+      "anchor": "1653650"
     },
     {
       "kind": "taskGroup",
@@ -1426,14 +1298,16 @@
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621119-inputaccessoryview",
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621124-inputaccessoryviewcontroller",
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621110-reloadinputviews"
-      ]
+      ],
+      "anchor": "1653355"
     },
     {
       "kind": "taskGroup",
       "title": "Getting the Undo Manager",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621122-undomanager"
-      ]
+      ],
+      "anchor": "1653675"
     },
     {
       "kind": "taskGroup",
@@ -1443,14 +1317,16 @@
         "doc://com.apple.documentation/documentation/uikit/uiresponder/3229892-validatecommand",
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621105-canperformaction",
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621146-targetforaction"
-      ]
+      ],
+      "anchor": "1653718"
     },
     {
       "kind": "taskGroup",
       "title": "Accessing the Available Key Commands",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621141-keycommands"
-      ]
+      ],
+      "anchor": "1653777"
     },
     {
       "kind": "taskGroup",
@@ -1460,7 +1336,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621091-textinputcontextidentifier",
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621138-cleartextinputcontextidentifier",
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621135-inputassistantitem"
-      ]
+      ],
+      "anchor": "1653822"
     },
     {
       "kind": "taskGroup",
@@ -1469,14 +1346,16 @@
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621089-useractivity",
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621111-restoreuseractivitystate",
         "doc://com.apple.documentation/documentation/uikit/uiresponder/1621095-updateuseractivitystate"
-      ]
+      ],
+      "anchor": "1653915"
     },
     {
       "kind": "taskGroup",
       "title": "Managing Activity Items",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiresponder/3368158-activityitemsconfiguration"
-      ]
+      ],
+      "anchor": "3640005"
     },
     {
       "kind": "taskGroup",
@@ -1484,7 +1363,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiresponder/3327318-editinginteractionconfiguration",
         "doc://com.apple.documentation/documentation/uikit/uieditinginteractionconfiguration"
-      ]
+      ],
+      "anchor": "3640004"
     },
     {
       "kind": "taskGroup",
@@ -1492,7 +1372,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiresponder/3375808-maketouchbar",
         "doc://com.apple.documentation/documentation/uikit/uiresponder/3375809-touchbar"
-      ]
+      ],
+      "anchor": "3640006"
     },
     {
       "kind": "taskGroup",
@@ -1509,7 +1390,16 @@
         "doc://com.apple.documentation/documentation/uikit/uikeyboardwillchangeframenotification",
         "doc://com.apple.documentation/documentation/uikit/uikeyboardwillhidenotification",
         "doc://com.apple.documentation/documentation/uikit/uikeyboardwillshownotification"
-      ]
+      ],
+      "anchor": "3640007"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiresponder/3778577-capturetextfromcamera"
+      ],
+      "anchor": "3780591"
     }
   ],
   "seeAlsoSections": [
@@ -1556,6 +1446,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -1746,7 +1637,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

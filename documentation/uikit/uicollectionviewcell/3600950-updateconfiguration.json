@@ -36,25 +36,33 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "Xcode",
         "introducedAt": "12.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "c:@CM@UIKit@@objc(cs)UICollectionViewCell(im)_bridgedUpdateConfigurationUsingState:",
+    "parent": {
+      "title": "UICollectionViewCell"
+    },
     "symbolKind": "instm",
     "fragments": [
       {
@@ -80,8 +88,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -164,6 +172,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/swift/mainactor": {
+      "title": "MainActor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/mainactor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/mainactor"
+    },
     "doc://com.apple.documentation/documentation/uikit/uicellconfigurationstate": {
       "title": "UICellConfigurationState",
       "type": "topic",
@@ -236,6 +252,58 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/3751733-configurationupdatehandler": {
+      "title": "configurationUpdateHandler",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/3751733-configurationupdatehandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewcell/3751733-configurationupdatehandler",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A block for handling updates to the cell's configuration using the current state. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "configurationUpdateHandler"
+        },
+        {
+          "kind": "text",
+          "text": ": UICollectionViewCell.ConfigurationUpdateHandler?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/configurationupdatehandler": {
+      "title": "UICollectionViewCell.ConfigurationUpdateHandler",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/configurationupdatehandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewcell/configurationupdatehandler",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The type of block for handling updates to the cell’s configuration using the current state.  "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "typealias "
+        },
+        {
+          "kind": "identifier",
+          "text": "UICollectionViewCell.ConfigurationUpdateHandler"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/1620130-isselected": {
       "title": "isSelected",
       "type": "topic",
@@ -305,6 +373,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/3600948-configurationstate",
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/3600432-setneedsupdateconfiguration",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/3751733-configurationupdatehandler",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/configurationupdatehandler",
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/1620130-isselected",
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/1620134-ishighlighted"
       ],
@@ -328,6 +398,14 @@
             {
               "kind": "text",
               "text": "(_bridgedUpdateConfigurationUsingState:)"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "attribute",
+              "text": "@MainActor"
             },
             {
               "kind": "text",
@@ -386,6 +464,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -436,7 +515,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

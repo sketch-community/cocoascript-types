@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Invoked automatically to inform the window that it has become the key window; never invoke this method directly."
+      "text": "Informs the window that it has become the key window."
     }
   ],
   "documentVersion": 0,
@@ -35,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSWindow(im)becomeKeyWindow",
+    "parent": {
+      "title": "NSWindow"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -108,27 +111,31 @@
       "role": "symbol",
       "url": "/documentation/appkit/nswindowdidbecomekeynotification"
     },
-    "doc://com.apple.documentation/documentation/appkit/nswindow/1419084-becomemainwindow": {
-      "title": "becomeMainWindow",
+    "doc://com.apple.documentation/documentation/appkit/nswindow/1419735-keywindow": {
+      "title": "keyWindow",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419084-becomemainwindow",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419735-keywindow",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nswindow/1419084-becomemainwindow",
+      "url": "/documentation/appkit/nswindow/1419735-keywindow",
       "abstract": [
         {
           "type": "text",
-          "text": "Invoked automatically to inform the window that it has become the main window; never invoke this method directly."
+          "text": "A Boolean value that indicates whether the window is the key window for the application."
         }
-      ],
-      "fragments": [
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindow/1419543-canbecomekeywindow": {
+      "title": "canBecomeKeyWindow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419543-canbecomekeywindow",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindow/1419543-canbecomekeywindow",
+      "abstract": [
         {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "becomeMainWindow"
+          "type": "text",
+          "text": "A Boolean value that indicates whether the window can become the key window."
         }
       ]
     },
@@ -180,34 +187,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nswindow/1419735-keywindow": {
-      "title": "keyWindow",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419735-keywindow",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nswindow/1419735-keywindow",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the window is the key window for the application."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nswindow/1419543-canbecomekeywindow": {
-      "title": "canBecomeKeyWindow",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419543-canbecomekeywindow",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nswindow/1419543-canbecomekeywindow",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the window can become the key window."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/appkit/nswindow/1419338-becomekeywindow": {
       "title": "becomeKeyWindow",
       "type": "topic",
@@ -218,7 +197,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Invoked automatically to inform the window that it has become the key window; never invoke this method directly."
+          "text": "Informs the window that it has become the key window."
         }
       ],
       "fragments": [
@@ -242,7 +221,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Invoked automatically when the window resigns key window status; never invoke this method directly."
+          "text": "Resigns the window’s key window status."
         }
       ],
       "fragments": [
@@ -275,13 +254,6 @@
       ],
       "title": "Managing Key Status",
       "generated": true
-    },
-    {
-      "title": "Related Documentation",
-      "generated": false,
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nswindow/1419084-becomemainwindow"
-      ]
     }
   ],
   "primaryContentSections": [
@@ -342,7 +314,7 @@
             },
             {
               "type": "text",
-              "text": " message to that object if it responds, and posts an "
+              "text": " message to that object if it responds, and posts "
             },
             {
               "type": "reference",
@@ -354,12 +326,21 @@
               "text": " to the default notification center."
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Never invoke this method directly."
+            }
+          ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

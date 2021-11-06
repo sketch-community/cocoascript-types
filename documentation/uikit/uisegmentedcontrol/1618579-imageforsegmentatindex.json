@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns the image for a specific segment"
+      "text": "Returns the image for a specific segment."
     }
   ],
   "documentVersion": 0,
@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UISegmentedControl(im)imageForSegmentAtIndex:",
+    "parent": {
+      "title": "UISegmentedControl"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -118,6 +126,22 @@
       "role": "symbol",
       "url": "/documentation/uikit/uisegmentedcontrol/1618553-numberofsegments"
     },
+    "doc://com.apple.documentation/documentation/uikit/uiimage": {
+      "title": "UIImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiimage"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsuinteger": {
+      "title": "NSUInteger",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsuinteger",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsuinteger"
+    },
     "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618582-setimage": {
       "title": "setImage:forSegmentAtIndex:",
       "type": "topic",
@@ -142,22 +166,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiimage": {
-      "title": "UIImage",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiimage"
-    },
-    "doc://com.apple.documentation/documentation/objectivec/nsuinteger": {
-      "title": "NSUInteger",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsuinteger",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/nsuinteger"
-    },
     "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618579-imageforsegmentatindex": {
       "title": "imageForSegmentAtIndex:",
       "type": "topic",
@@ -168,7 +176,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the image for a specific segment"
+          "text": "Returns the image for a specific segment."
         }
       ],
       "fragments": [
@@ -305,6 +313,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -334,7 +343,7 @@
                 },
                 {
                   "type": "text",
-                  "text": ") minus 1; values exceeding this upper range are pinned to it. "
+                  "text": ") minus 1; the segmented control pins values exceeding this upper range to the last segment."
                 }
               ]
             }
@@ -356,7 +365,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Returns the image assigned to the receiver as content. If no image has been set, it returns "
+              "text": "Returns the image assigned to the receiver as content. If there is no image, it returns "
             },
             {
               "type": "codeVoice",
@@ -372,7 +381,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

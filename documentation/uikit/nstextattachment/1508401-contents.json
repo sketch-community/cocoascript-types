@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_storage",
+        "doc://com.apple.documentation/documentation/uikit/textkit",
         "doc://com.apple.documentation/documentation/uikit/nstextattachment"
       ],
       [
@@ -44,30 +44,38 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)NSTextAttachment(py)contents",
+    "parent": {
+      "title": "NSTextAttachment"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -104,10 +112,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/text_storage": {
-      "title": "Text Storage",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage",
-      "url": "/documentation/uikit/text_storage",
+    "doc://com.apple.documentation/documentation/uikit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit",
+      "url": "/documentation/uikit/textkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -122,7 +130,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The values for the attachment attributes of attributed strings and related objects."
+          "text": "The values for the attachment characteristics of attributed strings and related objects."
         }
       ]
     },
@@ -152,7 +160,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An image that represents the text attachment contents."
+          "text": "An instance of the relevant image class that represents the contents of the text attachment object."
         }
       ]
     },
@@ -220,6 +228,48 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/nstextattachment/3857584-allowstextattachmentview": {
+      "title": "allowsTextAttachmentView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextattachment/3857584-allowstextattachmentview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextattachment/3857584-allowstextattachmentview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines whether the text attachment uses text attachment views."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextattachment/3857588-usestextattachmentview": {
+      "title": "usesTextAttachmentView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextattachment/3857588-usestextattachmentview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextattachment/3857588-usestextattachmentview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the text attachment uses text attachment views."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextattachment/3857585-linelayoutpadding": {
+      "title": "lineLayoutPadding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextattachment/3857585-linelayoutpadding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextattachment/3857585-linelayoutpadding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The layout padding before and after the text attachment bounds."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -228,25 +278,18 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nstextattachment/1508394-bounds",
         "doc://com.apple.documentation/documentation/uikit/nstextattachment/1508416-filetype",
         "doc://com.apple.documentation/documentation/uikit/nstextattachment/1508378-image",
-        "doc://com.apple.documentation/documentation/uikit/nstextattachment/1508398-filewrapper"
+        "doc://com.apple.documentation/documentation/uikit/nstextattachment/1508398-filewrapper",
+        "doc://com.apple.documentation/documentation/uikit/nstextattachment/3857584-allowstextattachmentview",
+        "doc://com.apple.documentation/documentation/uikit/nstextattachment/3857588-usestextattachmentview",
+        "doc://com.apple.documentation/documentation/uikit/nstextattachment/3857585-linelayoutpadding"
       ],
-      "title": "Defining the Contents",
+      "title": "Defining the Attachment’s Contents",
       "generated": true
     }
   ],
@@ -288,6 +331,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -361,7 +405,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A Boolean value that indicates whether the player item allows spatialized audio playback."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -36,30 +42,40 @@
         "name": "iOS",
         "introducedAt": "13.0",
         "deprecatedAt": "14.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "deprecatedAt": "14.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
         "deprecatedAt": "11.0",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "14.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)AVPlayerItem(py)audioSpatializationAllowed",
+    "parent": {
+      "title": "AVPlayerItem"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -112,7 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to model the timing and presentation state of an asset played by the player."
+          "text": "An object that models the timing and presentation state of an asset that a player object presents."
         }
       ]
     },
@@ -130,7 +146,55 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat"
+      "url": "/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The source audio channel layouts the player item supports for spatialization."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388037-audiomix": {
+      "title": "audioMix",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388037-audiomix",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/1388037-audiomix",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The audio mix parameters to be applied during playback."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1385855-audiotimepitchalgorithm": {
+      "title": "audioTimePitchAlgorithm",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1385855-audiotimepitchalgorithm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/1385855-audiotimepitchalgorithm",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The processing algorithm used to manage audio pitch for scaled audio edits."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats": {
+      "title": "AVAudioSpatializationFormats",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiospatializationformats",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that defines the spatialization formats that a player item supports."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed": {
       "title": "audioSpatializationAllowed",
@@ -139,6 +203,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the player item allows spatialized audio playback."
+        }
+      ],
       "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
@@ -149,12 +219,35 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat"
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388037-audiomix",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1385855-audiotimepitchalgorithm",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats"
       ],
-      "title": "Determining Audio Spatialization Settings",
+      "title": "Configuring Audio",
       "generated": true
     }
   ],
@@ -194,6 +287,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -202,7 +296,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

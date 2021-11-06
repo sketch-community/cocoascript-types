@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/lists_and_notes"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -34,25 +34,38 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(pl)INCreateTaskListIntentHandling",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -87,13 +100,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/lists_and_notes": {
-      "title": "Lists and Notes",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/lists_and_notes",
-      "url": "/documentation/sirikit/lists_and_notes",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "link-3872625": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3872625",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/increatetasklistintenthandling": {
       "title": "INCreateTaskListIntentHandling",
@@ -107,7 +128,8 @@
           "type": "text",
           "text": "The handler interface for creating task lists."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/increatetasklistintent": {
       "title": "INCreateTaskListIntent",
@@ -121,7 +143,8 @@
           "type": "text",
           "text": "A request to create a new task list."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject": {
       "title": "NSObject",
@@ -162,7 +185,8 @@
           "kind": "identifier",
           "text": "resolveTitleForCreateTaskList:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/increatetasklistintenthandling/2873991-resolvetasktitlesforcreatetaskli": {
       "title": "resolveTaskTitlesForCreateTaskList:withCompletion:",
@@ -187,7 +211,8 @@
           "kind": "identifier",
           "text": "resolveTaskTitlesForCreateTaskList:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/increatetasklistintenthandling/2873989-resolvegroupnameforcreatetasklis": {
       "title": "resolveGroupNameForCreateTaskList:withCompletion:",
@@ -212,7 +237,8 @@
           "kind": "identifier",
           "text": "resolveGroupNameForCreateTaskList:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/increatetasklistintenthandling/2873990-confirmcreatetasklist": {
       "title": "confirmCreateTaskList:completion:",
@@ -237,7 +263,8 @@
           "kind": "identifier",
           "text": "confirmCreateTaskList:completion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/increatetasklistintenthandling/2873996-handlecreatetasklist": {
       "title": "handleCreateTaskList:completion:",
@@ -262,7 +289,8 @@
           "kind": "identifier",
           "text": "handleCreateTaskList:completion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/increatetasklistintentresponse": {
       "title": "INCreateTaskListIntentResponse",
@@ -276,7 +304,8 @@
           "type": "text",
           "text": "Your app’s response to a request to create a task list."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -286,6 +315,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -312,21 +361,24 @@
         "doc://com.apple.documentation/documentation/sirikit/increatetasklistintenthandling/2873993-resolvetitleforcreatetasklist",
         "doc://com.apple.documentation/documentation/sirikit/increatetasklistintenthandling/2873991-resolvetasktitlesforcreatetaskli",
         "doc://com.apple.documentation/documentation/sirikit/increatetasklistintenthandling/2873989-resolvegroupnameforcreatetasklis"
-      ]
+      ],
+      "anchor": "2880082"
     },
     {
       "kind": "taskGroup",
       "title": "Confirming the Response",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/increatetasklistintenthandling/2873990-confirmcreatetasklist"
-      ]
+      ],
+      "anchor": "2880081"
     },
     {
       "kind": "taskGroup",
       "title": "Handling the Intent",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/increatetasklistintenthandling/2873996-handlecreatetasklist"
-      ]
+      ],
+      "anchor": "2880080"
     }
   ],
   "seeAlsoSections": [
@@ -335,7 +387,7 @@
         "doc://com.apple.documentation/documentation/sirikit/increatetasklistintent",
         "doc://com.apple.documentation/documentation/sirikit/increatetasklistintentresponse"
       ],
-      "title": "Create Task List",
+      "title": "Task List Creation",
       "generated": true
     }
   ],
@@ -363,6 +415,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -392,7 +445,7 @@
             },
             {
               "type": "text",
-              "text": " protocol to resolve, confirm, and handle requests to create task lists. Adopt this protocol in an object of your Intents extension that is capable of forwarding the task list information to your app or task management service. "
+              "text": " protocol to resolve, confirm, and handle requests to create task lists. Adopt this protocol in an object of your Intents extension that’s capable of forwarding the task list information to your app or task management service. "
             }
           ]
         },
@@ -418,7 +471,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

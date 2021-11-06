@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.6",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSSortDescriptor(cm)sortDescriptorWithKey:ascending:",
+    "parent": {
+      "title": "NSSortDescriptor"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -106,7 +114,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An immutable description of how to order a collection of objects based on a property common to all the objects."
+          "text": "An immutable description of how to order a collection of objects according to a property common to all the objects."
         }
       ]
     },
@@ -148,7 +156,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes a sort descriptor with a given key path and sort order."
+          "text": "Creates a sort descriptor with a specified string key path and sort order."
         }
       ],
       "fragments": [
@@ -234,7 +242,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes a sort descriptor with a given key path, ordering, and comparison selector."
+          "text": "Creates a sort descriptor with a specified string key path, ordering, and comparison selector."
         }
       ],
       "fragments": [
@@ -282,7 +290,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes a sort descriptor with a given key path and ordering, and a comparator block."
+          "text": "Creates a sort descriptor with a specified string key path and ordering, and a comparator block."
         }
       ],
       "fragments": [
@@ -293,6 +301,30 @@
         {
           "kind": "identifier",
           "text": "initWithKey:ascending:comparator:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nssortdescriptor/1412503-initwithcoder": {
+      "title": "initWithCoder:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nssortdescriptor/1412503-initwithcoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nssortdescriptor/1412503-initwithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a sort descriptor by decoding from the coder you specify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithCoder:"
         }
       ]
     },
@@ -311,9 +343,10 @@
         "doc://com.apple.documentation/documentation/foundation/nssortdescriptor/1503730-sortdescriptorwithkey",
         "doc://com.apple.documentation/documentation/foundation/nssortdescriptor/1412495-initwithkey",
         "doc://com.apple.documentation/documentation/foundation/nssortdescriptor/1503734-sortdescriptorwithkey",
-        "doc://com.apple.documentation/documentation/foundation/nssortdescriptor/1411607-initwithkey"
+        "doc://com.apple.documentation/documentation/foundation/nssortdescriptor/1411607-initwithkey",
+        "doc://com.apple.documentation/documentation/foundation/nssortdescriptor/1412503-initwithcoder"
       ],
-      "title": "Initializing a Sort Descriptor",
+      "title": "Creating a Sort Descriptor",
       "generated": true
     },
     {
@@ -402,6 +435,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -509,7 +543,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

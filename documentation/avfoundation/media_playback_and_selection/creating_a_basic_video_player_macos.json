@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Create a simple video playback app with built-in controls."
+      "text": "Build a simple video playback app with built-in controls by using minimal code and effort."
     }
   ],
   "documentVersion": 0,
@@ -32,8 +32,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -91,23 +91,24 @@
             "2x"
           ],
           "size": {
-            "width": 416,
-            "height": 566
+            "width": 367,
+            "height": 504
           },
-          "url": "https://docs-assets.developer.apple.com/published/947418efa5/c9c942ab-f2d1-420b-b21e-61f10e891767.png"
+          "url": "https://docs-assets.developer.apple.com/published/174f7cdc51/2943573@2x.png"
         },
         {
           "traits": [
-            "1x"
+            "dark",
+            "2x"
           ],
           "size": {
-            "width": 416,
-            "height": 566
+            "width": 367,
+            "height": 504
           },
-          "url": "https://docs-assets.developer.apple.com/published/7638e40284/d4d11f4a-d962-43a8-b40a-bcdba934585a.png"
+          "url": "https://docs-assets.developer.apple.com/published/2c69701e7c/2943573~dark@2x.png"
         }
       ],
-      "alt": "Xcode constraints window with pinning and aspect ratio options added.",
+      "alt": "Xcode constraints window with pinning and aspect ratio options added. The “Spacing to nearest neighbor” is set to zero in all directions. The width is set to 480, and the height is 270. The Aspect Ratio box is checked.",
       "title": "Figure 1"
     },
     "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_macos#2943575": {
@@ -128,7 +129,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Create a simple video playback app with built-in controls."
+          "text": "Build a simple video playback app with built-in controls by using minimal code and effort."
         }
       ]
     },
@@ -208,7 +209,15 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Using AVKit and AVFoundation, you can quickly create a simple video playback app."
+              "text": "Quickly create a simple video playback app using AVKit and AVFoundation. Interface Builder enables you to easily incorporate the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVPlayerView"
+            },
+            {
+              "type": "text",
+              "text": " control into your app with drag and drop. This control displays the video content from a player object along with the system-supplied playback controls, such as play and pause. It also supports a standard set of keyboard shortcuts to control playback. Add a few lines of code to associate a player object with the player view to complete the app."
             }
           ]
         },
@@ -258,16 +267,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "Add pinning constraints to the player view to pin it to its superview’s edges and maintain its aspect ratio, as shown in "
-                    },
-                    {
-                      "type": "reference",
-                      "isActive": true,
-                      "identifier": "link-media-2943573"
-                    },
-                    {
-                      "type": "text",
-                      "text": "."
+                      "text": "Add pinning constraints to the player view to pin it to its superview’s edges and maintain its aspect ratio, as shown below."
                     }
                   ]
                 }
@@ -404,7 +404,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " method, add the following code:"
+                      "text": " method, add the following code, making sure to replace the URL with one that points to a real video file available on the public internet:"
                     }
                   ]
                 }
@@ -417,10 +417,9 @@
           "code": [
             "override func viewDidLoad() {",
             "    super.viewDidLoad()",
-            "    guard let url = URL(string: \"https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8\") else {",
-            "        return",
-            "    }",
-            "    // Create a new AVPlayer and associate it with the player view",
+            "    guard let url = URL(string: \"https://example.com/my-example-video.m3u8\") else { return }",
+            "    ",
+            "    // Create a new AVPlayer and associate it with the player view.",
             "    let player = AVPlayer(url: url)",
             "    playerView.player = player",
             "}"
@@ -433,22 +432,82 @@
         },
         {
           "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add the Entitlement for Outgoing Connections (Client)",
+          "anchor": "3783242"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Build and run the app. The window opens, but the video doesn’t play because your app doesn’t have the required permissions to create an outgoing network connection. To resolve such situations, add the specific entitlements in Xcode that correspond to the capabilities that your app requires."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the Signing & Capabilities tab of the target editor, within the App Sandbox section, select the entitlement that corresponds to Outgoing Connections (Client). Doing so applies a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "TRUE"
+            },
+            {
+              "type": "text",
+              "text": " value for the needed entitlement to the Xcode project by modifying the "
+            },
+            {
+              "type": "codeVoice",
+              "code": ".entitlements"
+            },
+            {
+              "type": "text",
+              "text": " property list file."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Network entitlements are specified in terms of who establishes the connection, not the primary direction of data flow. In this example, you need the Outbound Connection capability because the app is initiating the connection. An app acting as a server would require the Inbound Connection entitlement."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
           "inlineContent": [
             {
               "type": "text",
               "text": "Your app is complete, and you can build and run it on your macOS device."
             }
           ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

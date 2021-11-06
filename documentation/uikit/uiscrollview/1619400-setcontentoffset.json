@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIScrollView(im)setContentOffset:animated:",
+    "parent": {
+      "title": "UIScrollView"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -126,26 +134,6 @@
       "role": "symbol",
       "url": "/documentation/objectivec/no"
     },
-    "devLink-1748696": {
-      "identifier": "devLink-1748696",
-      "type": "link",
-      "title": "Scroll Views",
-      "url": "https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/UIKitUICatalog/UIScrollView.html#//apple_ref/doc/uid/TP40012857-UIScrollView"
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiscrollview/1619404-contentoffset": {
-      "title": "contentOffset",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscrollview/1619404-contentoffset",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiscrollview/1619404-contentoffset",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The point at which the origin of the content view is offset from the origin of the scroll view."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/coregraphics/cgpoint": {
       "title": "CGPoint",
       "type": "topic",
@@ -165,6 +153,20 @@
         {
           "type": "text",
           "text": "The size of the content view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiscrollview/1619404-contentoffset": {
+      "title": "contentOffset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscrollview/1619404-contentoffset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiscrollview/1619404-contentoffset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The point at which the origin of the content view is offset from the origin of the scroll view."
         }
       ]
     },
@@ -208,13 +210,6 @@
       ],
       "title": "Managing the Content Size and Offset",
       "generated": true
-    },
-    {
-      "title": "Related Documentation",
-      "generated": false,
-      "identifiers": [
-        "devLink-1748696"
-      ]
     }
   ],
   "primaryContentSections": [
@@ -291,6 +286,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -349,7 +345,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

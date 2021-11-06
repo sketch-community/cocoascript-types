@@ -5,7 +5,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/textkit",
+        "doc://com.apple.documentation/documentation/appkit/text_input",
         "doc://com.apple.documentation/documentation/appkit/nstextcontent"
       ]
     ]
@@ -30,15 +30,18 @@
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSTextContent(py)contentType",
+    "parent": {
+      "title": "NSTextContent"
+    },
     "symbolKind": "intfp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -73,10 +76,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/textkit": {
-      "title": "TextKit",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/textkit",
-      "url": "/documentation/appkit/textkit",
+    "doc://com.apple.documentation/documentation/appkit/text_input": {
+      "title": "Text Input",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/text_input",
+      "url": "/documentation/appkit/text_input",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -87,7 +90,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nstextcontent",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstextcontent"
+      "url": "/documentation/appkit/nstextcontent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that describes specific kinds of input content types."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nstextcontenttype": {
       "title": "NSTextContentType",
@@ -167,7 +176,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

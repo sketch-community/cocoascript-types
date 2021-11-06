@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "10.3",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.3",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.2",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVContentKeyRequest",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -148,6 +153,20 @@
         {
           "type": "text",
           "text": "A key that specifies the versions of the content protection protocol supported by the application."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequestrequiresvalidationdatainsecuretokenkey": {
+      "title": "AVContentKeyRequestRequiresValidationDataInSecureTokenKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequestrequiresvalidationdatainsecuretokenkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeyrequestrequiresvalidationdatainsecuretokenkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that requires the secure token to have extended validation data."
         }
       ]
     },
@@ -346,13 +365,61 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequest/3726102-contentkey": {
+      "title": "contentKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequest/3726102-contentkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeyrequest/3726102-contentkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The generated content key."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequest/3726103-contentkeyspecifier": {
+      "title": "contentKeySpecifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequest/3726103-contentkeyspecifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeyrequest/3726103-contentkeyspecifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The requested content key specifier."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequest/3112525-options": {
       "title": "options",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequest/3112525-options",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeyrequest/3112525-options"
+      "url": "/documentation/avfoundation/avcontentkeyrequest/3112525-options",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A dictionary of options used to initialize key loading."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequestretryreason": {
+      "title": "AVContentKeyRequestRetryReason",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequestretryreason",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeyrequestretryreason",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The reason for asking the client to retry a content key request."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession": {
       "title": "AVContentKeySession",
@@ -364,7 +431,49 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to create and track decryption keys for media data."
+          "text": "An object that creates and tracks decryption keys for media data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessiondelegate": {
+      "title": "AVContentKeySessionDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessiondelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeysessiondelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that handles content key requests."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkey": {
+      "title": "AVContentKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that represents the content key decryptor."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyspecifier": {
+      "title": "AVContentKeySpecifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyspecifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeyspecifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that uniquely identifies a content key."
         }
       ]
     },
@@ -410,22 +519,26 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/3726110-avsamplebufferattachcontentkey": {
+      "title": "AVSampleBufferAttachContentKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/3726110-avsamplebufferattachcontentkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/3726110-avsamplebufferattachcontentkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Attaches a content key to a sample buffer for the purpose of content decryption."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -444,8 +557,10 @@
       "title": "Getting Content Key Request Data",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequest/2799198-makestreamingcontentkeyrequestda",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequestprotocolversionskey"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequestprotocolversionskey",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequestrequiresvalidationdatainsecuretokenkey"
+      ],
+      "anchor": "2922415"
     },
     {
       "kind": "taskGroup",
@@ -455,7 +570,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequest/2799165-processcontentkeyresponse",
         "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequest/2799159-processcontentkeyresponseerror",
         "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequest/2799207-respondbyrequestingpersistableco"
-      ]
+      ],
+      "anchor": "2922416"
     },
     {
       "kind": "taskGroup",
@@ -468,22 +584,31 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequest/2799193-renewsexpiringresponsedata",
         "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequest/2799190-status",
         "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequeststatus"
-      ]
+      ],
+      "anchor": "2922417"
     },
     {
       "kind": "taskGroup",
-      "title": "Instance Properties",
+      "title": "Inspecting a Request",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequest/3112525-options"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequest/3726102-contentkey",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequest/3726103-contentkeyspecifier",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequest/3112525-options",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequestretryreason"
+      ],
+      "anchor": "3742762"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessiondelegate",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkey",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyspecifier",
         "doc://com.apple.documentation/documentation/avfoundation/avpersistablecontentkeyrequest",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyresponse"
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyresponse",
+        "doc://com.apple.documentation/documentation/avfoundation/3726110-avsamplebufferattachcontentkey"
       ],
       "title": "FairPlay Streaming",
       "generated": true
@@ -523,6 +648,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -533,7 +659,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

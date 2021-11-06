@@ -35,20 +35,28 @@
       {
         "name": "iOS",
         "introducedAt": "5.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UISlider(py)thumbTintColor",
+    "parent": {
+      "title": "UISlider"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -113,6 +121,22 @@
       "role": "symbol",
       "url": "/documentation/uikit/uiuserinterfaceidiom/uiuserinterfaceidiommac"
     },
+    "doc://com.apple.documentation/documentation/uikit/uislider/3752182-behavioralstyle": {
+      "title": "behavioralStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uislider/3752182-behavioralstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uislider/3752182-behavioralstyle"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uibehavioralstyle/uibehavioralstylemac": {
+      "title": "UIBehavioralStyleMac",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uibehavioralstyle/uibehavioralstylemac",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uibehavioralstyle/uibehavioralstylemac"
+    },
     "doc://com.apple.documentation/documentation/uikit/uicolor": {
       "title": "UIColor",
       "type": "topic",
@@ -131,7 +155,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The image representing the slider’s minimum value."
+          "text": "The image that represents the slider’s minimum value."
         }
       ]
     },
@@ -385,16 +409,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "seeAlsoSections": [
     {
       "identifiers": [
@@ -454,6 +468,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -502,7 +517,25 @@
                 },
                 {
                   "type": "text",
-                  "text": " — setting it while in the Mac idiom throws an exception."
+                  "text": " and "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uislider/3752182-behavioralstyle"
+                },
+                {
+                  "type": "text",
+                  "text": " is "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uibehavioralstyle/uibehavioralstylemac"
+                },
+                {
+                  "type": "text",
+                  "text": " — setting it while in this state throws an exception."
                 }
               ]
             }
@@ -513,7 +546,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

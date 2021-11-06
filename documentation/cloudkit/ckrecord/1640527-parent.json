@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A reference to the parent record of this record."
+      "text": "A reference to the record’s parent record."
     }
   ],
   "documentVersion": 0,
@@ -34,35 +34,43 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKRecord(py)parent",
+    "parent": {
+      "title": "CKRecord"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -107,9 +115,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A dictionary of key-value pairs for persisting your app’s data."
+          "text": "A collection of key-value pairs that store your app’s data."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare": {
+      "title": "CKShare",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckshare"
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640378-share": {
       "title": "share",
@@ -133,14 +149,6 @@
       "role": "symbol",
       "url": "/documentation/cloudkit/ckreferenceaction/ckreferenceactionnone"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation": {
-      "title": "CKModifyRecordsOperation",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckmodifyrecordsoperation"
-    },
     "doc://com.apple.documentation/documentation/cloudkit/ckreference": {
       "title": "CKReference",
       "type": "topic",
@@ -151,7 +159,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that describes a many-to-one relationship between records in a database."
+          "text": "A relationship between two records in a record zone."
         }
       ]
     },
@@ -165,7 +173,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A reference to the parent record of this record."
+          "text": "A reference to the record’s parent record."
         }
       ]
     },
@@ -225,23 +233,13 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640378-share",
+        "doc://com.apple.documentation/documentation/cloudkit/ckreference",
         "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1690507-setparentreferencefromrecord",
-        "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1690508-setparentreferencefromrecordid",
-        "doc://com.apple.documentation/documentation/cloudkit/ckreference"
+        "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1690508-setparentreferencefromrecordid"
       ],
       "title": "Sharing Records",
       "generated": true
@@ -285,6 +283,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -307,7 +306,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "A parent reference informs CloudKit about the hierarchy of your records. CloudKit shares the hierarchy when it sets the record’s "
+              "text": "Use parent references to inform CloudKit about the hierarchy of your records. CloudKit shares the hierarchy when a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare"
+            },
+            {
+              "type": "text",
+              "text": " includes a referenced record. Add relationships between records as you create them, even if you don’t plan to share them. This allows you to manage the sharing of a hierarchy by only modifying the root record’s "
             },
             {
               "type": "reference",
@@ -316,15 +324,16 @@
             },
             {
               "type": "text",
-              "text": " reference. To indicate that a record is a parent record, set its "
-            },
-            {
-              "type": "codeVoice",
-              "code": "parent"
-            },
+              "text": " reference."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
             {
               "type": "text",
-              "text": " property to "
+              "text": "To indicate that a record belongs to its parent, set this property to a reference that points to the parent record. The reference must use the "
             },
             {
               "type": "reference",
@@ -333,51 +342,19 @@
             },
             {
               "type": "text",
-              "text": "."
+              "text": " action or CloudKit throws an exception. The parent record must exist on the server when you save the child, or must be part of the same save operation. Otherwise, the operation fails."
             }
           ]
         },
         {
           "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "The target of a parent reference must exist at save time — either already on the server, or as part of the same "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation"
-            },
-            {
-              "type": "text",
-              "text": " operation."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "You can set up parent relationships as part of normal record saves, even if you aren’t planning to share records. This allows you to share and stop sharing a hierarchy of records at a later date by only modifying the record at the top of the hierarchy, setting or clearing its "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640378-share"
-            },
-            {
-              "type": "text",
-              "text": " reference. "
-            }
-          ]
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

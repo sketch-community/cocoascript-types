@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Constants that define the possible track association types."
+      "text": "Constants that define track association types."
     }
   ],
   "documentVersion": 0,
@@ -13,12 +13,6 @@
         "doc://com.apple.documentation/documentation/avfoundation",
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata",
         "doc://com.apple.documentation/documentation/avfoundation/avassettrack"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/avfoundation",
-        "doc://com.apple.documentation/documentation/avfoundation/media_composition_and_editing",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack"
       ]
     ]
   },
@@ -41,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@AVTrackAssociationType",
     "symbolKind": "tdef"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,22 +115,6 @@
       "title": "AVAssetTrack",
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack",
       "url": "/documentation/avfoundation/avassettrack",
-      "type": "topic",
-      "kind": "symbol",
-      "role": "symbol"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/media_composition_and_editing": {
-      "title": "Media Composition and Editing",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_composition_and_editing",
-      "url": "/documentation/avfoundation/media_composition_and_editing",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack": {
-      "title": "AVMutableCompositionTrack",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack",
-      "url": "/documentation/avfoundation/avmutablecompositiontrack",
       "type": "topic",
       "kind": "symbol",
       "role": "symbol"
@@ -238,7 +221,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An array of association types used to associate the track with other tracks."
+          "text": "An array of association types that the track uses to associate with other tracks."
         }
       ]
     },
@@ -252,7 +235,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an array of associated tracks with the specified association type."
+          "text": "Returns an array of associated tracks that have the specified association type."
         }
       ],
       "fragments": [
@@ -276,7 +259,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants that define the possible track association types."
+          "text": "Constants that define track association types."
         }
       ]
     },
@@ -299,7 +282,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avtrackassociationtypemetadatareferent",
         "doc://com.apple.documentation/documentation/avfoundation/avtrackassociationtypeselectionfollower",
         "doc://com.apple.documentation/documentation/avfoundation/avtrackassociationtypetimecode"
-      ]
+      ],
+      "anchor": "2901763"
     }
   ],
   "seeAlsoSections": [
@@ -308,7 +292,7 @@
         "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1388065-availabletrackassociationtypes",
         "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1389251-associatedtracksoftype"
       ],
-      "title": "Working with Associated Tracks",
+      "title": "Accessing Track Associations",
       "generated": true
     }
   ],
@@ -350,6 +334,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -360,7 +345,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

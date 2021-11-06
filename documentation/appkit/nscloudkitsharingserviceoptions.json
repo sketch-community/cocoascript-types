@@ -2,16 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Possible values returned by "
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644694-optionsforsharingservice"
-    },
-    {
-      "type": "text",
-      "text": " that describe how the user is allowed to configure the related share."
+      "text": "Constants that describe how a participant can configure a CloudKit share."
     }
   ],
   "documentVersion": 0,
@@ -22,6 +13,12 @@
         "doc://com.apple.documentation/documentation/appkit",
         "doc://com.apple.documentation/documentation/appkit/app_and_environment",
         "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/app_and_environment",
+        "doc://com.apple.documentation/documentation/appkit/nssharingservice"
       ]
     ]
   },
@@ -44,15 +41,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@T@NSCloudKitSharingServiceOptions",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -103,24 +100,13 @@
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644694-optionsforsharingservice": {
-      "title": "optionsForSharingService:shareProvider:",
+    "doc://com.apple.documentation/documentation/appkit/nssharingservice": {
+      "title": "NSSharingService",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nssharingservice",
+      "url": "/documentation/appkit/nssharingservice",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644694-optionsforsharingservice",
       "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nscloudsharingservicedelegate/1644694-optionsforsharingservice",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "optionsForSharingService:shareProvider:"
-        }
-      ]
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/objectivec/nsuinteger": {
       "title": "NSUInteger",
@@ -140,7 +126,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates that the user is allowed to share privately."
+          "text": "An option that allows the participant to privately distribute the share to other iCloud users."
         }
       ]
     },
@@ -154,7 +140,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates that the user is allowed to share publicly."
+          "text": "An option that allows the participant to publicly distribute the share to other iCloud users."
         }
       ]
     },
@@ -168,7 +154,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates that the user is allowed to grant share participants read-only permissions."
+          "text": "An option that allows the participant to grant other participants read-only permissions."
         }
       ]
     },
@@ -182,7 +168,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates that the user is allowed to grant share participants read/write permissions."
+          "text": "An option that allows the participant to grant other participants read-write permissions."
         }
       ]
     },
@@ -196,7 +182,107 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates the user can configure the share with the standard set of options."
+          "text": "An option that allows the participant to configure the share with a standard set of options."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644666-sharingservice": {
+      "title": "sharingService:didCompleteForItems:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644666-sharingservice",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscloudsharingservicedelegate/1644666-sharingservice",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate when the cloud-sharing service completes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "sharingService:didCompleteForItems:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644712-sharingservice": {
+      "title": "sharingService:didSaveShare:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644712-sharingservice",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscloudsharingservicedelegate/1644712-sharingservice",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate when the cloud-sharing service saves the CloudKit share."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "sharingService:didSaveShare:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644709-sharingservice": {
+      "title": "sharingService:didStopSharing:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644709-sharingservice",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscloudsharingservicedelegate/1644709-sharingservice",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate when the user stops sharing the CloudKit share."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "sharingService:didStopSharing:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644694-optionsforsharingservice": {
+      "title": "optionsForSharingService:shareProvider:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644694-optionsforsharingservice",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscloudsharingservicedelegate/1644694-optionsforsharingservice",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate for the participant options for the cloud-sharing service."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "optionsForSharingService:shareProvider:"
         }
       ]
     },
@@ -210,16 +296,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Possible values returned by "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644694-optionsforsharingservice"
-        },
-        {
-          "type": "text",
-          "text": " that describe how the user is allowed to configure the related share."
+          "text": "Constants that describe how a participant can configure a CloudKit share."
         }
       ]
     },
@@ -234,22 +311,26 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Options",
+      "title": "CloudKit Options",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscloudkitsharingserviceoptions/nscloudkitsharingserviceallowprivate",
         "doc://com.apple.documentation/documentation/appkit/nscloudkitsharingserviceoptions/nscloudkitsharingserviceallowpublic",
         "doc://com.apple.documentation/documentation/appkit/nscloudkitsharingserviceoptions/nscloudkitsharingserviceallowreadonly",
         "doc://com.apple.documentation/documentation/appkit/nscloudkitsharingserviceoptions/nscloudkitsharingserviceallowreadwrite",
         "doc://com.apple.documentation/documentation/appkit/nscloudkitsharingserviceoptions/nscloudkitsharingservicestandard"
-      ]
+      ],
+      "anchor": "3370336"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644666-sharingservice",
+        "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644712-sharingservice",
+        "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644709-sharingservice",
         "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate/1644694-optionsforsharingservice"
       ],
-      "title": "Providing the Sharing Service Options",
+      "title": "Managing the Cloud-Sharing Service",
       "generated": true
     }
   ],
@@ -321,7 +402,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A notification that the workspace posts when a new app has started up."
+      "text": "A notification that the workspace posts when a new app starts up."
     }
   ],
   "documentVersion": 0,
@@ -42,15 +42,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@NSWorkspaceDidLaunchApplicationNotification",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -95,11 +95,11 @@
     },
     "doc://com.apple.documentation/documentation/appkit/nsworkspace": {
       "title": "NSWorkspace",
-      "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace",
+      "url": "/documentation/appkit/nsworkspace",
+      "type": "topic",
       "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsworkspace"
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/foundation": {
       "title": "Foundation",
@@ -149,14 +149,6 @@
       "role": "symbol",
       "url": "/documentation/appkit/nsrunningapplication"
     },
-    "doc://com.apple.documentation/documentation/appkit/nsworkspace#1965656": {
-      "title": "Table 1",
-      "type": "section",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace#1965656",
-      "kind": "article",
-      "role": "table",
-      "url": "/documentation/appkit/nsworkspace#1965656"
-    },
     "doc://com.apple.documentation/documentation/bundleresources/information_property_list/lsuielement": {
       "title": "LSUIElement",
       "type": "topic",
@@ -172,6 +164,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nsworkspace/1534059-runningapplications"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1525071-notificationcenter": {
+      "title": "notificationCenter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1525071-notificationcenter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsworkspace/1525071-notificationcenter"
     },
     "doc://com.apple.documentation/documentation/appkit/nsworkspacewilllaunchapplicationnotification": {
       "title": "NSWorkspaceWillLaunchApplicationNotification",
@@ -197,7 +197,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that the workspace posts when a new app has started up."
+          "text": "A notification that the workspace posts when a new app starts up."
         }
       ]
     },
@@ -225,7 +225,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that the workspace posts after a user session is switched in."
+          "text": "A notification that the workspace posts after a user session switches in."
         }
       ]
     },
@@ -239,7 +239,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that the workspace posts before a user session is switched out."
+          "text": "A notification that the workspace posts before a user session switches out."
         }
       ]
     },
@@ -253,7 +253,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that the workspace posts when the Finder hid an app."
+          "text": "A notification that the workspace posts when the Finder hides an app."
         }
       ]
     },
@@ -267,7 +267,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that the workspace posts when the Finder unhid an app."
+          "text": "A notification that the workspace posts when the Finder unhides an app."
         }
       ]
     },
@@ -295,7 +295,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that the workspace posts when the Finder deactivated an app."
+          "text": "A notification that the workspace posts when the Finder deactivates an app."
         }
       ]
     },
@@ -323,7 +323,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that the workspace posts when a new device has been mounted."
+          "text": "A notification that the workspace posts when a new device mounts."
         }
       ]
     },
@@ -393,7 +393,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that the workspace posts when the machine wakes from sleep."
+          "text": "A notification that the workspace posts when the device wakes from sleep."
         }
       ]
     },
@@ -407,7 +407,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that the workspace posts when the user requests a logout or powers off the machine."
+          "text": "A notification that the workspace posts when the user requests a logout or powers off the device."
         }
       ]
     },
@@ -421,7 +421,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that the workspace posts before the machine goes to sleep."
+          "text": "A notification that the workspace posts before the device goes to sleep."
         }
       ]
     },
@@ -435,7 +435,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that the workspace posts when the machine’s screen goes to sleep."
+          "text": "A notification that the workspace posts when the device’s screen goes to sleep."
         }
       ]
     },
@@ -449,7 +449,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that the workspace posts when the machine’s screens wake."
+          "text": "A notification that the workspace posts when the device’s screens wake."
         }
       ]
     },
@@ -619,7 +619,7 @@
             },
             {
               "type": "text",
-              "text": " instance. In macOS 10.6 and later, the "
+              "text": " instance. The "
             },
             {
               "type": "codeVoice",
@@ -654,33 +654,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "In macOS 10.5 and earlier, the "
-            },
-            {
-              "type": "codeVoice",
-              "code": "userInfo"
-            },
-            {
-              "type": "text",
-              "text": " dictionary contains the keys and values described in "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace#1965656"
-            },
-            {
-              "type": "text",
-              "text": "."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "The system does not post this notification for background apps or for apps that have the "
+              "text": "The system doesn’t post this notification for background apps or for apps that have the "
             },
             {
               "type": "reference",
@@ -697,7 +671,7 @@
             },
             {
               "type": "text",
-              "text": " file. If you want to know when all apps (including background apps) launch or terminate, use key-value observing to monitor the value returned by the "
+              "text": " file. If you want to know when all apps (including background apps) launch or terminate, use key-value observing to monitor the value that returns from the "
             },
             {
               "type": "reference",
@@ -709,12 +683,36 @@
               "text": " method. "
             }
           ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "To receive this notification, use "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1525071-notificationcenter"
+                },
+                {
+                  "type": "text",
+                  "text": " to register for it. If you use a different notification center to register, you won’t receive the notification."
+                }
+              ]
+            }
+          ],
+          "style": "important"
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

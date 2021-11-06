@@ -10,40 +10,26 @@
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos/nsaccessibility"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos/nsaccessibility"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/objectivec",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility"
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/foundation",
         "doc://com.apple.documentation/documentation/foundation/object_runtime",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility"
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/nsaccessibility"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accessibility",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/nsaccessibility"
       ]
     ]
   },
@@ -66,15 +52,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSObject(py)accessibilityNotifiesWhenDestroyed",
+    "parent": {
+      "title": "NSObject"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -101,62 +90,6 @@
     }
   ],
   "references": {
-    "doc://com.apple.documentation/documentation/appkit": {
-      "title": "AppKit",
-      "identifier": "doc://com.apple.documentation/documentation/appkit",
-      "url": "/documentation/appkit",
-      "type": "topic",
-      "kind": "symbol",
-      "role": "collection"
-    },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos/nsaccessibility": {
-      "title": "NSAccessibility",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos/nsaccessibility",
-      "url": "/documentation/appkit/accessibility_for_macos/nsaccessibility",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/accessibility": {
-      "title": "Accessibility",
-      "identifier": "doc://com.apple.documentation/documentation/accessibility",
-      "url": "/documentation/accessibility",
-      "type": "topic",
-      "kind": "symbol",
-      "role": "collection"
-    },
-    "doc://com.apple.documentation/documentation/uikit": {
-      "title": "UIKit",
-      "identifier": "doc://com.apple.documentation/documentation/uikit",
-      "url": "/documentation/uikit",
-      "type": "topic",
-      "kind": "symbol",
-      "role": "collection"
-    },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility": {
-      "title": "UIAccessibility",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
-      "url": "/documentation/objectivec/nsobject/uiaccessibility",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
     "doc://com.apple.documentation/documentation/objectivec": {
       "title": "Objective-C Runtime",
       "identifier": "doc://com.apple.documentation/documentation/objectivec",
@@ -188,6 +121,38 @@
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit": {
+      "title": "AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit",
+      "url": "/documentation/appkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/nsaccessibility": {
+      "title": "NSAccessibility",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/nsaccessibility",
+      "url": "/documentation/appkit/accessibility_for_appkit/nsaccessibility",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accessibility": {
+      "title": "Accessibility",
+      "identifier": "doc://com.apple.documentation/documentation/accessibility",
+      "url": "/documentation/accessibility",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
     },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibilityuielementdestroyednotification": {
       "title": "NSAccessibilityUIElementDestroyedNotification",
@@ -425,7 +390,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

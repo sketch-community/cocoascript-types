@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns an array of asset tracks matching the specified media type."
+      "text": "Returns tracks that contain media of a specified type."
     }
   ],
   "documentVersion": 0,
@@ -11,7 +11,6 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/avfoundation",
-        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata",
         "doc://com.apple.documentation/documentation/avfoundation/avasset"
       ]
     ]
@@ -35,35 +34,43 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVAsset(im)tracksWithMediaType:",
+    "parent": {
+      "title": "AVAsset"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -98,14 +105,6 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata": {
-      "title": "Media Assets and Metadata",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata",
-      "url": "/documentation/avfoundation/media_assets_and_metadata",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avasset": {
       "title": "AVAsset",
       "type": "topic",
@@ -116,17 +115,27 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An abstract class that models timed audiovisual media."
+          "text": "An object that models timed audiovisual media."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassettrack": {
-      "title": "AVAssetTrack",
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/3746531-loadtrackswithmediatype": {
+      "title": "loadTracksWithMediaType:completionHandler:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/3746531-loadtrackswithmediatype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassettrack"
+      "url": "/documentation/avfoundation/avasset/3746531-loadtrackswithmediatype",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadTracksWithMediaType:completionHandler:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avasset/1387953-tracks": {
       "title": "tracks",
@@ -138,7 +147,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The media tracks this asset contains."
+          "text": "The tracks an asset contains."
         }
       ]
     },
@@ -149,6 +158,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsarray"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassettrack": {
+      "title": "AVAssetTrack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassettrack"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmediatype": {
       "title": "AVMediaType",
@@ -168,7 +185,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the track associated with the specified track identifier."
+          "text": "Returns a track that contains the specified identifier."
         }
       ],
       "fragments": [
@@ -192,7 +209,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an array of asset tracks matching the specified media type."
+          "text": "Returns tracks that contain media of a specified type."
         }
       ],
       "fragments": [
@@ -240,7 +257,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an ID that’s unused by any of the tracks in the asset."
+          "text": "Returns an identifier that no other tracks in the asset use."
         }
       ],
       "fragments": [
@@ -340,6 +357,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -362,7 +380,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The media type of the requested tracks."
+                  "text": "The media type of the tracks to return."
                 }
               ]
             }
@@ -384,16 +402,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "An array of "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack"
-            },
-            {
-              "type": "text",
-              "text": " objects matching the specified media type, or an empty array if the asset has no matching tracks."
+              "text": "An array of tracks, which is empty if there are no tracks with the media type."
             }
           ]
         }
@@ -407,6 +416,24 @@
           "level": 2,
           "text": "Discussion",
           "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Apple discourages using this method in iOS 15, tvOS 15, macOS 12, and watchOS 8 or later. Load tracks asynchronously using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/3746531-loadtrackswithmediatype"
+            },
+            {
+              "type": "text",
+              "text": " instead."
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -430,7 +457,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

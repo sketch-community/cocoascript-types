@@ -30,8 +30,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -66,13 +66,13 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avaudiosession": {
+    "doc://com.apple.documentation/documentation/avfaudio/avaudiosession": {
       "title": "AVAudioSession",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avaudiosession",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avaudiosession",
+      "url": "/documentation/avfaudio/avaudiosession",
       "abstract": [
         {
           "type": "text",
@@ -80,13 +80,13 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avaudioroutingarbiter": {
+    "doc://com.apple.documentation/documentation/avfaudio/avaudioroutingarbiter": {
       "title": "AVAudioRoutingArbiter",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioroutingarbiter",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avaudioroutingarbiter",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avaudioroutingarbiter",
+      "url": "/documentation/avfaudio/avaudioroutingarbiter",
       "abstract": [
         {
           "type": "text",
@@ -94,59 +94,59 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avaudioplayer": {
+    "doc://com.apple.documentation/documentation/avfaudio/avaudioplayer": {
       "title": "AVAudioPlayer",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioplayer",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avaudioplayer",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avaudioplayer",
+      "url": "/documentation/avfaudio/avaudioplayer",
       "abstract": [
         {
           "type": "text",
-          "text": "An audio player that provides playback of audio data from a file or memory."
+          "text": "An object that plays audio data from a file or buffer."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avaudiorecorder": {
+    "doc://com.apple.documentation/documentation/avfaudio/avaudiorecorder": {
       "title": "AVAudioRecorder",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiorecorder",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avaudiorecorder",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avaudiorecorder",
+      "url": "/documentation/avfaudio/avaudiorecorder",
       "abstract": [
         {
           "type": "text",
-          "text": "An object that provides audio recording capabilities in your app."
+          "text": "An object that records audio data to a file."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmidiplayer": {
+    "doc://com.apple.documentation/documentation/avfaudio/avmidiplayer": {
       "title": "AVMIDIPlayer",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmidiplayer",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avmidiplayer",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmidiplayer",
+      "url": "/documentation/avfaudio/avmidiplayer",
       "abstract": [
         {
           "type": "text",
-          "text": "A player for music file formats like MIDI and iMelody."
+          "text": "An object that plays MIDI data through a system sound module."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine": {
-      "title": "AVAudioEngine",
+    "doc://com.apple.documentation/documentation/avfaudio/audio_engine": {
+      "title": "Audio Engine",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/audio_engine",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine",
+      "url": "/documentation/avfaudio/audio_engine",
       "abstract": [
         {
           "type": "text",
-          "text": "Perform advanced realtime and offline audio processing."
+          "text": "Perform advanced real-time and offline audio processing, implement 3D spatialization, and work with MIDI and samplers."
         }
       ]
     },
@@ -172,44 +172,37 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "topicSections": [
     {
       "kind": "taskGroup",
       "title": "System Audio",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avaudiosession",
-        "doc://com.apple.documentation/documentation/avfoundation/avaudioroutingarbiter"
-      ]
+        "doc://com.apple.documentation/documentation/avfaudio/avaudiosession",
+        "doc://com.apple.documentation/documentation/avfaudio/avaudioroutingarbiter"
+      ],
+      "anchor": "3643929"
     },
     {
       "kind": "taskGroup",
       "title": "Basic Playback and Recording",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avaudioplayer",
-        "doc://com.apple.documentation/documentation/avfoundation/avaudiorecorder",
-        "doc://com.apple.documentation/documentation/avfoundation/avmidiplayer"
-      ]
+        "doc://com.apple.documentation/documentation/avfaudio/avaudioplayer",
+        "doc://com.apple.documentation/documentation/avfaudio/avaudiorecorder",
+        "doc://com.apple.documentation/documentation/avfaudio/avmidiplayer"
+      ],
+      "anchor": "3643932"
     },
     {
       "kind": "taskGroup",
       "title": "Advanced Audio Processing",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine"
-      ]
+        "doc://com.apple.documentation/documentation/avfaudio/audio_engine"
+      ],
+      "anchor": "3643931"
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

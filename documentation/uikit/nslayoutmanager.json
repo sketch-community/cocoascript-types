@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts"
+        "doc://com.apple.documentation/documentation/uikit/textkit"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
@@ -42,30 +42,35 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)NSLayoutManager",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -102,10 +107,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts": {
-      "title": "Text Display and Fonts",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts",
-      "url": "/documentation/uikit/text_display_and_fonts",
+    "doc://com.apple.documentation/documentation/uikit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit",
+      "url": "/documentation/uikit/textkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -176,7 +181,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/nstextcontainer",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/nstextcontainer"
+      "url": "/documentation/uikit/nstextcontainer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A region where text layout occurs."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsrulerview": {
       "title": "NSRulerView",
@@ -396,7 +407,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the layout manager aborts the layout for unusually long or suspicious input. "
+          "text": "A Boolean value that indicates whether the layout manager avoids laying out unusually long or suspicious input."
         }
       ]
     },
@@ -2736,6 +2747,76 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/textkit/using_textkit_2_to_interact_with_text": {
+      "title": "Using TextKit 2 to Interact with Text",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit/using_textkit_2_to_interact_with_text",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/textkit/using_textkit_2_to_interact_with_text",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Interact with text by managing text selection and inserting custom text elements."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/textkit/display_text_with_a_custom_layout": {
+      "title": "Display Text with a Custom Layout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit/display_text_with_a_custom_layout",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/textkit/display_text_with_a_custom_layout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Lay out text in a custom-shaped container and apply glyph substitutions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextlayoutmanager": {
+      "title": "NSTextLayoutManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextlayoutmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextlayoutmanager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The primary class that you use to manage text layout and presentation for custom text displays."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextlayoutfragment": {
+      "title": "NSTextLayoutFragment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextlayoutfragment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextlayoutfragment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A class that represents the layout fragment typically corresponding to a rendering surface such as layer or view subclass."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextviewportlayoutcontroller": {
+      "title": "NSTextViewportLayoutController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextviewportlayoutcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextviewportlayoutcontroller",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manages the layout process inside the viewport interacting with its delegate."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/nstextlayoutorientationprovider": {
       "title": "NSTextLayoutOrientationProvider",
       "type": "topic",
@@ -2746,21 +2827,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of methods that define the orientation of text for an object. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout": {
-      "title": "Display Text with a Custom Layout",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout",
-      "kind": "article",
-      "role": "sampleCode",
-      "url": "/documentation/uikit/text_storage/display_text_with_a_custom_layout",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Lay out text in a custom-shaped container and apply glyph substitutions."
+          "text": "A set of methods that define the orientation of text for an object."
         }
       ]
     },
@@ -2770,16 +2837,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -2807,7 +2864,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1402975-init",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403043-initwithcoder"
-      ]
+      ],
+      "anchor": "1654015"
     },
     {
       "kind": "taskGroup",
@@ -2815,7 +2873,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1402920-delegate",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate"
-      ]
+      ],
+      "anchor": "1654066"
     },
     {
       "kind": "taskGroup",
@@ -2823,7 +2882,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403015-textstorage",
         "doc://com.apple.documentation/documentation/appkit/nslayoutmanager/1403227-replacetextstorage"
-      ]
+      ],
+      "anchor": "1654038"
     },
     {
       "kind": "taskGroup",
@@ -2837,7 +2897,8 @@
         "doc://com.apple.documentation/documentation/appkit/nslayoutmanager/1402952-backgroundlayoutenabled",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/3021179-limitslayoutforsuspiciouscontent",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/3180380-usesdefaulthyphenation"
-      ]
+      ],
+      "anchor": "1654182"
     },
     {
       "kind": "taskGroup",
@@ -2853,7 +2914,8 @@
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403110-textcontainerforglyphatindex",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403055-textcontainerforglyphatindex",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1402980-usedrectfortextcontainer"
-      ]
+      ],
+      "anchor": "1654085"
     },
     {
       "kind": "taskGroup",
@@ -2864,7 +2926,8 @@
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403171-invalidateglyphsforcharacterrang",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403248-invalidatelayoutforcharacterrang",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403065-processeditingfortextstorage"
-      ]
+      ],
+      "anchor": "1654254"
     },
     {
       "kind": "taskGroup",
@@ -2877,7 +2940,8 @@
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1402939-ensurelayoutforglyphrange",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1402967-ensurelayoutfortextcontainer",
         "doc://com.apple.documentation/documentation/appkit/nslayoutmanager/1403069-glyphgenerator"
-      ]
+      ],
+      "anchor": "1654303"
     },
     {
       "kind": "taskGroup",
@@ -2893,7 +2957,8 @@
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1402937-numberofglyphs",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403014-propertyforglyphatindex",
         "doc://com.apple.documentation/documentation/uikit/nsglyphproperty"
-      ]
+      ],
+      "anchor": "1654370"
     },
     {
       "kind": "taskGroup",
@@ -2905,7 +2970,8 @@
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1402935-setlinefragmentrect",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1402982-setlocation",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403078-setnotshownattribute"
-      ]
+      ],
+      "anchor": "1654453"
     },
     {
       "kind": "taskGroup",
@@ -2926,7 +2992,8 @@
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403239-locationforglyphatindex",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1402931-notshownattributeforglyphatindex",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403203-truncatedglyphrangeinlinefragmen"
-      ]
+      ],
+      "anchor": "1654524"
     },
     {
       "kind": "taskGroup",
@@ -2946,7 +3013,8 @@
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403041-glyphrangefortextcontainer",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1402999-glyphrangeforcharacterrange",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403152-rangeofnominallyspacedglyphscont"
-      ]
+      ],
+      "anchor": "1654667"
     },
     {
       "kind": "taskGroup",
@@ -2960,7 +3028,8 @@
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/3180379-showcgglyphs",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403009-strikethroughglyphrange",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403114-underlineglyphrange"
-      ]
+      ],
+      "anchor": "1654756"
     },
     {
       "kind": "taskGroup",
@@ -2972,7 +3041,8 @@
         "doc://com.apple.documentation/documentation/appkit/nslayoutmanager/1403138-boundsrectfortextblock",
         "doc://com.apple.documentation/documentation/appkit/nslayoutmanager/1403102-layoutrectfortextblock",
         "doc://com.apple.documentation/documentation/appkit/nslayoutmanager/1402956-boundsrectfortextblock"
-      ]
+      ],
+      "anchor": "1654838"
     },
     {
       "kind": "taskGroup",
@@ -2980,7 +3050,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nslayoutmanager/1403045-defaultattachmentscaling",
         "doc://com.apple.documentation/documentation/appkit/nslayoutmanager/1402965-showattachmentcell"
-      ]
+      ],
+      "anchor": "1654892"
     },
     {
       "kind": "taskGroup",
@@ -2988,7 +3059,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nslayoutmanager/1403130-ruleraccessoryviewfortextview",
         "doc://com.apple.documentation/documentation/appkit/nslayoutmanager/1403163-rulermarkersfortextview"
-      ]
+      ],
+      "anchor": "1654916"
     },
     {
       "kind": "taskGroup",
@@ -2997,7 +3069,8 @@
         "doc://com.apple.documentation/documentation/appkit/nslayoutmanager/1403026-layoutmanagerownsfirstresponderi",
         "doc://com.apple.documentation/documentation/appkit/nslayoutmanager/1402995-firsttextview",
         "doc://com.apple.documentation/documentation/appkit/nslayoutmanager/1403089-textviewforbeginningofselection"
-      ]
+      ],
+      "anchor": "1654952"
     },
     {
       "kind": "taskGroup",
@@ -3008,7 +3081,8 @@
         "doc://com.apple.documentation/documentation/appkit/nstypesetterbehavior",
         "doc://com.apple.documentation/documentation/appkit/nslayoutmanager/1403007-defaultlineheightforfont",
         "doc://com.apple.documentation/documentation/appkit/nslayoutmanager/1403058-defaultbaselineoffsetforfont"
-      ]
+      ],
+      "anchor": "1654991"
     },
     {
       "kind": "taskGroup",
@@ -3022,29 +3096,36 @@
         "doc://com.apple.documentation/documentation/appkit/nslayoutmanager/1403223-temporaryattribute",
         "doc://com.apple.documentation/documentation/appkit/nslayoutmanager/1403033-temporaryattributesatcharacterin",
         "doc://com.apple.documentation/documentation/appkit/nslayoutmanager/1403060-temporaryattributesatcharacterin"
-      ]
+      ],
+      "anchor": "1655034"
     },
     {
       "kind": "taskGroup",
       "title": "Supporting Types",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nstextlayoutorientation"
-      ]
+      ],
+      "anchor": "3665173"
     },
     {
       "kind": "taskGroup",
       "title": "Deprecated",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/deprecated_symbols"
-      ]
+      ],
+      "anchor": "1655092"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate",
-        "doc://com.apple.documentation/documentation/uikit/nstextlayoutorientationprovider",
-        "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout"
+        "doc://com.apple.documentation/documentation/uikit/textkit/using_textkit_2_to_interact_with_text",
+        "doc://com.apple.documentation/documentation/uikit/textkit/display_text_with_a_custom_layout",
+        "doc://com.apple.documentation/documentation/uikit/nstextlayoutmanager",
+        "doc://com.apple.documentation/documentation/uikit/nstextlayoutfragment",
+        "doc://com.apple.documentation/documentation/uikit/nstextviewportlayoutcontroller",
+        "doc://com.apple.documentation/documentation/uikit/nstextcontainer",
+        "doc://com.apple.documentation/documentation/uikit/nstextlayoutorientationprovider"
       ],
       "title": "Layout",
       "generated": true
@@ -3084,6 +3165,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -3301,7 +3383,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

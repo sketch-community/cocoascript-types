@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An object that decribes a shared record’s metadata."
+      "text": "An object that describes a shared record’s metadata."
     }
   ],
   "documentVersion": 0,
@@ -11,8 +11,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/cloudkit",
-        "doc://com.apple.documentation/documentation/cloudkit/share_operations",
-        "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation"
+        "doc://com.apple.documentation/documentation/cloudkit/shared_records"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/cloudkit",
+        "doc://com.apple.documentation/documentation/cloudkit/shared_records",
+        "doc://com.apple.documentation/documentation/cloudkit/ckshare"
       ]
     ]
   },
@@ -35,35 +40,40 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKShareMetadata",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -98,21 +108,221 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/share_operations": {
-      "title": "Share Operations",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/share_operations",
-      "url": "/documentation/cloudkit/share_operations",
+    "doc://com.apple.documentation/documentation/cloudkit/shared_records": {
+      "title": "Shared Records",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/shared_records",
+      "url": "/documentation/cloudkit/shared_records",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation": {
-      "title": "CKFetchShareMetadataOperation",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation",
-      "url": "/documentation/cloudkit/ckfetchsharemetadataoperation",
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare": {
+      "title": "CKShare",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare",
+      "url": "/documentation/cloudkit/ckshare",
       "type": "topic",
       "kind": "symbol",
       "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640465-url": {
+      "title": "URL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640465-url",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckshare/1640465-url"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiwindowscenedelegate/3238089-windowscene": {
+      "title": "windowScene:userDidAcceptCloudKitShareWithMetadata:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiwindowscenedelegate/3238089-windowscene",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiwindowscenedelegate/3238089-windowscene",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "windowScene:userDidAcceptCloudKitShareWithMetadata:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3197914-scene": {
+      "title": "scene:willConnectToSession:options:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3197914-scene",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiscenedelegate/3197914-scene",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "scene:willConnectToSession:options:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisceneconnectionoptions/3238069-cloudkitsharemetadata": {
+      "title": "cloudKitShareMetadata",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisceneconnectionoptions/3238069-cloudkitsharemetadata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisceneconnectionoptions/3238069-cloudkitsharemetadata"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/2206721-application": {
+      "title": "application:userDidAcceptCloudKitShareWithMetadata:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/2206721-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/2206721-application",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:userDidAcceptCloudKitShareWithMetadata:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/2138329-application": {
+      "title": "application:userDidAcceptCloudKitShareWithMetadata:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/2138329-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsapplicationdelegate/2138329-application",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:userDidAcceptCloudKitShareWithMetadata:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/watchkit/wkextensiondelegate/3612144-userdidacceptcloudkitsharewithme": {
+      "title": "userDidAcceptCloudKitShareWithMetadata:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/watchkit/wkextensiondelegate/3612144-userdidacceptcloudkitsharewithme",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/watchkit/wkextensiondelegate/3612144-userdidacceptcloudkitsharewithme",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "userDidAcceptCloudKitShareWithMetadata:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640420-participantstatus": {
+      "title": "participantStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640420-participantstatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/cksharemetadata/1640420-participantstatus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The share’s participation status for the user who retrieves the metadata."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckacceptsharesoperation": {
+      "title": "CKAcceptSharesOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckacceptsharesoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckacceptsharesoperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An operation that confirms a user’s participation in a share."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation": {
+      "title": "CKFetchShareMetadataOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchsharemetadataoperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An operation that fetches metadata for one or more shares."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/3793709-hierarchicalrootrecordid": {
+      "title": "hierarchicalRootRecordID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/3793709-hierarchicalrootrecordid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/cksharemetadata/3793709-hierarchicalrootrecordid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The record ID of the shared hierarchy’s root record. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640519-shouldfetchrootrecord": {
+      "title": "shouldFetchRootRecord",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640519-shouldfetchrootrecord",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchsharemetadataoperation/1640519-shouldfetchrootrecord"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640366-rootrecord": {
+      "title": "rootRecord",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640366-rootrecord",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/cksharemetadata/1640366-rootrecord",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The share’s root record."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/3003362-rootrecorddesiredkeys": {
+      "title": "rootRecordDesiredKeys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/3003362-rootrecorddesiredkeys",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchsharemetadataoperation/3003362-rootrecorddesiredkeys"
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
@@ -180,20 +390,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640366-rootrecord": {
-      "title": "rootRecord",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640366-rootrecord",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/cksharemetadata/1640366-rootrecord",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The share’s root record."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640410-rootrecordid": {
       "title": "rootRecordID",
       "type": "topic",
@@ -206,7 +402,8 @@
           "type": "text",
           "text": "The record ID of the share’s root record. "
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/2980666-participantrole": {
       "title": "participantRole",
@@ -236,20 +433,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640420-participantstatus": {
-      "title": "participantStatus",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640420-participantstatus",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/cksharemetadata/1640420-participantstatus",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The share’s participation status for the user who retrieves the metadata."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640518-participanttype": {
       "title": "participantType",
       "type": "topic",
@@ -265,20 +448,6 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640447-persharemetadatablock": {
-      "title": "perShareMetadataBlock",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640447-persharemetadatablock",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckfetchsharemetadataoperation/1640447-persharemetadatablock",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The block to execute as the operation fetches individual shares."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata": {
       "title": "CKShareMetadata",
       "type": "topic",
@@ -289,21 +458,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that decribes a shared record’s metadata."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640457-fetchsharemetadatacompletionbloc": {
-      "title": "fetchShareMetadataCompletionBlock",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640457-fetchsharemetadatacompletionbloc",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckfetchsharemetadataoperation/1640457-fetchsharemetadatacompletionbloc",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The block to execute when the operation finishes."
+          "text": "An object that describes a shared record’s metadata."
         }
       ]
     },
@@ -313,16 +468,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -352,34 +497,38 @@
         "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640412-share",
         "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640400-containeridentifier",
         "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640498-owneridentity"
-      ]
+      ],
+      "anchor": "2858120"
     },
     {
       "kind": "taskGroup",
       "title": "Accessing the Root Record",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/3793709-hierarchicalrootrecordid",
         "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640366-rootrecord",
         "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640410-rootrecordid"
-      ]
+      ],
+      "anchor": "3693887"
     },
     {
       "kind": "taskGroup",
-      "title": "Accessing the Participant",
+      "title": "Accessing the Participant’s Capabilities",
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/2980666-participantrole",
         "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640483-participantpermission",
         "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640420-participantstatus",
         "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640518-participanttype"
-      ]
+      ],
+      "anchor": "3693888"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640447-persharemetadatablock",
-        "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640457-fetchsharemetadatacompletionbloc"
+        "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation",
+        "doc://com.apple.documentation/documentation/cloudkit/ckacceptsharesoperation"
       ],
-      "title": "Processing the Fetch Share Metadata Results",
+      "title": "Share Requests",
       "generated": true
     }
   ],
@@ -417,6 +566,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -424,10 +574,308 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A share’s metadata is an intermediary object that provides access to the share, its owner, and, for a shared record hierarchy, its root record. Metadata also includes details about the current user’s participation in the share. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You don’t create metadata. CloudKit provides it to your app when the user taps or clicks a share’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640465-url"
+            },
+            {
+              "type": "text",
+              "text": ", such as in an email or a message. The method CloudKit calls varies by platform and app configuration, and includes the following:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "For a scene-based iOS app in a running or suspended state, CloudKit calls the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiwindowscenedelegate/3238089-windowscene"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method on your window scene delegate."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "For a scene-based iOS app that’s not running, the system launches your app in response to the tap or click, and calls the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3197914-scene"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method on your scene delegate. The "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "connectionOptions"
+                    },
+                    {
+                      "type": "text",
+                      "text": " parameter contains the metadata. Use its "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uisceneconnectionoptions/3238069-cloudkitsharemetadata"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property to access it."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "For an iOS app that doesn’t use scenes, CloudKit calls your app delegate’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/2206721-application"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "For a macOS app, CloudKit calls your app delegate’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/2138329-application"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "For a watchOS app, CloudKit calls the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/watchkit/wkextensiondelegate/3612144-userdidacceptcloudkitsharewithme"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method on your watch extension delegate."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Respond by checking the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640420-participantstatus"
+            },
+            {
+              "type": "text",
+              "text": " of the provided metadata. If the status is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "pending"
+            },
+            {
+              "type": "text",
+              "text": ", use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckacceptsharesoperation"
+            },
+            {
+              "type": "text",
+              "text": " to accept participation in the share. You can also fetch metadata independent of this flow using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For a shared record hierarchy, the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/3793709-hierarchicalrootrecordid"
+            },
+            {
+              "type": "text",
+              "text": " property contains the ID of the share’s root record. When using "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation"
+            },
+            {
+              "type": "text",
+              "text": " to fetch metadata, you can include the entire root record by setting the operation’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640519-shouldfetchrootrecord"
+            },
+            {
+              "type": "text",
+              "text": " property to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": ". CloudKit then populates the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640366-rootrecord"
+            },
+            {
+              "type": "text",
+              "text": " property before it returns the metadata. You can further customize this behavior using the operation’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/3003362-rootrecorddesiredkeys"
+            },
+            {
+              "type": "text",
+              "text": " property to specify which fields to return. This functionality isn’t applicable for a shared record zone because, unlike a shared record hierarchy, it doesn’t have a nominated root record."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The participant properties provide the current user’s acceptance status, permissions, and role. Use these values to determine what functionality to provide to the user. For example, only display editing controls for accepted participants with "
+            },
+            {
+              "type": "codeVoice",
+              "code": "readWrite"
+            },
+            {
+              "type": "text",
+              "text": " permissions."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

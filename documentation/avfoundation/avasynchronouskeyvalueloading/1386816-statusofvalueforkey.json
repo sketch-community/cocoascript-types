@@ -36,35 +36,43 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(pl)AVAsynchronousKeyValueLoading(im)statusOfValueForKey:error:",
+    "parent": {
+      "title": "AVAsynchronousKeyValueLoading"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -117,7 +125,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A protocol you use to load an asset’s or asset track’s media and metadata without blocking the calling thread."
+          "text": "A protocol for loading the media and metadata of an asset or asset track without blocking the calling thread."
         }
       ]
     },
@@ -147,7 +155,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Values that indicate the status of a property."
+          "text": "Values that indicate the loaded status of a property."
         }
       ]
     },
@@ -158,31 +166,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1386816-statusofvalueforkey": {
-      "title": "statusOfValueForKey:error:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1386816-statusofvalueforkey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasynchronouskeyvalueloading/1386816-statusofvalueforkey",
-      "required": true,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a status that indicates whether a property value is immediately available without blocking the calling thread."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "statusOfValueForKey:error:"
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1387321-loadvaluesasynchronouslyforkeys": {
       "title": "loadValuesAsynchronouslyForKeys:completionHandler:",
@@ -209,6 +192,31 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1386816-statusofvalueforkey": {
+      "title": "statusOfValueForKey:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1386816-statusofvalueforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasynchronouskeyvalueloading/1386816-statusofvalueforkey",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a status that indicates whether a property value is immediately available without blocking the calling thread."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "statusOfValueForKey:error:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -220,8 +228,8 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avkeyvaluestatus",
-        "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1387321-loadvaluesasynchronouslyforkeys"
+        "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1387321-loadvaluesasynchronouslyforkeys",
+        "doc://com.apple.documentation/documentation/avfoundation/avkeyvaluestatus"
       ],
       "title": "Loading Properties",
       "generated": true
@@ -321,6 +329,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -413,7 +422,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

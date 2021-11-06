@@ -30,8 +30,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -132,7 +132,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A request to Core Data to do a batch delete of data in a persistent store without loading any data into memory."
+          "text": "A request that deletes objects in the SQLite persistent store without loading them into memory."
         }
       ]
     },
@@ -146,7 +146,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The result returned when executing a batch delete request."
+          "text": "An object that describes the result of a batch delete request."
         }
       ]
     },
@@ -161,20 +161,6 @@
         {
           "type": "text",
           "text": "Use Core Data in both a single-threaded and multithreaded app."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed": {
-      "title": "Loading and Displaying a Large Data Feed",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed",
-      "kind": "article",
-      "role": "sampleCode",
-      "url": "/documentation/coredata/loading_and_displaying_a_large_data_feed",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Consume data in the background, and lower memory usage by batching imports and preventing duplicate records."
         }
       ]
     },
@@ -214,16 +200,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "topicSections": [
     {
       "kind": "taskGroup",
@@ -231,7 +207,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsbatchinsertrequest",
         "doc://com.apple.documentation/documentation/coredata/nsbatchinsertresult"
-      ]
+      ],
+      "anchor": "3638404"
     },
     {
       "kind": "taskGroup",
@@ -239,7 +216,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsbatchupdaterequest",
         "doc://com.apple.documentation/documentation/coredata/nsbatchupdateresult"
-      ]
+      ],
+      "anchor": "2874823"
     },
     {
       "kind": "taskGroup",
@@ -247,14 +225,14 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequest",
         "doc://com.apple.documentation/documentation/coredata/nsbatchdeleteresult"
-      ]
+      ],
+      "anchor": "2902681"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/using_core_data_in_the_background",
-        "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed",
         "doc://com.apple.documentation/documentation/coredata/conflict_resolution"
       ],
       "title": "Background Tasks",
@@ -262,7 +240,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

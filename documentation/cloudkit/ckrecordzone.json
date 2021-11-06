@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The definition of a custom area for organizing related records in a database."
+      "text": "A database partition that contains related records."
     }
   ],
   "documentVersion": 0,
@@ -33,35 +33,40 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKRecordZone",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -106,7 +111,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The definition of a custom area for organizing related records in a database."
+          "text": "A database partition that contains related records."
         }
       ]
     },
@@ -138,7 +143,13 @@
       "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckreference",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckreference"
+      "url": "/documentation/cloudkit/ckreference",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A relationship between two records in a record zone."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
@@ -288,7 +299,49 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The special capabilities that a zone supports."
+          "text": "The capabilities that a record zone supports."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecordzone/3746822-share": {
+      "title": "share",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordzone/3746822-share",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecordzone/3746822-share",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reference to the record zone’s share record."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database": {
+      "title": "Designing and Creating a CloudKit Database",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/cloudkit/designing_and_creating_a_cloudkit_database",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a schema to store your app’s objects as records in iCloud using CloudKit."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_the_cloudkit_database_app": {
+      "title": "Managing iCloud Containers with the CloudKit Database App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_the_cloudkit_database_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/cloudkit/managing_icloud_containers_with_the_cloudkit_database_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inspect and modify the schema and data for your app's iCloud container."
         }
       ]
     },
@@ -302,35 +355,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A dictionary of key-value pairs for persisting your app’s data."
+          "text": "A collection of key-value pairs that store your app’s data."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckrecordvalue": {
-      "title": "CKRecordValue",
+    "doc://com.apple.documentation/documentation/cloudkit/ckasset": {
+      "title": "CKAsset",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordvalue",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckasset",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckrecordvalue",
+      "url": "/documentation/cloudkit/ckasset",
       "abstract": [
         {
           "type": "text",
-          "text": "The protocol that provides strong type-checking for objects that the CloudKit framework stores on the server."
+          "text": "An external file that belongs to a record."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/record_operations": {
-      "title": "Record Operations",
+    "doc://com.apple.documentation/documentation/cloudkit/integrating_a_text-based_schema_into_your_workflow": {
+      "title": "Integrating a Text-Based Schema into Your Workflow",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/record_operations",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/integrating_a_text-based_schema_into_your_workflow",
       "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/cloudkit/record_operations",
+      "role": "article",
+      "url": "/documentation/cloudkit/integrating_a_text-based_schema_into_your_workflow",
       "abstract": [
         {
           "type": "text",
-          "text": "Asynchronously fetch or modify records."
+          "text": "Define and update your schema with the CloudKit Schema Language."
         }
       ]
     },
@@ -369,7 +422,8 @@
         "doc://com.apple.documentation/documentation/cloudkit/ckrecordzone/1515102-initwithzonename",
         "doc://com.apple.documentation/documentation/cloudkit/ckrecordzone/1515207-initwithzoneid",
         "doc://com.apple.documentation/documentation/cloudkit/ckrecordzoneid"
-      ]
+      ],
+      "anchor": "1669743"
     },
     {
       "kind": "taskGroup",
@@ -377,7 +431,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckrecordzonedefaultname",
         "doc://com.apple.documentation/documentation/cloudkit/ckrecordzone/1514919-defaultrecordzone"
-      ]
+      ],
+      "anchor": "1669720"
     },
     {
       "kind": "taskGroup",
@@ -386,17 +441,29 @@
         "doc://com.apple.documentation/documentation/cloudkit/ckrecordzone/1514917-zoneid",
         "doc://com.apple.documentation/documentation/cloudkit/ckrecordzone/1515194-capabilities",
         "doc://com.apple.documentation/documentation/cloudkit/ckrecordzonecapabilities"
-      ]
+      ],
+      "anchor": "1669780"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Sharing Records",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkit/ckrecordzone/3746822-share"
+      ],
+      "anchor": "3783036"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database",
+        "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_the_cloudkit_database_app",
         "doc://com.apple.documentation/documentation/cloudkit/ckrecord",
-        "doc://com.apple.documentation/documentation/cloudkit/ckrecordvalue",
-        "doc://com.apple.documentation/documentation/cloudkit/record_operations"
+        "doc://com.apple.documentation/documentation/cloudkit/ckreference",
+        "doc://com.apple.documentation/documentation/cloudkit/ckasset",
+        "doc://com.apple.documentation/documentation/cloudkit/integrating_a_text-based_schema_into_your_workflow"
       ],
-      "title": "Records",
+      "title": "Schemas",
       "generated": true
     }
   ],
@@ -434,6 +501,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -586,7 +654,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

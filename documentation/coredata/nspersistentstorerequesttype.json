@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "These constants specify the types of fetch request."
+      "text": "Constants that specify the types of fetch requests."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "5.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@NSPersistentStoreRequestType",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -164,13 +169,19 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequesttype/nsbatchdeleterequesttype": {
-      "title": "NSBatchDeleteRequestType",
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequesttype/nsbatchinsertrequesttype": {
+      "title": "NSBatchInsertRequestType",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequesttype/nsbatchdeleterequesttype",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequesttype/nsbatchinsertrequesttype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorerequesttype/nsbatchdeleterequesttype"
+      "url": "/documentation/coredata/nspersistentstorerequesttype/nsbatchinsertrequesttype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request that inserts data into a persistent store using a batch of managed objects or dictionaries."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequesttype/nsbatchupdaterequesttype": {
       "title": "NSBatchUpdateRequestType",
@@ -178,15 +189,27 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequesttype/nsbatchupdaterequesttype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorerequesttype/nsbatchupdaterequesttype"
+      "url": "/documentation/coredata/nspersistentstorerequesttype/nsbatchupdaterequesttype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request that updates data for multiple managed objects in a persistent store."
+        }
+      ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequesttype/nsbatchinsertrequesttype": {
-      "title": "NSBatchInsertRequestType",
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequesttype/nsbatchdeleterequesttype": {
+      "title": "NSBatchDeleteRequestType",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequesttype/nsbatchinsertrequesttype",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequesttype/nsbatchdeleterequesttype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorerequesttype/nsbatchinsertrequesttype"
+      "url": "/documentation/coredata/nspersistentstorerequesttype/nsbatchdeleterequesttype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request that deletes data for multiple managed objects from a persistent store."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequest/1506844-affectedstores": {
       "title": "affectedStores",
@@ -212,7 +235,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "These constants specify the types of fetch request."
+          "text": "Constants that specify the types of fetch requests."
         }
       ]
     },
@@ -230,17 +253,12 @@
       "title": "Constants",
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequesttype/nsfetchrequesttype",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequesttype/nssaverequesttype"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Enumeration Cases",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequesttype/nsbatchdeleterequesttype",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequesttype/nssaverequesttype",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequesttype/nsbatchinsertrequesttype",
         "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequesttype/nsbatchupdaterequesttype",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequesttype/nsbatchinsertrequesttype"
-      ]
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequesttype/nsbatchdeleterequesttype"
+      ],
+      "anchor": "1604099"
     }
   ],
   "seeAlsoSections": [
@@ -315,6 +333,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -336,17 +355,13 @@
           "type": "paragraph",
           "inlineContent": [
             {
-              "type": "text",
-              "text": "These constants are used by "
-            },
-            {
               "type": "reference",
               "isActive": true,
               "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequest/1506892-requesttype"
             },
             {
               "type": "text",
-              "text": "."
+              "text": " uses these constants."
             }
           ]
         }
@@ -354,7 +369,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

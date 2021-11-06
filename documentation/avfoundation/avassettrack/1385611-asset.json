@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVAssetTrack(py)asset",
+    "parent": {
+      "title": "AVAssetTrack"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,7 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that provides the track-level interface to inspect an asset’s media tracks."
+          "text": "An object that models a track of media that an asset contains."
         }
       ]
     },
@@ -127,20 +135,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/avfoundation/avasset"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1385611-asset": {
-      "title": "asset",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1385611-asset",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassettrack/1385611-asset",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The asset object that contains this track."
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1385799-trackid": {
       "title": "trackID",
@@ -166,129 +160,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The media type for the track."
+          "text": "The type of media that a track presents."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1385847-hasmediacharacteristic": {
-      "title": "hasMediaCharacteristic:",
+    "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1385611-asset": {
+      "title": "asset",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1385847-hasmediacharacteristic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1385611-asset",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassettrack/1385847-hasmediacharacteristic",
+      "url": "/documentation/avfoundation/avassettrack/1385611-asset",
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value that indicates whether the track references media with the specified media characteristic."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "hasMediaCharacteristic:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1386694-formatdescriptions": {
-      "title": "formatDescriptions",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1386694-formatdescriptions",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassettrack/1386694-formatdescriptions",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The format descriptions of the media samples referenced by the track."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1387546-enabled": {
-      "title": "enabled",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1387546-enabled",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassettrack/1387546-enabled",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the track is enabled according to the state stored in its container."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1388276-playable": {
-      "title": "playable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1388276-playable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassettrack/1388276-playable",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the track is playable in the current environment."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1387643-selfcontained": {
-      "title": "selfContained",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1387643-selfcontained",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassettrack/1387643-selfcontained",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether this track references sample data contained only within its container file."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassettrack/2887366-decodable": {
-      "title": "decodable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack/2887366-decodable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassettrack/2887366-decodable",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the track is decodable in the current environment."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1389758-estimateddatarate": {
-      "title": "estimatedDataRate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1389758-estimateddatarate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassettrack/1389758-estimateddatarate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The estimated data rate, in bits per second, of the media data referenced by the track."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1388900-totalsampledatalength": {
-      "title": "totalSampleDataLength",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1388900-totalsampledatalength",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassettrack/1388900-totalsampledatalength",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The total number of bytes of sample data required by the track."
+          "text": "The asset object that contains this track."
         }
       ]
     },
@@ -304,17 +190,9 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1385799-trackid",
-        "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1385741-mediatype",
-        "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1385847-hasmediacharacteristic",
-        "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1386694-formatdescriptions",
-        "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1387546-enabled",
-        "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1388276-playable",
-        "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1387643-selfcontained",
-        "doc://com.apple.documentation/documentation/avfoundation/avassettrack/2887366-decodable",
-        "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1389758-estimateddatarate",
-        "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1388900-totalsampledatalength"
+        "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1385741-mediatype"
       ],
-      "title": "Accessing Track Information",
+      "title": "Identifying an Asset Track",
       "generated": true
     }
   ],
@@ -356,6 +234,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -366,7 +245,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

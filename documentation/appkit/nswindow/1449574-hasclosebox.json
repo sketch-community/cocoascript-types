@@ -2,16 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns "
-    },
-    {
-      "type": "reference",
-      "isActive": false,
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-    },
-    {
-      "type": "text",
-      "text": " if the receiver has a close box."
+      "text": "A Boolean value that indicates if the window has a close box."
     }
   ],
   "documentVersion": 0,
@@ -44,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSWindow(py)hasCloseBox",
+    "parent": {
+      "title": "NSWindow"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -109,14 +103,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/objectivec/yes": {
-      "title": "YES",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/yes"
-    },
     "doc://com.apple.documentation/documentation/appkit/nswindow/1449574-hasclosebox": {
       "title": "hasCloseBox",
       "type": "topic",
@@ -127,16 +113,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-        },
-        {
-          "type": "text",
-          "text": " if the receiver has a close box."
+          "text": "A Boolean value that indicates if the window has a close box."
         }
       ]
     },
@@ -150,16 +127,91 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-        },
+          "text": "A Boolean value that indicates if the window has a title bar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindow/1449576-modalpanel": {
+      "title": "modalPanel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1449576-modalpanel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindow/1449576-modalpanel",
+      "abstract": [
         {
           "type": "text",
-          "text": " if the receiver has a title bar."
+          "text": "A Boolean value that indicates whether the window is a modal panel."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindow/1449579-floatingpanel": {
+      "title": "floatingPanel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1449579-floatingpanel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindow/1449579-floatingpanel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the window is a floating panel."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindow/1449587-zoomable": {
+      "title": "zoomable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1449587-zoomable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindow/1449587-zoomable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the window allows zooming."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindow/1449572-resizable": {
+      "title": "resizable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1449572-resizable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindow/1449572-resizable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates if the user can resize the window."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindow/1449583-miniaturizable": {
+      "title": "miniaturizable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1449583-miniaturizable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindow/1449583-miniaturizable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the window can minimize."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindow/1449577-orderedindex": {
+      "title": "orderedIndex",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1449577-orderedindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindow/1449577-orderedindex",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The zero-based position of the window, based on its order from front to back among all visible application windows."
         }
       ]
     },
@@ -174,7 +226,13 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nswindow/1449568-hastitlebar"
+        "doc://com.apple.documentation/documentation/appkit/nswindow/1449568-hastitlebar",
+        "doc://com.apple.documentation/documentation/appkit/nswindow/1449576-modalpanel",
+        "doc://com.apple.documentation/documentation/appkit/nswindow/1449579-floatingpanel",
+        "doc://com.apple.documentation/documentation/appkit/nswindow/1449587-zoomable",
+        "doc://com.apple.documentation/documentation/appkit/nswindow/1449572-resizable",
+        "doc://com.apple.documentation/documentation/appkit/nswindow/1449583-miniaturizable",
+        "doc://com.apple.documentation/documentation/appkit/nswindow/1449577-orderedindex"
       ],
       "title": "Getting Information About Scripting Attributes",
       "generated": true
@@ -222,7 +280,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

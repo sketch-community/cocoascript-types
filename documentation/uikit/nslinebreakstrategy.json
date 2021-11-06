@@ -1,16 +1,24 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Constants that specify how the text system breaks lines while laying out paragraphs."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/uikit_enumerations"
+        "doc://com.apple.documentation/documentation/uikit/textkit",
+        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/enumerations"
+        "doc://com.apple.documentation/documentation/appkit/textkit",
+        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle"
       ]
     ]
   },
@@ -36,35 +44,40 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@NSLineBreakStrategy",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -101,13 +114,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/uikit_enumerations": {
-      "title": "UIKit Enumerations",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uikit_enumerations",
-      "url": "/documentation/uikit/uikit_enumerations",
+    "doc://com.apple.documentation/documentation/uikit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit",
+      "url": "/documentation/uikit/textkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle": {
+      "title": "NSParagraphStyle",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle",
+      "url": "/documentation/uikit/nsparagraphstyle",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/appkit": {
       "title": "AppKit",
@@ -117,10 +138,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/enumerations": {
-      "title": "Enumerations",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/enumerations",
-      "url": "/documentation/appkit/enumerations",
+    "doc://com.apple.documentation/documentation/appkit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/textkit",
+      "url": "/documentation/appkit/textkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -133,13 +154,19 @@
       "role": "symbol",
       "url": "/documentation/objectivec/nsuinteger"
     },
-    "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy/nslinebreakstrategyhangulwordpriority": {
-      "title": "NSLineBreakStrategyHangulWordPriority",
+    "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy/nslinebreakstrategynone": {
+      "title": "NSLineBreakStrategyNone",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy/nslinebreakstrategyhangulwordpriority",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy/nslinebreakstrategynone",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/nslinebreakstrategy/nslinebreakstrategyhangulwordpriority"
+      "url": "/documentation/uikit/nslinebreakstrategy/nslinebreakstrategynone",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The text system doesn’t use any line-break strategies."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy/nslinebreakstrategypushout": {
       "title": "NSLineBreakStrategyPushOut",
@@ -147,7 +174,27 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy/nslinebreakstrategypushout",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/nslinebreakstrategy/nslinebreakstrategypushout"
+      "url": "/documentation/uikit/nslinebreakstrategy/nslinebreakstrategypushout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The text system pushes out individual lines to avoid an orphan word on the last line of the paragraph."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy/nslinebreakstrategyhangulwordpriority": {
+      "title": "NSLineBreakStrategyHangulWordPriority",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy/nslinebreakstrategyhangulwordpriority",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nslinebreakstrategy/nslinebreakstrategyhangulwordpriority",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The text system prohibits breaking between Hangul characters."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy/nslinebreakstrategystandard": {
       "title": "NSLineBreakStrategyStandard",
@@ -155,15 +202,125 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy/nslinebreakstrategystandard",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/nslinebreakstrategy/nslinebreakstrategystandard"
+      "url": "/documentation/uikit/nslinebreakstrategy/nslinebreakstrategystandard",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The text system uses the same configuration of line-break strategies that it uses for standard UI labels. "
+        }
+      ]
     },
-    "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy/nslinebreakstrategynone": {
-      "title": "NSLineBreakStrategyNone",
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1529937-linebreakmode": {
+      "title": "lineBreakMode",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy/nslinebreakstrategynone",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1529937-linebreakmode",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/nslinebreakstrategy/nslinebreakstrategynone"
+      "url": "/documentation/uikit/nsparagraphstyle/1529937-linebreakmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The mode for breaking lines in the paragraph that don’t fit within a container."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nslinebreakmode": {
+      "title": "NSLineBreakMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nslinebreakmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nslinebreakmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify what happens when a line is too long for a container."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/3667463-linebreakstrategy": {
+      "title": "lineBreakStrategy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/3667463-linebreakstrategy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsparagraphstyle/3667463-linebreakstrategy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The strategy for breaking lines while laying out paragraphs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy": {
+      "title": "NSLineBreakStrategy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nslinebreakstrategy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify how the text system breaks lines while laying out paragraphs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1529275-hyphenationfactor": {
+      "title": "hyphenationFactor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1529275-hyphenationfactor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsparagraphstyle/1529275-hyphenationfactor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The paragraph’s threshold for hyphenation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/3809913-usesdefaulthyphenation": {
+      "title": "usesDefaultHyphenation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/3809913-usesdefaulthyphenation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsparagraphstyle/3809913-usesdefaulthyphenation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the paragraph style uses the system hyphenation settings."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsparagraphstyle/1529278-tighteningfactorfortruncation": {
+      "title": "tighteningFactorForTruncation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsparagraphstyle/1529278-tighteningfactorfortruncation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsparagraphstyle/1529278-tighteningfactorfortruncation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The threshold for using tightening as an alternative to truncation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1528994-allowsdefaulttighteningfortrunca": {
+      "title": "allowsDefaultTighteningForTruncation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1528994-allowsdefaulttighteningfortrunca",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsparagraphstyle/1528994-allowsdefaulttighteningfortrunca",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the system tightens character spacing before truncating text."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -176,19 +333,29 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Type Properties",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy/nslinebreakstrategyhangulwordpriority",
-        "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy/nslinebreakstrategypushout",
-        "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy/nslinebreakstrategystandard"
-      ]
-    },
-    {
-      "kind": "taskGroup",
       "title": "Constants",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy/nslinebreakstrategynone"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy/nslinebreakstrategynone",
+        "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy/nslinebreakstrategypushout",
+        "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy/nslinebreakstrategyhangulwordpriority",
+        "doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy/nslinebreakstrategystandard"
+      ],
+      "anchor": "3668391"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1529937-linebreakmode",
+        "doc://com.apple.documentation/documentation/uikit/nslinebreakmode",
+        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/3667463-linebreakstrategy",
+        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1529275-hyphenationfactor",
+        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/3809913-usesdefaulthyphenation",
+        "doc://com.apple.documentation/documentation/appkit/nsparagraphstyle/1529278-tighteningfactorfortruncation",
+        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1528994-allowsdefaulttighteningfortrunca"
+      ],
+      "title": "Getting Line-Break Information ",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -253,6 +420,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -263,7 +431,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

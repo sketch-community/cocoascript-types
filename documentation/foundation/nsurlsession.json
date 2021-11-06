@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An object that coordinates a group of related, network data-transfer tasks."
+      "text": "An object that coordinates a group of related, network data transfer tasks."
     }
   ],
   "documentVersion": 0,
@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSURLSession",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -129,7 +134,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that coordinates a group of related, network data-transfer tasks."
+          "text": "An object that coordinates a group of related, network data transfer tasks."
         }
       ]
     },
@@ -170,6 +175,68 @@
       "kind": "article",
       "role": "link",
       "url": "https://tools.ietf.org/html/rfc6455"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate": {
+      "title": "NSURLSessionTaskDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontaskdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that defines methods that URL session instances call on their delegates to handle task-level events."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/3746977-delegate": {
+      "title": "delegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/3746977-delegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontask/3746977-delegate"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/3767353-data": {
+      "title": "data(from:delegate:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/3767353-data",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/3767353-data"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/3767355-download": {
+      "title": "download(from:delegate:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/3767355-download",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/3767355-download"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/3767351-bytes": {
+      "title": "bytes(from:delegate:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/3767351-bytes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/3767351-bytes"
+    },
+    "doc://com.apple.documentation/documentation/swift/asyncsequence": {
+      "title": "AsyncSequence",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/asyncsequence",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/asyncsequence"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url": {
+      "title": "URL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/url"
     },
     "link-2999890": {
       "title": "RFC 7540",
@@ -222,20 +289,6 @@
         {
           "type": "text",
           "text": "A protocol that defines methods that URL session instances call on their delegates to handle session-level events, like session life cycle changes. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate": {
-      "title": "NSURLSessionTaskDelegate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsurlsessiontaskdelegate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A protocol that defines methods that URL session instances call on their delegates to handle task-level events."
         }
       ]
     },
@@ -837,7 +890,8 @@
           "kind": "identifier",
           "text": "streamTaskWithNetService:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/nsurlsessionstreamtask": {
       "title": "NSURLSessionStreamTask",
@@ -1243,16 +1297,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -1269,7 +1313,8 @@
       "title": "Using the Shared Session",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsurlsession/1409000-sharedsession"
-      ]
+      ],
+      "anchor": "3038362"
     },
     {
       "kind": "taskGroup",
@@ -1279,7 +1324,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsurlsession/1411597-sessionwithconfiguration",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessionconfiguration",
         "doc://com.apple.documentation/documentation/foundation/nsurlsession/1411477-configuration"
-      ]
+      ],
+      "anchor": "1660660"
     },
     {
       "kind": "taskGroup",
@@ -1289,7 +1335,16 @@
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiondelegate",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate",
         "doc://com.apple.documentation/documentation/foundation/nsurlsession/1411571-delegatequeue"
-      ]
+      ],
+      "anchor": "1660744"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Performing Asynchronous Transfers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate"
+      ],
+      "anchor": "3842971"
     },
     {
       "kind": "taskGroup",
@@ -1301,7 +1356,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsurlsession/1407613-datataskwithrequest",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiondatatask",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiondatadelegate"
-      ]
+      ],
+      "anchor": "1660851"
     },
     {
       "kind": "taskGroup",
@@ -1315,7 +1371,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsurlsession/1411598-downloadtaskwithresumedata",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiondownloadtask",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiondownloaddelegate"
-      ]
+      ],
+      "anchor": "1660943"
     },
     {
       "kind": "taskGroup",
@@ -1328,7 +1385,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsurlsession/1410934-uploadtaskwithstreamedrequest",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessionuploadtask",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiondatadelegate"
-      ]
+      ],
+      "anchor": "1661056"
     },
     {
       "kind": "taskGroup",
@@ -1338,7 +1396,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsurlsession/1411545-streamtaskwithnetservice",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessionstreamtask",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessionstreamdelegate"
-      ]
+      ],
+      "anchor": "1674426"
     },
     {
       "kind": "taskGroup",
@@ -1351,7 +1410,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsurlsessionwebsocketdelegate",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessionwebsocketmessage",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessionwebsocketmessagetype"
-      ]
+      ],
+      "anchor": "3382576"
     },
     {
       "kind": "taskGroup",
@@ -1364,7 +1424,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsurlsession/1411538-invalidateandcancel",
         "doc://com.apple.documentation/documentation/foundation/nsurlsession/1411479-resetwithcompletionhandler",
         "doc://com.apple.documentation/documentation/foundation/nsurlsession/1408277-sessiondescription"
-      ]
+      ],
+      "anchor": "1661178"
     },
     {
       "kind": "taskGroup",
@@ -1372,21 +1433,24 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsurlsession/url_session_error_dictionary_keys",
         "doc://com.apple.documentation/documentation/foundation/1508626-background_task_cancellation"
-      ]
+      ],
+      "anchor": "1674460"
     },
     {
       "kind": "taskGroup",
       "title": "Initializers",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsurlsession/3240614-init"
-      ]
+      ],
+      "anchor": "3256446"
     },
     {
       "kind": "taskGroup",
       "title": "Type Methods",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsurlsession/3240615-new"
-      ]
+      ],
+      "anchor": "3256447"
     }
   ],
   "seeAlsoSections": [
@@ -1433,6 +1497,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1657,7 +1722,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "Background sessions let you perform uploads and downloads of content in the background while your app isn't running."
+                      "text": "Background sessions let you perform uploads and downloads of content in the background while your app isn’t running."
                     }
                   ]
                 }
@@ -1897,7 +1962,30 @@
         },
         {
           "type": "paragraph",
-          "inlineContent": []
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each task you create with the session calls back to the session’s delegate, using the methods defined in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate"
+            },
+            {
+              "type": "text",
+              "text": ". You can also intercept these callbacks before they reach the session delegate by populating a separate "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/3746977-delegate"
+            },
+            {
+              "type": "text",
+              "text": " that’s specific to the task."
+            }
+          ]
         },
         {
           "level": 3,
@@ -1919,7 +2007,7 @@
             },
             {
               "type": "text",
-              "text": " API is highly asynchronous. It returns data to your app in one of two ways, depending on the methods you call:"
+              "text": " API is highly asynchronous. It returns data to your app in one of three ways, depending on the methods you call:"
             }
           ]
         },
@@ -1933,7 +2021,92 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "By calling a completion handler block when a transfer finishes successfully or with an error."
+                      "text": "If you’re using Swift, you can use the methods marked with the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "async"
+                    },
+                    {
+                      "type": "text",
+                      "text": " keyword to perform common tasks. For example, "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/3767353-data"
+                    },
+                    {
+                      "type": "text",
+                      "text": " fetches data, while "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/3767355-download"
+                    },
+                    {
+                      "type": "text",
+                      "text": " downloads files. Your call point uses the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "await"
+                    },
+                    {
+                      "type": "text",
+                      "text": " keyword to suspend running until the transfer completes. You can also use the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/3767351-bytes"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method to receive data as an "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/swift/asyncsequence"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". With this approach, you use the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "for"
+                    },
+                    {
+                      "type": "text",
+                      "text": "-"
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "await"
+                    },
+                    {
+                      "type": "text",
+                      "text": "-"
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "in"
+                    },
+                    {
+                      "type": "text",
+                      "text": " syntax to iterate over the data as your app receives it. The "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/url"
+                    },
+                    {
+                      "type": "text",
+                      "text": " type also offers covenience methods to fetch bytes or lines from the shared URL session."
                     }
                   ]
                 }
@@ -1946,7 +2119,20 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "By calling methods on the session’s delegate as data arrives and when the transfer is complete."
+                      "text": "In Swift or Objective-C, you can provide a completion handler block, which runs when the transfer completes."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In Swift or Objective-C, you can receive callbacks to a delegate method as the transfer progresses and immediately after it completes."
                     }
                   ]
                 }
@@ -1968,7 +2154,7 @@
             },
             {
               "type": "text",
-              "text": " provides status and progress properties that you can query if you need to make programmatic decisions based on the current state of the task (with the caveat that its state can change at any time). "
+              "text": " provides status and progress properties. Query these properties if you need to make programmatic decisions based on the current state of the task (with the caveat that its state can change at any time)."
             }
           ]
         },
@@ -2046,7 +2232,7 @@
             },
             {
               "type": "text",
-              "text": " supports the HTTP/1.1 and HTTP/2 protocols. HTTP/2 support, as described by "
+              "text": " supports the HTTP/1.1, HTTP/2, and HTTP/3 protocols. HTTP/2 support, as described by "
             },
             {
               "type": "link",
@@ -2202,7 +2388,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

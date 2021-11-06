@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An object that specifies a set of parameters for configuring objects that use output settings dictionaries."
+      "text": "An object that builds audio and video output settings dictionaries."
     }
   ],
   "documentVersion": 0,
@@ -12,6 +12,12 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/avfoundation",
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata",
+        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing"
       ]
     ]
   },
@@ -34,30 +40,35 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVOutputSettingsAssistant",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -100,13 +111,13 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset1280x720": {
-      "title": "AVOutputSettingsPreset1280x720",
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing": {
+      "title": "Sample-level Reading and Writing",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset1280x720",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avoutputsettingspreset1280x720"
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter": {
       "title": "AVAssetWriter",
@@ -124,6 +135,22 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avassetwriterinput"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspresethevc3840x2160withalpha": {
+      "title": "AVOutputSettingsPresetHEVC3840x2160WithAlpha",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspresethevc3840x2160withalpha",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avoutputsettingspresethevc3840x2160withalpha"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset1920x1080": {
+      "title": "AVOutputSettingsPreset1920x1080",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset1920x1080",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avoutputsettingspreset1920x1080"
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1387885-sourcevideoformat": {
       "title": "sourceVideoFormat",
       "type": "topic",
@@ -134,21 +161,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A core media video format description object that defines the video format."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1386880-videosettings": {
-      "title": "videoSettings",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1386880-videosettings",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avoutputsettingsassistant/1386880-videosettings",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A dictionary containing the values to use when creating an asset writer input."
+          "text": "The format of the source video data."
         }
       ]
     },
@@ -170,7 +183,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and initializes an output setting assistant with the given preset."
+          "text": "Returns a new output settings assistant for a preset configuration."
         }
       ],
       "fragments": [
@@ -184,6 +197,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset": {
+      "title": "AVOutputSettingsPreset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avoutputsettingspreset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that defines preset configurations for an output settings assistant."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1388118-availableoutputsettingspresets": {
       "title": "availableOutputSettingsPresets",
       "type": "topic",
@@ -194,7 +221,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the array of presets to use when creating an output settings assistant."
+          "text": "Returns an array of preset values to use to initialize an output settings assistant."
         }
       ],
       "fragments": [
@@ -208,20 +235,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset": {
-      "title": "AVOutputSettingsPreset",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avoutputsettingspreset",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A preset configuration used to configure writers."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1390842-outputfiletype": {
       "title": "outputFileType",
       "type": "topic",
@@ -232,7 +245,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A UTI indicating the type of file to write."
+          "text": "A uniform type identifier (UTI) that indicates the type of file to write."
         }
       ]
     },
@@ -246,7 +259,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A dictionary containing the values to use when creating an asset writer input."
+          "text": "An audio settings dictionary."
         }
       ]
     },
@@ -260,21 +273,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The format of the audio data when determining the audio settings to use."
+          "text": "The format of the source audio data."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1387414-sourcevideoaverageframeduration": {
-      "title": "sourceVideoAverageFrameDuration",
+    "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1386880-videosettings": {
+      "title": "videoSettings",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1387414-sourcevideoaverageframeduration",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1386880-videosettings",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avoutputsettingsassistant/1387414-sourcevideoaverageframeduration",
+      "url": "/documentation/avfoundation/avoutputsettingsassistant/1386880-videosettings",
       "abstract": [
         {
           "type": "text",
-          "text": "A time describing the average frame duration of the video data."
+          "text": "A video settings dictionary."
         }
       ]
     },
@@ -288,7 +301,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A time describing the minimum frame duration of the video data."
+          "text": "A time value that describes the minimum frame duration of the video data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1387414-sourcevideoaverageframeduration": {
+      "title": "sourceVideoAverageFrameDuration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1387414-sourcevideoaverageframeduration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avoutputsettingsassistant/1387414-sourcevideoaverageframeduration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A time value that describes the average frame duration of the video data."
         }
       ]
     },
@@ -316,7 +343,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The options for specifying media type characteristics."
+          "text": "A structure that defines media data characteristics."
         }
       ]
     },
@@ -330,7 +357,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A uniform type identifier for various file formats."
+          "text": "The uniform type identifiers for various file formats."
         }
       ]
     },
@@ -358,17 +385,31 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that specifies a set of parameters for configuring objects that use output settings dictionaries."
+          "text": "An object that builds audio and video output settings dictionaries."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings": {
+    "doc://com.apple.documentation/documentation/avfoundation/1390116-avmakerectwithaspectratioinsider": {
+      "title": "AVMakeRectWithAspectRatioInsideRect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/1390116-avmakerectwithaspectratioinsider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/1390116-avmakerectwithaspectratioinsider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a scaled rectangle that maintains the specified aspect ratio within a bounding rectangle."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/video_settings": {
       "title": "Video Settings",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/video_settings",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/avfoundation/avassetwriterinput/video_settings",
+      "url": "/documentation/avfoundation/avcapturephotosettings/video_settings",
       "abstract": [
         {
           "type": "text",
@@ -385,12 +426,20 @@
     }
   },
   "diffAvailability": {
+    "minor": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "13.1",
+        "13.2 beta 1"
+      ]
+    },
     "major": {
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+        "13.0",
+        "13.2 beta 1"
       ]
     }
   },
@@ -407,12 +456,13 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Creating an Output Settings Assistant",
+      "title": "Creating an Assistant",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1387909-outputsettingsassistantwithprese",
-        "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1388118-availableoutputsettingspresets",
-        "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset",
+        "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1388118-availableoutputsettingspresets"
+      ],
+      "anchor": "1668799"
     },
     {
       "kind": "taskGroup",
@@ -421,11 +471,12 @@
         "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1390842-outputfiletype",
         "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1386233-audiosettings",
         "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1390673-sourceaudioformat",
-        "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1387414-sourcevideoaverageframeduration",
-        "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1387885-sourcevideoformat",
         "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1386880-videosettings",
-        "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1386812-sourcevideominframeduration"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1387885-sourcevideoformat",
+        "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1386812-sourcevideominframeduration",
+        "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1387414-sourcevideoaverageframeduration"
+      ],
+      "anchor": "1668836"
     }
   ],
   "seeAlsoSections": [
@@ -435,7 +486,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristic",
         "doc://com.apple.documentation/documentation/avfoundation/avfiletype",
         "doc://com.apple.documentation/documentation/avfoundation/avfiletypeprofile",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings"
+        "doc://com.apple.documentation/documentation/avfoundation/1390116-avmakerectwithaspectratioinsider",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/video_settings"
       ],
       "title": "Supporting Types",
       "generated": true
@@ -475,6 +527,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -496,24 +549,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Often you create Instances of "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVOutputSettingsAssistant "
-            },
-            {
-              "type": "text",
-              "text": "using a string constant representing a specific preset configuration, such as "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset1280x720"
-            },
-            {
-              "type": "text",
-              "text": ". After configuring the instance, its properties can be a guide for creating and configuring an "
+              "text": "Use an output settings assistant to create the audio and video settings that you use to configure instances of "
             },
             {
               "type": "reference",
@@ -522,7 +558,7 @@
             },
             {
               "type": "text",
-              "text": " object and one or more "
+              "text": " and "
             },
             {
               "type": "reference",
@@ -531,7 +567,25 @@
             },
             {
               "type": "text",
-              "text": " objects so that the resulting media file conforms to a specific criteria. The preset configuration properties can be a “base” configuration, which you can customize to suit your individual needs."
+              "text": ". You create an assistant with a specific preset configuration, such as "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspresethevc3840x2160withalpha"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset1920x1080"
+            },
+            {
+              "type": "text",
+              "text": ". You can accept the settings dictionaries as is to generate a file that conforms to the criteria that the preset implies. You may also use the dictionaries it generates as a base configuration that you can customize as you require."
             }
           ]
         },
@@ -540,7 +594,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The suggested output settings improve as more information is provided about the format of the source data. For example, by setting the "
+              "text": "Providing the assistant additional details about your source media helps it generate more complete results. For example, setting a value for its "
             },
             {
               "type": "reference",
@@ -549,16 +603,7 @@
             },
             {
               "type": "text",
-              "text": " property, the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1386880-videosettings"
-            },
-            {
-              "type": "text",
-              "text": " property value ensures that video frames don’t scale up from a smaller size."
+              "text": " property ensures that the assistant generates settings that don’t scale up video frames from a smaller size."
             }
           ]
         }
@@ -566,7 +611,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

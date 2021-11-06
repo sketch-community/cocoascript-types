@@ -40,15 +40,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)AVSampleCursor",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -291,7 +291,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A structure indicating the offset and length of storage occupied by a media sample or its chunk."
+          "text": "A structure that indicates the offset and length of storage for a media sample or its chunk."
         }
       ]
     },
@@ -403,7 +403,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A value that describes attributes of a media sample for consideration when resynchronizing a decoder."
+          "text": "A structure that describes the attributes of media samples to consider when resynchronizing a decoder."
         }
       ]
     },
@@ -442,6 +442,20 @@
         {
           "type": "text",
           "text": "The independent decodability information for the audio sample."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplecursor/3752983-currentsampledependencyattachmen": {
+      "title": "currentSampleDependencyAttachments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplecursor/3752983-currentsampledependencyattachmen",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplecursor/3752983-currentsampledependencyattachmen",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A dictionary of dependency-related sample buffer attachments."
         }
       ]
     },
@@ -555,7 +569,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": " A structure that describes the independent decodability of audio samples."
+          "text": "A structure that describes the independent decodability of audio samples."
         }
       ]
     },
@@ -565,16 +579,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0 beta 5",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -604,7 +608,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avsamplecursor/1387680-stepbypresentationtime",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplecursor/1389606-stepindecodeorderbycount",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplecursor/1388834-stepinpresentationorderbycount"
-      ]
+      ],
+      "anchor": "1678870"
     },
     {
       "kind": "taskGroup",
@@ -612,7 +617,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avsamplecursor/1388412-decodetimestamp",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplecursor/1389740-presentationtimestamp"
-      ]
+      ],
+      "anchor": "1678932"
     },
     {
       "kind": "taskGroup",
@@ -631,8 +637,10 @@
         "doc://com.apple.documentation/documentation/avfoundation/avsamplecursor/1390776-currentsamplesyncinfo",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorsyncinfo",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplecursor/1390703-copycurrentsampleformatdescripti",
-        "doc://com.apple.documentation/documentation/avfoundation/avsamplecursor/3131266-currentsampleaudiodependencyinfo"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplecursor/3131266-currentsampleaudiodependencyinfo",
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplecursor/3752983-currentsampledependencyattachmen"
+      ],
+      "anchor": "1678945"
     },
     {
       "kind": "taskGroup",
@@ -641,14 +649,16 @@
         "doc://com.apple.documentation/documentation/avfoundation/avsamplecursor/1386558-sampleswithearlierdecodetimestam",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplecursor/1390029-sampleswithlaterdecodetimestamps",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplecursor/1386446-samplesrequiredfordecoderrefresh"
-      ]
+      ],
+      "anchor": "1678912"
     },
     {
       "kind": "taskGroup",
       "title": "Comparing Sample Cursors",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avsamplecursor/1390608-comparepositionindecodeorderwith"
-      ]
+      ],
+      "anchor": "1678935"
     }
   ],
   "seeAlsoSections": [
@@ -742,7 +752,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

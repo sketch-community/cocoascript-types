@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns the source pixel buffer for the specified track ID."
+      "text": "Returns a source pixel buffer for the track that contains the specified identifier."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAsynchronousVideoCompositionRequest(im)sourceFrameByTrackID:",
+    "parent": {
+      "title": "AVAsynchronousVideoCompositionRequest"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,7 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that contains the information necessary for a video compositor to render an output pixel buffer."
+          "text": "An object that contains information a video compositor needs to render an output pixel buffer."
         }
       ]
     },
@@ -132,6 +140,14 @@
       "role": "symbol",
       "url": "/documentation/corevideo/cvpixelbufferref"
     },
+    "doc://com.apple.documentation/documentation/coremedia/cmpersistenttrackid": {
+      "title": "CMPersistentTrackID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coremedia/cmpersistenttrackid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coremedia/cmpersistenttrackid"
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1388898-sourcetrackids": {
       "title": "sourceTrackIDs",
       "type": "topic",
@@ -142,17 +158,23 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The track IDs of all the source buffers that are available to compose the frame."
+          "text": "The identifiers of tracks that contain source video."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coremedia/cmpersistenttrackid": {
-      "title": "CMPersistentTrackID",
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750312-sourcesampledatatrackids": {
+      "title": "sourceSampleDataTrackIDs",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coremedia/cmpersistenttrackid",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750312-sourcesampledatatrackids",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coremedia/cmpersistenttrackid"
+      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/3750312-sourcesampledatatrackids",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The identifiers of tracks that contain source metadata."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1390379-sourceframebytrackid": {
       "title": "sourceFrameByTrackID:",
@@ -164,7 +186,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the source pixel buffer for the specified track ID."
+          "text": "Returns a source pixel buffer for the track that contains the specified identifier."
         }
       ],
       "fragments": [
@@ -178,6 +200,54 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750311-sourcesamplebufferbytrackid": {
+      "title": "sourceSampleBufferByTrackID:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750311-sourcesamplebufferbytrackid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/3750311-sourcesamplebufferbytrackid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a source sample buffer for the track that contains the specified identifier."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "sourceSampleBufferByTrackID:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750313-sourcetimedmetadatabytrackid": {
+      "title": "sourceTimedMetadataByTrackID:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750313-sourcetimedmetadatabytrackid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/3750313-sourcetimedmetadatabytrackid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a source timed metadata group for the track that contains the specified identifier."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "sourceTimedMetadataByTrackID:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -188,11 +258,14 @@
   },
   "seeAlsoSections": [
     {
-      "title": "Related Documentation",
-      "generated": false,
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1388898-sourcetrackids"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1388898-sourcetrackids",
+        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750312-sourcesampledatatrackids",
+        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750311-sourcesamplebufferbytrackid",
+        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750313-sourcetimedmetadatabytrackid"
+      ],
+      "title": "Accessing Source Data",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -247,6 +320,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -268,7 +342,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The track ID for the requested source frame."
+                  "text": "The identifier of the track that contains the source frame."
                 }
               ]
             }
@@ -290,24 +364,15 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The source "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferref"
-            },
-            {
-              "type": "text",
-              "text": " for "
+              "text": "A pixel buffer, or "
             },
             {
               "type": "codeVoice",
-              "code": "trackID"
+              "code": "nil"
             },
             {
               "type": "text",
-              "text": "."
+              "text": " if not found."
             }
           ]
         }
@@ -315,7 +380,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

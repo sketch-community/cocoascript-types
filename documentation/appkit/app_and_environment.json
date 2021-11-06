@@ -30,8 +30,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -155,7 +155,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The configuration options to use when opening URLs or launching apps. "
+          "text": "The configuration options for opening URLs or launching apps. "
         }
       ]
     },
@@ -170,6 +170,33 @@
         {
           "type": "text",
           "text": "Constants for determining which version of AppKit is available. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/lsminimumsystemversion": {
+      "title": "LSMinimumSystemVersion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/lsminimumsystemversion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/lsminimumsystemversion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The minimum version of the operating system required for the app to run in macOS."
+        }
+      ],
+      "titleStyle": "symbol",
+      "name": "LSMinimumSystemVersion",
+      "ideTitle": "Minimum system version",
+      "fragments": [
+        {
+          "kind": "label",
+          "text": "property list key "
+        },
+        {
+          "kind": "identifier",
+          "text": "LSMinimumSystemVersion"
         }
       ]
     },
@@ -193,7 +220,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsuseractivityrestoring",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsuseractivityrestoring"
+      "url": "/documentation/appkit/nsuseractivityrestoring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that marks classes to restore the state of your app to continue a user activity."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nssharingservice": {
       "title": "NSSharingService",
@@ -277,7 +310,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A protocol that an iCloud-sharing service implements to handle status changes and errors."
+          "text": "A set of methods for responding to the life cycle events of the cloud-sharing service."
         }
       ]
     },
@@ -417,16 +450,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0 beta 5",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "topicSections": [
     {
       "kind": "taskGroup",
@@ -436,7 +459,8 @@
         "doc://com.apple.documentation/documentation/appkit/nsrunningapplication",
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate",
         "doc://com.apple.documentation/documentation/appkit/1428499-nsapplicationmain"
-      ]
+      ],
+      "anchor": "2870820"
     },
     {
       "kind": "taskGroup",
@@ -444,8 +468,10 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsworkspace",
         "doc://com.apple.documentation/documentation/appkit/nsworkspaceopenconfiguration",
-        "doc://com.apple.documentation/documentation/appkit/nsappkitversion"
-      ]
+        "doc://com.apple.documentation/documentation/appkit/nsappkitversion",
+        "doc://com.apple.documentation/documentation/bundleresources/information_property_list/lsminimumsystemversion"
+      ],
+      "anchor": "2871781"
     },
     {
       "kind": "taskGroup",
@@ -453,7 +479,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsuseractivity",
         "doc://com.apple.documentation/documentation/appkit/nsuseractivityrestoring"
-      ]
+      ],
+      "anchor": "3369874"
     },
     {
       "kind": "taskGroup",
@@ -467,7 +494,8 @@
         "doc://com.apple.documentation/documentation/appkit/nssharingservicepickertoolbaritemdelegate",
         "doc://com.apple.documentation/documentation/appkit/nscloudsharingservicedelegate",
         "doc://com.apple.documentation/documentation/appkit/app_and_environment/services_functions"
-      ]
+      ],
+      "anchor": "2871793"
     },
     {
       "kind": "taskGroup",
@@ -475,14 +503,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nshelpmanager",
         "doc://com.apple.documentation/documentation/appkit/nsuserinterfaceitemsearching"
-      ]
+      ],
+      "anchor": "2871792"
     },
     {
       "kind": "taskGroup",
       "title": "Errors",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/1534813-appkit_errors"
-      ]
+      ],
+      "anchor": "3370337"
     }
   ],
   "seeAlsoSections": [
@@ -498,7 +528,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

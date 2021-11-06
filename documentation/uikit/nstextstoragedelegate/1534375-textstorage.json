@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Sent when a text storage object has finished processing edits."
+      "text": "The method the framework calls when a text storage object has finished processing edits."
     }
   ],
   "documentVersion": 0,
@@ -11,20 +11,8 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_storage",
-        "doc://com.apple.documentation/documentation/uikit/nstextstoragedelegate"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_storage",
+        "doc://com.apple.documentation/documentation/uikit/textkit",
         "doc://com.apple.documentation/documentation/uikit/nstextstorage",
-        "doc://com.apple.documentation/documentation/uikit/nstextstoragedelegate"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/textkit",
         "doc://com.apple.documentation/documentation/uikit/nstextstoragedelegate"
       ],
       [
@@ -58,30 +46,38 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)NSTextStorageDelegate(im)textStorage:didProcessEditing:range:changeInLength:",
+    "parent": {
+      "title": "NSTextStorageDelegate"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -118,13 +114,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/text_storage": {
-      "title": "Text Storage",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage",
-      "url": "/documentation/uikit/text_storage",
+    "doc://com.apple.documentation/documentation/uikit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit",
+      "url": "/documentation/uikit/textkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextstorage": {
+      "title": "NSTextStorage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextstorage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextstorage"
     },
     "doc://com.apple.documentation/documentation/uikit/nstextstoragedelegate": {
       "title": "NSTextStorageDelegate",
@@ -139,14 +143,6 @@
           "text": "The optional methods that delegates of text storage objects implement to handle text-edit processing."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/nstextstorage": {
-      "title": "NSTextStorage",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextstorage",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/nstextstorage"
     },
     "doc://com.apple.documentation/documentation/appkit": {
       "title": "AppKit",
@@ -163,6 +159,22 @@
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextstorageeditactions/nstextstorageeditedattributes": {
+      "title": "NSTextStorageEditedAttributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextstorageeditactions/nstextstorageeditedattributes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextstorageeditactions/nstextstorageeditedattributes"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextstorageeditactions/nstextstorageeditedcharacters": {
+      "title": "NSTextStorageEditedCharacters",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextstorageeditactions/nstextstorageeditedcharacters",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextstorageeditactions/nstextstorageeditedcharacters"
     },
     "doc://com.apple.documentation/documentation/uikit/nstextstorage/1525980-processediting": {
       "title": "processEditing",
@@ -181,22 +193,6 @@
           "text": "processEditing"
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/nstextstorageeditactions/nstextstorageeditedattributes": {
-      "title": "NSTextStorageEditedAttributes",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextstorageeditactions/nstextstorageeditedattributes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/nstextstorageeditactions/nstextstorageeditedattributes"
-    },
-    "doc://com.apple.documentation/documentation/uikit/nstextstorageeditactions/nstextstorageeditedcharacters": {
-      "title": "NSTextStorageEditedCharacters",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextstorageeditactions/nstextstorageeditedcharacters",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/nstextstorageeditactions/nstextstorageeditedcharacters"
     },
     "doc://com.apple.documentation/documentation/uikit/nstextstorageeditactions": {
       "title": "NSTextStorageEditActions",
@@ -233,7 +229,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Sent when a text storage object is about to process edits."
+          "text": "The method the framework calls when a text storage object is about to process edits."
         }
       ],
       "fragments": [
@@ -258,7 +254,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Sent when a text storage object has finished processing edits."
+          "text": "The method the framework calls when a text storage object has finished processing edits."
         }
       ],
       "fragments": [
@@ -421,6 +417,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -542,7 +539,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The delegate can verify the final state of the text storage object; it can’t change the text storage object’s characters without leaving it in an inconsistent state, but if necessary it can change attributes. Note that even in this case it’s possible to put a text storage object into an inconsistent state—for example, by changing the font of a range to one that doesn’t support the characters in that range (such as using a Latin font for Kanji text)."
+              "text": "The delegate can verify the final state of the text storage object; it can’t change the text storage object’s characters without leaving it in an inconsistent state, but if necessary it can change attributes. Note that even in this case it’s possible to put a text storage object into an inconsistent state—for example, by changing the font of a range to one that doesn’t support the characters in that range, such as using a Latin font for Kanji text."
             }
           ]
         }
@@ -550,7 +547,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

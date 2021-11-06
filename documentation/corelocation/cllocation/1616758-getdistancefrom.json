@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns the distance (measured in meters) from the current object's location to the specified location. "
+      "text": "Returns the distance (measured in meters) from the current object’s location to the specified location."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,40 @@
         "name": "iOS",
         "introducedAt": "2.0",
         "deprecatedAt": "3.2",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "deprecatedAt": "3.2",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
         "deprecatedAt": "10.15",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)CLLocation(im)getDistanceFrom:",
+    "parent": {
+      "title": "CLLocation"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,7 +121,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the distance (measured in meters) from the current object's location to the specified location. "
+          "text": "Returns the distance (measured in meters) from the current object’s location to the specified location."
         }
       ],
       "fragments": [
@@ -143,7 +153,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the distance (measured in meters) from the current object's location to the specified location. "
+          "text": "Returns the distance (measured in meters) from the current object’s location to the specified location."
         }
       ],
       "fragments": [
@@ -259,6 +269,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -279,7 +290,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The other location. "
+                  "text": "The other location."
                 }
               ]
             }
@@ -337,7 +348,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

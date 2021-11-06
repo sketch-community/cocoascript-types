@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A Boolean value that indicates whether the view controller prefers to lock the pointer to a specific scene."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,20 +35,28 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIViewController(py)prefersPointerLocked",
+    "parent": {
+      "title": "UIViewController"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -99,6 +113,90 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/objectivec/no": {
+      "title": "NO",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/no"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipointerlockstate/3601226-locked": {
+      "title": "locked",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipointerlockstate/3601226-locked",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipointerlockstate/3601226-locked"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisceneactivationstate/uisceneactivationstateforegroundactive": {
+      "title": "UISceneActivationStateForegroundActive",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisceneactivationstate/uisceneactivationstateforegroundactive",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisceneactivationstate/uisceneactivationstateforegroundactive"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipointerlockstatedidchangenotification": {
+      "title": "UIPointerLockStateDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipointerlockstatedidchangenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipointerlockstatedidchangenotification"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601235-preferspointerlocked": {
+      "title": "prefersPointerLocked",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601235-preferspointerlocked",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller/3601235-preferspointerlocked",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the view controller prefers to lock the pointer to a specific scene."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601236-setneedsupdateofpreferspointerlo": {
+      "title": "setNeedsUpdateOfPrefersPointerLocked",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601236-setneedsupdateofpreferspointerlo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller/3601236-setneedsupdateofpreferspointerlo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates that the view controller changed the pointer lock preference."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setNeedsUpdateOfPrefersPointerLocked"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601234-childviewcontrollerforpointerloc": {
+      "title": "childViewControllerForPointerLock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601234-childviewcontrollerforpointerloc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller/3601234-childviewcontrollerforpointerloc",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A child view controller to query for the pointer lock preference."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -107,6 +205,16 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601236-setneedsupdateofpreferspointerlo",
+        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601234-childviewcontrollerforpointerloc"
+      ],
+      "title": "Managing Pointer Lock State",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -143,14 +251,167 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The default is "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+            },
+            {
+              "type": "text",
+              "text": ". Setting this property to true indicates the view controller’s preference to lock the pointer, although the system may not honor the request. Use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uipointerlockstate/3601226-locked"
+            },
+            {
+              "type": "text",
+              "text": " to determine the current pointer lock state. For the system to consider locking the pointer:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The scene must be full screen, not in Split View or Slide Over, with no other apps in Slide Over."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The scene must be in the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uisceneactivationstate/uisceneactivationstateforegroundactive"
+                    },
+                    {
+                      "type": "text",
+                      "text": " state. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In Mac Catalyst, the app must be in the foreground, and the window that contains the scene ordered to the front."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Bringing a Mac Catalyst app to the foreground doesn’t immediately enable pointer lock. To enable pointer lock, the user must click in the window. To exit pointer lock, users can use cmd-tab to switch to another app, or using cmd-tilde."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The system continuously monitors the state and when the app no longer satisfies the requirements, it disables the pointer lock. When the lock state changes, the system posts "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uipointerlockstatedidchangenotification"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you change the value of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601235-preferspointerlocked"
+            },
+            {
+              "type": "text",
+              "text": ", call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601236-setneedsupdateofpreferspointerlo"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

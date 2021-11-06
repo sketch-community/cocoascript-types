@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Defines a structure that specifies the layout axes. "
+      "text": "A structure that specifies the layout axes. "
     }
   ],
   "documentVersion": 0,
@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "13.4",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.4",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.4",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.4",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@T@UIAxis",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -145,7 +150,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Defines a structure that specifies an amount to offset a position. "
+          "text": "A structure that specifies an amount to offset a position. "
         }
       ]
     },
@@ -173,7 +178,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Defines a structure that specifies the layout axes. "
+          "text": "A structure that specifies the layout axes. "
         }
       ]
     },
@@ -187,7 +192,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Edge insets that take language direction into account. "
+          "text": "The inset distances for views, taking the user interface layout direction into account. "
         }
       ]
     },
@@ -197,7 +202,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/nsdirectionalrectedge",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/nsdirectionalrectedge"
+      "url": "/documentation/uikit/nsdirectionalrectedge",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify an edge or a set of edges, taking the user interface layout direction into account. "
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/nsrectalignment": {
       "title": "NSRectAlignment",
@@ -205,7 +216,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/nsrectalignment",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/nsrectalignment"
+      "url": "/documentation/uikit/nsrectalignment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify alignment to an edge or a set of edges depending on the user interface layout direction."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge": {
       "title": "UIDirectionalRectEdge",
@@ -214,6 +231,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uidirectionalrectedge",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify an edge or a set of edges, taking the user interface layout direction into account."
+        }
+      ],
       "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
@@ -232,14 +255,16 @@
         "doc://com.apple.documentation/documentation/uikit/uiaxis/uiaxisboth",
         "doc://com.apple.documentation/documentation/uikit/uiaxis/uiaxishorizontal",
         "doc://com.apple.documentation/documentation/uikit/uiaxis/uiaxisvertical"
-      ]
+      ],
+      "anchor": "3539919"
     },
     {
       "kind": "taskGroup",
       "title": "Constants",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiaxis/uiaxisneither"
-      ]
+      ],
+      "anchor": "3539920"
     }
   ],
   "seeAlsoSections": [
@@ -318,6 +343,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -326,7 +352,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

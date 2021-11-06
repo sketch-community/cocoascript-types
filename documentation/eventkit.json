@@ -27,28 +27,33 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.8",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -155,7 +160,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Register to be notified about changes and keep your app up to date."
+          "text": "Register for notifications about changes and keep your app up to date."
         }
       ]
     },
@@ -183,7 +188,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A class that represents an event added to a calendar."
+          "text": "A class that represents an event in a calendar."
         }
       ]
     },
@@ -197,7 +202,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A class that represents a reminder added to a calendar."
+          "text": "A class that represents a reminder in a calendar."
         }
       ]
     },
@@ -211,7 +216,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A class that represents a calendar in Event Kit. "
+          "text": "A class that represents a calendar in EventKit."
         }
       ]
     },
@@ -327,7 +332,7 @@
         },
         {
           "type": "text",
-          "text": " class that specifies a geofence used to trigger the alarm of a calendar item. "
+          "text": " class that specifies a geofence to trigger the alarm of a calendar item."
         }
       ]
     },
@@ -355,7 +360,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An abstract superclass for all Event Kit classes that have instances that are persistent. "
+          "text": "An abstract superclass for all EventKit classes that have persistent instances."
         }
       ]
     },
@@ -373,6 +378,48 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/eventkit/ekvirtualconferenceprovider": {
+      "title": "EKVirtualConferenceProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekvirtualconferenceprovider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekvirtualconferenceprovider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that associates virtual conferencing details with an event object in a user’s calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekvirtualconferencedescriptor": {
+      "title": "EKVirtualConferenceDescriptor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekvirtualconferencedescriptor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekvirtualconferencedescriptor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Details about a virtual conference that uses a custom room type."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekvirtualconferenceroomtypedescriptor": {
+      "title": "EKVirtualConferenceRoomTypeDescriptor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekvirtualconferenceroomtypedescriptor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekvirtualconferenceroomtypedescriptor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Details about a room where virtual conferences take place."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/eventkit/ekerrorcode": {
       "title": "EKErrorCode",
       "type": "topic",
@@ -383,7 +430,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Values that are returned as the error code property of an NSError object."
+          "text": "Error codes for EventKit errors."
         }
       ]
     },
@@ -397,17 +444,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "String that identifies the EventKit error domain."
+          "text": "A string that identifies the EventKit error domain."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/eventkit/eventkit_data_types": {
-      "title": "EventKit Data Types",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/eventkit/eventkit_data_types",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/eventkit/eventkit_data_types"
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -417,16 +456,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "topicSections": [
     {
       "kind": "taskGroup",
@@ -434,7 +463,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/eventkit/accessing_the_event_store",
         "doc://com.apple.documentation/documentation/eventkit/ekeventstore"
-      ]
+      ],
+      "anchor": "2936015"
     },
     {
       "kind": "taskGroup",
@@ -446,7 +476,8 @@
         "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders",
         "doc://com.apple.documentation/documentation/eventkit/ekevent",
         "doc://com.apple.documentation/documentation/eventkit/ekreminder"
-      ]
+      ],
+      "anchor": "2952773"
     },
     {
       "kind": "taskGroup",
@@ -454,7 +485,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/eventkit/ekcalendar",
         "doc://com.apple.documentation/documentation/eventkit/ekparticipant"
-      ]
+      ],
+      "anchor": "2975510"
     },
     {
       "kind": "taskGroup",
@@ -464,7 +496,8 @@
         "doc://com.apple.documentation/documentation/eventkit/ekrecurrencedayofweek",
         "doc://com.apple.documentation/documentation/eventkit/ekrecurrenceend",
         "doc://com.apple.documentation/documentation/eventkit/ekrecurrencerule"
-      ]
+      ],
+      "anchor": "2936017"
     },
     {
       "kind": "taskGroup",
@@ -473,7 +506,8 @@
         "doc://com.apple.documentation/documentation/eventkit/setting_an_alarm",
         "doc://com.apple.documentation/documentation/eventkit/ekalarm",
         "doc://com.apple.documentation/documentation/eventkit/ekstructuredlocation"
-      ]
+      ],
+      "anchor": "2938695"
     },
     {
       "kind": "taskGroup",
@@ -482,7 +516,18 @@
         "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem",
         "doc://com.apple.documentation/documentation/eventkit/ekobject",
         "doc://com.apple.documentation/documentation/eventkit/eksource"
-      ]
+      ],
+      "anchor": "2938692"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Virtual Conferences",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/eventkit/ekvirtualconferenceprovider",
+        "doc://com.apple.documentation/documentation/eventkit/ekvirtualconferencedescriptor",
+        "doc://com.apple.documentation/documentation/eventkit/ekvirtualconferenceroomtypedescriptor"
+      ],
+      "anchor": "3792274"
     },
     {
       "kind": "taskGroup",
@@ -490,14 +535,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/eventkit/ekerrorcode",
         "doc://com.apple.documentation/documentation/eventkit/ekerrordomain"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Reference",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/eventkit/eventkit_data_types"
-      ]
+      ],
+      "anchor": "1676058"
     }
   ],
   "seeAlsoSections": [
@@ -550,7 +589,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

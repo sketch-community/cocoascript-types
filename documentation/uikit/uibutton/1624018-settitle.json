@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIButton(im)setTitle:forState:",
+    "parent": {
+      "title": "UIButton"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -110,14 +118,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uicontrolstate": {
-      "title": "UIControlState",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontrolstate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uicontrolstate"
-    },
     "doc://com.apple.documentation/documentation/uikit/uicontrolstate/uicontrolstatenormal": {
       "title": "UIControlStateNormal",
       "type": "topic",
@@ -133,6 +133,30 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiuserinterfaceidiom/uiuserinterfaceidiommac"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uibutton/3752180-behavioralstyle": {
+      "title": "behavioralStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/3752180-behavioralstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uibutton/3752180-behavioralstyle"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uibehavioralstyle/uibehavioralstylemac": {
+      "title": "UIBehavioralStyleMac",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uibehavioralstyle/uibehavioralstylemac",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uibehavioralstyle/uibehavioralstylemac"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicontrolstate": {
+      "title": "UIControlState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontrolstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicontrolstate"
     },
     "doc://com.apple.documentation/documentation/uikit/uibutton/1624022-titleforstate": {
       "title": "titleForState:",
@@ -356,20 +380,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uibutton/1624004-reversestitleshadowwhenhighlight": {
-      "title": "reversesTitleShadowWhenHighlighted",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/1624004-reversestitleshadowwhenhighlight",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uibutton/1624004-reversestitleshadowwhenhighlight",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that determines whether the title shadow changes when the button is highlighted."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -388,10 +398,9 @@
         "doc://com.apple.documentation/documentation/uikit/uibutton/1624017-titlecolorforstate",
         "doc://com.apple.documentation/documentation/uikit/uibutton/1623993-settitlecolor",
         "doc://com.apple.documentation/documentation/uikit/uibutton/1624009-titleshadowcolorforstate",
-        "doc://com.apple.documentation/documentation/uikit/uibutton/1623994-settitleshadowcolor",
-        "doc://com.apple.documentation/documentation/uikit/uibutton/1624004-reversestitleshadowwhenhighlight"
+        "doc://com.apple.documentation/documentation/uikit/uibutton/1623994-settitleshadowcolor"
       ],
-      "title": "Configuring the Button Title",
+      "title": "Managing the Title",
       "generated": true
     }
   ],
@@ -475,6 +484,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -509,7 +519,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The state that uses the specified title. The possible values are described in "
+                  "text": "The state that uses the specified title. "
                 },
                 {
                   "type": "reference",
@@ -518,7 +528,7 @@
                 },
                 {
                   "type": "text",
-                  "text": "."
+                  "text": " describes the possible values."
                 }
               ]
             }
@@ -549,7 +559,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "At a minimum, you should set the value for the "
+              "text": "At a minimum, set the value for the "
             },
             {
               "type": "reference",
@@ -597,6 +607,24 @@
                 },
                 {
                   "type": "text",
+                  "text": " and "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/3752180-behavioralstyle"
+                },
+                {
+                  "type": "text",
+                  "text": " is "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uibehavioralstyle/uibehavioralstylemac"
+                },
+                {
+                  "type": "text",
                   "text": ", your app throws an exception if you use this method to set the title for any state other than "
                 },
                 {
@@ -621,7 +649,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

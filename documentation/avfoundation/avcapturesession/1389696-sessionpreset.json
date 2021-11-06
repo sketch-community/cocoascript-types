@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A constant value indicating the quality level or bit rate of the output."
+      "text": "A preset value that indicates the quality level or bit rate of the output."
     }
   ],
   "documentVersion": 0,
@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVCaptureSession(py)sessionPreset",
+    "parent": {
+      "title": "AVCaptureSession"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -110,6 +118,60 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturesessionpresethigh": {
+      "title": "AVCaptureSessionPresetHigh",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturesessionpresethigh",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturesessionpresethigh"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturesession/1389824-cansetsessionpreset": {
+      "title": "canSetSessionPreset:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturesession/1389824-cansetsessionpreset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturesession/1389824-cansetsessionpreset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines whether you can configure a capture session with the specified preset."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "canSetSessionPreset:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturesession/1389696-sessionpreset": {
+      "title": "sessionPreset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturesession/1389696-sessionpreset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturesession/1389696-sessionpreset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A preset value that indicates the quality level or bit rate of the output."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avcapturesessionpreset": {
       "title": "AVCaptureSessionPreset",
       "type": "topic",
@@ -130,60 +192,6 @@
         {
           "type": "text",
           "text": " property."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturesessionpresethigh": {
-      "title": "AVCaptureSessionPresetHigh",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturesessionpresethigh",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturesessionpresethigh"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturesession/1389824-cansetsessionpreset": {
-      "title": "canSetSessionPreset:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturesession/1389824-cansetsessionpreset",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturesession/1389824-cansetsessionpreset",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean value that indicates whether the session can use the given preset."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "canSetSessionPreset:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/objectivec/yes": {
-      "title": "YES",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/yes"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturesession/1389696-sessionpreset": {
-      "title": "sessionPreset",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturesession/1389696-sessionpreset",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturesession/1389696-sessionpreset",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A constant value indicating the quality level or bit rate of the output."
         }
       ]
     },
@@ -243,6 +251,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -263,29 +272,30 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You use this property to customize the quality level or bit rate of the output. For possible values of "
-            },
-            {
-              "type": "codeVoice",
-              "code": "sessionPreset"
-            },
-            {
-              "type": "text",
-              "text": ", see "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturesessionpreset"
-            },
-            {
-              "type": "text",
-              "text": ". The default value is "
+              "text": "Specify a preset value to configure a capture session’s quality settings. The default property value is "
             },
             {
               "type": "reference",
               "isActive": true,
               "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturesessionpresethigh"
+            },
+            {
+              "type": "text",
+              "text": ", which produces high-quality video and audio output, but you can specify any preset value that returns "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": " for a call to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturesession/1389824-cansetsessionpreset"
             },
             {
               "type": "text",
@@ -301,39 +311,12 @@
               "text": "You can set this value while the session is running."
             }
           ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "You can only set a preset if "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturesession/1389824-cansetsessionpreset"
-            },
-            {
-              "type": "text",
-              "text": " returns "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-            },
-            {
-              "type": "text",
-              "text": " f or that preset."
-            }
-          ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

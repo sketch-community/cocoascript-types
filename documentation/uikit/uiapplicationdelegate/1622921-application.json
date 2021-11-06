@@ -42,25 +42,33 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UIApplicationDelegate(im)application:didFinishLaunchingWithOptions:",
+    "parent": {
+      "title": "UIApplicationDelegate"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -113,7 +121,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of methods that you use to manage shared behaviors for your app. "
+          "text": "A set of methods to manage shared behaviors for your app. "
         }
       ]
     },
@@ -160,7 +168,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted immediately after the app finishes launching."
+          "text": "A notification that posts immediately after the app finishes launching."
         }
       ]
     },
@@ -179,22 +187,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiapplicationdelegate/1623053-applicationdidfinishlaunching",
-      "required": false,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Tells the delegate when the app has finished launching. Don’t use. Instead, use "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application"
-        },
-        {
-          "type": "text",
-          "text": "."
-        }
-      ],
       "fragments": [
         {
           "kind": "text",
@@ -221,6 +213,20 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationlaunchoptionskey": {
+      "title": "UIApplicationLaunchOptionsKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationlaunchoptionskey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationlaunchoptionskey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Keys you use to access values in the launch options dictionary that is passed to your app at initialization time."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622997-applicationdidenterbackground": {
       "title": "applicationDidEnterBackground:",
@@ -270,6 +276,22 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsdictionary": {
+      "title": "NSDictionary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdictionary",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdictionary"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/id": {
+      "title": "id",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/id",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/id"
+    },
     "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application": {
       "title": "application:didFinishLaunchingWithOptions:",
       "type": "topic",
@@ -295,36 +317,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsdictionary": {
-      "title": "NSDictionary",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdictionary",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsdictionary"
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplicationlaunchoptionskey": {
-      "title": "UIApplicationLaunchOptionsKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationlaunchoptionskey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplicationlaunchoptionskey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Keys used to access values in the launch options dictionary passed to your app at initialization time."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/objectivec/id": {
-      "title": "id",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/id",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/id"
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -338,7 +330,6 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623032-application",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationlaunchoptionskey",
-        "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623053-applicationdidfinishlaunching",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdidfinishlaunchingnotification"
       ],
       "title": "Initializing the App",
@@ -457,6 +448,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -494,8 +486,9 @@
                   "text": "A dictionary indicating the reason the app was launched (if any). The contents of this dictionary may be empty in situations where the user launched the app directly. For information about the possible keys in this dictionary and how to handle them, see "
                 },
                 {
-                  "type": "codeVoice",
-                  "code": "Launch Options Keys"
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationlaunchoptionskey"
                 },
                 {
                   "type": "text",
@@ -693,7 +686,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

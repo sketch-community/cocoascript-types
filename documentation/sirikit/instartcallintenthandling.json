@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(pl)INStartCallIntentHandling",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -192,7 +197,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Resovles the destination of the call."
+          "text": "Resolves the destination of the call."
         }
       ],
       "fragments": [
@@ -203,6 +208,31 @@
         {
           "kind": "identifier",
           "text": "resolveDestinationTypeForStartCall:withCompletion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling/3649678-resolvecallrecordtocallbackforst": {
+      "title": "resolveCallRecordToCallBackForStartCall:withCompletion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling/3649678-resolvecallrecordtocallbackforst",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintenthandling/3649678-resolvecallrecordtocallbackforst",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolves the redial of a missed call."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "resolveCallRecordToCallBackForStartCall:withCompletion:"
         }
       ]
     },
@@ -256,25 +286,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling/3649678-resolvecallrecordtocallbackforst": {
-      "title": "resolveCallRecordToCallBackForStartCall:withCompletion:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling/3649678-resolvecallrecordtocallbackforst",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/instartcallintenthandling/3649678-resolvecallrecordtocallbackforst",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "resolveCallRecordToCallBackForStartCall:withCompletion:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/sirikit/instartcallintentresponse": {
       "title": "INStartCallIntentResponse",
       "type": "topic",
@@ -286,6 +297,20 @@
         {
           "type": "text",
           "text": "Your app’s response to a start call intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackunsupportedreason": {
+      "title": "INStartCallCallRecordToCallBackUnsupportedReason",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackunsupportedreason",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallcallrecordtocallbackunsupportedreason",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reason why your app can’t use a record to call a person back."
         }
       ]
     },
@@ -314,38 +339,36 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling/3165949-resolvecallcapabilityforstartcal",
         "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling/3165950-resolvecontactsforstartcall",
-        "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling/3165951-resolvedestinationtypeforstartca"
-      ]
+        "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling/3165951-resolvedestinationtypeforstartca",
+        "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling/3649678-resolvecallrecordtocallbackforst"
+      ],
+      "anchor": "3191638"
     },
     {
       "kind": "taskGroup",
       "title": "Confirming the Response",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling/3165947-confirmstartcall"
-      ]
+      ],
+      "anchor": "3191645"
     },
     {
       "kind": "taskGroup",
       "title": "Handling the Intent",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling/3165948-handlestartcall"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Methods",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling/3649678-resolvecallrecordtocallbackforst"
-      ]
+      ],
+      "anchor": "3167064"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartcallintent",
-        "doc://com.apple.documentation/documentation/sirikit/instartcallintentresponse"
+        "doc://com.apple.documentation/documentation/sirikit/instartcallintentresponse",
+        "doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackunsupportedreason"
       ],
-      "title": "Start a Call",
+      "title": "Starting a Call",
       "generated": true
     }
   ],
@@ -373,6 +396,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -428,7 +452,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

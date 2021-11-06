@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The track IDs of all the source buffers that are available to compose the frame."
+      "text": "The identifiers of tracks that contain source video."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAsynchronousVideoCompositionRequest(py)sourceTrackIDs",
+    "parent": {
+      "title": "AVAsynchronousVideoCompositionRequest"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,31 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that contains the information necessary for a video compositor to render an output pixel buffer."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1390379-sourceframebytrackid": {
-      "title": "sourceFrameByTrackID:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1390379-sourceframebytrackid",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/1390379-sourceframebytrackid",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the source pixel buffer for the specified track ID."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "sourceFrameByTrackID:"
+          "text": "An object that contains information a video compositor needs to render an output pixel buffer."
         }
       ]
     },
@@ -164,34 +148,6 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsnumber"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386888-compositiontime": {
-      "title": "compositionTime",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386888-compositiontime",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/1386888-compositiontime",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The time for which the frame should be composed."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1389112-rendercontext": {
-      "title": "renderContext",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1389112-rendercontext",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/1389112-rendercontext",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The video composition render context making the request."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1388898-sourcetrackids": {
       "title": "sourceTrackIDs",
       "type": "topic",
@@ -202,21 +158,93 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The track IDs of all the source buffers that are available to compose the frame."
+          "text": "The identifiers of tracks that contain source video."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386672-videocompositioninstruction": {
-      "title": "videoCompositionInstruction",
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750312-sourcesampledatatrackids": {
+      "title": "sourceSampleDataTrackIDs",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386672-videocompositioninstruction",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750312-sourcesampledatatrackids",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/1386672-videocompositioninstruction",
+      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/3750312-sourcesampledatatrackids",
       "abstract": [
         {
           "type": "text",
-          "text": "The video composition instruction to use to compose the frame."
+          "text": "The identifiers of tracks that contain source metadata."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1390379-sourceframebytrackid": {
+      "title": "sourceFrameByTrackID:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1390379-sourceframebytrackid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/1390379-sourceframebytrackid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a source pixel buffer for the track that contains the specified identifier."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "sourceFrameByTrackID:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750311-sourcesamplebufferbytrackid": {
+      "title": "sourceSampleBufferByTrackID:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750311-sourcesamplebufferbytrackid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/3750311-sourcesamplebufferbytrackid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a source sample buffer for the track that contains the specified identifier."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "sourceSampleBufferByTrackID:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750313-sourcetimedmetadatabytrackid": {
+      "title": "sourceTimedMetadataByTrackID:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750313-sourcetimedmetadatabytrackid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/3750313-sourcetimedmetadatabytrackid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a source timed metadata group for the track that contains the specified identifier."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "sourceTimedMetadataByTrackID:"
         }
       ]
     },
@@ -231,19 +259,13 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386888-compositiontime",
-        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1389112-rendercontext",
-        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386672-videocompositioninstruction"
+        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750312-sourcesampledatatrackids",
+        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1390379-sourceframebytrackid",
+        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750311-sourcesamplebufferbytrackid",
+        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750313-sourcetimedmetadatabytrackid"
       ],
-      "title": "Getting the Composition Request Settings",
+      "title": "Accessing Source Data",
       "generated": true
-    },
-    {
-      "title": "Related Documentation",
-      "generated": false,
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1390379-sourceframebytrackid"
-      ]
     }
   ],
   "primaryContentSections": [
@@ -294,6 +316,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -303,7 +326,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

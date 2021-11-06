@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Sets the width of the specified segment of the receiver."
+      "text": "Sets the width of the segment at the index you specify."
     }
   ],
   "documentVersion": 0,
@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UISegmentedControl(im)setWidth:forSegmentAtIndex:",
+    "parent": {
+      "title": "UISegmentedControl"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -118,30 +126,6 @@
       "role": "symbol",
       "url": "/documentation/uikit/uisegmentedcontrol/1618553-numberofsegments"
     },
-    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618581-widthforsegmentatindex": {
-      "title": "widthForSegmentAtIndex:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618581-widthforsegmentatindex",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisegmentedcontrol/1618581-widthforsegmentatindex",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the width of the indicated segment of the receiver."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "widthForSegmentAtIndex:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/coregraphics/cgfloat": {
       "title": "CGFloat",
       "type": "topic",
@@ -172,21 +156,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618577-segmentedcontrolstyle": {
-      "title": "segmentedControlStyle",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618577-segmentedcontrolstyle",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisegmentedcontrol/1618577-segmentedcontrolstyle",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The style of the segmented control."
-        }
-      ],
-      "deprecated": true
-    },
     "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618567-setenabled": {
       "title": "setEnabled:forSegmentAtIndex:",
       "type": "topic",
@@ -197,7 +166,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Enables the specified segment."
+          "text": "Enables the segment you specify."
         }
       ],
       "fragments": [
@@ -269,7 +238,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the offset for drawing the content (image or text) of the specified segment."
+          "text": "Returns the offset for drawing the content (image or text) of the segment you specify."
         }
       ],
       "fragments": [
@@ -293,7 +262,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Sets the width of the specified segment of the receiver."
+          "text": "Sets the width of the segment at the index you specify."
         }
       ],
       "fragments": [
@@ -304,6 +273,30 @@
         {
           "kind": "identifier",
           "text": "setWidth:forSegmentAtIndex:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618581-widthforsegmentatindex": {
+      "title": "widthForSegmentAtIndex:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618581-widthforsegmentatindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol/1618581-widthforsegmentatindex",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the width of the segment at the index you specify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "widthForSegmentAtIndex:"
         }
       ]
     },
@@ -321,6 +314,36 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618577-segmentedcontrolstyle": {
+      "title": "segmentedControlStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618577-segmentedcontrolstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol/1618577-segmentedcontrolstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The style of the segmented control."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolstyle": {
+      "title": "UISegmentedControlStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrolstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The styles of the segmented control. "
+        }
+      ],
+      "deprecated": true
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -333,13 +356,14 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618586-momentary",
-        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618577-segmentedcontrolstyle",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618567-setenabled",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618591-isenabledforsegmentatindex",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618574-setcontentoffset",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618580-contentoffsetforsegmentatindex",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618581-widthforsegmentatindex",
-        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618578-apportionssegmentwidthsbycontent"
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618578-apportionssegmentwidthsbycontent",
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618577-segmentedcontrolstyle",
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolstyle"
       ],
       "title": "Managing Segment Behavior and Appearance",
       "generated": true
@@ -421,6 +445,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -472,7 +497,7 @@
                 },
                 {
                   "type": "text",
-                  "text": ") minus 1; values exceeding this upper range are pinned to it. "
+                  "text": ") minus 1; the segmented control pins values exceeding this upper range to the last segment."
                 }
               ]
             }
@@ -482,7 +507,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

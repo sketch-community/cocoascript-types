@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A unique identifier from the app's media content catalog for the currently displayed media item."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -47,25 +53,33 @@
       {
         "name": "iOS",
         "introducedAt": "10.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.1",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0.1",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)NSUserActivity(py)externalMediaContentIdentifier",
+    "parent": {
+      "title": "NSUserActivity"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -170,22 +184,26 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity/2921646-externalmediacontentidentifier": {
+      "title": "externalMediaContentIdentifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/2921646-externalmediacontentidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity/2921646-externalmediacontentidentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unique identifier from the app's media content catalog for the currently displayed media item."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "primaryContentSections": [
@@ -226,6 +244,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -234,7 +253,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

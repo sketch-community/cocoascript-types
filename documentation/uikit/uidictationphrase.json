@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "5.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.1",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIDictationPhrase",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -173,20 +178,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uitextinputtokenizer": {
-      "title": "UITextInputTokenizer",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputtokenizer",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uitextinputtokenizer",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A tokenizer, which is an object that allows the text input system to evaluate text units of different granularities. "
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/uikeyinput": {
       "title": "UIKeyInput",
       "type": "topic",
@@ -201,6 +192,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uitextinputtraits": {
+      "title": "UITextInputTraits",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputtraits",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextinputtraits",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of methods that defines features for keyboard input to a text object. "
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uitextinputmode": {
       "title": "UITextInputMode",
       "type": "topic",
@@ -211,35 +216,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The current text-input mode. "
+          "text": "The current text input mode. "
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uitextinputstringtokenizer": {
-      "title": "UITextInputStringTokenizer",
+    "doc://com.apple.documentation/documentation/uikit/uitextinputassistantitem": {
+      "title": "UITextInputAssistantItem",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputstringtokenizer",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputassistantitem",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uitextinputstringtokenizer",
+      "url": "/documentation/uikit/uitextinputassistantitem",
       "abstract": [
         {
           "type": "text",
-          "text": "A base implementation of the text-input tokenizer protocol."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiinputview": {
-      "title": "UIInputView",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiinputview",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiinputview",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that displays and manages custom input for a view when that view becomes the first responder.  "
+          "text": "An object that manages bar button items that display in the shortcuts bar above the keyboard on iPad.  "
         }
       ]
     },
@@ -249,16 +240,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -278,7 +259,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uidictationphrase/1614510-alternativeinterpretations",
         "doc://com.apple.documentation/documentation/uikit/uidictationphrase/1614456-text"
-      ]
+      ],
+      "anchor": "1674431"
     }
   ],
   "seeAlsoSections": [
@@ -286,13 +268,12 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uitextinput",
         "doc://com.apple.documentation/documentation/uikit/uitextinputdelegate",
-        "doc://com.apple.documentation/documentation/uikit/uitextinputtokenizer",
         "doc://com.apple.documentation/documentation/uikit/uikeyinput",
+        "doc://com.apple.documentation/documentation/uikit/uitextinputtraits",
         "doc://com.apple.documentation/documentation/uikit/uitextinputmode",
-        "doc://com.apple.documentation/documentation/uikit/uitextinputstringtokenizer",
-        "doc://com.apple.documentation/documentation/uikit/uiinputview"
+        "doc://com.apple.documentation/documentation/uikit/uitextinputassistantitem"
       ],
-      "title": "Input",
+      "title": "Text Input",
       "generated": true
     }
   ],
@@ -330,6 +311,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -376,7 +358,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

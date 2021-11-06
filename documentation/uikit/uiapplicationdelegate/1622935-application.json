@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Called when the user selects a Home screen quick action for your app, except when you’ve intercepted the interaction in a launch method."
+      "text": "Tells the delegate that the user selected a Home screen quick action for your app, except when you’ve intercepted the interaction in a launch method."
     }
   ],
   "documentVersion": 0,
@@ -42,20 +42,28 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UIApplicationDelegate(im)application:performActionForShortcutItem:completionHandler:",
+    "parent": {
+      "title": "UIApplicationDelegate"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -108,7 +116,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of methods that you use to manage shared behaviors for your app. "
+          "text": "A set of methods to manage shared behaviors for your app. "
         }
       ]
     },
@@ -135,6 +143,24 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/objectivec/no"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiwindowscenedelegate/3238088-windowscene": {
+      "title": "windowScene:performActionForShortcutItem:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiwindowscenedelegate/3238088-windowscene",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiwindowscenedelegate/3238088-windowscene",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "windowScene:performActionForShortcutItem:completionHandler:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623032-application": {
       "title": "application:willFinishLaunchingWithOptions:",
@@ -187,6 +213,31 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiapplicationshortcutitem"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622935-application": {
+      "title": "application:performActionForShortcutItem:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622935-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/1622935-application",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the user selected a Home screen quick action for your app, except when you’ve intercepted the interaction in a launch method."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:performActionForShortcutItem:completionHandler:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622919-application": {
       "title": "application:willContinueUserActivityWithType:",
@@ -285,31 +336,6 @@
         {
           "kind": "identifier",
           "text": "application:didFailToContinueUserActivityWithType:error:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622935-application": {
-      "title": "application:performActionForShortcutItem:completionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622935-application",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplicationdelegate/1622935-application",
-      "required": false,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Called when the user selects a Home screen quick action for your app, except when you’ve intercepted the interaction in a launch method."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "application:performActionForShortcutItem:completionHandler:"
         }
       ]
     },
@@ -453,6 +479,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -486,7 +513,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The quick action for which you are providing an implementation in this method."
+                  "text": "The quick action for which you’re providing an implementation in this method."
                 }
               ]
             }
@@ -500,7 +527,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Call this block after your quick action implementation completes, returning "
+                  "text": "The block you call after your quick action implementation completes, returning "
                 },
                 {
                   "type": "reference",
@@ -541,7 +568,7 @@
                         "inlineContent": [
                           {
                             "type": "text",
-                            "text": "A Boolean value indicating whether or not your implementation succeeded."
+                            "text": "A Boolean value that indicates whether or not your implementation succeeded."
                           }
                         ]
                       }
@@ -565,10 +592,38 @@
         },
         {
           "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "This method is not called for scene-based apps. If you have a scene-based app, implement "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uiwindowscenedelegate/3238088-windowscene"
+                },
+                {
+                  "type": "text",
+                  "text": " in your scene delegate instead."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
           "inlineContent": [
             {
               "type": "text",
-              "text": "Implement this method to respond to the user’s selection of a Home screen quick action for your app; call the completion handler, with an appropriate Boolean value, when finished."
+              "text": "Implement this method to respond to the user’s selection of a Home screen quick action for your app. When finished, call the completion handler, with an appropriate Boolean value."
             }
           ]
         },
@@ -630,7 +685,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The requested quick action might employ code paths different than those used otherwise when your app launches. For example, say your app normally launches to display view A, but your app was launched in response to a quick action that needs view B. To handle such cases, check, on launch, whether your app is being launched via a quick action. Perform this check in your "
+              "text": "The requested quick action might employ code paths different than those used otherwise when your app launches. For example, your app normally launches to display view A, but your app was launched in response to a quick action that needs view B. To handle such cases, upon launch, check whether your app is being launched via a quick action. Perform this check in your "
             },
             {
               "type": "reference",
@@ -693,11 +748,12 @@
             },
             {
               "type": "text",
-              "text": ", the system does not call the "
+              "text": ", the system doesn't call the "
             },
             {
-              "type": "codeVoice",
-              "code": "application:performActionForShortcutItem:completionHandler:"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622935-application"
             },
             {
               "type": "text",
@@ -709,7 +765,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

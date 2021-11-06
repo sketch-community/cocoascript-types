@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVAssetTrack(py)metadata",
+    "parent": {
+      "title": "AVAssetTrack"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,7 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that provides the track-level interface to inspect an asset’s media tracks."
+          "text": "An object that models a track of media that an asset contains."
         }
       ]
     },
@@ -210,7 +218,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An array containing the metadata formats available for the track."
+          "text": "An array of metadata formats available for the track."
         }
       ]
     },
@@ -224,7 +232,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an array of metadata items matching the specified metadata format."
+          "text": "Returns metadata items that a track contains for the specified format."
         }
       ],
       "fragments": [
@@ -253,7 +261,7 @@
         "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1385751-availablemetadataformats",
         "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1387921-metadataforformat"
       ],
-      "title": "Managing Metadata",
+      "title": "Accessing Metadata",
       "generated": true
     }
   ],
@@ -305,6 +313,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -353,7 +362,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

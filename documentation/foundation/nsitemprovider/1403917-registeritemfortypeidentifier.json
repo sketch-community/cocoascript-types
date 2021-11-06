@@ -50,35 +50,43 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSItemProvider(im)registerItemForTypeIdentifier:loadHandler:",
+    "parent": {
+      "title": "NSItemProvider"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -179,6 +187,30 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888319-registerdatarepresentationfortyp": {
+      "title": "registerDataRepresentationForTypeIdentifier:visibility:loadHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888319-registerdatarepresentationfortyp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider/2888319-registerdatarepresentationfortyp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registers a data-backed representation for an item, specifiying item visibility and a load handler."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "registerDataRepresentationForTypeIdentifier:visibility:loadHandler:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403917-registeritemfortypeidentifier": {
       "title": "registerItemForTypeIdentifier:loadHandler:",
       "type": "topic",
@@ -212,20 +244,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403923-registeredtypeidentifiers": {
-      "title": "registeredTypeIdentifiers",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403923-registeredtypeidentifiers",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider/1403923-registeredtypeidentifiers",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the array of type identifiers for the item provider, listed in the same order in which they were registered."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -237,9 +255,9 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403923-registeredtypeidentifiers"
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888319-registerdatarepresentationfortyp"
       ],
-      "title": "Registering Custom Coercion Handlers",
+      "title": "Registering Data",
       "generated": true
     }
   ],
@@ -323,6 +341,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -432,7 +451,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

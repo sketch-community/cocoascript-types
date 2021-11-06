@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A player used to play a number of items in sequence."
+      "text": "An object that plays a sequence of player items."
     }
   ],
   "documentVersion": 0,
@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "4.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.1",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVQueuePlayer",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -129,7 +134,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a queue player with player items from the specified array."
+          "text": "Creates an object that plays a queue of items."
         }
       ],
       "fragments": [
@@ -153,15 +158,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an instance of "
-        },
-        {
-          "type": "codeVoice",
-          "code": "AVQueuePlayer"
-        },
-        {
-          "type": "text",
-          "text": " initialized to play items from a given array."
+          "text": "Returns an object that plays a queue of items."
         }
       ],
       "fragments": [
@@ -209,7 +206,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Ends playback of the current item and initiates playback of the next item in the player’s queue."
+          "text": "Ends playback of the current item and starts playback of the next item in the player’s queue."
         }
       ],
       "fragments": [
@@ -343,7 +340,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Respond to changes in a player's playback state."
+          "text": "Respond to changes in a player’s playback state."
         }
       ]
     },
@@ -357,7 +354,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Observe the playback time for an asset in order to update the player's state."
+          "text": "Observe the playback time for an asset in order to update the player’s state."
         }
       ]
     },
@@ -389,48 +386,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem": {
-      "title": "AVPlayerItem",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object used to model the timing and presentation state of an asset played by the player."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack": {
-      "title": "AVPlayerItemTrack",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritemtrack",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object used to modify the presentation state of an asset track being presented by a player."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer": {
-      "title": "AVPlayerLayer",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayerlayer",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that manages a player’s visual output."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer": {
       "title": "AVQueuePlayer",
       "type": "topic",
@@ -441,7 +396,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A player used to play a number of items in sequence."
+          "text": "An object that plays a sequence of player items."
         }
       ]
     },
@@ -455,35 +410,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that simplifies the playing of looping media content using a queue player."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avsynchronizedlayer": {
-      "title": "AVSynchronizedLayer",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsynchronizedlayer",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avsynchronizedlayer",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object used to synchronize with a specific player item."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs": {
-      "title": "Player Item Outputs",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/avfoundation/media_playback_and_selection/player_item_outputs",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Objects that provide access to the content of a player item’s tracks."
+          "text": "An object that loops media content using a queue player."
         }
       ]
     },
@@ -512,7 +439,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer/1389345-initwithitems",
         "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer/1538384-queueplayerwithitems"
-      ]
+      ],
+      "anchor": "1678876"
     },
     {
       "kind": "taskGroup",
@@ -524,7 +452,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer/1388543-insertitem",
         "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer/1387400-removeitem",
         "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer/1385788-removeallitems"
-      ]
+      ],
+      "anchor": "1919538"
     }
   ],
   "seeAlsoSections": [
@@ -536,14 +465,9 @@
         "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers",
         "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls",
         "doc://com.apple.documentation/documentation/avfoundation/avplayer",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper",
-        "doc://com.apple.documentation/documentation/avfoundation/avsynchronizedlayer",
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs"
+        "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper"
       ],
-      "title": "Media Playback",
+      "title": "Players",
       "generated": true
     }
   ],
@@ -581,6 +505,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -603,7 +528,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Use this class to create and manage a queue of player items composed of local or progressively downloaded file-based media, such as QuickTime movies or MP3 audio files, as well as media served using HTTP Live Streaming."
+              "text": "Use an instance of this class to manage a queue of player items."
             }
           ]
         }
@@ -611,7 +536,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

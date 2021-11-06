@@ -10,7 +10,8 @@
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/cloudkit"
+        "doc://com.apple.documentation/documentation/cloudkit",
+        "doc://com.apple.documentation/documentation/cloudkit/local_records"
       ]
     ]
   },
@@ -33,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKQueryOperation",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -95,6 +101,14 @@
       "type": "topic",
       "kind": "symbol",
       "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/local_records": {
+      "title": "Local Records",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/local_records",
+      "url": "/documentation/cloudkit/local_records",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckquery": {
       "title": "CKQuery",
@@ -340,7 +354,16 @@
           "type": "text",
           "text": "The block to execute when a record becomes available."
         }
-      ]
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckqueryoperation/3793708-recordmatchedblock": {
+      "title": "recordMatchedBlock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckqueryoperation/3793708-recordmatchedblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckqueryoperation/3793708-recordmatchedblock"
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckqueryoperation": {
       "title": "CKQueryOperation",
@@ -378,16 +401,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -406,7 +419,8 @@
         "doc://com.apple.documentation/documentation/cloudkit/ckqueryoperation/1514958-initwithquery",
         "doc://com.apple.documentation/documentation/cloudkit/ckqueryoperation/1515033-initwithcursor",
         "doc://com.apple.documentation/documentation/cloudkit/ckqueryoperation/1515115-init"
-      ]
+      ],
+      "anchor": "1666010"
     },
     {
       "kind": "taskGroup",
@@ -419,7 +433,8 @@
         "doc://com.apple.documentation/documentation/cloudkit/ckqueryoperation/1515078-resultslimit",
         "doc://com.apple.documentation/documentation/cloudkit/ckqueryoperationmaximumresults",
         "doc://com.apple.documentation/documentation/cloudkit/ckqueryoperation/1515268-desiredkeys"
-      ]
+      ],
+      "anchor": "1666051"
     },
     {
       "kind": "taskGroup",
@@ -427,7 +442,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckqueryoperation/1515283-recordfetchedblock",
         "doc://com.apple.documentation/documentation/cloudkit/ckqueryoperation/1515067-querycompletionblock"
-      ]
+      ],
+      "anchor": "1666137"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkit/ckqueryoperation/3793708-recordmatchedblock"
+      ],
+      "anchor": "3796739"
     }
   ],
   "seeAlsoSections": [
@@ -474,6 +498,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -692,7 +717,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

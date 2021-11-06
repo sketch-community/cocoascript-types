@@ -2,16 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "This action method searches for a candidate previous key view and, if it finds one, invokes "
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419366-makefirstresponder"
-    },
-    {
-      "type": "text",
-      "text": " to establish it as the first responder."
+      "text": "Searches for a candidate previous key view and, if it finds one, tries to make it the first responder."
     }
   ],
   "documentVersion": 0,
@@ -44,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSWindow(im)selectPreviousKeyView:",
+    "parent": {
+      "title": "NSWindow"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -109,24 +103,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nswindow/1419366-makefirstresponder": {
-      "title": "makeFirstResponder:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419366-makefirstresponder",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nswindow/1419366-makefirstresponder",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "makeFirstResponder:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/appkit/nsview/1483371-previousvalidkeyview": {
       "title": "previousValidKeyView",
       "type": "topic",
@@ -169,7 +145,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Makes key the view that precedes the given view."
+          "text": "Gives key view status to the view that precedes the given view."
         }
       ],
       "fragments": [
@@ -193,16 +169,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "This action method searches for a candidate next key view and, if it finds one, invokes "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419366-makefirstresponder"
-        },
-        {
-          "type": "text",
-          "text": " to establish it as the first responder."
+          "text": "Searches for a candidate next key view and, if it finds one, tries to make it the first responder."
         }
       ],
       "fragments": [
@@ -226,7 +193,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Makes key the view that follows the given view."
+          "text": "Gives key view status to the view that follows the given view."
         }
       ],
       "fragments": [
@@ -250,16 +217,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "This action method searches for a candidate previous key view and, if it finds one, invokes "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419366-makefirstresponder"
-        },
-        {
-          "type": "text",
-          "text": " to establish it as the first responder."
+          "text": "Searches for a candidate previous key view and, if it finds one, tries to make it the first responder."
         }
       ],
       "fragments": [
@@ -311,7 +269,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Marks the key view loop as dirty and in need of recalculation."
+          "text": "Marks the key view loop as “dirty” and in need of recalculation."
         }
       ],
       "fragments": [
@@ -435,7 +393,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The candidate is one of the following (searched for in this order):"
+              "text": "The candidate is one of the following (which this function searches for in this order):"
             }
           ]
         },
@@ -449,7 +407,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "The current first responder’s previous valid key view, as returned by the "
+                      "text": "The current first responder’s previous valid key view, which the "
                     },
                     {
                       "type": "reference",
@@ -463,6 +421,10 @@
                     {
                       "type": "codeVoice",
                       "code": "NSView"
+                    },
+                    {
+                      "type": "text",
+                      "text": " returns"
                     }
                   ]
                 }
@@ -475,7 +437,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "The object designated as the window’s initial first responder (using "
+                      "text": "The "
                     },
                     {
                       "type": "reference",
@@ -484,7 +446,7 @@
                     },
                     {
                       "type": "text",
-                      "text": ") if it returns "
+                      "text": " designates as the window’s initial first responder if it returns "
                     },
                     {
                       "type": "reference",
@@ -515,7 +477,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "Otherwise, the initial first responder’s previous valid key view, which may end up being "
+                      "text": "Otherwise, the initial first responder’s previous valid key view, which may be "
                     },
                     {
                       "type": "codeVoice",
@@ -531,7 +493,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

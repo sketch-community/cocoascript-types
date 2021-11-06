@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The configuration details for a symbol image. "
+      "text": "The configuration details for a symbol image."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)UIImage(py)symbolConfiguration",
+    "parent": {
+      "title": "UIImage"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -165,7 +173,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The configuration details for a symbol image. "
+          "text": "The configuration details for a symbol image."
         }
       ]
     },
@@ -189,16 +197,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "seeAlsoSections": [
@@ -249,6 +247,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
@@ -270,7 +269,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Use this property to access the traits and drawing-related attributes associated with the symbol image. The system uses the specified details to determine which variant of the image to load and draw and how to render it, falling back on the current environment as needed for any unspecified values. For symbol images, the default value of this property is a symbol image configuration object with unspecified values. For other image types, the default value of this property is "
+              "text": "Use this property to access the traits and rendering attributes associated with the symbol image. The system uses the specified details to determine which variant of the image to load and draw and how to render it, falling back on the current environment as needed for any unspecified values. For symbol images, the default value of this property is a symbol image configuration object with unspecified values. For other image types, the default value of this property is "
             },
             {
               "type": "codeVoice",
@@ -287,7 +286,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You cannot modify this property directly, but you can use the "
+              "text": "You can’t modify this property directly, but you can use the "
             },
             {
               "type": "reference",
@@ -296,7 +295,7 @@
             },
             {
               "type": "text",
-              "text": " method to create a new image object with a specific set of traits. You might do so when you want to render the image yourself using a specific set of traits. "
+              "text": " when you want to create a new image object with a specific set of traits."
             }
           ]
         },
@@ -314,7 +313,7 @@
             },
             {
               "type": "text",
-              "text": " object.  "
+              "text": " object."
             }
           ]
         }
@@ -322,7 +321,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

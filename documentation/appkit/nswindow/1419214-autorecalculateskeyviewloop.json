@@ -35,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSWindow(py)autorecalculatesKeyViewLoop",
+    "parent": {
+      "title": "NSWindow"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -140,7 +143,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Marks the key view loop as dirty and in need of recalculation."
+          "text": "Marks the key view loop as “dirty” and in need of recalculation."
         }
       ],
       "fragments": [
@@ -154,24 +157,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nswindow/1419366-makefirstresponder": {
-      "title": "makeFirstResponder:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419366-makefirstresponder",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nswindow/1419366-makefirstresponder",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "makeFirstResponder:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/appkit/nswindow/1419757-selectkeyviewprecedingview": {
       "title": "selectKeyViewPrecedingView:",
       "type": "topic",
@@ -182,7 +167,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Makes key the view that precedes the given view."
+          "text": "Gives key view status to the view that precedes the given view."
         }
       ],
       "fragments": [
@@ -206,7 +191,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Makes key the view that follows the given view."
+          "text": "Gives key view status to the view that follows the given view."
         }
       ],
       "fragments": [
@@ -230,16 +215,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "This action method searches for a candidate previous key view and, if it finds one, invokes "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419366-makefirstresponder"
-        },
-        {
-          "type": "text",
-          "text": " to establish it as the first responder."
+          "text": "Searches for a candidate previous key view and, if it finds one, tries to make it the first responder."
         }
       ],
       "fragments": [
@@ -263,16 +239,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "This action method searches for a candidate next key view and, if it finds one, invokes "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419366-makefirstresponder"
-        },
-        {
-          "type": "text",
-          "text": " to establish it as the first responder."
+          "text": "Searches for a candidate next key view and, if it finds one, tries to make it the first responder."
         }
       ],
       "fragments": [
@@ -429,7 +396,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

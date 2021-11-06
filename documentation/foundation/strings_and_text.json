@@ -30,8 +30,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -100,7 +100,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/1497293-string_encodings",
       "kind": "symbol",
       "role": "containerSymbol",
-      "url": "/documentation/foundation/1497293-string_encodings"
+      "url": "/documentation/foundation/1497293-string_encodings",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants for encoding standards used when converting raw data to and from string representations."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsattributedstring": {
       "title": "NSAttributedString",
@@ -126,7 +132,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A mutable string object that also contains attributes (such as visual style, hyperlinks, or accessibility data) associated with various portions of its text content. "
+          "text": "A mutable string with associated attributes (such as visual style, hyperlinks, or accessibility data) for portions of its text."
         }
       ]
     },
@@ -171,21 +177,6 @@
           "text": "Type for UTF-16 code units."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nslinguistictagger": {
-      "title": "NSLinguisticTagger",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagger",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nslinguistictagger",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Analyze natural language text to tag part of speech and lexical class, identify names, perform lemmatization, and determine the language and script."
-        }
-      ],
-      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/nsscanner": {
       "title": "NSScanner",
@@ -323,7 +314,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a localized version of a string."
+          "text": "Returns a localized version of a string from the default table, which Xcode autogenerates when exporting localizations."
         }
       ]
     },
@@ -337,7 +328,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a localized version of a string from the specified table."
+          "text": "Returns a localized version of a string from the table that you specify, which Xcode autogenerates when exporting localizations."
         }
       ]
     },
@@ -351,7 +342,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a localized version of a string from the specified table in the given bundle."
+          "text": "Returns a localized version of a string from the table and bundle that you specify, which Xcode autogenerates when exporting localizations."
         }
       ]
     },
@@ -365,9 +356,24 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a localized version of a string from the specified table in the given bundle while falling back on the given default value."
+          "text": "Returns a localized version of a string identified by a key in the table that you specify, which Xcode autogenerates when exporting localizations."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslinguistictagger": {
+      "title": "NSLinguisticTagger",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagger",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nslinguistictagger",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Analyze natural language text to tag part of speech and lexical class, identify names, perform lemmatization, and determine the language and script."
+        }
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/1497268-deprecated_string_encodings": {
       "title": "Deprecated String Encodings",
@@ -483,16 +489,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "topicSections": [
     {
       "kind": "taskGroup",
@@ -501,7 +497,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsstring",
         "doc://com.apple.documentation/documentation/foundation/nsmutablestring",
         "doc://com.apple.documentation/documentation/foundation/1497293-string_encodings"
-      ]
+      ],
+      "anchor": "2877896"
     },
     {
       "kind": "taskGroup",
@@ -509,7 +506,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsattributedstring",
         "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring"
-      ]
+      ],
+      "anchor": "2877897"
     },
     {
       "kind": "taskGroup",
@@ -518,14 +516,8 @@
         "doc://com.apple.documentation/documentation/foundation/nscharacterset",
         "doc://com.apple.documentation/documentation/foundation/nsmutablecharacterset",
         "doc://com.apple.documentation/documentation/foundation/unichar"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Natural Language Processing",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nslinguistictagger"
-      ]
+      ],
+      "anchor": "2877898"
     },
     {
       "kind": "taskGroup",
@@ -536,7 +528,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsdatadetector",
         "doc://com.apple.documentation/documentation/foundation/nstextcheckingresult",
         "doc://com.apple.documentation/documentation/foundation/nsnotfound"
-      ]
+      ],
+      "anchor": "2877899"
     },
     {
       "kind": "taskGroup",
@@ -544,7 +537,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsspellserver",
         "doc://com.apple.documentation/documentation/foundation/nsspellserverdelegate"
-      ]
+      ],
+      "anchor": "2877901"
     },
     {
       "kind": "taskGroup",
@@ -556,14 +550,17 @@
         "doc://com.apple.documentation/documentation/foundation/nslocalizedstringfromtable",
         "doc://com.apple.documentation/documentation/foundation/nslocalizedstringfromtableinbundle",
         "doc://com.apple.documentation/documentation/foundation/nslocalizedstringwithdefaultvalue"
-      ]
+      ],
+      "anchor": "2877955"
     },
     {
       "kind": "taskGroup",
       "title": "Deprecated",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nslinguistictagger",
         "doc://com.apple.documentation/documentation/foundation/1497268-deprecated_string_encodings"
-      ]
+      ],
+      "anchor": "3638513"
     }
   ],
   "seeAlsoSections": [
@@ -581,7 +578,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

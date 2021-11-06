@@ -36,18 +36,23 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Xcode",
         "introducedAt": "12.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -89,6 +94,20 @@
       "kind": "article",
       "role": "link",
       "url": "https://developer.apple.com/videos/play/wwdc2020/10083/"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/offering_actions_in_the_shortcuts_app": {
+      "title": "Offering Actions in the Shortcuts App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/offering_actions_in_the_shortcuts_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/offering_actions_in_the_shortcuts_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Suggest shortcuts users may want to add to Siri or combine with other actions in their own shortcuts."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/sirikit/adding_user_interactivity_with_siri_shortcuts_and_the_shortcuts_app": {
       "title": "Adding User Interactivity with Siri Shortcuts and the Shortcuts App",
@@ -146,45 +165,59 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/shortcut_management": {
-      "title": "Shortcut Management",
+    "doc://com.apple.documentation/documentation/sirikit/adding_shortcuts_for_wind_down": {
+      "title": "Adding Shortcuts for Wind Down",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/shortcut_management",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/adding_shortcuts_for_wind_down",
       "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/sirikit/shortcut_management",
+      "role": "sampleCode",
+      "url": "/documentation/sirikit/adding_shortcuts_for_wind_down",
       "abstract": [
         {
           "type": "text",
-          "text": "Enable users to add shortcuts to Siri, and have your app suggest shortcuts to users."
+          "text": "Reveal your app’s shortcuts inside the Health app."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face": {
-      "title": "Relevant Shortcuts for the Siri Watch Face",
+    "doc://com.apple.documentation/documentation/sirikit/ininteraction": {
+      "title": "INInteraction",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Display shortcuts on the Siri watch face."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/inshortcut": {
-      "title": "INShortcut",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inshortcut",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ininteraction",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/inshortcut",
+      "url": "/documentation/sirikit/ininteraction",
       "abstract": [
         {
           "type": "text",
-          "text": "An object representing an action available in your app that the system may suggest to a user or a user may add to Siri."
+          "text": "An interaction between the user and your app involving an intent object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/invoiceshortcutcenter": {
+      "title": "INVoiceShortcutCenter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/invoiceshortcutcenter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/invoiceshortcutcenter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieve the user's shortcuts and make shortcut suggestions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/invoiceshortcut": {
+      "title": "INVoiceShortcut",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/invoiceshortcut",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/invoiceshortcut",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A shortcut the user added to Siri."
         }
       ]
     },
@@ -202,24 +235,66 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/adding_shortcuts_for_wind_down": {
-      "title": "Adding Shortcuts for Wind Down",
+    "doc://com.apple.documentation/documentation/sirikit/inshortcut": {
+      "title": "INShortcut",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/adding_shortcuts_for_wind_down",
-      "kind": "article",
-      "role": "sampleCode",
-      "url": "/documentation/sirikit/adding_shortcuts_for_wind_down",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inshortcut",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inshortcut",
       "abstract": [
         {
           "type": "text",
-          "text": "Reveal your app’s shortcuts inside the Health app."
+          "text": "An object representing an action available in your app that the system may suggest to a user or a user may add to Siri."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/shortcut-related_ui": {
+      "title": "Shortcut-Related UI",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/shortcut-related_ui",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/shortcut-related_ui",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Incorporate standard buttons and interfaces into your user interface to offer easy shortcut creation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support": {
+      "title": "Watch and Widget Support",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/watch_and_widget_support",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Display relevant shortcuts on the Siri watch face and suggest widgets in Smart Stacks."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/siri_event_suggestions": {
+      "title": "Siri Event Suggestions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/siri_event_suggestions",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/siri_event_suggestions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide users with current, actionable information connected to a reservation."
         }
       ]
     },
     "https://docs-assets.developer.apple.com/published/d7195dc064/AddingShortcutsForWindDown.zip": {
       "type": "download",
       "identifier": "https://docs-assets.developer.apple.com/published/d7195dc064/AddingShortcutsForWindDown.zip",
-      "checksum": "13f409be18f135cff5051ab2a1d6f7750224d22c0dd3dc0807fbd816464fcadae80ef329adb059e1580484a4c57bb2342db23f415076c718dc2a647aa9a725fa",
+      "checksum": "067161ad90c0a2156e5fc8cf4bff04d5eb4d52fe1b76593742bfab05fe0bdc1c9d4aed05d6f576990b6da5350027465dbaf4ad33a6175eef1dd9c6c67bb531a5",
       "url": "https://docs-assets.developer.apple.com/published/d7195dc064/AddingShortcutsForWindDown.zip"
     },
     "doc://com.apple.documentation/documentation/technologies": {
@@ -241,16 +316,21 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/offering_actions_in_the_shortcuts_app",
         "doc://com.apple.documentation/documentation/sirikit/adding_user_interactivity_with_siri_shortcuts_and_the_shortcuts_app",
         "doc://com.apple.documentation/documentation/sirikit/donating_shortcuts",
         "doc://com.apple.documentation/documentation/sirikit/deleting_donated_shortcuts",
         "doc://com.apple.documentation/documentation/sirikit/soup_chef_accelerating_app_interactions_with_shortcuts",
-        "doc://com.apple.documentation/documentation/sirikit/shortcut_management",
-        "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face",
+        "doc://com.apple.documentation/documentation/sirikit/ininteraction",
+        "doc://com.apple.documentation/documentation/sirikit/invoiceshortcutcenter",
+        "doc://com.apple.documentation/documentation/sirikit/invoiceshortcut",
+        "doc://com.apple.documentation/documentation/sirikit/inshortcutavailabilityoptions",
         "doc://com.apple.documentation/documentation/sirikit/inshortcut",
-        "doc://com.apple.documentation/documentation/sirikit/inshortcutavailabilityoptions"
+        "doc://com.apple.documentation/documentation/sirikit/shortcut-related_ui",
+        "doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support",
+        "doc://com.apple.documentation/documentation/sirikit/siri_event_suggestions"
       ],
-      "title": "Shortcuts",
+      "title": "Shortcuts and Donations",
       "generated": true
     }
   ],
@@ -333,7 +413,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

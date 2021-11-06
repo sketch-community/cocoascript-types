@@ -33,35 +33,40 @@
       {
         "name": "iOS",
         "introducedAt": "5.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.8",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CLPlacemark",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -234,7 +239,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The abbreviated country name."
+          "text": "The abbreviated country or region name."
         }
       ]
     },
@@ -248,7 +253,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the country associated with the placemark."
+          "text": "The name of the country or region associated with the placemark."
         }
       ]
     },
@@ -471,16 +476,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -507,14 +502,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/corelocation/clplacemark/1423818-initwithplacemark",
         "doc://com.apple.documentation/documentation/corelocation/clplacemark/2132103-placemarkwithlocation"
-      ]
+      ],
+      "anchor": "1669473"
     },
     {
       "kind": "taskGroup",
       "title": "Accessing the Location Data",
       "identifiers": [
         "doc://com.apple.documentation/documentation/corelocation/clplacemark/1423603-location"
-      ]
+      ],
+      "anchor": "1669505"
     },
     {
       "kind": "taskGroup",
@@ -532,7 +529,8 @@
         "doc://com.apple.documentation/documentation/corelocation/clplacemark/1423782-subthoroughfare",
         "doc://com.apple.documentation/documentation/corelocation/clplacemark/1423808-region",
         "doc://com.apple.documentation/documentation/corelocation/clplacemark/1423707-timezone"
-      ]
+      ],
+      "anchor": "1669525"
     },
     {
       "kind": "taskGroup",
@@ -540,7 +538,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/corelocation/clplacemark/2890749-postaladdress",
         "doc://com.apple.documentation/documentation/corelocation/clplacemark/1423605-addressdictionary"
-      ]
+      ],
+      "anchor": "2920386"
     },
     {
       "kind": "taskGroup",
@@ -548,14 +547,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/corelocation/clplacemark/1423738-inlandwater",
         "doc://com.apple.documentation/documentation/corelocation/clplacemark/1423619-ocean"
-      ]
+      ],
+      "anchor": "1669663"
     },
     {
       "kind": "taskGroup",
       "title": "Accessing Landmark Information",
       "identifiers": [
         "doc://com.apple.documentation/documentation/corelocation/clplacemark/1423673-areasofinterest"
-      ]
+      ],
+      "anchor": "1669706"
     }
   ],
   "seeAlsoSections": [
@@ -602,6 +603,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -632,7 +634,7 @@
             },
             {
               "type": "text",
-              "text": " object stores placemark data for a given latitude and longitude. Placemark data includes information such as the country, state, city, and street address associated with the specified coordinate. It can also include points of interest and geographically related data. "
+              "text": " object stores placemark data for a given latitude and longitude. Placemark data includes information such as the country or region, state, city, and street address associated with the specified coordinate. It can also include points of interest and geographically related data. "
             }
           ]
         },
@@ -676,7 +678,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

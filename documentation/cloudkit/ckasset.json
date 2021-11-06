@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An object that represents a large file for a record."
+      "text": "An external file that belongs to a record."
     }
   ],
   "documentVersion": 0,
@@ -33,35 +33,40 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKAsset",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -96,6 +101,20 @@
       "kind": "symbol",
       "role": "collection"
     },
+    "doc://com.apple.documentation/documentation/cloudkit/ckasset": {
+      "title": "CKAsset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckasset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckasset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An external file that belongs to a record."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/cloudkit/ckasset/1515050-fileurl": {
       "title": "fileURL",
       "type": "topic",
@@ -109,6 +128,30 @@
           "text": "The URL for accessing the asset."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordsoperation": {
+      "title": "CKFetchRecordsOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordsoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchrecordsoperation"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckqueryoperation": {
+      "title": "CKQueryOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckqueryoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckqueryoperation"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation": {
+      "title": "CKFetchRecordZoneChangesOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchrecordzonechangesoperation"
     },
     "doc://com.apple.documentation/documentation/objectivec/nil-2gl": {
       "title": "nil",
@@ -150,17 +193,87 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckasset": {
-      "title": "CKAsset",
+    "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database": {
+      "title": "Designing and Creating a CloudKit Database",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckasset",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckasset",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/cloudkit/designing_and_creating_a_cloudkit_database",
       "abstract": [
         {
           "type": "text",
-          "text": "An object that represents a large file for a record."
+          "text": "Create a schema to store your app’s objects as records in iCloud using CloudKit."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_the_cloudkit_database_app": {
+      "title": "Managing iCloud Containers with the CloudKit Database App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_the_cloudkit_database_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/cloudkit/managing_icloud_containers_with_the_cloudkit_database_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inspect and modify the schema and data for your app's iCloud container."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecordzone": {
+      "title": "CKRecordZone",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordzone",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecordzone",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A database partition that contains related records."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecord": {
+      "title": "CKRecord",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecord",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A collection of key-value pairs that store your app’s data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckreference": {
+      "title": "CKReference",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckreference",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckreference",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A relationship between two records in a record zone."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/integrating_a_text-based_schema_into_your_workflow": {
+      "title": "Integrating a Text-Based Schema into Your Workflow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/integrating_a_text-based_schema_into_your_workflow",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/cloudkit/integrating_a_text-based_schema_into_your_workflow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Define and update your schema with the CloudKit Schema Language."
         }
       ]
     },
@@ -170,16 +283,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -198,14 +301,30 @@
       "title": "Creating an Asset",
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckasset/1514990-initwithfileurl"
-      ]
+      ],
+      "anchor": "1666187"
     },
     {
       "kind": "taskGroup",
       "title": "Getting the URL of the Asset",
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckasset/1515050-fileurl"
-      ]
+      ],
+      "anchor": "1666219"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database",
+        "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_the_cloudkit_database_app",
+        "doc://com.apple.documentation/documentation/cloudkit/ckrecordzone",
+        "doc://com.apple.documentation/documentation/cloudkit/ckrecord",
+        "doc://com.apple.documentation/documentation/cloudkit/ckreference",
+        "doc://com.apple.documentation/documentation/cloudkit/integrating_a_text-based_schema_into_your_workflow"
+      ],
+      "title": "Schemas",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -242,6 +361,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -264,34 +384,59 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Use asset objects to incorporate external files—such as image, sound, video, text, and binary data files—into your app’s records. You can also use assets in places where the data you want to assign to a field is more than a few kilobytes in size. To associate an asset with a record, assign it as the value of one of the record’s fields."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "CloudKit stores the content of an asset separately from the record that references it, but maintains close association with that record. When you save a record that has an asset, CloudKit saves both the record and the asset data to the server. Similarly, when you fetch the record, the server returns the record data and any assets. If multiple records refer to the same asset, however, CloudKit saves or fetches only one copy of the asset data. CloudKit saves only the asset data; it doesn’t save the filename or any other metadata for the file that you provide. "
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "When you download a record that contains an asset, CloudKit retains the asset data, but may delete it in the future to free up disk space. After fetching a record that contains an asset, you can retrieve the asset data with the URL in the "
+              "text": "Use assets to incorporate external files into your app’s records, such as photos, videos, and binary files. Alternatively, use assets when a field’s value is more than a few kilobytes in size. To associate an instance of "
             },
             {
               "type": "reference",
-              "isActive": true,
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckasset"
+            },
+            {
+              "type": "text",
+              "text": " with a record, assign it to one of its fields."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "CloudKit stores only an asset’s data. If you require its filename, or any other file-system metadata, use one or more separate fields on the record to store it."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "CloudKit stores an asset’s data separately from a record that references it, but maintains an association with that record. When you save a record that has an asset, CloudKit saves both the record and the asset to the server. Similarly, when you fetch the record, the server returns the record and the asset."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you fetch a record that contains an asset, CloudKit stores the asset’s data in a staging area accessible to your app. Use the asset’s "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
               "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckasset/1515050-fileurl"
             },
             {
               "type": "text",
-              "text": " property. If you want to ensure that the asset’s data remains local to the device, write the data to a file in your app’s local container directory and reference the data from the new file."
+              "text": " property to access its staged location. The system regularly deletes files in the staging area to reclaim disk space. To avoid this behavior, move the data into your app’s container as soon as you fetch it."
             }
           ]
         },
@@ -300,7 +445,51 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You can’t delete asset data directly from the server. When you no longer want the data for an asset, remove all asset objects that point to that data from your records. For example, for a record that contains an asset as a field, set the value of the field to "
+              "text": "If you don’t require the asset when retrieving records, use the operation’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "desiredKeys"
+            },
+            {
+              "type": "text",
+              "text": " property to exclude the field. For more information, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordsoperation"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckqueryoperation"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you no longer require an asset that’s on the server, you don’t delete it. Instead, orphan the asset by setting any fields that contain the asset to "
             },
             {
               "type": "reference",
@@ -309,15 +498,19 @@
             },
             {
               "type": "text",
-              "text": ". When no asset objects refer to the data, the server lazily deletes the asset data in the future, which could be up to several days later."
+              "text": " and then saving the record. CloudKit periodically deletes orphaned assets from the server."
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

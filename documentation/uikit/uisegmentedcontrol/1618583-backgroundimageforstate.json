@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "5.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UISegmentedControl(im)backgroundImageForState:barMetrics:",
+    "parent": {
+      "title": "UISegmentedControl"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,7 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Sets the background image for a given state and bar metrics."
+          "text": "Sets the background image for given state and bar metrics."
         }
       ],
       "fragments": [
@@ -157,6 +165,20 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uibarmetrics"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3335209-selectedsegmenttintcolor": {
+      "title": "selectedSegmentTintColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3335209-selectedsegmenttintcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol/3335209-selectedsegmenttintcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The color to use for highlighting the currently selected segment."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618583-backgroundimageforstate": {
       "title": "backgroundImageForState:barMetrics:",
@@ -216,7 +238,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the content positioning offset for a given segment and bar metrics."
+          "text": "Sets the content positioning offset for a given segment and bar metrics."
         }
       ],
       "fragments": [
@@ -227,6 +249,20 @@
         {
           "kind": "identifier",
           "text": "setContentPositionAdjustment:forSegmentType:barMetrics:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolsegment": {
+      "title": "UISegmentedControlSegment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolsegment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrolsegment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants for specifying a segment in a control"
         }
       ]
     },
@@ -264,7 +300,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Sets the divider image used for a given combination of left and right segment states and bar metrics. "
+          "text": "Sets the divider image to use for a given combination of left and right segment states and bar metrics."
         }
       ],
       "fragments": [
@@ -337,9 +373,11 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3335209-selectedsegmenttintcolor",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618571-setbackgroundimage",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618593-contentpositionadjustmentforsegm",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618555-setcontentpositionadjustment",
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolsegment",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618565-dividerimageforleftsegmentstate",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618558-setdividerimage",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618566-titletextattributesforstate",
@@ -431,6 +469,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -540,7 +579,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

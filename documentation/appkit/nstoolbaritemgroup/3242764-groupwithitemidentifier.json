@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates a grouped toolbar item with labels."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -37,20 +43,23 @@
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.1",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)NSToolbarItemGroup(cm)groupWithItemIdentifier:titles:selectionMode:labels:target:action:",
+    "parent": {
+      "title": "NSToolbarItemGroup"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -163,6 +172,54 @@
       "role": "symbol",
       "url": "/documentation/appkit/nstoolbaritemgroupselectionmode"
     },
+    "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242763-groupwithitemidentifier": {
+      "title": "groupWithItemIdentifier:images:selectionMode:labels:target:action:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242763-groupwithitemidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstoolbaritemgroup/3242763-groupwithitemidentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a grouped toolbar item with images."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "groupWithItemIdentifier:images:selectionMode:labels:target:action:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242764-groupwithitemidentifier": {
+      "title": "groupWithItemIdentifier:titles:selectionMode:labels:target:action:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242764-groupwithitemidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstoolbaritemgroup/3242764-groupwithitemidentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a grouped toolbar item with labels."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "groupWithItemIdentifier:titles:selectionMode:labels:target:action:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -171,6 +228,15 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242763-groupwithitemidentifier"
+      ],
+      "title": "Creating Grouped Toolbar Items",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -379,10 +445,119 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "itemIdentifier",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The identifier for the grouped toolbar item."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "titles",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "An array of titles to present as subitems in the grouped toolbar item."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "selectionMode",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A Boolean value that indicates how the grouped toolbar item presents selections."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "labels",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Labels that correspond to the specified titles."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "target",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The target that the toolbar calls upon selection."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If target is "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "nil"
+                },
+                {
+                  "type": "text",
+                  "text": ", the toolbar attempts to invoke the specified action on the first responder and, failing that, passes the action up the responder chain."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "action",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The selector that the toolbar invokes on the target."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

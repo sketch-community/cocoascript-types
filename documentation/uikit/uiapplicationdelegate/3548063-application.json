@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns the object capable of handling the specified intent."
+      "text": "Asks the delegate for an intent handler capable of handling the specified intent."
     }
   ],
   "documentVersion": 0,
@@ -42,25 +42,33 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UIApplicationDelegate(im)application:handlerForIntent:",
+    "parent": {
+      "title": "UIApplicationDelegate"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -113,7 +121,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of methods that you use to manage shared behaviors for your app. "
+          "text": "A set of methods to manage shared behaviors for your app. "
         }
       ]
     },
@@ -141,6 +149,14 @@
       "role": "symbol",
       "url": "/documentation/sirikit/inplaymediaintenthandling"
     },
+    "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handlers": {
+      "title": "Dispatching Intents to Handlers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handlers",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/dispatching_intents_to_handlers"
+    },
     "doc://com.apple.documentation/documentation/bundleresources/information_property_list/inintentssupported": {
       "title": "INIntentsSupported",
       "type": "topic",
@@ -149,13 +165,13 @@
       "role": "symbol",
       "url": "/documentation/bundleresources/information_property_list/inintentssupported"
     },
-    "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_app_extension": {
+    "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure/creating_an_intents_app_extension": {
       "title": "Creating an Intents App Extension",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_app_extension",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure/creating_an_intents_app_extension",
       "kind": "article",
       "role": "article",
-      "url": "/documentation/sirikit/creating_an_intents_app_extension"
+      "url": "/documentation/sirikit/intent_handling_infrastructure/creating_an_intents_app_extension"
     },
     "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents": {
       "title": "Resolving and Handling Intents",
@@ -184,7 +200,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the object capable of handling the specified intent."
+          "text": "Asks the delegate for an intent handler capable of handling the specified intent."
         }
       ],
       "fragments": [
@@ -290,6 +306,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -324,7 +341,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The intent object representing the request coming from the system."
+                  "text": "The intent object that represents the request coming from the system."
                 }
               ]
             }
@@ -346,7 +363,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The object capable of handling the specified intent or "
+              "text": "An instance of a type capable of handling the specified intent or "
             },
             {
               "type": "codeVoice",
@@ -354,7 +371,7 @@
             },
             {
               "type": "text",
-              "text": " if your app doesn’t handle the intent. Return an object that conforms to the protocol for handling intents of the same type as the provided "
+              "text": " if your app doesn’t handle the intent. Return an instance of a type that conforms to the protocol for handling intents of the same type as the provided "
             },
             {
               "type": "codeVoice",
@@ -408,7 +425,16 @@
             },
             {
               "type": "text",
-              "text": " protocol."
+              "text": " protocol. For more information, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handlers"
+            },
+            {
+              "type": "text",
+              "text": "."
             }
           ]
         },
@@ -480,7 +506,7 @@
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_app_extension"
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure/creating_an_intents_app_extension"
             },
             {
               "type": "text",
@@ -510,7 +536,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

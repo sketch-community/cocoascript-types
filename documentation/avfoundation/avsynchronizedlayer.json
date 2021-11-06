@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An object used to synchronize with a specific player item."
+      "text": "A Core Animation layer that derives its timing from a player item so that you can synchronize layer animations with media playback."
     }
   ],
   "documentVersion": 0,
@@ -34,30 +34,35 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVSynchronizedLayer",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -200,118 +205,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/seeking_through_media": {
-      "title": "Seeking Through Media",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/seeking_through_media",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/avfoundation/media_playback_and_selection/seeking_through_media",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Seek or scrub across a media item to quickly access a specific time point."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_playback_state": {
-      "title": "Observing Playback State",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_playback_state",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/avfoundation/media_playback_and_selection/observing_playback_state",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Respond to changes in a player's playback state."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_the_playback_time": {
-      "title": "Observing the Playback Time",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_the_playback_time",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/avfoundation/media_playback_and_selection/observing_the_playback_time",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Observe the playback time for an asset in order to update the player's state."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers": {
-      "title": "Presenting Chapter Markers",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Add chapter markers to enable users to quickly navigate your content."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls": {
-      "title": "Creating a Movie Player App with Basic Playback Controls",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls",
-      "kind": "article",
-      "role": "sampleCode",
-      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Play movies using a custom interface that implements simple playback functionality."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayer": {
-      "title": "AVPlayer",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayer",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that provides the interface to control the player’s transport behavior."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem": {
-      "title": "AVPlayerItem",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object used to model the timing and presentation state of an asset played by the player."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack": {
-      "title": "AVPlayerItemTrack",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritemtrack",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object used to modify the presentation state of an asset track being presented by a player."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer": {
       "title": "AVPlayerLayer",
       "type": "topic",
@@ -322,35 +215,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that manages a player’s visual output."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer": {
-      "title": "AVQueuePlayer",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avqueueplayer",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A player used to play a number of items in sequence."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper": {
-      "title": "AVPlayerLooper",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayerlooper",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that simplifies the playing of looping media content using a queue player."
+          "text": "An object that presents the visual contents of a player object."
         }
       ]
     },
@@ -364,21 +229,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to synchronize with a specific player item."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs": {
-      "title": "Player Item Outputs",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/avfoundation/media_playback_and_selection/player_item_outputs",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Objects that provide access to the content of a player item’s tracks."
+          "text": "A Core Animation layer that derives its timing from a player item so that you can synchronize layer animations with media playback."
         }
       ]
     },
@@ -388,16 +239,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -416,40 +257,32 @@
       "title": "Creating a Synchronized Layer",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avsynchronizedlayer/1388781-synchronizedlayerwithplayeritem"
-      ]
+      ],
+      "anchor": "1668624"
     },
     {
       "kind": "taskGroup",
       "title": "Managing the Player Item",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avsynchronizedlayer/1385679-playeritem"
-      ]
+      ],
+      "anchor": "1668655"
     },
     {
       "kind": "taskGroup",
       "title": "Supporting Types",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcoreanimationbegintimeatzero"
-      ]
+      ],
+      "anchor": "2936456"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/seeking_through_media",
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_playback_state",
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_the_playback_time",
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers",
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayer",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer",
-        "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper",
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs"
+        "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer"
       ],
-      "title": "Media Playback",
+      "title": "Player Presentation",
       "generated": true
     }
   ],
@@ -487,6 +320,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -644,7 +478,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

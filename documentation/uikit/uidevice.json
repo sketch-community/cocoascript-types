@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIDevice",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -119,7 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the physical orientation of the device."
+          "text": "The physical orientation of the device."
         }
       ]
     },
@@ -133,7 +138,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the orientation of the device changes."
+          "text": "A notification that posts when the orientation of the device changes."
         }
       ]
     },
@@ -223,25 +228,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value indicating whether the proximity sensor is close to the user ("
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-        },
-        {
-          "type": "text",
-          "text": ") or not ("
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
-        },
-        {
-          "type": "text",
-          "text": ")."
+          "text": "A Boolean value that indicates whether the proximity sensor is close to the user."
         }
       ]
     },
@@ -269,22 +256,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/objectivec/yes": {
-      "title": "YES",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/yes"
-    },
-    "doc://com.apple.documentation/documentation/objectivec/no": {
-      "title": "NO",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/no"
-    },
     "doc://com.apple.documentation/documentation/uikit/uidevice/1620014-currentdevice": {
       "title": "currentDevice",
       "type": "topic",
@@ -295,7 +266,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an object representing the current device."
+          "text": "An object that represents the current device."
         }
       ]
     },
@@ -317,7 +288,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value indicating whether multitasking is supported on the current device."
+          "text": "A Boolean value that indicates whether the current device supports multitasking."
         }
       ]
     },
@@ -331,7 +302,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name identifying the device."
+          "text": "The name of the device."
         }
       ]
     },
@@ -345,7 +316,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the operating system running on the device represented by the receiver."
+          "text": "The name of the operating system running on the device."
         }
       ]
     },
@@ -429,7 +400,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The physical orientation of the device. "
+          "text": "Constants that describe the physical orientation of the device. "
         }
       ]
     },
@@ -443,25 +414,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the receiver generates orientation notifications ("
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-        },
-        {
-          "type": "text",
-          "text": ") or not ("
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
-        },
-        {
-          "type": "text",
-          "text": ")."
+          "text": "A Boolean value that indicates whether the device generates orientation notifications."
         }
       ]
     },
@@ -475,7 +428,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the device is in a portrait orientation."
+          "text": "Returns a Boolean value that indicates whether the device is in a portrait orientation."
         }
       ]
     },
@@ -489,7 +442,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the device is in a landscape orientation."
+          "text": "Returns a Boolean value that indicates whether the device is in a landscape orientation."
         }
       ]
     },
@@ -503,7 +456,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the specified orientation is face up or face down."
+          "text": "Returns a Boolean value that indicates whether the specified orientation is face up or face down."
         }
       ]
     },
@@ -517,7 +470,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the specified orientation is one of the portrait or landscape orientations. "
+          "text": "Returns a Boolean value that indicates whether the specified orientation is one of the portrait or landscape orientations. "
         }
       ]
     },
@@ -531,25 +484,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value indicating whether battery monitoring is enabled ("
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-        },
-        {
-          "type": "text",
-          "text": ") or not ("
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
-        },
-        {
-          "type": "text",
-          "text": ")."
+          "text": "A Boolean value that indicates whether battery monitoring is enabled."
         }
       ]
     },
@@ -563,7 +498,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The battery power state of the device."
+          "text": "Constants that describe the battery power state of the device."
         }
       ]
     },
@@ -577,25 +512,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value indicating whether proximity monitoring is enabled ("
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-        },
-        {
-          "type": "text",
-          "text": ") or not ("
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
-        },
-        {
-          "type": "text",
-          "text": ")."
+          "text": "A Boolean value that indicates whether proximity monitoring is enabled."
         }
       ]
     },
@@ -609,7 +526,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The interface type for the device or an object that has a trait environment, such as a view and view controller."
+          "text": "Constants that indicate the interface type for the device or an object that has a trait environment, such as a view and view controller."
         }
       ]
     },
@@ -638,7 +555,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the battery level changes."
+          "text": "A notification that posts when the battery level changes."
         }
       ]
     },
@@ -652,7 +569,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when battery state changes."
+          "text": "A notification that posts when battery state changes."
         }
       ]
     },
@@ -666,7 +583,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the state of the proximity sensor changes."
+          "text": "A notification that posts when the state of the proximity sensor changes."
         }
       ]
     },
@@ -680,7 +597,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object describing the configuration of the status bar. "
+          "text": "An object that describes the configuration of the status bar. "
         }
       ]
     },
@@ -690,16 +607,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -718,14 +625,16 @@
       "title": "Getting the Shared Device Instance",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uidevice/1620014-currentdevice"
-      ]
+      ],
+      "anchor": "1658473"
     },
     {
       "kind": "taskGroup",
       "title": "Determining the Available Features",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uidevice/1620036-multitaskingsupported"
-      ]
+      ],
+      "anchor": "1658491"
     },
     {
       "kind": "taskGroup",
@@ -738,7 +647,8 @@
         "doc://com.apple.documentation/documentation/uikit/uidevice/1620029-localizedmodel",
         "doc://com.apple.documentation/documentation/uikit/uidevice/1620037-userinterfaceidiom",
         "doc://com.apple.documentation/documentation/uikit/uidevice/1620059-identifierforvendor"
-      ]
+      ],
+      "anchor": "1658512"
     },
     {
       "kind": "taskGroup",
@@ -749,7 +659,8 @@
         "doc://com.apple.documentation/documentation/uikit/uidevice/1620055-generatesdeviceorientationnotifi",
         "doc://com.apple.documentation/documentation/uikit/uidevice/1620041-begingeneratingdeviceorientation",
         "doc://com.apple.documentation/documentation/uikit/uidevice/1620033-endgeneratingdeviceorientationno"
-      ]
+      ],
+      "anchor": "1658574"
     },
     {
       "kind": "taskGroup",
@@ -759,7 +670,8 @@
         "doc://com.apple.documentation/documentation/uikit/1620061-uideviceorientationislandscape",
         "doc://com.apple.documentation/documentation/uikit/2981866-uideviceorientationisflat",
         "doc://com.apple.documentation/documentation/uikit/1623095-uideviceorientationisvalidinterf"
-      ]
+      ],
+      "anchor": "2864749"
     },
     {
       "kind": "taskGroup",
@@ -769,7 +681,8 @@
         "doc://com.apple.documentation/documentation/uikit/uidevice/1620045-batterymonitoringenabled",
         "doc://com.apple.documentation/documentation/uikit/uidevice/1620051-batterystate",
         "doc://com.apple.documentation/documentation/uikit/uidevicebatterystate"
-      ]
+      ],
+      "anchor": "1658622"
     },
     {
       "kind": "taskGroup",
@@ -777,14 +690,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uidevice/1620017-proximitymonitoringenabled",
         "doc://com.apple.documentation/documentation/uikit/uidevice/1620058-proximitystate"
-      ]
+      ],
+      "anchor": "1658660"
     },
     {
       "kind": "taskGroup",
       "title": "Playing Input Clicks",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uidevice/1620050-playinputclick"
-      ]
+      ],
+      "anchor": "1658710"
     },
     {
       "kind": "taskGroup",
@@ -792,17 +707,19 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiuserinterfaceidiom",
         "doc://com.apple.documentation/documentation/uikit/1620016-ui_user_interface_idiom"
-      ]
+      ],
+      "anchor": "2864754"
     },
     {
       "kind": "taskGroup",
-      "title": "Notifications",
+      "title": "Managing Notifications",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uidevicebatteryleveldidchangenotification",
         "doc://com.apple.documentation/documentation/uikit/uidevicebatterystatedidchangenotification",
         "doc://com.apple.documentation/documentation/uikit/uideviceorientationdidchangenotification",
         "doc://com.apple.documentation/documentation/uikit/uideviceproximitystatedidchangenotification"
       ],
+      "anchor": "1674666",
       "discussion": {
         "kind": "content",
         "content": [
@@ -814,8 +731,9 @@
                 "text": "All "
               },
               {
-                "type": "codeVoice",
-                "code": "UIDevice"
+                "type": "reference",
+                "isActive": false,
+                "identifier": "doc://com.apple.documentation/documentation/uikit/uidevice"
               },
               {
                 "type": "text",
@@ -879,6 +797,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -1030,7 +949,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

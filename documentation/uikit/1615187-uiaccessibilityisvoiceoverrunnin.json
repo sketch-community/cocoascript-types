@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns a Boolean value indicating whether the user has enabled VoiceOver."
+      "text": "A Boolean value that indicates whether VoiceOver is in an enabled state."
     }
   ],
   "documentVersion": 0,
@@ -11,12 +11,12 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit"
       ]
     ]
   },
@@ -39,25 +39,30 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@F@UIAccessibilityIsVoiceOverRunning",
     "symbolKind": "func"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -92,10 +97,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -107,22 +112,6 @@
       "type": "topic",
       "kind": "symbol",
       "role": "collection"
-    },
-    "doc://com.apple.documentation/documentation/objectivec/yes": {
-      "title": "YES",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/yes"
-    },
-    "doc://com.apple.documentation/documentation/objectivec/no": {
-      "title": "NO",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/no"
     },
     "doc://com.apple.documentation/documentation/uikit/uiaccessibilityvoiceoverstatusdidchangenotification": {
       "title": "UIAccessibilityVoiceOverStatusDidChangeNotification",
@@ -142,7 +131,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled AssistiveTouch."
+          "text": "A Boolean value that indicates whether AssistiveTouch is in an enabled state."
         }
       ]
     },
@@ -156,7 +145,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled VoiceOver."
+          "text": "A Boolean value that indicates whether VoiceOver is in an enabled state."
         }
       ]
     },
@@ -170,7 +159,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled Switch Control. "
+          "text": "A Boolean value that indicates whether the Switch Control setting is in an enabled state. "
         }
       ]
     },
@@ -184,7 +173,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled the Shake to Undo setting."
+          "text": "A Boolean value that indicates whether the Shake to Undo setting is in an enabled state."
         }
       ]
     },
@@ -198,7 +187,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled the Closed Captions + SDH setting."
+          "text": "A Boolean value that indicates whether the Closed Captions + SDH setting is in an enabled state."
         }
       ]
     },
@@ -212,7 +201,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled the Bold Text setting. "
+          "text": "A Boolean value that indicates whether the Bold Text setting is in an enabled state. "
         }
       ]
     },
@@ -226,7 +215,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled the Increase Contrast setting."
+          "text": "A Boolean value that indicates whether the Increase Contrast setting is in an enabled state."
         }
       ]
     },
@@ -240,7 +229,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled the Grayscale option in the Color Filters setting."
+          "text": "A Boolean value that indicates whether the Color Filters and the Grayscale settings are in an enabled state."
         }
       ]
     },
@@ -254,7 +243,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled Guided Access."
+          "text": "A Boolean value that indicates whether the Guided Access setting is in an enabled state."
         }
       ]
     },
@@ -268,7 +257,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled the Classic Invert setting."
+          "text": "A Boolean value that indicates whether the Classic Invert setting is in an enabled state."
         }
       ]
     },
@@ -282,7 +271,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled the Mono Audio setting."
+          "text": "A Boolean value that indicates whether the Mono Audio setting is in an enabled state."
         }
       ]
     },
@@ -296,7 +285,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled the Reduce Motion setting."
+          "text": "A Boolean value that indicates whether the Reduce Motion setting is in an enabled state."
         }
       ]
     },
@@ -310,7 +299,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled the Reduce Transparency setting."
+          "text": "A Boolean value that indicates whether the Reduce Transparency setting is in an enabled state."
         }
       ]
     },
@@ -324,7 +313,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled the Speak Screen setting."
+          "text": "A Boolean value that indicates whether the Speak Screen setting is in an enabled state."
         }
       ]
     },
@@ -338,7 +327,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled the Speak Selection setting. "
+          "text": "A Boolean value that indicates whether the Speak Selection setting is in an enabled state. "
         }
       ]
     },
@@ -352,7 +341,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled the On/Off Labels setting."
+          "text": "A Boolean value that indicates whether the On/Off Labels setting is in an enabled state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/3238036-uiaccessibilityisvideoautoplayen": {
+      "title": "UIAccessibilityIsVideoAutoplayEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/3238036-uiaccessibilityisvideoautoplayen",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/3238036-uiaccessibilityisvideoautoplayen",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the Auto-Play Video Previews setting is in an enabled state."
         }
       ]
     },
@@ -366,7 +369,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value that indicates whether the user has turned on the Button Shapes accessibility setting."
+          "text": "A Boolean value that indicates whether the Button Shapes setting is in an enabled state."
         }
       ]
     },
@@ -380,7 +383,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value that indicates whether the user has turned on Reduce Motion and the Prefer Cross-Fade Transitions accessibility setting."
+          "text": "A Boolean value that indicates whether the Reduce Motion and the Prefer Cross-Fade Transitions settings are in an enabled state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/3043553-uiaccessibilityshoulddifferentia": {
+      "title": "UIAccessibilityShouldDifferentiateWithoutColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/3043553-uiaccessibilityshoulddifferentia",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/3043553-uiaccessibilityshoulddifferentia",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the Differentiate Without Color setting is in an enabled state.  "
         }
       ]
     },
@@ -410,8 +427,10 @@
         "doc://com.apple.documentation/documentation/uikit/1615109-uiaccessibilityisspeakscreenenab",
         "doc://com.apple.documentation/documentation/uikit/1615154-uiaccessibilityisspeakselectione",
         "doc://com.apple.documentation/documentation/uikit/3131973-uiaccessibilityisonoffswitchlabe",
+        "doc://com.apple.documentation/documentation/uikit/3238036-uiaccessibilityisvideoautoplayen",
         "doc://com.apple.documentation/documentation/uikit/3618943-uiaccessibilitybuttonshapesenabl",
-        "doc://com.apple.documentation/documentation/uikit/3584818-uiaccessibilitypreferscrossfadet"
+        "doc://com.apple.documentation/documentation/uikit/3584818-uiaccessibilitypreferscrossfadet",
+        "doc://com.apple.documentation/documentation/uikit/3043553-uiaccessibilityshoulddifferentia"
       ],
       "title": "Capabilities",
       "generated": true
@@ -453,42 +472,9 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "return_value",
-          "level": 2,
-          "text": "Return Value",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-            },
-            {
-              "type": "text",
-              "text": " if VoiceOver is currently running; otherwise, "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
-            },
-            {
-              "type": "text",
-              "text": "."
-            }
           ]
         }
       ]
@@ -516,7 +502,7 @@
             },
             {
               "type": "text",
-              "text": " notification to find out when VoiceOver starts and stops."
+              "text": " notification to determine when VoiceOver starts and stops."
             }
           ]
         }
@@ -524,7 +510,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

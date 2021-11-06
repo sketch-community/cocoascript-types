@@ -42,25 +42,33 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UIApplicationDelegate(im)applicationDidEnterBackground:",
+    "parent": {
+      "title": "UIApplicationDelegate"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -113,7 +121,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of methods that you use to manage shared behaviors for your app. "
+          "text": "A set of methods to manage shared behaviors for your app. "
         }
       ]
     },
@@ -161,25 +169,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the app enters the background."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1623031-beginbackgroundtaskwithexpiratio": {
-      "title": "beginBackgroundTaskWithExpirationHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623031-beginbackgroundtaskwithexpiratio",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1623031-beginbackgroundtaskwithexpiratio",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "beginBackgroundTaskWithExpirationHandler:"
+          "text": "A notification that posts when the app enters the background."
         }
       ]
     },
@@ -205,6 +195,24 @@
         {
           "kind": "identifier",
           "text": "applicationDidEnterBackground:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication/1623031-beginbackgroundtaskwithexpiratio": {
+      "title": "beginBackgroundTaskWithExpirationHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623031-beginbackgroundtaskwithexpiratio",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication/1623031-beginbackgroundtaskwithexpiratio",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "beginBackgroundTaskWithExpirationHandler:"
         }
       ]
     },
@@ -324,7 +332,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the app becomes active. "
+          "text": "A notification that posts when the app becomes active. "
         }
       ]
     },
@@ -338,7 +346,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted shortly before an app leaves the background state on its way to becoming the active app."
+          "text": "A notification that posts shortly before an app leaves the background state on its way to becoming the active app."
         }
       ]
     },
@@ -352,7 +360,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the app is no longer active and loses focus."
+          "text": "A notification that posts when the app is no longer active and loses focus."
         }
       ]
     },
@@ -366,7 +374,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the app is about to terminate."
+          "text": "A notification that posts when the app is about to terminate."
         }
       ]
     },
@@ -449,6 +457,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -494,7 +503,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "If you are using scenes (see "
+                  "text": "If you're using scenes (see "
                 },
                 {
                   "type": "reference",
@@ -526,14 +535,14 @@
               ]
             }
           ],
-          "style": "warning"
+          "style": "important"
         },
         {
           "type": "paragraph",
           "inlineContent": [
             {
               "type": "text",
-              "text": "Use this method to release shared resources, invalidate timers, and store enough app state information to restore your app to its current state in case it is terminated later. Disable updates to your app’s user interface, and avoid using some types of shared system resources (such as the user’s contacts database). Don’t use OpenGL ES in the background."
+              "text": "Use this method to release shared resources, invalidate timers, and store enough app state information to restore your app to its current state in case it's terminated later. Disable updates to your app’s user interface, and avoid using some types of shared system resources (such as the user’s contacts database). Don’t use OpenGL ES in the background."
             }
           ]
         },
@@ -542,7 +551,25 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Your implementation of this method has approximately five seconds to perform any tasks and return. If you need additional time to perform any final tasks, request additional execution time from the system by calling "
+              "text": "Return from "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622997-applicationdidenterbackground"
+            },
+            {
+              "type": "text",
+              "text": " as quickly as possible. Your implementation of this method has approximately five seconds to perform any tasks and return. If the method doesn’t return before time runs out, your app is terminated and purged from memory. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you need additional time to perform any final tasks, request additional execution time from the system by calling "
             },
             {
               "type": "reference",
@@ -551,16 +578,34 @@
             },
             {
               "type": "text",
-              "text": ". In practice, you should return from "
+              "text": ". Call "
             },
             {
               "type": "reference",
-              "isActive": true,
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623031-beginbackgroundtaskwithexpiratio"
+            },
+            {
+              "type": "text",
+              "text": " as early as possible. Because the system needs time to process your request, there’s a chance that the system might suspend your app before that task assertion is granted. For example, don’t call "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623031-beginbackgroundtaskwithexpiratio"
+            },
+            {
+              "type": "text",
+              "text": " at the very end of your "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
               "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622997-applicationdidenterbackground"
             },
             {
               "type": "text",
-              "text": " as quickly as possible. If the method doesn’t return before time runs out, your app is terminated and purged from memory.  "
+              "text": " method and expect your app to continue running. "
             }
           ]
         },
@@ -569,7 +614,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Perform any tasks relating to adjusting your user interface before this method exits. Move other tasks (such as saving state) to a concurrent dispatch queue or secondary thread as needed. Because it's likely any background tasks you start in "
+              "text": "Perform any tasks related to adjusting your user interface before "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622997-applicationdidenterbackground"
+            },
+            {
+              "type": "text",
+              "text": " exits. Move other tasks (such as saving state) to a concurrent dispatch queue or secondary thread as needed. Because it's likely any background tasks you start in "
             },
             {
               "type": "reference",
@@ -644,7 +698,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

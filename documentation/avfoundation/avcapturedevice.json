@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "introducedAt": "14.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVCaptureDevice",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -349,7 +354,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants to specify the position of a capture device."
+          "text": "Constants that indicate the physical position of a capture device."
         }
       ]
     },
@@ -391,7 +396,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when a new device becomes available."
+          "text": "A notification the system posts when a new capture device becomes available."
         }
       ]
     },
@@ -405,7 +410,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when an existing device becomes unavailable."
+          "text": "A notification the system posts when an existing device becomes unavailable."
         }
       ]
     },
@@ -582,7 +587,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The transport type of the receiver."
+          "text": "The transport type of the device."
         }
       ]
     },
@@ -811,6 +816,62 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3738419-centerstageenabled": {
+      "title": "centerStageEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3738419-centerstageenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/3738419-centerstageenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether a user or an app enabled Center Stage."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3738417-centerstageactive": {
+      "title": "centerStageActive",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3738417-centerstageactive",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/3738417-centerstageactive",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether Center Stage is active on a device."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3738418-centerstagecontrolmode": {
+      "title": "centerStageControlMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3738418-centerstagecontrolmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/3738418-centerstagecontrolmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates the current mode of Center Stage control."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturecenterstagecontrolmode": {
+      "title": "AVCaptureCenterStageControlMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturecenterstagecontrolmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturecenterstagecontrolmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that indicate the current Center Stage control mode."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1388738-formats": {
       "title": "formats",
       "type": "topic",
@@ -887,7 +948,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The metered exposure level's offset from the target exposure value, in EV units."
+          "text": "The metered exposure level’s offset from the target exposure value, in EV units."
         }
       ]
     },
@@ -1254,6 +1315,20 @@
       ],
       "deprecated": true
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3751762-minimumfocusdistance": {
+      "title": "minimumFocusDistance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3751762-minimumfocusdistance",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/3751762-minimumfocusdistance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The capture device’s minimum focus distance in millimeters."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1389191-focusmode": {
       "title": "focusMode",
       "type": "topic",
@@ -1316,7 +1391,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates whether the device supports a point of interest for focus."
+          "text": "A Boolean value that indicates whether the device supports a point of interest for focus."
         }
       ]
     },
@@ -1330,7 +1405,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates whether the device is currently adjusting its focus setting."
+          "text": "A Boolean value that indicates whether the device is currently adjusting its focus setting."
         }
       ]
     },
@@ -1344,7 +1419,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that determines whether the device has smooth autofocus enabled."
+          "text": "A Boolean value that determines whether smooth autofocus is in an enabled state on the device."
         }
       ]
     },
@@ -1372,7 +1447,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A value controlling the allowable range for automatic focusing."
+          "text": "A value that controls the allowable range for automatic focusing."
         }
       ]
     },
@@ -1841,16 +1916,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the instance of "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice"
-        },
-        {
-          "type": "text",
-          "text": " has detected a substantial change to the video subject area."
+          "text": "A notification the system posts when a capture device detects a substantial change to the video subject area."
         }
       ]
     },
@@ -2405,6 +2471,264 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3875310-setprimaryconstituentdeviceswitc": {
+      "title": "setPrimaryConstituentDeviceSwitchingBehavior:restrictedSwitchingBehaviorConditions:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3875310-setprimaryconstituentdeviceswitc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/3875310-setprimaryconstituentdeviceswitc",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the switching behavior of the primary constituent device."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setPrimaryConstituentDeviceSwitchingBehavior:restrictedSwitchingBehaviorConditions:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3875309-primaryconstituentdeviceswitchin": {
+      "title": "primaryConstituentDeviceSwitchingBehavior",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3875309-primaryconstituentdeviceswitchin",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/3875309-primaryconstituentdeviceswitchin",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The switching behavior for the primary constituent device."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcaptureprimaryconstituentdeviceswitchingbehavior": {
+      "title": "AVCapturePrimaryConstituentDeviceSwitchingBehavior",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureprimaryconstituentdeviceswitchingbehavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcaptureprimaryconstituentdeviceswitchingbehavior",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that control when to allow a virtual device to switch its active primary constituent device."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3875308-primaryconstituentdevicerestrict": {
+      "title": "primaryConstituentDeviceRestrictedSwitchingBehaviorConditions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3875308-primaryconstituentdevicerestrict",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/3875308-primaryconstituentdevicerestrict",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The conditions that restrict the primary constituent device’s switching behavior."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcaptureprimaryconstituentdevicerestrictedswitchingbehaviorconditions": {
+      "title": "AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureprimaryconstituentdevicerestrictedswitchingbehaviorconditions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcaptureprimaryconstituentdevicerestrictedswitchingbehaviorconditions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that defines the conditions in which to restrict camera switching."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3875304-activeprimaryconstituentdevice": {
+      "title": "activePrimaryConstituentDevice",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3875304-activeprimaryconstituentdevice",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/3875304-activeprimaryconstituentdevice",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A virtual device’s active primary constituent device."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3875306-activeprimaryconstituentdevicesw": {
+      "title": "activePrimaryConstituentDeviceSwitchingBehavior",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3875306-activeprimaryconstituentdevicesw",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/3875306-activeprimaryconstituentdevicesw",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The switching behavior of the active constituent device."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3875305-activeprimaryconstituentdevicere": {
+      "title": "activePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3875305-activeprimaryconstituentdevicere",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/3875305-activeprimaryconstituentdevicere",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The conditions that restrict camera switching behavior for the active primary constituent device."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3875311-supportedfallbackprimaryconstitu": {
+      "title": "supportedFallbackPrimaryConstituentDevices",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3875311-supportedfallbackprimaryconstitu",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/3875311-supportedfallbackprimaryconstitu",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The constituent devices available to select as a fallback for a longer focal length primary constituent device."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3875307-fallbackprimaryconstituentdevice": {
+      "title": "fallbackPrimaryConstituentDevices",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3875307-fallbackprimaryconstituentdevice",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/3875307-fallbackprimaryconstituentdevice",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The fallback devices to use when a constituent device with a longer focal length becomes limited by its light sensitivity or minimum focus distance."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3850455-activemicrophonemode": {
+      "title": "activeMicrophoneMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3850455-activemicrophonemode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/3850455-activemicrophonemode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The device’s active microphone mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3850458-preferredmicrophonemode": {
+      "title": "preferredMicrophoneMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3850458-preferredmicrophonemode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/3850458-preferredmicrophonemode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The microphone mode that the user selects in Control Center."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturemicrophonemode": {
+      "title": "AVCaptureMicrophoneMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturemicrophonemode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturemicrophonemode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that define the available microphone modes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3850456-portraiteffectactive": {
+      "title": "portraitEffectActive",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3850456-portraiteffectactive",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/3850456-portraiteffectactive",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether Portrait Effect is currently active for the device."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3850457-portraiteffectenabled": {
+      "title": "portraitEffectEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3850457-portraiteffectenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/3850457-portraiteffectenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A class property that indicates whether the user enables the Portrait Effect feature in Control Center."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3850459-showsystemuserinterface": {
+      "title": "showSystemUserInterface:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3850459-showsystemuserinterface",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/3850459-showsystemuserinterface",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Displays the system’s user interface to configure video effects or microphone modes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "showSystemUserInterface:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturesystemuserinterface": {
+      "title": "AVCaptureSystemUserInterface",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturesystemuserinterface",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturesystemuserinterface",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that describe the capture device configuration user interfaces."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/choosing_a_capture_device": {
       "title": "Choosing a Capture Device",
       "type": "topic",
@@ -2446,8 +2770,8 @@
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.0 beta 5",
-        "12.3 Release Candidate"
+        "13.0",
+        "13.2 beta 1"
       ]
     }
   },
@@ -2476,7 +2800,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevicewasdisconnectednotification",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1386237-devices",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1390520-deviceswithmediatype"
-      ]
+      ],
+      "anchor": "1669048"
     },
     {
       "kind": "taskGroup",
@@ -2485,7 +2810,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624584-requestaccessformediatype",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624613-authorizationstatusformediatype",
         "doc://com.apple.documentation/documentation/avfoundation/avauthorizationstatus"
-      ]
+      ],
+      "anchor": "1669086"
     },
     {
       "kind": "taskGroup",
@@ -2500,7 +2826,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceinputsource",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1388404-inputsources",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1390141-activeinputsource"
-      ]
+      ],
+      "anchor": "1669131"
     },
     {
       "kind": "taskGroup",
@@ -2518,7 +2845,19 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1386909-position",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1389487-hasmediatype",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1386263-supportsavcapturesessionpreset"
-      ]
+      ],
+      "anchor": "1669849"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Center Stage",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3738419-centerstageenabled",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3738417-centerstageactive",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3738418-centerstagecontrolmode",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturecenterstagecontrolmode"
+      ],
+      "anchor": "3742766"
     },
     {
       "kind": "taskGroup",
@@ -2527,7 +2866,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1388738-formats",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1389221-activeformat",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat"
-      ]
+      ],
+      "anchor": "1669225"
     },
     {
       "kind": "taskGroup",
@@ -2543,7 +2883,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624637-setexposuretargetbias",
         "doc://com.apple.documentation/documentation/avfoundation/avcaptureexposuretargetbiascurrent",
         "doc://com.apple.documentation/documentation/avfoundation/avcaptureexposuredurationcurrent"
-      ]
+      ],
+      "anchor": "1669946"
     },
     {
       "kind": "taskGroup",
@@ -2555,7 +2896,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1388777-exposurepointofinterest",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1387263-exposurepointofinterestsupported",
         "doc://com.apple.documentation/documentation/avfoundation/avcaptureexposuremode"
-      ]
+      ],
+      "anchor": "1669369"
     },
     {
       "kind": "taskGroup",
@@ -2563,7 +2905,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/2865755-activedepthdataformat",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/2968215-activedepthdataminframeduration"
-      ]
+      ],
+      "anchor": "3419964"
     },
     {
       "kind": "taskGroup",
@@ -2577,12 +2920,14 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624631-cancelvideozoomramp",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3153003-virtualdeviceswitchovervideozoom",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/2908991-dualcameraswitchovervideozoomfac"
-      ]
+      ],
+      "anchor": "1669476"
     },
     {
       "kind": "taskGroup",
       "title": "Managing Focus Settings",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3751762-minimumfocusdistance",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1389191-focusmode",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1390215-isfocusmodesupported",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1385853-focuspointofinterest",
@@ -2594,7 +2939,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624570-autofocusrangerestrictionsupport",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturefocusmode",
         "doc://com.apple.documentation/documentation/avfoundation/avcaptureautofocusrangerestriction"
-      ]
+      ],
+      "anchor": "1669263"
     },
     {
       "kind": "taskGroup",
@@ -2606,7 +2952,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1388116-flashmode",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1386434-isflashmodesupported",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624598-flashactive"
-      ]
+      ],
+      "anchor": "1669531"
     },
     {
       "kind": "taskGroup",
@@ -2621,7 +2968,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1386035-torchmode",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1388822-istorchmodesupported",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624609-settorchmodeonwithlevel"
-      ]
+      ],
+      "anchor": "1669598"
     },
     {
       "kind": "taskGroup",
@@ -2630,7 +2978,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624595-lowlightboostsupported",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624602-lowlightboostenabled",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624610-automaticallyenableslowlightboos"
-      ]
+      ],
+      "anchor": "1669676"
     },
     {
       "kind": "taskGroup",
@@ -2638,7 +2987,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1389290-activevideominframeduration",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1387816-activevideomaxframeduration"
-      ]
+      ],
+      "anchor": "1669730"
     },
     {
       "kind": "taskGroup",
@@ -2650,7 +3000,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1388481-settransportcontrolsplaybackmode",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevicetransportcontrolsplaybackmode",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevicetransportcontrolsspeed"
-      ]
+      ],
+      "anchor": "1669769"
     },
     {
       "kind": "taskGroup",
@@ -2658,7 +3009,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624644-subjectareachangemonitoringenabl",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevicesubjectareadidchangenotification"
-      ]
+      ],
+      "anchor": "1669820"
     },
     {
       "kind": "taskGroup",
@@ -2668,7 +3020,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624617-setfocusmodelockedwithlenspositi",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/2361529-lockingfocuswithcustomlenspositi",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturelenspositioncurrent"
-      ]
+      ],
+      "anchor": "1669926"
     },
     {
       "kind": "taskGroup",
@@ -2691,7 +3044,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturewhitebalancechromaticityvalues",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturewhitebalancetemperatureandtintvalues",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturewhitebalancemode"
-      ]
+      ],
+      "anchor": "1669983"
     },
     {
       "kind": "taskGroup",
@@ -2699,7 +3053,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624649-iso",
         "doc://com.apple.documentation/documentation/avfoundation/avcaptureisocurrent"
-      ]
+      ],
+      "anchor": "1670014"
     },
     {
       "kind": "taskGroup",
@@ -2707,7 +3062,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624593-automaticallyadjustsvideohdrenab",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624645-videohdrenabled"
-      ]
+      ],
+      "anchor": "1679832"
     },
     {
       "kind": "taskGroup",
@@ -2715,7 +3071,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1648668-activecolorspace",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturecolorspace"
-      ]
+      ],
+      "anchor": "1845165"
     },
     {
       "kind": "taskGroup",
@@ -2723,14 +3080,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3194614-geometricdistortioncorrectionsup",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3194613-geometricdistortioncorrectionena"
-      ]
+      ],
+      "anchor": "3197384"
     },
     {
       "kind": "taskGroup",
       "title": "Managing Device Calibration",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3229937-extrinsicmatrixfromdevice"
-      ]
+      ],
+      "anchor": "3238874"
     },
     {
       "kind": "taskGroup",
@@ -2739,14 +3098,61 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/2933375-systempressurestate",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesystempressurestate",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesessioninterruptionsystempressurestatekey"
-      ]
+      ],
+      "anchor": "2947594"
     },
     {
       "kind": "taskGroup",
       "title": "Managing Tone Mapping",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3375756-globaltonemappingenabled"
-      ]
+      ],
+      "anchor": "3378415"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Restricting Camera Switching",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3875310-setprimaryconstituentdeviceswitc",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3875309-primaryconstituentdeviceswitchin",
+        "doc://com.apple.documentation/documentation/avfoundation/avcaptureprimaryconstituentdeviceswitchingbehavior",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3875308-primaryconstituentdevicerestrict",
+        "doc://com.apple.documentation/documentation/avfoundation/avcaptureprimaryconstituentdevicerestrictedswitchingbehaviorconditions",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3875304-activeprimaryconstituentdevice",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3875306-activeprimaryconstituentdevicesw",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3875305-activeprimaryconstituentdevicere",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3875311-supportedfallbackprimaryconstitu",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3875307-fallbackprimaryconstituentdevice"
+      ],
+      "anchor": "3875795"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Inspecting the Microphone Mode",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3850455-activemicrophonemode",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3850458-preferredmicrophonemode",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturemicrophonemode"
+      ],
+      "anchor": "3875793"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Inspecting Portrait Effect Settings",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3850456-portraiteffectactive",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3850457-portraiteffectenabled"
+      ],
+      "anchor": "3875794"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Presenting the Configuration User Interface",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3850459-showsystemuserinterface",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturesystemuserinterface"
+      ],
+      "anchor": "3875796"
     }
   ],
   "seeAlsoSections": [
@@ -2793,6 +3199,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -3019,7 +3426,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Manage text storage and perform custom layout of text-based content in your app's views. "
+      "text": "Manage text storage and perform custom layout of text-based content in your app’s views."
     }
   ],
   "documentVersion": 0,
@@ -30,8 +30,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -80,31 +80,31 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/nstextstorage": {
-      "title": "NSTextStorage",
+    "doc://com.apple.documentation/documentation/uikit/nstextcontentstorage": {
+      "title": "NSTextContentStorage",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextstorage",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextcontentstorage",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/nstextstorage",
+      "url": "/documentation/uikit/nstextcontentstorage",
       "abstract": [
         {
           "type": "text",
-          "text": "The fundamental storage mechanism of TextKit. "
+          "text": "A concrete subclass of the text content manager that provides support for attributed strings that you use as a backing store."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/nslayoutmanager": {
-      "title": "NSLayoutManager",
+    "doc://com.apple.documentation/documentation/uikit/nstextlayoutmanager": {
+      "title": "NSTextLayoutManager",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanager",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextlayoutmanager",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/nslayoutmanager",
+      "url": "/documentation/uikit/nstextlayoutmanager",
       "abstract": [
         {
           "type": "text",
-          "text": "An object that coordinates the layout and display of text characters."
+          "text": "The primary class that you use to manage text layout and presentation for custom text displays."
         }
       ]
     },
@@ -130,6 +130,20 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsattributedstring"
     },
+    "doc://com.apple.documentation/documentation/uikit/nstextstorage": {
+      "title": "NSTextStorage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextstorage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextstorage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The fundamental storage mechanism of TextKit that contains the text managed by the system."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring": {
       "title": "NSMutableAttributedString",
       "type": "topic",
@@ -154,55 +168,73 @@
       "role": "symbol",
       "url": "/documentation/appkit/nstextview"
     },
-    "doc://com.apple.documentation/documentation/appkit/nstextview/1449364-textcontainer": {
-      "title": "textContainer",
+    "doc://com.apple.documentation/documentation/uikit/nstextcontentmanager": {
+      "title": "NSTextContentManager",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449364-textcontainer",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextcontentmanager",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstextview/1449364-textcontainer"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nstextview/1449148-layoutmanager": {
-      "title": "layoutManager",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449148-layoutmanager",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nstextview/1449148-layoutmanager"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nstextview/1449196-textstorage": {
-      "title": "textStorage",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449196-textstorage",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nstextview/1449196-textstorage"
-    },
-    "doc://com.apple.documentation/documentation/uikit/nstextstoragedelegate": {
-      "title": "NSTextStorageDelegate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextstoragedelegate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/nstextstoragedelegate",
+      "url": "/documentation/uikit/nstextcontentmanager",
       "abstract": [
         {
           "type": "text",
-          "text": "The optional methods that delegates of text storage objects implement to handle text-edit processing."
+          "text": "An abstract class that defines the interface and a default implementation for managing the text document contents."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate": {
-      "title": "NSLayoutManagerDelegate",
+    "doc://com.apple.documentation/documentation/uikit/textkit/using_textkit_2_to_interact_with_text": {
+      "title": "Using TextKit 2 to Interact with Text",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/nslayoutmanagerdelegate",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit/using_textkit_2_to_interact_with_text",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/textkit/using_textkit_2_to_interact_with_text",
       "abstract": [
         {
           "type": "text",
-          "text": "A set of optional methods that delegates of layout manager objects implement."
+          "text": "Interact with text by managing text selection and inserting custom text elements."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextlayoutfragment": {
+      "title": "NSTextLayoutFragment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextlayoutfragment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextlayoutfragment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A class that represents the layout fragment typically corresponding to a rendering surface such as layer or view subclass."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextviewportlayoutcontroller": {
+      "title": "NSTextViewportLayoutController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextviewportlayoutcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextviewportlayoutcontroller",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manages the layout process inside the viewport interacting with its delegate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nslayoutmanager": {
+      "title": "NSLayoutManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nslayoutmanager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that coordinates the layout and display of text characters."
         }
       ]
     },
@@ -216,7 +248,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "These constants describe the progression of text on a page. The typesetter decides which way text is supposed to flow and passes these values as arguments to the text container, which uses them to calculate the next line rectangle."
+          "text": "Values that describe the progression of text on a page."
         }
       ]
     },
@@ -244,7 +276,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A concrete typesetter object that places glyphs during the text layout process. "
+          "text": "A concrete typesetter object that places glyphs during the text layout process."
         }
       ]
     },
@@ -272,7 +304,119 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of methods that define the orientation of text for an object. "
+          "text": "A set of methods that define the orientation of text for an object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextelement": {
+      "title": "NSTextElement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextelement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextelement",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract base class that represents the smallest units of text layout such as paragraphs or attachments."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextelementprovider": {
+      "title": "NSTextElementProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextelementprovider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextelementprovider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol the text content manager and its concrete subclasses conform to which defines the interface for interacting with custom content types of a text document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextlinefragment": {
+      "title": "NSTextLineFragment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextlinefragment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextlinefragment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A class that represents a line fragment as a single textual layout and rendering unit inside a text layout fragment."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextparagraph": {
+      "title": "NSTextParagraph",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextparagraph",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextparagraph",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A class that represents a single paragraph backed by an attributed string as the contents."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextrange": {
+      "title": "NSTextRange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A class that represents a contiguous range between two locations inside document contents."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextselection": {
+      "title": "NSTextSelection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextselection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextselection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A class that represents a single logical selection context that corresponds to an insertion point."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextselectionnavigation": {
+      "title": "NSTextSelectionNavigation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextselectionnavigation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextselectionnavigation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface used to expose methods for obtaining results from actions performed on text selections."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextlayoutfragmentstate": {
+      "title": "NSTextLayoutFragmentState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextlayoutfragmentstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextlayoutfragmentstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values that describe the possible layout states."
         }
       ]
     },
@@ -374,14 +518,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nstextcontent": {
-      "title": "NSTextContent",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextcontent",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nstextcontent"
-    },
     "doc://com.apple.documentation/documentation/uikit/nstextattachment": {
       "title": "NSTextAttachment",
       "type": "topic",
@@ -392,7 +528,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The values for the attachment attributes of attributed strings and related objects."
+          "text": "The values for the attachment characteristics of attributed strings and related objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextattachmentviewprovider": {
+      "title": "NSTextAttachmentViewProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextattachmentviewprovider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextattachmentviewprovider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A container object that associates a text attachment at a particular document location with a view object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextattachmentlayout": {
+      "title": "NSTextAttachmentLayout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextattachmentlayout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextattachmentlayout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of methods that define the interface to attachment objects from a text layout manager."
         }
       ]
     },
@@ -406,7 +570,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that implements the functionality of the text attachment cell protocol. "
+          "text": "An object that implements the functionality of the text attachment cell protocol."
         }
       ]
     },
@@ -519,61 +683,56 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/appkit/nstextinput": {
-      "title": "NSTextInput",
+    "doc://com.apple.documentation/documentation/appkit/1571142-reserved_glyph_codes": {
+      "title": "Reserved Glyph Codes",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextinput",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/1571142-reserved_glyph_codes",
       "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nstextinput",
+      "role": "containerSymbol",
+      "url": "/documentation/appkit/1571142-reserved_glyph_codes",
       "abstract": [
         {
           "type": "text",
-          "text": "A set of methods that text views must implement to interact properly with the text input management system."
+          "text": "These constants define reserved glyph codes."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nstextinputclient": {
-      "title": "NSTextInputClient",
+    "doc://com.apple.documentation/documentation/appkit/nsfontrenderingmode": {
+      "title": "NSFontRenderingMode",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextinputclient",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsfontrenderingmode",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstextinputclient",
+      "url": "/documentation/appkit/nsfontrenderingmode",
       "abstract": [
         {
           "type": "text",
-          "text": "A set of methods that text views must implement to interact properly with the text input management system. "
+          "text": "The font rendering mode."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nstextinputcontext": {
-      "title": "NSTextInputContext",
+    "doc://com.apple.documentation/documentation/appkit/nsmultibyteglyphpacking": {
+      "title": "NSMultibyteGlyphPacking",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextinputcontext",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsmultibyteglyphpacking",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstextinputcontext",
+      "url": "/documentation/appkit/nsmultibyteglyphpacking",
       "abstract": [
         {
           "type": "text",
-          "text": "An object that represents the Cocoa text input system. "
+          "text": "A constant for glyph packing."
         }
-      ]
+      ],
+      "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/appkit/nstextalternatives": {
-      "title": "NSTextAlternatives",
+    "doc://com.apple.documentation/documentation/appkit/text_input": {
+      "title": "Text Input",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextalternatives",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nstextalternatives",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A list of alternative strings for a piece of text."
-        }
-      ]
+      "identifier": "doc://com.apple.documentation/documentation/appkit/text_input",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/text_input"
     },
     "doc://com.apple.documentation/documentation/appkit/text_display": {
       "title": "Text Display",
@@ -599,7 +758,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Manage text storage and perform custom layout of text-based content in your app's views. "
+          "text": "Manage text storage and perform custom layout of text-based content in your app’s views."
         }
       ]
     },
@@ -625,38 +784,49 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "topicSections": [
     {
       "kind": "taskGroup",
       "title": "Data Management",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/nstextstorage",
-        "doc://com.apple.documentation/documentation/uikit/nstextstoragedelegate"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/nstextcontentstorage",
+        "doc://com.apple.documentation/documentation/uikit/nstextcontentmanager",
+        "doc://com.apple.documentation/documentation/uikit/nstextstorage"
+      ],
+      "anchor": "2871747"
     },
     {
       "kind": "taskGroup",
       "title": "Layout",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/textkit/using_textkit_2_to_interact_with_text",
+        "doc://com.apple.documentation/documentation/uikit/nstextlayoutmanager",
+        "doc://com.apple.documentation/documentation/uikit/nstextlayoutfragment",
+        "doc://com.apple.documentation/documentation/uikit/nstextviewportlayoutcontroller",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager",
-        "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate",
         "doc://com.apple.documentation/documentation/uikit/nstextcontainer",
         "doc://com.apple.documentation/documentation/appkit/nslinesweepdirection",
         "doc://com.apple.documentation/documentation/appkit/nslinemovementdirection",
         "doc://com.apple.documentation/documentation/appkit/nsatstypesetter",
         "doc://com.apple.documentation/documentation/appkit/nstypesetter",
         "doc://com.apple.documentation/documentation/uikit/nstextlayoutorientationprovider"
-      ]
+      ],
+      "anchor": "2871745"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Text",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/nstextelement",
+        "doc://com.apple.documentation/documentation/uikit/nstextelementprovider",
+        "doc://com.apple.documentation/documentation/uikit/nstextlinefragment",
+        "doc://com.apple.documentation/documentation/uikit/nstextparagraph",
+        "doc://com.apple.documentation/documentation/uikit/nstextrange",
+        "doc://com.apple.documentation/documentation/uikit/nstextselection",
+        "doc://com.apple.documentation/documentation/uikit/nstextselectionnavigation",
+        "doc://com.apple.documentation/documentation/uikit/nstextlayoutfragmentstate"
+      ],
+      "anchor": "3830975"
     },
     {
       "kind": "taskGroup",
@@ -668,19 +838,22 @@
         "doc://com.apple.documentation/documentation/appkit/nstexttable",
         "doc://com.apple.documentation/documentation/appkit/nstexttableblock",
         "doc://com.apple.documentation/documentation/uikit/nstexttab",
-        "doc://com.apple.documentation/documentation/appkit/nstextlist",
-        "doc://com.apple.documentation/documentation/appkit/nstextcontent"
-      ]
+        "doc://com.apple.documentation/documentation/appkit/nstextlist"
+      ],
+      "anchor": "2871746"
     },
     {
       "kind": "taskGroup",
       "title": "Attachments",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nstextattachment",
+        "doc://com.apple.documentation/documentation/uikit/nstextattachmentviewprovider",
+        "doc://com.apple.documentation/documentation/uikit/nstextattachmentlayout",
         "doc://com.apple.documentation/documentation/appkit/nstextattachmentcell",
         "doc://com.apple.documentation/documentation/appkit/1508388-nstextattachmentcell",
         "doc://com.apple.documentation/documentation/uikit/nstextattachmentcontainer"
-      ]
+      ],
+      "anchor": "2871750"
     },
     {
       "kind": "taskGroup",
@@ -691,23 +864,18 @@
         "doc://com.apple.documentation/documentation/appkit/nsglyphgenerator",
         "doc://com.apple.documentation/documentation/appkit/nsglyphinfo",
         "doc://com.apple.documentation/documentation/appkit/1403100-glyph_attributes",
-        "doc://com.apple.documentation/documentation/appkit/1528031-nsconvertglyphstopackedglyphs"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Input Management",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nstextinput",
-        "doc://com.apple.documentation/documentation/appkit/nstextinputclient",
-        "doc://com.apple.documentation/documentation/appkit/nstextinputcontext",
-        "doc://com.apple.documentation/documentation/appkit/nstextalternatives"
-      ]
+        "doc://com.apple.documentation/documentation/appkit/1528031-nsconvertglyphstopackedglyphs",
+        "doc://com.apple.documentation/documentation/appkit/1571142-reserved_glyph_codes",
+        "doc://com.apple.documentation/documentation/appkit/nsfontrenderingmode",
+        "doc://com.apple.documentation/documentation/appkit/nsmultibyteglyphpacking"
+      ],
+      "anchor": "2871749"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/text_input",
         "doc://com.apple.documentation/documentation/appkit/text_display",
         "doc://com.apple.documentation/documentation/appkit/fonts"
       ],
@@ -730,12 +898,12 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "TextKit provides a number of classes to control the layout of text, such as "
+              "text": "TextKit provides several classes to control the layout of text, such as "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/uikit/nstextstorage"
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nstextcontentstorage"
             },
             {
               "type": "text",
@@ -744,7 +912,7 @@
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanager"
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nstextlayoutmanager"
             },
             {
               "type": "text",
@@ -766,7 +934,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Additionally, "
+              "text": "Additionally, TextKit uses "
             },
             {
               "type": "reference",
@@ -775,7 +943,7 @@
             },
             {
               "type": "text",
-              "text": " objects are used extensively throughout TextKit. The "
+              "text": " objects extensively. The "
             },
             {
               "type": "reference",
@@ -811,7 +979,7 @@
             },
             {
               "type": "text",
-              "text": " instances. Use these classes to specify your text's format. "
+              "text": " instances. Use these classes to specify your text’s format. "
             }
           ]
         },
@@ -829,34 +997,7 @@
             },
             {
               "type": "text",
-              "text": " by modifying the view's "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449364-textcontainer"
-            },
-            {
-              "type": "text",
-              "text": ", "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449148-layoutmanager"
-            },
-            {
-              "type": "text",
-              "text": ", or "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449196-textstorage"
-            },
-            {
-              "type": "text",
-              "text": " properties. If you need more control, you can also use TextKit to build your own custom text controls."
+              "text": " by modifying various properties of your view’s layout manager, text container, or text storage objects in your app. If you need more control, you can also use TextKit to build your text controls."
             }
           ]
         }
@@ -864,7 +1005,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

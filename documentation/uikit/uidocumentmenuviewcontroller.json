@@ -35,14 +35,21 @@
         "name": "iOS",
         "introducedAt": "8.0",
         "deprecatedAt": "11.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "deprecatedAt": "11.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
@@ -50,8 +57,8 @@
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -127,8 +134,7 @@
           "type": "text",
           "text": ", that is displayed below a peek when a user swipes the peek upward. "
         }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiaccelerometer": {
       "title": "UIAccelerometer",
@@ -623,8 +629,7 @@
           "type": "text",
           "text": " class."
         }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiacceleration": {
       "title": "UIAcceleration",
@@ -1060,16 +1065,6 @@
       ]
     }
   ],
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -1088,7 +1083,8 @@
         "doc://com.apple.documentation/documentation/uikit/uidocumentmenuviewcontroller/1614187-initwithdocumenttypes",
         "doc://com.apple.documentation/documentation/uikit/uidocumentmenuviewcontroller/1614191-initwithurl",
         "doc://com.apple.documentation/documentation/uikit/uidocumentmenuviewcontroller/1614182-initwithcoder"
-      ]
+      ],
+      "anchor": "1658432"
     },
     {
       "kind": "taskGroup",
@@ -1096,7 +1092,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uidocumentmenuviewcontroller/1614192-delegate",
         "doc://com.apple.documentation/documentation/uikit/uidocumentmenudelegate"
-      ]
+      ],
+      "anchor": "2881669"
     },
     {
       "kind": "taskGroup",
@@ -1104,7 +1101,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uidocumentmenuviewcontroller/1614193-addoptionwithtitle",
         "doc://com.apple.documentation/documentation/uikit/uidocumentmenuorder"
-      ]
+      ],
+      "anchor": "1658460"
     }
   ],
   "seeAlsoSections": [
@@ -1164,6 +1162,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -1171,7 +1170,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

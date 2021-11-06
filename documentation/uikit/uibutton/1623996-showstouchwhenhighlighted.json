@@ -12,7 +12,8 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
         "doc://com.apple.documentation/documentation/uikit/views_and_controls",
-        "doc://com.apple.documentation/documentation/uikit/uibutton"
+        "doc://com.apple.documentation/documentation/uikit/uibutton",
+        "doc://com.apple.documentation/documentation/uikit/uibutton/deprecated_button_properties_and_methods"
       ]
     ]
   },
@@ -35,20 +36,34 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)UIButton(py)showsTouchWhenHighlighted",
+    "parent": {
+      "title": "UIButton"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,6 +120,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uibutton/deprecated_button_properties_and_methods": {
+      "title": "Deprecated Button Properties and Methods",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/deprecated_button_properties_and_methods",
+      "url": "/documentation/uikit/uibutton/deprecated_button_properties_and_methods",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
     "doc://com.apple.documentation/documentation/objectivec/yes": {
       "title": "YES",
       "type": "topic",
@@ -133,7 +156,8 @@
           "type": "text",
           "text": "A Boolean value that determines whether the image changes when the button is highlighted."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/uikit/uibutton/1624020-adjustsimagewhendisabled": {
       "title": "adjustsImageWhenDisabled",
@@ -147,7 +171,8 @@
           "type": "text",
           "text": "A Boolean value that determines whether the image changes when the button is disabled."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/uikit/uibutton/1623996-showstouchwhenhighlighted": {
       "title": "showsTouchWhenHighlighted",
@@ -161,165 +186,8 @@
           "type": "text",
           "text": "A Boolean value that determines whether tapping the button causes it to glow."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uibutton/1624030-backgroundimageforstate": {
-      "title": "backgroundImageForState:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/1624030-backgroundimageforstate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uibutton/1624030-backgroundimageforstate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the background image used for a button state."
-        }
       ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "backgroundImageForState:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uibutton/1624026-imageforstate": {
-      "title": "imageForState:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/1624026-imageforstate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uibutton/1624026-imageforstate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the image used for a button state."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "imageForState:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uibutton/1624016-setbackgroundimage": {
-      "title": "setBackgroundImage:forState:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/1624016-setbackgroundimage",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uibutton/1624016-setbackgroundimage",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sets the background image to use for the specified button state."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setBackgroundImage:forState:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uibutton/1623997-setimage": {
-      "title": "setImage:forState:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/1623997-setimage",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uibutton/1623997-setimage",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sets the image to use for the specified state."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setImage:forState:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uibutton/3295914-preferredsymbolconfigurationfori": {
-      "title": "preferredSymbolConfigurationForImageInState:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/3295914-preferredsymbolconfigurationfori",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uibutton/3295914-preferredsymbolconfigurationfori",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the preferred symbol configuration for a button state."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "preferredSymbolConfigurationForImageInState:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uibutton/3295915-setpreferredsymbolconfiguration": {
-      "title": "setPreferredSymbolConfiguration:forImageInState:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/3295915-setpreferredsymbolconfiguration",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uibutton/3295915-setpreferredsymbolconfiguration",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sets the preferred symbol configuration for a button state."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setPreferredSymbolConfiguration:forImageInState:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uibutton/1624025-tintcolor": {
-      "title": "tintColor",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/1624025-tintcolor",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uibutton/1624025-tintcolor",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The tint color to apply to the button title and image."
-        }
-      ]
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -333,16 +201,9 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uibutton/1624031-adjustsimagewhenhighlighted",
-        "doc://com.apple.documentation/documentation/uikit/uibutton/1624020-adjustsimagewhendisabled",
-        "doc://com.apple.documentation/documentation/uikit/uibutton/1624030-backgroundimageforstate",
-        "doc://com.apple.documentation/documentation/uikit/uibutton/1624026-imageforstate",
-        "doc://com.apple.documentation/documentation/uikit/uibutton/1624016-setbackgroundimage",
-        "doc://com.apple.documentation/documentation/uikit/uibutton/1623997-setimage",
-        "doc://com.apple.documentation/documentation/uikit/uibutton/3295914-preferredsymbolconfigurationfori",
-        "doc://com.apple.documentation/documentation/uikit/uibutton/3295915-setpreferredsymbolconfiguration",
-        "doc://com.apple.documentation/documentation/uikit/uibutton/1624025-tintcolor"
+        "doc://com.apple.documentation/documentation/uikit/uibutton/1624020-adjustsimagewhendisabled"
       ],
-      "title": "Configuring Button Presentation",
+      "title": "Button Presentation",
       "generated": true
     }
   ],
@@ -382,6 +243,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -427,7 +289,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

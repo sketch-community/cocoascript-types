@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/cloudkit",
-        "doc://com.apple.documentation/documentation/cloudkit/share_operations"
+        "doc://com.apple.documentation/documentation/cloudkit/shared_records"
       ]
     ]
   },
@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKFetchShareMetadataOperation",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -97,13 +102,129 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/share_operations": {
-      "title": "Share Operations",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/share_operations",
-      "url": "/documentation/cloudkit/share_operations",
+    "doc://com.apple.documentation/documentation/cloudkit/shared_records": {
+      "title": "Shared Records",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/shared_records",
+      "url": "/documentation/cloudkit/shared_records",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckacceptsharesoperation": {
+      "title": "CKAcceptSharesOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckacceptsharesoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckacceptsharesoperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An operation that confirms a user’s participation in a share."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640519-shouldfetchrootrecord": {
+      "title": "shouldFetchRootRecord",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640519-shouldfetchrootrecord",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchsharemetadataoperation/1640519-shouldfetchrootrecord",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether to retrieve the root record."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/3003362-rootrecorddesiredkeys": {
+      "title": "rootRecordDesiredKeys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/3003362-rootrecorddesiredkeys",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchsharemetadataoperation/3003362-rootrecorddesiredkeys"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640447-persharemetadatablock": {
+      "title": "perShareMetadataBlock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640447-persharemetadatablock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchsharemetadataoperation/1640447-persharemetadatablock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The block to execute as the operation fetches individual shares."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckerror/2325226-partialfailure": {
+      "title": "partialFailure",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerror/2325226-partialfailure",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckerror/2325226-partialfailure"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nserror/1411580-userinfo": {
+      "title": "userInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nserror/1411580-userinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nserror/1411580-userinfo"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckpartialerrorsbyitemidkey": {
+      "title": "CKPartialErrorsByItemIDKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckpartialerrorsbyitemidkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckpartialerrorsbyitemidkey"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckerror/2325205-participantmayneedverification": {
+      "title": "participantMayNeedVerification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerror/2325205-participantmayneedverification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckerror/2325205-participantmayneedverification"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622961-openurl": {
+      "title": "openURL:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622961-openurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication/1622961-openurl",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "openURL:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation#3737310": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation#3737310",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/ckfetchsharemetadataoperation#3737310"
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckoperation": {
       "title": "CKOperation",
@@ -189,48 +310,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640519-shouldfetchrootrecord": {
-      "title": "shouldFetchRootRecord",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640519-shouldfetchrootrecord",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckfetchsharemetadataoperation/1640519-shouldfetchrootrecord",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether to retrieve the root record."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640447-persharemetadatablock": {
-      "title": "perShareMetadataBlock",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640447-persharemetadatablock",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckfetchsharemetadataoperation/1640447-persharemetadatablock",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The block to execute as the operation fetches individual shares."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata": {
-      "title": "CKShareMetadata",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/cksharemetadata",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that decribes a shared record’s metadata."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640457-fetchsharemetadatacompletionbloc": {
       "title": "fetchShareMetadataCompletionBlock",
       "type": "topic",
@@ -259,17 +338,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckfetchshareparticipantsoperation": {
-      "title": "CKFetchShareParticipantsOperation",
+    "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata": {
+      "title": "CKShareMetadata",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchshareparticipantsoperation",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckfetchshareparticipantsoperation",
+      "url": "/documentation/cloudkit/cksharemetadata",
       "abstract": [
         {
           "type": "text",
-          "text": "An operation that fetches a share’s participants."
+          "text": "An object that describes a shared record’s metadata."
         }
       ]
     },
@@ -279,16 +358,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -304,37 +373,40 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Creating a Fetch Share Metadata Operation",
+      "title": "Creating an Operation",
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/2715836-init",
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640495-initwithshareurls"
-      ]
+      ],
+      "anchor": "2858471"
     },
     {
       "kind": "taskGroup",
-      "title": "Configuring the Fetch Share Metadata Operation",
+      "title": "Configuring the Operation",
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640375-rootrecorddesiredkeys",
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640508-shareurls",
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640519-shouldfetchrootrecord"
-      ]
+      ],
+      "anchor": "2530654"
     },
     {
       "kind": "taskGroup",
-      "title": "Processing the Fetch Share Metadata Results",
+      "title": "Processing the Operation’s Results",
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640447-persharemetadatablock",
-        "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata",
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640457-fetchsharemetadatacompletionbloc"
-      ]
+      ],
+      "anchor": "2530645"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/cloudkit/ckfetchshareparticipantsoperation"
+        "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata",
+        "doc://com.apple.documentation/documentation/cloudkit/ckacceptsharesoperation"
       ],
-      "title": "Fetching Operations",
+      "title": "Share Requests",
       "generated": true
     }
   ],
@@ -372,6 +444,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -394,15 +467,241 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This operation can execute in any container that the client has access to."
+              "text": "Use this operation to fetch the metadata for one or more shares. A share’s metadata contains the share and details about the user’s participation. Fetch metadata when you want to manually accept participation in a share using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckacceptsharesoperation"
+            },
+            {
+              "type": "text",
+              "text": "."
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For a shared record hierarchy, the fetched metadata includes the record ID of the share’s root record. Set "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640519-shouldfetchrootrecord"
+            },
+            {
+              "type": "text",
+              "text": " to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": " to fetch the entire root record. You can further customize this behavior using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/3003362-rootrecorddesiredkeys"
+            },
+            {
+              "type": "text",
+              "text": " to specify which fields you want to include in your fetch. This functionality isn’t applicable for a shared record zone because, unlike a shared record hierarchy, it doesn’t have a nominated root record."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To run the operation, add it to any container’s operation queue. Returned metadata includes the ID of the container that stores the share. The operation executes its callbacks on a private serial queue."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The operation calls "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640447-persharemetadatablock"
+            },
+            {
+              "type": "text",
+              "text": " once for each URL you provide, and CloudKit returns the metadata, or an error if the fetch fails. CloudKit also batches per-URL errors. If the operation completes with errors, it returns a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerror/2325226-partialfailure"
+            },
+            {
+              "type": "text",
+              "text": " error. The error stores individual errors in its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nserror/1411580-userinfo"
+            },
+            {
+              "type": "text",
+              "text": " dictionary. Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckpartialerrorsbyitemidkey"
+            },
+            {
+              "type": "text",
+              "text": " key to extract them."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When all of the following conditions are true, CloudKit returns a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerror/2325205-participantmayneedverification"
+            },
+            {
+              "type": "text",
+              "text": " error:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "There are pending participants that don’t have matched iCloud accounts."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The current user has an active iCloud account and isn’t an existing participant (pending or otherwise)."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On receipt of this error, call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622961-openurl"
+            },
+            {
+              "type": "text",
+              "text": " with the share’s URL to allow CloudKit to verify the user."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following example demonstrates how to create the operation, configure it, and then execute it using the default container’s operation queue:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func fetchShareMetadata(for shareURLs: [URL],",
+            "    completion: @escaping (Result<[URL: CKShare.Metadata], Error>) -> Void) {",
+            "        ",
+            "    var cache = [URL: CKShare.Metadata]()",
+            "        ",
+            "    // Create the fetch operation using the share URLs that",
+            "    // the caller provides to the method.",
+            "    let operation = CKFetchShareMetadataOperation(shareURLs: shareURLs)",
+            "        ",
+            "    // To reduce network requests, request that CloudKit ",
+            "    // includes the root record in the metadata it returns.",
+            "    operation.shouldFetchRootRecord = true",
+            "        ",
+            "    // Cache the metadata that CloudKit returns using the",
+            "    // share URL. This implementation ignores per-metadata",
+            "    // fetch errors and handles any errors in the completion",
+            "    // closure instead.",
+            "    operation.perShareMetadataBlock = { url, metadata, _ in",
+            "        guard let metadata = metadata else { return }",
+            "        cache[url] = metadata",
+            "    }",
+            "        ",
+            "    // If the operation fails, return the error to the caller.",
+            "    // Otherwise, return the array of participants.",
+            "    operation.fetchShareMetadataCompletionBlock = { error in",
+            "        if let error = error {",
+            "            completion(.failure(error))",
+            "        } else {",
+            "            completion(.success(cache))",
+            "        }",
+            "    }",
+            "        ",
+            "    // Set an appropriate QoS and add the operation to the",
+            "    // container's queue to execute it.",
+            "    operation.qualityOfService = .userInitiated",
+            "    CKContainer.default().add(operation)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3737310",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

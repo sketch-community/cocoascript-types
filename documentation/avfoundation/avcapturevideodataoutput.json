@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "introducedAt": "14.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVCaptureVideoDataOutput",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -95,20 +100,6 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings": {
-      "title": "videoSettings",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The compression settings for the output."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutputsamplebufferdelegate/1385775-captureoutput": {
       "title": "captureOutput:didOutputSampleBuffer:fromConnection:",
       "type": "topic",
@@ -135,13 +126,27 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avcaptureoutput"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings": {
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings": {
+      "title": "videoSettings",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The compression settings for the output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/video_settings": {
       "title": "Video Settings",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/video_settings",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/avfoundation/avassetwriterinput/video_settings",
+      "url": "/documentation/avfoundation/avcapturephotosettings/video_settings",
       "abstract": [
         {
           "type": "text",
@@ -264,16 +269,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates the supported video pixel formats that can be specified in "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "The video pixel formats the output supports."
         }
       ]
     },
@@ -287,16 +283,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates the supported video codec formats that can be specified in "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "The video codecs the output supports."
         }
       ]
     },
@@ -307,6 +294,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/avfoundation/avcapturevideodataoutput/2867901-availablevideocodectypesforasset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The video codecs the output supports for writing video to the output file."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -328,7 +321,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of constants used to describe codecs for video capture."
+          "text": "A set of constants that describe the codecs the system supports for video capture."
         }
       ]
     },
@@ -342,7 +335,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Sets the sample buffer delegate and the queue on which callbacks should be invoked."
+          "text": "Sets the sample buffer delegate and the queue for invoking callbacks."
         }
       ],
       "fragments": [
@@ -380,7 +373,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The queue on which delegate callbacks should be invoked"
+          "text": "The queue on which the system invokes delegate callbacks."
         }
       ]
     },
@@ -394,7 +387,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Methods for receiving sample buffers from and monitoring the status of a video data output."
+          "text": "Methods for receiving sample buffers from, and monitoring the status of, a video data output."
         }
       ]
     },
@@ -496,16 +489,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -522,14 +505,15 @@
       "title": "Configuring Video Capture",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/video_settings",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1616296-minframeduration",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1385780-alwaysdiscardslatevideoframes",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/3153021-automaticallyconfiguresoutputbuf",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/3153022-deliverspreviewsizedoutputbuffer",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/2867900-recommendedvideosettingsforvideo",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1616290-recommendedvideosettingsforasset"
-      ]
+      ],
+      "anchor": "1668986"
     },
     {
       "kind": "taskGroup",
@@ -539,7 +523,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1389227-availablevideocodectypes",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/2867901-availablevideocodectypesforasset",
         "doc://com.apple.documentation/documentation/avfoundation/avvideocodectype"
-      ]
+      ],
+      "anchor": "1669059"
     },
     {
       "kind": "taskGroup",
@@ -549,7 +534,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1385886-samplebufferdelegate",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/1385831-samplebuffercallbackqueue",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutputsamplebufferdelegate"
-      ]
+      ],
+      "anchor": "1669096"
     },
     {
       "kind": "taskGroup",
@@ -557,7 +543,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/2879216-init",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideodataoutput/2879482-new"
-      ]
+      ],
+      "anchor": "3025433"
     }
   ],
   "seeAlsoSections": [
@@ -604,6 +591,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -664,7 +652,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

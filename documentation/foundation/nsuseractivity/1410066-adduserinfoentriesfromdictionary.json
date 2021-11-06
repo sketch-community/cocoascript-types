@@ -53,35 +53,43 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSUserActivity(im)addUserInfoEntriesFromDictionary:",
+    "parent": {
+      "title": "NSUserActivity"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -210,7 +218,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The activity type with which the user activity object was created."
+          "text": "The user activity object's activity type."
         }
       ]
     },
@@ -266,6 +274,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity/3238062-targetcontentidentifier": {
+      "title": "targetContentIdentifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/3238062-targetcontentidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity/3238062-targetcontentidentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A string that identifies the user activity's content."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1408791-needssave": {
       "title": "needsSave",
       "type": "topic",
@@ -276,7 +298,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates that the state of the activity needs to be updated."
+          "text": "A Boolean value that indicates whether the state of the activity needs to be updated."
         }
       ]
     },
@@ -365,6 +387,7 @@
         "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1413375-title",
         "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1417256-requireduserinfokeys",
         "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1411706-userinfo",
+        "doc://com.apple.documentation/documentation/foundation/nsuseractivity/3238062-targetcontentidentifier",
         "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1408791-needssave",
         "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1616398-contentattributeset",
         "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1408023-keywords",
@@ -430,6 +453,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -525,7 +549,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

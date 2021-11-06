@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIApplication(py)preferredContentSizeCategory",
+    "parent": {
+      "title": "UIApplication"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,17 +128,23 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the user changes the preferred content size setting. "
+          "text": "A notification that posts when the user changes the preferred content size setting. "
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsstring": {
-      "title": "NSString",
+    "doc://com.apple.documentation/documentation/uikit/uicontentsizecategory": {
+      "title": "UIContentSizeCategory",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontentsizecategory",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsstring"
+      "url": "/documentation/uikit/uicontentsizecategory",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that indicate the preferred size of your content."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory": {
       "title": "preferredContentSizeCategory",
@@ -146,17 +160,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uicontentsizecategory": {
-      "title": "UIContentSizeCategory",
+    "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryadjusting": {
+      "title": "UIContentSizeCategoryAdjusting",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontentsizecategory",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryadjusting",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uicontentsizecategory",
+      "url": "/documentation/uikit/uicontentsizecategoryadjusting",
       "abstract": [
         {
           "type": "text",
-          "text": "Constants indicating the preferred size of your content."
+          "text": "A collection of methods that give controls an easy way to adopt automatic adjustment to content category changes."
         }
       ]
     },
@@ -170,25 +184,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A key whose value is an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring"
-        },
-        {
-          "type": "text",
-          "text": " object reflecting the new value of the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory"
-        },
-        {
-          "type": "text",
-          "text": " property. "
+          "text": "A key that reflects the new preferred content size."
         }
       ]
     },
@@ -204,8 +200,9 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicontentsizecategory",
-        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorynewvaluekey",
-        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorydidchangenotification"
+        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryadjusting",
+        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorydidchangenotification",
+        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorynewvaluekey"
       ],
       "title": "Getting the Font Sizing Preference",
       "generated": true
@@ -249,6 +246,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -320,7 +318,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

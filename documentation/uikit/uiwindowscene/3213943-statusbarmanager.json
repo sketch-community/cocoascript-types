@@ -51,20 +51,28 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIWindowScene(py)statusBarManager",
+    "parent": {
+      "title": "UIWindowScene"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -125,7 +133,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A specific type of scene that manages one or more windows for your app.  "
+          "text": "A scene that manages one or more windows for your app."
         }
       ]
     },
@@ -151,7 +159,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uistatusbarmanager",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uistatusbarmanager"
+      "url": "/documentation/uikit/uistatusbarmanager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that describes the configuration of the status bar. "
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiwindowscene/3213943-statusbarmanager": {
       "title": "statusBarManager",
@@ -175,16 +189,15 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uistatusbarmanager"
+      ],
+      "title": "Getting the Status Bar Configuration",
+      "generated": true
     }
-  },
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -223,6 +236,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -250,7 +264,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

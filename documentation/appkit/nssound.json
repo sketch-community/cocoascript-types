@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A simple interface for loading and playing audio files. "
+      "text": "A simple interface for loading and playing audio files."
     }
   ],
   "documentVersion": 0,
@@ -34,15 +34,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSSound",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -95,17 +95,23 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A simple interface for loading and playing audio files. "
+          "text": "A simple interface for loading and playing audio files."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nssounddelegate/1477298-sound": {
-      "title": "sound:didFinishPlaying:",
+    "doc://com.apple.documentation/documentation/appkit/nssound/1477322-play": {
+      "title": "play",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nssounddelegate/1477298-sound",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nssound/1477322-play",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nssounddelegate/1477298-sound",
+      "url": "/documentation/appkit/nssound/1477322-play",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initiates audio playback."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -113,23 +119,17 @@
         },
         {
           "kind": "identifier",
-          "text": "sound:didFinishPlaying:"
+          "text": "play"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/1473622-nsbeep": {
-      "title": "NSBeep",
+    "doc://com.apple.documentation/documentation/appkit/nssound/2903487-beep": {
+      "title": "beep()",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/1473622-nsbeep",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nssound/2903487-beep",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/1473622-nsbeep",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Plays the system beep."
-        }
-      ]
+      "url": "/documentation/appkit/nssound/2903487-beep"
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
@@ -555,30 +555,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nssound/1477322-play": {
-      "title": "play",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nssound/1477322-play",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nssound/1477322-play",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Initiates audio playback."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "play"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/appkit/nssound/1477336-resume": {
       "title": "resume",
       "type": "topic",
@@ -790,22 +766,26 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/1473622-nsbeep": {
+      "title": "NSBeep",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/1473622-nsbeep",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/1473622-nsbeep",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Plays the system beep."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0 beta 5",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -836,7 +816,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nssound/1477300-delegate",
         "doc://com.apple.documentation/documentation/appkit/nssounddelegate"
-      ]
+      ],
+      "anchor": "2879850"
     },
     {
       "kind": "taskGroup",
@@ -847,7 +828,8 @@
         "doc://com.apple.documentation/documentation/appkit/nssound/1477288-initwithcontentsofurl",
         "doc://com.apple.documentation/documentation/appkit/nssound/1477292-initwithdata",
         "doc://com.apple.documentation/documentation/appkit/nssound/1477294-initwithpasteboard"
-      ]
+      ],
+      "anchor": "1679236"
     },
     {
       "kind": "taskGroup",
@@ -861,7 +843,8 @@
         "doc://com.apple.documentation/documentation/appkit/nssound/1477311-loops",
         "doc://com.apple.documentation/documentation/appkit/nssound/1477284-playbackdeviceidentifier",
         "doc://com.apple.documentation/documentation/appkit/nssoundplaybackdeviceidentifier"
-      ]
+      ],
+      "anchor": "1679263"
     },
     {
       "kind": "taskGroup",
@@ -870,7 +853,8 @@
         "doc://com.apple.documentation/documentation/appkit/nssound/1477290-soundunfilteredtypes",
         "doc://com.apple.documentation/documentation/appkit/nssound/1477318-soundnamed",
         "doc://com.apple.documentation/documentation/appkit/nssound/1477313-duration"
-      ]
+      ],
+      "anchor": "1679289"
     },
     {
       "kind": "taskGroup",
@@ -881,14 +865,16 @@
         "doc://com.apple.documentation/documentation/appkit/nssound/1477322-play",
         "doc://com.apple.documentation/documentation/appkit/nssound/1477336-resume",
         "doc://com.apple.documentation/documentation/appkit/nssound/1477282-stop"
-      ]
+      ],
+      "anchor": "1679304"
     },
     {
       "kind": "taskGroup",
       "title": "Writing Sounds",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nssound/1477338-writetopasteboard"
-      ]
+      ],
+      "anchor": "1679341"
     },
     {
       "kind": "taskGroup",
@@ -898,14 +884,16 @@
         "doc://com.apple.documentation/documentation/appkit/nssound/1477317-setchannelmapping",
         "doc://com.apple.documentation/documentation/appkit/nssound/1477309-soundunfilteredfiletypes",
         "doc://com.apple.documentation/documentation/appkit/nssound/1477278-soundunfilteredpasteboardtypes"
-      ]
+      ],
+      "anchor": "1679350"
     },
     {
       "kind": "taskGroup",
       "title": "Constants",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nssound/nspasteboard_type_for_sound_data"
-      ]
+      ],
+      "anchor": "1668930"
     }
   ],
   "seeAlsoSections": [
@@ -968,40 +956,17 @@
           "type": "paragraph",
           "inlineContent": [
             {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/appkit/nssound"
-            },
-            {
               "type": "text",
-              "text": " supports the same audio encodings and file formats that are supported by Core Audio and QuickTime. To use this class, initialize a new instance with the desired file or audio data. You can configure assorted aspects of the audio playback, including the volume and whether the sound loops before you play it. Depending on the type of the audio data, this class may use either Core Audio or QuickTime to handle the actual playback. (Typically, it uses Core Audio to play files in the AIFF, WAVE, NeXT, SD2, AU, and MP3 formats and may use it for other formats in the future as well.) Playback occurs asynchronously so that your application can continue doing work."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "You should retain "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/appkit/nssound"
-            },
-            {
-              "type": "text",
-              "text": " objects before initiating playback or make sure you have a strong reference to them in a garbage-collected environment. Upon deallocation, a sound object stops playback of the sound (as needed) so that it can free up the corresponding audio resources. If you want to deallocate a sound object immediately after playback, assign a delegate and use the "
+              "text": "You create a sound object with an audio file or data, which can be in any format that Core Audio supports. Customize the sound by configuring its properties, such as setting its playback volume and looping behavior. Call the sound’s "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/appkit/nssounddelegate/1477298-sound"
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nssound/1477322-play"
             },
             {
               "type": "text",
-              "text": " method to deallocate it."
+              "text": " method to begin playback. The system executes this call asynchronously so that it doesn’t interrupt the functioning of your app."
             }
           ]
         },
@@ -1015,7 +980,7 @@
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/appkit/1473622-nsbeep"
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nssound/2903487-beep"
             },
             {
               "type": "text",
@@ -1027,7 +992,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

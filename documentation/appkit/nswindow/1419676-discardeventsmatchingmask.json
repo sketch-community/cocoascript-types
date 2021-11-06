@@ -2,23 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Forwards the message to the "
-    },
-    {
-      "type": "codeVoice",
-      "code": "NSApplication"
-    },
-    {
-      "type": "text",
-      "text": " object, "
-    },
-    {
-      "type": "codeVoice",
-      "code": "NSApp"
-    },
-    {
-      "type": "text",
-      "text": "."
+      "text": "Forwards the message to the global application object."
     }
   ],
   "documentVersion": 0,
@@ -51,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSWindow(im)discardEventsMatchingMask:beforeEvent:",
+    "parent": {
+      "title": "NSWindow"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -113,30 +100,6 @@
         {
           "type": "text",
           "text": "A window that an app displays on the screen."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsapplication/1428652-discardeventsmatchingmask": {
-      "title": "discardEventsMatchingMask:beforeEvent:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428652-discardeventsmatchingmask",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsapplication/1428652-discardeventsmatchingmask",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Removes all events matching the given mask and generated before the specified event."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "discardEventsMatchingMask:beforeEvent:"
         }
       ]
     },
@@ -204,23 +167,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Forwards the message to the global "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSApplication"
-        },
-        {
-          "type": "text",
-          "text": " object, "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSApp"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "Forwards the message to the global application object."
         }
       ],
       "fragments": [
@@ -244,23 +191,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Forwards the message to the "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSApplication"
-        },
-        {
-          "type": "text",
-          "text": " object, "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSApp"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "Forwards the message to the global application object."
         }
       ],
       "fragments": [
@@ -284,23 +215,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Forwards the message to the global "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSApplication"
-        },
-        {
-          "type": "text",
-          "text": " object, "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSApp"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "Forwards the message to the global application object."
         }
       ],
       "fragments": [
@@ -324,15 +239,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "This action method dispatches mouse and keyboard events sent to the window by the "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSApplication"
-        },
-        {
-          "type": "text",
-          "text": " object."
+          "text": "This action method dispatches mouse and keyboard events the global application object sends to the window."
         }
       ],
       "fragments": [
@@ -390,13 +297,6 @@
       ],
       "title": "Handling Events",
       "generated": true
-    },
-    {
-      "title": "Related Documentation",
-      "generated": false,
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsapplication/1428652-discardeventsmatchingmask"
-      ]
     }
   ],
   "primaryContentSections": [
@@ -521,7 +421,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

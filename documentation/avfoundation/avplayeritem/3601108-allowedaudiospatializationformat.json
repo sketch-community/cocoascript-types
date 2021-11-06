@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The source audio channel layouts the player item supports for spatialization."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -35,25 +41,38 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVPlayerItem(py)allowedAudioSpatializationFormats",
+    "parent": {
+      "title": "AVPlayerItem"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -106,7 +125,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to model the timing and presentation state of an asset played by the player."
+          "text": "An object that models the timing and presentation state of an asset that a player object presents."
         }
       ]
     },
@@ -118,13 +137,63 @@
       "kind": "symbol",
       "role": "symbol"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmonostereoandmultichannel": {
+      "title": "AVAudioSpatializationFormatMonoStereoAndMultichannel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmonostereoandmultichannel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmonostereoandmultichannel"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmultichannel": {
+      "title": "AVAudioSpatializationFormatMultichannel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmultichannel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmultichannel"
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats": {
       "title": "AVAudioSpatializationFormats",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avaudiospatializationformats"
+      "url": "/documentation/avfoundation/avaudiospatializationformats",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that defines the spatialization formats that a player item supports."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388037-audiomix": {
+      "title": "audioMix",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388037-audiomix",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/1388037-audiomix",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The audio mix parameters to be applied during playback."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1385855-audiotimepitchalgorithm": {
+      "title": "audioTimePitchAlgorithm",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1385855-audiotimepitchalgorithm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/1385855-audiotimepitchalgorithm",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The processing algorithm used to manage audio pitch for scaled audio edits."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat": {
       "title": "allowedAudioSpatializationFormats",
@@ -132,7 +201,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat"
+      "url": "/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The source audio channel layouts the player item supports for spatialization."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed": {
       "title": "audioSpatializationAllowed",
@@ -141,6 +216,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the player item allows spatialized audio playback."
+        }
+      ],
       "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
@@ -154,9 +235,12 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388037-audiomix",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1385855-audiotimepitchalgorithm",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed"
       ],
-      "title": "Determining Audio Spatialization Settings",
+      "title": "Configuring Audio",
       "generated": true
     }
   ],
@@ -198,15 +282,88 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
-            "Mac Catalyst"
+            "Mac Catalyst",
+            "tvOS"
           ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Spatialization uses psychoacoustic methods to create a more immersive audio experience when playing content on specialized headphones and speaker arrangements. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The default value for video content is "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmonostereoandmultichannel"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmultichannel"
+            },
+            {
+              "type": "text",
+              "text": " for audio-only content. Your app can set a preferred spatialization format, but a user can change the audio spatialization behavior in Control Center. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": " This property isn’t key-value observable."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "It’s incorrect to render binaural recordings with spatialization. Content tagged with a binaural channel layout ignores this property value."
+                }
+              ]
+            }
+          ],
+          "style": "important"
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

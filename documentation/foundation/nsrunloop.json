@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSRunLoop",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,6 +110,14 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunloop": {
+      "title": "CFRunLoop",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunloop",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfrunloop"
+    },
     "doc://com.apple.documentation/documentation/foundation/nsrunloop": {
       "title": "NSRunLoop",
       "type": "topic",
@@ -126,14 +139,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsport"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsconnection": {
-      "title": "NSConnection",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsconnection",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsconnection"
     },
     "doc://com.apple.documentation/documentation/foundation/nstimer": {
       "title": "NSTimer",
@@ -170,14 +175,6 @@
           "text": "Returns the run loop for the current thread."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/corefoundation/cfrunloop": {
-      "title": "CFRunLoop",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunloop",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/corefoundation/cfrunloop"
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
@@ -278,7 +275,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloopmode",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsrunloopmode"
+      "url": "/documentation/foundation/nsrunloopmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Modes that a run loop operates in."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsrunloop/1418468-addtimer": {
       "title": "addTimer:forMode:",
@@ -473,6 +476,54 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsrunloop/2091881-performblock": {
+      "title": "performBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop/2091881-performblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrunloop/2091881-performblock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Schedules a block that the run loop invokes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "performBlock:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrunloop/2091880-performinmodes": {
+      "title": "performInModes:block:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop/2091880-performinmodes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrunloop/2091880-performinmodes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Schedules a block that the run loop invokes when it’s running in any of the specified modes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "performInModes:block:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/nsrunloop/1409310-performselector": {
       "title": "performSelector:target:argument:order:modes:",
       "type": "topic",
@@ -545,76 +596,12 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsrunloop/run_loop_modes": {
-      "title": "Run Loop Modes",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop/run_loop_modes",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/foundation/nsrunloop/run_loop_modes",
-      "abstract": [
-        {
-          "type": "codeVoice",
-          "code": "NSRunLoop"
-        },
-        {
-          "type": "text",
-          "text": " defines the following run loop mode."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsrunloop/2091881-performblock": {
-      "title": "performBlock:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop/2091881-performblock",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsrunloop/2091881-performblock",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "performBlock:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsrunloop/2091880-performinmodes": {
-      "title": "performInModes:block:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop/2091880-performinmodes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsrunloop/2091880-performinmodes",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "performInModes:block:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -638,14 +625,16 @@
         "doc://com.apple.documentation/documentation/foundation/nsrunloop/1418388-mainrunloop",
         "doc://com.apple.documentation/documentation/foundation/nsrunloop/1410140-getcfrunloop",
         "doc://com.apple.documentation/documentation/foundation/nsrunloopmode"
-      ]
+      ],
+      "anchor": "1668502"
     },
     {
       "kind": "taskGroup",
       "title": "Managing Timers ",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsrunloop/1418468-addtimer"
-      ]
+      ],
+      "anchor": "1668559"
     },
     {
       "kind": "taskGroup",
@@ -653,14 +642,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsrunloop/1417637-addport",
         "doc://com.apple.documentation/documentation/foundation/nsrunloop/1414332-removeport"
-      ]
+      ],
+      "anchor": "1668578"
     },
     {
       "kind": "taskGroup",
       "title": "Configuring as Server Process",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsrunloop/1577695-configureasserver"
-      ]
+      ],
+      "anchor": "1668603"
     },
     {
       "kind": "taskGroup",
@@ -670,31 +661,20 @@
         "doc://com.apple.documentation/documentation/foundation/nsrunloop/1411525-runmode",
         "doc://com.apple.documentation/documentation/foundation/nsrunloop/1415778-rununtildate",
         "doc://com.apple.documentation/documentation/foundation/nsrunloop/1417143-acceptinputformode"
-      ]
+      ],
+      "anchor": "1668623"
     },
     {
       "kind": "taskGroup",
-      "title": "Scheduling and Canceling Messages",
+      "title": "Scheduling and Canceling Tasks",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsrunloop/2091881-performblock",
+        "doc://com.apple.documentation/documentation/foundation/nsrunloop/2091880-performinmodes",
         "doc://com.apple.documentation/documentation/foundation/nsrunloop/1409310-performselector",
         "doc://com.apple.documentation/documentation/foundation/nsrunloop/1418077-cancelperformselector",
         "doc://com.apple.documentation/documentation/foundation/nsrunloop/1414208-cancelperformselectorswithtarget"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Constants",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsrunloop/run_loop_modes"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Methods",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsrunloop/2091881-performblock",
-        "doc://com.apple.documentation/documentation/foundation/nsrunloop/2091880-performinmodes"
-      ]
+      ],
+      "anchor": "1668667"
     }
   ],
   "seeAlsoSections": [
@@ -740,6 +720,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -771,21 +752,12 @@
             },
             {
               "type": "text",
-              "text": " object processes input for sources such as mouse and keyboard events from the window system, "
+              "text": " object processes input for sources, such as mouse and keyboard events from the window system and "
             },
             {
               "type": "reference",
               "isActive": true,
               "identifier": "doc://com.apple.documentation/documentation/foundation/nsport"
-            },
-            {
-              "type": "text",
-              "text": " objects, and "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/foundation/nsconnection"
             },
             {
               "type": "text",
@@ -816,7 +788,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Your application neither creates or explicitly manages "
+              "text": "Your application neither creates nor explicitly manages "
             },
             {
               "type": "reference",
@@ -825,7 +797,16 @@
             },
             {
               "type": "text",
-              "text": " objects. Each "
+              "text": " objects. The system creates a "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop"
+            },
+            {
+              "type": "text",
+              "text": " object as needed for each "
             },
             {
               "type": "reference",
@@ -834,16 +815,7 @@
             },
             {
               "type": "text",
-              "text": " object—including the application’s main thread—has an "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop"
-            },
-            {
-              "type": "text",
-              "text": " object automatically created for it as needed. If you need to access the current thread’s run loop, you do so with the class method "
+              "text": " object, including the application’s main thread. If you need to access the current thread’s run loop, use the class method "
             },
             {
               "type": "reference",
@@ -879,7 +851,7 @@
             },
             {
               "type": "text",
-              "text": " objects are not \"input\"—they are a special type, and one of the things that means is that they do not cause the run loop to return when they fire."
+              "text": " objects aren’t “input”—they’re a special type, and they don’t cause the run loop to return when they fire."
             }
           ]
         },
@@ -900,7 +872,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " class is generally not considered to be thread-safe and its methods should only be called within the context of the current thread. You should never try to call the methods of an "
+                  "text": " class is generally not thread-safe, and you must call its methods only within the context of the current thread. Don’t call the methods of a "
                 },
                 {
                   "type": "reference",
@@ -909,7 +881,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " object running in a different thread, as doing so might cause unexpected results. "
+                  "text": " object running in a different thread, which might cause unexpected results."
                 }
               ]
             }
@@ -920,7 +892,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

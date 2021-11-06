@@ -36,25 +36,33 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UICollectionViewDiffableDataSource(im)snapshot",
+    "parent": {
+      "title": "UICollectionViewDiffableDataSource"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -161,7 +169,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Updates the UI to reflect the state of the data in the specified snapshot, optionally animating the UI changes. "
+          "text": "Updates the UI to reflect the state of the data in the snapshot, optionally animating the UI changes. "
         }
       ],
       "fragments": [
@@ -185,7 +193,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Updates the UI to reflect the state of the data in the specified snapshot, optionally animating the UI changes and executing a completion handler. "
+          "text": "Updates the UI to reflect the state of the data in the snapshot, optionally animating the UI changes and executing a completion handler. "
         }
       ],
       "fragments": [
@@ -196,6 +204,54 @@
         {
           "kind": "identifier",
           "text": "applySnapshot:animatingDifferences:completion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3801891-applysnapshotusingreloaddata": {
+      "title": "applySnapshotUsingReloadData:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3801891-applysnapshotusingreloaddata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdiffabledatasource/3801891-applysnapshotusingreloaddata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resets the UI to reflect the state of the data in the snapshot without computing a diff or animating the changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "applySnapshotUsingReloadData:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3801892-applysnapshotusingreloaddata": {
+      "title": "applySnapshotUsingReloadData:completion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3801892-applysnapshotusingreloaddata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdiffabledatasource/3801892-applysnapshotusingreloaddata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resets the UI to reflect the state of the data in the snapshot without computing a diff or animating the changes, optionally executing a completion handler. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "applySnapshotUsingReloadData:completion:"
         }
       ]
     },
@@ -211,7 +267,9 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3182921-applysnapshot",
-        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3356324-applysnapshot"
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3356324-applysnapshot",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3801891-applysnapshotusingreloaddata",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3801892-applysnapshotusingreloaddata"
       ],
       "title": "Updating Data",
       "generated": true
@@ -271,6 +329,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -299,7 +358,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The type of the attribute."
+      "text": "The attribute’s type."
     }
   ],
   "documentVersion": 0,
@@ -41,35 +41,43 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSAttributeDescription(py)attributeType",
+    "parent": {
+      "title": "NSAttributeDescription"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -134,6 +142,28 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/coredata/nsattributedescription/3747506-type": {
+      "title": "type",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsattributedescription/3747506-type",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsattributedescription/3747506-type"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsattributetype": {
+      "title": "NSAttributeType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsattributetype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsattributetype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The types of attribute that Core Data supports."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498309-attributevalueclassname": {
       "title": "attributeValueClassName",
       "type": "topic",
@@ -144,23 +174,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the class used to represent the attribute."
+          "text": "The class name that represents the attribute’s value."
         }
       ]
-    },
-    "devLink-1724435": {
-      "identifier": "devLink-1724435",
-      "type": "link",
-      "title": "Core Data Programming Guide",
-      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075"
-    },
-    "doc://com.apple.documentation/documentation/coredata/nsattributetype": {
-      "title": "NSAttributeType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsattributetype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsattributetype"
     },
     "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498291-attributetype": {
       "title": "attributeType",
@@ -172,7 +188,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The type of the attribute."
+          "text": "The attribute’s type."
         }
       ]
     },
@@ -184,20 +200,34 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coredata/nsattributedescription/3747506-type"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498309-attributevalueclassname"
+        "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498309-attributevalueclassname",
+        "doc://com.apple.documentation/documentation/coredata/nsattributetype"
       ],
-      "title": "Getting and Setting Type Information",
+      "title": "Managing the Attribute’s Type",
       "generated": true
-    },
-    {
-      "title": "Related Documentation",
-      "generated": false,
-      "identifiers": [
-        "devLink-1724435"
-      ]
     }
   ],
   "primaryContentSections": [
@@ -238,6 +268,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -260,7 +291,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Setting the attribute type raises an exception if the model the attribute belongs to has been used by an object graph manager."
+              "text": "Don’t change an attribute’s type after you add its containing managed object model to a persistent store coordinator; otherwise, Core Data throws an exception."
             }
           ]
         }
@@ -268,7 +299,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

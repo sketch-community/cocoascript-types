@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_storage",
+        "doc://com.apple.documentation/documentation/uikit/textkit",
         "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle"
       ],
       [
@@ -44,35 +44,43 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSParagraphStyle(py)minimumLineHeight",
+    "parent": {
+      "title": "NSParagraphStyle"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -109,10 +117,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/text_storage": {
-      "title": "Text Storage",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage",
-      "url": "/documentation/uikit/text_storage",
+    "doc://com.apple.documentation/documentation/uikit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit",
+      "url": "/documentation/uikit/textkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -211,6 +219,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/nstextalignment": {
+      "title": "NSTextAlignment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextalignment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextalignment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify text alignment."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1527764-firstlineheadindent": {
       "title": "firstLineHeadIndent",
       "type": "topic",
@@ -277,7 +299,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The space after the end of the paragraph."
+          "text": "Distance between the bottom of this paragraph and top of next."
         }
       ]
     },
@@ -307,6 +329,7 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1532321-alignment",
+        "doc://com.apple.documentation/documentation/uikit/nstextalignment",
         "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1527764-firstlineheadindent",
         "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1530760-headindent",
         "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1525556-tailindent",
@@ -358,6 +381,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
@@ -415,7 +439,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This property contains the minimum height in points that any line in the receiver will occupy, regardless of the font size or size of any attached graphic. This value is always nonnegative"
+              "text": "This property contains the minimum height in points that any line in the receiver occupies, regardless of the font size or size of any attached graphic. This value is always nonnegative."
             }
           ]
         }
@@ -423,7 +447,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -34,32 +34,37 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "8.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Foundation9IndexPathV",
@@ -76,8 +81,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -660,34 +665,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/indexpath/2143056-item": {
-      "title": "item",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/indexpath/2143056-item",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/indexpath/2143056-item",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The value of the item element of the index path."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "item"
-        },
-        {
-          "kind": "text",
-          "text": ": Int"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/indexpath/1780078-lazy": {
       "title": "lazy",
       "type": "topic",
@@ -767,34 +744,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/indexpath/1779112-section",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The value of the section element of the index path."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "section"
-        },
-        {
-          "kind": "text",
-          "text": ": Int"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/indexpath/2143057-section": {
-      "title": "section",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/indexpath/2143057-section",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/indexpath/2143057-section",
       "abstract": [
         {
           "type": "text",
@@ -2228,46 +2177,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/indexpath/2143062-init": {
-      "title": "init(item:section:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/indexpath/2143062-init",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/indexpath/2143062-init",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Creates an index path that references an item in a particular section."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "identifier",
-          "text": "init"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "item"
-        },
-        {
-          "kind": "text",
-          "text": ": Int, "
-        },
-        {
-          "kind": "identifier",
-          "text": "section"
-        },
-        {
-          "kind": "text",
-          "text": ": Int)"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/indexpath/1779555-init": {
       "title": "init(row:section:)",
       "type": "topic",
@@ -2525,6 +2434,28 @@
         {
           "kind": "text",
           "text": "<ElementOfResult>((Int) -> ElementOfResult?) -> [ElementOfResult]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/indexpath/3802312-compare": {
+      "title": "compare(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/indexpath/3802312-compare",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/indexpath/3802312-compare",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "compare"
+        },
+        {
+          "kind": "text",
+          "text": "<Comparator>(Comparator.Compared, Comparator.Compared) -> ComparisonResult"
         }
       ]
     },
@@ -3214,6 +3145,28 @@
         {
           "kind": "text",
           "text": ": inout Array<Int>.Index)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/indexpath/3766801-formatted": {
+      "title": "formatted(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/indexpath/3766801-formatted",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/indexpath/3766801-formatted",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "formatted"
+        },
+        {
+          "kind": "text",
+          "text": "<S>(S) -> S.FormatOutput"
         }
       ]
     },
@@ -4044,6 +3997,66 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/indexpath/3802313-sort": {
+      "title": "sort(using:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/indexpath/3802313-sort",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/indexpath/3802313-sort",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "sort"
+        },
+        {
+          "kind": "text",
+          "text": "<Comparator>("
+        },
+        {
+          "kind": "identifier",
+          "text": "using"
+        },
+        {
+          "kind": "text",
+          "text": ": Comparator)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/indexpath/3802314-sort": {
+      "title": "sort(using:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/indexpath/3802314-sort",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/indexpath/3802314-sort",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "sort"
+        },
+        {
+          "kind": "text",
+          "text": "<S, Comparator>("
+        },
+        {
+          "kind": "identifier",
+          "text": "using"
+        },
+        {
+          "kind": "text",
+          "text": ": S)"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/indexpath/2908813-sorted": {
       "title": "sorted(by:)",
       "type": "topic",
@@ -4077,6 +4090,66 @@
         {
           "kind": "text",
           "text": ": (Int, Int) -> Bool) -> [Int]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/indexpath/3802315-sorted": {
+      "title": "sorted(using:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/indexpath/3802315-sorted",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/indexpath/3802315-sorted",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "sorted"
+        },
+        {
+          "kind": "text",
+          "text": "<Comparator>("
+        },
+        {
+          "kind": "identifier",
+          "text": "using"
+        },
+        {
+          "kind": "text",
+          "text": ": Comparator) -> [Int]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/indexpath/3802316-sorted": {
+      "title": "sorted(using:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/indexpath/3802316-sorted",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/indexpath/3802316-sorted",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "sorted"
+        },
+        {
+          "kind": "text",
+          "text": "<S, Comparator>("
+        },
+        {
+          "kind": "identifier",
+          "text": "using"
+        },
+        {
+          "kind": "text",
+          "text": ": S) -> [Int]"
         }
       ]
     },
@@ -4622,34 +4695,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/indexpath/2963321": {
-      "title": "<=(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/indexpath/2963321",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/indexpath/2963321",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "<= "
-        },
-        {
-          "kind": "text",
-          "text": "(IndexPath, IndexPath) -> Bool"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/indexpath/2963322": {
       "title": ">(_:_:)",
       "type": "topic",
@@ -4672,34 +4717,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/indexpath/2963323": {
-      "title": ">(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/indexpath/2963323",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/indexpath/2963323",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "> "
-        },
-        {
-          "kind": "text",
-          "text": "(IndexPath, IndexPath) -> Bool"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/indexpath/2963324": {
       "title": ">=(_:_:)",
       "type": "topic",
@@ -4707,34 +4724,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/indexpath/2963324",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": ">= "
-        },
-        {
-          "kind": "text",
-          "text": "(IndexPath, IndexPath) -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/indexpath/2963325": {
-      "title": ">=(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/indexpath/2963325",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/indexpath/2963325",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument."
-        }
-      ],
       "fragments": [
         {
           "kind": "text",
@@ -4787,16 +4776,16 @@
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.1.1 Release Candidate",
-        "12.3 Release Candidate"
+        "13.1",
+        "13.2 beta 1"
       ]
     },
     "major": {
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+        "13.0",
+        "13.2 beta 1"
       ]
     }
   },
@@ -4832,7 +4821,8 @@
         "doc://com.apple.documentation/documentation/foundation/indexpath/1780150-init",
         "doc://com.apple.documentation/documentation/foundation/indexpath/1780478-init",
         "doc://com.apple.documentation/documentation/foundation/indexpath/element"
-      ]
+      ],
+      "anchor": "2850546"
     },
     {
       "kind": "taskGroup",
@@ -4845,13 +4835,12 @@
         "doc://com.apple.documentation/documentation/foundation/indexpath/1779701-hashvalue",
         "doc://com.apple.documentation/documentation/foundation/indexpath/1780464-isempty",
         "doc://com.apple.documentation/documentation/foundation/indexpath/1779557-item",
-        "doc://com.apple.documentation/documentation/foundation/indexpath/2143056-item",
         "doc://com.apple.documentation/documentation/foundation/indexpath/1780078-lazy",
         "doc://com.apple.documentation/documentation/foundation/indexpath/1779554-row",
         "doc://com.apple.documentation/documentation/foundation/indexpath/1779112-section",
-        "doc://com.apple.documentation/documentation/foundation/indexpath/2143057-section",
         "doc://com.apple.documentation/documentation/foundation/indexpath/1779723-startindex"
       ],
+      "anchor": "2850547",
       "abstract": [
         {
           "type": "reference",
@@ -4878,7 +4867,8 @@
       "title": "Counting Nodes",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/indexpath/1780464-isempty"
-      ]
+      ],
+      "anchor": "2891828"
     },
     {
       "kind": "taskGroup",
@@ -4886,7 +4876,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/indexpath/1780385-subscript",
         "doc://com.apple.documentation/documentation/foundation/indexpath/1780453-subscript"
-      ]
+      ],
+      "anchor": "2850549"
     },
     {
       "kind": "taskGroup",
@@ -4897,7 +4888,8 @@
         "doc://com.apple.documentation/documentation/foundation/indexpath/2292978",
         "doc://com.apple.documentation/documentation/foundation/indexpath/2293195",
         "doc://com.apple.documentation/documentation/foundation/indexpath/2293215"
-      ]
+      ],
+      "anchor": "2850550"
     },
     {
       "kind": "taskGroup",
@@ -4909,7 +4901,8 @@
         "doc://com.apple.documentation/documentation/foundation/indexpath/1780120-removelast",
         "doc://com.apple.documentation/documentation/foundation/indexpath/1779750-popfirst",
         "doc://com.apple.documentation/documentation/foundation/indexpath/1779925-poplast"
-      ]
+      ],
+      "anchor": "2891829"
     },
     {
       "kind": "taskGroup",
@@ -4917,7 +4910,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/indexpath/1780131-max",
         "doc://com.apple.documentation/documentation/foundation/indexpath/1779773-min"
-      ]
+      ],
+      "anchor": "2891825"
     },
     {
       "kind": "taskGroup",
@@ -4955,7 +4949,8 @@
         "doc://com.apple.documentation/documentation/foundation/indexpath/2853015-starts",
         "doc://com.apple.documentation/documentation/foundation/indexpath/1780084-suffix",
         "doc://com.apple.documentation/documentation/foundation/indexpath/1780035-suffix"
-      ]
+      ],
+      "anchor": "2850548"
     },
     {
       "kind": "taskGroup",
@@ -4964,14 +4959,16 @@
         "doc://com.apple.documentation/documentation/foundation/indexpath/1780159-dropfirst",
         "doc://com.apple.documentation/documentation/foundation/indexpath/1780433-droplast",
         "doc://com.apple.documentation/documentation/foundation/indexpath/1780220-droplast"
-      ]
+      ],
+      "anchor": "2891823"
     },
     {
       "kind": "taskGroup",
       "title": "Transforming Index Paths",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/indexpath/1780078-lazy"
-      ]
+      ],
+      "anchor": "2891824"
     },
     {
       "kind": "taskGroup",
@@ -4979,7 +4976,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/indexpath/1780332-enumerated",
         "doc://com.apple.documentation/documentation/foundation/indexpath/1779672-makeiterator"
-      ]
+      ],
+      "anchor": "2891821"
     },
     {
       "kind": "taskGroup",
@@ -4987,7 +4985,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/indexpath/1780167-sorted",
         "doc://com.apple.documentation/documentation/foundation/indexpath/1780209-reversed"
-      ]
+      ],
+      "anchor": "2891826"
     },
     {
       "kind": "taskGroup",
@@ -4999,7 +4998,8 @@
         "doc://com.apple.documentation/documentation/foundation/indexpath/2293215",
         "doc://com.apple.documentation/documentation/foundation/indexpath/2853015-starts",
         "doc://com.apple.documentation/documentation/foundation/indexpath/2852982-elementsequal"
-      ]
+      ],
+      "anchor": "2891819"
     },
     {
       "kind": "taskGroup",
@@ -5011,7 +5011,8 @@
         "doc://com.apple.documentation/documentation/foundation/indexpath/1780196-index",
         "doc://com.apple.documentation/documentation/foundation/indexpath/1780328-index",
         "doc://com.apple.documentation/documentation/foundation/indexpath/indices"
-      ]
+      ],
+      "anchor": "2891827"
     },
     {
       "kind": "taskGroup",
@@ -5021,7 +5022,8 @@
         "doc://com.apple.documentation/documentation/foundation/indexpath/1780367-debugdescription",
         "doc://com.apple.documentation/documentation/foundation/indexpath/2427179-custommirror",
         "doc://com.apple.documentation/documentation/foundation/indexpath/1779701-hashvalue"
-      ]
+      ],
+      "anchor": "2891820"
     },
     {
       "kind": "taskGroup",
@@ -5029,7 +5031,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsindexpath",
         "doc://com.apple.documentation/documentation/foundation/indexpath/referencetype"
-      ]
+      ],
+      "anchor": "2878629"
     },
     {
       "kind": "taskGroup",
@@ -5038,7 +5041,8 @@
         "doc://com.apple.documentation/documentation/foundation/indexpath/arrayliteralelement",
         "doc://com.apple.documentation/documentation/foundation/indexpath/iterator",
         "doc://com.apple.documentation/documentation/foundation/indexpath/subsequence"
-      ]
+      ],
+      "anchor": "3358637"
     },
     {
       "kind": "taskGroup",
@@ -5046,9 +5050,9 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/indexpath/2908830-init",
         "doc://com.apple.documentation/documentation/foundation/indexpath/1924279-init",
-        "doc://com.apple.documentation/documentation/foundation/indexpath/2143062-init",
         "doc://com.apple.documentation/documentation/foundation/indexpath/1779555-init"
-      ]
+      ],
+      "anchor": "2901661"
     },
     {
       "kind": "taskGroup",
@@ -5060,7 +5064,8 @@
         "doc://com.apple.documentation/documentation/foundation/indexpath/2908887-last",
         "doc://com.apple.documentation/documentation/foundation/indexpath/3344769-publisher",
         "doc://com.apple.documentation/documentation/foundation/indexpath/3017435-underestimatedcount"
-      ]
+      ],
+      "anchor": "2909456"
     },
     {
       "kind": "taskGroup",
@@ -5068,6 +5073,7 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/indexpath/2994484-allsatisfy",
         "doc://com.apple.documentation/documentation/foundation/indexpath/2957828-compactmap",
+        "doc://com.apple.documentation/documentation/foundation/indexpath/3802312-compare",
         "doc://com.apple.documentation/documentation/foundation/indexpath/2908832-contains",
         "doc://com.apple.documentation/documentation/foundation/indexpath/2908873-contains",
         "doc://com.apple.documentation/documentation/foundation/indexpath/3200263-difference",
@@ -5087,6 +5093,7 @@
         "doc://com.apple.documentation/documentation/foundation/indexpath/2946837-formindex",
         "doc://com.apple.documentation/documentation/foundation/indexpath/2946803-formindex",
         "doc://com.apple.documentation/documentation/foundation/indexpath/2946878-formindex",
+        "doc://com.apple.documentation/documentation/foundation/indexpath/3766801-formatted",
         "doc://com.apple.documentation/documentation/foundation/indexpath/3236744-hash",
         "doc://com.apple.documentation/documentation/foundation/indexpath/2946907-index",
         "doc://com.apple.documentation/documentation/foundation/indexpath/2946763-index",
@@ -5111,14 +5118,19 @@
         "doc://com.apple.documentation/documentation/foundation/indexpath/2994511-shuffled",
         "doc://com.apple.documentation/documentation/foundation/indexpath/2946861-sort",
         "doc://com.apple.documentation/documentation/foundation/indexpath/2908849-sort",
+        "doc://com.apple.documentation/documentation/foundation/indexpath/3802313-sort",
+        "doc://com.apple.documentation/documentation/foundation/indexpath/3802314-sort",
         "doc://com.apple.documentation/documentation/foundation/indexpath/2908813-sorted",
+        "doc://com.apple.documentation/documentation/foundation/indexpath/3802315-sorted",
+        "doc://com.apple.documentation/documentation/foundation/indexpath/3802316-sorted",
         "doc://com.apple.documentation/documentation/foundation/indexpath/2908878-split",
         "doc://com.apple.documentation/documentation/foundation/indexpath/2908818-split",
         "doc://com.apple.documentation/documentation/foundation/indexpath/2983343-starts",
         "doc://com.apple.documentation/documentation/foundation/indexpath/2895246-swapat",
         "doc://com.apple.documentation/documentation/foundation/indexpath/3126664-withcontiguousmutablestorageifav",
         "doc://com.apple.documentation/documentation/foundation/indexpath/3126665-withcontiguousstorageifavailable"
-      ]
+      ],
+      "anchor": "2901663"
     },
     {
       "kind": "taskGroup",
@@ -5128,7 +5140,8 @@
         "doc://com.apple.documentation/documentation/foundation/indexpath/3017427-subscript",
         "doc://com.apple.documentation/documentation/foundation/indexpath/3017428-subscript",
         "doc://com.apple.documentation/documentation/foundation/indexpath/3017429-subscript"
-      ]
+      ],
+      "anchor": "2947298"
     },
     {
       "kind": "taskGroup",
@@ -5140,12 +5153,10 @@
         "doc://com.apple.documentation/documentation/foundation/indexpath/2895212",
         "doc://com.apple.documentation/documentation/foundation/indexpath/2949122",
         "doc://com.apple.documentation/documentation/foundation/indexpath/2963320",
-        "doc://com.apple.documentation/documentation/foundation/indexpath/2963321",
         "doc://com.apple.documentation/documentation/foundation/indexpath/2963322",
-        "doc://com.apple.documentation/documentation/foundation/indexpath/2963323",
-        "doc://com.apple.documentation/documentation/foundation/indexpath/2963324",
-        "doc://com.apple.documentation/documentation/foundation/indexpath/2963325"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/indexpath/2963324"
+      ],
+      "anchor": "2901665"
     }
   ],
   "seeAlsoSections": [
@@ -5181,6 +5192,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -5211,7 +5223,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

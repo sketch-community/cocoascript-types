@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetDownloadTask",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -103,13 +108,13 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsurlsessiontask"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/1650938-assetdownloadtaskwithurlasset": {
-      "title": "assetDownloadTaskWithURLAsset:assetTitle:assetArtworkData:options:",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/3751761-assetdownloadtaskwithconfigurati": {
+      "title": "assetDownloadTaskWithConfiguration:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/1650938-assetdownloadtaskwithurlasset",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/3751761-assetdownloadtaskwithconfigurati",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetdownloadurlsession/1650938-assetdownloadtaskwithurlasset",
+      "url": "/documentation/avfoundation/avassetdownloadurlsession/3751761-assetdownloadtaskwithconfigurati",
       "fragments": [
         {
           "kind": "text",
@@ -117,21 +122,7 @@
         },
         {
           "kind": "identifier",
-          "text": "assetDownloadTaskWithURLAsset:assetTitle:assetArtworkData:options:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession": {
-      "title": "AVAssetDownloadURLSession",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetdownloadurlsession",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A URL session used to support the creation and execution of asset download tasks."
+          "text": "assetDownloadTaskWithConfiguration:"
         }
       ]
     },
@@ -145,7 +136,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The asset supplied to the download task upon initialization."
+          "text": "The asset that this task downloads."
         }
       ]
     },
@@ -159,7 +150,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A collection of time ranges for which the download task has media data already downloaded and playable."
+          "text": "The time ranges of the downloaded media that are ready for playback."
         }
       ]
     },
@@ -173,7 +164,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The options supplied to the download task upon initialization."
+          "text": "The configuration options for the task."
         }
       ]
     },
@@ -187,7 +178,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The file URL supplied to the download task upon initialization."
+          "text": "The local file URL to where the task downloads the asset."
         }
       ],
       "deprecated": true
@@ -203,6 +194,20 @@
         {
           "type": "text",
           "text": "Play HTTP Live Streams and preserve streams on disk for offline play back."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession": {
+      "title": "AVAssetDownloadURLSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetdownloadurlsession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A URL session that creates and executes asset download tasks."
         }
       ]
     },
@@ -230,7 +235,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A single task that downloads multiple media selections for a single asset."
+          "text": "A task that downloads multiple media selections for an asset."
         }
       ]
     },
@@ -244,7 +249,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to inspect the state of an asset’s locally cached media data."
+          "text": "An object that you use to inspect locally cached media data."
         }
       ]
     },
@@ -258,7 +263,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A manager of policies used to automatically purge downloaded assets."
+          "text": "An object that manages policies to automatically purge downloaded assets."
         }
       ]
     },
@@ -272,7 +277,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of properties that defines a policy to automatically purge downloaded assets."
+          "text": "An object that defines a policy to automatically manage the storage of downloaded assets."
         }
       ]
     },
@@ -286,7 +291,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A mutable set of properties that defines a policy to automatically purge downloaded assets."
+          "text": "A mutable object that you use to create a new storage management policy."
         }
       ]
     },
@@ -296,16 +301,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -327,7 +322,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtask/1621026-loadedtimeranges",
         "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtask/1621014-options",
         "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtask/1621022-destinationurl"
-      ]
+      ],
+      "anchor": "2168848"
     }
   ],
   "seeAlsoSections": [
@@ -379,6 +375,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -398,12 +395,8 @@
           "type": "paragraph",
           "inlineContent": [
             {
-              "type": "codeVoice",
-              "code": "AVAssetDownloadTask"
-            },
-            {
               "type": "text",
-              "text": " is an "
+              "text": "This class is a subclass of "
             },
             {
               "type": "reference",
@@ -412,25 +405,16 @@
             },
             {
               "type": "text",
-              "text": " subclass used to download HTTP Live Streaming assets. Instances of this class are created using the "
+              "text": " that you use to download HTTP Live Streaming assets. You create instances of this class by calling "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/1650938-assetdownloadtaskwithurlasset"
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/3751761-assetdownloadtaskwithconfigurati"
             },
             {
               "type": "text",
-              "text": " method of "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession"
-            },
-            {
-              "type": "text",
-              "text": "."
+              "text": " on the download session."
             }
           ]
         }
@@ -438,7 +422,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

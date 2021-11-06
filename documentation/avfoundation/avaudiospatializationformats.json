@@ -1,12 +1,18 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A structure that defines the spatialization formats that a player item supports."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/avfoundation",
-        "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing",
-        "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine"
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem"
       ]
     ]
   },
@@ -29,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@AVAudioSpatializationFormats",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -92,21 +103,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing": {
-      "title": "Audio Playback, Recording, and Processing",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing",
-      "url": "/documentation/avfoundation/audio_playback_recording_and_processing",
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection": {
+      "title": "Media Playback and Selection",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
+      "url": "/documentation/avfoundation/media_playback_and_selection",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine": {
-      "title": "AVAudioEngine",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine",
-      "url": "/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine",
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem": {
+      "title": "AVPlayerItem",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
+      "url": "/documentation/avfoundation/avplayeritem",
       "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
+      "kind": "symbol",
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/objectivec/nsuinteger": {
       "title": "NSUInteger",
@@ -122,15 +133,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmonoandstereo",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmonoandstereo"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmonostereoandmultichannel": {
-      "title": "AVAudioSpatializationFormatMonoStereoAndMultichannel",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmonostereoandmultichannel",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmonostereoandmultichannel"
+      "url": "/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmonoandstereo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates the player item only supports mono and stereo layouts for audio spatialization."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmultichannel": {
       "title": "AVAudioSpatializationFormatMultichannel",
@@ -138,7 +147,27 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmultichannel",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmultichannel"
+      "url": "/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmultichannel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates the player item only supports multichannel layouts for audio spatialization."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmonostereoandmultichannel": {
+      "title": "AVAudioSpatializationFormatMonoStereoAndMultichannel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmonostereoandmultichannel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmonostereoandmultichannel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates the player item supports mono, stereo, and multichannel layouts for audio spatialization."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatnone": {
       "title": "AVAudioSpatializationFormatNone",
@@ -146,159 +175,53 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatnone",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatnone"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avaudioenvironmentnode": {
-      "title": "AVAudioEnvironmentNode",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioenvironmentnode",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avaudioenvironmentnode",
+      "url": "/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatnone",
       "abstract": [
         {
           "type": "text",
-          "text": "A mixer node that simulates a 3D audio environment. "
+          "text": "A value that indicates the player item doesn’t support audio spatialization."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avaudioenvironmentreverbparameters": {
-      "title": "AVAudioEnvironmentReverbParameters",
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388037-audiomix": {
+      "title": "audioMix",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioenvironmentreverbparameters",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388037-audiomix",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avaudioenvironmentreverbparameters",
+      "url": "/documentation/avfoundation/avplayeritem/1388037-audiomix",
       "abstract": [
         {
           "type": "text",
-          "text": "A class that encapsulates the parameters that you use to control the reverb of the environment node class."
+          "text": "The audio mix parameters to be applied during playback."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avaudioenvironmentdistanceattenuationparameters": {
-      "title": "AVAudioEnvironmentDistanceAttenuationParameters",
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1385855-audiotimepitchalgorithm": {
+      "title": "audioTimePitchAlgorithm",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioenvironmentdistanceattenuationparameters",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1385855-audiotimepitchalgorithm",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avaudioenvironmentdistanceattenuationparameters",
+      "url": "/documentation/avfoundation/avplayeritem/1385855-audiotimepitchalgorithm",
       "abstract": [
         {
           "type": "text",
-          "text": "A class that specifies the attenuation distance, the gradual loss in audio intensity, and other characteristics."
+          "text": "The processing algorithm used to manage audio pitch for scaled audio edits."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avaudioenvironmentoutputtype": {
-      "title": "AVAudioEnvironmentOutputType",
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat": {
+      "title": "allowedAudioSpatializationFormats",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioenvironmentoutputtype",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avaudioenvironmentoutputtype",
+      "url": "/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat",
       "abstract": [
         {
           "type": "text",
-          "text": "The output hardware types to use with an automatically selected rendering algorithm."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avaudio3dmixing": {
-      "title": "AVAudio3DMixing",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudio3dmixing",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avaudio3dmixing",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A protocol defining 3D mixing properties. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avaudio3dmixingsourcemode": {
-      "title": "AVAudio3DMixingSourceMode",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudio3dmixingsourcemode",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avaudio3dmixingsourcemode",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The source modes for the input bus of the audio environment node."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avaudio3dmixingpointsourceinheadmode": {
-      "title": "AVAudio3DMixingPointSourceInHeadMode",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudio3dmixingpointsourceinheadmode",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avaudio3dmixingpointsourceinheadmode",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The in-head modes for a point source."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avaudio3dpoint": {
-      "title": "AVAudio3DPoint",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudio3dpoint",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avaudio3dpoint",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A structure representing a point in 3D space."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avaudio3dvector": {
-      "title": "AVAudio3DVector",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudio3dvector",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avaudio3dvector",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A structure representing a vector in 3D space."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avaudio3dangularorientation": {
-      "title": "AVAudio3DAngularOrientation",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudio3dangularorientation",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avaudio3dangularorientation",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A structure representing the angular orientation of the listener in 3D space."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avaudio3dvectororientation": {
-      "title": "AVAudio3DVectorOrientation",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudio3dvectororientation",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avaudio3dvectororientation",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A structure representing two orthogonal vectors that describe the orientation of the listener in 3D space."
+          "text": "The source audio channel layouts the player item supports for spatialization."
         }
       ]
     },
@@ -308,7 +231,28 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avaudiospatializationformats"
+      "url": "/documentation/avfoundation/avaudiospatializationformats",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that defines the spatialization formats that a player item supports."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed": {
+      "title": "audioSpatializationAllowed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the player item allows spatialized audio playback."
+        }
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -321,37 +265,25 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Type Properties",
+      "title": "Spatialization Formats",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmonoandstereo",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmultichannel",
         "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmonostereoandmultichannel",
-        "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatmultichannel"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Constants",
-      "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats/avaudiospatializationformatnone"
-      ]
+      ],
+      "anchor": "3742596"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avaudioenvironmentnode",
-        "doc://com.apple.documentation/documentation/avfoundation/avaudioenvironmentreverbparameters",
-        "doc://com.apple.documentation/documentation/avfoundation/avaudioenvironmentdistanceattenuationparameters",
-        "doc://com.apple.documentation/documentation/avfoundation/avaudioenvironmentoutputtype",
-        "doc://com.apple.documentation/documentation/avfoundation/avaudio3dmixing",
-        "doc://com.apple.documentation/documentation/avfoundation/avaudio3dmixingsourcemode",
-        "doc://com.apple.documentation/documentation/avfoundation/avaudio3dmixingpointsourceinheadmode",
-        "doc://com.apple.documentation/documentation/avfoundation/avaudio3dpoint",
-        "doc://com.apple.documentation/documentation/avfoundation/avaudio3dvector",
-        "doc://com.apple.documentation/documentation/avfoundation/avaudio3dangularorientation",
-        "doc://com.apple.documentation/documentation/avfoundation/avaudio3dvectororientation"
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388037-audiomix",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1385855-audiotimepitchalgorithm",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed"
       ],
-      "title": "Spatial Audio",
+      "title": "Configuring Audio",
       "generated": true
     }
   ],
@@ -417,6 +349,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -427,7 +360,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

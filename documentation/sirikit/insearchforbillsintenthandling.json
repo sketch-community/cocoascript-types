@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/payments"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -34,25 +34,38 @@
       {
         "name": "iOS",
         "introducedAt": "10.3",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.3",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(pl)INSearchForBillsIntentHandling",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -87,13 +100,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/payments": {
-      "title": "Payments",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/payments",
-      "url": "/documentation/sirikit/payments",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "link-3872884": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3872884",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintenthandling": {
       "title": "INSearchForBillsIntentHandling",
@@ -107,7 +128,8 @@
           "type": "text",
           "text": "The handler interface for searching for bills associated with the user."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintent": {
       "title": "INSearchForBillsIntent",
@@ -121,7 +143,8 @@
           "type": "text",
           "text": "A request for the list of bills matching the specified criteria."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject": {
       "title": "NSObject",
@@ -162,7 +185,8 @@
           "kind": "identifier",
           "text": "resolveBillPayeeForSearchForBills:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintenthandling/2798982-resolvebilltypeforsearchforbills": {
       "title": "resolveBillTypeForSearchForBills:withCompletion:",
@@ -187,7 +211,8 @@
           "kind": "identifier",
           "text": "resolveBillTypeForSearchForBills:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintenthandling/2798978-resolveduedaterangeforsearchforb": {
       "title": "resolveDueDateRangeForSearchForBills:withCompletion:",
@@ -212,7 +237,8 @@
           "kind": "identifier",
           "text": "resolveDueDateRangeForSearchForBills:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintenthandling/2798979-resolvepaymentdaterangeforsearch": {
       "title": "resolvePaymentDateRangeForSearchForBills:withCompletion:",
@@ -237,7 +263,8 @@
           "kind": "identifier",
           "text": "resolvePaymentDateRangeForSearchForBills:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintenthandling/2798981-resolvestatusforsearchforbills": {
       "title": "resolveStatusForSearchForBills:withCompletion:",
@@ -262,7 +289,8 @@
           "kind": "identifier",
           "text": "resolveStatusForSearchForBills:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintenthandling/2798977-confirmsearchforbills": {
       "title": "confirmSearchForBills:completion:",
@@ -287,7 +315,8 @@
           "kind": "identifier",
           "text": "confirmSearchForBills:completion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintenthandling/2798973-handlesearchforbills": {
       "title": "handleSearchForBills:completion:",
@@ -312,7 +341,8 @@
           "kind": "identifier",
           "text": "handleSearchForBills:completion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintentresponse": {
       "title": "INSearchForBillsIntentResponse",
@@ -326,7 +356,8 @@
           "type": "text",
           "text": "Your app’s response to a request to a search for bills."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -336,6 +367,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -364,21 +415,24 @@
         "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintenthandling/2798978-resolveduedaterangeforsearchforb",
         "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintenthandling/2798979-resolvepaymentdaterangeforsearch",
         "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintenthandling/2798981-resolvestatusforsearchforbills"
-      ]
+      ],
+      "anchor": "2826083"
     },
     {
       "kind": "taskGroup",
       "title": "Confirming the Response",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintenthandling/2798977-confirmsearchforbills"
-      ]
+      ],
+      "anchor": "2826080"
     },
     {
       "kind": "taskGroup",
       "title": "Handling the Intent",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintenthandling/2798973-handlesearchforbills"
-      ]
+      ],
+      "anchor": "2806341"
     }
   ],
   "seeAlsoSections": [
@@ -387,7 +441,7 @@
         "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintent",
         "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintentresponse"
       ],
-      "title": "Search for Bills",
+      "title": "Bill Search",
       "generated": true
     }
   ],
@@ -415,6 +469,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -444,7 +499,7 @@
             },
             {
               "type": "text",
-              "text": " protocol to resolve, confirm, and handle requests to search for bills related to the user. Adopt this protocol in an object of your Intents extension that is capable of searching the user’s bills and returning those bills that match the specified criteria. Users can search for bills based on the payee, the bill type, the due date, and whether the user has paid them or not. "
+              "text": " protocol to resolve, confirm, and handle requests to search for bills related to the user. Adopt this protocol in an object of your Intents extension that’s capable of searching the user’s bills and returning those bills that match the specified criteria. Users can search for bills based on the payee, the bill type, the due date, and whether the user has paid them or not. "
             }
           ]
         },
@@ -470,7 +525,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

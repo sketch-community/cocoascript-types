@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns a string that describes the contents of the receiver."
+      "text": "A textual representation of the receiver."
     }
   ],
   "documentVersion": 0,
@@ -41,35 +41,43 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(pl)NSObject(py)description",
+    "parent": {
+      "title": "NSObject"
+    },
     "symbolKind": "intfp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -134,29 +142,6 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418746-description#2555948": {
-      "title": "Listing 1",
-      "type": "section",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418746-description#2555948",
-      "kind": "article",
-      "role": "codeListing",
-      "url": "/documentation/objectivec/1418956-nsobject/1418746-description#2555948"
-    },
-    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418703-debugdescription": {
-      "title": "debugDescription",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418703-debugdescription",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/1418956-nsobject/1418703-debugdescription",
-      "required": false,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a string that describes the contents of the receiver for presentation in the debugger."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/nsstring": {
       "title": "NSString",
       "type": "topic",
@@ -176,7 +161,22 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a string that describes the contents of the receiver."
+          "text": "A textual representation of the receiver."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418703-debugdescription": {
+      "title": "debugDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418703-debugdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject/1418703-debugdescription",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A textual representation of the receiver to use with a debugger."
         }
       ]
     },
@@ -235,6 +235,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -257,47 +258,15 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "A string that describes the contents of the receiver."
+              "text": "A string that describes the object."
             }
           ]
-        }
-      ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "discussion",
-          "level": 2,
-          "text": "Discussion",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "This method is used to create a textual representation of an object, for example in a formatted string:"
-            }
-          ]
-        },
-        {
-          "type": "codeListing",
-          "code": [
-            "ClassName *anObject = <#An object#>;",
-            "NSString *string = [NSString stringWithFormat:@\"anObject is %@\", anObject];"
-          ],
-          "syntax": "occ",
-          "metadata": {
-            "anchor": "2555948",
-            "title": "Listing 1"
-          }
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

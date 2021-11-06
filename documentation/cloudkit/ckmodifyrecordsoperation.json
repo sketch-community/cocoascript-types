@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/cloudkit",
-        "doc://com.apple.documentation/documentation/cloudkit/record_operations"
+        "doc://com.apple.documentation/documentation/cloudkit/local_records"
       ]
     ]
   },
@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKModifyRecordsOperation",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -97,10 +102,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/record_operations": {
-      "title": "Record Operations",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/record_operations",
-      "url": "/documentation/cloudkit/record_operations",
+    "doc://com.apple.documentation/documentation/cloudkit/local_records": {
+      "title": "Local Records",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/local_records",
+      "url": "/documentation/cloudkit/local_records",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -123,7 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The policy to apply when the server contains a newer version of a specific record."
+          "text": "The policy to use when saving changes to records."
         }
       ]
     },
@@ -295,7 +300,8 @@
           "type": "text",
           "text": "The block to execute when CloudKit saves a record. "
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation/1447486-modifyrecordscompletionblock": {
       "title": "modifyRecordsCompletionBlock",
@@ -308,6 +314,36 @@
         {
           "type": "text",
           "text": "The block to execute after CloudKit modifies all of the records. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation/3793704-perrecorddeleteblock": {
+      "title": "perRecordDeleteBlock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation/3793704-perrecorddeleteblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckmodifyrecordsoperation/3793704-perrecorddeleteblock"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation/3793705-perrecordsaveblock": {
+      "title": "perRecordSaveBlock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation/3793705-perrecordsaveblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckmodifyrecordsoperation/3793705-perrecordsaveblock"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordzonesoperation": {
+      "title": "CKModifyRecordZonesOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordzonesoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckmodifyrecordzonesoperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An operation that modifies one or more record zones."
         }
       ]
     },
@@ -325,36 +361,12 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordzonesoperation": {
-      "title": "CKModifyRecordZonesOperation",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordzonesoperation",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckmodifyrecordzonesoperation",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An operation that modifies one or more record zones."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -374,7 +386,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation/1447464-initwithrecordstosave",
         "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation/1447466-init"
-      ]
+      ],
+      "anchor": "1666066"
     },
     {
       "kind": "taskGroup",
@@ -386,7 +399,8 @@
         "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation/1447484-atomic",
         "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation/1447488-savepolicy",
         "doc://com.apple.documentation/documentation/cloudkit/ckrecordsavepolicy"
-      ]
+      ],
+      "anchor": "1666102"
     },
     {
       "kind": "taskGroup",
@@ -395,7 +409,17 @@
         "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation/1447477-perrecordprogressblock",
         "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation/1447470-perrecordcompletionblock",
         "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation/1447486-modifyrecordscompletionblock"
-      ]
+      ],
+      "anchor": "1666207"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation/3793704-perrecorddeleteblock",
+        "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation/3793705-perrecordsaveblock"
+      ],
+      "anchor": "3796733"
     }
   ],
   "seeAlsoSections": [
@@ -403,7 +427,7 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordzonesoperation"
       ],
-      "title": "Modifying Records",
+      "title": "Transactions",
       "generated": true
     }
   ],
@@ -441,6 +465,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -558,7 +583,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

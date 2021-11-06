@@ -33,19 +33,24 @@
     "platforms": [
       {
         "name": "iOS",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
       },
       {
         "name": "Xcode",
-        "introducedAt": "11.0",
-        "current": "12.3"
+        "introducedAt": "13.0",
+        "current": "13.2"
       }
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -110,6 +115,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avkit/accessing_the_camera_while_multitasking": {
+      "title": "Accessing the Camera While Multitasking",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avkit/accessing_the_camera_while_multitasking",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avkit/accessing_the_camera_while_multitasking",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Operate the camera in Split View, Slide Over, or Picture in Picture mode."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app": {
       "title": "AVCam: Building a Camera App",
       "type": "topic",
@@ -135,6 +154,20 @@
         {
           "type": "text",
           "text": "Simultaneously record the output from the front and back cameras into a single movie file by using a multi-camera capture session."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcambarcode_detecting_barcodes_and_faces": {
+      "title": "AVCamBarcode: Detecting Barcodes and Faces",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcambarcode_detecting_barcodes_and_faces",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcambarcode_detecting_barcodes_and_faces",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identify machine readable codes or faces by using the camera."
         }
       ]
     },
@@ -166,11 +199,11 @@
         }
       ]
     },
-    "https://docs-assets.developer.apple.com/published/9e862082a4/AVMultiCamPiPCapturingFromMultipleCameras.zip": {
+    "https://docs-assets.developer.apple.com/published/e02832809b/AVMultiCamPiPCapturingFromMultipleCameras.zip": {
       "type": "download",
-      "identifier": "https://docs-assets.developer.apple.com/published/9e862082a4/AVMultiCamPiPCapturingFromMultipleCameras.zip",
-      "checksum": "71fd3834947f975fbcce79a1d4d95be0392e774d91fa5b6c4aec64c1ae8758b9a9b4b1ef9a727e38e426f0fc6d0fa04cf9f6b6731f9f14991ef354fa8af447be",
-      "url": "https://docs-assets.developer.apple.com/published/9e862082a4/AVMultiCamPiPCapturingFromMultipleCameras.zip"
+      "identifier": "https://docs-assets.developer.apple.com/published/e02832809b/AVMultiCamPiPCapturingFromMultipleCameras.zip",
+      "checksum": "4d203f5ae711e663c0c73b373495f9f5e6cc87c48246606e2a5eff8898398f00e64df69a1596e24ee9786cf77299291205bc14ae76bb3fe47906e464e62fae91",
+      "url": "https://docs-assets.developer.apple.com/published/e02832809b/AVMultiCamPiPCapturingFromMultipleCameras.zip"
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -185,14 +218,16 @@
       "overridingTitle": "Download",
       "type": "reference",
       "isActive": true,
-      "identifier": "https://docs-assets.developer.apple.com/published/9e862082a4/AVMultiCamPiPCapturingFromMultipleCameras.zip"
+      "identifier": "https://docs-assets.developer.apple.com/published/e02832809b/AVMultiCamPiPCapturingFromMultipleCameras.zip"
     }
   },
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/setting_up_a_capture_session",
+        "doc://com.apple.documentation/documentation/avkit/accessing_the_camera_while_multitasking",
         "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app",
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcambarcode_detecting_barcodes_and_faces",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesession",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturemulticamsession"
       ],
@@ -239,7 +274,7 @@
           "level": 3,
           "type": "heading",
           "text": "Configure the Sample Code Project",
-          "anchor": "3380384"
+          "anchor": "3885366"
         },
         {
           "type": "paragraph",
@@ -285,7 +320,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

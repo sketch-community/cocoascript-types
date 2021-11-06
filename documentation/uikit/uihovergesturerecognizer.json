@@ -39,20 +39,25 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIHoverGestureRecognizer",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -349,6 +354,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -368,9 +374,25 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "On macOS devices, a user can move the pointer over user interface elements. For some UI designs, it’s important to know when the pointer moves over an element, with no other user interactions, such as clicking the mouse button. The text for a hyperlink, for instance, may change colors or appear with an underline as the pointer moves over the link. This creates a rollover effect."
+              "text": "On macOS and iPadOS devices, a user can move the pointer over user interface elements. For some UI designs, it’s important to know when the pointer moves over an element, with no other user interactions, such as clicking the mouse button. The text for a hyperlink, for instance, may change colors or appear with an underline as the pointer moves over the link. This creates a rollover effect."
             }
           ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "On iOS, this class doesn’t recognize gestures."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
         },
         {
           "type": "paragraph",
@@ -448,12 +470,16 @@
         {
           "type": "paragraph",
           "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

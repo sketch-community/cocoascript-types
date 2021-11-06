@@ -35,20 +35,28 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "introducedAt": "14.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVCaptureDevice(im)setFocusModeLockedWithLensPosition:completionHandler:",
+    "parent": {
+      "title": "AVCaptureDevice"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,36 +113,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturelenspositioncurrent": {
-      "title": "AVCaptureLensPositionCurrent",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturelenspositioncurrent",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturelenspositioncurrent",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A special constant representing the current lens position."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1389191-focusmode": {
-      "title": "focusMode",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1389191-focusmode",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturedevice/1389191-focusmode"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturefocusmode/avcapturefocusmodelocked": {
-      "title": "AVCaptureFocusModeLocked",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturefocusmode/avcapturefocusmodelocked",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturefocusmode/avcapturefocusmodelocked"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624643-lensposition": {
       "title": "lensPosition",
       "type": "topic",
@@ -188,6 +166,36 @@
           "text": "lockForConfiguration:"
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturelenspositioncurrent": {
+      "title": "AVCaptureLensPositionCurrent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturelenspositioncurrent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturelenspositioncurrent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A special constant representing the current lens position."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1389191-focusmode": {
+      "title": "focusMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1389191-focusmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/1389191-focusmode"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturefocusmode/avcapturefocusmodelocked": {
+      "title": "AVCaptureFocusModeLocked",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturefocusmode/avcapturefocusmodelocked",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturefocusmode/avcapturefocusmodelocked"
     },
     "doc://com.apple.documentation/documentation/coremedia/cmtime": {
       "title": "CMTime",
@@ -347,6 +355,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -424,7 +433,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The timestamp is synchronized to the device clock, and thus must be converted to the master clock before comparison with the timestamps of buffers delivered by AVCaptureVideoDataOutput instance."
+                  "text": "The timestamp is synchronized to the device clock, and thus must be converted to the system clock before comparison with the timestamps of buffers delivered by AVCaptureVideoDataOutput instance."
                 }
               ]
             },
@@ -524,7 +533,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

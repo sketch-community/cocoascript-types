@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The element’s sort direction."
+      "text": "The accessibility element’s sort direction."
     }
   ],
   "documentVersion": 0,
@@ -11,13 +11,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
       ]
     ]
@@ -42,15 +42,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSAccessibility(py)accessibilitySortDirection",
+    "parent": {
+      "title": "NSAccessibility"
+    },
     "symbolKind": "intfp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -75,10 +78,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -93,7 +96,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The complete list of properties and methods implemented by accessible elements."
+          "text": "The complete list of properties and methods for accessible elements."
         }
       ]
     },
@@ -146,7 +149,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The column header elements for this table or outline."
+          "text": "The column header accessibility elements for the table or outline."
         }
       ]
     },
@@ -161,7 +164,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The column elements for this table or outline."
+          "text": "The column accessibility elements for the table or outline."
         }
       ]
     },
@@ -176,7 +179,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The column titles for the element."
+          "text": "The column titles for the accessibility element."
         }
       ]
     },
@@ -191,7 +194,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that determines whether the element is expanded."
+          "text": "A Boolean value that determines whether the accessibility element is in an expanded state."
         }
       ]
     },
@@ -206,7 +209,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The header for this table view."
+          "text": "The header for the table view."
         }
       ]
     },
@@ -221,7 +224,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The index of the row or column represented by the element."
+          "text": "The index of the row or column that the accessibility element represents."
         }
       ]
     },
@@ -236,7 +239,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The row header elements for this table or outline."
+          "text": "The row header accessibility elements for the table or outline."
         }
       ]
     },
@@ -251,7 +254,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The row elements for this table or outline."
+          "text": "The row accessibility elements for the table or outline."
         }
       ]
     },
@@ -266,7 +269,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The currently selected columns for this table or outline."
+          "text": "The currently selected columns for the table or outline."
         }
       ]
     },
@@ -281,7 +284,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The currently selected rows for this table or outline."
+          "text": "The currently selected rows for the table or outline."
         }
       ]
     },
@@ -296,7 +299,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The element’s sort direction."
+          "text": "The accessibility element’s sort direction."
         }
       ]
     },
@@ -311,7 +314,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The visible columns for this table or outline."
+          "text": "The visible columns for the table or outline."
         }
       ]
     },
@@ -326,7 +329,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The visible rows for this table or outline."
+          "text": "The visible rows for the table or outline."
         }
       ]
     },
@@ -341,7 +344,6 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitysortdirection",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534988-accessibilitycolumnheaderuieleme",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535115-accessibilitycolumns",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535148-accessibilitycolumntitles",
@@ -353,7 +355,8 @@
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534978-accessibilityselectedcolumns",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535125-accessibilityselectedrows",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535150-accessibilityvisiblecolumns",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535004-accessibilityvisiblerows"
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535004-accessibilityvisiblerows",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitysortdirection"
       ],
       "title": "Configuring Table and Outline Views",
       "generated": true
@@ -450,7 +453,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

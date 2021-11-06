@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The index number identifying the selected segment (that is, the last segment touched)."
+      "text": "The index number that identifies the selected segment that the user last touched."
     }
   ],
   "documentVersion": 0,
@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UISegmentedControl(py)selectedSegmentIndex",
+    "parent": {
+      "title": "UISegmentedControl"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -102,13 +110,7 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uisegmentedcontrol",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A horizontal control that consists of multiple segments, each segment functioning as a discrete button."
-        }
-      ]
+      "url": "/documentation/uikit/uisegmentedcontrol"
     },
     "doc://com.apple.documentation/documentation/uikit/1618559-segment_selection/uisegmentedcontrolnosegment": {
       "title": "UISegmentedControlNoSegment",
@@ -118,6 +120,22 @@
       "role": "symbol",
       "url": "/documentation/uikit/1618559-segment_selection/uisegmentedcontrolnosegment"
     },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618586-momentary": {
+      "title": "momentary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618586-momentary",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol/1618586-momentary"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
     "doc://com.apple.documentation/documentation/uikit/uicontrolevents/uicontroleventvaluechanged": {
       "title": "UIControlEventValueChanged",
       "type": "topic",
@@ -126,20 +144,6 @@
       "role": "symbol",
       "url": "/documentation/uikit/uicontrolevents/uicontroleventvaluechanged"
     },
-    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618586-momentary": {
-      "title": "momentary",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618586-momentary",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisegmentedcontrol/1618586-momentary",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that determines whether segments in the receiver show selected state."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/objectivec/nsinteger": {
       "title": "NSInteger",
       "type": "topic",
@@ -147,6 +151,68 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/objectivec/nsinteger"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618553-numberofsegments": {
+      "title": "numberOfSegments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618553-numberofsegments",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol/1618553-numberofsegments",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the number of segments the receiver has."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600582-segmentindexforactionidentifier": {
+      "title": "segmentIndexForActionIdentifier:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600582-segmentindexforactionidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol/3600582-segmentindexforactionidentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The index of a segment with an action that has an identifier matching the identifier you specify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "segmentIndexForActionIdentifier:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600581-insertsegmentwithaction": {
+      "title": "insertSegmentWithAction:atIndex:animated:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600581-insertsegmentwithaction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol/3600581-insertsegmentwithaction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Insert a segment with the action you specify at the given index."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "insertSegmentWithAction:atIndex:animated:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618572-insertsegmentwithimage": {
       "title": "insertSegmentWithImage:atIndex:animated:",
@@ -158,7 +224,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Inserts a segment at a specified position in the receiver and gives it an image as content."
+          "text": "Inserts a segment at the position you specify and gives it an image as content."
         }
       ],
       "fragments": [
@@ -182,7 +248,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Inserts a segment at a specific position in the receiver and gives it a title as content."
+          "text": "Inserts a segment at the position you specify and gives it a title as content."
         }
       ],
       "fragments": [
@@ -196,20 +262,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618553-numberofsegments": {
-      "title": "numberOfSegments",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618553-numberofsegments",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisegmentedcontrol/1618553-numberofsegments",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the number of segments the receiver has."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618557-removeallsegments": {
       "title": "removeAllSegments",
       "type": "topic",
@@ -220,7 +272,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Removes all segments of the receiver"
+          "text": "Removes all segments of the segmented control."
         }
       ],
       "fragments": [
@@ -244,7 +296,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Removes the specified segment from the receiver, optionally animating the transition."
+          "text": "Removes the segment you specify from the segmented control, optionally animating the transition."
         }
       ],
       "fragments": [
@@ -268,7 +320,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The index number identifying the selected segment (that is, the last segment touched)."
+          "text": "The index number that identifies the selected segment that the user last touched."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/1618559-segment_selection": {
+      "title": "Segment Selection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/1618559-segment_selection",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/uikit/1618559-segment_selection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A constant for indicating that no segment is selected."
         }
       ]
     },
@@ -283,21 +349,17 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618553-numberofsegments",
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600582-segmentindexforactionidentifier",
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600581-insertsegmentwithaction",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618572-insertsegmentwithimage",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618588-insertsegmentwithtitle",
-        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618553-numberofsegments",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618557-removeallsegments",
-        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618590-removesegmentatindex"
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618590-removesegmentatindex",
+        "doc://com.apple.documentation/documentation/uikit/1618559-segment_selection"
       ],
       "title": "Managing Segments",
       "generated": true
-    },
-    {
-      "title": "Related Documentation",
-      "generated": false,
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618586-momentary"
-      ]
     }
   ],
   "primaryContentSections": [
@@ -338,6 +400,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -367,15 +430,42 @@
             },
             {
               "type": "text",
-              "text": " (no segment selected) until the user touches a segment. Set this property to -1 to turn off the current selection. "
+              "text": " (no segment selected) until the user touches a segment. Set this property to "
             },
             {
               "type": "codeVoice",
-              "code": "UISegmentedControl"
+              "code": "-1"
             },
             {
               "type": "text",
-              "text": " ignores this property when the control is in momentary mode. When the user touches a segment to change the selection, the control event "
+              "text": " to turn off the current selection. "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol"
+            },
+            {
+              "type": "text",
+              "text": " ignores this property when "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618586-momentary"
+            },
+            {
+              "type": "text",
+              "text": " is "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": ". When the user touches a segment to change the selection, the system generates the control event "
             },
             {
               "type": "reference",
@@ -384,7 +474,7 @@
             },
             {
               "type": "text",
-              "text": " is generated; if the segmented control is set up to respond to this control event, it sends a action message to its target. "
+              "text": ". If you set up the segmented control to respond to this control event, it sends an action message to its target."
             }
           ]
         }
@@ -392,7 +482,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

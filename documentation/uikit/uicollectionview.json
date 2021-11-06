@@ -35,25 +35,30 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UICollectionView",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -666,6 +671,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/building_high-performance_lists_and_collection_views": {
+      "title": "Building High-Performance Lists and Collection Views",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/building_high-performance_lists_and_collection_views",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/uiimage/building_high-performance_lists_and_collection_views",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Improve the performance of lists and collections in your app with prefetching and image preparation."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uicollectionview/1771771-prefetchingenabled": {
       "title": "prefetchingEnabled",
       "type": "topic",
@@ -1118,7 +1137,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the collection view supports drags and drops between apps."
+          "text": "A Boolean value that indicates whether the collection view supports dragging content."
         }
       ]
     },
@@ -1396,7 +1415,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Gets the visible cell object at the specified index path. "
+          "text": "Gets the cell object at the index path you specify. "
         }
       ],
       "fragments": [
@@ -1620,6 +1639,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/3801889-reconfigureitemsatindexpaths": {
+      "title": "reconfigureItemsAtIndexPaths:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/3801889-reconfigureitemsatindexpaths",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/3801889-reconfigureitemsatindexpaths",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Updates the data for the items at the index paths you specify, preserving the existing cells for the items. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "reconfigureItemsAtIndexPaths:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618078-reloaddata": {
       "title": "reloadData",
       "type": "topic",
@@ -1748,6 +1791,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/3795590-allowsfocus": {
+      "title": "allowsFocus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/3795590-allowsfocus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/3795590-allowsfocus"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/3795591-allowsfocusduringediting": {
+      "title": "allowsFocusDuringEditing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/3795591-allowsfocusduringediting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/3795591-allowsfocusduringediting"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/3867094-contextmenuinteraction": {
+      "title": "contextMenuInteraction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/3867094-contextmenuinteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/3867094-contextmenuinteraction"
+    },
     "doc://com.apple.documentation/documentation/uikit/uicollectionview": {
       "title": "UICollectionView",
       "type": "topic",
@@ -1768,16 +1835,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -1805,15 +1862,18 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618053-initwithframe",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618065-initwithcoder"
-      ]
+      ],
+      "anchor": "1656810"
     },
     {
       "kind": "taskGroup",
       "title": "Providing the Collection View Data",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618091-datasource",
-        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasource"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasource",
+        "doc://com.apple.documentation/documentation/uikit/uiimage/building_high-performance_lists_and_collection_views"
+      ],
+      "anchor": "2878635"
     },
     {
       "kind": "taskGroup",
@@ -1822,7 +1882,8 @@
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1771771-prefetchingenabled",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1771768-prefetchdatasource",
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching"
-      ]
+      ],
+      "anchor": "2558786"
     },
     {
       "kind": "taskGroup",
@@ -1830,7 +1891,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618033-delegate",
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate"
-      ]
+      ],
+      "anchor": "2878636"
     },
     {
       "kind": "taskGroup",
@@ -1841,7 +1903,8 @@
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618089-registerclass",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618083-registernib",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618063-dequeuereusablecellwithreuseiden"
-      ]
+      ],
+      "anchor": "1657002"
     },
     {
       "kind": "taskGroup",
@@ -1852,14 +1915,16 @@
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618103-registerclass",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618101-registernib",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618068-dequeuereusablesupplementaryview"
-      ]
+      ],
+      "anchor": "3618658"
     },
     {
       "kind": "taskGroup",
       "title": "Configuring the Background View",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618074-backgroundview"
-      ]
+      ],
+      "anchor": "1656875"
     },
     {
       "kind": "taskGroup",
@@ -1872,7 +1937,8 @@
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618080-finishinteractivetransition",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618075-cancelinteractivetransition",
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayoutinteractivetransitioncompletion"
-      ]
+      ],
+      "anchor": "1657143"
     },
     {
       "kind": "taskGroup",
@@ -1881,7 +1947,8 @@
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618028-numberofsections",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618016-numberofitemsinsection",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618056-visiblecells"
-      ]
+      ],
+      "anchor": "1657309"
     },
     {
       "kind": "taskGroup",
@@ -1890,7 +1957,8 @@
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618097-insertitemsatindexpaths",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618059-moveitematindexpath",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618060-deleteitemsatindexpaths"
-      ]
+      ],
+      "anchor": "1657364"
     },
     {
       "kind": "taskGroup",
@@ -1899,7 +1967,8 @@
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618090-insertsections",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618042-movesection",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618102-deletesections"
-      ]
+      ],
+      "anchor": "1657427"
     },
     {
       "kind": "taskGroup",
@@ -1909,7 +1978,8 @@
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618079-updateinteractivemovementtargetp",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618082-endinteractivemovement",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618076-cancelinteractivemovement"
-      ]
+      ],
+      "anchor": "1657520"
     },
     {
       "kind": "taskGroup",
@@ -1919,7 +1989,8 @@
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewdragdelegate",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/2897415-hasactivedrag",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/2909041-draginteractionenabled"
-      ]
+      ],
+      "anchor": "2902589"
     },
     {
       "kind": "taskGroup",
@@ -1929,7 +2000,8 @@
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/2897433-hasactivedrop",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/2897347-reorderingcadence",
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewreorderingcadence"
-      ]
+      ],
+      "anchor": "2902590"
     },
     {
       "kind": "taskGroup",
@@ -1943,14 +2015,16 @@
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/3600422-allowsselectionduringediting",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/3600421-allowsmultipleselectionduringedi",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/3573920-selectionfollowsfocus"
-      ]
+      ],
+      "anchor": "1657590"
     },
     {
       "kind": "taskGroup",
       "title": "Putting the Collection View into Edit Mode",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/3600425-editing"
-      ]
+      ],
+      "anchor": "3618682"
     },
     {
       "kind": "taskGroup",
@@ -1963,7 +2037,8 @@
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618034-indexpathsforvisiblesupplementar",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618041-supplementaryviewforelementkind",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618026-visiblesupplementaryviewsofkind"
-      ]
+      ],
+      "anchor": "1657714"
     },
     {
       "kind": "taskGroup",
@@ -1971,7 +2046,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618093-layoutattributesforitematindexpa",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618012-layoutattributesforsupplementary"
-      ]
+      ],
+      "anchor": "1657832"
     },
     {
       "kind": "taskGroup",
@@ -1980,24 +2056,28 @@
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618046-scrolltoitematindexpath",
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewscrollposition",
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewscrolldirection"
-      ]
+      ],
+      "anchor": "1657883"
     },
     {
       "kind": "taskGroup",
       "title": "Animating Multiple Changes to the Collection View",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618045-performbatchupdates"
-      ]
+      ],
+      "anchor": "1657910"
     },
     {
       "kind": "taskGroup",
       "title": "Reloading Content",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/2891094-hasuncommittedupdates",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/3801889-reconfigureitemsatindexpaths",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618078-reloaddata",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618092-reloadsections",
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618055-reloaditemsatindexpaths"
-      ]
+      ],
+      "anchor": "1657243"
     },
     {
       "kind": "taskGroup",
@@ -2006,14 +2086,26 @@
         "doc://com.apple.documentation/documentation/uikit/uicollectionelementcategory",
         "doc://com.apple.documentation/documentation/uikit/uicollectionelementkindsectionfooter",
         "doc://com.apple.documentation/documentation/uikit/uicollectionelementkindsectionheader"
-      ]
+      ],
+      "anchor": "1675261"
     },
     {
       "kind": "taskGroup",
       "title": "Remembering the Last Focused Cell",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618022-rememberslastfocusedindexpath"
-      ]
+      ],
+      "anchor": "3627253"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/3795590-allowsfocus",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/3795591-allowsfocusduringediting",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/3867094-contextmenuinteraction"
+      ],
+      "anchor": "3796744"
     }
   ],
   "seeAlsoSections": [
@@ -2059,6 +2151,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -2860,7 +2953,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

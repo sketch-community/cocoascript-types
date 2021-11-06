@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVSampleBufferAudioRenderer",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -193,6 +198,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorendererflushtimekey": {
+      "title": "AVSampleBufferAudioRendererFlushTimeKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorendererflushtimekey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplebufferaudiorendererflushtimekey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The key that indicates the presentation timestamp of the first queued sample that was flushed."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer/2866180-audiotimepitchalgorithm": {
       "title": "audioTimePitchAlgorithm",
       "type": "topic",
@@ -218,6 +237,20 @@
         {
           "type": "text",
           "text": "An algorithm used to set the audio pitch as the rate changes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer/3750310-allowedaudiospatializationformat": {
+      "title": "allowedAudioSpatializationFormats",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer/3750310-allowedaudiospatializationformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplebufferaudiorenderer/3750310-allowedaudiospatializationformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The source audio channel layouts the audio renderer supports for spatialization."
         }
       ]
     },
@@ -277,13 +310,13 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player": {
+    "doc://com.apple.documentation/documentation/avfaudio/audio_engine/playing_custom_audio_with_your_own_player": {
       "title": "Playing Custom Audio with Your Own Player",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/audio_engine/playing_custom_audio_with_your_own_player",
       "kind": "article",
       "role": "sampleCode",
-      "url": "/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player",
+      "url": "/documentation/avfaudio/audio_engine/playing_custom_audio_with_your_own_player",
       "abstract": [
         {
           "type": "text",
@@ -319,22 +352,40 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplebuffergenerator": {
+      "title": "AVSampleBufferGenerator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebuffergenerator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplebuffergenerator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to create sample buffer opaque objects. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequest": {
+      "title": "AVSampleBufferRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplebufferrequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that describes a sample buffer creation request."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -362,14 +413,17 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer/2866183-status",
         "doc://com.apple.documentation/documentation/avfoundation/avqueuedsamplebufferrenderingstatus"
-      ]
+      ],
+      "anchor": "2915978"
     },
     {
       "kind": "taskGroup",
       "title": "Removing Queued Buffers",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer/2866181-flushfromsourcetime"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer/2866181-flushfromsourcetime",
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorendererflushtimekey"
+      ],
+      "anchor": "3032711"
     },
     {
       "kind": "taskGroup",
@@ -377,7 +431,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer/2866180-audiotimepitchalgorithm",
         "doc://com.apple.documentation/documentation/avfoundation/avaudiotimepitchalgorithm"
-      ]
+      ],
+      "anchor": "3697893"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring Audio Spatialization",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer/3750310-allowedaudiospatializationformat"
+      ],
+      "anchor": "3761123"
     },
     {
       "kind": "taskGroup",
@@ -386,23 +449,27 @@
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer/2866179-volume",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer/2866177-muted",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer/2866182-audiooutputdeviceuniqueid"
-      ]
+      ],
+      "anchor": "3697891"
     },
     {
       "kind": "taskGroup",
       "title": "Responding to Errors",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer/2866178-error"
-      ]
+      ],
+      "anchor": "3032713"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player",
+        "doc://com.apple.documentation/documentation/avfaudio/audio_engine/playing_custom_audio_with_your_own_player",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer",
         "doc://com.apple.documentation/documentation/avfoundation/avqueuedsamplebufferrendering",
-        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferdisplaylayer"
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferdisplaylayer",
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplebuffergenerator",
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequest"
       ],
       "title": "Sample Buffer Rendering",
       "generated": true
@@ -442,6 +509,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -481,7 +549,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -35,25 +35,30 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UICollectionViewDiffableDataSource",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -142,6 +147,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource#3858878": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource#3858878",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uicollectionviewdiffabledatasource#3858878"
+    },
     "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot": {
       "title": "NSDiffableDataSourceSnapshot",
       "type": "topic",
@@ -155,6 +168,14 @@
           "text": "A representation of the state of the data in a view at a specific point in time. "
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview/1614955-datasource": {
+      "title": "dataSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614955-datasource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview/1614955-datasource"
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
@@ -254,6 +275,54 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3801894-sectionidentifierforindex": {
+      "title": "sectionIdentifierForIndex:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3801894-sectionidentifierforindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdiffabledatasource/3801894-sectionidentifierforindex",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an identifier for the section at the index you specify in the collection view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "sectionIdentifierForIndex:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3801893-indexforsectionidentifier": {
+      "title": "indexForSectionIdentifier:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3801893-indexforsectionidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdiffabledatasource/3801893-indexforsectionidentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an index for the section with the identifier you specify in the collection view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "indexForSectionIdentifier:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3182925-snapshot": {
       "title": "snapshot",
       "type": "topic",
@@ -288,7 +357,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Updates the UI to reflect the state of the data in the specified snapshot, optionally animating the UI changes. "
+          "text": "Updates the UI to reflect the state of the data in the snapshot, optionally animating the UI changes. "
         }
       ],
       "fragments": [
@@ -312,7 +381,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Updates the UI to reflect the state of the data in the specified snapshot, optionally animating the UI changes and executing a completion handler. "
+          "text": "Updates the UI to reflect the state of the data in the snapshot, optionally animating the UI changes and executing a completion handler. "
         }
       ],
       "fragments": [
@@ -323,6 +392,54 @@
         {
           "kind": "identifier",
           "text": "applySnapshot:animatingDifferences:completion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3801891-applysnapshotusingreloaddata": {
+      "title": "applySnapshotUsingReloadData:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3801891-applysnapshotusingreloaddata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdiffabledatasource/3801891-applysnapshotusingreloaddata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resets the UI to reflect the state of the data in the snapshot without computing a diff or animating the changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "applySnapshotUsingReloadData:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3801892-applysnapshotusingreloaddata": {
+      "title": "applySnapshotUsingReloadData:completion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3801892-applysnapshotusingreloaddata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdiffabledatasource/3801892-applysnapshotusingreloaddata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resets the UI to reflect the state of the data in the snapshot without computing a diff or animating the changes, optionally executing a completion handler. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "applySnapshotUsingReloadData:completion:"
         }
       ]
     },
@@ -482,6 +599,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/updating_collection_views_using_diffable_data_sources": {
+      "title": "Updating Collection Views Using Diffable Data Sources",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/updating_collection_views_using_diffable_data_sources",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/views_and_controls/collection_views/updating_collection_views_using_diffable_data_sources",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Streamline the display and update of data in a collection view using a diffable data source that contains identifiers."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views": {
       "title": "Implementing Modern Collection Views",
       "type": "topic",
@@ -493,6 +624,20 @@
         {
           "type": "text",
           "text": "Bring compositional layouts to your app and simplify updating your user interface with diffable data sources."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/building_high-performance_lists_and_collection_views": {
+      "title": "Building High-Performance Lists and Collection Views",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/building_high-performance_lists_and_collection_views",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/uiimage/building_high-performance_lists_and_collection_views",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Improve the performance of lists and collections in your app with prefetching and image preparation."
         }
       ]
     },
@@ -546,16 +691,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -581,7 +716,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3182923-initwithcollectionview",
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasourcecellprovider"
-      ]
+      ],
+      "anchor": "3561505"
     },
     {
       "kind": "taskGroup",
@@ -589,7 +725,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3182926-supplementaryviewprovider",
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasourcesupplementaryviewprovider"
-      ]
+      ],
+      "anchor": "3561507"
     },
     {
       "kind": "taskGroup",
@@ -597,7 +734,17 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3182924-itemidentifierforindexpath",
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3182922-indexpathforitemidentifier"
-      ]
+      ],
+      "anchor": "3561504"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Identifying Sections",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3801894-sectionidentifierforindex",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3801893-indexforsectionidentifier"
+      ],
+      "anchor": "3807552"
     },
     {
       "kind": "taskGroup",
@@ -605,8 +752,11 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3182925-snapshot",
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3182921-applysnapshot",
-        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3356324-applysnapshot"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3356324-applysnapshot",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3801891-applysnapshotusingreloaddata",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3801892-applysnapshotusingreloaddata"
+      ],
+      "anchor": "3561506"
     },
     {
       "kind": "taskGroup",
@@ -615,7 +765,8 @@
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3600515-snapshotforsection",
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3600511-applysnapshot",
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3600512-applysnapshot"
-      ]
+      ],
+      "anchor": "3633561"
     },
     {
       "kind": "taskGroup",
@@ -625,7 +776,8 @@
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasourcereorderinghandlers",
         "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcetransaction",
         "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesectiontransaction"
-      ]
+      ],
+      "anchor": "3633560"
     },
     {
       "kind": "taskGroup",
@@ -633,13 +785,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3600514-sectionsnapshothandlers",
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasourcesectionsnapshothandlers"
-      ]
+      ],
+      "anchor": "3633559"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/updating_collection_views_using_diffable_data_sources",
         "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views",
+        "doc://com.apple.documentation/documentation/uikit/uiimage/building_high-performance_lists_and_collection_views",
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasource",
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching",
         "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot",
@@ -699,6 +854,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -830,6 +986,19 @@
           ]
         },
         {
+          "type": "codeListing",
+          "code": [
+            "self.dataSource = [[UICollectionViewDiffableDataSource alloc] initWithCollectionView:self.collectionView cellProvider:^UICollectionViewCell *(UICollectionView *collectionView, NSIndexPath *indexPath, id item) {",
+            "    // configure and return cell",
+            "}];"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "3858878",
+            "title": "Listing 1"
+          }
+        },
+        {
           "type": "paragraph",
           "inlineContent": [
             {
@@ -848,6 +1017,34 @@
           ]
         },
         {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Do not change the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614955-datasource"
+                },
+                {
+                  "type": "text",
+                  "text": " on the collection view after you configure it with a diffable data source. If the collection view needs a new data source after you configure it initially, create and configure a new collection view and diffable data source."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
           "type": "paragraph",
           "inlineContent": []
         }
@@ -855,7 +1052,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

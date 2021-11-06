@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Initializes and returns the object using the first activity type declared in the app’s information property list file."
+      "text": "Creates a user activity object using the first activity type declared in the app’s information property list file."
     }
   ],
   "documentVersion": 0,
@@ -54,44 +54,54 @@
         "name": "iOS",
         "introducedAt": "8.0",
         "deprecatedAt": "10.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "deprecatedAt": "10.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
         "deprecatedAt": "10.12",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "10.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
         "deprecatedAt": "3.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSUserActivity(im)init",
+    "parent": {
+      "title": "NSUserActivity"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -188,6 +198,20 @@
       "title": "NSUserActivityTypes",
       "url": "https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW28"
     },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity/creating_a_user_activity_object": {
+      "title": "Creating a User Activity Object",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/creating_a_user_activity_object",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/foundation/nsuseractivity/creating_a_user_activity_object",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identify key user interactions and include the information to restore them later."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1410714-initwithactivitytype": {
       "title": "initWithActivityType:",
       "type": "topic",
@@ -198,7 +222,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes and returns the object using the specified type."
+          "text": "Creates a user activity object with the specified type."
         }
       ],
       "fragments": [
@@ -222,7 +246,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes and returns the object using the first activity type declared in the app’s information property list file."
+          "text": "Creates a user activity object using the first activity type declared in the app’s information property list file."
         }
       ],
       "fragments": [
@@ -248,6 +272,7 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsuseractivity/creating_a_user_activity_object",
         "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1410714-initwithactivitytype"
       ],
       "title": "Creating a User Activity Object",
@@ -286,6 +311,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -362,7 +388,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns a new player item for a given asset."
+      "text": "Returns a new player item for a specified asset."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVPlayerItem(cm)playerItemWithAsset:",
+    "parent": {
+      "title": "AVPlayerItem"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -106,9 +114,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to model the timing and presentation state of an asset played by the player."
+          "text": "An object that models the timing and presentation state of an asset that a player object presents."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset": {
+      "title": "AVAsset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1588088-playeritemwithasset": {
       "title": "playerItemWithAsset:automaticallyLoadedAssetKeys:",
@@ -120,7 +136,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a player item with the specified asset and the asset keys to be automatically loaded."
+          "text": "Creates a player item with the specified asset and the asset keys to automatically load."
         }
       ],
       "fragments": [
@@ -134,14 +150,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avasset": {
-      "title": "AVAsset",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasset"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1387558-initwithurl": {
       "title": "initWithURL:",
       "type": "topic",
@@ -152,7 +160,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes a player item with a given URL."
+          "text": "Creates a player item with a specified URL."
         }
       ],
       "fragments": [
@@ -176,7 +184,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new player item, prepared to use a given URL."
+          "text": "Returns a new player item with a specified URL."
         }
       ],
       "fragments": [
@@ -200,7 +208,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes a new player item for a given asset."
+          "text": "Creates a player item for a specified asset."
         }
       ],
       "fragments": [
@@ -224,7 +232,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new player item for a given asset."
+          "text": "Returns a new player item for a specified asset."
         }
       ],
       "fragments": [
@@ -248,7 +256,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes a player item with the specified asset and the asset keys to be automatically loaded."
+          "text": "Creates a player item with the specified asset and the asset keys to automatically load."
         }
       ],
       "fragments": [
@@ -337,6 +345,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -451,7 +460,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

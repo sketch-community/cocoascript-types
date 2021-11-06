@@ -53,14 +53,21 @@
         "name": "iOS",
         "introducedAt": "2.0",
         "deprecatedAt": "9.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "deprecatedAt": "9.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
@@ -68,8 +75,8 @@
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -296,8 +303,7 @@
           "type": "text",
           "text": ", that is displayed below a peek when a user swipes the peek upward. "
         }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiaccelerometer": {
       "title": "UIAccelerometer",
@@ -848,8 +854,7 @@
           "type": "text",
           "text": " class."
         }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiacceleration": {
       "title": "UIAcceleration",
@@ -1265,16 +1270,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -1293,7 +1288,8 @@
         "doc://com.apple.documentation/documentation/uikit/uialertview/1620779-initwithcoder",
         "doc://com.apple.documentation/documentation/uikit/uialertview/1620759-initwithframe",
         "doc://com.apple.documentation/documentation/uikit/uialertview/1620765-initwithtitle"
-      ]
+      ],
+      "anchor": "1656907"
     },
     {
       "kind": "taskGroup",
@@ -1304,7 +1300,8 @@
         "doc://com.apple.documentation/documentation/uikit/uialertview/1620768-title",
         "doc://com.apple.documentation/documentation/uikit/uialertview/1620758-message",
         "doc://com.apple.documentation/documentation/uikit/uialertview/1620764-visible"
-      ]
+      ],
+      "anchor": "1656944"
     },
     {
       "kind": "taskGroup",
@@ -1316,28 +1313,32 @@
         "doc://com.apple.documentation/documentation/uikit/uialertview/1620757-textfieldatindex",
         "doc://com.apple.documentation/documentation/uikit/uialertview/1620766-cancelbuttonindex",
         "doc://com.apple.documentation/documentation/uikit/uialertview/1620771-firstotherbuttonindex"
-      ]
+      ],
+      "anchor": "1657023"
     },
     {
       "kind": "taskGroup",
       "title": "Displaying",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uialertview/1620751-show"
-      ]
+      ],
+      "anchor": "1657128"
     },
     {
       "kind": "taskGroup",
       "title": "Dismissing",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uialertview/1620754-dismisswithclickedbuttonindex"
-      ]
+      ],
+      "anchor": "1657155"
     },
     {
       "kind": "taskGroup",
       "title": "Constants",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uialertviewstyle"
-      ]
+      ],
+      "anchor": "1677057"
     }
   ],
   "seeAlsoSections": [
@@ -1397,6 +1398,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -1522,7 +1524,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

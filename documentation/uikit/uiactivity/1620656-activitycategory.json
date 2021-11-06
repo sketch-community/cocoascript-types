@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns the category of the activity, which may be used to group activities in the UI."
+      "text": "The category of the activity, which may be used to group activities in the UI."
     }
   ],
   "documentVersion": 0,
@@ -41,20 +41,28 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIActivity(cpy)activityCategory",
+    "parent": {
+      "title": "UIActivity"
+    },
     "symbolKind": "cldata"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -137,7 +145,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Activities have a defined category, and the activity UI may show activities grouped by category."
+          "text": "An enumeration that defines categories of activities."
         }
       ]
     },
@@ -151,7 +159,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the category of the activity, which may be used to group activities in the UI."
+          "text": "The category of the activity, which may be used to group activities in the UI."
         }
       ]
     },
@@ -165,7 +173,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An identifier for the type of service being provided."
+          "text": "The type of service being provided."
         }
       ]
     },
@@ -179,7 +187,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Activity types for which the system has built-in support."
+          "text": "A structure that describes the types of acitivities for which the system has built-in support."
         }
       ]
     },
@@ -193,7 +201,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A user-readable string describing the service."
+          "text": "A user-readable string that describes the service."
         }
       ]
     },
@@ -270,6 +278,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -318,7 +327,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Override this method to define a different activity category for your custom activity."
+              "text": "Override this property to define a different activity category for your custom activity."
             }
           ]
         }
@@ -326,7 +335,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

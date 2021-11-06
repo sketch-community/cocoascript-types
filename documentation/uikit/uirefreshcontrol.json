@@ -35,20 +35,25 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIRefreshControl",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -133,23 +138,24 @@
       "variants": [
         {
           "traits": [
-            "1x"
-          ],
-          "size": {
-            "width": 390,
-            "height": 511
-          },
-          "url": "https://docs-assets.developer.apple.com/published/dfb5b1130b/4ae556e1-63a3-43ab-9522-572be7ea9e7d.png"
-        },
-        {
-          "traits": [
             "2x"
           ],
           "size": {
-            "width": 390,
-            "height": 511
+            "width": 710,
+            "height": 500
           },
-          "url": "https://docs-assets.developer.apple.com/published/ab0192f5aa/20b53f6e-81b0-4610-8560-66efc547edde.png"
+          "url": "https://docs-assets.developer.apple.com/published/5a3ee44a30/refresh-control@2x.png"
+        },
+        {
+          "traits": [
+            "dark",
+            "2x"
+          ],
+          "size": {
+            "width": 710,
+            "height": 500
+          },
+          "url": "https://docs-assets.developer.apple.com/published/a548e8f236/refresh-control~dark@2x.png"
         }
       ],
       "alt": "Illustration showing a refresh control. The control displays an animated progress indicator at the top of a scroll view's content area.",
@@ -226,6 +232,22 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiuserinterfaceidiom/uiuserinterfaceidiommac"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uikeycommand": {
+      "title": "UIKeyCommand",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeycommand",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uikeycommand"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface": {
+      "title": "Adding Menus and Shortcuts to the Menu Bar and User Interface",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface"
     },
     "doc://com.apple.documentation/documentation/uikit/uirefreshcontrol/1624846-init": {
       "title": "init",
@@ -341,7 +363,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The methods adopted by the object you use to manage data and provide cells for a table view."
+          "text": "The methods that an object adopts to manage data and provide cells for a table view."
         }
       ]
     },
@@ -423,16 +445,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -449,7 +461,8 @@
       "title": "Initializing a Refresh Control",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uirefreshcontrol/1624846-init"
-      ]
+      ],
+      "anchor": "1653270"
     },
     {
       "kind": "taskGroup",
@@ -457,7 +470,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uirefreshcontrol/1624847-tintcolor",
         "doc://com.apple.documentation/documentation/uikit/uirefreshcontrol/1624845-attributedtitle"
-      ]
+      ],
+      "anchor": "1653303"
     },
     {
       "kind": "taskGroup",
@@ -466,7 +480,8 @@
         "doc://com.apple.documentation/documentation/uikit/uirefreshcontrol/1624842-beginrefreshing",
         "doc://com.apple.documentation/documentation/uikit/uirefreshcontrol/1624848-endrefreshing",
         "doc://com.apple.documentation/documentation/uikit/uirefreshcontrol/1624844-refreshing"
-      ]
+      ],
+      "anchor": "1653347"
     }
   ],
   "seeAlsoSections": [
@@ -518,6 +533,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -702,6 +718,24 @@
                 },
                 {
                   "type": "text",
+                  "text": ". However, you can update your app to provide similar functionality in the Mac idiom. For example, replace the control with a Refresh menu item by creating a "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uikeycommand"
+                },
+                {
+                  "type": "text",
+                  "text": " object with the title “Refresh” and the keyboard shortcut Command-R. Then add the command to your app’s menu system. For more information, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface"
+                },
+                {
+                  "type": "text",
                   "text": "."
                 }
               ]
@@ -721,7 +755,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

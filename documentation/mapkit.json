@@ -27,33 +27,38 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.2",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -86,6 +91,20 @@
       "title": "Location and Maps Programming Guide",
       "url": "https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497"
     },
+    "doc://com.apple.documentation/documentation/mapkit/enabling_maps_capability_in_xcode": {
+      "title": "Enabling Maps Capability in Xcode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/enabling_maps_capability_in_xcode",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/mapkit/enabling_maps_capability_in_xcode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configure your routing app to support providing directions."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/mapkit/mkmapview": {
       "title": "MKMapView",
       "type": "topic",
@@ -96,7 +115,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An embeddable map interface, similar to the one provided by the Maps application.  "
+          "text": "An embeddable map interface, similar to the one that the Maps app provides."
         }
       ]
     },
@@ -296,83 +315,19 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/mapkit/mkplacemark": {
-      "title": "MKPlacemark",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkplacemark",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/mapkit/mkplacemark",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A user-friendly description of a location on the map.  "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/mapkit/mkannotation": {
-      "title": "MKAnnotation",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkannotation",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/mapkit/mkannotation",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An interface for associating your content with a specific map location. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/mapkit/mkannotationview": {
-      "title": "MKAnnotationView",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkannotationview",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/mapkit/mkannotationview",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The visual representation of one of your annotation objects.  "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/mapkit/mkoverlay": {
-      "title": "MKOverlay",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkoverlay",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/mapkit/mkoverlay",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An interface for associating content with a specific map region.  "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer": {
-      "title": "MKOverlayRenderer",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/mapkit/mkoverlayrenderer",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The shared infrastructure used to draw overlays on the map surface. "
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations": {
       "title": "MapKit Annotations",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/mapkit/mapkit_annotations"
+      "url": "/documentation/mapkit/mapkit_annotations",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create annotations to add indicators and additional details for specific locations on a map."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays": {
       "title": "MapKit Overlays",
@@ -380,7 +335,13 @@
       "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/mapkit/mapkit_overlays"
+      "url": "/documentation/mapkit/mapkit_overlays",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create overlays to highlight geographic regions or paths."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/mapkit/displaying_an_indoor_map": {
       "title": "Displaying an Indoor Map",
@@ -672,7 +633,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A utility class for capturing a map and it’s content into an image."
+          "text": "A utility class for capturing a map and its content into an image."
         }
       ]
     },
@@ -754,24 +715,16 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "topicSections": [
     {
       "kind": "taskGroup",
       "title": "Essentials",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkit/enabling_maps_capability_in_xcode",
         "doc://com.apple.documentation/documentation/mapkit/mkmapview",
         "doc://com.apple.documentation/documentation/mapkit/mkmapitem"
-      ]
+      ],
+      "anchor": "2897907"
     },
     {
       "kind": "taskGroup",
@@ -783,7 +736,8 @@
         "doc://com.apple.documentation/documentation/mapkit/mkmappoint",
         "doc://com.apple.documentation/documentation/mapkit/mkmapsize",
         "doc://com.apple.documentation/documentation/mapkit/mkdistanceformatter"
-      ]
+      ],
+      "anchor": "2865231"
     },
     {
       "kind": "taskGroup",
@@ -796,20 +750,17 @@
         "doc://com.apple.documentation/documentation/mapkit/mkpitchcontrol",
         "doc://com.apple.documentation/documentation/mapkit/mkusertrackingbutton",
         "doc://com.apple.documentation/documentation/mapkit/mkusertrackingbarbuttonitem"
-      ]
+      ],
+      "anchor": "2865223"
     },
     {
       "kind": "taskGroup",
       "title": "Annotations and Overlays",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/mapkit/mkplacemark",
-        "doc://com.apple.documentation/documentation/mapkit/mkannotation",
-        "doc://com.apple.documentation/documentation/mapkit/mkannotationview",
-        "doc://com.apple.documentation/documentation/mapkit/mkoverlay",
-        "doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer",
         "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations",
         "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays"
-      ]
+      ],
+      "anchor": "2865224"
     },
     {
       "kind": "taskGroup",
@@ -819,7 +770,8 @@
         "doc://com.apple.documentation/documentation/mapkit/mkgeojsondecoder",
         "doc://com.apple.documentation/documentation/mapkit/mkgeojsonfeature",
         "doc://com.apple.documentation/documentation/mapkit/mkgeojsonobject"
-      ]
+      ],
+      "anchor": "3222260"
     },
     {
       "kind": "taskGroup",
@@ -831,7 +783,8 @@
         "doc://com.apple.documentation/documentation/mapkit/mketaresponse",
         "doc://com.apple.documentation/documentation/mapkit/mkroute",
         "doc://com.apple.documentation/documentation/mapkit/mkroutestep"
-      ]
+      ],
+      "anchor": "2865225"
     },
     {
       "kind": "taskGroup",
@@ -844,7 +797,8 @@
         "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleter",
         "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleterresulttype",
         "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompletion"
-      ]
+      ],
+      "anchor": "2865226"
     },
     {
       "kind": "taskGroup",
@@ -853,7 +807,8 @@
         "doc://com.apple.documentation/documentation/mapkit/optimizing_map_views_with_filtering_and_camera_constraints",
         "doc://com.apple.documentation/documentation/mapkit/mkpointofinterestfilter",
         "doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategory"
-      ]
+      ],
+      "anchor": "3222287"
     },
     {
       "kind": "taskGroup",
@@ -861,7 +816,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotter",
         "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshot"
-      ]
+      ],
+      "anchor": "2865227"
     },
     {
       "kind": "taskGroup",
@@ -869,21 +825,24 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkerrordomain",
         "doc://com.apple.documentation/documentation/mapkit/mkerrorcode"
-      ]
+      ],
+      "anchor": "2869525"
     },
     {
       "kind": "taskGroup",
       "title": "Deprecated",
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/deprecated_symbols"
-      ]
+      ],
+      "anchor": "2865228"
     },
     {
       "kind": "taskGroup",
       "title": "Reference",
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mapkit_functions"
-      ]
+      ],
+      "anchor": "3020933"
     }
   ],
   "seeAlsoSections": [
@@ -971,7 +930,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

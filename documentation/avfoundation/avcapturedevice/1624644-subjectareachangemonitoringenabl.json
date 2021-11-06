@@ -35,20 +35,28 @@
       {
         "name": "iOS",
         "introducedAt": "5.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "introducedAt": "14.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVCaptureDevice(py)subjectAreaChangeMonitoringEnabled",
+    "parent": {
+      "title": "AVCaptureDevice"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -97,7 +105,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturedevice"
+      "url": "/documentation/avfoundation/avcapturedevice",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A device that provides input (such as audio or video) for capture sessions and offers controls for hardware-specific capture features."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avcapturedevicesubjectareadidchangenotification": {
       "title": "AVCaptureDeviceSubjectAreaDidChangeNotification",
@@ -109,16 +123,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the instance of "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice"
-        },
-        {
-          "type": "text",
-          "text": " has detected a substantial change to the video subject area."
+          "text": "A notification the system posts when a capture device detects a substantial change to the video subject area."
         }
       ]
     },
@@ -252,6 +257,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -333,7 +339,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UISegmentedControl",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -129,7 +134,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Sets the divider image used for a given combination of left and right segment states and bar metrics. "
+          "text": "Sets the divider image to use for a given combination of left and right segment states and bar metrics."
         }
       ],
       "fragments": [
@@ -215,7 +220,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes and returns a segmented control with segments having the given titles or images."
+          "text": "Creates a segmented control with segments having the given titles or images."
         }
       ],
       "fragments": [
@@ -226,6 +231,78 @@
         {
           "kind": "identifier",
           "text": "initWithItems:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600580-initwithframe": {
+      "title": "initWithFrame:actions:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600580-initwithframe",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol/3600580-initwithframe",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a segmented control with the given frame and adds segments for the actions you specify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithFrame:actions:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600579-initwithframe": {
+      "title": "initWithFrame:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600579-initwithframe",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol/3600579-initwithframe",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an empty segmented control with the frame you specify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithFrame:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600578-initwithcoder": {
+      "title": "initWithCoder:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600578-initwithcoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol/3600578-initwithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a segmented control with data from an unarchiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithCoder:"
         }
       ]
     },
@@ -263,7 +340,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the image for a specific segment"
+          "text": "Returns the image for a specific segment."
         }
       ],
       "fragments": [
@@ -325,6 +402,116 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600577-actionforsegmentatindex": {
+      "title": "actionForSegmentAtIndex:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600577-actionforsegmentatindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol/3600577-actionforsegmentatindex",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Fetches the action of the segment at the index you specify, if one exists."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "actionForSegmentAtIndex:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600583-setaction": {
+      "title": "setAction:forSegmentAtIndex:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600583-setaction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol/3600583-setaction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the action for the segment at the index you specify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setAction:forSegmentAtIndex:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618553-numberofsegments": {
+      "title": "numberOfSegments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618553-numberofsegments",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol/1618553-numberofsegments",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the number of segments the receiver has."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600582-segmentindexforactionidentifier": {
+      "title": "segmentIndexForActionIdentifier:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600582-segmentindexforactionidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol/3600582-segmentindexforactionidentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The index of a segment with an action that has an identifier matching the identifier you specify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "segmentIndexForActionIdentifier:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600581-insertsegmentwithaction": {
+      "title": "insertSegmentWithAction:atIndex:animated:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600581-insertsegmentwithaction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol/3600581-insertsegmentwithaction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Insert a segment with the action you specify at the given index."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "insertSegmentWithAction:atIndex:animated:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618572-insertsegmentwithimage": {
       "title": "insertSegmentWithImage:atIndex:animated:",
       "type": "topic",
@@ -335,7 +522,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Inserts a segment at a specified position in the receiver and gives it an image as content."
+          "text": "Inserts a segment at the position you specify and gives it an image as content."
         }
       ],
       "fragments": [
@@ -359,7 +546,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Inserts a segment at a specific position in the receiver and gives it a title as content."
+          "text": "Inserts a segment at the position you specify and gives it a title as content."
         }
       ],
       "fragments": [
@@ -373,20 +560,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618553-numberofsegments": {
-      "title": "numberOfSegments",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618553-numberofsegments",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisegmentedcontrol/1618553-numberofsegments",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the number of segments the receiver has."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618557-removeallsegments": {
       "title": "removeAllSegments",
       "type": "topic",
@@ -397,7 +570,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Removes all segments of the receiver"
+          "text": "Removes all segments of the segmented control."
         }
       ],
       "fragments": [
@@ -421,7 +594,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Removes the specified segment from the receiver, optionally animating the transition."
+          "text": "Removes the segment you specify from the segmented control, optionally animating the transition."
         }
       ],
       "fragments": [
@@ -445,7 +618,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The index number identifying the selected segment (that is, the last segment touched)."
+          "text": "The index number that identifies the selected segment that the user last touched."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/1618559-segment_selection": {
+      "title": "Segment Selection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/1618559-segment_selection",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/uikit/1618559-segment_selection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A constant for indicating that no segment is selected."
         }
       ]
     },
@@ -463,21 +650,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618577-segmentedcontrolstyle": {
-      "title": "segmentedControlStyle",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618577-segmentedcontrolstyle",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisegmentedcontrol/1618577-segmentedcontrolstyle",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The style of the segmented control."
-        }
-      ],
-      "deprecated": true
-    },
     "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618567-setenabled": {
       "title": "setEnabled:forSegmentAtIndex:",
       "type": "topic",
@@ -488,7 +660,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Enables the specified segment."
+          "text": "Enables the segment you specify."
         }
       ],
       "fragments": [
@@ -560,7 +732,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the offset for drawing the content (image or text) of the specified segment."
+          "text": "Returns the offset for drawing the content (image or text) of the segment you specify."
         }
       ],
       "fragments": [
@@ -584,7 +756,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Sets the width of the specified segment of the receiver."
+          "text": "Sets the width of the segment at the index you specify."
         }
       ],
       "fragments": [
@@ -608,7 +780,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the width of the indicated segment of the receiver."
+          "text": "Returns the width of the segment at the index you specify."
         }
       ],
       "fragments": [
@@ -633,6 +805,50 @@
         {
           "type": "text",
           "text": "Indicates whether the control attempts to adjust segment widths based on their content widths."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618577-segmentedcontrolstyle": {
+      "title": "segmentedControlStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618577-segmentedcontrolstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol/1618577-segmentedcontrolstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The style of the segmented control."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolstyle": {
+      "title": "UISegmentedControlStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrolstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The styles of the segmented control. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3335209-selectedsegmenttintcolor": {
+      "title": "selectedSegmentTintColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3335209-selectedsegmenttintcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol/3335209-selectedsegmenttintcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The color to use for highlighting the currently selected segment."
         }
       ]
     },
@@ -670,7 +886,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Sets the background image for a given state and bar metrics."
+          "text": "Sets the background image for given state and bar metrics."
         }
       ],
       "fragments": [
@@ -718,7 +934,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the content positioning offset for a given segment and bar metrics."
+          "text": "Sets the content positioning offset for a given segment and bar metrics."
         }
       ],
       "fragments": [
@@ -729,6 +945,20 @@
         {
           "kind": "identifier",
           "text": "setContentPositionAdjustment:forSegmentType:barMetrics:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolsegment": {
+      "title": "UISegmentedControlSegment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolsegment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrolsegment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants for specifying a segment in a control"
         }
       ]
     },
@@ -801,183 +1031,6 @@
         {
           "kind": "identifier",
           "text": "setTitleTextAttributes:forState:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolstyle": {
-      "title": "UISegmentedControlStyle",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolstyle",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisegmentedcontrolstyle",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The styles of the segmented control. "
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/1618559-segment_selection": {
-      "title": "Segment Selection",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/1618559-segment_selection",
-      "kind": "symbol",
-      "role": "containerSymbol",
-      "url": "/documentation/uikit/1618559-segment_selection",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A constant for indicating that no segment is selected."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolsegment": {
-      "title": "UISegmentedControlSegment",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolsegment",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisegmentedcontrolsegment",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Constants for specifying a segment in a control"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600578-initwithcoder": {
-      "title": "initWithCoder:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600578-initwithcoder",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisegmentedcontrol/3600578-initwithcoder",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithCoder:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600579-initwithframe": {
-      "title": "initWithFrame:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600579-initwithframe",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisegmentedcontrol/3600579-initwithframe",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithFrame:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600580-initwithframe": {
-      "title": "initWithFrame:actions:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600580-initwithframe",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisegmentedcontrol/3600580-initwithframe",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithFrame:actions:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3335209-selectedsegmenttintcolor": {
-      "title": "selectedSegmentTintColor",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3335209-selectedsegmenttintcolor",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisegmentedcontrol/3335209-selectedsegmenttintcolor"
-    },
-    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600577-actionforsegmentatindex": {
-      "title": "actionForSegmentAtIndex:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600577-actionforsegmentatindex",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisegmentedcontrol/3600577-actionforsegmentatindex",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "actionForSegmentAtIndex:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600581-insertsegmentwithaction": {
-      "title": "insertSegmentWithAction:atIndex:animated:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600581-insertsegmentwithaction",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisegmentedcontrol/3600581-insertsegmentwithaction",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "insertSegmentWithAction:atIndex:animated:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600582-segmentindexforactionidentifier": {
-      "title": "segmentIndexForActionIdentifier:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600582-segmentindexforactionidentifier",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisegmentedcontrol/3600582-segmentindexforactionidentifier",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "segmentIndexForActionIdentifier:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600583-setaction": {
-      "title": "setAction:forSegmentAtIndex:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600583-setaction",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisegmentedcontrol/3600583-setaction",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setAction:forSegmentAtIndex:"
         }
       ]
     },
@@ -1101,16 +1154,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -1134,8 +1177,12 @@
       "kind": "taskGroup",
       "title": "Initializing a Segmented Control",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618569-initwithitems"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618569-initwithitems",
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600580-initwithframe",
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600579-initwithframe",
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600578-initwithcoder"
+      ],
+      "anchor": "1653186"
     },
     {
       "kind": "taskGroup",
@@ -1145,83 +1192,67 @@
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618579-imageforsegmentatindex",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618556-settitle",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618561-titleforsegmentatindex"
-      ]
+      ],
+      "anchor": "1653227"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Segment Actions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600577-actionforsegmentatindex",
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600583-setaction"
+      ],
+      "anchor": "3737944"
     },
     {
       "kind": "taskGroup",
       "title": "Managing Segments",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618553-numberofsegments",
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600582-segmentindexforactionidentifier",
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600581-insertsegmentwithaction",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618572-insertsegmentwithimage",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618588-insertsegmentwithtitle",
-        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618553-numberofsegments",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618557-removeallsegments",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618590-removesegmentatindex",
-        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618575-selectedsegmentindex"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618575-selectedsegmentindex",
+        "doc://com.apple.documentation/documentation/uikit/1618559-segment_selection"
+      ],
+      "anchor": "1653290"
     },
     {
       "kind": "taskGroup",
       "title": "Managing Segment Behavior and Appearance",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618586-momentary",
-        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618577-segmentedcontrolstyle",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618567-setenabled",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618591-isenabledforsegmentatindex",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618574-setcontentoffset",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618580-contentoffsetforsegmentatindex",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618584-setwidth",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618581-widthforsegmentatindex",
-        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618578-apportionssegmentwidthsbycontent"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618578-apportionssegmentwidthsbycontent",
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618577-segmentedcontrolstyle",
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolstyle"
+      ],
+      "anchor": "1653412"
     },
     {
       "kind": "taskGroup",
       "title": "Customizing Appearance",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3335209-selectedsegmenttintcolor",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618583-backgroundimageforstate",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618571-setbackgroundimage",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618593-contentpositionadjustmentforsegm",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618555-setcontentpositionadjustment",
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolsegment",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618565-dividerimageforleftsegmentstate",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618558-setdividerimage",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618566-titletextattributesforstate",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618570-settitletextattributes"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Constants",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolstyle",
-        "doc://com.apple.documentation/documentation/uikit/1618559-segment_selection",
-        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolsegment"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Initializers",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600578-initwithcoder",
-        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600579-initwithframe",
-        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600580-initwithframe"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Properties",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3335209-selectedsegmenttintcolor"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Methods",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600577-actionforsegmentatindex",
-        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600581-insertsegmentwithaction",
-        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600582-segmentindexforactionidentifier",
-        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3600583-setaction"
-      ]
+      ],
+      "anchor": "1653545"
     }
   ],
   "seeAlsoSections": [
@@ -1274,6 +1305,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -1508,7 +1540,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

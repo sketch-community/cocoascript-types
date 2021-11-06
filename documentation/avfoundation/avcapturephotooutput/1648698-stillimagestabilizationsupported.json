@@ -36,23 +36,33 @@
         "name": "iOS",
         "introducedAt": "10.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "13.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)AVCapturePhotoOutput(py)stillImageStabilizationSupported",
+    "parent": {
+      "title": "AVCapturePhotoOutput"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,7 +115,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A capture output for still image, Live Photo, and other photography workflows."
+          "text": "A capture output for still image, Live Photos, and other photography workflows."
         }
       ]
     },
@@ -254,21 +264,6 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2726864-dualcamerafusionsupported": {
-      "title": "dualCameraFusionSupported",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2726864-dualcamerafusionsupported",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturephotooutput/2726864-dualcamerafusionsupported",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value indicating whether the capture output currently supports automatically combining image data on a dual camera device."
-        }
-      ],
-      "deprecated": true
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -285,8 +280,7 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648607-lensstabilizationduringbracketed",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648702-maxbracketedcapturephotocount",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648766-supportedflashmodes",
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2968219-autoredeyereductionsupported",
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2726864-dualcamerafusionsupported"
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2968219-autoredeyereductionsupported"
       ],
       "title": "Determining Available Settings",
       "generated": true
@@ -328,6 +322,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -443,7 +438,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

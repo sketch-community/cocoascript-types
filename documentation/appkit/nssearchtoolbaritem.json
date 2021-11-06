@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A toolbar item that contains a text field optimized for performing text-based searches."
+      "text": "A toolbar item that contains a search field optimized for performing text-based searches."
     }
   ],
   "documentVersion": 0,
@@ -41,15 +41,15 @@
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSSearchToolbarItem",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,6 +116,20 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/appkit/nssearchtoolbaritem": {
+      "title": "NSSearchToolbarItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nssearchtoolbaritem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nssearchtoolbaritem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A toolbar item that contains a search field optimized for performing text-based searches."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nstoolbaritem": {
       "title": "NSToolbarItem",
       "type": "topic",
@@ -127,6 +141,20 @@
         {
           "type": "text",
           "text": "An item in a window’s toolbar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nssearchtoolbaritem/3674528-preferredwidthforsearchfield": {
+      "title": "preferredWidthForSearchField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nssearchtoolbaritem/3674528-preferredwidthforsearchfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nssearchtoolbaritem/3674528-preferredwidthforsearchfield",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The preferred width for the toolbar item when it has keyboard focus."
         }
       ]
     },
@@ -158,14 +186,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nssearchtoolbaritem/3674528-preferredwidthforsearchfield": {
-      "title": "preferredWidthForSearchField",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nssearchtoolbaritem/3674528-preferredwidthforsearchfield",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nssearchtoolbaritem/3674528-preferredwidthforsearchfield"
-    },
     "doc://com.apple.documentation/documentation/appkit/nssearchtoolbaritem/3674526-beginsearchinteraction": {
       "title": "beginSearchInteraction",
       "type": "topic",
@@ -173,6 +193,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nssearchtoolbaritem/3674526-beginsearchinteraction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Starts a search interaction and moves the keyboard focus to the search field."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -191,6 +217,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nssearchtoolbaritem/3674527-endsearchinteraction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Ends a search interaction by giving up the first responder and adjusting the size of the search field to the available width for the toolbar item if necessary."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -222,7 +254,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupcontrolrepresentation",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstoolbaritemgroupcontrolrepresentation"
+      "url": "/documentation/appkit/nstoolbaritemgroupcontrolrepresentation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates the display style for a grouped toolbar item."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupselectionmode": {
       "title": "NSToolbarItemGroupSelectionMode",
@@ -230,7 +268,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupselectionmode",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstoolbaritemgroupselectionmode"
+      "url": "/documentation/appkit/nstoolbaritemgroupselectionmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates how a grouped toolbar item selects its subitems."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsmenutoolbaritem": {
       "title": "NSMenuToolbarItem",
@@ -238,19 +282,11 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsmenutoolbaritem",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsmenutoolbaritem"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nssearchtoolbaritem": {
-      "title": "NSSearchToolbarItem",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nssearchtoolbaritem",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nssearchtoolbaritem",
+      "url": "/documentation/appkit/nsmenutoolbaritem",
       "abstract": [
         {
           "type": "text",
-          "text": "A toolbar item that contains a text field optimized for performing text-based searches."
+          "text": "A control that presents a menu in a window’s toolbar."
         }
       ]
     },
@@ -291,24 +327,20 @@
       "kind": "taskGroup",
       "title": "Configuring a Search Item",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nssearchtoolbaritem/3674528-preferredwidthforsearchfield",
         "doc://com.apple.documentation/documentation/appkit/nssearchtoolbaritem/3634329-resignsfirstresponderwithcancel",
         "doc://com.apple.documentation/documentation/appkit/nssearchtoolbaritem/3634330-searchfield"
-      ]
+      ],
+      "anchor": "3642114"
     },
     {
       "kind": "taskGroup",
-      "title": "Instance Properties",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nssearchtoolbaritem/3674528-preferredwidthforsearchfield"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Methods",
+      "title": "Controlling Search Interactions",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nssearchtoolbaritem/3674526-beginsearchinteraction",
         "doc://com.apple.documentation/documentation/appkit/nssearchtoolbaritem/3674527-endsearchinteraction"
-      ]
+      ],
+      "anchor": "3839269"
     }
   ],
   "seeAlsoSections": [
@@ -376,12 +408,13 @@
           "type": "paragraph",
           "inlineContent": [
             {
-              "type": "codeVoice",
-              "code": "NSSearchToolbarItem"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nssearchtoolbaritem"
             },
             {
               "type": "text",
-              "text": " will automatically resize to accommodate typing when the focus switches to the toolbar item."
+              "text": " automatically resizes to accommodate typing when the focus switches to the toolbar item. When the toolbar is low on space, the system may collapse the search item into a button representation, which then expands to a full search field when the user clicks on it."
             }
           ]
         }
@@ -389,7 +422,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

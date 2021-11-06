@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Sets the background image for a given state and bar metrics."
+      "text": "Sets the background image for given state and bar metrics."
     }
   ],
   "documentVersion": 0,
@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "5.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UISegmentedControl(im)setBackgroundImage:forState:barMetrics:",
+    "parent": {
+      "title": "UISegmentedControl"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -110,30 +118,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618583-backgroundimageforstate": {
-      "title": "backgroundImageForState:barMetrics:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618583-backgroundimageforstate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisegmentedcontrol/1618583-backgroundimageforstate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the background image for a given state and bar metrics."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "backgroundImageForState:barMetrics:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/uiimage/1624102-resizableimagewithcapinsets": {
       "title": "resizableImageWithCapInsets:",
       "type": "topic",
@@ -151,6 +135,30 @@
           "text": "resizableImageWithCapInsets:"
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicontrolstate/uicontrolstatenormal": {
+      "title": "UIControlStateNormal",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontrolstate/uicontrolstatenormal",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicontrolstate/uicontrolstatenormal"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uibarmetrics/uibarmetricsdefault": {
+      "title": "UIBarMetricsDefault",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uibarmetrics/uibarmetricsdefault",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uibarmetrics/uibarmetricsdefault"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uibarmetrics/uibarmetricscompact": {
+      "title": "UIBarMetricsCompact",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uibarmetrics/uibarmetricscompact",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uibarmetrics/uibarmetricscompact"
     },
     "doc://com.apple.documentation/documentation/uikit/uiimage": {
       "title": "UIImage",
@@ -176,6 +184,44 @@
       "role": "symbol",
       "url": "/documentation/uikit/uibarmetrics"
     },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3335209-selectedsegmenttintcolor": {
+      "title": "selectedSegmentTintColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3335209-selectedsegmenttintcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol/3335209-selectedsegmenttintcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The color to use for highlighting the currently selected segment."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618583-backgroundimageforstate": {
+      "title": "backgroundImageForState:barMetrics:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618583-backgroundimageforstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol/1618583-backgroundimageforstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the background image for a given state and bar metrics."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "backgroundImageForState:barMetrics:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618571-setbackgroundimage": {
       "title": "setBackgroundImage:forState:barMetrics:",
       "type": "topic",
@@ -186,7 +232,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Sets the background image for a given state and bar metrics."
+          "text": "Sets the background image for given state and bar metrics."
         }
       ],
       "fragments": [
@@ -234,7 +280,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the content positioning offset for a given segment and bar metrics."
+          "text": "Sets the content positioning offset for a given segment and bar metrics."
         }
       ],
       "fragments": [
@@ -245,6 +291,20 @@
         {
           "kind": "identifier",
           "text": "setContentPositionAdjustment:forSegmentType:barMetrics:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolsegment": {
+      "title": "UISegmentedControlSegment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolsegment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrolsegment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants for specifying a segment in a control"
         }
       ]
     },
@@ -282,7 +342,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Sets the divider image used for a given combination of left and right segment states and bar metrics. "
+          "text": "Sets the divider image to use for a given combination of left and right segment states and bar metrics."
         }
       ],
       "fragments": [
@@ -355,9 +415,11 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/3335209-selectedsegmenttintcolor",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618583-backgroundimageforstate",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618593-contentpositionadjustmentforsegm",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618555-setcontentpositionadjustment",
+        "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolsegment",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618565-dividerimageforleftsegmentstate",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618558-setdividerimage",
         "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618566-titletextattributesforstate",
@@ -473,6 +535,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -567,7 +630,7 @@
             },
             {
               "type": "text",
-              "text": " is an image returned from "
+              "text": " is an image that "
             },
             {
               "type": "reference",
@@ -576,7 +639,7 @@
             },
             {
               "type": "text",
-              "text": ", the cap widths are calculated from that information."
+              "text": " returns, the system calculates the cap widths from that information."
             }
           ]
         },
@@ -593,7 +656,7 @@
             },
             {
               "type": "text",
-              "text": " is not an image returned from "
+              "text": " isn’t an image that "
             },
             {
               "type": "reference",
@@ -602,39 +665,64 @@
             },
             {
               "type": "text",
-              "text": ", the cap width is calculated by subtracting one from the image's width then dividing by 2. The cap widths are used as the margins for text placement. To adjust the margin, use the margin adjustment methods."
+              "text": " returns, the system calculates the cap width by subtracting one from the image’s width, then dividing by 2. The system uses the cap widths as the margins for text placement. To adjust the margin, use the margin adjustment methods."
             }
           ]
-        },
-        {
-          "level": 3,
-          "type": "heading",
-          "text": "Discussion",
-          "anchor": "1681833"
         },
         {
           "type": "paragraph",
           "inlineContent": [
             {
               "type": "text",
-              "text": "For more details, see "
+              "text": "Generally, specify a value for the "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618583-backgroundimageforstate"
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicontrolstate/uicontrolstatenormal"
             },
             {
               "type": "text",
-              "text": "."
+              "text": " state. The segmented control uses this state for other states that don’t have a custom value set. "
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Similarly, when a property is dependent on the bar metrics, be sure to specify a value for "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uibarmetrics/uibarmetricsdefault"
+            },
+            {
+              "type": "text",
+              "text": ". The segmented control respects properties for "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uibarmetrics/uibarmetricscompact"
+            },
+            {
+              "type": "text",
+              "text": " only when the control is in smaller navigation and toolbars."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

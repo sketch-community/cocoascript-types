@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Passes a display message down the window’s view hierarchy, thus redrawing all views within the window, including the frame view that draws the border, title bar, and other peripheral elements."
+      "text": "Passes a display message down the window’s view hierarchy, thus redrawing all views within the window."
     }
   ],
   "documentVersion": 0,
@@ -35,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSWindow(im)display",
+    "parent": {
+      "title": "NSWindow"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -100,17 +103,27 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nswindow/1419262-autodisplay": {
-      "title": "autodisplay",
+    "doc://com.apple.documentation/documentation/appkit/nswindow/1419358-display": {
+      "title": "display",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419262-autodisplay",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419358-display",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nswindow/1419262-autodisplay",
+      "url": "/documentation/appkit/nswindow/1419358-display",
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the window automatically displays views that need to be displayed."
+          "text": "Passes a display message down the window’s view hierarchy, thus redrawing all views within the window."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "display"
         }
       ]
     },
@@ -124,15 +137,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Passes a "
-        },
-        {
-          "type": "codeVoice",
-          "code": "displayIfNeeded"
-        },
-        {
-          "type": "text",
-          "text": " message down the window’s view hierarchy, thus redrawing all views that need to be displayed, including the frame view that draws the border, title bar, and other peripheral elements."
+          "text": "Passes a display message down the window’s view hierarchy, thus redrawing all views that need displaying."
         }
       ],
       "fragments": [
@@ -143,128 +148,6 @@
         {
           "kind": "identifier",
           "text": "displayIfNeeded"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsview/1483487-display": {
-      "title": "display",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsview/1483487-display",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsview/1483487-display",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Displays the view and all its subviews if possible, invoking each of the "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSView"
-        },
-        {
-          "type": "text",
-          "text": " methods "
-        },
-        {
-          "type": "text",
-          "text": ", "
-        },
-        {
-          "type": "text",
-          "text": ", and "
-        },
-        {
-          "type": "text",
-          "text": " as necessary."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "display"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsview/1483608-lockfocus": {
-      "title": "lockFocus",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsview/1483608-lockfocus",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsview/1483608-lockfocus",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "lockFocus"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsview/1483686-drawrect": {
-      "title": "drawRect:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsview/1483686-drawrect",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsview/1483686-drawrect",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "drawRect:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsview/1483711-unlockfocus": {
-      "title": "unlockFocus",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsview/1483711-unlockfocus",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsview/1483711-unlockfocus",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "unlockFocus"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nswindow/1419358-display": {
-      "title": "display",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419358-display",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nswindow/1419358-display",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Passes a display message down the window’s view hierarchy, thus redrawing all views within the window, including the frame view that draws the border, title bar, and other peripheral elements."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "display"
         }
       ]
     },
@@ -313,14 +196,6 @@
       ],
       "title": "Drawing Windows",
       "generated": true
-    },
-    {
-      "title": "Related Documentation",
-      "generated": false,
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nswindow/1419262-autodisplay",
-        "doc://com.apple.documentation/documentation/appkit/nsview/1483487-display"
-      ]
     }
   ],
   "primaryContentSections": [
@@ -381,7 +256,16 @@
             },
             {
               "type": "text",
-              "text": " objects normally record which of their views need display and display them automatically on each pass through the event loop."
+              "text": " objects normally record which of their views need displaying and display them automatically on each pass through the event loop."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This method includes the frame view that draws the border, title bar, and other peripheral elements."
             }
           ]
         }
@@ -389,7 +273,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

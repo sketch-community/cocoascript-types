@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates a language option for a media selection option."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12.1",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVMediaSelectionOption(im)makeNowPlayingInfoLanguageOption",
+    "parent": {
+      "title": "AVMediaSelectionOption"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,6 +128,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/objectivec/nil-2gl": {
+      "title": "nil",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nil-2gl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nil-2gl"
+    },
     "doc://com.apple.documentation/documentation/mediaplayer/mpnowplayinginfolanguageoption": {
       "title": "MPNowPlayingInfoLanguageOption",
       "type": "topic",
@@ -129,6 +151,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/avfoundation/avmediaselectionoption/1623532-makenowplayinginfolanguageoption",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a language option for a media selection option."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -186,6 +214,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -193,10 +222,39 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A new language option, or "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nil-2gl"
+            },
+            {
+              "type": "text",
+              "text": " if the media selection option isn’t an audible or legible option."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

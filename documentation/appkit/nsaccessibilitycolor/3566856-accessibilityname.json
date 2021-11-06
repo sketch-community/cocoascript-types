@@ -1,17 +1,25 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Returns a localized description of the color for use in accessibility attributes."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycolor"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycolor"
       ]
     ]
@@ -36,15 +44,18 @@
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSAccessibilityColor(py)accessibilityName",
+    "parent": {
+      "title": "NSAccessibilityColor"
+    },
     "symbolKind": "intfp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -69,10 +80,18 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls": {
+      "title": "Custom Controls",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls",
+      "url": "/documentation/appkit/accessibility_for_appkit/custom_controls",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -83,7 +102,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycolor",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitycolor"
+      "url": "/documentation/appkit/nsaccessibilitycolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A role-based protocol that declares the minimum interface necessary for an accessibility element to act as a color. "
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accessibility": {
       "title": "Accessibility",
@@ -100,6 +125,21 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycolor/3566856-accessibilityname": {
+      "title": "accessibilityName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycolor/3566856-accessibilityname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilitycolor/3566856-accessibilityname",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a localized description of the color for use in accessibility attributes."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -153,7 +193,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

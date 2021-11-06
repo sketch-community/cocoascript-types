@@ -41,20 +41,20 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)NSToolbarItem",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -581,7 +581,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupcontrolrepresentation",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstoolbaritemgroupcontrolrepresentation"
+      "url": "/documentation/appkit/nstoolbaritemgroupcontrolrepresentation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates the display style for a grouped toolbar item."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupselectionmode": {
       "title": "NSToolbarItemGroupSelectionMode",
@@ -589,7 +595,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupselectionmode",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstoolbaritemgroupselectionmode"
+      "url": "/documentation/appkit/nstoolbaritemgroupselectionmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates how a grouped toolbar item selects its subitems."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsmenutoolbaritem": {
       "title": "NSMenuToolbarItem",
@@ -597,7 +609,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsmenutoolbaritem",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsmenutoolbaritem"
+      "url": "/documentation/appkit/nsmenutoolbaritem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A control that presents a menu in a window’s toolbar."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nssearchtoolbaritem": {
       "title": "NSSearchToolbarItem",
@@ -609,7 +627,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A toolbar item that contains a text field optimized for performing text-based searches."
+          "text": "A toolbar item that contains a search field optimized for performing text-based searches."
         }
       ]
     },
@@ -633,16 +651,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0 beta 5",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -670,7 +678,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nstoolbaritem/1534084-initwithitemidentifier",
         "doc://com.apple.documentation/documentation/appkit/nstoolbaritem/3375792-itemwithitemidentifier"
-      ]
+      ],
+      "anchor": "1664333"
     },
     {
       "kind": "taskGroup",
@@ -695,7 +704,8 @@
         "doc://com.apple.documentation/documentation/appkit/nstoolbaritem/1534039-view",
         "doc://com.apple.documentation/documentation/appkit/nstoolbaritem/1531777-minsize",
         "doc://com.apple.documentation/documentation/appkit/nstoolbaritem/1526451-maxsize"
-      ]
+      ],
+      "anchor": "1664351"
     },
     {
       "kind": "taskGroup",
@@ -703,7 +713,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nstoolbaritem/1527947-visibilitypriority",
         "doc://com.apple.documentation/documentation/appkit/nstoolbaritemvisibilitypriority"
-      ]
+      ],
+      "anchor": "1664487"
     },
     {
       "kind": "taskGroup",
@@ -711,21 +722,24 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nstoolbaritem/1525295-validate",
         "doc://com.apple.documentation/documentation/appkit/nstoolbaritem/1524463-autovalidates"
-      ]
+      ],
+      "anchor": "1664513"
     },
     {
       "kind": "taskGroup",
       "title": "Controlling Duplicates",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nstoolbaritem/1530116-allowsduplicatesintoolbar"
-      ]
+      ],
+      "anchor": "1664544"
     },
     {
       "kind": "taskGroup",
       "title": "Constants",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nstoolbaritem/standard_identifiers"
-      ]
+      ],
+      "anchor": "1664560"
     }
   ],
   "seeAlsoSections": [
@@ -821,7 +835,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

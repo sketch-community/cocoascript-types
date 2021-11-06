@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Information about a message managed by your app."
+      "text": "Information about a message that your app sends or receives."
     }
   ],
   "documentVersion": 0,
@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)INMessage",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,7 +110,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Information about a message managed by your app."
+          "text": "Information about a message that your app sends or receives."
         }
       ]
     },
@@ -127,7 +132,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The information about a user involved in a SiriKit interaction."
+          "text": "The information about a user participating in a SiriKit interaction."
         }
       ]
     },
@@ -435,7 +440,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants indicating an attribute of a message."
+          "text": "Constants that indicate an attribute of a message."
         }
       ]
     },
@@ -449,7 +454,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants indicating the status of a message."
+          "text": "Constants that indicate a message search filter."
         }
       ]
     },
@@ -459,16 +464,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -499,7 +494,8 @@
         "doc://com.apple.documentation/documentation/sirikit/inmessage/2919433-initwithidentifier",
         "doc://com.apple.documentation/documentation/sirikit/inmessage/1687606-initwithidentifier",
         "doc://com.apple.documentation/documentation/sirikit/inmessage/3392958-initwithidentifier"
-      ]
+      ],
+      "anchor": "2279107"
     },
     {
       "kind": "taskGroup",
@@ -507,7 +503,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/inmessage/1638230-identifier",
         "doc://com.apple.documentation/documentation/sirikit/inmessage/2867834-conversationidentifier"
-      ]
+      ],
+      "anchor": "2881012"
     },
     {
       "kind": "taskGroup",
@@ -521,7 +518,8 @@
         "doc://com.apple.documentation/documentation/sirikit/inmessage/1638554-content",
         "doc://com.apple.documentation/documentation/sirikit/inmessage/1639255-datesent",
         "doc://com.apple.documentation/documentation/sirikit/inmessage/3392959-servicename"
-      ]
+      ],
+      "anchor": "2279109"
     }
   ],
   "seeAlsoSections": [
@@ -531,7 +529,7 @@
         "doc://com.apple.documentation/documentation/sirikit/inmessageattributeoptions",
         "doc://com.apple.documentation/documentation/sirikit/inperson"
       ],
-      "title": "Data Objects",
+      "title": "Managing Message Information",
       "generated": true
     }
   ],
@@ -569,6 +567,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -702,7 +701,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

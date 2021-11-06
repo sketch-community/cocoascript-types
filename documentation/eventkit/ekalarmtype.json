@@ -2,16 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Possible values that can be read from the "
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekalarm/1507242-type"
-    },
-    {
-      "type": "text",
-      "text": " property."
+      "text": "A value that specifies what type of action occurs when the alarm triggers."
     }
   ],
   "documentVersion": 0,
@@ -43,30 +34,35 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.8",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@EKAlarmType",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -109,20 +105,6 @@
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/eventkit/ekalarm/1507242-type": {
-      "title": "type",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekalarm/1507242-type",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/eventkit/ekalarm/1507242-type",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The type of action to trigger when the alarm fires."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/objectivec/nsinteger": {
       "title": "NSInteger",
       "type": "topic",
@@ -131,29 +113,33 @@
       "role": "symbol",
       "url": "/documentation/objectivec/nsinteger"
     },
-    "doc://com.apple.documentation/documentation/eventkit/ekalarmtype/ekalarmtypeaudio": {
-      "title": "EKAlarmTypeAudio",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekalarmtype/ekalarmtypeaudio",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/eventkit/ekalarmtype/ekalarmtypeaudio"
-    },
     "doc://com.apple.documentation/documentation/eventkit/ekalarmtype/ekalarmtypedisplay": {
       "title": "EKAlarmTypeDisplay",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/eventkit/ekalarmtype/ekalarmtypedisplay",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/eventkit/ekalarmtype/ekalarmtypedisplay"
+      "url": "/documentation/eventkit/ekalarmtype/ekalarmtypedisplay",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The alarm displays a message."
+        }
+      ]
     },
-    "doc://com.apple.documentation/documentation/eventkit/ekalarmtype/ekalarmtypeemail": {
-      "title": "EKAlarmTypeEmail",
+    "doc://com.apple.documentation/documentation/eventkit/ekalarmtype/ekalarmtypeaudio": {
+      "title": "EKAlarmTypeAudio",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekalarmtype/ekalarmtypeemail",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekalarmtype/ekalarmtypeaudio",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/eventkit/ekalarmtype/ekalarmtypeemail"
+      "url": "/documentation/eventkit/ekalarmtype/ekalarmtypeaudio",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The alarm plays a sound."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/eventkit/ekalarmtype/ekalarmtypeprocedure": {
       "title": "EKAlarmTypeProcedure",
@@ -161,7 +147,27 @@
       "identifier": "doc://com.apple.documentation/documentation/eventkit/ekalarmtype/ekalarmtypeprocedure",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/eventkit/ekalarmtype/ekalarmtypeprocedure"
+      "url": "/documentation/eventkit/ekalarmtype/ekalarmtypeprocedure",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The alarm opens a URL."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekalarmtype/ekalarmtypeemail": {
+      "title": "EKAlarmTypeEmail",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekalarmtype/ekalarmtypeemail",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekalarmtype/ekalarmtypeemail",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The alarm sends an email."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/eventkit/ekalarmtype": {
       "title": "EKAlarmType",
@@ -173,16 +179,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Possible values that can be read from the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/eventkit/ekalarm/1507242-type"
-        },
+          "text": "A value that specifies what type of action occurs when the alarm triggers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekalarm/1507242-type": {
+      "title": "type",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekalarm/1507242-type",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekalarm/1507242-type",
+      "abstract": [
         {
           "type": "text",
-          "text": " property."
+          "text": "The type of action to trigger when the alarm fires."
         }
       ]
     },
@@ -240,13 +251,14 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Enumeration Cases",
+      "title": "Constants",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/eventkit/ekalarmtype/ekalarmtypeaudio",
         "doc://com.apple.documentation/documentation/eventkit/ekalarmtype/ekalarmtypedisplay",
-        "doc://com.apple.documentation/documentation/eventkit/ekalarmtype/ekalarmtypeemail",
-        "doc://com.apple.documentation/documentation/eventkit/ekalarmtype/ekalarmtypeprocedure"
-      ]
+        "doc://com.apple.documentation/documentation/eventkit/ekalarmtype/ekalarmtypeaudio",
+        "doc://com.apple.documentation/documentation/eventkit/ekalarmtype/ekalarmtypeprocedure",
+        "doc://com.apple.documentation/documentation/eventkit/ekalarmtype/ekalarmtypeemail"
+      ],
+      "anchor": "2558443"
     }
   ],
   "seeAlsoSections": [
@@ -323,6 +335,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "watchOS"
@@ -332,7 +345,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

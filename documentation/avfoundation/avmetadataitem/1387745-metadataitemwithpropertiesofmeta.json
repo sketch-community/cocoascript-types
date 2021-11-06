@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Creates a metadata item intended for optional display purposes."
+      "text": "Creates a metadata item whose value loads on an on-demand basis only."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVMetadataItem(cm)metadataItemWithPropertiesOfMetadataItem:valueLoadingHandler:",
+    "parent": {
+      "title": "AVMetadataItem"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,6 +122,68 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avmetadataitem"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1387321-loadvaluesasynchronouslyforkeys": {
+      "title": "loadValuesAsynchronouslyForKeys:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1387321-loadvaluesasynchronouslyforkeys",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasynchronouskeyvalueloading/1387321-loadvaluesasynchronouslyforkeys",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadValuesAsynchronouslyForKeys:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitemvaluerequest/1386820-respondwithvalue": {
+      "title": "respondWithValue:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitemvaluerequest/1386820-respondwithvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataitemvaluerequest/1386820-respondwithvalue",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "respondWithValue:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitemvaluerequest/1390783-respondwitherror": {
+      "title": "respondWithError:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitemvaluerequest/1390783-respondwitherror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataitemvaluerequest/1390783-respondwitherror",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "respondWithError:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1387745-metadataitemwithpropertiesofmeta#2556035": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1387745-metadataitemwithpropertiesofmeta#2556035",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/avmetadataitem/1387745-metadataitemwithpropertiesofmeta#2556035"
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1386968-identifier": {
       "title": "identifier",
       "type": "topic",
@@ -130,45 +200,19 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avmetadataitem/1387068-extendedlanguagetag"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1390537-value": {
-      "title": "value",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1390537-value",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataitem/1390537-value"
-    },
-    "doc://com.apple.documentation/documentation/avkit/avplayerviewcontroller": {
-      "title": "AVPlayerViewController",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avkit/avplayerviewcontroller",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avkit/avplayerviewcontroller"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nserror": {
-      "title": "NSError",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nserror",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nserror"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1387745-metadataitemwithpropertiesofmeta#2556035": {
-      "title": "Listing 1",
-      "type": "section",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1387745-metadataitemwithpropertiesofmeta#2556035",
-      "kind": "article",
-      "role": "codeListing",
-      "url": "/documentation/avfoundation/avmetadataitem/1387745-metadataitemwithpropertiesofmeta#2556035"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataitemvaluerequest": {
       "title": "AVMetadataItemValueRequest",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitemvaluerequest",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataitemvaluerequest"
+      "url": "/documentation/avfoundation/avmetadataitemvaluerequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that responds to a request to load the value of a metadata item."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1387745-metadataitemwithpropertiesofmeta": {
       "title": "metadataItemWithPropertiesOfMetadataItem:valueLoadingHandler:",
@@ -180,7 +224,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a metadata item intended for optional display purposes."
+          "text": "Creates a metadata item whose value loads on an on-demand basis only."
         }
       ],
       "fragments": [
@@ -202,6 +246,15 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataitemvaluerequest"
+      ],
+      "title": "Creating a Metadata Item",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -300,6 +353,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -322,7 +376,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "A metadata item with the "
+                  "text": "The metadata item that provides the "
                 },
                 {
                   "type": "reference",
@@ -340,33 +394,7 @@
                 },
                 {
                   "type": "text",
-                  "text": ", and other property values that you want the newly created "
-                },
-                {
-                  "type": "reference",
-                  "isActive": false,
-                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem"
-                },
-                {
-                  "type": "text",
-                  "text": " instance to share. The "
-                },
-                {
-                  "type": "reference",
-                  "isActive": false,
-                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1390537-value"
-                },
-                {
-                  "type": "text",
-                  "text": " of "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "metadataItem"
-                },
-                {
-                  "type": "text",
-                  "text": " is ignored."
+                  "text": ", and other property values that you want the newly created metadata item to share. The system ignores the value of this template metadata item."
                 }
               ]
             }
@@ -380,16 +408,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "A block that loads the "
-                },
-                {
-                  "type": "reference",
-                  "isActive": false,
-                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1390537-value"
-                },
-                {
-                  "type": "text",
-                  "text": " of the metadata item."
+                  "text": "A callback the system invokes to load the value for the metadata item."
                 }
               ]
             }
@@ -440,70 +459,59 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You use this method to create metadata items you intend for optional display purposes, such as those used for navigation markers presented by an "
+              "text": "Use this method to create metadata items for optional display purposes. For example, a metadata item that provides a large image, should only load the image when the system requests it."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you call "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avkit/avplayerviewcontroller"
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1387321-loadvaluesasynchronouslyforkeys"
             },
             {
               "type": "text",
-              "text": ". When the "
+              "text": " on a metadata item that you created with this method, and value is among the keys to load, the closure you provide as the value loading handler executes on an arbitrary dispatch queue, off the main thread. The handler can perform I/O and other necessary operations to obtain the value. If loading of the value succeeds, provide the value by calling "
             },
             {
               "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1390537-value"
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitemvaluerequest/1386820-respondwithvalue"
             },
             {
               "type": "text",
-              "text": " of this metadata item is requested, the block you provide as the value loading handler will be executed on an arbitrary dispatch queue, off the main thread. The handler can perform I/O and other necessary operations to obtain the value. If loading of the value succeeds, you provide the value by invoking the value request’s "
-            },
-            {
-              "type": "codeVoice",
-              "code": "respondWithValue:"
-            },
-            {
-              "type": "text",
-              "text": " method; otherwise, you provide an instance of "
+              "text": ". If loading of the value fails, provide an instance an error object that describes the failure by calling "
             },
             {
               "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/foundation/nserror"
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitemvaluerequest/1390783-respondwitherror"
             },
             {
               "type": "text",
-              "text": " that describes the failure by calling its "
-            },
-            {
-              "type": "codeVoice",
-              "code": "respondWithError:"
-            },
-            {
-              "type": "text",
-              "text": " method (see example)."
+              "text": "."
             }
           ]
         },
         {
           "type": "codeListing",
           "code": [
-            "AVMetadataItem *templateItem = // Item providing the values for the metadata item.",
-            "AVMetadataItem *lazyArtworkItem =",
-            "    [AVMetadataItem metadataItemWithPropertiesOfMetadataItem:templateItem",
-            "        valueLoadingHandler:^(AVMetadataItemValueRequest *request) {",
-            "        UIImage *image = [UIImage imageNamed:@\"large_artwork\"];",
-            "        if (image) {",
-            "            [request respondWithValue:(id)image];",
-            "        } else {",
-            "            NSError *error = // NSError to report.",
-            "            [request respondWithError:error];",
-            "        }",
-            "    }];"
+            "//let templateItem = // A template metadata item that provides supporting data.",
+            "let artworkItem = AVMetadataItem(propertiesOf: templateItem) { request in",
+            "    if let image = UIImage(named: \"large_artwork\"), let data = image.pngData() {",
+            "        request.respond(value: NSData(data:data))",
+            "    } else {",
+            "        request.respond(error: AppError.imageLoadingError)",
+            "    }",
+            "}"
           ],
-          "syntax": "occ",
+          "syntax": "swift",
           "metadata": {
             "anchor": "2556035",
             "title": "Listing 1"
@@ -517,7 +525,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "This method is not intended for the creation of metadata items whose values are required immediately, such as those that are created for immediate display or impending serialization operations."
+                  "text": "Don’t use this method to create metadata items whose values you need immediately, such as those you create for immediate display or serialization."
                 }
               ]
             }
@@ -529,7 +537,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

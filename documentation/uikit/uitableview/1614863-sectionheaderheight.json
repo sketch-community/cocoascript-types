@@ -36,25 +36,33 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UITableView(py)sectionHeaderHeight",
+    "parent": {
+      "title": "UITableView"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -115,9 +123,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A view that presents data using rows arranged in a single column."
+          "text": "A view that presents data using rows in a single column."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewautomaticdimension": {
+      "title": "UITableViewAutomaticDimension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewautomaticdimension",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewautomaticdimension"
     },
     "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614855-tableview": {
       "title": "tableView:heightForHeaderInSection:",
@@ -147,7 +163,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The view that is displayed above the table's content."
+          "text": "The view that displays above the table's content."
         }
       ]
     },
@@ -215,6 +231,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uitableview/3750914-sectionheadertoppadding": {
+      "title": "sectionHeaderTopPadding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/3750914-sectionheadertoppadding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview/3750914-sectionheadertoppadding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The amount of padding above each section header."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -228,9 +258,10 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uitableview/1614846-sectionfooterheight",
         "doc://com.apple.documentation/documentation/uikit/uitableview/1614957-estimatedsectionheaderheight",
-        "doc://com.apple.documentation/documentation/uikit/uitableview/1614979-estimatedsectionfooterheight"
+        "doc://com.apple.documentation/documentation/uikit/uitableview/1614979-estimatedsectionfooterheight",
+        "doc://com.apple.documentation/documentation/uikit/uitableview/3750914-sectionheadertoppadding"
       ],
-      "title": "Configuring Header and Footer Heights",
+      "title": "Configuring Header and Footer Appearance",
       "generated": true
     },
     {
@@ -279,6 +310,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -299,7 +331,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This nonnegative value is used only if the delegate doesn’t implement the "
+              "text": "The default value is "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewautomaticdimension"
+            },
+            {
+              "type": "text",
+              "text": ". If the delegate doesn’t implement "
             },
             {
               "type": "reference",
@@ -308,7 +349,7 @@
             },
             {
               "type": "text",
-              "text": " method."
+              "text": ", the table view calculates the height automatically. To override automatic height calculation, set this property to a positive value."
             }
           ]
         }
@@ -316,7 +357,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

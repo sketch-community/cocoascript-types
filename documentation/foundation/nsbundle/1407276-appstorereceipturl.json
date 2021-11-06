@@ -13,6 +13,11 @@
         "doc://com.apple.documentation/documentation/foundation",
         "doc://com.apple.documentation/documentation/foundation/resources",
         "doc://com.apple.documentation/documentation/foundation/nsbundle"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/storekit",
+        "doc://com.apple.documentation/documentation/storekit/original_api_for_in-app_purchase"
       ]
     ]
   },
@@ -35,35 +40,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSBundle(py)appStoreReceiptURL",
+    "parent": {
+      "title": "NSBundle"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -119,6 +132,22 @@
           "text": "A representation of the code and resources stored in a bundle directory on disk. "
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/storekit": {
+      "title": "StoreKit",
+      "identifier": "doc://com.apple.documentation/documentation/storekit",
+      "url": "/documentation/storekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/storekit/original_api_for_in-app_purchase": {
+      "title": "Original API for In-App Purchase",
+      "identifier": "doc://com.apple.documentation/documentation/storekit/original_api_for_in-app_purchase",
+      "url": "/documentation/storekit/original_api_for_in-app_purchase",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418583-respondstoselector": {
       "title": "respondsToSelector:",
@@ -402,16 +431,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "seeAlsoSections": [
     {
       "identifiers": [
@@ -472,6 +491,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -536,7 +556,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

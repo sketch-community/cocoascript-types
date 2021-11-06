@@ -39,25 +39,30 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UIActivityItemSource",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -121,14 +126,6 @@
           "text": "A proxy for data that passes to an activity view controller. "
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsdata": {
-      "title": "NSData",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsdata"
     },
     "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject": {
       "title": "NSObject",
@@ -224,16 +221,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "For items that are provided as "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata"
-        },
-        {
-          "type": "text",
-          "text": ", returns the UTI for the item."
+          "text": "For items that are provided as data, returns the UTI for the item."
         }
       ],
       "fragments": [
@@ -339,6 +327,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationproviding": {
+      "title": "UIActivityItemsConfigurationProviding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationproviding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiactivityitemsconfigurationproviding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface that provides a source for shareable content to fulfill user requests to share current content."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -372,7 +374,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiactivityitemsource/1620458-activityviewcontrollerplaceholde",
         "doc://com.apple.documentation/documentation/uikit/uiactivityitemsource/1620453-activityviewcontroller"
-      ]
+      ],
+      "anchor": "1657009"
     },
     {
       "kind": "taskGroup",
@@ -381,14 +384,16 @@
         "doc://com.apple.documentation/documentation/uikit/uiactivityitemsource/1620455-activityviewcontroller",
         "doc://com.apple.documentation/documentation/uikit/uiactivityitemsource/1620456-activityviewcontroller",
         "doc://com.apple.documentation/documentation/uikit/uiactivityitemsource/1620462-activityviewcontroller"
-      ]
+      ],
+      "anchor": "1675991"
     },
     {
       "kind": "taskGroup",
       "title": "Providing Metadata for Accelerated Previews",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiactivityitemsource/3144571-activityviewcontrollerlinkmetada"
-      ]
+      ],
+      "anchor": "3372245"
     }
   ],
   "seeAlsoSections": [
@@ -396,7 +401,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiactivityviewcontroller",
         "doc://com.apple.documentation/documentation/uikit/uiactivityitemprovider",
-        "doc://com.apple.documentation/documentation/uikit/uiactivity"
+        "doc://com.apple.documentation/documentation/uikit/uiactivity",
+        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationproviding"
       ],
       "title": "Activities Interface",
       "generated": true
@@ -426,6 +432,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -481,7 +488,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

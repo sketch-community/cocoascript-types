@@ -35,20 +35,28 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UISlider(im)minimumTrackImageForState:",
+    "parent": {
+      "title": "UISlider"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -100,20 +108,12 @@
       "url": "/documentation/uikit/uislider"
     },
     "doc://com.apple.documentation/documentation/uikit/uislider#1653132": {
-      "title": "Customizing the Slider’s Appearance",
+      "title": "Customize the Slider’s Appearance",
       "type": "section",
       "identifier": "doc://com.apple.documentation/documentation/uikit/uislider#1653132",
       "kind": "article",
       "role": "subsection",
       "url": "/documentation/uikit/uislider#1653132"
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiuserinterfaceidiom/uiuserinterfaceidiommac": {
-      "title": "UIUserInterfaceIdiomMac",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiuserinterfaceidiom/uiuserinterfaceidiommac",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiuserinterfaceidiom/uiuserinterfaceidiommac"
     },
     "doc://com.apple.documentation/documentation/uikit/uislider/1621331-setminimumtrackimage": {
       "title": "setMinimumTrackImage:forState:",
@@ -165,7 +165,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The image representing the slider’s minimum value."
+          "text": "The image that represents the slider’s minimum value."
         }
       ]
     },
@@ -472,6 +472,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -549,40 +550,12 @@
               "text": ". "
             }
           ]
-        },
-        {
-          "type": "aside",
-          "content": [
-            {
-              "type": "paragraph",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "This method isn’t available when the user interface idiom is "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/uikit/uiuserinterfaceidiom/uiuserinterfaceidiommac"
-                },
-                {
-                  "type": "text",
-                  "text": " — calling it while in the Mac idiom throws an exception."
-                }
-              ]
-            }
-          ],
-          "style": "important"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

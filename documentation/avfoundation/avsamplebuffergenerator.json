@@ -10,7 +10,8 @@
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/avfoundation"
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection"
       ]
     ]
   },
@@ -33,15 +34,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)AVSampleBufferGenerator",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -75,6 +76,14 @@
       "type": "topic",
       "kind": "symbol",
       "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection": {
+      "title": "Media Playback and Selection",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
+      "url": "/documentation/avfoundation/media_playback_and_selection",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/coremedia/cmsamplebufferref": {
       "title": "CMSampleBufferRef",
@@ -164,6 +173,104 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfaudio/audio_engine/playing_custom_audio_with_your_own_player": {
+      "title": "Playing Custom Audio with Your Own Player",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/audio_engine/playing_custom_audio_with_your_own_player",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/avfaudio/audio_engine/playing_custom_audio_with_your_own_player",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Construct an audio player to play your custom audio data, and optionally take advantage of the advanced features of AirPlay 2."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer": {
+      "title": "AVSampleBufferRenderSynchronizer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplebufferrendersynchronizer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to synchronize multiple queued sample buffers to a single timeline."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avqueuedsamplebufferrendering": {
+      "title": "AVQueuedSampleBufferRendering",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avqueuedsamplebufferrendering",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avqueuedsamplebufferrendering",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods you can implement to enqueue sample buffers for presentation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferdisplaylayer": {
+      "title": "AVSampleBufferDisplayLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferdisplaylayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplebufferdisplaylayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that displays compressed or uncompressed video frames."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer": {
+      "title": "AVSampleBufferAudioRenderer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplebufferaudiorenderer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to decompress audio and play compressed or uncompressed audio."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplebuffergenerator": {
+      "title": "AVSampleBufferGenerator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebuffergenerator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplebuffergenerator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to create sample buffer opaque objects. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequest": {
+      "title": "AVSampleBufferRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplebufferrequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that describes a sample buffer creation request."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -188,21 +295,38 @@
       "title": "Creating Sample Buffer Generators",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebuffergenerator/1387477-initwithasset"
-      ]
+      ],
+      "anchor": "1678872"
     },
     {
       "kind": "taskGroup",
       "title": "Creating a Sample Buffer",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebuffergenerator/1387475-createsamplebufferforrequest"
-      ]
+      ],
+      "anchor": "1678885"
     },
     {
       "kind": "taskGroup",
       "title": "Retrieving Sample Buffer Data ",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebuffergenerator/1387295-notifyofdatareadyforsamplebuffer"
-      ]
+      ],
+      "anchor": "1678898"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfaudio/audio_engine/playing_custom_audio_with_your_own_player",
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer",
+        "doc://com.apple.documentation/documentation/avfoundation/avqueuedsamplebufferrendering",
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferdisplaylayer",
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer",
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequest"
+      ],
+      "title": "Sample Buffer Rendering",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -290,7 +414,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

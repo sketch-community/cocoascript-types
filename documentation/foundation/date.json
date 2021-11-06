@@ -34,32 +34,37 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "8.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Foundation4DateV",
@@ -76,8 +81,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -134,48 +139,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsdate": {
-      "title": "NSDate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsdate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A representation of a specific point in time that bridges to "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/date"
-        },
-        {
-          "type": "text",
-          "text": "; use "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsdate"
-        },
-        {
-          "type": "text",
-          "text": " when you need reference semantics or other Foundation-specific behavior."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "class "
-        },
-        {
-          "kind": "identifier",
-          "text": "NSDate"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/dateformatter": {
       "title": "DateFormatter",
       "type": "topic",
@@ -191,6 +154,30 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/calendar"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdate": {
+      "title": "NSDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A representation of a specific point in time, for use when you need reference semantics or other Foundation-specific behavior."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSDate"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/referenceconvertible": {
       "title": "ReferenceConvertible",
@@ -424,6 +411,38 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/date/2895247-init": {
+      "title": "init(from:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2895247-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/2895247-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new instance by decoding from the given decoder."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "from"
+        },
+        {
+          "kind": "text",
+          "text": ": Decoder)"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/date/1779684-distantfuture": {
       "title": "distantFuture",
       "type": "topic",
@@ -480,34 +499,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/date/2293238": {
-      "title": "<(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2293238",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/date/2293238",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean that is true if the left hand date is earlier in time than the right hand date."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "< "
-        },
-        {
-          "kind": "text",
-          "text": "(Date, Date) -> Bool"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/date/2293580": {
       "title": "==(_:_:)",
       "type": "topic",
@@ -518,7 +509,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean that is true if the two date values represent the same point in time."
+          "text": "Returns a Boolean value that indicates whether two dates represent the same point in time."
         }
       ],
       "fragments": [
@@ -536,6 +527,146 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/date/2883071": {
+      "title": "!=(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2883071",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/2883071",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether two dates don’t represent the same point in time."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "!= "
+        },
+        {
+          "kind": "text",
+          "text": "(Date, Date) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/2963306": {
+      "title": ">(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2963306",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/2963306",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether the value of the first argument is greater than that of the second argument."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "> "
+        },
+        {
+          "kind": "text",
+          "text": "(Date, Date) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/2882995": {
+      "title": ">=(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2882995",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/2882995",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": ">= "
+        },
+        {
+          "kind": "text",
+          "text": "(Date, Date) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/2293238": {
+      "title": "<(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2293238",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/2293238",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether the value of the first argument is less than that of the second argument."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "< "
+        },
+        {
+          "kind": "text",
+          "text": "(Date, Date) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/2883236": {
+      "title": "<=(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2883236",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/2883236",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "<= "
+        },
+        {
+          "kind": "text",
+          "text": "(Date, Date) -> Bool"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/date/1780430-compare": {
       "title": "compare(_:)",
       "type": "topic",
@@ -546,7 +677,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Compares two date values."
+          "text": "Compares another date to this one."
         }
       ],
       "fragments": [
@@ -564,6 +695,42 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/date/3329238-distance": {
+      "title": "distance(to:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/3329238-distance",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/3329238-distance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the distance from this date to another date, specified as a time interval."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "distance"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "to"
+        },
+        {
+          "kind": "text",
+          "text": ": Date) -> TimeInterval"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/date/1779636-timeintervalsince": {
       "title": "timeIntervalSince(_:)",
       "type": "topic",
@@ -574,7 +741,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the interval between the receiver and another given date."
+          "text": "Returns the interval between this date and another given date."
         }
       ],
       "fragments": [
@@ -732,31 +899,119 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/date/2883071": {
-      "title": "!=(_:_:)",
+    "doc://com.apple.documentation/documentation/foundation/date/stride": {
+      "title": "Date.Stride",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2883071",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/stride",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/date/2883071",
+      "url": "/documentation/foundation/date/stride",
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether two values are not equal."
+          "text": "A type alias to define the stride of a date."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "static func "
+          "text": "typealias "
         },
         {
           "kind": "identifier",
-          "text": "!= "
+          "text": "Date.Stride"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/1948949-addtimeinterval": {
+      "title": "addTimeInterval(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/1948949-addtimeinterval",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/1948949-addtimeinterval",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a time interval to this date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "addTimeInterval"
         },
         {
           "kind": "text",
-          "text": "(Date, Date) -> Bool"
+          "text": "(TimeInterval)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/1948745-addingtimeinterval": {
+      "title": "addingTimeInterval(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/1948745-addingtimeinterval",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/1948745-addingtimeinterval",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new date value by adding a time interval to this date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "addingTimeInterval"
+        },
+        {
+          "kind": "text",
+          "text": "(TimeInterval) -> Date"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/3329237-advanced": {
+      "title": "advanced(by:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/3329237-advanced",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/3329237-advanced",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a date offset the specified time interval from this date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "advanced"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "by"
+        },
+        {
+          "kind": "text",
+          "text": ": TimeInterval) -> Date"
         }
       ]
     },
@@ -872,17 +1127,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/date/2883236": {
-      "title": "<=(_:_:)",
+    "doc://com.apple.documentation/documentation/foundation/date/2963300": {
+      "title": "...(_:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2883236",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2963300",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/date/2883236",
+      "url": "/documentation/foundation/date/2963300",
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument."
+          "text": "Returns a partial range extending upward from a lower bound."
         }
       ],
       "fragments": [
@@ -892,25 +1147,25 @@
         },
         {
           "kind": "identifier",
-          "text": "<= "
+          "text": "... "
         },
         {
           "kind": "text",
-          "text": "(Date, Date) -> Bool"
+          "text": "(Date) -> PartialRangeFrom<Date>"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/date/2882995": {
-      "title": ">=(_:_:)",
+    "doc://com.apple.documentation/documentation/foundation/date/2963303": {
+      "title": "...(_:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2882995",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2963303",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/date/2882995",
+      "url": "/documentation/foundation/date/2963303",
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument."
+          "text": "Returns a partial range up to, and including, its upper bound."
         }
       ],
       "fragments": [
@@ -920,11 +1175,131 @@
         },
         {
           "kind": "identifier",
-          "text": ">= "
+          "text": "... "
         },
         {
           "kind": "text",
-          "text": "(Date, Date) -> Bool"
+          "text": "(Date) -> PartialRangeThrough<Date>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/2949100": {
+      "title": "...(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2949100",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/2949100",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a closed range that contains both of its bounds."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "... "
+        },
+        {
+          "kind": "text",
+          "text": "(Date, Date) -> ClosedRange<Date>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/2895066": {
+      "title": "..<(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2895066",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/2895066",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a partial range up to, but not including, its upper bound."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "..< "
+        },
+        {
+          "kind": "text",
+          "text": "(Date) -> PartialRangeUpTo<Date>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/2949112": {
+      "title": "..<(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2949112",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/2949112",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a half-open range that contains its lower bound but not its upper bound."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "..< "
+        },
+        {
+          "kind": "text",
+          "text": "(Date, Date) -> Range<Date>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/2895072-encode": {
+      "title": "encode(to:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2895072-encode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/2895072-encode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Encodes this date into the given encoder."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "encode"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "to"
+        },
+        {
+          "kind": "text",
+          "text": ": Encoder)"
         }
       ]
     },
@@ -1076,6 +1451,42 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/date/3236722-hash": {
+      "title": "hash(into:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/3236722-hash",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/3236722-hash",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Hashes the essential components of this value by feeding them into the given hasher."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "hash"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "into"
+        },
+        {
+          "kind": "text",
+          "text": ": inout Hasher)"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/date/1779780-customplaygroundquicklook": {
       "title": "customPlaygroundQuickLook",
       "type": "topic",
@@ -1129,31 +1540,13 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/date/stride": {
-      "title": "Date.Stride",
+    "doc://com.apple.documentation/documentation/foundation/date/3798897-init": {
+      "title": "init(_:strategy:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/date/stride",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/3798897-init",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/date/stride",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "typealias "
-        },
-        {
-          "kind": "identifier",
-          "text": "Date.Stride"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/date/2895247-init": {
-      "title": "init(from:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2895247-init",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/date/2895247-init",
+      "url": "/documentation/foundation/date/3798897-init",
       "fragments": [
         {
           "kind": "identifier",
@@ -1161,31 +1554,73 @@
         },
         {
           "kind": "text",
-          "text": "("
+          "text": "<T, Value>(Value, "
         },
         {
           "kind": "identifier",
-          "text": "from"
+          "text": "strategy"
         },
         {
           "kind": "text",
-          "text": ": Decoder)"
+          "text": ": T)"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/date/1948949-addtimeinterval": {
-      "title": "addTimeInterval(_:)",
+    "doc://com.apple.documentation/documentation/foundation/date/3870039-init": {
+      "title": "init(_:strategy:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/date/1948949-addtimeinterval",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/3870039-init",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/date/1948949-addtimeinterval",
-      "abstract": [
+      "url": "/documentation/foundation/date/3870039-init",
+      "fragments": [
         {
-          "type": "text",
-          "text": "Adds a time interval to this date."
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "<T>(T.ParseInput, "
+        },
+        {
+          "kind": "identifier",
+          "text": "strategy"
+        },
+        {
+          "kind": "text",
+          "text": ": T)"
         }
-      ],
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/3766590-now": {
+      "title": "now",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/3766590-now",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/3766590-now",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "now"
+        },
+        {
+          "kind": "text",
+          "text": ": Date"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/3766420-iso8601format": {
+      "title": "ISO8601Format(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/3766420-iso8601format",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/3766420-iso8601format",
       "fragments": [
         {
           "kind": "text",
@@ -1193,27 +1628,21 @@
         },
         {
           "kind": "identifier",
-          "text": "addTimeInterval"
+          "text": "ISO8601Format"
         },
         {
           "kind": "text",
-          "text": "(TimeInterval)"
+          "text": "(Date.ISO8601FormatStyle) -> String"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/date/1948745-addingtimeinterval": {
-      "title": "addingTimeInterval(_:)",
+    "doc://com.apple.documentation/documentation/foundation/date/3796312-formatted": {
+      "title": "formatted()",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/date/1948745-addingtimeinterval",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/3796312-formatted",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/date/1948745-addingtimeinterval",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Creates a new date value by adding a time interval to this date."
-        }
-      ],
+      "url": "/documentation/foundation/date/3796312-formatted",
       "fragments": [
         {
           "kind": "text",
@@ -1221,21 +1650,21 @@
         },
         {
           "kind": "identifier",
-          "text": "addingTimeInterval"
+          "text": "formatted"
         },
         {
           "kind": "text",
-          "text": "(TimeInterval) -> Date"
+          "text": "() -> String"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/date/3329237-advanced": {
-      "title": "advanced(by:)",
+    "doc://com.apple.documentation/documentation/foundation/date/3766587-formatted": {
+      "title": "formatted(_:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/date/3329237-advanced",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/3766587-formatted",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/date/3329237-advanced",
+      "url": "/documentation/foundation/date/3766587-formatted",
       "fragments": [
         {
           "kind": "text",
@@ -1243,29 +1672,21 @@
         },
         {
           "kind": "identifier",
-          "text": "advanced"
+          "text": "formatted"
         },
         {
           "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "by"
-        },
-        {
-          "kind": "text",
-          "text": ": TimeInterval) -> Date"
+          "text": "<F>(F) -> F.FormatOutput"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/date/3329238-distance": {
-      "title": "distance(to:)",
+    "doc://com.apple.documentation/documentation/foundation/date/3766588-formatted": {
+      "title": "formatted(date:time:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/date/3329238-distance",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/3766588-formatted",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/date/3329238-distance",
+      "url": "/documentation/foundation/date/3766588-formatted",
       "fragments": [
         {
           "kind": "text",
@@ -1273,67 +1694,7 @@
         },
         {
           "kind": "identifier",
-          "text": "distance"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "to"
-        },
-        {
-          "kind": "text",
-          "text": ": Date) -> TimeInterval"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/date/2895072-encode": {
-      "title": "encode(to:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2895072-encode",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/date/2895072-encode",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "encode"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "to"
-        },
-        {
-          "kind": "text",
-          "text": ": Encoder)"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/date/3236722-hash": {
-      "title": "hash(into:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/date/3236722-hash",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/date/3236722-hash",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "hash"
+          "text": "formatted"
         },
         {
           "kind": "text",
@@ -1341,201 +1702,193 @@
         },
         {
           "kind": "identifier",
-          "text": "into"
+          "text": "date"
         },
         {
           "kind": "text",
-          "text": ": inout Hasher)"
+          "text": ": Date.FormatStyle.DateStyle, "
+        },
+        {
+          "kind": "identifier",
+          "text": "time"
+        },
+        {
+          "kind": "text",
+          "text": ": Date.FormatStyle.TimeStyle) -> String"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/date/2963300": {
-      "title": "...(_:)",
+    "doc://com.apple.documentation/documentation/foundation/date/attributedstyle": {
+      "title": "Date.AttributedStyle",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2963300",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/attributedstyle",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/date/2963300",
+      "url": "/documentation/foundation/date/attributedstyle",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "Date.AttributedStyle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/componentsformatstyle": {
+      "title": "Date.ComponentsFormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/componentsformatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/componentsformatstyle",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "Date.ComponentsFormatStyle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/formatstring": {
+      "title": "Date.FormatString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/formatstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/formatstring",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "Date.FormatString"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/formatstyle": {
+      "title": "Date.FormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/formatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/formatstyle",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "Date.FormatStyle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/iso8601formatstyle": {
+      "title": "Date.ISO8601FormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/iso8601formatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/iso8601formatstyle",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "Date.ISO8601FormatStyle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/intervalformatstyle": {
+      "title": "Date.IntervalFormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/intervalformatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/intervalformatstyle",
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a partial range extending upward from a lower bound."
+          "text": "A format style that creates string representations of date intervals."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "static func "
+          "text": "struct "
         },
         {
           "kind": "identifier",
-          "text": "... "
-        },
-        {
-          "kind": "text",
-          "text": "(Date) -> PartialRangeFrom<Date>"
+          "text": "Date.IntervalFormatStyle"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/date/2963303": {
-      "title": "...(_:)",
+    "doc://com.apple.documentation/documentation/foundation/date/parsestrategy": {
+      "title": "Date.ParseStrategy",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2963303",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/parsestrategy",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/date/2963303",
+      "url": "/documentation/foundation/date/parsestrategy",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "Date.ParseStrategy"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/relativeformatstyle": {
+      "title": "Date.RelativeFormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/relativeformatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/relativeformatstyle",
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a partial range up to, and including, its upper bound."
+          "text": "A format style that forms locale-aware string representations of a relative date or time."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "static func "
+          "text": "struct "
         },
         {
           "kind": "identifier",
-          "text": "... "
-        },
-        {
-          "kind": "text",
-          "text": "(Date) -> PartialRangeThrough<Date>"
+          "text": "Date.RelativeFormatStyle"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/date/2949100": {
-      "title": "...(_:_:)",
+    "doc://com.apple.documentation/documentation/foundation/date/verbatimformatstyle": {
+      "title": "Date.VerbatimFormatStyle",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2949100",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/verbatimformatstyle",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/date/2949100",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a closed range that contains both of its bounds."
-        }
-      ],
+      "url": "/documentation/foundation/date/verbatimformatstyle",
       "fragments": [
         {
           "kind": "text",
-          "text": "static func "
+          "text": "struct "
         },
         {
           "kind": "identifier",
-          "text": "... "
-        },
-        {
-          "kind": "text",
-          "text": "(Date, Date) -> ClosedRange<Date>"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/date/2895066": {
-      "title": "..<(_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2895066",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/date/2895066",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a partial range up to, but not including, its upper bound."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "..< "
-        },
-        {
-          "kind": "text",
-          "text": "(Date) -> PartialRangeUpTo<Date>"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/date/2949112": {
-      "title": "..<(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2949112",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/date/2949112",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a half-open range that contains its lower bound but not its upper bound."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "..< "
-        },
-        {
-          "kind": "text",
-          "text": "(Date, Date) -> Range<Date>"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/date/2963306": {
-      "title": ">(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2963306",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/date/2963306",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "> "
-        },
-        {
-          "kind": "text",
-          "text": "(Date, Date) -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/date/2963307": {
-      "title": ">(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2963307",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/date/2963307",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "> "
-        },
-        {
-          "kind": "text",
-          "text": "(Date, Date) -> Bool"
+          "text": "Date.VerbatimFormatStyle"
         }
       ]
     },
@@ -1595,6 +1948,16 @@
       "title": "Technologies"
     }
   },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "13.0",
+        "13.2 beta 1"
+      ]
+    }
+  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -1622,8 +1985,10 @@
         "doc://com.apple.documentation/documentation/foundation/date/1780053-init",
         "doc://com.apple.documentation/documentation/foundation/date/1779905-init",
         "doc://com.apple.documentation/documentation/foundation/date/1779647-init",
-        "doc://com.apple.documentation/documentation/foundation/date/1780353-init"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/date/1780353-init",
+        "doc://com.apple.documentation/documentation/foundation/date/2895247-init"
+      ],
+      "anchor": "2891797"
     },
     {
       "kind": "taskGroup",
@@ -1631,16 +1996,23 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/date/1779684-distantfuture",
         "doc://com.apple.documentation/documentation/foundation/date/1779829-distantpast"
-      ]
+      ],
+      "anchor": "2851048"
     },
     {
       "kind": "taskGroup",
       "title": "Comparing Dates",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/date/2293238",
         "doc://com.apple.documentation/documentation/foundation/date/2293580",
-        "doc://com.apple.documentation/documentation/foundation/date/1780430-compare"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/date/2883071",
+        "doc://com.apple.documentation/documentation/foundation/date/2963306",
+        "doc://com.apple.documentation/documentation/foundation/date/2882995",
+        "doc://com.apple.documentation/documentation/foundation/date/2293238",
+        "doc://com.apple.documentation/documentation/foundation/date/2883236",
+        "doc://com.apple.documentation/documentation/foundation/date/1780430-compare",
+        "doc://com.apple.documentation/documentation/foundation/date/3329238-distance"
+      ],
+      "anchor": "2891796"
     },
     {
       "kind": "taskGroup",
@@ -1651,23 +2023,44 @@
         "doc://com.apple.documentation/documentation/foundation/date/1780268-timeintervalsincereferencedate",
         "doc://com.apple.documentation/documentation/foundation/date/1779963-timeintervalsince1970",
         "doc://com.apple.documentation/documentation/foundation/date/1780165-timeintervalsincereferencedate",
-        "doc://com.apple.documentation/documentation/foundation/date/1779987-timeintervalbetween1970andrefere"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/date/1779987-timeintervalbetween1970andrefere",
+        "doc://com.apple.documentation/documentation/foundation/date/stride"
+      ],
+      "anchor": "2851047"
     },
     {
       "kind": "taskGroup",
       "title": "Adding or Subtracting a Time Interval",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/date/2883071",
+        "doc://com.apple.documentation/documentation/foundation/date/1948949-addtimeinterval",
+        "doc://com.apple.documentation/documentation/foundation/date/1948745-addingtimeinterval",
+        "doc://com.apple.documentation/documentation/foundation/date/3329237-advanced",
         "doc://com.apple.documentation/documentation/foundation/date/2293740",
         "doc://com.apple.documentation/documentation/foundation/date/2293123",
         "doc://com.apple.documentation/documentation/foundation/date/2293436",
-        "doc://com.apple.documentation/documentation/foundation/date/2293513",
-        "doc://com.apple.documentation/documentation/foundation/date/2293238",
-        "doc://com.apple.documentation/documentation/foundation/date/2883236",
-        "doc://com.apple.documentation/documentation/foundation/date/2293580",
-        "doc://com.apple.documentation/documentation/foundation/date/2882995"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/date/2293513"
+      ],
+      "anchor": "2851050"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Creating Date Ranges",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/date/2963300",
+        "doc://com.apple.documentation/documentation/foundation/date/2963303",
+        "doc://com.apple.documentation/documentation/foundation/date/2949100",
+        "doc://com.apple.documentation/documentation/foundation/date/2895066",
+        "doc://com.apple.documentation/documentation/foundation/date/2949112"
+      ],
+      "anchor": "3744607"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Encoding Dates",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/date/2895072-encode"
+      ],
+      "anchor": "3744608"
     },
     {
       "kind": "taskGroup",
@@ -1678,8 +2071,10 @@
         "doc://com.apple.documentation/documentation/foundation/date/1779828-debugdescription",
         "doc://com.apple.documentation/documentation/foundation/date/2427168-custommirror",
         "doc://com.apple.documentation/documentation/foundation/date/1779628-hashvalue",
+        "doc://com.apple.documentation/documentation/foundation/date/3236722-hash",
         "doc://com.apple.documentation/documentation/foundation/date/1779780-customplaygroundquicklook"
-      ]
+      ],
+      "anchor": "2891798"
     },
     {
       "kind": "taskGroup",
@@ -1687,46 +2082,52 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsdate",
         "doc://com.apple.documentation/documentation/foundation/date/referencetype"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Type Aliases",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/date/stride"
-      ]
+      ],
+      "anchor": "2879039"
     },
     {
       "kind": "taskGroup",
       "title": "Initializers",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/date/2895247-init"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/date/3798897-init",
+        "doc://com.apple.documentation/documentation/foundation/date/3870039-init"
+      ],
+      "anchor": "3780622"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Type Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/date/3766590-now"
+      ],
+      "anchor": "3780623"
     },
     {
       "kind": "taskGroup",
       "title": "Instance Methods",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/date/1948949-addtimeinterval",
-        "doc://com.apple.documentation/documentation/foundation/date/1948745-addingtimeinterval",
-        "doc://com.apple.documentation/documentation/foundation/date/3329237-advanced",
-        "doc://com.apple.documentation/documentation/foundation/date/3329238-distance",
-        "doc://com.apple.documentation/documentation/foundation/date/2895072-encode",
-        "doc://com.apple.documentation/documentation/foundation/date/3236722-hash"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/date/3766420-iso8601format",
+        "doc://com.apple.documentation/documentation/foundation/date/3796312-formatted",
+        "doc://com.apple.documentation/documentation/foundation/date/3766587-formatted",
+        "doc://com.apple.documentation/documentation/foundation/date/3766588-formatted"
+      ],
+      "anchor": "3780624"
     },
     {
       "kind": "taskGroup",
-      "title": "Operator Functions",
+      "title": "Structures",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/date/2963300",
-        "doc://com.apple.documentation/documentation/foundation/date/2963303",
-        "doc://com.apple.documentation/documentation/foundation/date/2949100",
-        "doc://com.apple.documentation/documentation/foundation/date/2895066",
-        "doc://com.apple.documentation/documentation/foundation/date/2949112",
-        "doc://com.apple.documentation/documentation/foundation/date/2963306",
-        "doc://com.apple.documentation/documentation/foundation/date/2963307"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/date/attributedstyle",
+        "doc://com.apple.documentation/documentation/foundation/date/componentsformatstyle",
+        "doc://com.apple.documentation/documentation/foundation/date/formatstring",
+        "doc://com.apple.documentation/documentation/foundation/date/formatstyle",
+        "doc://com.apple.documentation/documentation/foundation/date/iso8601formatstyle",
+        "doc://com.apple.documentation/documentation/foundation/date/intervalformatstyle",
+        "doc://com.apple.documentation/documentation/foundation/date/parsestrategy",
+        "doc://com.apple.documentation/documentation/foundation/date/relativeformatstyle",
+        "doc://com.apple.documentation/documentation/foundation/date/verbatimformatstyle"
+      ],
+      "anchor": "3780625"
     }
   ],
   "seeAlsoSections": [
@@ -1763,6 +2164,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1861,7 +2263,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

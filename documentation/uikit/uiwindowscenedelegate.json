@@ -48,25 +48,30 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UIWindowSceneDelegate",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -303,7 +308,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A specific type of scene that manages one or more windows for your app.  "
+          "text": "A scene that manages one or more windows for your app."
         }
       ]
     },
@@ -317,7 +322,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that represents one instance of your app's user interface."
+          "text": "An object that represents one instance of your app’s user interface."
         }
       ]
     },
@@ -327,16 +332,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -355,14 +350,16 @@
       "title": "Managing the Scene's Main Window",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiwindowscenedelegate/3198093-window"
-      ]
+      ],
+      "anchor": "3198948"
     },
     {
       "kind": "taskGroup",
       "title": "Responding to Scene Changes",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiwindowscenedelegate/3198094-windowscene"
-      ]
+      ],
+      "anchor": "3198954"
     },
     {
       "kind": "taskGroup",
@@ -370,15 +367,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiwindowscenedelegate/3238088-windowscene",
         "doc://com.apple.documentation/documentation/uikit/uiwindowscenedelegate/3238089-windowscene"
-      ]
+      ],
+      "anchor": "3239968"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiwindowscene",
-        "doc://com.apple.documentation/documentation/uikit/uiscenedelegate",
-        "doc://com.apple.documentation/documentation/uikit/uiscene"
+        "doc://com.apple.documentation/documentation/uikit/uiscene",
+        "doc://com.apple.documentation/documentation/uikit/uiscenedelegate"
       ],
       "title": "Window Scenes",
       "generated": true
@@ -408,6 +406,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -533,7 +532,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

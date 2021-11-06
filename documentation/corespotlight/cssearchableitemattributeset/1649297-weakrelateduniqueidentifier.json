@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "For activities, the unique identifier for the item to which the activity is related, but not linked."
+      "text": "The unique identifier for the item to which the activity is related, but not linked."
     }
   ],
   "documentVersion": 0,
@@ -34,25 +34,33 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)CSSearchableItemAttributeSet(py)weakRelatedUniqueIdentifier",
+    "parent": {
+      "title": "CSSearchableItemAttributeSet"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,7 +119,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "For activities, the unique identifier for the item to which the activity is related."
+          "text": "The unique identifier for the item to which the activity is related."
         }
       ]
     },
@@ -147,7 +155,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The uniform type identifier (that is, UTI) of the item."
+          "text": "The uniform type identifier (UTI) of the item."
         }
       ]
     },
@@ -175,7 +183,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The file URL of the content to be indexed."
+          "text": "The file URL of the content to index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/3752013-darkthumbnailurl": {
+      "title": "darkThumbnailURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/3752013-darkthumbnailurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/3752013-darkthumbnailurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The local file URL of the thumbnail image for the item when Dark Mode is active."
         }
       ]
     },
@@ -232,6 +254,20 @@
         {
           "type": "text",
           "text": "The complete path to the item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887563-rankinghint": {
+      "title": "rankingHint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887563-rankinghint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/2887563-rankinghint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A number that indicates the relative importance of the item among other items from the app."
         }
       ]
     },
@@ -301,7 +337,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "For activities, the unique identifier for the item to which the activity is related, but not linked."
+          "text": "The unique identifier for the item to which the activity is related, but not linked."
         }
       ]
     },
@@ -320,10 +356,12 @@
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621561-contenttype",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621660-contenttypetree",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621651-contenturl",
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/3752013-darkthumbnailurl",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621676-displayname",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621652-keywords",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621657-metadatamodificationdate",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621559-path",
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887563-rankinghint",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621569-relateduniqueidentifier",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621582-thumbnaildata",
         "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621560-thumbnailurl",
@@ -372,6 +410,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -409,7 +448,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

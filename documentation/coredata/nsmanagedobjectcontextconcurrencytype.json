@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Constants to indicate the concurrency pattern with which a context will be used. "
+      "text": "The concurrency types you can use with a managed object context."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "5.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@NSManagedObjectContextConcurrencyType",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,24 +119,6 @@
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506709-initwithconcurrencytype": {
-      "title": "initWithConcurrencyType:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506709-initwithconcurrencytype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontext/1506709-initwithconcurrencytype",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithConcurrencyType:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/objectivec/nsuinteger": {
       "title": "NSUInteger",
       "type": "topic",
@@ -139,21 +126,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/objectivec/nsuinteger"
-    },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype/nsconfinementconcurrencytype": {
-      "title": "NSConfinementConcurrencyType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype/nsconfinementconcurrencytype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontextconcurrencytype/nsconfinementconcurrencytype",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Specifies that the context will use the thread confinement pattern."
-        }
-      ],
-      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype/nsprivatequeueconcurrencytype": {
       "title": "NSPrivateQueueConcurrencyType",
@@ -183,87 +155,32 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1845237-automaticallymergeschangesfrompa": {
-      "title": "automaticallyMergesChangesFromParent",
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype/nsconfinementconcurrencytype": {
+      "title": "NSConfinementConcurrencyType",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1845237-automaticallymergeschangesfrompa",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype/nsconfinementconcurrencytype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontext/1845237-automaticallymergeschangesfrompa",
+      "url": "/documentation/coredata/nsmanagedobjectcontextconcurrencytype/nsconfinementconcurrencytype",
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the context automatically merges changes saved to its persistent store coordinator or parent context."
+          "text": "Specifies that the context will use the thread confinement pattern."
         }
-      ]
+      ],
+      "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506792-concurrencytype": {
-      "title": "concurrencyType",
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506709-initwithconcurrencytype": {
+      "title": "initWithConcurrencyType:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506792-concurrencytype",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506709-initwithconcurrencytype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontext/1506792-concurrencytype",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506709-initwithconcurrencytype",
       "abstract": [
         {
           "type": "text",
-          "text": "The concurrency type for the context."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1640477-querygenerationtoken": {
-      "title": "queryGenerationToken",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1640477-querygenerationtoken",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontext/1640477-querygenerationtoken",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the token associated with the query generation currently in use by this context."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506490-mergepolicy": {
-      "title": "mergePolicy",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506490-mergepolicy",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontext/1506490-mergepolicy",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The merge policy of the context."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/2892348-transactionauthor": {
-      "title": "transactionAuthor",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/2892348-transactionauthor",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontext/2892348-transactionauthor",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The author for the context that is used as an identifier in persistent history transactions."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506606-mergechangesfromcontextdidsaveno": {
-      "title": "mergeChangesFromContextDidSaveNotification:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506606-mergechangesfromcontextdidsaveno",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontext/1506606-mergechangesfromcontextdidsaveno",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Merges the changes specified in a given notification."
+          "text": "Creates a context that uses the specified concurrency type."
         }
       ],
       "fragments": [
@@ -273,55 +190,7 @@
         },
         {
           "kind": "identifier",
-          "text": "mergeChangesFromContextDidSaveNotification:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1640469-setquerygenerationfromtoken": {
-      "title": "setQueryGenerationFromToken:error:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1640469-setquerygenerationfromtoken",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontext/1640469-setquerygenerationfromtoken",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sets the query generation this context should use."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setQueryGenerationFromToken:error:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506546-mergechangesfromremotecontextsav": {
-      "title": "mergeChangesFromRemoteContextSave:intoContexts:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506546-mergechangesfromremotecontextsav",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontext/1506546-mergechangesfromremotecontextsav",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Handles changes from other processes or from a serialized state."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "+ "
-        },
-        {
-          "kind": "identifier",
-          "text": "mergeChangesFromRemoteContextSave:intoContexts:"
+          "text": "initWithConcurrencyType:"
         }
       ]
     },
@@ -335,21 +204,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants to indicate the concurrency pattern with which a context will be used. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextquerygenerationkey": {
-      "title": "NSManagedObjectContextQueryGenerationKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextquerygenerationkey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontextquerygenerationkey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Constant used to reference the query generation token."
+          "text": "The concurrency types you can use with a managed object context."
         }
       ]
     },
@@ -364,28 +219,21 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Constants",
+      "title": "Concurrency Types",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype/nsconfinementconcurrencytype",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype/nsprivatequeueconcurrencytype",
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype/nsmainqueueconcurrencytype"
-      ]
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype/nsmainqueueconcurrencytype",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype/nsconfinementconcurrencytype"
+      ],
+      "anchor": "1610602"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1845237-automaticallymergeschangesfrompa",
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506792-concurrencytype",
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1640477-querygenerationtoken",
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506490-mergepolicy",
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/2892348-transactionauthor",
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506606-mergechangesfromcontextdidsaveno",
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1640469-setquerygenerationfromtoken",
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506546-mergechangesfromremotecontextsav",
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextquerygenerationkey"
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506709-initwithconcurrencytype"
       ],
-      "title": "Managing Concurrency",
+      "title": "Creating a Context",
       "generated": true
     }
   ],
@@ -451,6 +299,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -458,39 +307,10 @@
           ]
         }
       ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "overview",
-          "level": 2,
-          "text": "Overview",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "See also "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506709-initwithconcurrencytype"
-            },
-            {
-              "type": "text",
-              "text": " and Concurrency with Core Data."
-            }
-          ]
-        }
-      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An identifier for the type of service being provided."
+      "text": "The type of service being provided."
     }
   ],
   "documentVersion": 0,
@@ -41,20 +41,28 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIActivity(py)activityType",
+    "parent": {
+      "title": "UIActivity"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -119,6 +127,14 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/uikit/uiactivityviewcontroller/1622022-completionwithitemshandler": {
+      "title": "completionWithItemsHandler",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityviewcontroller/1622022-completionwithitemshandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiactivityviewcontroller/1622022-completionwithitemshandler"
+    },
     "doc://com.apple.documentation/documentation/uikit/uiactivitytype": {
       "title": "UIActivityType",
       "type": "topic",
@@ -129,7 +145,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Activity types for which the system has built-in support."
+          "text": "A structure that describes the types of acitivities for which the system has built-in support."
         }
       ]
     },
@@ -143,7 +159,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the category of the activity, which may be used to group activities in the UI."
+          "text": "The category of the activity, which may be used to group activities in the UI."
         }
       ]
     },
@@ -157,7 +173,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Activities have a defined category, and the activity UI may show activities grouped by category."
+          "text": "An enumeration that defines categories of activities."
         }
       ]
     },
@@ -171,7 +187,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An identifier for the type of service being provided."
+          "text": "The type of service being provided."
         }
       ]
     },
@@ -185,7 +201,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A user-readable string describing the service."
+          "text": "A user-readable string that describes the service."
         }
       ]
     },
@@ -209,16 +225,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "seeAlsoSections": [
@@ -272,27 +278,8 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "return_value",
-          "level": 2,
-          "text": "Return Value",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "A string that identifies the provided service to your app.  "
-            }
           ]
         }
       ]
@@ -311,7 +298,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This method returns "
+              "text": "The default value is "
             },
             {
               "type": "codeVoice",
@@ -319,7 +306,16 @@
             },
             {
               "type": "text",
-              "text": " by default. Subclasses must override this method and return a valid string that identifies the application service. This string is not presented to the user."
+              "text": ". Subclasses may override this property to return a custom activity type that is reported to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityviewcontroller/1622022-completionwithitemshandler"
+            },
+            {
+              "type": "text",
+              "text": " completion handler. "
             }
           ]
         }
@@ -327,7 +323,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

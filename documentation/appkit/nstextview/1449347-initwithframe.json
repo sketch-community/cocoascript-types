@@ -41,15 +41,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSTextView(im)initWithFrame:textContainer:",
+    "parent": {
+      "title": "NSTextView"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -98,13 +101,7 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstextview",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A view that draws text and handles user interactions with that text. "
-        }
-      ]
+      "url": "/documentation/appkit/nstextview"
     },
     "doc://com.apple.documentation/documentation/appkit/text_display": {
       "title": "Text Display",
@@ -138,6 +135,62 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/nslayoutmanager": {
+      "title": "NSLayoutManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nslayoutmanager"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextlayoutmanager": {
+      "title": "NSTextLayoutManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextlayoutmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextlayoutmanager"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextcontainer": {
+      "title": "NSTextContainer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextcontainer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextcontainer"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextcontentstorage": {
+      "title": "NSTextContentStorage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextcontentstorage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextcontentstorage"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449347-initwithframe#3849763": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449347-initwithframe#3849763",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/appkit/nstextview/1449347-initwithframe#3849763"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextstorage": {
+      "title": "NSTextStorage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextstorage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextstorage"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449347-initwithframe#3849813": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449347-initwithframe#3849813",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/appkit/nstextview/1449347-initwithframe#3849813"
+    },
     "devLink-1695968": {
       "identifier": "devLink-1695968",
       "type": "link",
@@ -157,14 +210,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsrect"
-    },
-    "doc://com.apple.documentation/documentation/uikit/nstextcontainer": {
-      "title": "NSTextContainer",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextcontainer",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/nstextcontainer"
     },
     "doc://com.apple.documentation/documentation/appkit/nstextview/1449347-initwithframe": {
       "title": "initWithFrame:textContainer:",
@@ -190,6 +235,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449489-initwithcoder": {
+      "title": "initWithCoder:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449489-initwithcoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449489-initwithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a text view with data in an unarchiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithCoder:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -201,7 +270,8 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nstextview/1449262-initwithframe"
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449262-initwithframe",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449489-initwithcoder"
       ],
       "title": "Creating a Text View",
       "generated": true
@@ -320,7 +390,7 @@
           ]
         },
         {
-          "name": "aTextContainer",
+          "name": "textContainer",
           "content": [
             {
               "type": "paragraph",
@@ -395,15 +465,167 @@
             },
             {
               "type": "text",
-              "text": ", which builds up an entire group of text-handling objects, you use this method after you’ve created the other components of the text-handling system—a text storage object, a layout manager, and a text container. Assembling the components in this fashion means that the text storage, not the text view, is the principal owner of the component objects."
+              "text": ", which builds up an entire group of text-handling objects, you use this method after you’ve created the other components of the text-handling system — a text storage object, a layout manager, and a text container. Assembling the components in this fashion means that the text storage, not the text view, is the principal owner of the component objects."
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449262-initwithframe"
+            },
+            {
+              "type": "text",
+              "text": " initializer uses "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanager"
+            },
+            {
+              "type": "text",
+              "text": " by default. When you use this initializer in macOS 12 and later, you have the option to use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nstextlayoutmanager"
+            },
+            {
+              "type": "text",
+              "text": " which gives you access to newer TextKit functionality and performance improvements. To use the new layout manager  create instances of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nstextlayoutmanager"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nstextcontainer"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nstextcontentstorage"
+            },
+            {
+              "type": "text",
+              "text": "; these manage the view’s text layout, text regions, and backingstore, respectively. The example below shows the order of creation and initialization of these objects, and how configure them to initialize an "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// The viewWidth and viewBounds are set up elsewhere ",
+            "// in the App's initialization.",
+            "",
+            "// Create and initialize the supporting layout, container, and storage management.",
+            "let textLayoutManager = NSTextLayoutManager()  ",
+            "let containerSize = NSSize(width: viewWidth, height: CGFloat.greatestFiniteMagnitude)  ",
+            "let textContainer = NSTextContainer(size: containerSize)  ",
+            "textLayoutManager.textContainer = textContainer  ",
+            "let textContentStorage = NSTextContentStorage()  ",
+            "textContentStorage.addTextLayoutManager(textLayoutManager)  ",
+            "",
+            "let textView = NSTextView(frame: viewBounds, textContainer: textLayoutManager.textContainer)",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3849763",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In macOS 11 and earlier, you follow a similar pattern but using "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanager"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nstextstorage"
+            },
+            {
+              "type": "text",
+              "text": " instead:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// The viewBounds and containerSize are set up elsewhere ",
+            "// in the App's initialization.",
+            "        ",
+            "// Create and initialize the supporting layout, container, and storage management.",
+            "let textContainer = NSTextContainer(size: containerSize)",
+            "let layoutManager = NSLayoutManager()",
+            "layoutManager.addTextContainer(textContainer)",
+            "let textStorage = NSTextStorage()",
+            "textStorage.addLayoutManager(layoutManager)",
+            "        ",
+            "let textView = NSTextView(frame: viewBounds, textContainer: textContainer)",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3849813",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

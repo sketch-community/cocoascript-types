@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An object that contains the information necessary for a video compositor to render an output pixel buffer."
+      "text": "An object that contains information a video compositor needs to render an output pixel buffer."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,35 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAsynchronousVideoCompositionRequest",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -125,6 +130,76 @@
       "role": "symbol",
       "url": "/documentation/foundation/nscopying"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386888-compositiontime": {
+      "title": "compositionTime",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386888-compositiontime",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/1386888-compositiontime",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A time for which to compose the frame."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1389112-rendercontext": {
+      "title": "renderContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1389112-rendercontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/1389112-rendercontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The rendering context of the video composition."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386672-videocompositioninstruction": {
+      "title": "videoCompositionInstruction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386672-videocompositioninstruction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/1386672-videocompositioninstruction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A video composition instruction that indicates how to compose the frame."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1388898-sourcetrackids": {
+      "title": "sourceTrackIDs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1388898-sourcetrackids",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/1388898-sourcetrackids",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The identifiers of tracks that contain source video."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750312-sourcesampledatatrackids": {
+      "title": "sourceSampleDataTrackIDs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750312-sourcesampledatatrackids",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/3750312-sourcesampledatatrackids",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The identifiers of tracks that contain source metadata."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1390379-sourceframebytrackid": {
       "title": "sourceFrameByTrackID:",
       "type": "topic",
@@ -135,7 +210,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the source pixel buffer for the specified track ID."
+          "text": "Returns a source pixel buffer for the track that contains the specified identifier."
         }
       ],
       "fragments": [
@@ -149,17 +224,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386261-finishcancelledrequest": {
-      "title": "finishCancelledRequest",
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750311-sourcesamplebufferbytrackid": {
+      "title": "sourceSampleBufferByTrackID:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386261-finishcancelledrequest",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750311-sourcesamplebufferbytrackid",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/1386261-finishcancelledrequest",
+      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/3750311-sourcesamplebufferbytrackid",
       "abstract": [
         {
           "type": "text",
-          "text": "Signifies the composition request was canceled."
+          "text": "Returns a source sample buffer for the track that contains the specified identifier."
         }
       ],
       "fragments": [
@@ -169,7 +244,31 @@
         },
         {
           "kind": "identifier",
-          "text": "finishCancelledRequest"
+          "text": "sourceSampleBufferByTrackID:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750313-sourcetimedmetadatabytrackid": {
+      "title": "sourceTimedMetadataByTrackID:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750313-sourcetimedmetadatabytrackid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/3750313-sourcetimedmetadatabytrackid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a source timed metadata group for the track that contains the specified identifier."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "sourceTimedMetadataByTrackID:"
         }
       ]
     },
@@ -183,7 +282,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Signifies the composition request succeeded"
+          "text": "Finishes the request to compose the frame."
         }
       ],
       "fragments": [
@@ -207,7 +306,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Signifies the composition request encountered an error."
+          "text": "Finishes the request with an error."
         }
       ],
       "fragments": [
@@ -221,59 +320,27 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386888-compositiontime": {
-      "title": "compositionTime",
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386261-finishcancelledrequest": {
+      "title": "finishCancelledRequest",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386888-compositiontime",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386261-finishcancelledrequest",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/1386888-compositiontime",
+      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/1386261-finishcancelledrequest",
       "abstract": [
         {
           "type": "text",
-          "text": "The time for which the frame should be composed."
+          "text": "Cancels the request to compose a video frame."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1389112-rendercontext": {
-      "title": "renderContext",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1389112-rendercontext",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/1389112-rendercontext",
-      "abstract": [
+      ],
+      "fragments": [
         {
-          "type": "text",
-          "text": "The video composition render context making the request."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1388898-sourcetrackids": {
-      "title": "sourceTrackIDs",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1388898-sourcetrackids",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/1388898-sourcetrackids",
-      "abstract": [
+          "kind": "text",
+          "text": "- "
+        },
         {
-          "type": "text",
-          "text": "The track IDs of all the source buffers that are available to compose the frame."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386672-videocompositioninstruction": {
-      "title": "videoCompositionInstruction",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386672-videocompositioninstruction",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasynchronousvideocompositionrequest/1386672-videocompositioninstruction",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The video composition instruction to use to compose the frame."
+          "kind": "identifier",
+          "text": "finishCancelledRequest"
         }
       ]
     },
@@ -312,7 +379,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that contains the information necessary for a video compositor to render an output pixel buffer."
+          "text": "An object that contains information a video compositor needs to render an output pixel buffer."
         }
       ]
     },
@@ -370,29 +437,35 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Getting the Pixel Buffer for a Specific Frame",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1390379-sourceframebytrackid"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Finishing the Composition Request",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386261-finishcancelledrequest",
-        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1387450-finishwithcomposedvideoframe",
-        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1390797-finishwitherror"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Getting the Composition Request Settings",
+      "title": "Inspecting the Request",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386888-compositiontime",
         "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1389112-rendercontext",
-        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1388898-sourcetrackids",
         "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386672-videocompositioninstruction"
-      ]
+      ],
+      "anchor": "1669354"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Accessing Source Data",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1388898-sourcetrackids",
+        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750312-sourcesampledatatrackids",
+        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1390379-sourceframebytrackid",
+        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750311-sourcesamplebufferbytrackid",
+        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/3750313-sourcetimedmetadatabytrackid"
+      ],
+      "anchor": "1669284"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Finishing the Request",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1387450-finishwithcomposedvideoframe",
+        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1390797-finishwitherror",
+        "doc://com.apple.documentation/documentation/avfoundation/avasynchronousvideocompositionrequest/1386261-finishcancelledrequest"
+      ],
+      "anchor": "1669316"
     }
   ],
   "seeAlsoSections": [
@@ -439,6 +512,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -460,7 +534,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The video compositor must implement the "
+              "text": "The video compositor must adopt the "
             },
             {
               "type": "reference",
@@ -477,7 +551,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

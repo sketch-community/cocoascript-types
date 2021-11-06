@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A role-based protocol that declares the minimum interface required for an accessibility element to act as a list view. "
+      "text": "A role-based protocol that declares the minimum interface necessary for an accessibility element to act as a list view. "
     }
   ],
   "documentVersion": 0,
@@ -11,12 +11,14 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos"
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos"
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls"
       ]
     ]
   },
@@ -39,15 +41,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSAccessibilityList",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -82,10 +84,18 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls": {
+      "title": "Custom Controls",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls",
+      "url": "/documentation/appkit/accessibility_for_appkit/custom_controls",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -106,92 +116,6 @@
       "role": "symbol",
       "url": "/documentation/appkit/nsaccessibility"
     },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable": {
-      "title": "NSAccessibilityTable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitytable",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A role-based protocol that declares the minimum interface required for an accessibility element to act as a table view. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelementloading": {
-      "title": "NSAccessibilityElementLoading",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelementloading",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityelementloading"
-    },
-    "doc://com.apple.documentation/documentation/appkit/1534023-nsaccessibilityelement": {
-      "title": "NSAccessibilityElement",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/1534023-nsaccessibilityelement",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/1534023-nsaccessibilityelement",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A role-based protocol that declares the minimum interface required to interact with an accessibility client. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitybutton": {
-      "title": "NSAccessibilityButton",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitybutton",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitybutton",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A role-based protocol that declares the minimum interface required for an accessibility element to act as a button. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycheckbox": {
-      "title": "NSAccessibilityCheckBox",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycheckbox",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitycheckbox",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A role-based protocol that declares the minimum interface required for an accessibility element to act as a checkbox. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycolor": {
-      "title": "NSAccessibilityColor",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycolor",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitycolor"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityimage": {
-      "title": "NSAccessibilityImage",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityimage",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityimage",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A role-based protocol that declares the minimum interface required for an accessibility element to act as an image."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibilitylist": {
       "title": "NSAccessibilityList",
       "type": "topic",
@@ -202,21 +126,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A role-based protocol that declares the minimum interface required for an accessibility element to act as a list view. "
+          "text": "A role-based protocol that declares the minimum interface necessary for an accessibility element to act as a list view. "
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitynavigablestatictext": {
-      "title": "NSAccessibilityNavigableStaticText",
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable": {
+      "title": "NSAccessibilityTable",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitynavigablestatictext",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitynavigablestatictext",
+      "url": "/documentation/appkit/nsaccessibilitytable",
       "abstract": [
         {
           "type": "text",
-          "text": "A role-based protocol that declares the minimum interface required for an accessibility element to act as navigable static text. "
+          "text": "A role-based protocol that declares the minimum interface necessary for an accessibility element to act as a table view. "
         }
       ]
     },
@@ -230,35 +154,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A role-based protocol that declares the minimum interface required for an accessibility element to act as an outline view. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprogressindicator": {
-      "title": "NSAccessibilityProgressIndicator",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprogressindicator",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprogressindicator",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A role-based protocol that declares the minimum interface required for an accessibility element to act as a progress indicator. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityradiobutton": {
-      "title": "NSAccessibilityRadioButton",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityradiobutton",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityradiobutton",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A role-based protocol that declares the minimum interface required for an accessibility element to act as a radio button. "
+          "text": "A role-based protocol that declares the minimum interface necessary for an accessibility element to act as an outline view. "
         }
       ]
     },
@@ -272,81 +168,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A role-based protocol that declares the minimum interface required for an accessibility element to act as a row for a table, list, or outline view. "
+          "text": "A role-based protocol that declares the minimum interface necessary for an accessibility element to act as a row for a table, list, or outline view. "
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityslider": {
-      "title": "NSAccessibilitySlider",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityslider",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityslider",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A role-based protocol that declares the minimum interface required for an accessibility element to act as a slider. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitystatictext": {
-      "title": "NSAccessibilityStaticText",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitystatictext",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitystatictext",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A role-based protocol that declares the minimum interface required for an accessibility element to act as static text. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitystepper": {
-      "title": "NSAccessibilityStepper",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitystepper",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitystepper",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A role-based protocol that declares the minimum interface required for an accessibility element to act as a stepper. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityswitch": {
-      "title": "NSAccessibilitySwitch",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityswitch",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityswitch",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A role-based protocol that declares the minimum interface required for an accessibility element to act as a switch. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityannotationattributekey": {
-      "title": "NSAccessibilityAnnotationAttributeKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityannotationattributekey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityannotationattributekey"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityannotationposition": {
-      "title": "NSAccessibilityAnnotationPosition",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityannotationposition",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityannotationposition"
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -369,26 +193,11 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelementloading",
-        "doc://com.apple.documentation/documentation/appkit/1534023-nsaccessibilityelement",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitybutton",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycheckbox",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycolor",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityimage",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitynavigablestatictext",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityoutline",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprogressindicator",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityradiobutton",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrow",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityslider",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitystatictext",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitystepper",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityswitch",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityannotationattributekey",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityannotationposition"
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityoutline",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrow"
       ],
-      "title": "AppKit Elements",
+      "title": "Lists",
       "generated": true
     }
   ],
@@ -434,7 +243,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You can further enhance the adopting element by implementing any of the information properties or action methods declared in the "
+              "text": "Use this protocol when you want a user interface element to behave like a list—a view that displays a set of related records in a single-column table—in the accessibility hierarchy. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can further enhance the adopting element by implementing any of the information properties or action methods that the "
             },
             {
               "type": "reference",
@@ -443,7 +261,7 @@
             },
             {
               "type": "text",
-              "text": " protocol."
+              "text": " protocol declares. "
             }
           ]
         },
@@ -455,16 +273,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "This protocol requires an explicit implementation of all the required methods that it declares (including all the explicitly required methods of any protocol it inherits from). Any class adopting this protocol must implement all of these methods. You can inherit these methods only from ancestors that also adopt a protocol that explicitly requires them."
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "In practice, this means that the compiler may force you to override some of the methods that your ancestors have already implemented. Simply follow the compiler’s warnings, and reimplement these methods as needed."
+                  "text": "Any class that adopts this protocol must implement all of its methods, and the required methods of any protocol it inherits from. The compiler may require you to override some methods that your ancestors have already implemented. Simply follow the compiler’s warnings, and reimplement these methods as necessary."
                 }
               ]
             }
@@ -477,27 +286,30 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "While the "
+              "text": "Although the "
             },
             {
-              "type": "codeVoice",
-              "code": "NSAccessibilityList"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitylist"
             },
             {
               "type": "text",
-              "text": " protocol does not declare any methods, it does conform to the "
+              "text": " protocol doesn’t declare any methods, it does conform to the "
             },
             {
-              "type": "codeVoice",
-              "code": "NSAccessibilityTable"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable"
             },
             {
               "type": "text",
               "text": " protocol. You may need to explicitly implement methods from any of the protocols that "
             },
             {
-              "type": "codeVoice",
-              "code": "NSAccessibilityList"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitylist"
             },
             {
               "type": "text",
@@ -509,7 +321,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

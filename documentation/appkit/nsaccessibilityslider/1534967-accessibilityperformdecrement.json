@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Decrements this slider’s value."
+      "text": "Decrements the slider’s value."
     }
   ],
   "documentVersion": 0,
@@ -11,13 +11,15 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilityslider"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilityslider"
       ]
     ]
@@ -42,15 +44,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSAccessibilitySlider(im)accessibilityPerformDecrement",
+    "parent": {
+      "title": "NSAccessibilitySlider"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -85,10 +90,18 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls": {
+      "title": "Custom Controls",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls",
+      "url": "/documentation/appkit/accessibility_for_appkit/custom_controls",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -103,7 +116,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A role-based protocol that declares the minimum interface required for an accessibility element to act as a slider. "
+          "text": "A role-based protocol that declares the minimum interface necessary for an accessibility element to act as a slider. "
         }
       ]
     },
@@ -114,14 +127,6 @@
       "type": "topic",
       "kind": "symbol",
       "role": "collection"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityvaluechangednotification": {
-      "title": "NSAccessibilityValueChangedNotification",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityvaluechangednotification",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityvaluechangednotification"
     },
     "doc://com.apple.documentation/documentation/objectivec/yes": {
       "title": "YES",
@@ -138,6 +143,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/objectivec/no"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityvaluechangednotification": {
+      "title": "NSAccessibilityValueChangedNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityvaluechangednotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityvaluechangednotification"
     },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibilityslider/1530176-accessibilitylabel": {
       "title": "accessibilityLabel",
@@ -175,7 +188,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Decrements this slider’s value."
+          "text": "Decrements the slider’s value."
         }
       ],
       "fragments": [
@@ -200,7 +213,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Increments this slider’s value."
+          "text": "Increments the slider’s value."
         }
       ],
       "fragments": [
@@ -254,7 +267,7 @@
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilityslider/1528478-accessibilityperformincrement",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilityslider/1530335-accessibilityvalue"
       ],
-      "title": "Accessibility Methods",
+      "title": "Supporting Accessibility",
       "generated": true
     }
   ],
@@ -359,7 +372,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

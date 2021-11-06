@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A set of methods that define the orientation of text for an object. "
+      "text": "A set of methods that define the orientation of text for an object."
     }
   ],
   "documentVersion": 0,
@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts"
+        "doc://com.apple.documentation/documentation/uikit/textkit"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
@@ -42,30 +42,35 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)NSTextLayoutOrientationProvider",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -102,10 +107,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts": {
-      "title": "Text Display and Fonts",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts",
-      "url": "/documentation/uikit/text_display_and_fonts",
+    "doc://com.apple.documentation/documentation/uikit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit",
+      "url": "/documentation/uikit/textkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -132,7 +137,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/nstextcontainer",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/nstextcontainer"
+      "url": "/documentation/uikit/nstextcontainer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A region where text layout occurs."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nstextview": {
       "title": "NSTextView",
@@ -187,6 +198,76 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/textkit/using_textkit_2_to_interact_with_text": {
+      "title": "Using TextKit 2 to Interact with Text",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit/using_textkit_2_to_interact_with_text",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/textkit/using_textkit_2_to_interact_with_text",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Interact with text by managing text selection and inserting custom text elements."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/textkit/display_text_with_a_custom_layout": {
+      "title": "Display Text with a Custom Layout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit/display_text_with_a_custom_layout",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/textkit/display_text_with_a_custom_layout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Lay out text in a custom-shaped container and apply glyph substitutions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextlayoutmanager": {
+      "title": "NSTextLayoutManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextlayoutmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextlayoutmanager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The primary class that you use to manage text layout and presentation for custom text displays."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextlayoutfragment": {
+      "title": "NSTextLayoutFragment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextlayoutfragment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextlayoutfragment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A class that represents the layout fragment typically corresponding to a rendering surface such as layer or view subclass."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextviewportlayoutcontroller": {
+      "title": "NSTextViewportLayoutController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextviewportlayoutcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextviewportlayoutcontroller",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manages the layout process inside the viewport interacting with its delegate."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/nslayoutmanager": {
       "title": "NSLayoutManager",
       "type": "topic",
@@ -201,20 +282,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate": {
-      "title": "NSLayoutManagerDelegate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/nslayoutmanagerdelegate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A set of optional methods that delegates of layout manager objects implement."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/nstextlayoutorientationprovider": {
       "title": "NSTextLayoutOrientationProvider",
       "type": "topic",
@@ -225,21 +292,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of methods that define the orientation of text for an object. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout": {
-      "title": "Display Text with a Custom Layout",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout",
-      "kind": "article",
-      "role": "sampleCode",
-      "url": "/documentation/uikit/text_storage/display_text_with_a_custom_layout",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Lay out text in a custom-shaped container and apply glyph substitutions."
+          "text": "A set of methods that define the orientation of text for an object."
         }
       ]
     },
@@ -269,15 +322,20 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nstextlayoutorientationprovider/1402990-layoutorientation",
         "doc://com.apple.documentation/documentation/uikit/nstextlayoutorientation"
-      ]
+      ],
+      "anchor": "1660589"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/nslayoutmanager",
-        "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate",
-        "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout"
+        "doc://com.apple.documentation/documentation/uikit/textkit/using_textkit_2_to_interact_with_text",
+        "doc://com.apple.documentation/documentation/uikit/textkit/display_text_with_a_custom_layout",
+        "doc://com.apple.documentation/documentation/uikit/nstextlayoutmanager",
+        "doc://com.apple.documentation/documentation/uikit/nstextlayoutfragment",
+        "doc://com.apple.documentation/documentation/uikit/nstextviewportlayoutcontroller",
+        "doc://com.apple.documentation/documentation/uikit/nstextcontainer",
+        "doc://com.apple.documentation/documentation/uikit/nslayoutmanager"
       ],
       "title": "Layout",
       "generated": true
@@ -307,6 +365,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -391,7 +450,7 @@
             },
             {
               "type": "text",
-              "text": " to support laying out text vertically. "
+              "text": " to support laying out text vertically."
             }
           ]
         }
@@ -399,7 +458,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A definition of logical conditions used to constrain a search either for a fetch or for in-memory filtering."
+      "text": "A definition of logical conditions for constraining a search for a fetch or for in-memory filtering."
     }
   ],
   "documentVersion": 0,
@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSPredicate",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -115,7 +120,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A specialized predicate that you use to compare expressions."
+          "text": "A specialized predicate for comparing expressions."
         }
       ]
     },
@@ -157,7 +162,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A definition of logical conditions used to constrain a search either for a fetch or for in-memory filtering."
+          "text": "A definition of logical conditions for constraining a search for a fetch or for in-memory filtering."
         }
       ]
     },
@@ -177,7 +182,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the specified object matches the conditions specified by the predicate after substituting in the values in a given variables dictionary."
+          "text": "Returns a Boolean value that indicates whether the specified object matches the conditions that the predicate specifies after substituting in the values from a specified variables dictionary."
         }
       ],
       "fragments": [
@@ -225,7 +230,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and returns a new predicate formed by creating a new string with a given format and parsing the result."
+          "text": "Creates and returns a new predicate formed by creating a new string with a specified format and parsing the result."
         }
       ],
       "fragments": [
@@ -249,7 +254,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes a predicate by substituting the values in a given array into a format string and parsing the result."
+          "text": "Creates a predicate by substituting the values in a specified array into a format string and parsing the result."
         }
       ],
       "fragments": [
@@ -273,7 +278,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes a predicate by substituting the values in an argument list into a format string and parsing the result."
+          "text": "Creates a predicate by substituting the values in an argument list into a format string and parsing the result."
         }
       ],
       "fragments": [
@@ -297,7 +302,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a copy of the predicate with the predicate's variables substituted by values specified in a given substitution variables dictionary."
+          "text": "Returns a copy of the predicate and substitutes the predicates variables with specified values from a specified substitution variables dictionary."
         }
       ],
       "fragments": [
@@ -321,7 +326,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and returns a predicate that always evaluates to a given Boolean value."
+          "text": "Creates and returns a predicate that always evaluates to a specified Boolean value."
         }
       ],
       "fragments": [
@@ -345,7 +350,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes a predicate that evaluates using a specified block object and bindings dictionary."
+          "text": "Creates a predicate that evaluates using a specified block object and bindings dictionary."
         }
       ],
       "fragments": [
@@ -369,7 +374,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes a predicate with a metadata query string."
+          "text": "Creates a predicate with a metadata query string."
         }
       ],
       "fragments": [
@@ -393,7 +398,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the specified object matches the conditions specified by the predicate."
+          "text": "Returns a Boolean value that indicates whether the specified object matches the conditions that the predicate specifies."
         }
       ],
       "fragments": [
@@ -417,7 +422,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Forces a predicate that was securely decoded to allow evaluation."
+          "text": "Forces a securely decoded predicate to allow evaluation."
         }
       ],
       "fragments": [
@@ -484,7 +489,8 @@
         "doc://com.apple.documentation/documentation/foundation/nspredicate/1417329-predicatewithvalue",
         "doc://com.apple.documentation/documentation/foundation/nspredicate/1416182-predicatewithblock",
         "doc://com.apple.documentation/documentation/foundation/nspredicate/1417831-predicatefrommetadataquerystring"
-      ]
+      ],
+      "anchor": "1653442"
     },
     {
       "kind": "taskGroup",
@@ -493,14 +499,16 @@
         "doc://com.apple.documentation/documentation/foundation/nspredicate/1417924-evaluatewithobject",
         "doc://com.apple.documentation/documentation/foundation/nspredicate/1407759-evaluatewithobject",
         "doc://com.apple.documentation/documentation/foundation/nspredicate/1416310-allowevaluation"
-      ]
+      ],
+      "anchor": "1653525"
     },
     {
       "kind": "taskGroup",
       "title": "Getting a String Representation",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nspredicate/1411605-predicateformat"
-      ]
+      ],
+      "anchor": "1653587"
     }
   ],
   "seeAlsoSections": [
@@ -548,6 +556,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -570,7 +579,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Predicates represent logical conditions, which you can use to filter collections of objects. Although it's common to create predicates directly from instances of "
+              "text": "Predicates represent logical conditions, which you can use to filter collections of objects. Although it’s common to create predicates directly from instances of "
             },
             {
               "type": "reference",
@@ -579,7 +588,7 @@
             },
             {
               "type": "text",
-              "text": ",  "
+              "text": ", "
             },
             {
               "type": "reference",
@@ -597,7 +606,7 @@
             },
             {
               "type": "text",
-              "text": ", you often create predicates from a format string which is parsed by the class methods on "
+              "text": ", you often create predicates from a format string that the class methods parse on "
             },
             {
               "type": "reference",
@@ -624,7 +633,7 @@
                     },
                     {
                       "type": "codeVoice",
-                      "code": "grade == \"7\""
+                      "code": "grade == “7”"
                     },
                     {
                       "type": "text",
@@ -632,7 +641,7 @@
                     },
                     {
                       "type": "codeVoice",
-                      "code": "firstName like \"Shaffiq\""
+                      "code": "firstName like “Juan”"
                     }
                   ]
                 }
@@ -645,11 +654,11 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "Case and diacritic insensitive lookups, such as "
+                      "text": "Case- and diacritic-insensitive lookups, such as "
                     },
                     {
                       "type": "codeVoice",
-                      "code": "name contains[cd] \"itroen\""
+                      "code": "name contains[cd] “stein”"
                     }
                   ]
                 }
@@ -666,7 +675,7 @@
                     },
                     {
                       "type": "codeVoice",
-                      "code": "(firstName like \"Mark\") OR (lastName like \"Adderley\")"
+                      "code": "(firstName like “Mei”) OR (lastName like “Chen”)"
                     }
                   ]
                 }
@@ -684,10 +693,6 @@
                     {
                       "type": "codeVoice",
                       "code": "date between {$YESTERDAY, $TOMORROW}"
-                    },
-                    {
-                      "type": "text",
-                      "text": "."
                     }
                   ]
                 }
@@ -704,7 +709,7 @@
                     },
                     {
                       "type": "codeVoice",
-                      "code": "group.name like \"work*\""
+                      "code": "group.name like “work*\""
                     }
                   ]
                 }
@@ -761,7 +766,7 @@
             },
             {
               "type": "text",
-              "text": " method, so that the predicate can be predefined before substituting concrete values at runtime."
+              "text": " method so that you can predefine the predicate before substituting concrete values at runtime."
             }
           ]
         }
@@ -769,7 +774,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

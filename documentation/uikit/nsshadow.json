@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An encapsulation of the attributes that create a drop shadow during drawing operations."
+      "text": "An object you use to specify attributes to create and style a drop shadow during drawing operations."
     }
   ],
   "documentVersion": 0,
@@ -42,35 +42,40 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSShadow",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -157,7 +162,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An encapsulation of the attributes that create a drop shadow during drawing operations."
+          "text": "An object you use to specify attributes to create and style a drop shadow during drawing operations."
         }
       ]
     },
@@ -251,7 +256,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The offset values of the shadow."
+          "text": "The shadow’s relative position, which you specify with horizontal and vertical offset values."
         }
       ]
     },
@@ -315,16 +320,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -351,7 +346,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nsshadow/1429853-init",
         "doc://com.apple.documentation/documentation/uikit/nsshadow/1623903-initwithcoder"
-      ]
+      ],
+      "anchor": "1669280"
     },
     {
       "kind": "taskGroup",
@@ -360,14 +356,16 @@
         "doc://com.apple.documentation/documentation/uikit/nsshadow/1429851-shadowoffset",
         "doc://com.apple.documentation/documentation/uikit/nsshadow/1429846-shadowblurradius",
         "doc://com.apple.documentation/documentation/uikit/nsshadow/1429855-shadowcolor"
-      ]
+      ],
+      "anchor": "1669302"
     },
     {
       "kind": "taskGroup",
-      "title": "Setting the Shadow",
+      "title": "Setting a Shadow",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsshadow/1429857-set"
-      ]
+      ],
+      "anchor": "1669397"
     }
   ],
   "primaryContentSections": [
@@ -404,6 +402,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -426,7 +425,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Shadows are always drawn in the default user coordinate space, regardless of any transformations applied to that space. This means that rotations, translations and other transformations of the current transformation matrix (the CTM) do not affect the resulting shadow. Another way to think about this is that changes to the CTM do not move or change the apparent position of the shadow’s light source."
+              "text": "When you create shadows, the system draws them in the default user coordinate space, where  coordinates are independent from the pixel values of any particular device. Rotations, translations, and other transformations of the current transformation matrix (CTM) don’t affect the shadow or the apparent position of the shadow’s light source."
             }
           ]
         },
@@ -435,7 +434,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "There are two positional parameters for a shadow: an x-offset and a y-offset. These values are expressed using a single size data type ("
+              "text": "A shadow has two positional parameters: an x-offset and a y-offset. Express these values with a single size data type ("
             },
             {
               "type": "reference",
@@ -444,7 +443,7 @@
             },
             {
               "type": "text",
-              "text": " on iOS, "
+              "text": " in iOS, "
             },
             {
               "type": "reference",
@@ -453,7 +452,7 @@
             },
             {
               "type": "text",
-              "text": " in macOS) and using the units of the default user coordinate space. Positive values for these offsets extend up and to the right."
+              "text": " in macOS), using the units of the default user coordinate space. Positive values for these offsets extend down and to the right from the user’s perspective."
             }
           ]
         },
@@ -462,7 +461,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "In addition to its positional parameters, a shadow also contains a blur radius, which specifies how much a drawn object's image mask is blurred before it is composited onto the destination. A value of "
+              "text": "In addition to its positional parameters, a shadow also contains a blur radius, which specifies how much the system blurs a drawn object’s image mask before compositing the image onto the destination. A value of "
             },
             {
               "type": "codeVoice",
@@ -470,7 +469,7 @@
             },
             {
               "type": "text",
-              "text": " means there is no blur. Larger values give correspondingly larger amounts of blurring. "
+              "text": " produces no blur. Larger values produce an increasingly large blurred shadow. "
             }
           ]
         },
@@ -479,7 +478,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "An "
+              "text": "You can use an "
             },
             {
               "type": "reference",
@@ -488,7 +487,23 @@
             },
             {
               "type": "text",
-              "text": " object may be used in one of two ways. First, it may be set, like a color or a font, in which case its attributes are applied to all content drawn thereafter—or at least until another shadow is applied or a previous graphics state is restored. Second, it may be used as the value for the "
+              "text": " object in one of two ways. First, you can set it, like a color or a font, where "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSShadow"
+            },
+            {
+              "type": "text",
+              "text": " attributes apply to everything you draw until you apply another shadow or restore a previous graphics state. Second, you can use an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSShadow"
+            },
+            {
+              "type": "text",
+              "text": " instance as the value for the "
             },
             {
               "type": "reference",
@@ -497,7 +512,7 @@
             },
             {
               "type": "text",
-              "text": " text attribute, in which case it is applied to the glyphs corresponding to the characters bearing this attribute."
+              "text": " text attribute, so the system applies the shadow to the glyphs corresponding to the characters bearing this attribute."
             }
           ]
         }
@@ -505,7 +520,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

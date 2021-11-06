@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A container that encapsulates the Core Data stack in your app and mirrors select persistent stores to a CloudKit private database."
+      "text": "A container that encapsulates the Core Data stack in your app, and mirrors select persistent stores to a CloudKit private database."
     }
   ],
   "documentVersion": 0,
@@ -33,35 +33,40 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSPersistentCloudKitContainer",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -106,7 +111,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A container that encapsulates the Core Data stack in your app and mirrors select persistent stores to a CloudKit private database."
+          "text": "A container that encapsulates the Core Data stack in your app, and mirrors select persistent stores to a CloudKit private database."
         }
       ]
     },
@@ -150,7 +155,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Gets the CloudKit record that corresponds to the given managed object."
+          "text": "Returns the CloudKit record for the specified managed object ID."
         }
       ],
       "fragments": [
@@ -174,7 +179,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Gets the CloudKit records that correspond to the given managed objects."
+          "text": "Returns a dictionary that contains the CloudKit records for the specified managed object IDs."
         }
       ],
       "fragments": [
@@ -198,7 +203,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Gets the ID of the CloudKit record that corresponds to the given managed object."
+          "text": "Returns the CloudKit record ID for the specified managed object ID."
         }
       ],
       "fragments": [
@@ -222,7 +227,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Gets the IDs of the CloudKit records that correspond to the given managed objects."
+          "text": "Returns a dictionary that contains the CloudKit record IDs for the specified managed object IDs."
         }
       ],
       "fragments": [
@@ -236,6 +241,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3649648-canupdaterecordformanagedobjectw": {
+      "title": "canUpdateRecordForManagedObjectWithID:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3649648-canupdaterecordformanagedobjectw",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainer/3649648-canupdaterecordformanagedobjectw",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether the user can modify the managed object’s underlying CloudKit record."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "canUpdateRecordForManagedObjectWithID:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3649646-candeleterecordformanagedobjectw": {
       "title": "canDeleteRecordForManagedObjectWithID:",
       "type": "topic",
@@ -243,6 +272,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/coredata/nspersistentcloudkitcontainer/3649646-candeleterecordformanagedobjectw",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether the user can delete the managed object’s underlying CloudKit record."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -261,6 +296,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/coredata/nspersistentcloudkitcontainer/3649647-canmodifymanagedobjectsinstore",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether the user can modify the specified persistent store."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -272,13 +313,19 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3649648-canupdaterecordformanagedobjectw": {
-      "title": "canUpdateRecordForManagedObjectWithID:",
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3746828-acceptshareinvitationsfrommetada": {
+      "title": "acceptShareInvitationsFromMetadata:intoPersistentStore:completion:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3649648-canupdaterecordformanagedobjectw",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3746828-acceptshareinvitationsfrommetada",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nspersistentcloudkitcontainer/3649648-canupdaterecordformanagedobjectw",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainer/3746828-acceptshareinvitationsfrommetada",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Accepts one or more invitations to participate in sharing using the specified metadata."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -286,7 +333,151 @@
         },
         {
           "kind": "identifier",
-          "text": "canUpdateRecordForManagedObjectWithID:"
+          "text": "acceptShareInvitationsFromMetadata:intoPersistentStore:completion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3746829-fetchparticipantsmatchinglookupi": {
+      "title": "fetchParticipantsMatchingLookupInfos:intoPersistentStore:completion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3746829-fetchparticipantsmatchinglookupi",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainer/3746829-fetchparticipantsmatchinglookupi",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Fetches all participants that match the specified critieria."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "fetchParticipantsMatchingLookupInfos:intoPersistentStore:completion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3746830-fetchsharesinpersistentstore": {
+      "title": "fetchSharesInPersistentStore:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3746830-fetchsharesinpersistentstore",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainer/3746830-fetchsharesinpersistentstore",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array that contains all share records in the specified persistent store."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "fetchSharesInPersistentStore:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3746831-fetchsharesmatchingobjectids": {
+      "title": "fetchSharesMatchingObjectIDs:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3746831-fetchsharesmatchingobjectids",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainer/3746831-fetchsharesmatchingobjectids",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a dictionary that contains the share records that CloudKit associates with specified managed object IDs."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "fetchSharesMatchingObjectIDs:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3746832-persistupdatedshare": {
+      "title": "persistUpdatedShare:inPersistentStore:completion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3746832-persistupdatedshare",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainer/3746832-persistupdatedshare",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Saves the share record and schedules it for export to iCloud."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "persistUpdatedShare:inPersistentStore:completion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3746834-sharemanagedobjects": {
+      "title": "shareManagedObjects:toShare:completion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3746834-sharemanagedobjects",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainer/3746834-sharemanagedobjects",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Shares one or more managed objects with the participants of the specified share record."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "shareManagedObjects:toShare:completion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3746833-purgeobjectsandrecordsinzonewith": {
+      "title": "purgeObjectsAndRecordsInZoneWithID:inPersistentStore:completion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3746833-purgeobjectsandrecordsinzonewith",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainer/3746833-purgeobjectsandrecordsinzonewith",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deletes all CloudKit records in the specified record zone, along with their corresponding managed objects."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "purgeObjectsAndRecordsInZoneWithID:inPersistentStore:completion:"
         }
       ]
     },
@@ -297,6 +488,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/coredata/nspersistentcloudkitcontainer/3343548-initializecloudkitschemawithopti",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates the CloudKit schema for all stores in the container that manage a CloudKit database."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -305,6 +502,104 @@
         {
           "kind": "identifier",
           "text": "initializeCloudKitSchemaWithOptions:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerschemainitializationoptions": {
+      "title": "NSPersistentCloudKitContainerSchemaInitializationOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerschemainitializationoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainerschemainitializationoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options that control the behavior when promoting the container’s schema to CloudKit."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerevent": {
+      "title": "NSPersistentCloudKitContainerEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainerevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that represents activity in a persistent CloudKit container."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventtype": {
+      "title": "NSPersistentCloudKitContainerEventType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainereventtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The type of event in a persistent CloudKit container, either setup, import, or export."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventrequest": {
+      "title": "NSPersistentCloudKitContainerEventRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainereventrequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request to fetch setup, import, or export events in a persistent CloudKit container."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventresult": {
+      "title": "NSPersistentCloudKitContainerEventResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainereventresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The result of a request to fetch persistent CloudKit container events."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventchangednotification": {
+      "title": "NSPersistentCloudKitContainerEventChangedNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventchangednotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainereventchangednotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that contains details about an event in a persistent CloudKit container."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventuserinfokey": {
+      "title": "NSPersistentCloudKitContainerEventUserInfoKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventuserinfokey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainereventuserinfokey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The user info dictionary key for the persistent CloudKit container event."
         }
       ]
     },
@@ -332,7 +627,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Share data between a user’s devices using Core Data with CloudKit."
+          "text": "Share data between a user’s devices and other iCloud users."
         }
       ]
     },
@@ -357,23 +652,67 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Accessing CloudKit Records",
+      "title": "Accessing Records",
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3141668-recordformanagedobjectid",
         "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3141671-recordsformanagedobjectids",
         "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3141669-recordidformanagedobjectid",
         "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3141670-recordidsformanagedobjectids"
-      ]
+      ],
+      "anchor": "3193155"
     },
     {
       "kind": "taskGroup",
-      "title": "Instance Methods",
+      "title": "Checking Permissions",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3649646-candeleterecordformanagedobjectw",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3649647-canmodifymanagedobjectsinstore",
         "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3649648-canupdaterecordformanagedobjectw",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3343548-initializecloudkitschemawithopti"
-      ]
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3649646-candeleterecordformanagedobjectw",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3649647-canmodifymanagedobjectsinstore"
+      ],
+      "anchor": "3729394"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Sharing Objects",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3746828-acceptshareinvitationsfrommetada",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3746829-fetchparticipantsmatchinglookupi",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3746830-fetchsharesinpersistentstore",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3746831-fetchsharesmatchingobjectids",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3746832-persistupdatedshare",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3746834-sharemanagedobjects"
+      ],
+      "anchor": "3787343"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Purging Record Zones ",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3746833-purgeobjectsandrecordsinzonewith"
+      ],
+      "anchor": "3787341"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Promoting Your Schema",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3343548-initializecloudkitschemawithopti",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerschemainitializationoptions"
+      ],
+      "anchor": "3729395"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Monitoring Container Events",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerevent",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventtype",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventrequest",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventresult",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventchangednotification",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventuserinfokey"
+      ],
+      "anchor": "3729572"
     }
   ],
   "seeAlsoSections": [
@@ -421,6 +760,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -457,7 +797,7 @@
             },
             {
               "type": "text",
-              "text": " capable of managing both CloudKit-backed and non-cloud stores."
+              "text": " capable of managing both CloudKit-backed and noncloud stores."
             }
           ]
         },
@@ -475,7 +815,7 @@
             },
             {
               "type": "text",
-              "text": " contains a single store description, assigned to the first CloudKit container identifier in an application’s entitlements. Use "
+              "text": " contains a single store description, which Core Data assigns to the first CloudKit container identifier in an app’s entitlements. Use "
             },
             {
               "type": "reference",
@@ -484,7 +824,7 @@
             },
             {
               "type": "text",
-              "text": " to customize this behavior or create additional store descriptions backed by different containers. "
+              "text": " to customize this behavior or create additional store descriptions with backing by different containers. "
             }
           ]
         },
@@ -493,7 +833,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "For more information about setting up multiple stores see "
+              "text": "For more information about setting up multiple stores, see "
             },
             {
               "type": "reference",
@@ -510,7 +850,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

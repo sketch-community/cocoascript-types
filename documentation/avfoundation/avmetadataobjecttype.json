@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Values identifying the type of metadata object."
+      "text": "Constants that identify metadata object types."
     }
   ],
   "documentVersion": 0,
@@ -35,25 +35,35 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "introducedAt": "14.0",
+        "current": "15.2"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:@T@AVMetadataObjectType",
     "symbolKind": "tdef"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -104,28 +114,6 @@
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataobject/1387841-type": {
-      "title": "type",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobject/1387841-type",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataobject/1387841-type",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The type of the metadata. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadatafaceobject": {
-      "title": "AVMetadataFaceObject",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadatafaceobject",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadatafaceobject"
-    },
     "doc://com.apple.documentation/documentation/foundation/nsstring": {
       "title": "NSString",
       "type": "topic",
@@ -133,60 +121,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeazteccode": {
-      "title": "AVMetadataObjectTypeAztecCode",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeazteccode",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataobjecttypeazteccode",
-      "abstract": [
-        {
-          "type": "codeVoice",
-          "code": "AVMetadataMachineReadableCodeObject"
-        },
-        {
-          "type": "text",
-          "text": " instances generated from Aztec codes return this identifier as the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobject/1387841-type"
-        },
-        {
-          "type": "text",
-          "text": "."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypecode128code": {
-      "title": "AVMetadataObjectTypeCode128Code",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypecode128code",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataobjecttypecode128code",
-      "abstract": [
-        {
-          "type": "codeVoice",
-          "code": "AVMetadataMachineReadableCodeObject"
-        },
-        {
-          "type": "text",
-          "text": " instances generated from Code 128 codes return this identifier as the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobject/1387841-type"
-        },
-        {
-          "type": "text",
-          "text": "."
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypecode39code": {
       "title": "AVMetadataObjectTypeCode39Code",
@@ -197,21 +131,8 @@
       "url": "/documentation/avfoundation/avmetadataobjecttypecode39code",
       "abstract": [
         {
-          "type": "codeVoice",
-          "code": "AVMetadataMachineReadableCodeObject"
-        },
-        {
           "type": "text",
-          "text": " instances generated from Code 39 codes return this identifier as the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobject/1387841-type"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "Identifies the Code 39 symbology."
         }
       ]
     },
@@ -224,21 +145,8 @@
       "url": "/documentation/avfoundation/avmetadataobjecttypecode39mod43code",
       "abstract": [
         {
-          "type": "codeVoice",
-          "code": "AVMetadataMachineReadableCodeObject"
-        },
-        {
           "type": "text",
-          "text": " instances generated from Code 39 mod 43 codes return this identifier as the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobject/1387841-type"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "Identifies the Code 39 mod 43 symbology."
         }
       ]
     },
@@ -251,75 +159,22 @@
       "url": "/documentation/avfoundation/avmetadataobjecttypecode93code",
       "abstract": [
         {
-          "type": "codeVoice",
-          "code": "AVMetadataMachineReadableCodeObject"
-        },
-        {
           "type": "text",
-          "text": " instances generated from Code 93 codes return this identifier as the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobject/1387841-type"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "Identifies the Code 93 symbology."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypedatamatrixcode": {
-      "title": "AVMetadataObjectTypeDataMatrixCode",
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypecode128code": {
+      "title": "AVMetadataObjectTypeCode128Code",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypedatamatrixcode",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypecode128code",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataobjecttypedatamatrixcode",
+      "url": "/documentation/avfoundation/avmetadataobjecttypecode128code",
       "abstract": [
         {
-          "type": "codeVoice",
-          "code": "AVMetadataMachineReadableCodeObject"
-        },
-        {
           "type": "text",
-          "text": " instances generated from DataMatrix codes return this identifier as the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobject/1387841-type"
-        },
-        {
-          "type": "text",
-          "text": "."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeean13code": {
-      "title": "AVMetadataObjectTypeEAN13Code",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeean13code",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataobjecttypeean13code",
-      "abstract": [
-        {
-          "type": "codeVoice",
-          "code": "AVMetadataMachineReadableCodeObject"
-        },
-        {
-          "type": "text",
-          "text": " instances generated from EAN-13 (including UPC-A) codes return this identifier as the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobject/1387841-type"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "Identifies the Code 128 symbology."
         }
       ]
     },
@@ -332,40 +187,22 @@
       "url": "/documentation/avfoundation/avmetadataobjecttypeean8code",
       "abstract": [
         {
-          "type": "codeVoice",
-          "code": "AVMetadataMachineReadableCodeObject"
-        },
-        {
           "type": "text",
-          "text": " instances generated from EAN-8 codes return this identifier as the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobject/1387841-type"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "Identifies the EAN-8 symbology."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeface": {
-      "title": "AVMetadataObjectTypeFace",
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeean13code": {
+      "title": "AVMetadataObjectTypeEAN13Code",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeface",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeean13code",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataobjecttypeface",
+      "url": "/documentation/avfoundation/avmetadataobjecttypeean13code",
       "abstract": [
         {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadatafaceobject"
-        },
-        {
           "type": "text",
-          "text": " instances representing the features of a detected face return this identifier as the type."
+          "text": "Identifies the EAN-13 symbology."
         }
       ]
     },
@@ -378,21 +215,8 @@
       "url": "/documentation/avfoundation/avmetadataobjecttypeinterleaved2of5code",
       "abstract": [
         {
-          "type": "codeVoice",
-          "code": "AVMetadataMachineReadableCodeObject"
-        },
-        {
           "type": "text",
-          "text": " instances generated from Interleaved 2 of 5 codes return this identifier as the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobject/1387841-type"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "Identifies the Interleaved 2 of 5 symbology."
         }
       ]
     },
@@ -405,75 +229,8 @@
       "url": "/documentation/avfoundation/avmetadataobjecttypeitf14code",
       "abstract": [
         {
-          "type": "codeVoice",
-          "code": "AVMetadataMachineReadableCodeObject"
-        },
-        {
           "type": "text",
-          "text": " instances generated from ITF14 codes return this identifier as the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobject/1387841-type"
-        },
-        {
-          "type": "text",
-          "text": "."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypepdf417code": {
-      "title": "AVMetadataObjectTypePDF417Code",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypepdf417code",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataobjecttypepdf417code",
-      "abstract": [
-        {
-          "type": "codeVoice",
-          "code": "AVMetadataMachineReadableCodeObject"
-        },
-        {
-          "type": "text",
-          "text": " instances generated from PDF417 codes return this identifier as the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobject/1387841-type"
-        },
-        {
-          "type": "text",
-          "text": "."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeqrcode": {
-      "title": "AVMetadataObjectTypeQRCode",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeqrcode",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataobjecttypeqrcode",
-      "abstract": [
-        {
-          "type": "codeVoice",
-          "code": "AVMetadataMachineReadableCodeObject"
-        },
-        {
-          "type": "text",
-          "text": " instances generated from QR codes return this identifier as the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobject/1387841-type"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "Identifies the ITF14 symbology."
         }
       ]
     },
@@ -486,49 +243,64 @@
       "url": "/documentation/avfoundation/avmetadataobjecttypeupcecode",
       "abstract": [
         {
-          "type": "codeVoice",
-          "code": "AVMetadataMachineReadableCodeObject"
-        },
-        {
           "type": "text",
-          "text": " instances generated from UPC-E codes return this identifier as the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobject/1387841-type"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "Identifies UPC-E symbology."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypecatbody": {
-      "title": "AVMetadataObjectTypeCatBody",
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeazteccode": {
+      "title": "AVMetadataObjectTypeAztecCode",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypecatbody",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeazteccode",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataobjecttypecatbody",
+      "url": "/documentation/avfoundation/avmetadataobjecttypeazteccode",
       "abstract": [
         {
           "type": "text",
-          "text": "The type identifier for a metadata object representing a cat body in a picture."
+          "text": "Identifies the Aztec symbology."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypedogbody": {
-      "title": "AVMetadataObjectTypeDogBody",
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypedatamatrixcode": {
+      "title": "AVMetadataObjectTypeDataMatrixCode",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypedogbody",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypedatamatrixcode",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataobjecttypedogbody",
+      "url": "/documentation/avfoundation/avmetadataobjecttypedatamatrixcode",
       "abstract": [
         {
           "type": "text",
-          "text": "The type identifier for a metadata object representing a dog body in a picture."
+          "text": "Identifies the DataMatrix symbology."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypepdf417code": {
+      "title": "AVMetadataObjectTypePDF417Code",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypepdf417code",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataobjecttypepdf417code",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the PDF417 symbology."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeqrcode": {
+      "title": "AVMetadataObjectTypeQRCode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeqrcode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataobjecttypeqrcode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the QR symbology."
         }
       ]
     },
@@ -542,7 +314,49 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The type identifier for a metadata object representing a human body in a picture."
+          "text": "Identifies human body metadata."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypedogbody": {
+      "title": "AVMetadataObjectTypeDogBody",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypedogbody",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataobjecttypedogbody",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies dog body metadata."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypecatbody": {
+      "title": "AVMetadataObjectTypeCatBody",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypecatbody",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataobjecttypecatbody",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies cat body metadata."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeface": {
+      "title": "AVMetadataObjectTypeFace",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeface",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataobjecttypeface",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies face metadata."
         }
       ]
     },
@@ -556,7 +370,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The type identifier for a metadata object representing a single salient area in a picture."
+          "text": "Identifies saliency metadata."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataobject/1387841-type": {
+      "title": "type",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataobject/1387841-type",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataobject/1387841-type",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The type of metadata that this object provides."
         }
       ]
     },
@@ -570,7 +398,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Values identifying the type of metadata object."
+          "text": "Constants that identify metadata object types."
         }
       ]
     },
@@ -585,27 +413,56 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Enumerating Object Types",
+      "title": "Barcodes",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeazteccode",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypecode128code",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypecode39code",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypecode39mod43code",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypecode93code",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypedatamatrixcode",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeean13code",
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypecode128code",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeean8code",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeface",
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeean13code",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeinterleaved2of5code",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeitf14code",
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeupcecode"
+      ],
+      "anchor": "3801359"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "2D Codes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeazteccode",
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypedatamatrixcode",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypepdf417code",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeqrcode",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeupcecode",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypecatbody",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypedogbody",
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeqrcode"
+      ],
+      "anchor": "3801360"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Bodies",
+      "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypehumanbody",
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypedogbody",
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypecatbody"
+      ],
+      "anchor": "3801361"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Faces",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeface"
+      ],
+      "anchor": "3801357"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Saliency",
+      "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypesalientobject"
-      ]
+      ],
+      "anchor": "3801358"
     }
   ],
   "seeAlsoSections": [
@@ -655,15 +512,17 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
-            "Mac Catalyst"
+            "Mac Catalyst",
+            "tvOS"
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

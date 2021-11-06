@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns the child element with the current focus."
+      "text": "The child accessibility element with the current focus."
     }
   ],
   "documentVersion": 0,
@@ -11,13 +11,15 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitylayoutarea"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitylayoutarea"
       ]
     ]
@@ -42,15 +44,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSAccessibilityLayoutArea(py)accessibilityFocusedUIElement",
+    "parent": {
+      "title": "NSAccessibilityLayoutArea"
+    },
     "symbolKind": "intfp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -85,10 +90,18 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls": {
+      "title": "Custom Controls",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls",
+      "url": "/documentation/appkit/accessibility_for_appkit/custom_controls",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -103,7 +116,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A role-based protocol that declares the minimum interface required for an accessibility element to act as a layout area. "
+          "text": "A role-based protocol that declares the minimum interface necessary for an accessibility element to act as a layout area. "
         }
       ]
     },
@@ -126,7 +139,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns this element’s children in the accessibility hierarchy."
+          "text": "Returns the accessibility element’s children in the accessibility hierarchy."
         }
       ],
       "fragments": [
@@ -151,7 +164,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the child element with the current focus."
+          "text": "The child accessibility element with the current focus."
         }
       ]
     },
@@ -220,7 +233,7 @@
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitylayoutarea/1527051-accessibilitylabel",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitylayoutarea/1528883-accessibilityselectedchildren"
       ],
-      "title": "Accessibility Methods",
+      "title": "Supporting Accessibility",
       "generated": true
     }
   ],
@@ -263,38 +276,10 @@
           ]
         }
       ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "return_value",
-          "level": 2,
-          "text": "Return Value",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "The child element that currently has the focus. If no child elements have the focus, this method returns "
-            },
-            {
-              "type": "codeVoice",
-              "code": "nil"
-            },
-            {
-              "type": "text",
-              "text": "."
-            }
-          ]
-        }
-      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

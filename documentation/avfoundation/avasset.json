@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An abstract class that models timed audiovisual media."
+      "text": "An object that models timed audiovisual media."
     }
   ],
   "documentVersion": 0,
@@ -10,8 +10,7 @@
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/avfoundation",
-        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata"
+        "doc://com.apple.documentation/documentation/avfoundation"
       ]
     ]
   },
@@ -34,35 +33,40 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVAsset",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -97,103 +101,56 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata": {
-      "title": "Media Assets and Metadata",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata",
-      "url": "/documentation/avfoundation/media_assets_and_metadata",
+    "doc://com.apple.documentation/documentation/avfoundation/avassettrack": {
+      "title": "AVAssetTrack",
       "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avasset": {
-      "title": "AVAsset",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avasset",
-      "abstract": [
+      "url": "/documentation/avfoundation/avassettrack"
+    },
+    "link-media-3845943": {
+      "identifier": "link-media-3845943",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/avfoundation/avasset#3845943"
+    },
+    "media-3845943": {
+      "identifier": "media-3845943",
+      "type": "image",
+      "variants": [
         {
-          "type": "text",
-          "text": "An abstract class that models timed audiovisual media."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avasset#3698283": {
-      "title": "Listing 1",
-      "type": "section",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset#3698283",
-      "kind": "article",
-      "role": "codeListing",
-      "url": "/documentation/avfoundation/avasset#3698283"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avurlasset": {
-      "title": "AVURLAsset",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avurlasset",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avurlasset",
-      "abstract": [
+          "traits": [
+            "dark",
+            "2x"
+          ],
+          "size": {
+            "width": 337,
+            "height": 124
+          },
+          "url": "https://docs-assets.developer.apple.com/published/d6e5536b3a/renderedDark2x-1622583013.png"
+        },
         {
-          "type": "text",
-          "text": "An asset subclass used to initialize an asset from a local or remote URL."
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 337,
+            "height": 124
+          },
+          "url": "https://docs-assets.developer.apple.com/published/6787c2f594/rendered2x-1622583015.png"
         }
-      ]
+      ],
+      "alt": "A diagram of four rectangular items. The rectangle on the left represents AVAsset. A line connects it to three stacked rectangles on the right that represent AVAssetTrack (Video), AVAssetTrack (Audio), and AVAssetTrack (Subtitles) from top to bottom.",
+      "title": "Figure 1"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avasset#3698286": {
-      "title": "Listing 2",
-      "type": "section",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset#3698286",
-      "kind": "article",
-      "role": "codeListing",
-      "url": "/documentation/avfoundation/avasset#3698286"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcomposition": {
-      "title": "AVComposition",
+    "doc://com.apple.documentation/documentation/avfoundation/avpartialasyncproperty/3816159-tracks": {
+      "title": "tracks",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcomposition",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avpartialasyncproperty/3816159-tracks",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avcomposition"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading": {
-      "title": "AVAsynchronousKeyValueLoading",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasynchronouskeyvalueloading",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A protocol you use to load an asset’s or asset track’s media and metadata without blocking the calling thread."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem": {
-      "title": "AVPlayerItem",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayer": {
-      "title": "AVPlayer",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayer"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition": {
-      "title": "AVMutableComposition",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablecomposition"
+      "url": "/documentation/avfoundation/avpartialasyncproperty/3816159-tracks"
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
@@ -202,6 +159,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading": {
+      "title": "AVAsynchronousKeyValueLoading",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasynchronouskeyvalueloading"
     },
     "doc://com.apple.documentation/documentation/foundation/nscopying": {
       "title": "NSCopying",
@@ -221,7 +186,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a new asset object that models the media at the specified URL."
+          "text": "Creates an asset that models the media at the specified URL."
         }
       ],
       "fragments": [
@@ -232,6 +197,250 @@
         {
           "kind": "identifier",
           "text": "assetWithURL:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/3746529-loadtrackwithtrackid": {
+      "title": "loadTrackWithTrackID:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/3746529-loadtrackwithtrackid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/3746529-loadtrackwithtrackid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Loads a track that contains the specified identifier."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadTrackWithTrackID:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/3746531-loadtrackswithmediatype": {
+      "title": "loadTracksWithMediaType:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/3746531-loadtrackswithmediatype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/3746531-loadtrackswithmediatype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Loads tracks that contain media of a specified type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadTracksWithMediaType:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/3746530-loadtrackswithmediacharacteristi": {
+      "title": "loadTracksWithMediaCharacteristic:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/3746530-loadtrackswithmediacharacteristi",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/3746530-loadtrackswithmediacharacteristi",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Loads tracks that contain media of a specified characteristic."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadTracksWithMediaCharacteristic:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/3746590-findunusedtrackidwithcompletionh": {
+      "title": "findUnusedTrackIDWithCompletionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/3746590-findunusedtrackidwithcompletionh",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/3746590-findunusedtrackidwithcompletionh",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Loads an identifier that no other track in the asset uses."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "findUnusedTrackIDWithCompletionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/3746528-loadmetadataforformat": {
+      "title": "loadMetadataForFormat:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/3746528-loadmetadataforformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/3746528-loadmetadataforformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Loads an array of metadata items that the asset contains for the specified format."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadMetadataForFormat:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/3746527-loadmediaselectiongroupformediac": {
+      "title": "loadMediaSelectionGroupForMediaCharacteristic:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/3746527-loadmediaselectiongroupformediac",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/3746527-loadmediaselectiongroupformediac",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Loads a media selection group that contains one or more options with the specified media characteristic."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadMediaSelectionGroupForMediaCharacteristic:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/3746526-loadchaptermetadatagroupswithtit": {
+      "title": "loadChapterMetadataGroupsWithTitleLocale:containingItemsWithCommonKeys:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/3746526-loadchaptermetadatagroupswithtit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/3746526-loadchaptermetadatagroupswithtit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Loads chapter metadata that contains the specified title locale and common keys."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadChapterMetadataGroupsWithTitleLocale:containingItemsWithCommonKeys:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/3746525-loadchaptermetadatagroupsbestmat": {
+      "title": "loadChapterMetadataGroupsBestMatchingPreferredLanguages:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/3746525-loadchaptermetadatagroupsbestmat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/3746525-loadchaptermetadatagroupsbestmat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Loads chapter metadata with a locale that best matches the list of preferred languages."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadChapterMetadataGroupsBestMatchingPreferredLanguages:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1388722-cancelloading": {
+      "title": "cancelLoading",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1388722-cancelloading",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1388722-cancelloading",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Cancels all pending requests to asynchronously load property values."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "cancelLoading"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1390489-referencerestrictions": {
+      "title": "referenceRestrictions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1390489-referencerestrictions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1390489-referencerestrictions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The asset’s reference restrictions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetreferencerestrictions": {
+      "title": "AVAssetReferenceRestrictions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetreferencerestrictions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetreferencerestrictions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Restrictions to use when resolving references to external media data."
         }
       ]
     },
@@ -263,48 +472,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avasset/1389912-preferredrate": {
-      "title": "preferredRate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1389912-preferredrate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasset/1389912-preferredrate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The asset’s preferred playback rate."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avasset/1390457-preferredvolume": {
-      "title": "preferredVolume",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1390457-preferredvolume",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasset/1390457-preferredvolume",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The asset’s preferred audio volume."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avasset/1385906-preferredtransform": {
-      "title": "preferredTransform",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1385906-preferredtransform",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasset/1385906-preferredtransform",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The preferred transform to apply to the asset’s visual content during presentation or processing."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avasset/3197641-minimumtimeoffsetfromlive": {
       "title": "minimumTimeOffsetFromLive",
       "type": "topic",
@@ -319,119 +486,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avasset/1508715-naturalsize": {
-      "title": "naturalSize",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1508715-naturalsize",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasset/1508715-naturalsize",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The encoded or authored size of the visual portion of the asset."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avasset/1385974-playable": {
-      "title": "playable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1385974-playable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasset/1385974-playable",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether this asset has playable content."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avasset/1389245-exportable": {
-      "title": "exportable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1389245-exportable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasset/1389245-exportable",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether you can export this asset using an export session."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avasset/1390475-readable": {
-      "title": "readable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1390475-readable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasset/1390475-readable",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether you can extract the asset’s media data using an asset reader."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avasset/1386129-composable": {
-      "title": "composable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1386129-composable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasset/1386129-composable",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether you can use the asset as a segment of a composition track."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avasset/1389223-hasprotectedcontent": {
-      "title": "hasProtectedContent",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1389223-hasprotectedcontent",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasset/1389223-hasprotectedcontent",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the asset has protected content."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avasset/1390333-compatiblewithairplayvideo": {
-      "title": "compatibleWithAirPlayVideo",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1390333-compatiblewithairplayvideo",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasset/1390333-compatiblewithairplayvideo",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the asset is compatible with AirPlay Video."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avasset/1616742-compatiblewithsavedphotosalbum": {
-      "title": "compatibleWithSavedPhotosAlbum",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1616742-compatiblewithsavedphotosalbum",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasset/1616742-compatiblewithsavedphotosalbum",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether you can write the asset to the Saved Photos album."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avasset/1387953-tracks": {
       "title": "tracks",
       "type": "topic",
@@ -442,7 +496,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The media tracks this asset contains."
+          "text": "The tracks an asset contains."
         }
       ]
     },
@@ -456,7 +510,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the track associated with the specified track identifier."
+          "text": "Returns a track that contains the specified identifier."
         }
       ],
       "fragments": [
@@ -480,7 +534,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an array of asset tracks matching the specified media type."
+          "text": "Returns tracks that contain media of a specified type."
         }
       ],
       "fragments": [
@@ -528,7 +582,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an ID that’s unused by any of the tracks in the asset."
+          "text": "Returns an identifier that no other tracks in the asset use."
         }
       ],
       "fragments": [
@@ -552,7 +606,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The track groups this asset contains."
+          "text": "The track groups an asset contains."
         }
       ]
     },
@@ -594,7 +648,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An array of metadata items for each common metadata key for which a value is available."
+          "text": "The metadata items an asset contains for common metadata identifiers that provide a value."
         }
       ]
     },
@@ -622,7 +676,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an array of metadata items found in the container with the specified format."
+          "text": "Returns an array of metadata items from the container with the specified format."
         }
       ],
       "fragments": [
@@ -664,65 +718,157 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avasset/1388228-availablechapterlocales": {
-      "title": "availableChapterLocales",
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1385974-playable": {
+      "title": "playable",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1388228-availablechapterlocales",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1385974-playable",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avasset/1388228-availablechapterlocales",
+      "url": "/documentation/avfoundation/avasset/1385974-playable",
       "abstract": [
         {
           "type": "text",
-          "text": "The locales of the asset’s chapter metadata."
+          "text": "A Boolean value that indicates whether the asset has playable content."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avasset/1388966-chaptermetadatagroupswithtitlelo": {
-      "title": "chapterMetadataGroupsWithTitleLocale:containingItemsWithCommonKeys:",
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1389245-exportable": {
+      "title": "exportable",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1388966-chaptermetadatagroupswithtitlelo",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1389245-exportable",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avasset/1388966-chaptermetadatagroupswithtitlelo",
+      "url": "/documentation/avfoundation/avasset/1389245-exportable",
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an array of chapters with a given title locale and containing the specified keys."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "chapterMetadataGroupsWithTitleLocale:containingItemsWithCommonKeys:"
+          "text": "A Boolean value that indicates whether you can export this asset using an export session."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avasset/1390909-chaptermetadatagroupsbestmatchin": {
-      "title": "chapterMetadataGroupsBestMatchingPreferredLanguages:",
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1390475-readable": {
+      "title": "readable",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1390909-chaptermetadatagroupsbestmatchin",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1390475-readable",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avasset/1390909-chaptermetadatagroupsbestmatchin",
+      "url": "/documentation/avfoundation/avasset/1390475-readable",
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an array of chapters whose locale best matches the list of preferred languages."
+          "text": "A Boolean value that indicates whether you can extract the asset’s media data using an asset reader."
         }
-      ],
-      "fragments": [
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1386129-composable": {
+      "title": "composable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1386129-composable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1386129-composable",
+      "abstract": [
         {
-          "kind": "text",
-          "text": "- "
-        },
+          "type": "text",
+          "text": "A Boolean value that indicates whether you can use the asset as a segment of a composition track."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1390333-compatiblewithairplayvideo": {
+      "title": "compatibleWithAirPlayVideo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1390333-compatiblewithairplayvideo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1390333-compatiblewithairplayvideo",
+      "abstract": [
         {
-          "kind": "identifier",
-          "text": "chapterMetadataGroupsBestMatchingPreferredLanguages:"
+          "type": "text",
+          "text": "A Boolean value that indicates whether the asset is compatible with AirPlay Video."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1616742-compatiblewithsavedphotosalbum": {
+      "title": "compatibleWithSavedPhotosAlbum",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1616742-compatiblewithsavedphotosalbum",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1616742-compatiblewithsavedphotosalbum",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether you can write the asset to the Saved Photos album."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1389912-preferredrate": {
+      "title": "preferredRate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1389912-preferredrate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1389912-preferredrate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The asset’s rate preference for playing its media."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1390457-preferredvolume": {
+      "title": "preferredVolume",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1390457-preferredvolume",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1390457-preferredvolume",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The asset’s volume preference for playing its audible media."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1385906-preferredtransform": {
+      "title": "preferredTransform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1385906-preferredtransform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1385906-preferredtransform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The asset’s transform preference to apply to its visual content during presentation or processing."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/2935636-preferreddisplaycriteria": {
+      "title": "preferredDisplayCriteria",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/2935636-preferreddisplaycriteria",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/2935636-preferreddisplaycriteria",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The asset’s display mode preference for optimal playback of its content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avdisplaycriteria": {
+      "title": "AVDisplayCriteria",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avdisplaycriteria",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avdisplaycriteria",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that contains properties defining the display criteria for a media asset."
         }
       ]
     },
@@ -792,31 +938,79 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avasset/1390489-referencerestrictions": {
-      "title": "referenceRestrictions",
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1388228-availablechapterlocales": {
+      "title": "availableChapterLocales",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1390489-referencerestrictions",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1388228-availablechapterlocales",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avasset/1390489-referencerestrictions",
+      "url": "/documentation/avfoundation/avasset/1388228-availablechapterlocales",
       "abstract": [
         {
           "type": "text",
-          "text": "The asset’s reference restrictions."
+          "text": "The locales of the asset’s chapter metadata."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetreferencerestrictions": {
-      "title": "AVAssetReferenceRestrictions",
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1388966-chaptermetadatagroupswithtitlelo": {
+      "title": "chapterMetadataGroupsWithTitleLocale:containingItemsWithCommonKeys:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetreferencerestrictions",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1388966-chaptermetadatagroupswithtitlelo",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetreferencerestrictions",
+      "url": "/documentation/avfoundation/avasset/1388966-chaptermetadatagroupswithtitlelo",
       "abstract": [
         {
           "type": "text",
-          "text": "Restrictions to use when resolving references to external media data."
+          "text": "Returns an array of chapters that contain the specified title locale and common keys."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "chapterMetadataGroupsWithTitleLocale:containingItemsWithCommonKeys:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1390909-chaptermetadatagroupsbestmatchin": {
+      "title": "chapterMetadataGroupsBestMatchingPreferredLanguages:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1390909-chaptermetadatagroupsbestmatchin",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1390909-chaptermetadatagroupsbestmatchin",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array of chapters with a locale that best matches the list of preferred languages."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "chapterMetadataGroupsBestMatchingPreferredLanguages:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1389223-hasprotectedcontent": {
+      "title": "hasProtectedContent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1389223-hasprotectedcontent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1389223-hasprotectedcontent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the asset contains protected content."
         }
       ]
     },
@@ -862,85 +1056,20 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avasset/1388722-cancelloading": {
-      "title": "cancelLoading",
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1508715-naturalsize": {
+      "title": "naturalSize",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1388722-cancelloading",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1508715-naturalsize",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avasset/1388722-cancelloading",
+      "url": "/documentation/avfoundation/avasset/1508715-naturalsize",
       "abstract": [
         {
           "type": "text",
-          "text": "Cancels all pending requests to asynchronously load property values."
+          "text": "The encoded or authored size of the visual portion of the asset."
         }
       ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "cancelLoading"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avasset/2935636-preferreddisplaycriteria": {
-      "title": "preferredDisplayCriteria",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/2935636-preferreddisplaycriteria",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasset/2935636-preferreddisplaycriteria",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The display criteria that define the optimal TV display mode for the asset."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avdisplaycriteria": {
-      "title": "AVDisplayCriteria",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avdisplaycriteria",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avdisplaycriteria",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that contains properties defining the display criteria for a media asset."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/about_the_asset_model": {
-      "title": "About the Asset Model",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/about_the_asset_model",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/avfoundation/media_assets_and_metadata/about_the_asset_model",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Understand how you use assets as the building blocks for various media use cases."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassettrack": {
-      "title": "AVAssetTrack",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassettrack",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that provides the track-level interface to inspect an asset’s media tracks."
-        }
-      ]
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -948,16 +1077,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -985,39 +1104,71 @@
       "title": "Creating an Asset",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avasset/1389943-assetwithurl"
-      ]
+      ],
+      "anchor": "1669757"
     },
     {
       "kind": "taskGroup",
-      "title": "Inspecting an Asset",
+      "title": "Loading Tracks",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/3746529-loadtrackwithtrackid",
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/3746531-loadtrackswithmediatype",
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/3746530-loadtrackswithmediacharacteristi",
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/3746590-findunusedtrackidwithcompletionh"
+      ],
+      "anchor": "3842640"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Loading Metadata",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/3746528-loadmetadataforformat"
+      ],
+      "anchor": "3843030"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Loading Media Selections",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/3746527-loadmediaselectiongroupformediac"
+      ],
+      "anchor": "1669999"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Loading Chapter Metadata",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/3746526-loadchaptermetadatagroupswithtit",
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/3746525-loadchaptermetadatagroupsbestmat"
+      ],
+      "anchor": "3842305"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Canceling Property Loading",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/1388722-cancelloading"
+      ],
+      "anchor": "1669775"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Accessing Reference Restrictions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/1390489-referencerestrictions",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetreferencerestrictions"
+      ],
+      "anchor": "1669992"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Accessing Duration and Timing",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avasset/1389400-duration",
         "doc://com.apple.documentation/documentation/avfoundation/avasset/1390850-providesprecisedurationandtiming",
-        "doc://com.apple.documentation/documentation/avfoundation/avasset/1389912-preferredrate",
-        "doc://com.apple.documentation/documentation/avfoundation/avasset/1390457-preferredvolume",
-        "doc://com.apple.documentation/documentation/avfoundation/avasset/1385906-preferredtransform",
-        "doc://com.apple.documentation/documentation/avfoundation/avasset/3197641-minimumtimeoffsetfromlive",
-        "doc://com.apple.documentation/documentation/avfoundation/avasset/1508715-naturalsize"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Determining Suitability",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avasset/1385974-playable",
-        "doc://com.apple.documentation/documentation/avfoundation/avasset/1389245-exportable",
-        "doc://com.apple.documentation/documentation/avfoundation/avasset/1390475-readable",
-        "doc://com.apple.documentation/documentation/avfoundation/avasset/1386129-composable",
-        "doc://com.apple.documentation/documentation/avfoundation/avasset/1389223-hasprotectedcontent",
-        "doc://com.apple.documentation/documentation/avfoundation/avasset/1390333-compatiblewithairplayvideo",
-        "doc://com.apple.documentation/documentation/avfoundation/avasset/1616742-compatiblewithsavedphotosalbum"
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/3197641-minimumtimeoffsetfromlive"
       ],
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Query the suitability properties to determine whether you can perform the indicated operation, even if only under a specific set of conditions."
-        }
-      ]
+      "anchor": "3843546"
     },
     {
       "kind": "taskGroup",
@@ -1028,6 +1179,13 @@
         "doc://com.apple.documentation/documentation/avfoundation/avasset/1387140-trackswithmediatype",
         "doc://com.apple.documentation/documentation/avfoundation/avasset/1389554-trackswithmediacharacteristic",
         "doc://com.apple.documentation/documentation/avfoundation/avasset/1385898-unusedtrackid"
+      ],
+      "anchor": "1669853",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Prefer loading tracks asynchronously using the symbols in Loading Tracks."
+        }
       ]
     },
     {
@@ -1036,6 +1194,13 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avasset/1390697-trackgroups",
         "doc://com.apple.documentation/documentation/avfoundation/avassettrackgroup"
+      ],
+      "anchor": "3645394",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Prefer loading track groups asynchronously using the properties in Loading Track Groups."
+        }
       ]
     },
     {
@@ -1048,6 +1213,49 @@
         "doc://com.apple.documentation/documentation/avfoundation/avasset/1387759-metadataforformat",
         "doc://com.apple.documentation/documentation/avfoundation/avasset/1386342-creationdate",
         "doc://com.apple.documentation/documentation/avfoundation/avasset/1388104-lyrics"
+      ],
+      "anchor": "1669792"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Accessing Suitability",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/1385974-playable",
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/1389245-exportable",
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/1390475-readable",
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/1386129-composable",
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/1390333-compatiblewithairplayvideo",
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/1616742-compatiblewithsavedphotosalbum"
+      ],
+      "anchor": "1669893"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Accessing Asset Preferences",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/1389912-preferredrate",
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/1390457-preferredvolume",
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/1385906-preferredtransform",
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/2935636-preferreddisplaycriteria",
+        "doc://com.apple.documentation/documentation/avfoundation/avdisplaycriteria"
+      ],
+      "anchor": "3843545"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Accessing Media Selections",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/2890796-allmediaselections",
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/1386122-preferredmediaselection",
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/1389433-availablemediacharacteristicswit",
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/1387496-mediaselectiongroupformediachara"
+      ],
+      "anchor": "3843502",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Prefer loading media selections asynchronously using the properties and methods in Loading Media Selections."
+        }
       ]
     },
     {
@@ -1057,61 +1265,52 @@
         "doc://com.apple.documentation/documentation/avfoundation/avasset/1388228-availablechapterlocales",
         "doc://com.apple.documentation/documentation/avfoundation/avasset/1388966-chaptermetadatagroupswithtitlelo",
         "doc://com.apple.documentation/documentation/avfoundation/avasset/1390909-chaptermetadatagroupsbestmatchin"
+      ],
+      "anchor": "1919552",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Prefer loading chapter metadata asynchronously using the symbols in Loading Chapter Metadata."
+        }
       ]
     },
     {
       "kind": "taskGroup",
-      "title": "Managing Media Selections",
+      "title": "Accessing Content Protections",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avasset/2890796-allmediaselections",
-        "doc://com.apple.documentation/documentation/avfoundation/avasset/1386122-preferredmediaselection",
-        "doc://com.apple.documentation/documentation/avfoundation/avasset/1389433-availablemediacharacteristicswit",
-        "doc://com.apple.documentation/documentation/avfoundation/avasset/1387496-mediaselectiongroupformediachara"
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/1389223-hasprotectedcontent"
+      ],
+      "anchor": "1669951",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Prefer loading content protections asynchronously using the properties in Loading Content Protections."
+        }
       ]
     },
     {
       "kind": "taskGroup",
-      "title": "Managing Reference Restrictions",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avasset/1390489-referencerestrictions",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetreferencerestrictions"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Working with Fragmented Movies",
+      "title": "Accessing Fragment Support",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avasset/1389520-cancontainfragments",
         "doc://com.apple.documentation/documentation/avfoundation/avasset/1385589-containsfragments",
         "doc://com.apple.documentation/documentation/avfoundation/avasset/2715834-overalldurationhint"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Canceling Property Loading",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avasset/1388722-cancelloading"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Determining Display Criteria",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avasset/2935636-preferreddisplaycriteria",
-        "doc://com.apple.documentation/documentation/avfoundation/avdisplaycriteria"
-      ]
-    }
-  ],
-  "seeAlsoSections": [
-    {
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/about_the_asset_model",
-        "doc://com.apple.documentation/documentation/avfoundation/avassettrack",
-        "doc://com.apple.documentation/documentation/avfoundation/avurlasset",
-        "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading"
       ],
-      "title": "Assets",
-      "generated": true
+      "anchor": "1919556",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Prefer determining fragment support asynchronously using the properties in Loading Fragment Support."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Inspecting Visual Attributes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avasset/1508715-naturalsize"
+      ],
+      "anchor": "3843543"
     }
   ],
   "primaryContentSections": [
@@ -1148,6 +1347,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1169,183 +1369,50 @@
           "type": "paragraph",
           "inlineContent": [
             {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset"
-            },
-            {
               "type": "text",
-              "text": " defines the collective properties of the tracks that comprise the asset. You create an "
+              "text": "An asset is a container object for one or more instances of "
             },
             {
               "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset"
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack"
             },
             {
               "type": "text",
-              "text": " by initializing it with a local or remote URL pointing to a media resource, as shown in the following example:"
+              "text": " that models the uniformly typed tracks of media. Audio and video tracks are the most common track types, but assets may also contain supplementary tracks, such as closed captions, subtitles, and timed metadata."
             }
           ]
-        },
-        {
-          "type": "codeListing",
-          "code": [
-            "let url: URL = // Local or Remote Asset URL\nlet asset = AVAsset(url: url) "
-          ],
-          "syntax": "swift",
-          "metadata": {
-            "anchor": "3698283",
-            "title": "Listing 1"
-          }
         },
         {
           "type": "paragraph",
           "inlineContent": [
             {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset"
-            },
-            {
-              "type": "text",
-              "text": " is an abstract class, so when you create an asset as shown in the example, you’re actually creating an instance of one of its concrete subclasses called "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avurlasset"
-            },
-            {
-              "type": "text",
-              "text": ". In many cases this is a suitable way of creating an asset, but you can also directly instantiate an "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avurlasset"
-            },
-            {
-              "type": "text",
-              "text": " when you need more fine-grained control over its initialization. The initializer for "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avurlasset"
-            },
-            {
-              "type": "text",
-              "text": " accepts an options dictionary, with which you tailor the asset’s initialization to your particular use case. For instance, if you’re creating an asset for an HLS stream, you may want to prevent it from retrieving its media when a user is connected to a cellular network. You can do this as shown in the following example:"
+              "type": "image",
+              "identifier": "media-3845943",
+              "metadata": {
+                "anchor": "3845943",
+                "title": "Figure 1"
+              }
             }
           ]
-        },
-        {
-          "type": "codeListing",
-          "code": [
-            "let url: URL = // Remote Asset URL\nlet options = [AVURLAssetAllowsCellularAccessKey: false]\nlet asset = AVURLAsset(url: url, options: options)"
-          ],
-          "syntax": "swift",
-          "metadata": {
-            "anchor": "3698286",
-            "title": "Listing 2"
-          }
         },
         {
           "type": "paragraph",
           "inlineContent": [
             {
               "type": "text",
-              "text": "You can also instantiate an asset using other concrete subclasses that extend the basic model for audiovisual media in useful ways, as "
+              "text": "You load the tracks for an asset by asynchronously loading its "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcomposition"
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avpartialasyncproperty/3816159-tracks"
             },
             {
               "type": "text",
-              "text": " does for temporal editing.Because of the nature of timed audiovisual media, upon successful initialization of an asset, some or all of the values for its keys may not be immediately available. The value of any key can be requested at any time, and the asset always returns its value synchronously, although it may have to block the calling thread to do so. To avoid blocking, you can register your interest in particular keys and be notified when their values become available. For further details, see "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading"
-            },
-            {
-              "type": "text",
-              "text": ".To play an instance of "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset"
-            },
-            {
-              "type": "text",
-              "text": ", initialize an instance of "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem"
-            },
-            {
-              "type": "text",
-              "text": " with it, use the player item to set up its presentation state (such as whether only a limited time range of the asset should be played), and provide the player item to an "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer"
-            },
-            {
-              "type": "text",
-              "text": " object according to whether the item is to be played by itself or with a collection of other items.You can insert "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset"
-            },
-            {
-              "type": "text",
-              "text": " objects into an "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition"
-            },
-            {
-              "type": "text",
-              "text": " object to assemble audiovisual constructs from one or more source assets."
+              "text": " property. In some cases, you may want to perform operations on a subset of an asset’s tracks rather than on its complete collection. For those situations, an asset provides methods to retrieve subsets of tracks according to particular criteria, such as identifier, media type, or characteristic."
             }
           ]
-        },
-        {
-          "type": "aside",
-          "content": [
-            {
-              "type": "paragraph",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "It isn’t possible to subclass "
-                },
-                {
-                  "type": "reference",
-                  "isActive": false,
-                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset"
-                },
-                {
-                  "type": "text",
-                  "text": " to handle streaming protocols or file formats that the framework doesn’t support."
-                }
-              ]
-            }
-          ],
-          "style": "important"
         },
         {
           "type": "paragraph",
@@ -1355,7 +1422,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "introducedAt": "14.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVCaptureSession",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,7 +110,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted if an error occurred during a capture session."
+          "text": "A notification the system posts when an error occurs during a capture session."
         }
       ]
     },
@@ -119,7 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted if a capture session is interrupted."
+          "text": "A notification the system posts when it interrupts a capture session."
         }
       ]
     },
@@ -133,7 +138,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A constant value indicating the quality level or bit rate of the output."
+          "text": "A preset value that indicates the quality level or bit rate of the output."
         }
       ]
     },
@@ -247,7 +252,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value that indicates whether a given input can be added to the session."
+          "text": "Determines whether you can add an input to the session."
         }
       ],
       "fragments": [
@@ -433,7 +438,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when a capture session starts."
+          "text": "A notification the system posts when a capture session starts."
         }
       ]
     },
@@ -447,7 +452,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when a capture session stops."
+          "text": "A notification the system posts when a capture session stops."
         }
       ]
     },
@@ -461,7 +466,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted if an interruption to a capture session finishes."
+          "text": "A notification the system posts when an interruption to a capture session finishes."
         }
       ]
     },
@@ -629,7 +634,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value that indicates whether the session can use the given preset."
+          "text": "Determines whether you can configure a capture session with the specified preset."
         }
       ],
       "fragments": [
@@ -847,6 +852,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avkit/accessing_the_camera_while_multitasking": {
+      "title": "Accessing the Camera While Multitasking",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avkit/accessing_the_camera_while_multitasking",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avkit/accessing_the_camera_while_multitasking",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Operate the camera in Split View, Slide Over, or Picture in Picture mode."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avmulticampip_capturing_from_multiple_cameras": {
       "title": "AVMultiCamPiP: Capturing from Multiple Cameras",
       "type": "topic",
@@ -858,6 +877,20 @@
         {
           "type": "text",
           "text": "Simultaneously record the output from the front and back cameras into a single movie file by using a multi-camera capture session."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcambarcode_detecting_barcodes_and_faces": {
+      "title": "AVCamBarcode: Detecting Barcodes and Faces",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcambarcode_detecting_barcodes_and_faces",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcambarcode_detecting_barcodes_and_faces",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identify machine readable codes or faces by using the camera."
         }
       ]
     },
@@ -897,16 +930,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -930,7 +953,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesession/1388944-canaddoutput",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesession/1387325-addoutput",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesession/1385688-removeoutput"
-      ]
+      ],
+      "anchor": "1668999"
     },
     {
       "kind": "taskGroup",
@@ -949,7 +973,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesessioninterruptionreasonkey",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesessioninterruptionsystempressurestatekey",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesessioninterruptionreason"
-      ]
+      ],
+      "anchor": "1669057"
     },
     {
       "kind": "taskGroup",
@@ -957,7 +982,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesession/1389174-beginconfiguration",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesession/1388173-commitconfiguration"
-      ]
+      ],
+      "anchor": "1669085"
     },
     {
       "kind": "taskGroup",
@@ -966,7 +992,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesessionpreset",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesession/1389696-sessionpreset",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesession/1389824-cansetsessionpreset"
-      ]
+      ],
+      "anchor": "1669113"
     },
     {
       "kind": "taskGroup",
@@ -978,7 +1005,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesession/1390383-addinputwithnoconnections",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesession/1388709-addoutputwithnoconnections",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesession/1390041-removeconnection"
-      ]
+      ],
+      "anchor": "1669151"
     },
     {
       "kind": "taskGroup",
@@ -986,29 +1014,34 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesession/1620490-usesapplicationaudiosession",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesession/1620477-automaticallyconfiguresapplicati"
-      ]
+      ],
+      "anchor": "1669202"
     },
     {
       "kind": "taskGroup",
       "title": "Synchronizing Multiple Inputs and Outputs",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesession/1388984-masterclock"
-      ]
+      ],
+      "anchor": "1669230"
     },
     {
       "kind": "taskGroup",
       "title": "Managing Color Spaces",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesession/1648764-automaticallyconfigurescapturede"
-      ]
+      ],
+      "anchor": "1845024"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/setting_up_a_capture_session",
+        "doc://com.apple.documentation/documentation/avkit/accessing_the_camera_while_multitasking",
         "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app",
         "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avmulticampip_capturing_from_multiple_cameras",
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcambarcode_detecting_barcodes_and_faces",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturemulticamsession"
       ],
       "title": "Capture Sessions",
@@ -1049,6 +1082,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -1206,7 +1240,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Tells the delegate that the control finished editing its text content and committed the changes."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -30,15 +36,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.14",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSControlTextEditingDelegate(im)controlTextDidEndEditing:",
+    "parent": {
+      "title": "NSControlTextEditingDelegate"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -104,6 +113,42 @@
         {
           "type": "text",
           "text": " subclasses to respond to editing actions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscontrol/1428867-abortediting": {
+      "title": "abortEditing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol/1428867-abortediting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscontrol/1428867-abortediting",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "abortEditing"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate/3005178-controltextdidendediting": {
+      "title": "controlTextDidEndEditing:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate/3005178-controltextdidendediting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscontroltexteditingdelegate/3005178-controltextdidendediting",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "controlTextDidEndEditing:"
         }
       ]
     },
@@ -188,10 +233,106 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "obj",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A notification object that contains details about the editing configuration."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the key "
+            },
+            {
+              "type": "codeVoice",
+              "code": "“NSFieldEditor”"
+            },
+            {
+              "type": "text",
+              "text": " to obtain the field editor from the notification object’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "userInfo"
+            },
+            {
+              "type": "text",
+              "text": " dictionary."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If you call "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol/1428867-abortediting"
+                },
+                {
+                  "type": "text",
+                  "text": " to discard pending edits, the control doesn’t call "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate/3005178-controltextdidendediting"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The visible cells for the table."
+      "text": "Returns the visible cells for the table."
     }
   ],
   "documentVersion": 0,
@@ -11,13 +11,15 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable"
       ]
     ]
@@ -41,15 +43,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSAccessibilityTable(im)accessibilityVisibleCells",
+    "parent": {
+      "title": "NSAccessibilityTable"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -84,10 +89,18 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls": {
+      "title": "Custom Controls",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls",
+      "url": "/documentation/appkit/accessibility_for_appkit/custom_controls",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -102,7 +115,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A role-based protocol that declares the minimum interface required for an accessibility element to act as a table view. "
+          "text": "A role-based protocol that declares the minimum interface necessary for an accessibility element to act as a table view. "
         }
       ]
     },
@@ -132,7 +145,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The visible cells for this table."
+          "text": "The visible cells for the table."
         }
       ]
     },
@@ -155,7 +168,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the column header elements for the table."
+          "text": "Returns the column header accessibility elements for the table."
         }
       ],
       "fragments": [
@@ -180,7 +193,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the column elements for the table."
+          "text": "Returns the column accessibility elements for the table."
         }
       ],
       "fragments": [
@@ -193,32 +206,6 @@
           "text": "accessibilityColumns"
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable/1535017-accessibilityheadergroup": {
-      "title": "accessibilityHeaderGroup",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable/1535017-accessibilityheadergroup",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitytable/1535017-accessibilityheadergroup",
-      "required": false,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the header group for the table."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityHeaderGroup"
-        }
-      ],
-      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable/1526563-accessibilitylabel": {
       "title": "accessibilityLabel",
@@ -256,7 +243,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the row header elements for the table."
+          "text": "Returns the row header accessibility elements for the table."
         }
       ],
       "fragments": [
@@ -281,7 +268,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the row elements for the table."
+          "text": "Returns the row accessibility elements for the table."
         }
       ],
       "fragments": [
@@ -331,7 +318,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The currently selected columns for the table."
+          "text": "Returns the currently selected columns for the table."
         }
       ],
       "fragments": [
@@ -356,7 +343,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The currently selected rows for the table."
+          "text": "Returns the currently selected rows for the table."
         }
       ],
       "fragments": [
@@ -381,7 +368,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The visible cells for the table."
+          "text": "Returns the visible cells for the table."
         }
       ],
       "fragments": [
@@ -406,7 +393,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The visible columns for the table."
+          "text": "Returns the visible columns for the table."
         }
       ],
       "fragments": [
@@ -431,7 +418,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The visible rows for the table."
+          "text": "Returns the visible rows for the table."
         }
       ],
       "fragments": [
@@ -470,6 +457,32 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable/1535017-accessibilityheadergroup": {
+      "title": "accessibilityHeaderGroup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable/1535017-accessibilityheadergroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilitytable/1535017-accessibilityheadergroup",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the header group for the table."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "accessibilityHeaderGroup"
+        }
+      ],
+      "deprecated": true
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -483,7 +496,6 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable/1526621-accessibilitycolumnheaderuieleme",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable/1524744-accessibilitycolumns",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable/1535017-accessibilityheadergroup",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable/1526563-accessibilitylabel",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable/1524262-accessibilityrowheaderuielements",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable/1526672-accessibilityrows",
@@ -492,9 +504,10 @@
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable/1529241-accessibilityselectedrows",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable/1530264-accessibilityvisiblecolumns",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable/1535128-accessibilityvisiblerows",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable/1534612-setaccessibilityselectedrows"
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable/1534612-setaccessibilityselectedrows",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable/1535017-accessibilityheadergroup"
       ],
-      "title": "Accessibility Methods",
+      "title": "Supporting Accessibility",
       "generated": true
     },
     {
@@ -607,7 +620,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

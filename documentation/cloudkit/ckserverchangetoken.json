@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An object that identifies a specific version of a record."
+      "text": "An opaque token that represents a specific point in a database’s history."
     }
   ],
   "documentVersion": 0,
@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/cloudkit",
-        "doc://com.apple.documentation/documentation/cloudkit/database_operations"
+        "doc://com.apple.documentation/documentation/cloudkit/remote_records"
       ]
     ]
   },
@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKServerChangeToken",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -97,29 +102,29 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/database_operations": {
-      "title": "Database Operations",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/database_operations",
-      "url": "/documentation/cloudkit/database_operations",
+    "doc://com.apple.documentation/documentation/cloudkit/remote_records": {
+      "title": "Remote Records",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/remote_records",
+      "url": "/documentation/cloudkit/remote_records",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordchangesoperation": {
-      "title": "CKFetchRecordChangesOperation",
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchdatabasechangesoperation": {
+      "title": "CKFetchDatabaseChangesOperation",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordchangesoperation",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchdatabasechangesoperation",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckfetchrecordchangesoperation"
+      "url": "/documentation/cloudkit/ckfetchdatabasechangesoperation"
     },
-    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
-      "title": "NSObject",
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation": {
+      "title": "CKFetchRecordZoneChangesOperation",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/objectivec/nsobject"
+      "url": "/documentation/cloudkit/ckfetchrecordzonechangesoperation"
     },
     "doc://com.apple.documentation/documentation/foundation/nssecurecoding": {
       "title": "NSSecureCoding",
@@ -129,6 +134,22 @@
       "role": "symbol",
       "url": "/documentation/foundation/nssecurecoding"
     },
+    "doc://com.apple.documentation/documentation/cloudkit/ckserverchangetoken#3744744": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckserverchangetoken#3744744",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/ckserverchangetoken#3744744"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
     "doc://com.apple.documentation/documentation/foundation/nscopying": {
       "title": "NSCopying",
       "type": "topic",
@@ -136,34 +157,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nscopying"
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckoperation": {
-      "title": "CKOperation",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckoperation",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckoperation",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The abstract base class for all operations that execute in a database."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckdatabaseoperation": {
-      "title": "CKDatabaseOperation",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckdatabaseoperation",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckdatabaseoperation",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The abstract base class for operations that act upon databases in CloudKit."
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckserverchangetoken": {
       "title": "CKServerChangeToken",
@@ -175,7 +168,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that identifies a specific version of a record."
+          "text": "An opaque token that represents a specific point in a database’s history."
         }
       ]
     },
@@ -204,16 +197,6 @@
         "doc://com.apple.documentation/documentation/foundation/nscopying",
         "doc://com.apple.documentation/documentation/foundation/nssecurecoding"
       ]
-    }
-  ],
-  "seeAlsoSections": [
-    {
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/cloudkit/ckoperation",
-        "doc://com.apple.documentation/documentation/cloudkit/ckdatabaseoperation"
-      ],
-      "title": "Base Classes",
-      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -250,6 +233,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -272,24 +256,122 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You don’t create instances of this class. When you fetch records using a "
+              "text": "CloudKit uses server change tokens to record significant events in a database’s history, such as record creation, modification, and deletion. Using change tokens helps reduce the cost of a fetch operation — both the time to execute the fetch and the overall number of records it returns."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You don’t create change tokens. Instead, "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordchangesoperation"
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchdatabasechangesoperation"
             },
             {
               "type": "text",
-              "text": " operation, the server provides a server change token with each record. The next time you fetch a record, you provide the change token, which allows the server to determine which record changes, if any, to return to your app. "
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation"
+            },
+            {
+              "type": "text",
+              "text": " provide them during their execution and when they complete. Cache each token as you receive it, overwriting any previous token for the database or record zone you’re fetching from. Then, pass the cached token with your next fetch and CloudKit returns only the changes that occur after that point. Don’t infer any behavior or order from a token’s contents."
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The change tokens that "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchdatabasechangesoperation"
+            },
+            {
+              "type": "text",
+              "text": " provides aren’t compatible with "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation"
+            },
+            {
+              "type": "text",
+              "text": " and vice versa, so segregate them in your cache."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Change tokens conform to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nssecurecoding"
+            },
+            {
+              "type": "text",
+              "text": " and are safe to cache on-disk, as the following example shows:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func writeToken(_ token: CKServerChangeToken, to url: URL) throws {",
+            "    // Use a keyed archiver to securely encode the provided token.",
+            "    let coder = NSKeyedArchiver(requiringSecureCoding: true)",
+            "    coder.encode(token, forKey: \"token\")",
+            "        ",
+            "    // Write the encoded data to disk. The caller provides the",
+            "    // location as a file URL.",
+            "    let data = coder.encodedData",
+            "    try data.write(to: url)",
+            "}",
+            "    ",
+            "func readToken(at url: URL) throws -> CKServerChangeToken? {",
+            "    // Create a Data instance with the contents of the file at",
+            "    // the provided URL.",
+            "    let data = try Data(contentsOf: url)",
+            "        ",
+            "    // Use a keyed unarchiver to decode the token and return",
+            "    // it to the caller.",
+            "    let coder = try NSKeyedUnarchiver(forReadingFrom: data)",
+            "    return coder.decodeObject(of: CKServerChangeToken.self, forKey: \"token\")",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3744744",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

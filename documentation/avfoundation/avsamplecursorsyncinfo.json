@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A value that describes attributes of a media sample for consideration when resynchronizing a decoder."
+      "text": "A structure that describes the attributes of media samples to consider when resynchronizing a decoder."
     }
   ],
   "documentVersion": 0,
@@ -45,17 +45,42 @@
     ],
     "platforms": [
       {
+        "name": "iOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "8.0",
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@AVSampleCursorSyncInfo",
     "symbolKind": "struct"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,20 +145,6 @@
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorsyncinfo/1387092-sampleisdroppable": {
-      "title": "sampleIsDroppable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorsyncinfo/1387092-sampleisdroppable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avsamplecursorsyncinfo/1387092-sampleisdroppable",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The sample is droppable."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorsyncinfo/1390675-sampleisfullsync": {
       "title": "sampleIsFullSync",
       "type": "topic",
@@ -144,7 +155,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The sample is a full sync sample."
+          "text": "A Boolean value that indicates whether a sample is a full sync sample."
         }
       ]
     },
@@ -158,7 +169,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The sample is a partial sync sample."
+          "text": "A Boolean value that indicates whether a sample is a partial sync sample."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorsyncinfo/1387092-sampleisdroppable": {
+      "title": "sampleIsDroppable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorsyncinfo/1387092-sampleisdroppable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplecursorsyncinfo/1387092-sampleisdroppable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether a sample is droppable."
         }
       ]
     },
@@ -172,7 +197,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A value that describes attributes of a media sample for consideration when resynchronizing a decoder."
+          "text": "A structure that describes the attributes of media samples to consider when resynchronizing a decoder."
         }
       ]
     },
@@ -200,7 +225,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": " A structure that describes the independent decodability of audio samples."
+          "text": "A structure that describes the independent decodability of audio samples."
         }
       ]
     },
@@ -214,7 +239,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A structure indicating the offset and length of storage occupied by a media sample or its chunk."
+          "text": "A structure that indicates the offset and length of storage for a media sample or its chunk."
         }
       ]
     },
@@ -245,10 +270,11 @@
       "kind": "taskGroup",
       "title": "Sync Information",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorsyncinfo/1387092-sampleisdroppable",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorsyncinfo/1390675-sampleisfullsync",
-        "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorsyncinfo/1390019-sampleispartialsync"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorsyncinfo/1390019-sampleispartialsync",
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorsyncinfo/1387092-sampleisdroppable"
+      ],
+      "anchor": "3036616"
     }
   ],
   "seeAlsoSections": [
@@ -315,14 +341,19 @@
             }
           ],
           "platforms": [
-            "macOS"
+            "iOS",
+            "iPadOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Invoked automatically when the window resigns main window status; never invoke this method directly."
+      "text": "Resigns the window’s main window status."
     }
   ],
   "documentVersion": 0,
@@ -35,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSWindow(im)resignMainWindow",
+    "parent": {
+      "title": "NSWindow"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -136,7 +139,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Invoked automatically to inform the window that it has become the main window; never invoke this method directly."
+          "text": "Informs the window that it has become the main window."
         }
       ],
       "fragments": [
@@ -160,7 +163,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Invoked automatically when the window resigns key window status; never invoke this method directly."
+          "text": "Resigns the window’s key window status."
         }
       ],
       "fragments": [
@@ -236,7 +239,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Invoked automatically when the window resigns main window status; never invoke this method directly."
+          "text": "Resigns the window’s main window status."
         }
       ],
       "fragments": [
@@ -336,7 +339,7 @@
             },
             {
               "type": "text",
-              "text": " to the window’s delegate and posts an "
+              "text": " to the window’s delegate and posts "
             },
             {
               "type": "reference",
@@ -348,12 +351,21 @@
               "text": " to the default notification center."
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Never invoke this method directly."
+            }
+          ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

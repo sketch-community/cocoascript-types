@@ -34,30 +34,38 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.6",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CLLocationManager(im)startUpdatingLocation",
+    "parent": {
+      "title": "CLLocationManager"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -130,13 +138,7 @@
       "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423500-distancefilter",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/corelocation/cllocationmanager/1423500-distancefilter",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The minimum distance (measured in meters) a device must move horizontally before an update event is generated."
-        }
-      ]
+      "url": "/documentation/corelocation/cllocationmanager/1423500-distancefilter"
     },
     "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423695-stopupdatinglocation": {
       "title": "stopUpdatingLocation",
@@ -270,48 +272,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/corelocation/cllocationdistancemax": {
-      "title": "CLLocationDistanceMax",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationdistancemax",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corelocation/cllocationdistancemax",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A constant indicating the maximum distance."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corelocation/kcldistancefilternone": {
-      "title": "kCLDistanceFilterNone",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/kcldistancefilternone",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corelocation/kcldistancefilternone",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A constant indicating that all movement should be reported."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423836-desiredaccuracy": {
-      "title": "desiredAccuracy",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423836-desiredaccuracy",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corelocation/cllocationmanager/1423836-desiredaccuracy",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The accuracy of the location data that your app wants to receive."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620567-activitytype": {
       "title": "activityType",
       "type": "topic",
@@ -356,10 +316,6 @@
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620553-pauseslocationupdatesautomatical",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620568-allowsbackgroundlocationupdates",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/2923541-showsbackgroundlocationindicator",
-        "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423500-distancefilter",
-        "doc://com.apple.documentation/documentation/corelocation/cllocationdistancemax",
-        "doc://com.apple.documentation/documentation/corelocation/kcldistancefilternone",
-        "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423836-desiredaccuracy",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620567-activitytype",
         "doc://com.apple.documentation/documentation/corelocation/clactivitytype"
       ],
@@ -399,6 +355,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "watchOS"
@@ -524,7 +481,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

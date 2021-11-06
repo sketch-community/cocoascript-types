@@ -34,15 +34,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSLayoutGuide",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -414,7 +414,8 @@
         "doc://com.apple.documentation/documentation/appkit/nslayoutguide/1524460-identifier",
         "doc://com.apple.documentation/documentation/appkit/nslayoutguide/1533744-frame",
         "doc://com.apple.documentation/documentation/appkit/nslayoutguide/1533971-owningview"
-      ]
+      ],
+      "anchor": "1686076"
     },
     {
       "kind": "taskGroup",
@@ -430,21 +431,24 @@
         "doc://com.apple.documentation/documentation/appkit/nslayoutguide/1534159-topanchor",
         "doc://com.apple.documentation/documentation/appkit/nslayoutguide/1528204-trailinganchor",
         "doc://com.apple.documentation/documentation/appkit/nslayoutguide/1527215-widthanchor"
-      ]
+      ],
+      "anchor": "1686089"
     },
     {
       "kind": "taskGroup",
       "title": "Instance Properties",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nslayoutguide/1641955-hasambiguouslayout"
-      ]
+      ],
+      "anchor": "2858210"
     },
     {
       "kind": "taskGroup",
       "title": "Instance Methods",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nslayoutguide/1641956-constraintsaffectinglayoutforori"
-      ]
+      ],
+      "anchor": "2858211"
     }
   ],
   "seeAlsoSections": [
@@ -508,7 +512,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Use layout guides to replace the dummy views you may have created to represent inter-view spaces or encapsulation in your user interface. Traditionally, there were a number of Auto Layout techniques that required dummy views. A dummy view is an empty view that does not have any visual elements of its own and serves only to define a rectangular region in the view hierarchy. For example, if you wanted to use constraints to define the size or location of an empty space between views, you needed to use a dummy view to represent that space. If you wanted to center a group of objects, you needed a dummy view to contain those objects. Similarly, dummy views could be used to contain and encapsulate part of your user interface. Dummy views let you break up a large, complex user interface into self-contained, modular chunks. When used properly, they could greatly simplify your Auto Layout constraint logic."
+              "text": "Use layout guides to replace the placeholder views you may have created to represent inter-view spaces or encapsulation in your user interface. Traditionally, there were a number of Auto Layout techniques that required placeholder views. A placeholder view is an empty view that does not have any visual elements of its own and serves only to define a rectangular region in the view hierarchy. For example, if you wanted to use constraints to define the size or location of an empty space between views, you needed to use a placeholder view to represent that space. If you wanted to center a group of objects, you needed a placeholder view to contain those objects. Similarly, placeholder views could be used to contain and encapsulate part of your user interface. Placeholder views let you break up a large, complex user interface into self-contained, modular chunks. When used properly, they could greatly simplify your Auto Layout constraint logic."
             }
           ]
         },
@@ -517,7 +521,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "There are a number of costs associated with adding dummy views to your view hierarchy. First, there is the cost of creating and maintaining the view itself. Second, the dummy view is a full member of the view hierarchy, which means that it adds overhead to every task the hierarchy performs. Worst of all, the invisible dummy view can intercept messages that are intended for other views, causing problems that are very difficult to find."
+              "text": "There are a number of costs associated with adding placeholder views to your view hierarchy. First, there is the cost of creating and maintaining the view itself. Second, the placeholder view is a full member of the view hierarchy, which means that it adds overhead to every task the hierarchy performs. Worst of all, the invisible placeholder view can intercept messages that are intended for other views, causing problems that are very difficult to find."
             }
           ]
         },
@@ -535,7 +539,7 @@
             },
             {
               "type": "text",
-              "text": " class is designed to perform all the tasks previously performed by dummy views, but to do it in a safer, more efficient manner. Layout guides are not views. They do not use as much memory, and they do not participate in the view hierarchy. Instead, they simply define a rectangular region in their owning view’s coordinate system that can interact with Auto Layout."
+              "text": " class is designed to perform all the tasks previously performed by placeholder views, but to do it in a safer, more efficient manner. Layout guides are not views. They do not use as much memory, and they do not participate in the view hierarchy. Instead, they simply define a rectangular region in their owning view’s coordinate system that can interact with Auto Layout."
             }
           ]
         },
@@ -642,7 +646,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "A layout guide can also act as a “black box” that contains other views and controls, letting you encapsulate parts of your view and break up your layout into modular chunks."
+              "text": "A layout guide can also act as an opaque box that contains other views and controls, letting you encapsulate parts of your view and break up your layout into modular chunks."
             }
           ]
         },
@@ -691,7 +695,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

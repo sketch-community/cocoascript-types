@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIButton(im)backgroundImageForState:",
+    "parent": {
+      "title": "UIButton"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -149,48 +157,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiimage"
-    },
-    "doc://com.apple.documentation/documentation/uikit/uibutton/1624031-adjustsimagewhenhighlighted": {
-      "title": "adjustsImageWhenHighlighted",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/1624031-adjustsimagewhenhighlighted",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uibutton/1624031-adjustsimagewhenhighlighted",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that determines whether the image changes when the button is highlighted."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uibutton/1624020-adjustsimagewhendisabled": {
-      "title": "adjustsImageWhenDisabled",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/1624020-adjustsimagewhendisabled",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uibutton/1624020-adjustsimagewhendisabled",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that determines whether the image changes when the button is disabled."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uibutton/1623996-showstouchwhenhighlighted": {
-      "title": "showsTouchWhenHighlighted",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/1623996-showstouchwhenhighlighted",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uibutton/1623996-showstouchwhenhighlighted",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that determines whether tapping the button causes it to glow."
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uibutton/1624030-backgroundimageforstate": {
       "title": "backgroundImageForState:",
@@ -337,9 +303,6 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uibutton/1624031-adjustsimagewhenhighlighted",
-        "doc://com.apple.documentation/documentation/uikit/uibutton/1624020-adjustsimagewhendisabled",
-        "doc://com.apple.documentation/documentation/uikit/uibutton/1623996-showstouchwhenhighlighted",
         "doc://com.apple.documentation/documentation/uikit/uibutton/1624026-imageforstate",
         "doc://com.apple.documentation/documentation/uikit/uibutton/1624016-setbackgroundimage",
         "doc://com.apple.documentation/documentation/uikit/uibutton/1623997-setimage",
@@ -347,7 +310,7 @@
         "doc://com.apple.documentation/documentation/uikit/uibutton/3295915-setpreferredsymbolconfiguration",
         "doc://com.apple.documentation/documentation/uikit/uibutton/1624025-tintcolor"
       ],
-      "title": "Configuring Button Presentation",
+      "title": "Managing Images and Tint Color",
       "generated": true
     }
   ],
@@ -407,6 +370,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -466,7 +430,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

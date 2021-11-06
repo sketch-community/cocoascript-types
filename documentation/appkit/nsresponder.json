@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An abstract class that forms the basis of event and command processing in AppKit. "
+      "text": "An abstract class that forms the basis of event and command processing in AppKit."
     }
   ],
   "documentVersion": 0,
@@ -34,15 +34,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSResponder",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -135,7 +135,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An abstract class that forms the basis of event and command processing in AppKit. "
+          "text": "An abstract class that forms the basis of event and command processing in AppKit."
         }
       ]
     },
@@ -197,7 +197,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a custom version of the supplied error object that is more suitable for presentation in alert sheets and dialogs."
+          "text": "Returns a custom version of the supplied error object that’s more suitable for presentation in alert sheets and dialogs."
         }
       ],
       "fragments": [
@@ -226,6 +226,24 @@
       "kind": "article",
       "role": "collectionGroup",
       "url": "/documentation/foundation/nserror/nserrorrecoveryattempting"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1571947-dealloc": {
+      "title": "dealloc",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1571947-dealloc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1571947-dealloc",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dealloc"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
@@ -1039,7 +1057,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding"
+      "url": "/documentation/appkit/nsstandardkeybindingresponding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods that responder subclasses implement to support key binding commands, such as inserting tabs and newlines, or moving the insertion point."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsresponder/action_messages": {
       "title": "Action Messages",
@@ -1052,6 +1076,30 @@
         {
           "type": "text",
           "text": "Implement action messages in your first responders to handle common tasks."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsresponder/3762523-allowedclassesforrestorablestate": {
+      "title": "allowedClassesForRestorableStateKeyPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/3762523-allowedclassesforrestorablestate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsresponder/3762523-allowedclassesforrestorablestate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the classes that support secure coding."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "allowedClassesForRestorableStateKeyPath:"
         }
       ]
     },
@@ -1076,6 +1124,30 @@
         {
           "kind": "identifier",
           "text": "encodeRestorableStateWithCoder:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsresponder/2876293-encoderestorablestatewithcoder": {
+      "title": "encodeRestorableStateWithCoder:backgroundQueue:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/2876293-encoderestorablestatewithcoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsresponder/2876293-encoderestorablestatewithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Saves the interface-related state of the responder to a keyed archiver either synchronously or asynchronously on the given operation queue."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "encodeRestorableStateWithCoder:backgroundQueue:"
         }
       ]
     },
@@ -1127,7 +1199,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Marks the responder’s interface-related state as dirty. "
+          "text": "Marks the responder’s interface-related state as dirty."
         }
       ],
       "fragments": [
@@ -1703,66 +1775,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsresponder/1525967-performtextfinderaction": {
-      "title": "performTextFinderAction:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/1525967-performtextfinderaction",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsresponder/1525967-performtextfinderaction",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Performs all find oriented actions."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "performTextFinderAction:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsresponder/1525437-init": {
-      "title": "init",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/1525437-init",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsresponder/1525437-init",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "init"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsresponder/1535389-initwithcoder": {
-      "title": "initWithCoder:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/1535389-initwithcoder",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsresponder/1535389-initwithcoder",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithCoder:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/appkit/nsresponder/2544731-touchbar": {
       "title": "touchBar",
       "type": "topic",
@@ -1783,24 +1795,6 @@
         {
           "type": "text",
           "text": " object associated with the responder."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsresponder/2876293-encoderestorablestatewithcoder": {
-      "title": "encodeRestorableStateWithCoder:backgroundQueue:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/2876293-encoderestorablestatewithcoder",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsresponder/2876293-encoderestorablestatewithcoder",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "encodeRestorableStateWithCoder:backgroundQueue:"
         }
       ]
     },
@@ -1845,6 +1839,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nsresponder/1525967-performtextfinderaction": {
+      "title": "performTextFinderAction:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/1525967-performtextfinderaction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsresponder/1525967-performtextfinderaction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs all find oriented actions."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "performTextFinderAction:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nsresponder/1644675-newwindowfortab": {
       "title": "newWindowForTab:",
       "type": "topic",
@@ -1852,6 +1870,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nsresponder/1644675-newwindowfortab",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new window to show as a tab in a tabbed window."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -1863,22 +1887,60 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nsresponder/1525437-init": {
+      "title": "init",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/1525437-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsresponder/1525437-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new responder object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "init"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsresponder/1535389-initwithcoder": {
+      "title": "initWithCoder:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/1535389-initwithcoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsresponder/1535389-initwithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new responder object with data in an unarchiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithCoder:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0 beta 5",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -1908,14 +1970,16 @@
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1526750-becomefirstresponder",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1532115-resignfirstresponder",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1527066-validateproposedfirstresponder"
-      ]
+      ],
+      "anchor": "1651086"
     },
     {
       "kind": "taskGroup",
       "title": "Managing the Next Responder",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1528245-nextresponder"
-      ]
+      ],
+      "anchor": "1651113"
     },
     {
       "kind": "taskGroup",
@@ -1933,7 +1997,8 @@
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1525719-othermousedown",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1529804-othermousedragged",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1531343-othermouseup"
-      ]
+      ],
+      "anchor": "1651128"
     },
     {
       "kind": "taskGroup",
@@ -1945,14 +2010,16 @@
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1524690-performkeyequivalent",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1584388-performmnemonic",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1527264-flushbufferedkeyevents"
-      ]
+      ],
+      "anchor": "1651263"
     },
     {
       "kind": "taskGroup",
       "title": "Responding to Pressure Changes",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1534071-pressurechangewithevent"
-      ]
+      ],
+      "anchor": "1770539"
     },
     {
       "kind": "taskGroup",
@@ -1966,7 +2033,8 @@
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1534192-scrollwheel",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1535080-quicklookwithevent",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/3237219-changemodewithevent"
-      ]
+      ],
+      "anchor": "1651348"
     },
     {
       "kind": "taskGroup",
@@ -1975,17 +2043,21 @@
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1535269-supplementaltargetforaction",
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/action_messages"
-      ]
+      ],
+      "anchor": "1651439"
     },
     {
       "kind": "taskGroup",
       "title": "Handling Window Restoration",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsresponder/3762523-allowedclassesforrestorablestate",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1526236-encoderestorablestatewithcoder",
+        "doc://com.apple.documentation/documentation/appkit/nsresponder/2876293-encoderestorablestatewithcoder",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1526253-restorestatewithcoder",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1526242-restorablestatekeypaths",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1526243-invalidaterestorablestate"
-      ]
+      ],
+      "anchor": "1652752"
     },
     {
       "kind": "taskGroup",
@@ -1993,7 +2065,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1534108-useractivity",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1534884-updateuseractivitystate"
-      ]
+      ],
+      "anchor": "1652799"
     },
     {
       "kind": "taskGroup",
@@ -2002,49 +2075,56 @@
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1531294-presenterror",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1534705-presenterror",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1525188-willpresenterror"
-      ]
+      ],
+      "anchor": "1652838"
     },
     {
       "kind": "taskGroup",
       "title": "Dispatching Messages",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1524516-trytoperform"
-      ]
+      ],
+      "anchor": "1652879"
     },
     {
       "kind": "taskGroup",
       "title": "Managing a Responder’s Menu",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1533094-menu"
-      ]
+      ],
+      "anchor": "1652915"
     },
     {
       "kind": "taskGroup",
       "title": "Updating the Services Menu",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1524638-validrequestorforsendtype"
-      ]
+      ],
+      "anchor": "1652937"
     },
     {
       "kind": "taskGroup",
       "title": "Getting the Undo Manager",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1535376-undomanager"
-      ]
+      ],
+      "anchor": "1652958"
     },
     {
       "kind": "taskGroup",
       "title": "Testing Events",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1534105-shouldbetreatedasinkevent"
-      ]
+      ],
+      "anchor": "1653015"
     },
     {
       "kind": "taskGroup",
       "title": "Terminating the Responder Chain",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1534197-noresponderfor"
-      ]
+      ],
+      "anchor": "1653042"
     },
     {
       "kind": "taskGroup",
@@ -2053,7 +2133,8 @@
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1555072-setinterfacestyle",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1555071-interfacestyle",
         "doc://com.apple.documentation/documentation/appkit/nsinterfacestyledefault"
-      ]
+      ],
+      "anchor": "1653067"
     },
     {
       "kind": "taskGroup",
@@ -2072,38 +2153,42 @@
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1532984-smartmagnifywithevent",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1527456-wantsscrolleventsforswipetrackin",
         "doc://com.apple.documentation/documentation/appkit/nseventgestureaxis"
-      ]
+      ],
+      "anchor": "1653106"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Supporting the Touch Bar",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsresponder/2544731-touchbar",
+        "doc://com.apple.documentation/documentation/appkit/nsresponder/2544690-maketouchbar"
+      ],
+      "anchor": "3745436"
     },
     {
       "kind": "taskGroup",
       "title": "Performing Text Find Actions",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1525967-performtextfinderaction"
-      ]
+      ],
+      "anchor": "1653306"
     },
     {
       "kind": "taskGroup",
-      "title": "Initializers",
+      "title": "Supporting Tabbed Windows",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsresponder/1644675-newwindowfortab"
+      ],
+      "anchor": "3745435"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Creating Responders",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1525437-init",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1535389-initwithcoder"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Properties",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsresponder/2544731-touchbar"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Methods",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsresponder/2876293-encoderestorablestatewithcoder",
-        "doc://com.apple.documentation/documentation/appkit/nsresponder/2544690-maketouchbar",
-        "doc://com.apple.documentation/documentation/appkit/nsresponder/1644675-newwindowfortab"
-      ]
+      ],
+      "anchor": "3745434"
     }
   ],
   "primaryContentSections": [
@@ -2194,7 +2279,7 @@
             },
             {
               "type": "text",
-              "text": ", as must any class that handles events. The responder model is built around three components: event messages, action messages, and the responder chain."
+              "text": ", as must any class that handles events. The responder model uses three components: event messages, action messages, and the responder chain."
             }
           ]
         },
@@ -2274,7 +2359,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "Window owned by document: view > superviews > window > window controller > document object > document controller > the application object"
+                      "text": "Window that the document owns: view > superviews > window > window controller > document object > document controller > the application object"
                     }
                   ]
                 }
@@ -2317,12 +2402,8 @@
               "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication"
             },
             {
-              "type": "codeVoice",
-              "code": " "
-            },
-            {
               "type": "text",
-              "text": "displays a document-modal error alert and, if the error object has a recovery attempter, gives it a chance to recover from the error. (A recovery attempter is an object that conforms to the "
+              "text": " displays a document-modal error alert and, if the error object has a recovery attempter, gives it a chance to recover from the error. A recovery attempter is an object that conforms to the "
             },
             {
               "type": "reference",
@@ -2331,15 +2412,53 @@
             },
             {
               "type": "text",
-              "text": " informal protocol.)"
+              "text": " informal protocol."
             }
           ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "In macOS 10.15 and later, "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder"
+                },
+                {
+                  "type": "text",
+                  "text": " and its descendants call the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1571947-dealloc"
+                },
+                {
+                  "type": "text",
+                  "text": " method on the main thread. This method helps to avoid situations where an asynchronous block unexpectedly deallocates an object on a background queue."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

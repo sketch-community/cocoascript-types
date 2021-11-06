@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSManagedObjectContext(im)refreshObject:mergeChanges:",
+    "parent": {
+      "title": "NSManagedObjectContext"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,7 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object space that you use to manipulate and track changes to managed objects."
+          "text": "An object space to manipulate and track changes to managed objects."
         }
       ]
     },
@@ -478,7 +486,7 @@
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506661-processpendingchanges",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506849-observevalueforkeypath"
       ],
-      "title": "Managing Managed Objects",
+      "title": "Handling Managed Objects",
       "generated": true
     },
     {
@@ -568,6 +576,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -630,15 +639,7 @@
                 },
                 {
                   "type": "text",
-                  "text": ", then "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "object"
-                },
-                {
-                  "type": "text",
-                  "text": " is turned into a fault and any pending changes are lost. The object remains a fault until it is accessed again, at which time its property values will be reloaded from the store or last cached state."
+                  "text": ", the context discards pending changes and the managed object becomes a fault. Upon next access, the context reloads the object’s values from the persistent store or last cached state. "
                 }
               ]
             },
@@ -664,7 +665,7 @@
                 },
                 {
                   "type": "text",
-                  "text": ", then "
+                  "text": ", the context reloads the object’s property values from the store or the cache. Then the context applies local changes over the newly loaded values. Merging the local values into "
                 },
                 {
                   "type": "codeVoice",
@@ -672,40 +673,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " is turned into a fault and "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "object"
-                },
-                {
-                  "type": "text",
-                  "text": "’s property values are reloaded from the values from the store or the last cached state then any changes that were made (in the local context) are re-applied over those (now newly updated) values. (If "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "flag"
-                },
-                {
-                  "type": "text",
-                  "text": " is "
-                },
-                {
-                  "type": "reference",
-                  "isActive": false,
-                  "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-                },
-                {
-                  "type": "text",
-                  "text": " the merge of the values into "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "object"
-                },
-                {
-                  "type": "text",
-                  "text": " will always succeed—in this case there is therefore no such thing as a “merge conflict” or a merge that is not possible.)"
+                  "text": " always succeeds, and never results in a merge conflict."
                 }
               ]
             }
@@ -727,7 +695,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "If the staleness interval (see "
+              "text": "If you call this method before the "
             },
             {
               "type": "reference",
@@ -736,7 +704,7 @@
             },
             {
               "type": "text",
-              "text": ") has not been exceeded, any available cached data is reused instead of executing a new fetch. If "
+              "text": " expires, the context reloads the data from the cache instead of fetching from the store. If "
             },
             {
               "type": "codeVoice",
@@ -753,7 +721,7 @@
             },
             {
               "type": "text",
-              "text": ", this method does not affect any transient properties; if "
+              "text": ", this method doesn’t affect any transient properties. If "
             },
             {
               "type": "codeVoice",
@@ -770,7 +738,7 @@
             },
             {
               "type": "text",
-              "text": ", transient properties are disposed of."
+              "text": ", the object disposes the value of transient properties."
             }
           ]
         },
@@ -779,7 +747,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You typically use this method to ensure data freshness if more than one managed object context may use the same persistent store simultaneously, in particular if you get an optimistic locking failure when attempting to save."
+              "text": "You typically use this method to ensure data freshness if multiple managed object contexts share a single persistent store. You can use this method to resolve an optimistic locking failure when attempting to save."
             }
           ]
         },
@@ -796,7 +764,7 @@
             },
             {
               "type": "text",
-              "text": " into a fault ("
+              "text": " into a fault by setting "
             },
             {
               "type": "codeVoice",
@@ -804,7 +772,7 @@
             },
             {
               "type": "text",
-              "text": " is "
+              "text": " to "
             },
             {
               "type": "reference",
@@ -813,15 +781,7 @@
             },
             {
               "type": "text",
-              "text": ") means that strong references to related managed objects (that is, those to which "
-            },
-            {
-              "type": "codeVoice",
-              "code": "object"
-            },
-            {
-              "type": "text",
-              "text": " has a reference) are broken, so you can also use this method to trim a portion of your object graph you want to constrain memory usage."
+              "text": " breaks strong references to related managed objects. You can use this method to release a portion of your object graph if you want to constrain memory usage."
             }
           ]
         }
@@ -829,7 +789,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

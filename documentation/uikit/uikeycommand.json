@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIKeyCommand",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -278,6 +283,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uikeycommand/navigating_an_app_s_user_interface_using_a_keyboard": {
+      "title": "Navigating an App’s User Interface Using a Keyboard",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeycommand/navigating_an_app_s_user_interface_using_a_keyboard",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/uikeycommand/navigating_an_app_s_user_interface_using_a_keyboard",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Navigate between user interface elements using a keyboard and focusable UI elements in iPad apps and apps built with Mac Catalyst."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uikeycommand/3335197-title": {
       "title": "title",
       "type": "topic",
@@ -474,6 +493,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uikeycommand/3783575-allowsautomaticlocalization": {
+      "title": "allowsAutomaticLocalization",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeycommand/3783575-allowsautomaticlocalization",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uikeycommand/3783575-allowsautomaticlocalization"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uikeycommand/3783576-allowsautomaticmirroring": {
+      "title": "allowsAutomaticMirroring",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeycommand/3783576-allowsautomaticmirroring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uikeycommand/3783576-allowsautomaticmirroring"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uikeycommand/3780513-wantspriorityoversystembehavior": {
+      "title": "wantsPriorityOverSystemBehavior",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeycommand/3780513-wantspriorityoversystembehavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uikeycommand/3780513-wantspriorityoversystembehavior"
+    },
     "doc://com.apple.documentation/documentation/uikit/menus_and_shortcuts/adopting_menus_and_uiactions_in_your_user_interface": {
       "title": "Adopting Menus and UIActions in your User Interface",
       "type": "topic",
@@ -566,16 +609,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -597,8 +630,10 @@
         "doc://com.apple.documentation/documentation/uikit/uikeycommand/1621100-init",
         "doc://com.apple.documentation/documentation/uikit/uikeycommand/1621115-initwithcoder",
         "doc://com.apple.documentation/documentation/uikit/uikeycommand/1621139-keycommandwithinput",
-        "doc://com.apple.documentation/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface",
+        "doc://com.apple.documentation/documentation/uikit/uikeycommand/navigating_an_app_s_user_interface_using_a_keyboard"
+      ],
+      "anchor": "1658309"
     },
     {
       "kind": "taskGroup",
@@ -612,7 +647,8 @@
         "doc://com.apple.documentation/documentation/uikit/uikeycommand/1621094-discoverabilitytitle",
         "doc://com.apple.documentation/documentation/uikit/uikeycommand/3335189-attributes",
         "doc://com.apple.documentation/documentation/uikit/uikeycommand/3335196-state"
-      ]
+      ],
+      "anchor": "1658327"
     },
     {
       "kind": "taskGroup",
@@ -620,7 +656,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uikeycommand/3335188-alternates",
         "doc://com.apple.documentation/documentation/uikit/uicommandalternate"
-      ]
+      ],
+      "anchor": "3370749"
     },
     {
       "kind": "taskGroup",
@@ -628,7 +665,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uikeycommand/3335195-propertylist",
         "doc://com.apple.documentation/documentation/uikit/uicommandtagshare"
-      ]
+      ],
+      "anchor": "3370722"
     },
     {
       "kind": "taskGroup",
@@ -636,7 +674,18 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uikeymodifierflags",
         "doc://com.apple.documentation/documentation/uikit/uikeycommand/input_strings_for_special_keys"
-      ]
+      ],
+      "anchor": "1673788"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uikeycommand/3783575-allowsautomaticlocalization",
+        "doc://com.apple.documentation/documentation/uikit/uikeycommand/3783576-allowsautomaticmirroring",
+        "doc://com.apple.documentation/documentation/uikit/uikeycommand/3780513-wantspriorityoversystembehavior"
+      ],
+      "anchor": "3780592"
     }
   ],
   "seeAlsoSections": [
@@ -689,6 +738,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -762,7 +812,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Restores the state necessary to continue the specified user activity."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -30,15 +36,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSUserActivityRestoring(im)restoreUserActivityState:",
+    "parent": {
+      "title": "NSUserActivityRestoring"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -87,7 +96,73 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsuseractivityrestoring",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsuseractivityrestoring"
+      "url": "/documentation/appkit/nsuseractivityrestoring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that marks classes to restore the state of your app to continue a user activity."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428471-application": {
+      "title": "application:continueUserActivity:restorationHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428471-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsapplicationdelegate/1428471-application",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:continueUserActivity:restorationHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1411706-userinfo": {
+      "title": "userInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1411706-userinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity/1411706-userinfo"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsdocument": {
+      "title": "NSDocument",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsdocument",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsdocument"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/no": {
+      "title": "NO",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/no"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514992-opendocumentwithcontentsofurl": {
+      "title": "openDocumentWithContentsOfURL:display:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514992-opendocumentwithcontentsofurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsdocumentcontroller/1514992-opendocumentwithcontentsofurl",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "openDocumentWithContentsOfURL:display:completionHandler:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsuseractivity": {
       "title": "NSUserActivity",
@@ -96,6 +171,31 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsuseractivity"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsuseractivityrestoring/3022485-restoreuseractivitystate": {
+      "title": "restoreUserActivityState:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsuseractivityrestoring/3022485-restoreuseractivitystate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsuseractivityrestoring/3022485-restoreuseractivitystate",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Restores the state necessary to continue the specified user activity."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "restoreUserActivityState:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -162,10 +262,135 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "userActivity",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The user activity to continue."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Implement this method to restore an object’s state using the specified user activity. The system calls this method on any responders or documents passed to the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "restorationHandler"
+            },
+            {
+              "type": "text",
+              "text": " in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428471-application"
+            },
+            {
+              "type": "text",
+              "text": ". The system calls this method on the main thread. Your implementation should use the state data contained in the specified user activity’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1411706-userinfo"
+            },
+            {
+              "type": "text",
+              "text": " dictionary to restore the object."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On macOS, the system can automatically restore activities managed by "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsdocument"
+            },
+            {
+              "type": "text",
+              "text": " if you don’t implement "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428471-application"
+            },
+            {
+              "type": "text",
+              "text": ", or if you return "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+            },
+            {
+              "type": "text",
+              "text": ". When this occurs, the system opens the document using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514992-opendocumentwithcontentsofurl"
+            },
+            {
+              "type": "text",
+              "text": ", and calls "
+            },
+            {
+              "type": "codeVoice",
+              "code": "restoreUserActivityState:"
+            },
+            {
+              "type": "text",
+              "text": " on it."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

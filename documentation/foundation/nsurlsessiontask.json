@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSURLSessionTask",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,36 +110,6 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/1410569-priority": {
-      "title": "priority",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/1410569-priority",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsurlsessiontask/1410569-priority",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The relative priority at which you’d like a host to handle the task, specified as a floating point value between "
-        },
-        {
-          "type": "codeVoice",
-          "code": "0.0"
-        },
-        {
-          "type": "text",
-          "text": " (lowest priority) and "
-        },
-        {
-          "type": "codeVoice",
-          "code": "1.0"
-        },
-        {
-          "type": "text",
-          "text": " (highest priority)."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask": {
       "title": "NSURLSessionTask",
       "type": "topic",
@@ -159,7 +134,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that coordinates a group of related, network data-transfer tasks."
+          "text": "An object that coordinates a group of related, network data transfer tasks."
         }
       ]
     },
@@ -306,6 +281,36 @@
         {
           "kind": "identifier",
           "text": "resume"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/1410569-priority": {
+      "title": "priority",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/1410569-priority",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontask/1410569-priority",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The relative priority at which you’d like a host to handle the task, specified as a floating point value between "
+        },
+        {
+          "type": "codeVoice",
+          "code": "0.0"
+        },
+        {
+          "type": "text",
+          "text": " (lowest priority) and "
+        },
+        {
+          "type": "codeVoice",
+          "code": "1.0"
+        },
+        {
+          "type": "text",
+          "text": " (highest priority)."
         }
       ]
     },
@@ -600,6 +605,48 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/3735881-prefersincrementaldelivery": {
+      "title": "prefersIncrementalDelivery",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/3735881-prefersincrementaldelivery",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontask/3735881-prefersincrementaldelivery",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines whether to deliver a partial response body in increments."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/3746977-delegate": {
+      "title": "delegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/3746977-delegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontask/3746977-delegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A delegate specific to the task."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate": {
+      "title": "NSURLSessionTaskDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontaskdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that defines methods that URL session instances call on their delegates to handle task-level events."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/2873414-countofbytesclientexpectstorecei": {
       "title": "countOfBytesClientExpectsToReceive",
       "type": "topic",
@@ -649,6 +696,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsurlsessiontask/3240624-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes an empty URL sesson task."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -668,6 +721,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsurlsessiontask/3240625-new",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new URL session task."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -702,16 +761,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -743,7 +792,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskstate",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/1410569-priority",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/url_session_task_priority"
-      ]
+      ],
+      "anchor": "1660369"
     },
     {
       "kind": "taskGroup",
@@ -755,7 +805,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/1411534-countofbytesexpectedtosend",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/1410444-countofbytessent",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontransfersizeunknown"
-      ]
+      ],
+      "anchor": "1660482"
     },
     {
       "kind": "taskGroup",
@@ -767,7 +818,25 @@
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/1409798-taskdescription",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/1411231-taskidentifier",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/1408145-error"
-      ]
+      ],
+      "anchor": "1660538"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Determining Task Behavior",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/3735881-prefersincrementaldelivery"
+      ],
+      "anchor": "3848927"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Using a Task-Specific Delegate",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/3746977-delegate",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate"
+      ],
+      "anchor": "3848926"
     },
     {
       "kind": "taskGroup",
@@ -777,21 +846,17 @@
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/2873401-countofbytesclientexpectstosend",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontransfersizeunknown",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/2873413-earliestbegindate"
-      ]
+      ],
+      "anchor": "2919275"
     },
     {
       "kind": "taskGroup",
-      "title": "Initializers",
+      "title": "Deprecated",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/3240624-init"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Type Methods",
-      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/3240624-init",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/3240625-new"
-      ]
+      ],
+      "anchor": "3848925"
     }
   ],
   "seeAlsoSections": [
@@ -838,6 +903,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1102,7 +1168,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

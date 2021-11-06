@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A control that defines an area on the screen that can be used to trigger actions. "
+      "text": "A control that defines an area on the screen that a user clicks to trigger an action."
     }
   ],
   "documentVersion": 0,
@@ -34,15 +34,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSButton",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -85,6 +85,14 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/appkit/nsmultilevelacceleratorbutton": {
+      "title": "NSMultiLevelAcceleratorButton",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsmultilevelacceleratorbutton",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsmultilevelacceleratorbutton"
+    },
     "doc://com.apple.documentation/documentation/appkit/nsbuttoncell": {
       "title": "NSButtonCell",
       "type": "topic",
@@ -123,6 +131,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nsacceleratorbutton": {
+      "title": "NSAcceleratorButton",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsacceleratorbutton",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsacceleratorbutton"
+    },
     "doc://com.apple.documentation/documentation/appkit/nsbutton/1528670-allowsmixedstate": {
       "title": "allowsMixedState",
       "type": "topic",
@@ -150,14 +166,6 @@
           "text": "A legacy interface for grouping radio buttons or other types of cells together. "
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsmultilevelacceleratorbutton": {
-      "title": "NSMultiLevelAcceleratorButton",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsmultilevelacceleratorbutton",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsmultilevelacceleratorbutton"
     },
     "doc://com.apple.documentation/documentation/appkit/nsimage": {
       "title": "NSImage",
@@ -206,6 +214,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nsbutton/1644525-checkboxwithtitle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a standard checkbox with the title you specify."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -224,6 +238,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nsbutton/1644659-buttonwithimage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a standard push button with the image you specify."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -242,6 +262,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nsbutton/1644340-radiobuttonwithtitle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a standard radio button with the title you specify."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -260,6 +286,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nsbutton/1644719-buttonwithtitle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a standard push button with a title and image."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -278,6 +310,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nsbutton/1644256-buttonwithtitle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a standard push button with the title you specify."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -446,6 +484,20 @@
       ],
       "deprecated": true
     },
+    "doc://com.apple.documentation/documentation/appkit/nsbutton/3667453-symbolconfiguration": {
+      "title": "symbolConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsbutton/3667453-symbolconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsbutton/3667453-symbolconfiguration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The combination of point size, weight, and scale to use when sizing and displaying symbol images."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nsbutton/1530910-sound": {
       "title": "sound",
       "type": "topic",
@@ -557,7 +609,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants for specifying the position of a button’s image relative to its title. "
+          "text": "A constant for specifying the position of a button’s image relative to its title. "
         }
       ]
     },
@@ -835,14 +887,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsbutton/3667453-symbolconfiguration": {
-      "title": "symbolConfiguration",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsbutton/3667453-symbolconfiguration",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsbutton/3667453-symbolconfiguration"
-    },
     "doc://com.apple.documentation/documentation/appkit/nsbutton": {
       "title": "NSButton",
       "type": "topic",
@@ -853,7 +897,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A control that defines an area on the screen that can be used to trigger actions. "
+          "text": "A control that defines an area on the screen that a user clicks to trigger an action."
         }
       ]
     },
@@ -1156,14 +1200,16 @@
         "doc://com.apple.documentation/documentation/appkit/nsbutton/1644340-radiobuttonwithtitle",
         "doc://com.apple.documentation/documentation/appkit/nsbutton/1644719-buttonwithtitle",
         "doc://com.apple.documentation/documentation/appkit/nsbutton/1644256-buttonwithtitle"
-      ]
+      ],
+      "anchor": "2909106"
     },
     {
       "kind": "taskGroup",
       "title": "Configuring the Cell",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsbuttoncell"
-      ]
+      ],
+      "anchor": "2877819"
     },
     {
       "kind": "taskGroup",
@@ -1179,10 +1225,12 @@
         "doc://com.apple.documentation/documentation/appkit/nsbutton/1526723-attributedalternatetitle",
         "doc://com.apple.documentation/documentation/appkit/nsbutton/1524430-title",
         "doc://com.apple.documentation/documentation/appkit/nsbutton/1579931-settitlewithmnemonic",
+        "doc://com.apple.documentation/documentation/appkit/nsbutton/3667453-symbolconfiguration",
         "doc://com.apple.documentation/documentation/appkit/nsbutton/1530910-sound",
         "doc://com.apple.documentation/documentation/appkit/nsbutton/1532300-springloaded",
         "doc://com.apple.documentation/documentation/appkit/nsbutton/1534413-maxacceleratorlevel"
-      ]
+      ],
+      "anchor": "1685572"
     },
     {
       "kind": "taskGroup",
@@ -1199,7 +1247,8 @@
         "doc://com.apple.documentation/documentation/appkit/nsbutton/1532248-showsborderonlywhilemouseinside",
         "doc://com.apple.documentation/documentation/appkit/nsbutton/2092414-imagehugstitle",
         "doc://com.apple.documentation/documentation/appkit/nsbutton/2202284-imagescaling"
-      ]
+      ],
+      "anchor": "1685582"
     },
     {
       "kind": "taskGroup",
@@ -1208,7 +1257,8 @@
         "doc://com.apple.documentation/documentation/appkit/nsbutton/2952061-activecompressionoptions",
         "doc://com.apple.documentation/documentation/appkit/nsbutton/2952060-compresswithprioritizedcompressi",
         "doc://com.apple.documentation/documentation/appkit/nsbutton/2952059-minimumsizewithprioritizedcompre"
-      ]
+      ],
+      "anchor": "3642171"
     },
     {
       "kind": "taskGroup",
@@ -1218,7 +1268,8 @@
         "doc://com.apple.documentation/documentation/appkit/nsbutton/1528907-state",
         "doc://com.apple.documentation/documentation/appkit/nsbutton/1530594-setnextstate",
         "doc://com.apple.documentation/documentation/appkit/nsbutton/1534156-highlight"
-      ]
+      ],
+      "anchor": "1685589"
     },
     {
       "kind": "taskGroup",
@@ -1226,21 +1277,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsbutton/1525368-keyequivalent",
         "doc://com.apple.documentation/documentation/appkit/nsbutton/1532670-keyequivalentmodifiermask"
-      ]
+      ],
+      "anchor": "1685593"
     },
     {
       "kind": "taskGroup",
       "title": "Handling Keyboard Events",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsbutton/1524423-performkeyequivalent"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Properties",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsbutton/3667453-symbolconfiguration"
-      ]
+      ],
+      "anchor": "1685594"
     }
   ],
   "seeAlsoSections": [
@@ -1322,7 +1368,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Buttons are a standard control used to initiate actions within your app. You can configure buttons with many different visual styles, but the behavior is the same. When clicked, a button calls the action method of its associated target object. (If you configure a button as continuous, it calls its action method at timed intervals until the user releases the mouse button or the cursor leaves the button boundaries.) You use the action method to perform your app-specific tasks. "
+              "text": "Buttons are a standard control for initiating actions within your app. You can configure buttons with many different visual styles, but the behavior is the same. When a user clicks it, a button calls the action method of its associated target object. (If you configure a button as continuous, it calls its action method at timed intervals until the user releases the mouse button or the cursor leaves the button boundaries.) You use the action method to perform your app-specific tasks. "
             }
           ]
         },
@@ -1331,7 +1377,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "There are multiple types of buttons, each with a different user interface and behavior. Button types are defined in the "
+              "text": "There are multiple types of buttons, each with a different user interface and behavior. The "
             },
             {
               "type": "reference",
@@ -1340,7 +1386,7 @@
             },
             {
               "type": "text",
-              "text": " class, and are configured by calling the "
+              "text": " class defines the button types, and calling the "
             },
             {
               "type": "reference",
@@ -1349,7 +1395,7 @@
             },
             {
               "type": "text",
-              "text": " method."
+              "text": " method configures them."
             }
           ]
         },
@@ -1361,20 +1407,22 @@
               "text": "If you configure it as an accelerator button (type "
             },
             {
-              "type": "codeVoice",
-              "code": "NSAcceleratorButton"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsacceleratorbutton"
             },
             {
               "type": "text",
               "text": " or "
             },
             {
-              "type": "codeVoice",
-              "code": "NSMultiLevelAcceleratorButton"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsmultilevelacceleratorbutton"
             },
             {
               "type": "text",
-              "text": "), a button can be set to send action messages when changes in pressure occur when the user clicks on the button."
+              "text": "), you can set a button to send action messages when changes in pressure occur when the user clicks the button."
             }
           ]
         },
@@ -1392,7 +1440,7 @@
             },
             {
               "type": "text",
-              "text": " method. On and off states (also referred to as alternate and normal) indicate that the button is either clicked or not clicked. Mixed state is typically used for checkboxes or radio buttons, which allow for an additional intermediate state. For example, suppose the state of a checkbox denotes whether a text field contains bold text. If all of the text in the text field is bold, then the checkbox is on. If none of the text is bold, then the checkbox is off. If some of the text is bold, then the checkbox is mixed."
+              "text": " method. On and off (also referred to as alternate and normal) states indicate that the user clicked or didn’t click the button. Mixed is typically used for checkboxes or radio buttons, which allow for an additional intermediate state. For example, suppose the state of a checkbox denotes whether a text field contains bold text. If all text in the text field is bold, then the checkbox is on. If none of the text is bold, then the checkbox is off. If some of the text is bold, then the checkbox is mixed."
             }
           ]
         },
@@ -1455,7 +1503,7 @@
             },
             {
               "type": "text",
-              "text": " object. However, while a matrix requires you to access the button cell objects directly, most button class methods act as “covers” for identically declared button cell methods. In other words, the implementation of the button method invokes the corresponding button cell method for you, allowing you to be unconcerned with the existence of the button cell. The only button cell methods that don’t have covers relate to the font used to display the key equivalent and to specific methods for highlighting or showing the state of the button."
+              "text": " object. However, while a matrix requires you to access the button cell objects directly, most button class methods act as “covers” for identically declared button cell methods. In other words, the implementation of the button method invokes the corresponding button cell method for you, allowing you to be unconcerned with the existence of the button cell. The only button cell methods that don’t have covers relate to the font you use to display the key equivalent and to specific methods for highlighting or showing the state of the button."
             }
           ]
         }
@@ -1463,7 +1511,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

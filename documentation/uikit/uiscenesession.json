@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An object containing information about one of your app's scenes.  "
+      "text": "An object that contains information about one of your app's scenes.  "
     }
   ],
   "documentVersion": 0,
@@ -24,8 +24,30 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
         "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+        "doc://com.apple.documentation/documentation/uikit/uiscene"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/windows_and_screens",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+        "doc://com.apple.documentation/documentation/uikit/uiscene"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment",
         "doc://com.apple.documentation/documentation/uikit/app_and_environment/multitasking_on_ipad",
         "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/multitasking_on_ipad",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+        "doc://com.apple.documentation/documentation/uikit/uiscene"
       ]
     ]
   },
@@ -48,25 +70,30 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UISceneSession",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -125,6 +152,14 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/uikit/uiscene": {
+      "title": "UIScene",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscene",
+      "url": "/documentation/uikit/uiscene",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
     "doc://com.apple.documentation/documentation/uikit/app_and_environment/multitasking_on_ipad": {
       "title": "Multitasking on iPad",
       "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/multitasking_on_ipad",
@@ -143,7 +178,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object containing information about one of your app's scenes.  "
+          "text": "An object that contains information about one of your app's scenes.  "
         }
       ]
     },
@@ -227,7 +262,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants indicating the possible roles for a scene."
+          "text": "Constants that indicate the possible roles for a scene."
         }
       ]
     },
@@ -242,6 +277,20 @@
         {
           "type": "text",
           "text": "The configuration data for creating the scene. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisceneconfiguration": {
+      "title": "UISceneConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisceneconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisceneconfiguration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Information about the objects and storyboard for UKit to use when creating a particular scene. "
         }
       ]
     },
@@ -328,36 +377,12 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uisceneconfiguration": {
-      "title": "UISceneConfiguration",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisceneconfiguration",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uisceneconfiguration",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Information about the objects and storyboard for UKit to use when creating a particular scene. "
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -386,21 +411,25 @@
         "doc://com.apple.documentation/documentation/uikit/uiscenesession/3197958-scene",
         "doc://com.apple.documentation/documentation/uikit/uiscenesession/3197957-role",
         "doc://com.apple.documentation/documentation/uikit/uiscenesessionrole"
-      ]
+      ],
+      "anchor": "3198969"
     },
     {
       "kind": "taskGroup",
       "title": "Getting the Scene Configuration Details",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uiscenesession/3197955-configuration"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiscenesession/3197955-configuration",
+        "doc://com.apple.documentation/documentation/uikit/uisceneconfiguration"
+      ],
+      "anchor": "3198961"
     },
     {
       "kind": "taskGroup",
       "title": "Identifying the Scene",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiscenesession/3197956-persistentidentifier"
-      ]
+      ],
+      "anchor": "3198971"
     },
     {
       "kind": "taskGroup",
@@ -408,7 +437,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiscenesession/3197959-staterestorationactivity",
         "doc://com.apple.documentation/documentation/uikit/uiscenesession/3197960-userinfo"
-      ]
+      ],
+      "anchor": "3198966"
     }
   ],
   "seeAlsoSections": [
@@ -456,6 +486,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -528,7 +559,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

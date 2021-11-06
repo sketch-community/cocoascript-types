@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The data block used to initialize the movie."
+      "text": "The data block to initialize the movie."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVMovie(py)data",
+    "parent": {
+      "title": "AVMovie"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -107,7 +115,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmovie",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmovie"
+      "url": "/documentation/avfoundation/avmovie",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that represents an audiovisual container that conforms to the QuickTime movie file format or a related format like MPEG-4."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsdata": {
       "title": "NSData",
@@ -127,35 +141,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The URL used to initialize the movie instance."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmovie/1387333-cancontainmoviefragments": {
-      "title": "canContainMovieFragments",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmovie/1387333-cancontainmoviefragments",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmovie/1387333-cancontainmoviefragments",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the movie file can be extended by fragments."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmovie/1388597-containsmoviefragments": {
-      "title": "containsMovieFragments",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmovie/1388597-containsmoviefragments",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmovie/1388597-containsmoviefragments",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the movie file is extended by at least one movie fragment."
+          "text": "The URL to initialize the movie instance."
         }
       ]
     },
@@ -169,7 +155,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The data block used to initialize the movie."
+          "text": "The data block to initialize the movie."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmovie/1387333-cancontainmoviefragments": {
+      "title": "canContainMovieFragments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmovie/1387333-cancontainmoviefragments",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmovie/1387333-cancontainmoviefragments",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether fragments can extend the movie file."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmovie/1388597-containsmoviefragments": {
+      "title": "containsMovieFragments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmovie/1388597-containsmoviefragments",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmovie/1388597-containsmoviefragments",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether at least one movie fragment extends the movie file."
         }
       ]
     },
@@ -187,20 +201,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmovie/1386485-tracks": {
-      "title": "tracks",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmovie/1386485-tracks",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmovie/1386485-tracks",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An array of tracks in a movie."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avmovie/1388690-movietypes": {
       "title": "movieTypes",
       "type": "topic",
@@ -211,16 +211,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the file types the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmovie"
-        },
-        {
-          "type": "text",
-          "text": " class can process."
+          "text": "Returns the file types that a movie can process."
         }
       ],
       "fragments": [
@@ -242,16 +233,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "seeAlsoSections": [
     {
       "identifiers": [
@@ -259,7 +240,6 @@
         "doc://com.apple.documentation/documentation/avfoundation/avmovie/1387333-cancontainmoviefragments",
         "doc://com.apple.documentation/documentation/avfoundation/avmovie/1388597-containsmoviefragments",
         "doc://com.apple.documentation/documentation/avfoundation/avmovie/1388424-defaultmediadatastorage",
-        "doc://com.apple.documentation/documentation/avfoundation/avmovie/1386485-tracks",
         "doc://com.apple.documentation/documentation/avfoundation/avmovie/1388690-movietypes"
       ],
       "title": "Accessing Movie Information",
@@ -304,6 +284,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "watchOS"
@@ -341,7 +322,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

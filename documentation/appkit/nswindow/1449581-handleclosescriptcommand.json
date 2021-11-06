@@ -2,15 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Handles the "
-    },
-    {
-      "type": "codeVoice",
-      "code": "close"
-    },
-    {
-      "type": "text",
-      "text": " AppleScript command by attempting to close the window (and its associated document, if any)."
+      "text": "Handles the AppleScript command to close the window (and its associated document, if any)."
     }
   ],
   "documentVersion": 0,
@@ -43,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSWindow(im)handleCloseScriptCommand:",
+    "parent": {
+      "title": "NSWindow"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -126,15 +121,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Handles the "
-        },
-        {
-          "type": "codeVoice",
-          "code": "close"
-        },
-        {
-          "type": "text",
-          "text": " AppleScript command by attempting to close the window (and its associated document, if any)."
+          "text": "Handles the AppleScript command to close the window (and its associated document, if any)."
         }
       ],
       "fragments": [
@@ -158,15 +145,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Handles the "
-        },
-        {
-          "type": "codeVoice",
-          "code": "print"
-        },
-        {
-          "type": "text",
-          "text": " AppleScript command by attempting to print the contents of the window (or its associated document, if any)."
+          "text": "Handles the AppleScript command to print the contents of the window (or its associated document, if any)."
         }
       ],
       "fragments": [
@@ -190,15 +169,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Handles the "
-        },
-        {
-          "type": "codeVoice",
-          "code": "save"
-        },
-        {
-          "type": "text",
-          "text": " AppleScript command by attempting to save the window (and its associated document, if any)."
+          "text": "Handles the AppleScript command to save the window (and its associated document, if any)."
         }
       ],
       "fragments": [
@@ -302,7 +273,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": " Extracts "
+              "text": "Extracts "
             },
             {
               "type": "codeVoice",
@@ -318,7 +289,7 @@
             },
             {
               "type": "text",
-              "text": " object and uses them to determine how to close the associated document—specifically, whether to ignore unsaved changes, save changes automatically, or ask the user and to identify the file in which to save the document (by default, the file that was opened or previously saved to, or an “untitled” name if the file has never been saved). "
+              "text": " object and uses them to determine how to close the associated document—specifically, whether to ignore unsaved changes, save changes automatically, or ask the user—and identifies the file to save the document to. By default, the window saves the document to the file that was opened or previously saved to. Otherwise, the window saves it with an “untitled” name."
             }
           ]
         },
@@ -327,7 +298,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "If there is a corresponding document and the window is the main window of the document, it forwards the "
+              "text": "If there’s a corresponding document and the window is the main window of the document, this function forwards the "
             },
             {
               "type": "codeVoice",
@@ -343,7 +314,7 @@
             },
             {
               "type": "text",
-              "text": " message, if it has a close box. This may have been handled differently in versions of macOS prior to version 10.3."
+              "text": " message, if it has a close box."
             }
           ]
         }
@@ -351,7 +322,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

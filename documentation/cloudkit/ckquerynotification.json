@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An object that represents a push notification that a query subscription generates."
+      "text": "A notification that triggers when a record that matches the subscription’s predicate changes."
     }
   ],
   "documentVersion": 0,
@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/cloudkit",
-        "doc://com.apple.documentation/documentation/cloudkit/notifications"
+        "doc://com.apple.documentation/documentation/cloudkit/remote_records"
       ]
     ]
   },
@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKQueryNotification",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -97,29 +102,101 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/notifications": {
-      "title": "Notifications",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/notifications",
-      "url": "/documentation/cloudkit/notifications",
+    "doc://com.apple.documentation/documentation/cloudkit/remote_records": {
+      "title": "Remote Records",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/remote_records",
+      "url": "/documentation/cloudkit/remote_records",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/cknotification/1428130-notificationfromremotenotificati": {
-      "title": "notificationFromRemoteNotificationDictionary:",
+    "doc://com.apple.documentation/documentation/cloudkit/cksubscription/1514948-notificationinfo": {
+      "title": "notificationInfo",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cknotification/1428130-notificationfromremotenotificati",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksubscription/1514948-notificationinfo",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/cknotification/1428130-notificationfromremotenotificati",
+      "url": "/documentation/cloudkit/cksubscription/1514948-notificationinfo"
+    },
+    "doc://com.apple.documentation/documentation/usernotifications/asking_permission_to_use_notifications": {
+      "title": "Asking Permission to Use Notifications",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/usernotifications/asking_permission_to_use_notifications",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/usernotifications/asking_permission_to_use_notifications"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo": {
+      "title": "CKNotificationInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/cknotificationinfo"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/1515110-shouldsendcontentavailable": {
+      "title": "shouldSendContentAvailable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/1515110-shouldsendcontentavailable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/cknotificationinfo/1515110-shouldsendcontentavailable"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/1514931-desiredkeys": {
+      "title": "desiredKeys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/1514931-desiredkeys",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/cknotificationinfo/1514931-desiredkeys"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/cknotification/1428088-ispruned": {
+      "title": "isPruned",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cknotification/1428088-ispruned",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/cknotification/1428088-ispruned"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckdatabasenotification/1640510-databasescope": {
+      "title": "databaseScope",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckdatabasenotification/1640510-databasescope",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckdatabasenotification/1640510-databasescope"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckqueryoperation": {
+      "title": "CKQueryOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckqueryoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckqueryoperation"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623013-application": {
+      "title": "application:didReceiveRemoteNotification:fetchCompletionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623013-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/1623013-application",
       "fragments": [
         {
           "kind": "text",
-          "text": "+ "
+          "text": "- "
         },
         {
           "kind": "identifier",
-          "text": "notificationFromRemoteNotificationDictionary:"
+          "text": "application:didReceiveRemoteNotification:fetchCompletionHandler:"
         }
       ]
     },
@@ -129,21 +206,7 @@
       "identifier": "doc://com.apple.documentation/documentation/cloudkit/cknotification",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/cknotification",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The abstract base class for CloudKit notifications."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckfetchnotificationchangesoperation": {
-      "title": "CKFetchNotificationChangesOperation",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchnotificationchangesoperation",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckfetchnotificationchangesoperation"
+      "url": "/documentation/cloudkit/cknotification"
     },
     "doc://com.apple.documentation/documentation/cloudkit/cknotification/1428078-notificationtype": {
       "title": "notificationType",
@@ -153,33 +216,17 @@
       "role": "symbol",
       "url": "/documentation/cloudkit/cknotification/1428078-notificationtype"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/cknotificationtype/cknotificationtypequery": {
-      "title": "CKNotificationTypeQuery",
+    "doc://com.apple.documentation/documentation/cloudkit/ckquerynotification/1640449-databasescope": {
+      "title": "databaseScope",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cknotificationtype/cknotificationtypequery",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckquerynotification/1640449-databasescope",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/cknotificationtype/cknotificationtypequery"
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/cknotification/1428119-containeridentifier": {
-      "title": "containerIdentifier",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cknotification/1428119-containeridentifier",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/cknotification/1428119-containeridentifier"
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckquerynotification/1428134-recordid": {
-      "title": "recordID",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckquerynotification/1428134-recordid",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckquerynotification/1428134-recordid",
+      "url": "/documentation/cloudkit/ckquerynotification/1640449-databasescope",
       "abstract": [
         {
           "type": "text",
-          "text": "The ID of the record that CloudKit creates, updates, or deletes."
+          "text": "The type of database for the record zone."
         }
       ]
     },
@@ -197,34 +244,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckquerynotification/1428114-recordfields": {
-      "title": "recordFields",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckquerynotification/1428114-recordfields",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckquerynotification/1428114-recordfields",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A dictionary of fields that have changes. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckquerynotification/1640449-databasescope": {
-      "title": "databaseScope",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckquerynotification/1640449-databasescope",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckquerynotification/1640449-databasescope",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The type of database for the record zone."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/cloudkit/ckquerynotificationreason": {
       "title": "CKQueryNotificationReason",
       "type": "topic",
@@ -239,6 +258,48 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/cloudkit/ckquerynotification/1428134-recordid": {
+      "title": "recordID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckquerynotification/1428134-recordid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckquerynotification/1428134-recordid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The ID of the record that CloudKit creates, updates, or deletes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckquerynotification/1428114-recordfields": {
+      "title": "recordFields",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckquerynotification/1428114-recordfields",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckquerynotification/1428114-recordfields",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A dictionary of fields that have changes. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckquerysubscription": {
+      "title": "CKQuerySubscription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckquerysubscription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckquerysubscription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A subscription that generates push notifications when CloudKit modifies records that match a predicate."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/cloudkit/ckquerynotification": {
       "title": "CKQueryNotification",
       "type": "topic",
@@ -249,35 +310,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that represents a push notification that a query subscription generates."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckrecordzonenotification": {
-      "title": "CKRecordZoneNotification",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordzonenotification",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckrecordzonenotification",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A notification that triggers when the contents of a record zone change."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckdatabasenotification": {
-      "title": "CKDatabaseNotification",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckdatabasenotification",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckdatabasenotification",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A notification that triggers when the contents of a database change."
+          "text": "A notification that triggers when a record that matches the subscription’s predicate changes."
         }
       ]
     },
@@ -287,16 +320,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -315,7 +338,8 @@
       "title": "Getting the Database Scope",
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckquerynotification/1640449-databasescope"
-      ]
+      ],
+      "anchor": "2859570"
     },
     {
       "kind": "taskGroup",
@@ -323,7 +347,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckquerynotification/1428123-querynotificationreason",
         "doc://com.apple.documentation/documentation/cloudkit/ckquerynotificationreason"
-      ]
+      ],
+      "anchor": "1666021"
     },
     {
       "kind": "taskGroup",
@@ -331,17 +356,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckquerynotification/1428134-recordid",
         "doc://com.apple.documentation/documentation/cloudkit/ckquerynotification/1428114-recordfields"
-      ]
+      ],
+      "anchor": "1666058"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/cloudkit/cknotification",
-        "doc://com.apple.documentation/documentation/cloudkit/ckrecordzonenotification",
-        "doc://com.apple.documentation/documentation/cloudkit/ckdatabasenotification"
+        "doc://com.apple.documentation/documentation/cloudkit/ckquerysubscription"
       ],
-      "title": "Notifications",
+      "title": "Predicate-Driven Changes",
       "generated": true
     }
   ],
@@ -379,6 +403,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -401,7 +426,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Query subscriptions represent persistent queries on the server. When the server detects a change that’s within the scope of the subscription’s configuration, it sends a push notification to the subscription’s owner and logs the push notification in the container. Use instances of this class to get information about the record in the push notification. "
+              "text": "Query subscriptions execute when a record that matches the subscription’s predicate changes, for example, when the user modifies a field’s value in the record. When CloudKit registers the change, it sends push notifications to the user’s devices to inform your app about the change. You can then fetch the changes and cache them on-device. When appropriate, CloudKit excludes the device where the change originates."
             }
           ]
         },
@@ -410,16 +435,158 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You don’t create instances of this class directly. When your app receives a push notification, call the "
+              "text": "You configure a subscription’s notifications by setting it’s "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/cloudkit/cknotification/1428130-notificationfromremotenotificati"
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksubscription/1514948-notificationinfo"
             },
             {
               "type": "text",
-              "text": " method of "
+              "text": " property. Do this before you save it to the server. A subscription generates either high-priority or medium-priority push notifications. CloudKit delivers medium-priority notifications to your app in the background. High-priority notifications are visual and the system displays them to the user. Visual notifications need the user’s permission. For more information, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/usernotifications/asking_permission_to_use_notifications"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A subscription uses "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo"
+            },
+            {
+              "type": "text",
+              "text": " to configure its notifications. For background delivery, set only its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/1515110-shouldsendcontentavailable"
+            },
+            {
+              "type": "text",
+              "text": " property to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": ". If you set any other property, CloudKit treats the notification as high-priority."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "To receive silent push notifications, add the Background Modes capability to your Xcode project and select the “Background fetch” and “Remote notifications” options."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Don’t rely on push notifications for changes because the system can coalesce them. CloudKit can omit data to keep the notification’s payload size under the APNs size limit. If you use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/1514931-desiredkeys"
+            },
+            {
+              "type": "text",
+              "text": " to include extra data in the payload, the server removes that first. A notification’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/cknotification/1428088-ispruned"
+            },
+            {
+              "type": "text",
+              "text": " property is "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": " if CloudKit omits data."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Consider notifications an indication of remote changes. Use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckdatabasenotification/1640510-databasescope"
+            },
+            {
+              "type": "text",
+              "text": " to determine which database contains the changed record. To fetch the changes, configure an instance of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckqueryoperation"
+            },
+            {
+              "type": "text",
+              "text": " to match the subscription and then execute it in the database. CloudKit returns all records that match the predicate, including the changed record. Dispose of any records you cache on-device and use the operation’s results instead. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You don’t instantiate this class. Instead, implement "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623013-application"
+            },
+            {
+              "type": "text",
+              "text": " in your app delegate. Initialize "
             },
             {
               "type": "reference",
@@ -428,16 +595,15 @@
             },
             {
               "type": "text",
-              "text": " to create an instance of the appropriate type. You can fetch previous notifications from a container using a "
+              "text": " with the "
             },
             {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchnotificationchangesoperation"
+              "type": "codeVoice",
+              "code": "userInfo"
             },
             {
               "type": "text",
-              "text": " operation. If a subscription triggers the notification, you receive an instance of this class with a "
+              "text": " dictionary that CloudKit passes to the method. This returns an instance of the appropriate subclass. Use the "
             },
             {
               "type": "reference",
@@ -446,116 +612,19 @@
             },
             {
               "type": "text",
-              "text": " of  "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/cloudkit/cknotificationtype/cknotificationtypequery"
-            },
-            {
-              "type": "text",
-              "text": ". Use that object to retrieve the record-related information. "
+              "text": " property to determine the type. Then cast to that type to access type-specific properties and methods."
             }
           ]
         },
         {
           "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "If a push notification’s payload is too large, CloudKit may remove pieces of data until it’s less than the allowed size limit. The data that alerts the user is the most important and CloudKit removes it last. Data in this class is among the first that CloudKit removes, in the following order:"
-            }
-          ]
-        },
-        {
-          "type": "orderedList",
-          "items": [
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "reference",
-                      "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cknotification/1428119-containeridentifier"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "reference",
-                      "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckquerynotification/1428134-recordid"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "reference",
-                      "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckquerynotification/1428123-querynotificationreason"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "reference",
-                      "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckquerynotification/1428114-recordfields"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Other properties of the "
-                    },
-                    {
-                      "type": "reference",
-                      "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cknotification"
-                    },
-                    {
-                      "type": "text",
-                      "text": " class."
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

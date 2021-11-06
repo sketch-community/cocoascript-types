@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSPersistentContainer",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -147,7 +152,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes a persistent container with the given name."
+          "text": "Creates a container with the specified name."
         }
       ],
       "fragments": [
@@ -171,7 +176,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes a persistent container with the given name and model."
+          "text": "Create a container with the specified name and managed object model."
         }
       ],
       "fragments": [
@@ -233,44 +238,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640577-persistentstoredescriptions": {
-      "title": "persistentStoreDescriptions",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640577-persistentstoredescriptions",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentcontainer/1640577-persistentstoredescriptions",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The persistent store descriptions used to create the persistent stores referenced by this persistent container."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640568-loadpersistentstoreswithcompleti": {
-      "title": "loadPersistentStoresWithCompletionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640568-loadpersistentstoreswithcompleti",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentcontainer/1640568-loadpersistentstoreswithcompleti",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Instructs the persistent container to load the persistent stores."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "loadPersistentStoresWithCompletionHandler:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640561-managedobjectmodel": {
       "title": "managedObjectModel",
       "type": "topic",
@@ -281,7 +248,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The model associated with this persistent container. (read-only)"
+          "text": "The container’s managed object model."
         }
       ]
     },
@@ -295,7 +262,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of this persistent container. (read-only)"
+          "text": "The container’s name."
         }
       ]
     },
@@ -309,69 +276,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The persistent store coordinator associated with this persistent container. (read-only)"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640581-newbackgroundcontext": {
-      "title": "newBackgroundContext",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640581-newbackgroundcontext",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentcontainer/1640581-newbackgroundcontext",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Creates a private managed object context."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "newBackgroundContext"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640564-performbackgroundtask": {
-      "title": "performBackgroundTask:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640564-performbackgroundtask",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentcontainer/1640564-performbackgroundtask",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Causes the persistent container to execute the block against a new private queue context."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "performBackgroundTask:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640622-viewcontext": {
-      "title": "viewContext",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640622-viewcontext",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentcontainer/1640622-viewcontext",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The managed object context associated with the main queue. (read-only)"
+          "text": "The container’s persistent store coordinator."
         }
       ]
     },
@@ -385,7 +290,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates the default directory for the persistent stores on the current platform."
+          "text": "Returns the location of the directory that contains the persistent stores."
         }
       ],
       "fragments": [
@@ -396,6 +301,106 @@
         {
           "kind": "identifier",
           "text": "defaultDirectoryURL"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640577-persistentstoredescriptions": {
+      "title": "persistentStoreDescriptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640577-persistentstoredescriptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcontainer/1640577-persistentstoredescriptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The descriptions of the container’s persistent stores."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640568-loadpersistentstoreswithcompleti": {
+      "title": "loadPersistentStoresWithCompletionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640568-loadpersistentstoreswithcompleti",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcontainer/1640568-loadpersistentstoreswithcompleti",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Loads the persistent stores."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadPersistentStoresWithCompletionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640581-newbackgroundcontext": {
+      "title": "newBackgroundContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640581-newbackgroundcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcontainer/1640581-newbackgroundcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new managed object context that executes on a private queue."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "newBackgroundContext"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640622-viewcontext": {
+      "title": "viewContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640622-viewcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcontainer/1640622-viewcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The main queue’s managed object context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640564-performbackgroundtask": {
+      "title": "performBackgroundTask:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640564-performbackgroundtask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcontainer/1640564-performbackgroundtask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Executes a block on a private queue using an ephemeral managed object context. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "performBackgroundTask:"
         }
       ]
     },
@@ -440,34 +445,52 @@
         "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640584-initwithname",
         "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1646295-persistentcontainerwithname",
         "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1646296-persistentcontainerwithname"
-      ]
+      ],
+      "anchor": "2530716"
     },
     {
       "kind": "taskGroup",
-      "title": "Configuring a Container",
+      "title": "Getting the Container’s Configuration",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640577-persistentstoredescriptions",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640568-loadpersistentstoreswithcompleti",
         "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640561-managedobjectmodel",
         "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640579-name",
         "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640567-persistentstorecoordinator"
-      ]
+      ],
+      "anchor": "3786750"
     },
     {
       "kind": "taskGroup",
-      "title": "Accessing the Context(s)",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640581-newbackgroundcontext",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640564-performbackgroundtask",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640622-viewcontext"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Configuring the Store Location",
+      "title": "Accessing the Default Directory",
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640597-defaultdirectoryurl"
-      ]
+      ],
+      "anchor": "2530724"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Persistent Stores",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640577-persistentstoredescriptions",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640568-loadpersistentstoreswithcompleti"
+      ],
+      "anchor": "2530720"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Acquiring Contexts",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640581-newbackgroundcontext",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640622-viewcontext"
+      ],
+      "anchor": "2530722"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Performing Background Tasks",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640564-performbackgroundtask"
+      ],
+      "anchor": "3786753"
     }
   ],
   "primaryContentSections": [
@@ -504,6 +527,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -561,7 +585,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

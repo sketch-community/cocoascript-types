@@ -1,16 +1,42 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A token type for loading accessibility elements."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos"
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelementloading"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelementloading"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos"
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelementloading"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accessibility",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelementloading"
       ]
     ]
   },
@@ -33,15 +59,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@T@NSAccessibilityLoadingToken",
     "symbolKind": "tdef"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -76,13 +102,45 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls": {
+      "title": "Custom Controls",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls",
+      "url": "/documentation/appkit/accessibility_for_appkit/custom_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelementloading": {
+      "title": "NSAccessibilityElementLoading",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelementloading",
+      "url": "/documentation/appkit/nsaccessibilityelementloading",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility": {
+      "title": "NSAccessibility",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
+      "url": "/documentation/appkit/nsaccessibility",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor": {
+      "title": "NSAccessibilityCustomRotor",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor",
+      "url": "/documentation/appkit/nsaccessibilitycustomrotor",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/accessibility": {
       "title": "Accessibility",
@@ -108,21 +166,55 @@
       "role": "symbol",
       "url": "/documentation/objectivec/1418956-nsobject"
     },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityattributename": {
-      "title": "NSAccessibilityAttributeName",
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelementloading/2890815-accessibilityelementwithtoken": {
+      "title": "accessibilityElementWithToken:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityattributename",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelementloading/2890815-accessibilityelementwithtoken",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityattributename"
+      "url": "/documentation/appkit/nsaccessibilityelementloading/2890815-accessibilityelementwithtoken",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Loads the target accessibility element with the specified load token."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "accessibilityElementWithToken:"
+        }
+      ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityfontattributekey": {
-      "title": "NSAccessibilityFontAttributeKey",
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelementloading/2890818-accessibilityrangeintargetelemen": {
+      "title": "accessibilityRangeInTargetElementWithToken:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityfontattributekey",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelementloading/2890818-accessibilityrangeintargetelemen",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityfontattributekey"
+      "url": "/documentation/appkit/nsaccessibilityelementloading/2890818-accessibilityrangeintargetelemen",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the range that specifies the area of interest in text-based accessibility elements with the specified load token."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "accessibilityRangeInTargetElementWithToken:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibilityloadingtoken": {
       "title": "NSAccessibilityLoadingToken",
@@ -130,63 +222,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityloadingtoken",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityloadingtoken"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityorientationvalue": {
-      "title": "NSAccessibilityOrientationValue",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityorientationvalue",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityorientationvalue"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityparameterizedattributename": {
-      "title": "NSAccessibilityParameterizedAttributeName",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityparameterizedattributename",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityparameterizedattributename"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrole": {
-      "title": "NSAccessibilityRole",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrole",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityrole"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitysubrole": {
-      "title": "NSAccessibilitySubrole",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitysubrole",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitysubrole"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulermarkertypevalue": {
-      "title": "NSAccessibilityRulerMarkerTypeValue",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulermarkertypevalue",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityrulermarkertypevalue"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulerunitvalue": {
-      "title": "NSAccessibilityRulerUnitValue",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulerunitvalue",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityrulerunitvalue"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitysortdirectionvalue": {
-      "title": "NSAccessibilitySortDirectionValue",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitysortdirectionvalue",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitysortdirectionvalue"
+      "url": "/documentation/appkit/nsaccessibilityloadingtoken",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A token type for loading accessibility elements."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -199,17 +241,10 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityattributename",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityfontattributekey",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityorientationvalue",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityparameterizedattributename",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrole",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitysubrole",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulermarkertypevalue",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulerunitvalue",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitysortdirectionvalue"
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelementloading/2890815-accessibilityelementwithtoken",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelementloading/2890818-accessibilityrangeintargetelemen"
       ],
-      "title": "Accessibility Types",
+      "title": "Supporting Accessibility",
       "generated": true
     }
   ],
@@ -275,7 +310,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An action sheet displayed in the context of the view controller that presented it."
+      "text": "An action sheet displayed by the view controller that presented it."
     }
   ],
   "documentVersion": 0,
@@ -36,25 +36,33 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@E@UIAlertControllerStyle@UIAlertControllerStyleActionSheet",
+    "parent": {
+      "title": "UIAlertControllerStyle"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -119,6 +127,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uialertcontrollerstyle/uialertcontrollerstylealert": {
+      "title": "UIAlertControllerStyleAlert",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uialertcontrollerstyle/uialertcontrollerstylealert",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uialertcontrollerstyle/uialertcontrollerstylealert"
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -147,6 +163,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -167,7 +184,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Use an action sheet to present the user with a set of alternatives for how to proceed with a given task. You can also use this style to prompt the user to confirm a potentially dangerous action. "
+              "text": "Use an action sheet to present the user with a set of alternatives for how to proceed with a given task. You can also use this style to prompt the user to confirm a potentially dangerous action. This alert style is not supported by tvOS; use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uialertcontrollerstyle/uialertcontrollerstylealert"
+            },
+            {
+              "type": "text",
+              "text": " instead."
             }
           ]
         }
@@ -175,7 +201,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

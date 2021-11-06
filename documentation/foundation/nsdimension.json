@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An abstract class representing a dimensional unit of measure. "
+      "text": "An abstract class representing a dimensional unit of measure."
     }
   ],
   "documentVersion": 0,
@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSDimension",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -115,7 +120,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes a dimensional unit with the specified symbol and unit converter."
+          "text": "Initializes a dimensional unit with the symbol and unit converter you specify."
         }
       ],
       "fragments": [
@@ -144,6 +149,20 @@
       "kind": "article",
       "role": "codeListing",
       "url": "/documentation/foundation/nsdimension#2556960"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdimension": {
+      "title": "NSDimension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdimension",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdimension",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract class representing a dimensional unit of measure."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsunitspeed": {
       "title": "NSUnitSpeed",
@@ -201,24 +220,6 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsunitilluminance"
     },
-    "doc://com.apple.documentation/documentation/foundation/nsunitilluminance/1888742-baseunit": {
-      "title": "baseUnit",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitilluminance/1888742-baseunit",
-      "kind": "symbol",
-      "role": "pseudoSymbol",
-      "url": "/documentation/foundation/nsunitilluminance/1888742-baseunit",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "+ "
-        },
-        {
-          "kind": "identifier",
-          "text": "baseUnit"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/nsunitilluminance/1823716-lux": {
       "title": "lux",
       "type": "topic",
@@ -263,20 +264,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsdimension": {
-      "title": "NSDimension",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdimension",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsdimension",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An abstract class representing a dimensional unit of measure. "
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/nsdimension/1823516-converter": {
       "title": "converter",
       "type": "topic",
@@ -287,7 +274,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the unit converter used to represent the unit in terms of the dimension’s base unit."
+          "text": "The unit converter that represents the unit in terms of the dimension’s base unit."
         }
       ]
     },
@@ -441,6 +428,14 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsunitfuelefficiency"
     },
+    "doc://com.apple.documentation/documentation/foundation/nsunitinformationstorage": {
+      "title": "NSUnitInformationStorage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitinformationstorage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunitinformationstorage"
+    },
     "doc://com.apple.documentation/documentation/foundation/nsunitmass": {
       "title": "NSUnitMass",
       "type": "topic",
@@ -521,21 +516,24 @@
       "title": "Creating Dimensions",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsdimension/1823633-initwithsymbol"
-      ]
+      ],
+      "anchor": "1844468"
     },
     {
       "kind": "taskGroup",
       "title": "Accessing the Unit Converter",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsdimension/1823516-converter"
-      ]
+      ],
+      "anchor": "1891934"
     },
     {
       "kind": "taskGroup",
       "title": "Accessing the Base Unit",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsdimension/1690740-baseunit"
-      ]
+      ],
+      "anchor": "1844470"
     }
   ],
   "seeAlsoSections": [
@@ -544,7 +542,7 @@
         "doc://com.apple.documentation/documentation/foundation/nsmeasurement",
         "doc://com.apple.documentation/documentation/foundation/nsunit"
       ],
-      "title": "First Steps",
+      "title": "Essentials",
       "generated": true
     }
   ],
@@ -582,6 +580,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -785,7 +784,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "milligrams per deciliter (mg/dL)"
+                      "text": "grams per liter (g/L)"
                     }
                   ]
                 }
@@ -846,7 +845,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "Unit of measure for duration"
+                      "text": "Unit of measure for duration of time"
                     }
                   ]
                 }
@@ -1098,7 +1097,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "Unit of measure for fuel consumption"
+                      "text": "Unit of measure for fuel efficiency"
                     }
                   ]
                 }
@@ -1146,6 +1145,42 @@
                     {
                       "type": "text",
                       "text": "lux (lx)"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitinformationstorage"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Unit of measure for quantities of information"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "bytes (b)"
                     }
                   ]
                 }
@@ -1420,7 +1455,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Each instance of an "
+              "text": "Each instance of a "
             },
             {
               "type": "reference",
@@ -1438,7 +1473,7 @@
             },
             {
               "type": "text",
-              "text": ", which is used to represent the unit in terms of the dimension’s "
+              "text": ", which represents the unit in terms of the dimension’s "
             },
             {
               "type": "reference",
@@ -1464,7 +1499,7 @@
             },
             {
               "type": "text",
-              "text": " as its base unit. The predefined "
+              "text": " as its base unit. The system defines the predefined "
             },
             {
               "type": "reference",
@@ -1473,7 +1508,7 @@
             },
             {
               "type": "text",
-              "text": " unit is defined by a "
+              "text": " unit by a "
             },
             {
               "type": "reference",
@@ -1499,20 +1534,20 @@
             },
             {
               "type": "text",
-              "text": ", which corresponds to the conversion ratio of miles to meters (1 mi = 1609.34 m); the predefined "
+              "text": ", which corresponds to the conversion ratio of miles to meters (1 mi = 1609.34 m); the system defines the predefined "
             },
             {
               "type": "reference",
-              "isActive": true,
+              "isActive": false,
               "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitlength/1855995-meters"
             },
             {
               "type": "text",
-              "text": " unit is defined by a "
+              "text": " unit by a "
             },
             {
               "type": "reference",
-              "isActive": true,
+              "isActive": false,
               "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitconverterlinear"
             },
             {
@@ -1521,7 +1556,7 @@
             },
             {
               "type": "reference",
-              "isActive": true,
+              "isActive": false,
               "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitconverterlinear/1823683-coefficient"
             },
             {
@@ -1534,7 +1569,7 @@
             },
             {
               "type": "text",
-              "text": ", because it’s the base unit."
+              "text": " because it’s the base unit."
             }
           ]
         },
@@ -1575,7 +1610,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "In addition to the Apple-provided units, you can define custom units. Custom units can be initialized from a symbol and converter of an existing type or implemented as a class method of an existing type for additional convenience. You can also define your own "
+              "text": "In addition to the Apple-provided units, you can define custom units. You can initialize custom units from a symbol and converter of an existing type or implemented as a class method of an existing type for additional convenience. You can also define your own "
             },
             {
               "type": "codeVoice",
@@ -1654,7 +1689,7 @@
           "type": "codeListing",
           "code": [
             "NSUnitConverter *smootsToMeters = [[NSUnitConverterLinear alloc] initWithCoefficient:1.70180];",
-            "NSUnitLength *smoots = [[NSUnitLength alloc] initWithSymbol:@\"smoot\" converter:smootsToMeters]];"
+            "NSUnitLength *smoots = [[NSUnitLength alloc] initWithSymbol:@\"smoot\" converter:smootsToMeters];"
           ],
           "syntax": "occ",
           "metadata": {
@@ -1665,7 +1700,7 @@
         {
           "level": 4,
           "type": "heading",
-          "text": "Extending Existing NSDimension Subclasses",
+          "text": "Extending Existing Dimension Subclasses",
           "anchor": "1891929"
         },
         {
@@ -1673,15 +1708,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Alternatively, if a custom unit is used extensively throughout an app, consider extending the corresponding "
+              "text": "Alternatively, if you use a custom unit extensively throughout an app, consider extending the corresponding "
             },
             {
-              "type": "codeVoice",
-              "code": "NSDimension"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdimension"
             },
             {
               "type": "text",
-              "text": " subclass and adding a class method."
+              "text": " subclass and adding a static variable."
             }
           ]
         },
@@ -1690,7 +1726,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "For example, speed can be measured in furlongs per fortnight (1 fur/ftn = 201.168 m / 1,209,600 s). If an app makes frequent use of this unit, you can extend "
+              "text": "For example, a measurement of speed can be furlongs per fortnight (1 fur/ftn = 201.168 m / 1,209,600 s). If an app makes frequent use of this unit, you can extend "
             },
             {
               "type": "reference",
@@ -1707,7 +1743,7 @@
             },
             {
               "type": "text",
-              "text": " class method for convenient access as follows:"
+              "text": " static variable for convenient access as follows:"
             }
           ]
         },
@@ -1734,7 +1770,7 @@
         {
           "level": 4,
           "type": "heading",
-          "text": "Creating a Custom NSDimension Subclass",
+          "text": "Creating a Custom Dimension Subclass",
           "anchor": "1841407"
         },
         {
@@ -1745,8 +1781,9 @@
               "text": "You can create a new subclass of "
             },
             {
-              "type": "codeVoice",
-              "code": "NSDimension"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdimension"
             },
             {
               "type": "text",
@@ -1759,7 +1796,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "For example, the Foundation framework does not define any units for radioactivity. Radioactivity is the process by which the nucleus of an atom emits radiation. The SI unit of measure for radioactivity is the becquerel (Bq), which is defined as the quantity of radioactive material in which one nucleus decays per second (1 Bq =  1 s"
+              "text": "For example, the Foundation framework doesn’t define any units for radioactivity. Radioactivity is the process by which the nucleus of an atom emits radiation. The SI unit of measure for radioactivity is the becquerel (Bq), which is the quantity of radioactive material in which one nucleus decays per second (1 Bq = 1 s"
             },
             {
               "type": "superscript",
@@ -1837,12 +1874,17 @@
           "type": "paragraph",
           "inlineContent": [
             {
-              "type": "codeVoice",
-              "code": "NSDimension"
+              "type": "text",
+              "text": "The system provides "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdimension"
             },
             {
               "type": "text",
-              "text": " is intended for subclassing. Although the subclasses listed in "
+              "text": " for subclassing. Although the subclasses listed in "
             },
             {
               "type": "reference",
@@ -1893,7 +1935,7 @@
             },
             {
               "type": "text",
-              "text": " method designating the base unit, relative to which any additional units are defined."
+              "text": " method designating the base unit, relative to which you define any additional units."
             }
           ]
         },
@@ -1902,7 +1944,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You should also implement a class method named for the base unit itself, which may be used interchangeably. For example, the "
+              "text": "You must also implement a class method named for the base unit itself, to use interchangeably. For example, the "
             },
             {
               "type": "reference",
@@ -1916,11 +1958,11 @@
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitilluminance/1888742-baseunit"
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdimension/1690740-baseunit"
             },
             {
               "type": "text",
-              "text": " in terms of the lux (lx), and provides a corresponding "
+              "text": " in terms of the lux (lx) and provides a corresponding "
             },
             {
               "type": "reference",
@@ -1953,19 +1995,21 @@
             },
             {
               "type": "text",
-              "text": ", you only need to create a custom subclass of "
+              "text": ", you need to create a custom subclass of "
             },
             {
-              "type": "codeVoice",
-              "code": "NSDimension"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdimension"
             },
             {
               "type": "text",
-              "text": " if a unit of the desired dimension is not yet defined. You can define a custom unit for an existing "
+              "text": " only if you or the system haven’t defined a unit of the desired dimension. You can define a custom unit for an existing "
             },
             {
-              "type": "codeVoice",
-              "code": "NSDimension"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdimension"
             },
             {
               "type": "text",
@@ -1986,7 +2030,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

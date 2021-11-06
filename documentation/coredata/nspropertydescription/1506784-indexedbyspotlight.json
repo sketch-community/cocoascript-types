@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A Boolean value that indicates whether the property should be indexed by Spotlight."
+      "text": "A Boolean value that indicates whether Core Data adds the property’s value to the Core Spotlight index."
     }
   ],
   "documentVersion": 0,
@@ -41,35 +41,43 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.6",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSPropertyDescription(py)indexedBySpotlight",
+    "parent": {
+      "title": "NSPropertyDescription"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -142,19 +150,23 @@
       "role": "symbol",
       "url": "/documentation/objectivec/yes"
     },
-    "doc://com.apple.documentation/documentation/objectivec/no": {
-      "title": "NO",
+    "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897197-attributesetforobject": {
+      "title": "attributeSetForObject:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897197-attributesetforobject",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/objectivec/no"
-    },
-    "devLink-1736698": {
-      "identifier": "devLink-1736698",
-      "type": "link",
-      "title": "Core Data Spotlight Integration Programming Guide",
-      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/SpotlightCoreData/Introduction/introSpotlightCoreData.html#//apple_ref/doc/uid/TP40008065"
+      "url": "/documentation/coredata/nscoredatacorespotlightdelegate/2897197-attributesetforobject",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "attributeSetForObject:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nspropertydescription/1506784-indexedbyspotlight": {
       "title": "indexedBySpotlight",
@@ -166,7 +178,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the property should be indexed by Spotlight."
+          "text": "A Boolean value that indicates whether Core Data adds the property’s value to the Core Spotlight index."
         }
       ]
     },
@@ -180,7 +192,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the property data should be written out in an external record file corresponding to the managed object."
+          "text": "A Boolean value that indicates whether to write the property’s data in an external record file that corresponds to the managed object."
         }
       ],
       "deprecated": true
@@ -238,6 +250,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -256,57 +269,56 @@
           "type": "heading"
         },
         {
-          "type": "paragraph",
-          "inlineContent": [
+          "type": "aside",
+          "content": [
             {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-            },
-            {
-              "type": "text",
-              "text": " if the property should be indexed by Spotlight, otherwise "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
-            },
-            {
-              "type": "text",
-              "text": ". For additional information, see "
-            },
-            {
-              "type": "link",
-              "title": "Core Data Spotlight Integration Programming Guide",
-              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/SpotlightCoreData/Introduction/introSpotlightCoreData.html#//apple_ref/doc/uid/TP40008065"
-            },
-            {
-              "type": "text",
-              "text": "."
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If you set this property to "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+                },
+                {
+                  "type": "text",
+                  "text": " for a property description that describes a relationship, you must override "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897197-attributesetforobject"
+                },
+                {
+                  "type": "text",
+                  "text": " in your Core Spotlight delegate and return the necessary set of attributes. Core Data doesn’t automatically infer indexable information for relationships."
+                }
+              ]
             }
-          ]
-        },
-        {
-          "level": 3,
-          "type": "heading",
-          "text": "Special Considerations",
-          "anchor": "1776531"
+          ],
+          "style": "important"
         },
         {
           "type": "paragraph",
           "inlineContent": [
             {
               "type": "text",
-              "text": "This property has no effect on iOS."
+              "text": "You can also set this property using the Index in Spotlight attribute in the Attributes inspector of the Core Data model editor. "
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

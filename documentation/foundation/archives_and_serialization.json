@@ -30,8 +30,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -226,7 +226,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nssecureunarchivefromdatatransformer",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nssecureunarchivefromdatatransformer"
+      "url": "/documentation/foundation/nssecureunarchivefromdatatransformer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value transformer that converts data to and from classes that support secure coding."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsarchiver": {
       "title": "NSArchiver",
@@ -311,7 +317,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Persistently store domain-scoped pieces of information used to configure your app."
+          "text": "Persistently store domain-scoped pieces of information for configuring your app."
         }
       ]
     },
@@ -339,7 +345,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Manage files and key-value data that are automatically synchronized among a user's iCloud devices."
+          "text": "Manage files and key-value data that automatically synchronize among a user's iCloud devices."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/optimizing_app_data_for_icloud_backup": {
+      "title": "Optimizing App Data for iCloud Backup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/optimizing_app_data_for_icloud_backup",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/foundation/optimizing_app_data_for_icloud_backup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Minimize the space and the amount of time that iCloud Backup requires for your app data."
         }
       ]
     },
@@ -351,24 +371,15 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "First Steps",
+      "title": "Essentials",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nscoding",
         "doc://com.apple.documentation/documentation/foundation/nssecurecoding"
-      ]
+      ],
+      "anchor": "2877987"
     },
     {
       "kind": "taskGroup",
@@ -376,21 +387,24 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/using_json_with_custom_types",
         "doc://com.apple.documentation/documentation/foundation/nsjsonserialization"
-      ]
+      ],
+      "anchor": "2877991"
     },
     {
       "kind": "taskGroup",
       "title": "Property Lists",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nspropertylistserialization"
-      ]
+      ],
+      "anchor": "2877990"
     },
     {
       "kind": "taskGroup",
       "title": "XML",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/xml_processing_and_modeling"
-      ]
+      ],
+      "anchor": "2877992"
     },
     {
       "kind": "taskGroup",
@@ -402,7 +416,8 @@
         "doc://com.apple.documentation/documentation/foundation/nskeyedunarchiverdelegate",
         "doc://com.apple.documentation/documentation/foundation/nscoder",
         "doc://com.apple.documentation/documentation/foundation/nssecureunarchivefromdatatransformer"
-      ]
+      ],
+      "anchor": "2877988"
     },
     {
       "kind": "taskGroup",
@@ -411,7 +426,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsarchiver",
         "doc://com.apple.documentation/documentation/foundation/nsunarchiver",
         "doc://com.apple.documentation/documentation/foundation/1442566-nxreadnsobjectfromcoder"
-      ]
+      ],
+      "anchor": "2877989"
     }
   ],
   "seeAlsoSections": [
@@ -420,14 +436,15 @@
         "doc://com.apple.documentation/documentation/foundation/file_system",
         "doc://com.apple.documentation/documentation/foundation/preferences",
         "doc://com.apple.documentation/documentation/foundation/spotlight",
-        "doc://com.apple.documentation/documentation/foundation/icloud"
+        "doc://com.apple.documentation/documentation/foundation/icloud",
+        "doc://com.apple.documentation/documentation/foundation/optimizing_app_data_for_icloud_backup"
       ],
       "title": "Files and Data Persistence",
       "generated": true
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

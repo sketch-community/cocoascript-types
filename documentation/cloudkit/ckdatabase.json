@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A conduit for accessing and performing operations on the data of an app container."
+      "text": "A collection of record zones and subscriptions."
     }
   ],
   "documentVersion": 0,
@@ -33,35 +33,40 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKDatabase",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -502,7 +507,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An encapsulation of content for an app."
+          "text": "A conduit to your app’s databases."
         }
       ]
     },
@@ -516,21 +521,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A conduit for accessing and performing operations on the data of an app container."
+          "text": "A collection of record zones and subscriptions."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/database_operations": {
-      "title": "Database Operations",
+    "doc://com.apple.documentation/documentation/cloudkit/ckoperationgroup": {
+      "title": "CKOperationGroup",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/database_operations",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/cloudkit/database_operations",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckoperationgroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckoperationgroup",
       "abstract": [
         {
           "type": "text",
-          "text": "Operations for looking up users and configuring the app icon’s badge."
+          "text": "An explicit association between two or more operations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecordvalue": {
+      "title": "CKRecordValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecordvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The protocol that provides strong type-checking for objects that the CloudKit framework stores on the server."
         }
       ]
     },
@@ -558,14 +577,16 @@
       "title": "Searching for Records",
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckdatabase/1449127-performquery"
-      ]
+      ],
+      "anchor": "1666224"
     },
     {
       "kind": "taskGroup",
       "title": "Executing Operations in the Database",
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckdatabase/1449116-addoperation"
-      ]
+      ],
+      "anchor": "1666253"
     },
     {
       "kind": "taskGroup",
@@ -574,7 +595,8 @@
         "doc://com.apple.documentation/documentation/cloudkit/ckdatabase/1449126-fetchrecordwithid",
         "doc://com.apple.documentation/documentation/cloudkit/ckdatabase/1449114-saverecord",
         "doc://com.apple.documentation/documentation/cloudkit/ckdatabase/1449122-deleterecordwithid"
-      ]
+      ],
+      "anchor": "1666283"
     },
     {
       "kind": "taskGroup",
@@ -584,7 +606,8 @@
         "doc://com.apple.documentation/documentation/cloudkit/ckdatabase/1449104-fetchrecordzonewithid",
         "doc://com.apple.documentation/documentation/cloudkit/ckdatabase/1449108-saverecordzone",
         "doc://com.apple.documentation/documentation/cloudkit/ckdatabase/1449118-deleterecordzonewithid"
-      ]
+      ],
+      "anchor": "1666320"
     },
     {
       "kind": "taskGroup",
@@ -594,7 +617,8 @@
         "doc://com.apple.documentation/documentation/cloudkit/ckdatabase/1449106-fetchsubscriptionwithid",
         "doc://com.apple.documentation/documentation/cloudkit/ckdatabase/1449102-savesubscription",
         "doc://com.apple.documentation/documentation/cloudkit/ckdatabase/1449120-deletesubscriptionwithid"
-      ]
+      ],
+      "anchor": "1666380"
     },
     {
       "kind": "taskGroup",
@@ -602,16 +626,18 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckdatabase/1640398-databasescope",
         "doc://com.apple.documentation/documentation/cloudkit/ckdatabasescope"
-      ]
+      ],
+      "anchor": "2530664"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckcontainer",
-        "doc://com.apple.documentation/documentation/cloudkit/database_operations"
+        "doc://com.apple.documentation/documentation/cloudkit/ckoperationgroup",
+        "doc://com.apple.documentation/documentation/cloudkit/ckrecordvalue"
       ],
-      "title": "Database Management",
+      "title": "Core Objects",
       "generated": true
     }
   ],
@@ -649,6 +675,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -837,7 +864,7 @@
             },
             {
               "type": "text",
-              "text": " class, specify the database for executing the operation."
+              "text": " class, specify the database for executing the operation as follows:"
             }
           ]
         },
@@ -934,7 +961,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

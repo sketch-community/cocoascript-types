@@ -2,15 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Passes a "
-    },
-    {
-      "type": "codeVoice",
-      "code": "displayIfNeeded"
-    },
-    {
-      "type": "text",
-      "text": " message down the window’s view hierarchy, thus redrawing all views that need to be displayed, including the frame view that draws the border, title bar, and other peripheral elements."
+      "text": "Passes a display message down the window’s view hierarchy, thus redrawing all views that need displaying."
     }
   ],
   "documentVersion": 0,
@@ -43,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSWindow(im)displayIfNeeded",
+    "parent": {
+      "title": "NSWindow"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -118,7 +113,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Passes a display message down the window’s view hierarchy, thus redrawing all views within the window, including the frame view that draws the border, title bar, and other peripheral elements."
+          "text": "Passes a display message down the window’s view hierarchy, thus redrawing all views within the window."
         }
       ],
       "fragments": [
@@ -132,58 +127,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsview/1483360-needsdisplay": {
-      "title": "needsDisplay",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsview/1483360-needsdisplay",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsview/1483360-needsdisplay",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that determines whether the view needs to be redrawn before being displayed."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nswindow/1419262-autodisplay": {
-      "title": "autodisplay",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419262-autodisplay",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nswindow/1419262-autodisplay",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the window automatically displays views that need to be displayed."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsview/1483566-displayifneeded": {
-      "title": "displayIfNeeded",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsview/1483566-displayifneeded",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsview/1483566-displayifneeded",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Displays the view and all its subviews if any part of the view has been marked as needing display."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "displayIfNeeded"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/appkit/nswindow/1419096-displayifneeded": {
       "title": "displayIfNeeded",
       "type": "topic",
@@ -194,15 +137,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Passes a "
-        },
-        {
-          "type": "codeVoice",
-          "code": "displayIfNeeded"
-        },
-        {
-          "type": "text",
-          "text": " message down the window’s view hierarchy, thus redrawing all views that need to be displayed, including the frame view that draws the border, title bar, and other peripheral elements."
+          "text": "Passes a display message down the window’s view hierarchy, thus redrawing all views that need displaying."
         }
       ],
       "fragments": [
@@ -261,15 +196,6 @@
       ],
       "title": "Drawing Windows",
       "generated": true
-    },
-    {
-      "title": "Related Documentation",
-      "generated": false,
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsview/1483360-needsdisplay",
-        "doc://com.apple.documentation/documentation/appkit/nswindow/1419262-autodisplay",
-        "doc://com.apple.documentation/documentation/appkit/nsview/1483566-displayifneeded"
-      ]
     }
   ],
   "primaryContentSections": [
@@ -322,7 +248,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This method is useful when you want to modify some number of views and then display only the ones that were modified."
+              "text": "This method includes the frame view that draws the border, title bar, and other peripheral elements. It’s useful when you want to modify some number of views and then display only the ones that you modified."
             }
           ]
         },
@@ -339,7 +265,7 @@
             },
             {
               "type": "text",
-              "text": " objects normally record which of their views need display and display them automatically on each pass through the event loop."
+              "text": " objects normally record which of their views need displaying and display them automatically on each pass through the event loop."
             }
           ]
         }
@@ -347,7 +273,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

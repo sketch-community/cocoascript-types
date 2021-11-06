@@ -35,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "4.3",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.3",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVPlayerItemAccessLogEvent",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -409,7 +414,8 @@
           "type": "text",
           "text": "The maximum observed segment download bit rate."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritemaccesslogevent/1390173-observedminbitrate": {
       "title": "observedMinBitrate",
@@ -423,7 +429,8 @@
           "type": "text",
           "text": "The minimum observed segment download bit rate."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritemaccesslogevent/1390645-switchbitrate": {
       "title": "switchBitrate",
@@ -621,16 +628,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -661,7 +658,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritemaccesslogevent/1387370-transferduration",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritemaccesslogevent/1387305-numberofbytestransferred",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritemaccesslogevent/1388357-numberofmediarequests"
-      ]
+      ],
+      "anchor": "1668770"
     },
     {
       "kind": "taskGroup",
@@ -678,7 +676,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritemaccesslogevent/1588090-numberofsegmentsdownloaded",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritemaccesslogevent/1388147-segmentsdownloadedduration",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritemaccesslogevent/1389213-downloadoverdue"
-      ]
+      ],
+      "anchor": "1668885"
     },
     {
       "kind": "taskGroup",
@@ -694,6 +693,7 @@
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritemaccesslogevent/1643592-averagevideobitrate",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritemaccesslogevent/1872546-indicatedaveragebitrate"
       ],
+      "anchor": "1669051",
       "abstract": [
         {
           "type": "text",
@@ -749,6 +749,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -804,7 +805,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

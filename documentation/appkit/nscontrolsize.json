@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Constants for specifying a cell’s size. "
+      "text": "A constant for specifying a cell’s size. "
     }
   ],
   "documentVersion": 0,
@@ -41,15 +41,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@T@NSControlSize",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -124,6 +124,62 @@
       "role": "symbol",
       "url": "/documentation/objectivec/nsuinteger"
     },
+    "doc://com.apple.documentation/documentation/appkit/nscontrolsize/nscontrolsizemini": {
+      "title": "NSControlSizeMini",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrolsize/nscontrolsizemini",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscontrolsize/nscontrolsizemini",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The smallest control size."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscontrolsize/nscontrolsizesmall": {
+      "title": "NSControlSizeSmall",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrolsize/nscontrolsizesmall",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscontrolsize/nscontrolsizesmall",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A size smaller than the default control size."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscontrolsize/nscontrolsizeregular": {
+      "title": "NSControlSizeRegular",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrolsize/nscontrolsizeregular",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscontrolsize/nscontrolsizeregular",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The default control size."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscontrolsize/nscontrolsizelarge": {
+      "title": "NSControlSizeLarge",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrolsize/nscontrolsizelarge",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscontrolsize/nscontrolsizelarge",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A size larger than the default control size."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nsregularcontrolsize": {
       "title": "NSRegularControlSize",
       "type": "topic",
@@ -134,7 +190,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The control is sized as regular."
+          "text": "The default control size."
         }
       ],
       "deprecated": true
@@ -149,7 +205,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The control has a smaller size. "
+          "text": "A size that is smaller than the default control size."
         }
       ],
       "deprecated": true
@@ -177,38 +233,6 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/appkit/nscontrolsize/nscontrolsizemini": {
-      "title": "NSControlSizeMini",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrolsize/nscontrolsizemini",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nscontrolsize/nscontrolsizemini"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nscontrolsize/nscontrolsizeregular": {
-      "title": "NSControlSizeRegular",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrolsize/nscontrolsizeregular",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nscontrolsize/nscontrolsizeregular"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nscontrolsize/nscontrolsizesmall": {
-      "title": "NSControlSizeSmall",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrolsize/nscontrolsizesmall",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nscontrolsize/nscontrolsizesmall"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nscontrolsize/nscontrolsizelarge": {
-      "title": "NSControlSizeLarge",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrolsize/nscontrolsizelarge",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nscontrolsize/nscontrolsizelarge"
-    },
     "doc://com.apple.documentation/documentation/appkit/nscontrol/1428871-controlsize": {
       "title": "controlSize",
       "type": "topic",
@@ -233,7 +257,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants for specifying a cell’s size. "
+          "text": "A constant for specifying a cell’s size. "
         }
       ]
     },
@@ -271,7 +295,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Resizes the receiver’s frame so that it is the minimum size needed to contain its cell."
+          "text": "Resizes the receiver’s frame so that it’s the minimum size needed to contain its cell."
         }
       ],
       "fragments": [
@@ -296,22 +320,17 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Constants",
+      "title": "Sizing Controls",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nscontrolsize/nscontrolsizemini",
+        "doc://com.apple.documentation/documentation/appkit/nscontrolsize/nscontrolsizesmall",
+        "doc://com.apple.documentation/documentation/appkit/nscontrolsize/nscontrolsizeregular",
+        "doc://com.apple.documentation/documentation/appkit/nscontrolsize/nscontrolsizelarge",
         "doc://com.apple.documentation/documentation/appkit/nsregularcontrolsize",
         "doc://com.apple.documentation/documentation/appkit/nssmallcontrolsize",
         "doc://com.apple.documentation/documentation/appkit/nsminicontrolsize"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Enumeration Cases",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nscontrolsize/nscontrolsizemini",
-        "doc://com.apple.documentation/documentation/appkit/nscontrolsize/nscontrolsizeregular",
-        "doc://com.apple.documentation/documentation/appkit/nscontrolsize/nscontrolsizesmall",
-        "doc://com.apple.documentation/documentation/appkit/nscontrolsize/nscontrolsizelarge"
-      ]
+      ],
+      "anchor": "2558975"
     }
   ],
   "seeAlsoSections": [
@@ -422,7 +441,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

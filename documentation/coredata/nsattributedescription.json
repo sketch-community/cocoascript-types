@@ -39,35 +39,40 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSAttributeDescription",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -132,20 +137,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498291-attributetype": {
-      "title": "attributeType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498291-attributetype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsattributedescription/1498291-attributetype",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The type of the attribute."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498309-attributevalueclassname": {
       "title": "attributeValueClassName",
       "type": "topic",
@@ -156,49 +147,49 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the class used to represent the attribute."
+          "text": "The class name that represents the attribute’s value."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498302-defaultvalue": {
-      "title": "defaultValue",
+    "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498291-attributetype": {
+      "title": "attributeType",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498302-defaultvalue",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498291-attributetype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsattributedescription/1498302-defaultvalue",
+      "url": "/documentation/coredata/nsattributedescription/1498291-attributetype",
       "abstract": [
         {
           "type": "text",
-          "text": "The default value of the attribute."
+          "text": "The attribute’s type."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498310-versionhash": {
-      "title": "versionHash",
+    "doc://com.apple.documentation/documentation/coredata/nsattributetype": {
+      "title": "NSAttributeType",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498310-versionhash",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsattributetype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsattributedescription/1498310-versionhash",
+      "url": "/documentation/coredata/nsattributetype",
       "abstract": [
         {
           "type": "text",
-          "text": "The version hash for the attribute."
+          "text": "The types of attribute that Core Data supports."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498305-valuetransformername": {
-      "title": "valueTransformerName",
+    "doc://com.apple.documentation/documentation/coredata/nsattributedescription/3746827-allowscloudencryption": {
+      "title": "allowsCloudEncryption",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498305-valuetransformername",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsattributedescription/3746827-allowscloudencryption",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsattributedescription/1498305-valuetransformername",
+      "url": "/documentation/coredata/nsattributedescription/3746827-allowscloudencryption",
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the transformer used to transform the attribute value."
+          "text": "A Boolean value that determines whether to encrypt the attribute’s value."
         }
       ]
     },
@@ -216,6 +207,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498302-defaultvalue": {
+      "title": "defaultValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498302-defaultvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsattributedescription/1498302-defaultvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The default value of the attribute."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/coredata/nsattributedescription/3180042-preservesvalueinhistoryondeletio": {
       "title": "preservesValueInHistoryOnDeletion",
       "type": "topic",
@@ -230,17 +235,45 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nsattributetype": {
-      "title": "NSAttributeType",
+    "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498305-valuetransformername": {
+      "title": "valueTransformerName",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsattributetype",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498305-valuetransformername",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsattributetype",
+      "url": "/documentation/coredata/nsattributedescription/1498305-valuetransformername",
       "abstract": [
         {
           "type": "text",
-          "text": "The possible types of Core Data attributes."
+          "text": "The name of the transformer to use for the attribute value."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498310-versionhash": {
+      "title": "versionHash",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498310-versionhash",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsattributedescription/1498310-versionhash",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The version hash for the attribute."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsattributedescription/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsattributedescription/deprecated_symbols",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coredata/nsattributedescription/deprecated_symbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Review unsupported symbols and their replacements."
         }
       ]
     },
@@ -307,53 +340,41 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Getting and Setting Type Information",
+      "title": "Managing the Attribute’s Type",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498309-attributevalueclassname",
         "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498291-attributetype",
-        "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498309-attributevalueclassname"
-      ]
+        "doc://com.apple.documentation/documentation/coredata/nsattributetype"
+      ],
+      "anchor": "1651554"
     },
     {
       "kind": "taskGroup",
-      "title": "Getting and Setting the Default Value",
+      "title": "Managing the Attribute’s Behavior",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498302-defaultvalue"
-      ]
+        "doc://com.apple.documentation/documentation/coredata/nsattributedescription/3746827-allowscloudencryption",
+        "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498295-allowsexternalbinarydatastorage",
+        "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498302-defaultvalue",
+        "doc://com.apple.documentation/documentation/coredata/nsattributedescription/3180042-preservesvalueinhistoryondeletio",
+        "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498305-valuetransformername"
+      ],
+      "anchor": "3786943"
     },
     {
       "kind": "taskGroup",
-      "title": "Supporting Versioning",
+      "title": "Getting Version Information",
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498310-versionhash"
-      ]
+      ],
+      "anchor": "1651617"
     },
     {
       "kind": "taskGroup",
-      "title": "Transforming the Attribute Value",
+      "title": "Deprecated",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498305-valuetransformername"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Specifying External Binary Storage",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498295-allowsexternalbinarydatastorage"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Tracking Persistent History",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nsattributedescription/3180042-preservesvalueinhistoryondeletio"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Defining Attribute Types",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nsattributetype"
-      ]
+        "doc://com.apple.documentation/documentation/coredata/nsattributedescription/deprecated_symbols"
+      ],
+      "anchor": "1651697"
     }
   ],
   "seeAlsoSections": [
@@ -402,6 +423,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -513,7 +535,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

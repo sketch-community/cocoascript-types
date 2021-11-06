@@ -17,7 +17,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_storage",
+        "doc://com.apple.documentation/documentation/uikit/textkit",
         "doc://com.apple.documentation/documentation/uikit/nsmutableparagraphstyle"
       ]
     ]
@@ -41,15 +41,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSMutableParagraphStyle(py)tighteningFactorForTruncation",
+    "parent": {
+      "title": "NSMutableParagraphStyle"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,10 +117,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/text_storage": {
-      "title": "Text Storage",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage",
-      "url": "/documentation/uikit/text_storage",
+    "doc://com.apple.documentation/documentation/uikit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit",
+      "url": "/documentation/uikit/textkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -150,6 +153,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/nsmutableparagraphstyle/3667462-linebreakstrategy": {
+      "title": "lineBreakStrategy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsmutableparagraphstyle/3667462-linebreakstrategy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsmutableparagraphstyle/3667462-linebreakstrategy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The strategies that the text system may use to break lines while laying out the paragraph."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/nsmutableparagraphstyle/1535553-hyphenationfactor": {
       "title": "hyphenationFactor",
       "type": "topic",
@@ -163,6 +180,14 @@
           "text": "The paragraph’s threshold for hyphenation."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsmutableparagraphstyle/3809912-usesdefaulthyphenation": {
+      "title": "usesDefaultHyphenation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsmutableparagraphstyle/3809912-usesdefaulthyphenation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsmutableparagraphstyle/3809912-usesdefaulthyphenation"
     },
     "doc://com.apple.documentation/documentation/appkit/nsmutableparagraphstyle/1531383-tighteningfactorfortruncation": {
       "title": "tighteningFactorForTruncation",
@@ -204,10 +229,12 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nsmutableparagraphstyle/1535126-linebreakmode",
+        "doc://com.apple.documentation/documentation/uikit/nsmutableparagraphstyle/3667462-linebreakstrategy",
         "doc://com.apple.documentation/documentation/uikit/nsmutableparagraphstyle/1535553-hyphenationfactor",
+        "doc://com.apple.documentation/documentation/uikit/nsmutableparagraphstyle/3809912-usesdefaulthyphenation",
         "doc://com.apple.documentation/documentation/uikit/nsmutableparagraphstyle/1534136-allowsdefaulttighteningfortrunca"
       ],
-      "title": "Setting Line Break Information",
+      "title": "Setting Line-Break Information",
       "generated": true
     },
     {
@@ -289,7 +316,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

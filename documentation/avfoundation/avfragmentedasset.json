@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An asset whose duration the system can extend without modifying its existing media data."
+      "text": "An asset with a duration that the system can extend without modifying its existing media data."
     }
   ],
   "documentVersion": 0,
@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "12.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "12.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "12.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVFragmentedAsset",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -123,7 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that periodically checks whether the system added new fragments to a fragmented asset."
+          "text": "An object that periodically checks whether the system adds new fragments to a fragmented asset."
         }
       ]
     },
@@ -211,6 +216,78 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avfragmentedasset/3746532-loadtrackwithtrackid": {
+      "title": "loadTrackWithTrackID:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfragmentedasset/3746532-loadtrackwithtrackid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avfragmentedasset/3746532-loadtrackwithtrackid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Loads a track that contains the specified identifier."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadTrackWithTrackID:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avfragmentedasset/3746534-loadtrackswithmediatype": {
+      "title": "loadTracksWithMediaType:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfragmentedasset/3746534-loadtrackswithmediatype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avfragmentedasset/3746534-loadtrackswithmediatype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Loads tracks that contain media of a specified type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadTracksWithMediaType:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avfragmentedasset/3746533-loadtrackswithmediacharacteristi": {
+      "title": "loadTracksWithMediaCharacteristic:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfragmentedasset/3746533-loadtrackswithmediacharacteristi",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avfragmentedasset/3746533-loadtrackswithmediacharacteristi",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Loads tracks that contain media of a specified characteristic."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadTracksWithMediaCharacteristic:completionHandler:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avfragmentedasset/1387937-tracks": {
       "title": "tracks",
       "type": "topic",
@@ -221,7 +298,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The collection of tracks contained by the asset."
+          "text": "The tracks an asset contains."
         }
       ]
     },
@@ -235,7 +312,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the track associated with a specified track identifier."
+          "text": "Returns a track that contains the specified identifier."
         }
       ],
       "fragments": [
@@ -259,7 +336,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an array of asset tracks associated with an asset for the specified media type."
+          "text": "Returns tracks that present media of a specified type."
         }
       ],
       "fragments": [
@@ -283,7 +360,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an array of asset tracks associated with an asset for the specified characteristic."
+          "text": "Returns tracks that present media of a specified characteristic."
         }
       ],
       "fragments": [
@@ -307,7 +384,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An asset whose duration the system can extend without modifying its existing media data."
+          "text": "An asset with a duration that the system can extend without modifying its existing media data."
         }
       ]
     },
@@ -343,7 +420,18 @@
       "title": "Creating a Fragmented Asset",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avfragmentedasset/1508700-fragmentedassetwithurl"
-      ]
+      ],
+      "anchor": "3645393"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Loading Tracks",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avfragmentedasset/3746532-loadtrackwithtrackid",
+        "doc://com.apple.documentation/documentation/avfoundation/avfragmentedasset/3746534-loadtrackswithmediatype",
+        "doc://com.apple.documentation/documentation/avfoundation/avfragmentedasset/3746533-loadtrackswithmediacharacteristi"
+      ],
+      "anchor": "3839381"
     },
     {
       "kind": "taskGroup",
@@ -353,6 +441,13 @@
         "doc://com.apple.documentation/documentation/avfoundation/avfragmentedasset/1385712-trackwithtrackid",
         "doc://com.apple.documentation/documentation/avfoundation/avfragmentedasset/1387253-trackswithmediatype",
         "doc://com.apple.documentation/documentation/avfoundation/avfragmentedasset/1387259-trackswithmediacharacteristic"
+      ],
+      "anchor": "3030029",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Prefer loading tracks asynchronously using the symbols in Loading Tracks."
+        }
       ]
     }
   ],
@@ -401,6 +496,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -423,7 +519,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "QuickTime movie files and MPEG-4 files may indicate, using an "
+              "text": "By using an "
             },
             {
               "type": "codeVoice",
@@ -439,7 +535,7 @@
             },
             {
               "type": "text",
-              "text": " box, that they accommodate additional fragments. Fragmented assets can also support other media resource types. To determine whether a fragmented asset can monitor the addition of fragments, check the value of its "
+              "text": " box, QuickTime movie files and MPEG-4 files can indicate that they accommodate additional fragments. To determine whether a fragmented asset can monitor the addition of fragments, check the value of its "
             },
             {
               "type": "reference",
@@ -466,7 +562,7 @@
             },
             {
               "type": "text",
-              "text": " to know when the system appends new fragments. While associated with an asset minder, "
+              "text": " to know when the system appends new fragments. When it has an associated asset minder, "
             },
             {
               "type": "reference",
@@ -502,7 +598,7 @@
             },
             {
               "type": "text",
-              "text": ", as discussed in documentation of those notifications."
+              "text": ", as the documentation of those notifications explains."
             }
           ]
         }
@@ -510,7 +606,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A value that indicates how a grouped toolbar item selects its subitems."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -10,9 +16,23 @@
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/mac_catalyst/toolbar",
+        "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
         "doc://com.apple.documentation/documentation/uikit/mac_catalyst",
         "doc://com.apple.documentation/documentation/uikit/mac_catalyst/toolbar"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/mac_catalyst",
+        "doc://com.apple.documentation/documentation/uikit/mac_catalyst/toolbar",
+        "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup"
       ]
     ]
   },
@@ -35,20 +55,20 @@
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@T@NSToolbarItemGroupSelectionMode",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -99,6 +119,20 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup": {
+      "title": "NSToolbarItemGroup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstoolbaritemgroup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A group of subitems in a toolbar item."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit": {
       "title": "UIKit",
       "identifier": "doc://com.apple.documentation/documentation/uikit",
@@ -129,7 +163,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupselectionmode/nstoolbaritemgroupselectionmodemomentary",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstoolbaritemgroupselectionmode/nstoolbaritemgroupselectionmodemomentary"
+      "url": "/documentation/appkit/nstoolbaritemgroupselectionmode/nstoolbaritemgroupselectionmodemomentary",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The system temporarily highlights the select group item when the user selects the item."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupselectionmode/nstoolbaritemgroupselectionmodeselectany": {
       "title": "NSToolbarItemGroupSelectionModeSelectAny",
@@ -137,7 +177,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupselectionmode/nstoolbaritemgroupselectionmodeselectany",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstoolbaritemgroupselectionmode/nstoolbaritemgroupselectionmodeselectany"
+      "url": "/documentation/appkit/nstoolbaritemgroupselectionmode/nstoolbaritemgroupselectionmodeselectany",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The system toggles a highlight on any item selected."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupselectionmode/nstoolbaritemgroupselectionmodeselectone": {
       "title": "NSToolbarItemGroupSelectionModeSelectOne",
@@ -145,7 +191,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupselectionmode/nstoolbaritemgroupselectionmodeselectone",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstoolbaritemgroupselectionmode/nstoolbaritemgroupselectionmodeselectone"
+      "url": "/documentation/appkit/nstoolbaritemgroupselectionmode/nstoolbaritemgroupselectionmodeselectone",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The system displays a highlighted mode on the most recent item selected."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nstoolbaritem": {
       "title": "NSToolbarItem",
@@ -161,27 +213,19 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup": {
-      "title": "NSToolbarItemGroup",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nstoolbaritemgroup",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A group of subitems in a toolbar item."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupcontrolrepresentation": {
       "title": "NSToolbarItemGroupControlRepresentation",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupcontrolrepresentation",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstoolbaritemgroupcontrolrepresentation"
+      "url": "/documentation/appkit/nstoolbaritemgroupcontrolrepresentation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates the display style for a grouped toolbar item."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupselectionmode": {
       "title": "NSToolbarItemGroupSelectionMode",
@@ -189,7 +233,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupselectionmode",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstoolbaritemgroupselectionmode"
+      "url": "/documentation/appkit/nstoolbaritemgroupselectionmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates how a grouped toolbar item selects its subitems."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsmenutoolbaritem": {
       "title": "NSMenuToolbarItem",
@@ -197,7 +247,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsmenutoolbaritem",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsmenutoolbaritem"
+      "url": "/documentation/appkit/nsmenutoolbaritem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A control that presents a menu in a window’s toolbar."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nssearchtoolbaritem": {
       "title": "NSSearchToolbarItem",
@@ -209,7 +265,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A toolbar item that contains a text field optimized for performing text-based searches."
+          "text": "A toolbar item that contains a search field optimized for performing text-based searches."
         }
       ]
     },
@@ -238,12 +294,13 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Enumeration Cases",
+      "title": "Configuring the Toolbar Item’s Group Selection",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupselectionmode/nstoolbaritemgroupselectionmodemomentary",
         "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupselectionmode/nstoolbaritemgroupselectionmodeselectany",
         "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupselectionmode/nstoolbaritemgroupselectionmodeselectone"
-      ]
+      ],
+      "anchor": "3838692"
     }
   ],
   "seeAlsoSections": [
@@ -329,7 +386,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

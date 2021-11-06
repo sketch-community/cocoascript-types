@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Methods to implement on an object that represents content that is intended to be read by users, such as a book or an article. "
+      "text": "Methods to implement for an object that represents content that users read, such as a book or an article. "
     }
   ],
   "documentVersion": 0,
@@ -11,12 +11,12 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit"
       ]
     ]
   },
@@ -39,25 +39,30 @@
       {
         "name": "iOS",
         "introducedAt": "5.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UIAccessibilityReadingContent",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -92,10 +97,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -292,7 +297,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An informal protocol that provides a way to find out whether an assistive technology, such as VoiceOver, is focused on an accessible element."
+          "text": "An informal protocol that provides a way to determine whether an assistive app, such as VoiceOver, has focus on an accessible element."
         }
       ]
     },
@@ -320,7 +325,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Methods to implement on an object that represents content that is intended to be read by users, such as a book or an article. "
+          "text": "Methods to implement for an object that represents content that users read, such as a book or an article. "
         }
       ]
     },
@@ -344,7 +349,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitytextualcontext",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibilitytextualcontext"
+      "url": "/documentation/uikit/uiaccessibilitytextualcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that describe a named context that helps identify and classify the type of text inside an element."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -365,7 +376,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilityreadingcontent/1615171-accessibilityframeforlinenumber",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilityreadingcontent/2865881-accessibilityattributedpageconte",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilityreadingcontent/1615157-accessibilitypagecontent"
-      ]
+      ],
+      "anchor": "1657029"
     }
   ],
   "seeAlsoSections": [
@@ -404,6 +416,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -459,7 +472,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

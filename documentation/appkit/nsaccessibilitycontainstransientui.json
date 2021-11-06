@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A set of methods that support accessibility in a UI that changes dynamically—usually in response to mouse-hover events."
+      "text": "A role-based protocol that declares the minimum interface necessary for an accessibility element to support dynamic UI changes."
     }
   ],
   "documentVersion": 0,
@@ -11,12 +11,14 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos"
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos"
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls"
       ]
     ]
   },
@@ -39,15 +41,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSAccessibilityContainsTransientUI",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -82,13 +84,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls": {
+      "title": "Custom Controls",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/accessibility_for_appkit/custom_controls"
     },
     "doc://com.apple.documentation/documentation/accessibility": {
       "title": "Accessibility",
@@ -97,20 +107,6 @@
       "type": "topic",
       "kind": "symbol",
       "role": "collection"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility": {
-      "title": "NSAccessibility",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The complete list of properties and methods implemented by accessible elements."
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/appkit/1534023-nsaccessibilityelement": {
       "title": "NSAccessibilityElement",
@@ -131,7 +127,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Displays the element’s alternate UI."
+          "text": "Displays the accessibility element’s alternative UI."
         }
       ],
       "fragments": [
@@ -156,7 +152,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns to this element’s original UI."
+          "text": "Returns to the accessibility element’s original UI."
         }
       ],
       "fragments": [
@@ -181,7 +177,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value that determines whether the element’s alternate UI is currently visible."
+          "text": "Returns a Boolean value that determines whether the accessibility element’s alternative UI is currently visible."
         }
       ],
       "fragments": [
@@ -195,34 +191,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos/integrating_accessibility_into_your_app": {
-      "title": "Integrating Accessibility into Your App",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos/integrating_accessibility_into_your_app",
-      "kind": "article",
-      "role": "sampleCode",
-      "url": "/documentation/appkit/accessibility_for_macos/integrating_accessibility_into_your_app",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Make your app more accessible to users with disabilities by adding accessibility features."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accessibility/accessibility_design_for_mac_catalyst": {
-      "title": "Accessibility Design for Mac Catalyst",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accessibility/accessibility_design_for_mac_catalyst",
-      "kind": "article",
-      "role": "sampleCode",
-      "url": "/documentation/accessibility/accessibility_design_for_mac_catalyst",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Improve navigation in your app by using keyboard shortcuts and accessibility containers."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycontainstransientui": {
       "title": "NSAccessibilityContainsTransientUI",
       "type": "topic",
@@ -233,7 +201,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of methods that support accessibility in a UI that changes dynamically—usually in response to mouse-hover events."
+          "text": "A role-based protocol that declares the minimum interface necessary for an accessibility element to support dynamic UI changes."
         }
       ]
     },
@@ -258,23 +226,13 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Supporting Transient UI",
+      "title": "Supporting Accessibility",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycontainstransientui/1535134-accessibilityperformshowalternat",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycontainstransientui/1529235-accessibilityperformshowdefaultu",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycontainstransientui/1526272-isaccessibilityalternateuivisibl"
-      ]
-    }
-  ],
-  "seeAlsoSections": [
-    {
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos/integrating_accessibility_into_your_app",
-        "doc://com.apple.documentation/documentation/accessibility/accessibility_design_for_mac_catalyst",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
       ],
-      "title": "Essentials",
-      "generated": true
+      "anchor": "1674569"
     }
   ],
   "primaryContentSections": [
@@ -319,24 +277,25 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The "
-            },
-            {
-              "type": "codeVoice",
-              "code": "NSAccessibilityContainsTransientUI"
-            },
+              "text": "Use this protocol to support accessibility in a UI that changes dynamically—usually in response to mouse-hover events. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
             {
               "type": "text",
-              "text": " protocol should be used in addition to another role-based protocol. See "
+              "text": "Use this protocol in addition to another role-based protocol. See "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
+              "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/custom_controls"
             },
             {
               "type": "text",
-              "text": " for a list of role-based protocols."
+              "text": "."
             }
           ]
         },
@@ -348,16 +307,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "This protocol requires an explicit implementation of all the required methods that it declares (including all the explicitly required methods of any protocol it inherits from). Any class adopting this protocol must implement all of these methods. You can only inherit these methods from ancestors that also adopt a protocol that explicitly requires them."
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "In practice, this means that the compiler may force you to override some of the methods that your ancestors have already implemented. Simply follow the compiler’s warnings, and reimplement these methods as needed."
+                  "text": "Any class that adopts this protocol must implement all of its methods, and the required methods of any protocol it inherits from. The compiler may require you to override some methods that your ancestors have already implemented. Simply follow the compiler’s warnings, and reimplement these methods as necessary."
                 }
               ]
             }
@@ -369,7 +319,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

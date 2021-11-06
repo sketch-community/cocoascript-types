@@ -2,12 +2,16 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An object that describes a many-to-one relationship between records in a database."
+      "text": "A relationship between two records in a record zone."
     }
   ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/cloudkit"
+      ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/cloudkit",
@@ -34,35 +38,40 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKReference",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -99,11 +108,17 @@
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckrecord": {
       "title": "CKRecord",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord",
-      "url": "/documentation/cloudkit/ckrecord",
       "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord",
       "kind": "symbol",
-      "role": "symbol"
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecord",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A collection of key-value pairs that store your app’s data."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckreferenceaction/ckreferenceactiondeleteself": {
       "title": "CKReferenceActionDeleteSelf",
@@ -291,79 +306,45 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640527-parent": {
-      "title": "parent",
+    "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database": {
+      "title": "Designing and Creating a CloudKit Database",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640527-parent",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckrecord/1640527-parent",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/cloudkit/designing_and_creating_a_cloudkit_database",
       "abstract": [
         {
           "type": "text",
-          "text": "A reference to the parent record of this record."
+          "text": "Create a schema to store your app’s objects as records in iCloud using CloudKit."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640378-share": {
-      "title": "share",
+    "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_the_cloudkit_database_app": {
+      "title": "Managing iCloud Containers with the CloudKit Database App",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640378-share",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckrecord/1640378-share",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_the_cloudkit_database_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/cloudkit/managing_icloud_containers_with_the_cloudkit_database_app",
       "abstract": [
         {
           "type": "text",
-          "text": "A reference to the share object that determines the share status of the record. "
+          "text": "Inspect and modify the schema and data for your app's iCloud container."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1690507-setparentreferencefromrecord": {
-      "title": "setParentReferenceFromRecord:",
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecordzone": {
+      "title": "CKRecordZone",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1690507-setparentreferencefromrecord",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordzone",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckrecord/1690507-setparentreferencefromrecord",
+      "url": "/documentation/cloudkit/ckrecordzone",
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and sets a reference object for a parent from its record."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setParentReferenceFromRecord:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1690508-setparentreferencefromrecordid": {
-      "title": "setParentReferenceFromRecordID:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1690508-setparentreferencefromrecordid",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckrecord/1690508-setparentreferencefromrecordid",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Creates and sets a reference object for a parent from the parent’s record ID."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setParentReferenceFromRecordID:"
+          "text": "A database partition that contains related records."
         }
       ]
     },
@@ -377,7 +358,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that describes a many-to-one relationship between records in a database."
+          "text": "A relationship between two records in a record zone."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckasset": {
+      "title": "CKAsset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckasset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckasset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An external file that belongs to a record."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/integrating_a_text-based_schema_into_your_workflow": {
+      "title": "Integrating a Text-Based Schema into Your Workflow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/integrating_a_text-based_schema_into_your_workflow",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/cloudkit/integrating_a_text-based_schema_into_your_workflow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Define and update your schema with the CloudKit Schema Language."
         }
       ]
     },
@@ -415,7 +424,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckreference/1515280-initwithrecordid",
         "doc://com.apple.documentation/documentation/cloudkit/ckreference/1515312-initwithrecord"
-      ]
+      ],
+      "anchor": "1669710"
     },
     {
       "kind": "taskGroup",
@@ -424,18 +434,21 @@
         "doc://com.apple.documentation/documentation/cloudkit/ckreference/1514900-referenceaction",
         "doc://com.apple.documentation/documentation/cloudkit/ckreference/1514956-recordid",
         "doc://com.apple.documentation/documentation/cloudkit/ckreferenceaction"
-      ]
+      ],
+      "anchor": "1669734"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640527-parent",
-        "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640378-share",
-        "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1690507-setparentreferencefromrecord",
-        "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1690508-setparentreferencefromrecordid"
+        "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database",
+        "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_the_cloudkit_database_app",
+        "doc://com.apple.documentation/documentation/cloudkit/ckrecordzone",
+        "doc://com.apple.documentation/documentation/cloudkit/ckrecord",
+        "doc://com.apple.documentation/documentation/cloudkit/ckasset",
+        "doc://com.apple.documentation/documentation/cloudkit/integrating_a_text-based_schema_into_your_workflow"
       ],
-      "title": "Sharing Records",
+      "title": "Schemas",
       "generated": true
     }
   ],
@@ -473,6 +486,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -854,7 +868,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

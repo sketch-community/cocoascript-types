@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns a Boolean indicating whether the service can act on the specified data items."
+      "text": "Queries whether the service can act on the specified data items."
     }
   ],
   "documentVersion": 0,
@@ -41,20 +41,28 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIActivity(im)canPerformWithActivityItems:",
+    "parent": {
+      "title": "UIActivity"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -119,14 +127,6 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/objectivec/yes": {
-      "title": "YES",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/yes"
-    },
     "doc://com.apple.documentation/documentation/objectivec/no": {
       "title": "NO",
       "type": "topic",
@@ -134,6 +134,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/objectivec/no"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
     },
     "doc://com.apple.documentation/documentation/uikit/uiactivityviewcontroller": {
       "title": "UIActivityViewController",
@@ -161,7 +169,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean indicating whether the service can act on the specified data items."
+          "text": "Queries whether the service can act on the specified data items."
         }
       ],
       "fragments": [
@@ -209,7 +217,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the view controller to present to the user. "
+          "text": "The view controller to present to the user. "
         }
       ]
     },
@@ -335,6 +343,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -462,7 +471,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

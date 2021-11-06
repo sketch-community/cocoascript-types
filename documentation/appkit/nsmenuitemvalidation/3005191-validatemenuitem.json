@@ -36,15 +36,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.14",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSMenuItemValidation(im)validateMenuItem:",
+    "parent": {
+      "title": "NSMenuItemValidation"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -95,22 +98,6 @@
       "role": "symbol",
       "url": "/documentation/appkit/nsmenuitemvalidation"
     },
-    "doc://com.apple.documentation/documentation/appkit/nsmenuitemvalidation/3005191-validatemenuitem#3013685": {
-      "title": "Listing 1",
-      "type": "section",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsmenuitemvalidation/3005191-validatemenuitem#3013685",
-      "kind": "article",
-      "role": "codeListing",
-      "url": "/documentation/appkit/nsmenuitemvalidation/3005191-validatemenuitem#3013685"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsmenuitem": {
-      "title": "NSMenuItem",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsmenuitem",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsmenuitem"
-    },
     "doc://com.apple.documentation/documentation/objectivec/yes": {
       "title": "YES",
       "type": "topic",
@@ -126,6 +113,22 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/objectivec/no"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsmenuitem": {
+      "title": "NSMenuItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsmenuitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsmenuitem"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsmenuitemvalidation/3005191-validatemenuitem#3013685": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsmenuitemvalidation/3005191-validatemenuitem#3013685",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/appkit/nsmenuitemvalidation/3005191-validatemenuitem#3013685"
     },
     "doc://com.apple.documentation/documentation/appkit/nsmenuitemvalidation/3005191-validatemenuitem": {
       "title": "validateMenuItem:",
@@ -350,7 +353,7 @@
             },
             {
               "type": "codeVoice",
-              "code": "countryKeys"
+              "code": "countryOrRegionKeys"
             },
             {
               "type": "text",
@@ -364,7 +367,7 @@
             "- (BOOL)validateMenuItem:(NSMenuItem *)item {",
             "    int row = [tableView selectedRow];",
             "    if ([item action] == @selector(nextRecord) &&",
-            "        (row == [countryKeys indexOfObject:[countryKeys lastObject]])) {",
+            "        (row == [countryOrRegionKeys indexOfObject:[countryOrRegionKeys lastObject]])) {",
             "        return NO;",
             "    }",
             "    if ([item action] == @selector(priorRecord) && row == 0) {",
@@ -383,7 +386,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

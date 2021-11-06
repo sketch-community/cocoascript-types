@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns the distance (measured in meters) from the current object's location to the specified location. "
+      "text": "Returns the distance (measured in meters) from the current object’s location to the specified location."
     }
   ],
   "documentVersion": 0,
@@ -34,35 +34,43 @@
       {
         "name": "iOS",
         "introducedAt": "3.2",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.2",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.6",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CLLocation(im)distanceFromLocation:",
+    "parent": {
+      "title": "CLLocation"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -123,7 +131,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the distance (measured in meters) from the current object's location to the specified location. "
+          "text": "Returns the distance (measured in meters) from the current object’s location to the specified location."
         }
       ],
       "fragments": [
@@ -147,7 +155,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the distance (measured in meters) from the current object's location to the specified location. "
+          "text": "Returns the distance (measured in meters) from the current object’s location to the specified location."
         }
       ],
       "fragments": [
@@ -243,6 +251,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -315,7 +324,7 @@
             },
             {
               "type": "text",
-              "text": " parameter. The distance is calculated by tracing a line between the two points that follows the curvature of the Earth, and measuring the length of the resulting arc. The arc is a smooth curve that does not take into account altitude changes between the two locations."
+              "text": " parameter. The distance is calculated by tracing a line between the two points that follows the curvature of the Earth, and measuring the length of the resulting arc. The arc is a smooth curve that doesn’t take into account altitude changes between the two locations."
             }
           ]
         }
@@ -323,7 +332,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

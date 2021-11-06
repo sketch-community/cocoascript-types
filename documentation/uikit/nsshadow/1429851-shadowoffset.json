@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The offset values of the shadow."
+      "text": "The shadow’s relative position, which you specify with horizontal and vertical offset values."
     }
   ],
   "documentVersion": 0,
@@ -44,35 +44,43 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.3",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSShadow(py)shadowOffset",
+    "parent": {
+      "title": "NSShadow"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -127,7 +135,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An encapsulation of the attributes that create a drop shadow during drawing operations."
+          "text": "An object you use to specify attributes to create and style a drop shadow during drawing operations."
         }
       ]
     },
@@ -173,7 +181,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The offset values of the shadow."
+          "text": "The shadow’s relative position, which you specify with horizontal and vertical offset values."
         }
       ]
     },
@@ -261,6 +269,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
@@ -318,7 +327,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This property contains the horizontal and vertical offset values, specified using the "
+              "text": "This property contains the horizontal and vertical offset values that you specify using the "
             },
             {
               "type": "codeVoice",
@@ -342,15 +351,43 @@
             },
             {
               "type": "text",
-              "text": " data type. These offsets are measured using the default user coordinate space and are not affected by custom transformations.  This means that positive values always extend down and to the right from the user's perspective. "
+              "text": " or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSSize"
+            },
+            {
+              "type": "text",
+              "text": " data type. These offsets use the default user coordinate space and are not affected by custom transformations. Positive offset values extend down and to the right from the user’s perspective. "
             }
           ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "In macOS 10.15 and earlier, if you add a shadow to a layer that has a different graphics context, then positive offset values might extend up and to the right from the user’s perspective, instead of down and to the right as usual."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

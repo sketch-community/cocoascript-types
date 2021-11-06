@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The options to use when capturing map-based imagery. "
+      "text": "The options the snapshotter initializer uses to create a snapshotter to capture map-based imagery. "
     }
   ],
   "documentVersion": 0,
@@ -34,30 +34,35 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.2",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)MKMapSnapshotOptions",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -140,7 +145,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The map region that you want to capture."
+          "text": "The area of the map that you want to capture."
         }
       ]
     },
@@ -200,6 +205,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/3172734-pointofinterestfilter": {
+      "title": "pointOfInterestFilter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/3172734-pointofinterestfilter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkmapsnapshotoptions/3172734-pointofinterestfilter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The filter used to determine the points of interest shown in the snapshot."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/1452316-showspointsofinterest": {
       "title": "showsPointsOfInterest",
       "type": "topic",
@@ -214,20 +233,6 @@
         }
       ],
       "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/3172734-pointofinterestfilter": {
-      "title": "pointOfInterestFilter",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/3172734-pointofinterestfilter",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/mapkit/mkmapsnapshotoptions/3172734-pointofinterestfilter",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The filter used to determine the points of interest shown in the snapshot."
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/3152864-traitcollection": {
       "title": "traitCollection",
@@ -306,7 +311,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The options to use when capturing map-based imagery. "
+          "text": "The options the snapshotter initializer uses to create a snapshotter to capture map-based imagery. "
         }
       ]
     },
@@ -316,16 +321,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0 beta 5",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -354,7 +349,8 @@
         "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/1452323-region",
         "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/1452727-maprect",
         "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/1452082-camera"
-      ]
+      ],
+      "anchor": "3222327"
     },
     {
       "kind": "taskGroup",
@@ -362,9 +358,10 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/1452341-maptype",
         "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/1452191-showsbuildings",
-        "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/1452316-showspointsofinterest",
-        "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/3172734-pointofinterestfilter"
-      ]
+        "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/3172734-pointofinterestfilter",
+        "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/1452316-showspointsofinterest"
+      ],
+      "anchor": "1657929"
     },
     {
       "kind": "taskGroup",
@@ -374,7 +371,8 @@
         "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/1452485-size",
         "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/2981023-appearance",
         "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/1615960-scale"
-      ]
+      ],
+      "anchor": "1658012"
     }
   ],
   "seeAlsoSections": [
@@ -420,6 +418,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -476,7 +475,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A key indicating the pitch to apply to spoken content. "
+      "text": "A key that indicates the pitch to apply to spoken content. "
     }
   ],
   "documentVersion": 0,
@@ -11,21 +11,21 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/speech_attributes_for_attributed_strings"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_storage",
+        "doc://com.apple.documentation/documentation/uikit/textkit",
         "doc://com.apple.documentation/documentation/foundation/nsattributedstring",
         "doc://com.apple.documentation/documentation/foundation/nsattributedstringkey"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/speech_attributes_for_attributed_strings"
       ],
@@ -72,30 +72,35 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@UIAccessibilitySpeechAttributePitch",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -130,10 +135,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -154,10 +159,10 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/uikit/text_storage": {
-      "title": "Text Storage",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage",
-      "url": "/documentation/uikit/text_storage",
+    "doc://com.apple.documentation/documentation/uikit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit",
+      "url": "/documentation/uikit/textkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -512,7 +517,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilityspeechattributeipanotation",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibilityspeechattributeipanotation"
+      "url": "/documentation/uikit/uiaccessibilityspeechattributeipanotation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that indicates the pronunciation of a specific word or phrase, such as a proper name."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiaccessibilityspeechattributelanguage": {
       "title": "UIAccessibilitySpeechAttributeLanguage",
@@ -524,7 +535,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A key indicating the language to use when speaking a string. "
+          "text": "A key that indicates the language to use when speaking a string. "
         }
       ]
     },
@@ -538,7 +549,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A key indicating the pitch to apply to spoken content. "
+          "text": "A key that indicates the pitch to apply to spoken content. "
         }
       ]
     },
@@ -552,7 +563,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A key indicating whether punctuation is spoken. "
+          "text": "A key that indicates whether to speak punctuation. "
         }
       ]
     },
@@ -566,7 +577,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A key indicating whether the spoken text is queued behind, or interrupts, existing spoken content. "
+          "text": "A key that indicates whether to queue an announcement behind existing speech or to interrupt it."
         }
       ]
     },
@@ -807,6 +818,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
@@ -837,7 +849,7 @@
             },
             {
               "type": "text",
-              "text": " object containing a floating-point value in the range "
+              "text": " object that contains a floating-point value in the range of "
             },
             {
               "type": "codeVoice",
@@ -853,7 +865,7 @@
             },
             {
               "type": "text",
-              "text": ". The value indicates whether the text should be specified spoken with a higher or lower pitch than is used for the default. The default value for this attribute is "
+              "text": ". The value indicates whether to speak the text with a higher or lower pitch than the default. The default value for this attribute is "
             },
             {
               "type": "codeVoice",
@@ -877,7 +889,7 @@
             },
             {
               "type": "text",
-              "text": " result in a lower pitch and values between "
+              "text": " result in a lower pitch, and values between "
             },
             {
               "type": "codeVoice",
@@ -901,7 +913,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

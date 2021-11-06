@@ -30,8 +30,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -294,6 +294,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uipointeraccessory": {
+      "title": "UIPointerAccessory",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipointeraccessory",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipointeraccessory"
+    },
     "doc://com.apple.documentation/documentation/uikit/uipointerregion": {
       "title": "UIPointerRegion",
       "type": "topic",
@@ -328,7 +336,29 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uipointerlockstate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uipointerlockstate"
+      "url": "/documentation/uikit/uipointerlockstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that contains information about a scene’s pointer lock state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uibandselectioninteraction": {
+      "title": "UIBandSelectionInteraction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uibandselectioninteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uibandselectioninteraction"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uibandselectioninteractionstate": {
+      "title": "UIBandSelectionInteractionState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uibandselectioninteractionstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uibandselectioninteractionstate"
     },
     "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures": {
       "title": "Touches, Presses, and Gestures",
@@ -387,7 +417,7 @@
       ]
     },
     "doc://com.apple.documentation/documentation/uikit/focus-based_navigation": {
-      "title": "Focus-based Navigation",
+      "title": "Focus-Based Navigation",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/uikit/focus-based_navigation",
       "kind": "article",
@@ -396,7 +426,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Navigate the interface of your UIKit app using a remote or a game controller. "
+          "text": "Navigate the interface of your UIKit app using a remote, game controller, or keyboard. "
         }
       ]
     },
@@ -414,17 +444,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "abstract": [
         {
           "type": "text",
-          "text": "Make your apps accessible to everyone who uses iOS and tvOS apps. "
+          "text": "Make your UIKit apps accessible to everyone who uses iOS and tvOS. "
         }
       ]
     },
@@ -436,16 +466,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "topicSections": [
     {
       "kind": "taskGroup",
@@ -455,14 +475,16 @@
         "doc://com.apple.documentation/documentation/uikit/uipointerinteractiondelegate",
         "doc://com.apple.documentation/documentation/uikit/pointer_interactions/integrating_pointer_interactions_into_your_ipad_app",
         "doc://com.apple.documentation/documentation/uikit/pointer_interactions/enhancing_your_ipad_app_with_pointer_interactions"
-      ]
+      ],
+      "anchor": "3544227"
     },
     {
       "kind": "taskGroup",
       "title": "Interaction Animations",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uipointerinteractionanimating"
-      ]
+      ],
+      "anchor": "3544225"
     },
     {
       "kind": "taskGroup",
@@ -470,8 +492,10 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uipointerstyle",
         "doc://com.apple.documentation/documentation/uikit/uipointershape",
-        "doc://com.apple.documentation/documentation/uikit/uipointereffect"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uipointereffect",
+        "doc://com.apple.documentation/documentation/uikit/uipointeraccessory"
+      ],
+      "anchor": "3544228"
     },
     {
       "kind": "taskGroup",
@@ -479,14 +503,25 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uipointerregion",
         "doc://com.apple.documentation/documentation/uikit/uipointerregionrequest"
-      ]
+      ],
+      "anchor": "3633665"
     },
     {
       "kind": "taskGroup",
       "title": "Lock State",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uipointerlockstate"
-      ]
+      ],
+      "anchor": "3633666"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Band Selection",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uibandselectioninteraction",
+        "doc://com.apple.documentation/documentation/uikit/uibandselectioninteractionstate"
+      ],
+      "anchor": "3880279"
     }
   ],
   "seeAlsoSections": [
@@ -497,7 +532,7 @@
         "doc://com.apple.documentation/documentation/uikit/pencil_interactions",
         "doc://com.apple.documentation/documentation/uikit/focus-based_navigation",
         "doc://com.apple.documentation/documentation/uikit/menus_and_shortcuts",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit"
       ],
       "title": "User Interactions",
       "generated": true
@@ -935,7 +970,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

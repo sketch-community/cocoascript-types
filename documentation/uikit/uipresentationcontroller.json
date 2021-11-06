@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIPresentationController",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -681,17 +686,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/view_controllers/disabling_pulling_down_a_sheet": {
-      "title": "Disabling Pulling Down a Sheet",
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/disabling_the_pull-down_gesture_for_a_sheet": {
+      "title": "Disabling the Pull-Down Gesture for a Sheet",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/disabling_pulling_down_a_sheet",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/disabling_the_pull-down_gesture_for_a_sheet",
       "kind": "article",
       "role": "sampleCode",
-      "url": "/documentation/uikit/view_controllers/disabling_pulling_down_a_sheet",
+      "url": "/documentation/uikit/view_controllers/disabling_the_pull-down_gesture_for_a_sheet",
       "abstract": [
         {
           "type": "text",
-          "text": "Disable the sheet pull-down gesture when dismissal would be destructive."
+          "text": "Ensure a positive user experience when presenting a view controller as a sheet."
         }
       ]
     },
@@ -709,22 +714,26 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uisheetpresentationcontroller": {
+      "title": "UISheetPresentationController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisheetpresentationcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisheetpresentationcontroller",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A presentation controller that manages the appearance and behavior of a sheet."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -754,7 +763,8 @@
       "title": "Initializing a Presentation Controller",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uipresentationcontroller/1618328-initwithpresentedviewcontroller"
-      ]
+      ],
+      "anchor": "1653415"
     },
     {
       "kind": "taskGroup",
@@ -762,7 +772,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uipresentationcontroller/1618329-delegate",
         "doc://com.apple.documentation/documentation/uikit/uiadaptivepresentationcontrollerdelegate"
-      ]
+      ],
+      "anchor": "1653732"
     },
     {
       "kind": "taskGroup",
@@ -772,7 +783,8 @@
         "doc://com.apple.documentation/documentation/uikit/uipresentationcontroller/1618322-presentedviewcontroller",
         "doc://com.apple.documentation/documentation/uikit/uipresentationcontroller/1618332-containerview",
         "doc://com.apple.documentation/documentation/uikit/uipresentationcontroller/1618321-presentedview"
-      ]
+      ],
+      "anchor": "1653438"
     },
     {
       "kind": "taskGroup",
@@ -782,7 +794,8 @@
         "doc://com.apple.documentation/documentation/uikit/uipresentationcontroller/1618335-overridetraitcollection",
         "doc://com.apple.documentation/documentation/uikit/uipresentationcontroller/1618341-containerviewwilllayoutsubviews",
         "doc://com.apple.documentation/documentation/uikit/uipresentationcontroller/1618331-containerviewdidlayoutsubviews"
-      ]
+      ],
+      "anchor": "1653490"
     },
     {
       "kind": "taskGroup",
@@ -792,7 +805,8 @@
         "doc://com.apple.documentation/documentation/uikit/uipresentationcontroller/1618327-presentationtransitiondidend",
         "doc://com.apple.documentation/documentation/uikit/uipresentationcontroller/1618342-dismissaltransitionwillbegin",
         "doc://com.apple.documentation/documentation/uikit/uipresentationcontroller/1618323-dismissaltransitiondidend"
-      ]
+      ],
+      "anchor": "1653557"
     },
     {
       "kind": "taskGroup",
@@ -803,13 +817,15 @@
         "doc://com.apple.documentation/documentation/uikit/uipresentationcontroller/1618340-adaptivepresentationstyle",
         "doc://com.apple.documentation/documentation/uikit/uipresentationcontroller/1618336-shouldpresentinfullscreen",
         "doc://com.apple.documentation/documentation/uikit/uipresentationcontroller/1618319-shouldremovepresentersview"
-      ]
+      ],
+      "anchor": "1653628"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/view_controllers/disabling_pulling_down_a_sheet"
+        "doc://com.apple.documentation/documentation/uikit/view_controllers/disabling_the_pull-down_gesture_for_a_sheet",
+        "doc://com.apple.documentation/documentation/uikit/uisheetpresentationcontroller"
       ],
       "title": "Presentation Management",
       "generated": true
@@ -849,6 +865,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -1557,7 +1574,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

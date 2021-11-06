@@ -35,37 +35,47 @@
         "name": "iOS",
         "introducedAt": "4.0",
         "deprecatedAt": "7.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "deprecatedAt": "7.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
         "deprecatedAt": "10.10",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
         "deprecatedAt": "2.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)CLRegion(py)radius",
+    "parent": {
+      "title": "CLRegion"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -113,6 +123,14 @@
           "text": "A base class representing an area that can be monitored."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clcircularregion/1423734-radius": {
+      "title": "radius",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clcircularregion/1423734-radius",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clcircularregion/1423734-radius"
     },
     "doc://com.apple.documentation/documentation/corelocation/clcircularregion": {
       "title": "CLCircularRegion",
@@ -218,6 +236,35 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/corelocation/clcircularregion/1423734-radius"
+        },
+        {
+          "type": "text",
+          "text": " in "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/corelocation/clcircularregion"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
@@ -244,7 +291,7 @@
             },
             {
               "kind": "text",
-              "text": "(readonly, nonatomic) "
+              "text": "(readonly, atomic) "
             },
             {
               "kind": "typeIdentifier",
@@ -267,6 +314,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "watchOS"
@@ -305,7 +353,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

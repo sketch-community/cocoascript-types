@@ -24,8 +24,30 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
         "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+        "doc://com.apple.documentation/documentation/uikit/uiscene"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/windows_and_screens",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+        "doc://com.apple.documentation/documentation/uikit/uiscene"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment",
         "doc://com.apple.documentation/documentation/uikit/app_and_environment/multitasking_on_ipad",
         "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/multitasking_on_ipad",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+        "doc://com.apple.documentation/documentation/uikit/uiscene"
       ]
     ]
   },
@@ -48,25 +70,30 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UISceneActivationConditions",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -124,6 +151,14 @@
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiscene": {
+      "title": "UIScene",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscene",
+      "url": "/documentation/uikit/uiscene",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/uikit/app_and_environment/multitasking_on_ipad": {
       "title": "Multitasking on iPad",
@@ -281,7 +316,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object containing information you want the system to use when activating the session associated with a scene.  "
+          "text": "An object that contains information you want the system to use when activating the session associated with a scene.  "
         }
       ]
     },
@@ -295,7 +330,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object containing information to use when removing a window scene from your app.  "
+          "text": "An object that contains information to use when removing a window scene from your app.  "
         }
       ]
     },
@@ -309,7 +344,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object you pass to UIKit when you want to permanently remove a scene and its associated session from your app.  "
+          "text": "An object you pass to UIKit to permanently remove a scene and its associated session from your app.  "
         }
       ]
     },
@@ -346,7 +381,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uisceneactivationconditions/3238065-init",
         "doc://com.apple.documentation/documentation/uikit/uisceneactivationconditions/3238066-initwithcoder"
-      ]
+      ],
+      "anchor": "3240241"
     },
     {
       "kind": "taskGroup",
@@ -354,7 +390,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uisceneactivationconditions/3238067-preferstoactivatefortargetconten",
         "doc://com.apple.documentation/documentation/uikit/uisceneactivationconditions/3238064-canactivatefortargetcontentident"
-      ]
+      ],
+      "anchor": "3240242"
     }
   ],
   "seeAlsoSections": [
@@ -402,6 +439,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -506,7 +544,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

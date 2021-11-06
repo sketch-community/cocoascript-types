@@ -35,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.6",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSResponder(im)touchesBeganWithEvent:",
+    "parent": {
+      "title": "NSResponder"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -96,7 +99,57 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An abstract class that forms the basis of event and command processing in AppKit. "
+          "text": "An abstract class that forms the basis of event and command processing in AppKit."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsevent/1530950-touchesmatchingphase": {
+      "title": "touchesMatchingPhase:inView:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsevent/1530950-touchesmatchingphase",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsevent/1530950-touchesmatchingphase",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesMatchingPhase:inView:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstouchphase/nstouchphasebegan": {
+      "title": "NSTouchPhaseBegan",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstouchphase/nstouchphasebegan",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstouchphase/nstouchphasebegan"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsresponder/1531151-touchesbeganwithevent": {
+      "title": "touchesBeganWithEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/1531151-touchesbeganwithevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsresponder/1531151-touchesbeganwithevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Informs the receiver that new set of touches has been recognized."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesBeganWithEvent:"
         }
       ]
     },
@@ -225,30 +278,6 @@
         {
           "kind": "identifier",
           "text": "swipeWithEvent:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsresponder/1531151-touchesbeganwithevent": {
-      "title": "touchesBeganWithEvent:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/1531151-touchesbeganwithevent",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsresponder/1531151-touchesbeganwithevent",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Informs the receiver that new set of touches has been recognized."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "touchesBeganWithEvent:"
         }
       ]
     },
@@ -532,7 +561,33 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The event will be sent to the view under the touch in the key window. To get the set of touches that began for this view (or descendants of this view) send [event touchesMatchingPhase:NSTouchPhaseBegan inView:self]."
+              "text": "The system sends the event to the view under the touch in the key window. To get the set of touches that began for this view (or descendants of this view) call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsevent/1530950-touchesmatchingphase"
+            },
+            {
+              "type": "text",
+              "text": " on "
+            },
+            {
+              "type": "codeVoice",
+              "code": "event"
+            },
+            {
+              "type": "text",
+              "text": " and pass "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstouchphase/nstouchphasebegan"
+            },
+            {
+              "type": "text",
+              "text": " for the phase send."
             }
           ]
         },
@@ -541,11 +596,12 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This is not always the point of contact with the touch device. A touch that transitions from resting to active may be part of a "
+              "text": "This isn’t always the point of contact with the touch device. A touch that transitions from resting to active may be part of a "
             },
             {
-              "type": "codeVoice",
-              "code": "touchesBeganWithEvent:"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/1531151-touchesbeganwithevent"
             },
             {
               "type": "text",
@@ -557,7 +613,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

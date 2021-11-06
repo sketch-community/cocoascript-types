@@ -35,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.6",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@NSDataWritingOptions",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -132,7 +137,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A hint to write data to an auxiliary file first and then exchange the files."
+          "text": "An option to write data to an auxiliary file first and then replace the original file with the auxiliary file when the write completes."
         }
       ]
     },
@@ -146,7 +151,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A hint to return prevent overwriting an existing file."
+          "text": "An option that attempts to write data to a file and fails with an error if the destination file already exists."
         }
       ]
     },
@@ -160,7 +165,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A hint to set the content protection attribute of the file when writing it out."
+          "text": "An option to not encrypt the file when writing it out."
         }
       ]
     },
@@ -174,7 +179,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A hint to set the content protection attribute of the file when writing it out. "
+          "text": "An option to make the file accessible only while the device is unlocked. "
         }
       ]
     },
@@ -188,7 +193,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A hint to set the content protection attribute of the file when writing it out."
+          "text": "An option to allow the file to be accessible while the device is unlocked or the file is already open."
         }
       ]
     },
@@ -202,7 +207,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A hint to set the content protection attribute of the file when writing it out."
+          "text": "An option to allow the file to be accessible after a user first unlocks the device."
         }
       ]
     },
@@ -216,7 +221,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A mask to use when determining the file protection options assigned to the data."
+          "text": "An option the system uses when determining the file protection options that the system assigns to the data."
         }
       ]
     },
@@ -230,7 +235,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A hint to write data to an auxiliary file first and then exchange the files."
+          "text": "An option that attempts to write data to an auxiliary file first and then exchange the files."
         }
       ],
       "deprecated": true
@@ -245,7 +250,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The level of data protection that encrypts sensitive user data when accessed on some devices."
+          "text": "The level of data protection for sensitive user data when an app accesses it on a device."
         }
       ],
       "titleStyle": "title",
@@ -286,7 +291,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Writes the data object's bytes to the file specified by a given path."
+          "text": "Writes the data object’s bytes to the file specified by a given path."
         }
       ],
       "fragments": [
@@ -382,21 +387,24 @@
         "doc://com.apple.documentation/documentation/foundation/nsdatawritingoptions/nsdatawritingfileprotectioncompleteunlessopen",
         "doc://com.apple.documentation/documentation/foundation/nsdatawritingoptions/nsdatawritingfileprotectioncompleteuntilfirstuserauthentication",
         "doc://com.apple.documentation/documentation/foundation/nsdatawritingoptions/nsdatawritingfileprotectionmask"
-      ]
+      ],
+      "anchor": "1609591"
     },
     {
       "kind": "taskGroup",
       "title": "Legacy Constants",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsdatawritingoptions/nsatomicwrite"
-      ]
+      ],
+      "anchor": "2891371"
     },
     {
       "kind": "taskGroup",
       "title": "Entitlements",
       "identifiers": [
         "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_default-data-protection"
-      ]
+      ],
+      "anchor": "3032499"
     }
   ],
   "seeAlsoSections": [
@@ -473,6 +481,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -483,7 +492,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

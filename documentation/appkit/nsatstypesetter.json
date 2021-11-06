@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A concrete typesetter object that places glyphs during the text layout process. "
+      "text": "A concrete typesetter object that places glyphs during the text layout process."
     }
   ],
   "documentVersion": 0,
@@ -34,15 +34,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.3",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSATSTypesetter",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -85,20 +85,6 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/appkit/nsatstypesetter": {
-      "title": "NSATSTypesetter",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsatstypesetter",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsatstypesetter",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A concrete typesetter object that places glyphs during the text layout process. "
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/appkit/nstypesetter/1535809-getlinefragmentrect": {
       "title": "getLineFragmentRect:usedRect:remainingRect:forStartingGlyphAtIndex:proposedRect:lineSpacing:paragraphSpacingBefore:paragraphSpacingAfter:",
       "type": "topic",
@@ -114,6 +100,48 @@
         {
           "kind": "identifier",
           "text": "getLineFragmentRect:usedRect:remainingRect:forStartingGlyphAtIndex:proposedRect:lineSpacing:paragraphSpacingBefore:paragraphSpacingAfter:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsatstypesetter": {
+      "title": "NSATSTypesetter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsatstypesetter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsatstypesetter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A concrete typesetter object that places glyphs during the text layout process."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nslayoutmanager": {
+      "title": "NSLayoutManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nslayoutmanager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that coordinates the layout and display of text characters."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextlayoutmanager": {
+      "title": "NSTextLayoutManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextlayoutmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextlayoutmanager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The primary class that you use to manage text layout and presentation for custom text displays."
         }
       ]
     },
@@ -704,31 +732,45 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/uikit/nslayoutmanager": {
-      "title": "NSLayoutManager",
+    "doc://com.apple.documentation/documentation/uikit/textkit/using_textkit_2_to_interact_with_text": {
+      "title": "Using TextKit 2 to Interact with Text",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanager",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/nslayoutmanager",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit/using_textkit_2_to_interact_with_text",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/textkit/using_textkit_2_to_interact_with_text",
       "abstract": [
         {
           "type": "text",
-          "text": "An object that coordinates the layout and display of text characters."
+          "text": "Interact with text by managing text selection and inserting custom text elements."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate": {
-      "title": "NSLayoutManagerDelegate",
+    "doc://com.apple.documentation/documentation/uikit/nstextlayoutfragment": {
+      "title": "NSTextLayoutFragment",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextlayoutfragment",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/nslayoutmanagerdelegate",
+      "url": "/documentation/uikit/nstextlayoutfragment",
       "abstract": [
         {
           "type": "text",
-          "text": "A set of optional methods that delegates of layout manager objects implement."
+          "text": "A class that represents the layout fragment typically corresponding to a rendering surface such as layer or view subclass."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextviewportlayoutcontroller": {
+      "title": "NSTextViewportLayoutController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextviewportlayoutcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextviewportlayoutcontroller",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manages the layout process inside the viewport interacting with its delegate."
         }
       ]
     },
@@ -756,7 +798,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "These constants describe the progression of text on a page. The typesetter decides which way text is supposed to flow and passes these values as arguments to the text container, which uses them to calculate the next line rectangle."
+          "text": "Values that describe the progression of text on a page."
         }
       ]
     },
@@ -784,7 +826,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of methods that define the orientation of text for an object. "
+          "text": "A set of methods that define the orientation of text for an object."
         }
       ]
     },
@@ -794,16 +836,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0 beta 5",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -822,7 +854,8 @@
       "title": "Getting the Shared Typesetter Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsatstypesetter/1530993-sharedtypesetter"
-      ]
+      ],
+      "anchor": "1680261"
     },
     {
       "kind": "taskGroup",
@@ -833,7 +866,8 @@
         "doc://com.apple.documentation/documentation/appkit/nsatstypesetter/1533819-typesetterbehavior",
         "doc://com.apple.documentation/documentation/appkit/nsatstypesetter/1526758-hyphenationfactor",
         "doc://com.apple.documentation/documentation/appkit/nsatstypesetter/1524295-bidiprocessingenabled"
-      ]
+      ],
+      "anchor": "1680272"
     },
     {
       "kind": "taskGroup",
@@ -841,21 +875,24 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsatstypesetter/1527830-currenttextcontainer",
         "doc://com.apple.documentation/documentation/appkit/nsatstypesetter/1532628-linefragmentpadding"
-      ]
+      ],
+      "anchor": "1680297"
     },
     {
       "kind": "taskGroup",
       "title": "Performing Font Substitution",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsatstypesetter/1535433-substitutefontforfont"
-      ]
+      ],
+      "anchor": "1680312"
     },
     {
       "kind": "taskGroup",
       "title": "Getting the Location of Text Tabs",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsatstypesetter/1531288-texttabforglyphlocation"
-      ]
+      ],
+      "anchor": "1680324"
     },
     {
       "kind": "taskGroup",
@@ -865,14 +902,16 @@
         "doc://com.apple.documentation/documentation/appkit/nsatstypesetter/1534099-setparagraphglyphrange",
         "doc://com.apple.documentation/documentation/appkit/nsatstypesetter/1528373-paragraphglyphrange",
         "doc://com.apple.documentation/documentation/appkit/nsatstypesetter/1531108-paragraphseparatorglyphrange"
-      ]
+      ],
+      "anchor": "1680346"
     },
     {
       "kind": "taskGroup",
       "title": "Laying Out a Paragraph",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsatstypesetter/1525179-layoutparagraphatpoint"
-      ]
+      ],
+      "anchor": "1680376"
     },
     {
       "kind": "taskGroup",
@@ -881,7 +920,8 @@
         "doc://com.apple.documentation/documentation/appkit/nsatstypesetter/1533513-linespacingafterglyphatindex",
         "doc://com.apple.documentation/documentation/appkit/nsatstypesetter/1532075-paragraphspacingafterglyphatinde",
         "doc://com.apple.documentation/documentation/appkit/nsatstypesetter/1530080-paragraphspacingbeforeglyphatind"
-      ]
+      ],
+      "anchor": "1680386"
     },
     {
       "kind": "taskGroup",
@@ -895,7 +935,8 @@
         "doc://com.apple.documentation/documentation/appkit/nsatstypesetter/1528327-shouldbreaklinebywordbeforechara",
         "doc://com.apple.documentation/documentation/appkit/nsatstypesetter/1526615-willsetlinefragmentrect",
         "doc://com.apple.documentation/documentation/appkit/nsatstypesetter/1526532-sethardinvalidation"
-      ]
+      ],
+      "anchor": "1680428"
     },
     {
       "kind": "taskGroup",
@@ -903,14 +944,18 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsatstypesetter/1527411-getglyphsinrange",
         "doc://com.apple.documentation/documentation/appkit/nsatstypesetter/1579672-linefragmentrectforproposedrect"
-      ]
+      ],
+      "anchor": "1680497"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/textkit/using_textkit_2_to_interact_with_text",
+        "doc://com.apple.documentation/documentation/uikit/nstextlayoutmanager",
+        "doc://com.apple.documentation/documentation/uikit/nstextlayoutfragment",
+        "doc://com.apple.documentation/documentation/uikit/nstextviewportlayoutcontroller",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager",
-        "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate",
         "doc://com.apple.documentation/documentation/uikit/nstextcontainer",
         "doc://com.apple.documentation/documentation/appkit/nslinesweepdirection",
         "doc://com.apple.documentation/documentation/appkit/nslinemovementdirection",
@@ -996,14 +1041,44 @@
           ]
         },
         {
-          "type": "paragraph",
-          "inlineContent": []
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Use this class with "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanager"
+                },
+                {
+                  "type": "text",
+                  "text": " in macOS11 and earlier. In macOS12 and later, consider using "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/nstextlayoutmanager"
+                },
+                {
+                  "type": "text",
+                  "text": " which provides improved support for international scripts."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/carplay"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -34,20 +34,31 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(pl)INSetSeatSettingsInCarIntentHandling",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -82,10 +93,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/carplay": {
-      "title": "CarPlay",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/carplay",
-      "url": "/documentation/sirikit/carplay",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -102,7 +113,8 @@
           "type": "text",
           "text": "The handler interface for changing a vehicle’s seat-related settings."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintent": {
       "title": "INSetSeatSettingsInCarIntent",
@@ -116,7 +128,16 @@
           "type": "text",
           "text": "A request to change the seat-related settings in a CarPlay-enabled vehicle."
         }
-      ]
+      ],
+      "deprecated": true
+    },
+    "link-3866840": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3866840",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject": {
       "title": "NSObject",
@@ -157,7 +178,8 @@
           "kind": "identifier",
           "text": "resolveEnableCoolingForSetSeatSettingsInCar:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintenthandling/2102628-resolveenableheatingforsetseatse": {
       "title": "resolveEnableHeatingForSetSeatSettingsInCar:withCompletion:",
@@ -182,7 +204,8 @@
           "kind": "identifier",
           "text": "resolveEnableHeatingForSetSeatSettingsInCar:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintenthandling/2102621-resolveenablemassageforsetseatse": {
       "title": "resolveEnableMassageForSetSeatSettingsInCar:withCompletion:",
@@ -207,7 +230,8 @@
           "kind": "identifier",
           "text": "resolveEnableMassageForSetSeatSettingsInCar:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintenthandling/2102616-resolveseatforsetseatsettingsinc": {
       "title": "resolveSeatForSetSeatSettingsInCar:withCompletion:",
@@ -232,7 +256,8 @@
           "kind": "identifier",
           "text": "resolveSeatForSetSeatSettingsInCar:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintenthandling/2102623-resolvelevelforsetseatsettingsin": {
       "title": "resolveLevelForSetSeatSettingsInCar:withCompletion:",
@@ -257,7 +282,8 @@
           "kind": "identifier",
           "text": "resolveLevelForSetSeatSettingsInCar:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintenthandling/2102625-resolverelativelevelsettingforse": {
       "title": "resolveRelativeLevelSettingForSetSeatSettingsInCar:withCompletion:",
@@ -282,7 +308,8 @@
           "kind": "identifier",
           "text": "resolveRelativeLevelSettingForSetSeatSettingsInCar:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintenthandling/3019579-resolvecarnameforsetseatsettings": {
       "title": "resolveCarNameForSetSeatSettingsInCar:withCompletion:",
@@ -307,7 +334,8 @@
           "kind": "identifier",
           "text": "resolveCarNameForSetSeatSettingsInCar:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintenthandling/2102627-confirmsetseatsettingsincar": {
       "title": "confirmSetSeatSettingsInCar:completion:",
@@ -320,7 +348,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Confirms whether you can change the seat settings. "
+          "text": "Confirms whether you can change the seat settings."
         }
       ],
       "fragments": [
@@ -332,7 +360,8 @@
           "kind": "identifier",
           "text": "confirmSetSeatSettingsInCar:completion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintenthandling/2102615-handlesetseatsettingsincar": {
       "title": "handleSetSeatSettingsInCar:completion:",
@@ -357,7 +386,8 @@
           "kind": "identifier",
           "text": "handleSetSeatSettingsInCar:completion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintentresponse": {
       "title": "INSetSeatSettingsInCarIntentResponse",
@@ -371,7 +401,8 @@
           "type": "text",
           "text": "Your app’s response to a set seat settings in car intent."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -381,6 +412,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -411,21 +462,24 @@
         "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintenthandling/2102623-resolvelevelforsetseatsettingsin",
         "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintenthandling/2102625-resolverelativelevelsettingforse",
         "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintenthandling/3019579-resolvecarnameforsetseatsettings"
-      ]
+      ],
+      "anchor": "2315134"
     },
     {
       "kind": "taskGroup",
       "title": "Confirming the Response",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintenthandling/2102627-confirmsetseatsettingsincar"
-      ]
+      ],
+      "anchor": "2315132"
     },
     {
       "kind": "taskGroup",
       "title": "Handling the Intent",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintenthandling/2102615-handlesetseatsettingsincar"
-      ]
+      ],
+      "anchor": "2315128"
     }
   ],
   "seeAlsoSections": [
@@ -434,7 +488,7 @@
         "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintent",
         "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintentresponse"
       ],
-      "title": "Set Seat Settings in Car",
+      "title": "CarPlay Seat Settings",
       "generated": true
     }
   ],
@@ -462,6 +516,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -516,7 +571,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

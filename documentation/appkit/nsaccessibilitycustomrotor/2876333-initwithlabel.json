@@ -1,17 +1,25 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates a custom rotor with the specified label and item search delegate."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor"
       ]
     ]
@@ -35,15 +43,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSAccessibilityCustomRotor(im)initWithLabel:itemSearchDelegate:",
+    "parent": {
+      "title": "NSAccessibilityCustomRotor"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -78,13 +89,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility": {
+      "title": "NSAccessibility",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
+      "url": "/documentation/appkit/nsaccessibility",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor": {
       "title": "NSAccessibilityCustomRotor",
@@ -92,7 +111,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitycustomrotor"
+      "url": "/documentation/appkit/nsaccessibilitycustomrotor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A context-sensitive function that helps VoiceOver users find the next instance of a related accessibility element."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accessibility": {
       "title": "Accessibility",
@@ -118,6 +143,54 @@
       "role": "symbol",
       "url": "/documentation/appkit/nsaccessibilitycustomrotoritemsearchdelegate"
     },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor/2876333-initwithlabel": {
+      "title": "initWithLabel:itemSearchDelegate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor/2876333-initwithlabel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilitycustomrotor/2876333-initwithlabel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a custom rotor with the specified label and item search delegate."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithLabel:itemSearchDelegate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor/2876299-initwithrotortype": {
+      "title": "initWithRotorType:itemSearchDelegate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor/2876299-initwithrotortype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilitycustomrotor/2876299-initwithrotortype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a custom rotor with the specified rotor type and item search delegate."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithRotorType:itemSearchDelegate:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -126,6 +199,15 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor/2876299-initwithrotortype"
+      ],
+      "title": "Creating a Rotor",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -224,7 +306,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

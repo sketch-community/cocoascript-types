@@ -35,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSResponder(py)userActivity",
+    "parent": {
+      "title": "NSResponder"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -173,13 +176,6 @@
       ],
       "title": "Supporting User Activities",
       "generated": true
-    },
-    {
-      "title": "Related Documentation",
-      "generated": false,
-      "identifiers": [
-        "symbol-1526024"
-      ]
     }
   ],
   "primaryContentSections": [
@@ -273,7 +269,7 @@
             },
             {
               "type": "text",
-              "text": " dictionary. User activities managed by AppKit are saved automatically at appropriate times. Multiple responders can share a single "
+              "text": " dictionary. AppKit automatically saves user activities it manages at appropriate times. Multiple responders can share a single "
             },
             {
               "type": "reference",
@@ -386,7 +382,7 @@
             },
             {
               "type": "text",
-              "text": " objects that are managed by AppKit but which have no associated responders (or documents) are automatically invalidated."
+              "text": " objects that AppKit manages but have no associated responders (or documents) are automatically invalidated."
             }
           ]
         },
@@ -395,7 +391,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This property can be used from any thread. It is KVO observable."
+              "text": "You can use this property from any thread, and it’s key-value observable (KVO)."
             }
           ]
         }
@@ -403,7 +399,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

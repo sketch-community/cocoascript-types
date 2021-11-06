@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIView(cm)animateWithDuration:animations:completion:",
+    "parent": {
+      "title": "UIView"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -390,6 +398,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiview/3043564-modifyanimationswithrepeatcount": {
+      "title": "modifyAnimationsWithRepeatCount:autoreverses:animations:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/3043564-modifyanimationswithrepeatcount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview/3043564-modifyanimationswithrepeatcount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Repeats the specified animations a specific number of times, optionally running the animation forward and backward."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "modifyAnimationsWithRepeatCount:autoreverses:animations:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -409,7 +441,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiview/1622554-addkeyframewithrelativestarttime",
         "doc://com.apple.documentation/documentation/uikit/uiview/1622635-performsystemanimation",
         "doc://com.apple.documentation/documentation/uikit/uiview/1622594-animatewithduration",
-        "doc://com.apple.documentation/documentation/uikit/uiview/1622484-performwithoutanimation"
+        "doc://com.apple.documentation/documentation/uikit/uiview/1622484-performwithoutanimation",
+        "doc://com.apple.documentation/documentation/uikit/uiview/3043564-modifyanimationswithrepeatcount"
       ],
       "title": "Animating Views with Block Objects",
       "generated": true
@@ -537,6 +570,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -688,7 +722,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

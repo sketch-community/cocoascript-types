@@ -2,25 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A key whose value is an "
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring"
-    },
-    {
-      "type": "text",
-      "text": " object reflecting the new value of the "
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory"
-    },
-    {
-      "type": "text",
-      "text": " property. "
+      "text": "A key that reflects the new preferred content size."
     }
   ],
   "documentVersion": 0,
@@ -75,25 +57,30 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@UIContentSizeCategoryNewValueKey",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -154,7 +141,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants indicating the preferred size of your content."
+          "text": "Constants that indicate the preferred size of your content."
         }
       ]
     },
@@ -196,35 +183,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorynewvaluekey": {
-      "title": "UIContentSizeCategoryNewValueKey",
+    "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryadjusting": {
+      "title": "UIContentSizeCategoryAdjusting",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorynewvaluekey",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryadjusting",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uicontentsizecategorynewvaluekey",
+      "url": "/documentation/uikit/uicontentsizecategoryadjusting",
       "abstract": [
         {
           "type": "text",
-          "text": "A key whose value is an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring"
-        },
-        {
-          "type": "text",
-          "text": " object reflecting the new value of the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory"
-        },
-        {
-          "type": "text",
-          "text": " property. "
+          "text": "A collection of methods that give controls an easy way to adopt automatic adjustment to content category changes."
         }
       ]
     },
@@ -238,7 +207,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the user changes the preferred content size setting. "
+          "text": "A notification that posts when the user changes the preferred content size setting. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorynewvaluekey": {
+      "title": "UIContentSizeCategoryNewValueKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorynewvaluekey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicontentsizecategorynewvaluekey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that reflects the new preferred content size."
         }
       ]
     },
@@ -255,6 +238,7 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory",
         "doc://com.apple.documentation/documentation/uikit/uicontentsizecategory",
+        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryadjusting",
         "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorydidchangenotification"
       ],
       "title": "Getting the Font Sizing Preference",
@@ -299,15 +283,58 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This key’s value is an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring"
+            },
+            {
+              "type": "text",
+              "text": " object that reflects the new value of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory"
+            },
+            {
+              "type": "text",
+              "text": " property. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

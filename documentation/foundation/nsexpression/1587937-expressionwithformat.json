@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Initializes the expression with the specified expression arguments."
+      "text": "Creates the expression with the specified expression arguments."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.6",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSExpression(cm)expressionWithFormat:",
+    "parent": {
+      "title": "NSExpression"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,7 +122,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes the expression with the specified expression type."
+          "text": "Creates the expression with the specified expression type."
         }
       ],
       "fragments": [
@@ -138,7 +146,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes the expression with the specified expression format and arguments list."
+          "text": "Creates the expression with the specified expression format and arguments list."
         }
       ],
       "fragments": [
@@ -162,7 +170,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes the expression with the specified expression format and array of arguments."
+          "text": "Creates the expression with the specified expression format and array of arguments."
         }
       ],
       "fragments": [
@@ -194,7 +202,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes the expression with the specified expression arguments."
+          "text": "Creates the expression with the specified expression arguments."
         }
       ],
       "fragments": [
@@ -205,6 +213,30 @@
         {
           "kind": "identifier",
           "text": "expressionWithFormat:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsexpression/1415409-initwithcoder": {
+      "title": "initWithCoder:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsexpression/1415409-initwithcoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsexpression/1415409-initwithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an expression by decoding from the coder you specify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithCoder:"
         }
       ]
     },
@@ -221,9 +253,10 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsexpression/1418351-initwithexpressiontype",
         "doc://com.apple.documentation/documentation/foundation/nsexpression/1413484-expressionwithformat",
-        "doc://com.apple.documentation/documentation/foundation/nsexpression/1410346-expressionwithformat"
+        "doc://com.apple.documentation/documentation/foundation/nsexpression/1410346-expressionwithformat",
+        "doc://com.apple.documentation/documentation/foundation/nsexpression/1415409-initwithcoder"
       ],
-      "title": "Initializing an Expression",
+      "title": "Creating an Expression",
       "generated": true
     }
   ],
@@ -295,6 +328,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -377,7 +411,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

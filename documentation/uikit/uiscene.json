@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An object that represents one instance of your app's user interface."
+      "text": "An object that represents one instance of your app’s user interface."
     }
   ],
   "documentVersion": 0,
@@ -48,25 +48,30 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIScene",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -143,7 +148,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that represents one instance of your app's user interface."
+          "text": "An object that represents one instance of your app’s user interface."
         }
       ]
     },
@@ -197,7 +202,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A specific type of scene that manages one or more windows for your app.  "
+          "text": "A scene that manages one or more windows for your app."
         }
       ]
     },
@@ -271,7 +276,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants indicating the foreground or background execution state of your app."
+          "text": "Constants that indicate the foreground or background execution state of your app."
         }
       ]
     },
@@ -285,7 +290,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A user-visible string you supply to help users differentiate among your app's scenes."
+          "text": "A user-visible string you supply to help users differentiate among your app’s scenes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiscene/3750911-subtitle": {
+      "title": "subtitle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscene/3750911-subtitle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiscene/3750911-subtitle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A string that the app displays in the title bar of a window when running in macOS."
         }
       ]
     },
@@ -303,6 +322,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uisceneactivationconditions": {
+      "title": "UISceneActivationConditions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisceneactivationconditions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisceneactivationconditions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The set of conditions that define when UIKit activates the current scene. "
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uiscenewillconnectnotification": {
       "title": "UISceneWillConnectNotification",
       "type": "topic",
@@ -313,7 +346,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification indicating that UIKit added a scene to your app. "
+          "text": "A notification that indicates that UIKit added a scene to your app. "
         }
       ]
     },
@@ -327,7 +360,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification indicating that UIKit removed a scene from your app. "
+          "text": "A notification that indicates that UIKit removed a scene from your app. "
         }
       ]
     },
@@ -341,7 +374,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification indicating that a scene is about to begin running in the foreground and become visible to the user."
+          "text": "A notification that indicates that a scene is about to begin running in the foreground and become visible to the user."
         }
       ]
     },
@@ -355,7 +388,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification indicating that the scene is now onscreen and responding to user events. "
+          "text": "A notification that indicates that the scene is now onscreen and responding to user events. "
         }
       ]
     },
@@ -369,7 +402,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification indicating that the scene is about to resign the active state and stop responding to user events."
+          "text": "A notification that indicates that the scene is about to resign the active state and stop responding to user events."
         }
       ]
     },
@@ -383,7 +416,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification indicating that the scene is running in the background and is no longer onscreen.  "
+          "text": "A notification that indicates that the scene is running in the background and is no longer onscreen.  "
         }
       ]
     },
@@ -398,6 +431,20 @@
         {
           "type": "text",
           "text": "The session associated with the scene."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiscenesession": {
+      "title": "UISceneSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscenesession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiscenesession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that contains information about one of your app's scenes.  "
         }
       ]
     },
@@ -425,13 +472,125 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uisceneopenexternalurloptions": {
+      "title": "UISceneOpenExternalURLOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisceneopenexternalurloptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisceneopenexternalurloptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options you specify when asking a scene to open a URL."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uiscene/3601229-pointerlockstate": {
       "title": "pointerLockState",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiscene/3601229-pointerlockstate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiscene/3601229-pointerlockstate"
+      "url": "/documentation/uikit/uiscene/3601229-pointerlockstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The pointer lock state for the scene."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipointerlockstate": {
+      "title": "UIPointerLockState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipointerlockstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipointerlockstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that contains information about a scene’s pointer lock state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisceneactivationrequestoptions": {
+      "title": "UISceneActivationRequestOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisceneactivationrequestoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisceneactivationrequestoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that contains information you want the system to use when activating the session associated with a scene.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiscenedestructionrequestoptions": {
+      "title": "UISceneDestructionRequestOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscenedestructionrequestoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiscenedestructionrequestoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object you pass to UIKit to permanently remove a scene and its associated session from your app.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisceneopenurloptions": {
+      "title": "UISceneOpenURLOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisceneopenurloptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisceneopenurloptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options that UIKit provides when asking your app to open a URL."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiscene/3821026-completestaterestoration": {
+      "title": "completeStateRestoration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscene/3821026-completestaterestoration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiscene/3821026-completestaterestoration",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "completeStateRestoration"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiscene/3821027-extendstaterestoration": {
+      "title": "extendStateRestoration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscene/3821027-extendstaterestoration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiscene/3821027-extendstaterestoration",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "extendStateRestoration"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiwindowscenedelegate": {
       "title": "UIWindowSceneDelegate",
@@ -455,16 +614,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -481,7 +630,8 @@
       "title": "Creating a Scene Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiscene/3197910-initwithsession"
-      ]
+      ],
+      "anchor": "3198949"
     },
     {
       "kind": "taskGroup",
@@ -489,7 +639,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiscene/3197909-delegate",
         "doc://com.apple.documentation/documentation/uikit/uiscenedelegate"
-      ]
+      ],
+      "anchor": "3198953"
     },
     {
       "kind": "taskGroup",
@@ -497,15 +648,19 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiscene/3197908-activationstate",
         "doc://com.apple.documentation/documentation/uikit/uisceneactivationstate",
-        "doc://com.apple.documentation/documentation/uikit/uiscene/3197912-title"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiscene/3197912-title",
+        "doc://com.apple.documentation/documentation/uikit/uiscene/3750911-subtitle"
+      ],
+      "anchor": "3198951"
     },
     {
       "kind": "taskGroup",
       "title": "Specifying the Scene's Activation Conditions",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uiscene/3238055-activationconditions"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiscene/3238055-activationconditions",
+        "doc://com.apple.documentation/documentation/uikit/uisceneactivationconditions"
+      ],
+      "anchor": "3240243"
     },
     {
       "kind": "taskGroup",
@@ -517,28 +672,54 @@
         "doc://com.apple.documentation/documentation/uikit/uiscenedidactivatenotification",
         "doc://com.apple.documentation/documentation/uikit/uiscenewilldeactivatenotification",
         "doc://com.apple.documentation/documentation/uikit/uiscenedidenterbackgroundnotification"
-      ]
+      ],
+      "anchor": "3198950"
     },
     {
       "kind": "taskGroup",
       "title": "Getting the Scene's Session",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uiscene/3197911-session"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiscene/3197911-session",
+        "doc://com.apple.documentation/documentation/uikit/uiscenesession"
+      ],
+      "anchor": "3198952"
     },
     {
       "kind": "taskGroup",
       "title": "Opening URLs",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uiscene/3327319-openurl"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiscene/3327319-openurl",
+        "doc://com.apple.documentation/documentation/uikit/uisceneopenexternalurloptions"
+      ],
+      "anchor": "3358203"
     },
     {
       "kind": "taskGroup",
-      "title": "Instance Properties",
+      "title": "Getting the Pointer Lock State",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uiscene/3601229-pointerlockstate"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiscene/3601229-pointerlockstate",
+        "doc://com.apple.documentation/documentation/uikit/uipointerlockstate"
+      ],
+      "anchor": "3677956"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uisceneactivationrequestoptions",
+        "doc://com.apple.documentation/documentation/uikit/uiscenedestructionrequestoptions",
+        "doc://com.apple.documentation/documentation/uikit/uisceneopenurloptions"
+      ],
+      "anchor": "3677954"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiscene/3821026-completestaterestoration",
+        "doc://com.apple.documentation/documentation/uikit/uiscene/3821027-extendstaterestoration"
+      ],
+      "anchor": "3829278"
     }
   ],
   "seeAlsoSections": [
@@ -586,6 +767,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -606,7 +788,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "UIKit creates a scene object for each instance of your app's UI that the user or your app requests. Typically, UIKit creates a "
+              "text": "UIKit creates a scene object for each instance of your app’s UI that the user or your app requests. Typically, UIKit creates a "
             },
             {
               "type": "reference",
@@ -642,7 +824,7 @@
             },
             {
               "type": "text",
-              "text": " protocol.   When the state of the scene changes, the scene object notifies its delegate object and posts appropriate notifications to registered observer objects. Use the delegate object and notifications to respond to changes in the state of the scene. For example, use it to determine when your scene moves to the background."
+              "text": " protocol. When the state of the scene changes, the scene object notifies its delegate object and posts appropriate notifications to registered observer objects. Use the delegate object and notifications to respond to changes in the state of the scene. For example, use it to determine when your scene moves to the background."
             }
           ]
         },
@@ -651,7 +833,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You do not create scene objects directly. You can programmatically ask UIKit to create a scene object for your app by calling the "
+              "text": "You don’t create scene objects directly. You can programmatically ask UIKit to create a scene object for your app by calling the "
             },
             {
               "type": "reference",
@@ -669,7 +851,7 @@
             },
             {
               "type": "text",
-              "text": ". UIKit also creates scenes in response to user interactions. When configuring your app's scene support, specify "
+              "text": ". UIKit also creates scenes in response to user interactions. When configuring your app’s scene support, specify "
             },
             {
               "type": "reference",
@@ -687,7 +869,7 @@
             },
             {
               "type": "text",
-              "text": " objects. "
+              "text": " objects."
             }
           ]
         }
@@ -695,7 +877,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

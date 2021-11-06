@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSRegularExpression",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -580,13 +585,21 @@
       "role": "symbol",
       "url": "/documentation/foundation/nstextcheckingtype/nstextcheckingtyperegularexpression"
     },
-    "link-2882465": {
-      "title": "http://userguide.icu-project.org/strings/regexp",
+    "link-3744474": {
+      "title": "ICU",
       "type": "topic",
-      "identifier": "link-2882465",
+      "identifier": "link-3744474",
       "kind": "article",
       "role": "link",
-      "url": "http://userguide.icu-project.org/strings/regexp"
+      "url": "https://unicode-org.github.io/icu/"
+    },
+    "link-3744060": {
+      "title": "regular expressions",
+      "type": "topic",
+      "identifier": "link-3744060",
+      "kind": "article",
+      "role": "link",
+      "url": "https://unicode-org.github.io/icu/userguide/strings/regexp.html"
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
@@ -859,7 +872,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsregularexpression/1557374-regularexpressionwithpattern",
         "doc://com.apple.documentation/documentation/foundation/nsregularexpression/1410900-initwithpattern"
-      ]
+      ],
+      "anchor": "1661184"
     },
     {
       "kind": "taskGroup",
@@ -868,7 +882,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsregularexpression/1414932-pattern",
         "doc://com.apple.documentation/documentation/foundation/nsregularexpression/1408265-options",
         "doc://com.apple.documentation/documentation/foundation/nsregularexpression/1415052-numberofcapturegroups"
-      ]
+      ],
+      "anchor": "1661213"
     },
     {
       "kind": "taskGroup",
@@ -879,7 +894,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsregularexpression/1412446-matchesinstring",
         "doc://com.apple.documentation/documentation/foundation/nsregularexpression/1409838-firstmatchinstring",
         "doc://com.apple.documentation/documentation/foundation/nsregularexpression/1411510-rangeoffirstmatchinstring"
-      ]
+      ],
+      "anchor": "1661263"
     },
     {
       "kind": "taskGroup",
@@ -887,7 +903,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsregularexpression/1411139-replacematchesinstring",
         "doc://com.apple.documentation/documentation/foundation/nsregularexpression/1413740-stringbyreplacingmatchesinstring"
-      ]
+      ],
+      "anchor": "1661318"
     },
     {
       "kind": "taskGroup",
@@ -895,14 +912,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsregularexpression/1410085-escapedtemplateforstring",
         "doc://com.apple.documentation/documentation/foundation/nsregularexpression/1408386-escapedpatternforstring"
-      ]
+      ],
+      "anchor": "1661355"
     },
     {
       "kind": "taskGroup",
       "title": "Custom Replace Functionality",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsregularexpression/1414859-replacementstringforresult"
-      ]
+      ],
+      "anchor": "1661390"
     },
     {
       "kind": "taskGroup",
@@ -911,7 +930,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsregularexpressionoptions",
         "doc://com.apple.documentation/documentation/foundation/nsmatchingflags",
         "doc://com.apple.documentation/documentation/foundation/nsmatchingoptions"
-      ]
+      ],
+      "anchor": "1674026"
     }
   ],
   "seeAlsoSections": [
@@ -960,6 +980,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1050,31 +1071,43 @@
           ]
         },
         {
-          "type": "paragraph",
-          "inlineContent": [
+          "type": "aside",
+          "content": [
             {
-              "type": "text",
-              "text": "The ICU regular expressions supported by "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/foundation/nsregularexpression"
-            },
-            {
-              "type": "text",
-              "text": " are described at "
-            },
-            {
-              "type": "link",
-              "title": "http://userguide.icu-project.org/strings/regexp",
-              "destination": "http://userguide.icu-project.org/strings/regexp"
-            },
-            {
-              "type": "text",
-              "text": "."
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsregularexpression"
+                },
+                {
+                  "type": "text",
+                  "text": " conforms to the International Components for Unicode ("
+                },
+                {
+                  "type": "link",
+                  "title": "ICU",
+                  "destination": "https://unicode-org.github.io/icu/"
+                },
+                {
+                  "type": "text",
+                  "text": ") specification for "
+                },
+                {
+                  "type": "link",
+                  "title": "regular expressions",
+                  "destination": "https://unicode-org.github.io/icu/userguide/strings/regexp.html"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
             }
-          ]
+          ],
+          "style": "note",
+          "name": "Note"
         },
         {
           "level": 3,
@@ -3619,7 +3652,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "Match 0 or more times. Match as many times as possible when first encountered, do not retry with fewer even if overall match fails (Possessive Match)."
+                      "text": "Match 0 or more times. Match as many times as possible when first encountered. Do not retry with fewer, even if overall match fails (possessive match)."
                     }
                   ]
                 }
@@ -3643,7 +3676,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "Match 1 or more times. Possessive match."
+                      "text": "Match 1 or more times (possessive match)."
                     }
                   ]
                 }
@@ -3667,7 +3700,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "Match zero or one times. Possessive match."
+                      "text": "Match zero or one times (possessive match)."
                     }
                   ]
                 }
@@ -3767,7 +3800,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " times. Possessive Match."
+                      "text": " times (possessive match)."
                     }
                   ]
                 }
@@ -3843,7 +3876,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " times. Possessive Match."
+                      "text": " times (possessive match)."
                     }
                   ]
                 }
@@ -4831,7 +4864,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

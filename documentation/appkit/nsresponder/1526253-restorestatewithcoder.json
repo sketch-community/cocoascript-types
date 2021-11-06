@@ -35,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSResponder(im)restoreStateWithCoder:",
+    "parent": {
+      "title": "NSResponder"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -96,7 +99,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An abstract class that forms the basis of event and command processing in AppKit. "
+          "text": "An abstract class that forms the basis of event and command processing in AppKit."
         }
       ]
     },
@@ -140,11 +143,13 @@
         }
       ]
     },
-    "devLink-1695370": {
-      "identifier": "devLink-1695370",
-      "type": "link",
-      "title": "Archives and Serializations Programming Guide",
-      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Archiving.html#//apple_ref/doc/uid/10000047i"
+    "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types": {
+      "title": "Encoding and Decoding Custom Types",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types"
     },
     "doc://com.apple.documentation/documentation/foundation/nscoder": {
       "title": "NSCoder",
@@ -153,6 +158,54 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nscoder"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsresponder/3762523-allowedclassesforrestorablestate": {
+      "title": "allowedClassesForRestorableStateKeyPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/3762523-allowedclassesforrestorablestate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsresponder/3762523-allowedclassesforrestorablestate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the classes that support secure coding."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "allowedClassesForRestorableStateKeyPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsresponder/2876293-encoderestorablestatewithcoder": {
+      "title": "encodeRestorableStateWithCoder:backgroundQueue:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/2876293-encoderestorablestatewithcoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsresponder/2876293-encoderestorablestatewithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Saves the interface-related state of the responder to a keyed archiver either synchronously or asynchronously on the given operation queue."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "encodeRestorableStateWithCoder:backgroundQueue:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsresponder/1526253-restorestatewithcoder": {
       "title": "restoreStateWithCoder:",
@@ -202,7 +255,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Marks the responder’s interface-related state as dirty. "
+          "text": "Marks the responder’s interface-related state as dirty."
         }
       ],
       "fragments": [
@@ -227,7 +280,9 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsresponder/3762523-allowedclassesforrestorablestate",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1526236-encoderestorablestatewithcoder",
+        "doc://com.apple.documentation/documentation/appkit/nsresponder/2876293-encoderestorablestatewithcoder",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1526242-restorablestatekeypaths",
         "doc://com.apple.documentation/documentation/appkit/nsresponder/1526243-invalidaterestorablestate"
       ],
@@ -378,6 +433,30 @@
           ]
         },
         {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If the user’s computer is configured to close all windows when an app quits, the system automatically removes any preserved state as part of that process. As a result, the system doesn’t call "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "restoreState(with:)"
+                },
+                {
+                  "type": "text",
+                  "text": " the next time your app launches."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
           "type": "paragraph",
           "inlineContent": [
             {
@@ -385,13 +464,13 @@
               "text": "For information about using a coder object to read data from an archive, see "
             },
             {
-              "type": "link",
-              "title": "Archives and Serializations Programming Guide",
-              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Archiving.html#//apple_ref/doc/uid/10000047i"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types"
             },
             {
               "type": "text",
-              "text": ". "
+              "text": "."
             }
           ]
         }
@@ -399,7 +478,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

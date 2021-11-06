@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Indicates that the view controller changed the pointer lock preference."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,20 +35,28 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIViewController(im)setNeedsUpdateOfPrefersPointerLocked",
+    "parent": {
+      "title": "UIViewController"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -99,6 +113,58 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601235-preferspointerlocked": {
+      "title": "prefersPointerLocked",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601235-preferspointerlocked",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller/3601235-preferspointerlocked",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the view controller prefers to lock the pointer to a specific scene."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601236-setneedsupdateofpreferspointerlo": {
+      "title": "setNeedsUpdateOfPrefersPointerLocked",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601236-setneedsupdateofpreferspointerlo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller/3601236-setneedsupdateofpreferspointerlo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates that the view controller changed the pointer lock preference."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setNeedsUpdateOfPrefersPointerLocked"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601234-childviewcontrollerforpointerloc": {
+      "title": "childViewControllerForPointerLock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601234-childviewcontrollerforpointerloc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller/3601234-childviewcontrollerforpointerloc",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A child view controller to query for the pointer lock preference."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -107,6 +173,16 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601235-preferspointerlocked",
+        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/3601234-childviewcontrollerforpointerloc"
+      ],
+      "title": "Managing Pointer Lock State",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -139,6 +215,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -146,7 +223,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

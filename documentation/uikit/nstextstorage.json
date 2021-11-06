@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The fundamental storage mechanism of TextKit. "
+      "text": "The fundamental storage mechanism of TextKit that contains the text managed by the system."
     }
   ],
   "documentVersion": 0,
@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_storage"
+        "doc://com.apple.documentation/documentation/uikit/textkit"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
@@ -42,30 +42,35 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)NSTextStorage",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -102,10 +107,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/text_storage": {
-      "title": "Text Storage",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage",
-      "url": "/documentation/uikit/text_storage",
+    "doc://com.apple.documentation/documentation/uikit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit",
+      "url": "/documentation/uikit/textkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -136,7 +141,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The fundamental storage mechanism of TextKit. "
+          "text": "The fundamental storage mechanism of TextKit that contains the text managed by the system."
         }
       ]
     },
@@ -182,13 +187,7 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsattributedstring",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A string with associated attributes (such as visual style, hyperlinks, or accessibility data) for portions of its text."
-        }
-      ]
+      "url": "/documentation/foundation/nsattributedstring"
     },
     "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1412616-string": {
       "title": "string",
@@ -674,45 +673,59 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/nstextcontainer": {
-      "title": "NSTextContainer",
+    "doc://com.apple.documentation/documentation/uikit/nstextstorage/3824756-textstorageobserver": {
+      "title": "textStorageObserver",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextcontainer",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextstorage/3824756-textstorageobserver",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/nstextcontainer",
+      "url": "/documentation/uikit/nstextstorage/3824756-textstorageobserver",
       "abstract": [
         {
           "type": "text",
-          "text": "A region where text layout occurs."
+          "text": "The observer for the text storage object."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/nstextscalingtype": {
-      "title": "NSTextScalingType",
+    "doc://com.apple.documentation/documentation/uikit/nstextstorageobserving": {
+      "title": "NSTextStorageObserving",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextscalingtype",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextstorageobserving",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/nstextscalingtype",
+      "url": "/documentation/uikit/nstextstorageobserving",
       "abstract": [
         {
           "type": "text",
-          "text": "Constants that specify the text scaling."
+          "text": "Optional methods that delegates implement to handle editing and transaction processing."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout": {
-      "title": "Display Text with a Custom Layout",
+    "doc://com.apple.documentation/documentation/uikit/nstextcontentmanager": {
+      "title": "NSTextContentManager",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout",
-      "kind": "article",
-      "role": "sampleCode",
-      "url": "/documentation/uikit/text_storage/display_text_with_a_custom_layout",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextcontentmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextcontentmanager",
       "abstract": [
         {
           "type": "text",
-          "text": "Lay out text in a custom-shaped container and apply glyph substitutions."
+          "text": "An abstract class that defines the interface and a default implementation for managing the text document contents."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextcontentstorage": {
+      "title": "NSTextContentStorage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextcontentstorage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextcontentstorage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A concrete subclass of the text content manager that provides support for attributed strings that you use as a backing store."
         }
       ]
     },
@@ -722,16 +735,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -759,7 +762,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nstextstorage/1532704-delegate",
         "doc://com.apple.documentation/documentation/uikit/nstextstoragedelegate"
-      ]
+      ],
+      "anchor": "1665044"
     },
     {
       "kind": "taskGroup",
@@ -768,7 +772,8 @@
         "doc://com.apple.documentation/documentation/uikit/nstextstorage/1527938-layoutmanagers",
         "doc://com.apple.documentation/documentation/uikit/nstextstorage/1533459-addlayoutmanager",
         "doc://com.apple.documentation/documentation/uikit/nstextstorage/1528755-removelayoutmanager"
-      ]
+      ],
+      "anchor": "1664890"
     },
     {
       "kind": "taskGroup",
@@ -776,7 +781,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nstextstorage/1529793-edited",
         "doc://com.apple.documentation/documentation/uikit/nstextstorage/1525980-processediting"
-      ]
+      ],
+      "anchor": "1664943"
     },
     {
       "kind": "taskGroup",
@@ -785,7 +791,8 @@
         "doc://com.apple.documentation/documentation/uikit/nstextstorage/1534025-invalidateattributesinrange",
         "doc://com.apple.documentation/documentation/uikit/nstextstorage/1533947-ensureattributesarefixedinrange",
         "doc://com.apple.documentation/documentation/uikit/nstextstorage/1532043-fixesattributeslazily"
-      ]
+      ],
+      "anchor": "3376058"
     },
     {
       "kind": "taskGroup",
@@ -794,7 +801,8 @@
         "doc://com.apple.documentation/documentation/uikit/nstextstorage/1525323-editedmask",
         "doc://com.apple.documentation/documentation/uikit/nstextstorage/1524379-editedrange",
         "doc://com.apple.documentation/documentation/uikit/nstextstorage/1528400-changeinlength"
-      ]
+      ],
+      "anchor": "1665012"
     },
     {
       "kind": "taskGroup",
@@ -806,7 +814,8 @@
         "doc://com.apple.documentation/documentation/appkit/nstextstorage/1535788-characters",
         "doc://com.apple.documentation/documentation/appkit/nstextstorage/1535365-font",
         "doc://com.apple.documentation/documentation/appkit/nstextstorage/1527175-foregroundcolor"
-      ]
+      ],
+      "anchor": "1665066"
     },
     {
       "kind": "taskGroup",
@@ -814,7 +823,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nstextstorageeditactions",
         "doc://com.apple.documentation/documentation/appkit/nstextstorageeditedoptions"
-      ]
+      ],
+      "anchor": "1679288"
     },
     {
       "kind": "taskGroup",
@@ -822,19 +832,26 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nstextstoragewillprocesseditingnotification",
         "doc://com.apple.documentation/documentation/uikit/nstextstoragedidprocesseditingnotification"
-      ]
+      ],
+      "anchor": "1665224"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Accessing the Storage Controller",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/nstextstorage/3824756-textstorageobserver",
+        "doc://com.apple.documentation/documentation/uikit/nstextstorageobserving"
+      ],
+      "anchor": "3831193"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/nstextstoragedelegate",
-        "doc://com.apple.documentation/documentation/uikit/nstextcontainer",
-        "doc://com.apple.documentation/documentation/foundation/nsattributedstring",
-        "doc://com.apple.documentation/documentation/uikit/nstextscalingtype",
-        "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout"
+        "doc://com.apple.documentation/documentation/uikit/nstextcontentmanager",
+        "doc://com.apple.documentation/documentation/uikit/nstextcontentstorage"
       ],
-      "title": "Data",
+      "title": "Data Management",
       "generated": true
     }
   ],
@@ -872,6 +889,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -898,7 +916,7 @@
             },
             {
               "type": "text",
-              "text": " is a semi concrete subclass of "
+              "text": " is a semi-concrete subclass of "
             },
             {
               "type": "reference",
@@ -925,96 +943,90 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "A text storage object can be accessed from any thread of your app, but your app must guarantee access from only one thread at a time. "
+              "text": "You can access a text storage object from any thread of your app, but your app must guarantee access from only one thread at a time. "
             }
           ]
         },
         {
-          "type": "aside",
-          "content": [
+          "type": "paragraph",
+          "inlineContent": [
             {
-              "type": "paragraph",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "In macOS, this class also defines properties for getting and setting scriptable attributes of "
-                },
-                {
-                  "type": "reference",
-                  "isActive": false,
-                  "identifier": "doc://com.apple.documentation/documentation/uikit/nstextstorage"
-                },
-                {
-                  "type": "text",
-                  "text": " objects. Unless you are dealing with scriptability, you should not access these properties directly. In particular, using the "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/appkit/nstextstorage/1535788-characters"
-                },
-                {
-                  "type": "text",
-                  "text": ", "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/appkit/nstextstorage/1524565-words"
-                },
-                {
-                  "type": "text",
-                  "text": ", or "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/appkit/nstextstorage/1525943-paragraphs"
-                },
-                {
-                  "type": "text",
-                  "text": " properties is an inefficient way to manipulate the text storage, since accessing these properties involves the creation of many objects. Instead, use the text access methods defined by "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring"
-                },
-                {
-                  "type": "text",
-                  "text": ", "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring"
-                },
-                {
-                  "type": "text",
-                  "text": ", "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsmutablestring"
-                },
-                {
-                  "type": "text",
-                  "text": ", and "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring"
-                },
-                {
-                  "type": "text",
-                  "text": " to perform character-level manipulation. "
-                }
-              ]
+              "type": "text",
+              "text": "In macOS, this class also defines properties for getting and setting scriptable attributes of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nstextstorage"
+            },
+            {
+              "type": "text",
+              "text": " objects. Unless you’re dealing with scriptability, you shouldn’t access these properties directly. In particular, using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstextstorage/1535788-characters"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstextstorage/1524565-words"
+            },
+            {
+              "type": "text",
+              "text": ", or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstextstorage/1525943-paragraphs"
+            },
+            {
+              "type": "text",
+              "text": " properties is an inefficient way to manipulate the text storage, since accessing these properties involves the creation of many objects. Instead, use the text access methods defined by "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsmutablestring"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring"
+            },
+            {
+              "type": "text",
+              "text": " to perform character-level manipulation."
             }
-          ],
-          "style": "important"
+          ]
         },
         {
           "level": 3,
@@ -1036,7 +1048,7 @@
             },
             {
               "type": "text",
-              "text": " class implements change management  (via the "
+              "text": " class implements change management through the "
             },
             {
               "type": "reference",
@@ -1054,7 +1066,7 @@
             },
             {
               "type": "text",
-              "text": " methods), verification of attributes, delegate handling, and layout management notification. The one aspect it does not implement is managing the actual attributed string storage, which subclasses manage by overriding the two "
+              "text": " methods, as well as verification of attributes, delegate handling, and layout management notification. The one aspect it doesn’t implement is managing the actual attributed string storage, which subclasses manage by overriding the two "
             },
             {
               "type": "reference",
@@ -1165,7 +1177,7 @@
             },
             {
               "type": "text",
-              "text": " to let the parent class know what changes were made."
+              "text": " to let the parent class know there are changes."
             }
           ]
         }
@@ -1173,7 +1185,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

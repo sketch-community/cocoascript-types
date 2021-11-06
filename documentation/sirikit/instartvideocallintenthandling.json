@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/deprecated_classes_and_protocols"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -35,14 +35,21 @@
         "name": "iOS",
         "introducedAt": "10.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "13.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
@@ -50,8 +57,8 @@
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -86,13 +93,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/deprecated_classes_and_protocols": {
-      "title": "Deprecated Classes and Protocols",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_classes_and_protocols",
-      "url": "/documentation/sirikit/deprecated_classes_and_protocols",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling": {
+      "title": "INStartCallIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintenthandling"
     },
     "doc://com.apple.documentation/documentation/sirikit/instartvideocallintenthandling": {
       "title": "INStartVideoCallIntentHandling",
@@ -119,7 +134,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A request to start a video call with one or more users. "
+          "text": "A request to start a video call with one or more users."
         }
       ],
       "deprecated": true
@@ -151,7 +166,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Called when it is time for you to resolve the recipients of the call."
+          "text": "Resolves the recipients of the call."
         }
       ],
       "fragments": [
@@ -177,7 +192,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Called when it is time for you to validate whether your app is able to initiate the video call. "
+          "text": "Validates whether your app is able to initiate the video call."
         }
       ],
       "fragments": [
@@ -203,7 +218,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Called when it is time for you to hand off the call to your app. "
+          "text": "Provides information to hand off the call to your app."
         }
       ],
       "fragments": [
@@ -228,7 +243,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Your response to a start video call intent. "
+          "text": "A response to an intent to start a video call."
         }
       ],
       "deprecated": true
@@ -241,6 +256,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
+      ]
+    }
+  ],
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -265,21 +300,24 @@
       "title": "Resolving the Intent Parameters",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartvideocallintenthandling/1902444-resolvecontactsforstartvideocall"
-      ]
+      ],
+      "anchor": "2528189"
     },
     {
       "kind": "taskGroup",
       "title": "Confirming the Response",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartvideocallintenthandling/1639163-confirmstartvideocall"
-      ]
+      ],
+      "anchor": "2528185"
     },
     {
       "kind": "taskGroup",
       "title": "Handling the Intent",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartvideocallintenthandling/1639069-handlestartvideocall"
-      ]
+      ],
+      "anchor": "2528179"
     }
   ],
   "seeAlsoSections": [
@@ -288,7 +326,7 @@
         "doc://com.apple.documentation/documentation/sirikit/instartvideocallintent",
         "doc://com.apple.documentation/documentation/sirikit/instartvideocallintentresponse"
       ],
-      "title": "Start a Video Call",
+      "title": "Video Call Initiation",
       "generated": true
     }
   ],
@@ -316,6 +354,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -344,7 +383,7 @@
             },
             {
               "type": "text",
-              "text": " protocol to resolve, confirm, and handle requests to start a video call with the designated users. Adopt this protocol in an object of your Intents extension that is capable of validating the call information. Your Intents extension should not try to initiate the call directly. Instead, a successful response involves asking Siri to launch your app to begin the call."
+              "text": " protocol to resolve, confirm, and handle requests to start a video call with the designated users. Adopt this protocol in an object of your Intents extension that’s capable of validating the call information. Don’t try to initiate the call directly in your Intents app extension. Instead, a successful response involves asking Siri to launch your app to begin the call."
             }
           ]
         },
@@ -362,7 +401,7 @@
             },
             {
               "type": "text",
-              "text": " object to your handler when the user asks to initiate a call using your app. The provided intent object contains information about who the user wants to call. Use the methods of this protocol to resolve the list of contacts to be called and to validate that your app can place the call successfully. "
+              "text": " object to your handler when the user asks to initiate a call using your app. The provided intent object contains information about who the user wants to call. Use the methods of this protocol to resolve the list of contacts to include in the call and to validate that your app can place the call successfully."
             }
           ]
         }
@@ -370,7 +409,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

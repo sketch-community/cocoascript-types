@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.5",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSAtomicStore",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -104,6 +109,20 @@
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsatomicstore": {
+      "title": "NSAtomicStore",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsatomicstore",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsatomicstore",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract superclass that you subclass to create a Core Data atomic store."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nsatomicstore/1388060-load": {
       "title": "load:",
@@ -579,20 +598,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nsatomicstore": {
-      "title": "NSAtomicStore",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsatomicstore",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsatomicstore",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An abstract superclass that you subclass to create a Core Data atomic store."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/coredata/nsatomicstorecachenode": {
       "title": "NSAtomicStoreCacheNode",
       "type": "topic",
@@ -659,7 +664,8 @@
       "title": "Initializing a Store",
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsatomicstore/1388054-initwithpersistentstorecoordinat"
-      ]
+      ],
+      "anchor": "1663255"
     },
     {
       "kind": "taskGroup",
@@ -668,7 +674,8 @@
         "doc://com.apple.documentation/documentation/coredata/nsatomicstore/1388060-load",
         "doc://com.apple.documentation/documentation/coredata/nsatomicstore/1388058-objectidforentity",
         "doc://com.apple.documentation/documentation/coredata/nsatomicstore/1388062-addcachenodes"
-      ]
+      ],
+      "anchor": "1663301"
     },
     {
       "kind": "taskGroup",
@@ -678,14 +685,16 @@
         "doc://com.apple.documentation/documentation/coredata/nsatomicstore/1388050-newreferenceobjectformanagedobje",
         "doc://com.apple.documentation/documentation/coredata/nsatomicstore/1388044-updatecachenode",
         "doc://com.apple.documentation/documentation/coredata/nsatomicstore/1388064-willremovecachenodes"
-      ]
+      ],
+      "anchor": "1663359"
     },
     {
       "kind": "taskGroup",
       "title": "Saving a Store",
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsatomicstore/1388056-save"
-      ]
+      ],
+      "anchor": "1663427"
     },
     {
       "kind": "taskGroup",
@@ -694,7 +703,8 @@
         "doc://com.apple.documentation/documentation/coredata/nsatomicstore/1388042-cachenodes",
         "doc://com.apple.documentation/documentation/coredata/nsatomicstore/1388040-cachenodeforobjectid",
         "doc://com.apple.documentation/documentation/coredata/nsatomicstore/1388046-referenceobjectforobjectid"
-      ]
+      ],
+      "anchor": "1663466"
     },
     {
       "kind": "taskGroup",
@@ -702,7 +712,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsatomicstore/1808737-metadata",
         "doc://com.apple.documentation/documentation/coredata/nsatomicstore/1808741-setmetadata"
-      ]
+      ],
+      "anchor": "1663527"
     }
   ],
   "seeAlsoSections": [
@@ -757,6 +768,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -779,7 +791,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This class provides default implementations of some utility methods. You use a custom atomic store if you have a custom file format that you want to integrate with a Core Data application."
+              "text": "Use an atomic store to handle data sets that can be expressed in memory. The atomic store API favors simplicity over performance."
             }
           ]
         },
@@ -788,36 +800,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The atomic stores are all intended to handle data sets that can be expressed in memory. The atomic store API favors simplicity over performance."
-            }
-          ]
-        },
-        {
-          "level": 3,
-          "type": "heading",
-          "text": "Subclassing Notes",
-          "anchor": "1674536"
-        },
-        {
-          "level": 4,
-          "type": "heading",
-          "text": "Methods to Override",
-          "anchor": "1674540"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "In a subclass of "
+              "text": "This class provides default implementations of some utility methods. Create a custom atomic store subclass when you have a custom file format that you want to integrate with a Core Data app. When you create a subclass, override the following "
             },
             {
-              "type": "codeVoice",
-              "code": "NSAtomicStore"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsatomicstore"
             },
             {
               "type": "text",
-              "text": ", you must override the following methods to provide behavior appropriate for your store:"
+              "text": " methods:"
             }
           ]
         },
@@ -901,7 +893,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "These are in addition to the methods you must override for a subclass of "
+              "text": "Also override the following properties and methods of "
             },
             {
               "type": "reference",
@@ -910,7 +902,7 @@
             },
             {
               "type": "text",
-              "text": ":"
+              "text": ", from which the atomic store class inherits:"
             }
           ]
         },
@@ -926,20 +918,6 @@
                       "type": "reference",
                       "isActive": true,
                       "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506250-type"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "reference",
-                      "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506215-identifier"
                     }
                   ]
                 }
@@ -1002,12 +980,16 @@
               ]
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

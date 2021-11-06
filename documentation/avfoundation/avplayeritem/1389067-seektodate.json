@@ -36,37 +36,47 @@
         "name": "iOS",
         "introducedAt": "4.0",
         "deprecatedAt": "11.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "deprecatedAt": "11.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
         "deprecatedAt": "10.13",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "11.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)AVPlayerItem(im)seekToDate:",
+    "parent": {
+      "title": "AVPlayerItem"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -119,17 +129,33 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to model the timing and presentation state of an asset played by the player."
+          "text": "An object that models the timing and presentation state of an asset that a player object presents."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/objectivec/no": {
-      "title": "NO",
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389877-seektodate": {
+      "title": "seekToDate:completionHandler:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389877-seektodate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/objectivec/no"
+      "url": "/documentation/avfoundation/avplayeritem/1389877-seektodate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the current playback time to the time specified by the date object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "seekToDate:completionHandler:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/objectivec/yes": {
       "title": "YES",
@@ -138,6 +164,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/no": {
+      "title": "NO",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/no"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1385620-seektotime": {
       "title": "seekToTime:toleranceBefore:toleranceAfter:",
@@ -245,30 +279,6 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsdate"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389877-seektodate": {
-      "title": "seekToDate:completionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389877-seektodate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem/1389877-seektodate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sets the current playback time to the time specified by the date object."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "seekToDate:completionHandler:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388316-cancelpendingseeks": {
       "title": "cancelPendingSeeks",
       "type": "topic",
@@ -326,6 +336,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389877-seektodate"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
@@ -394,6 +424,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -504,7 +535,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

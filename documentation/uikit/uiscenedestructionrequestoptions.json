@@ -2,12 +2,18 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An object you pass to UIKit when you want to permanently remove a scene and its associated session from your app.  "
+      "text": "An object you pass to UIKit to permanently remove a scene and its associated session from your app.  "
     }
   ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+        "doc://com.apple.documentation/documentation/uikit/uiapplication"
+      ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
@@ -26,6 +32,28 @@
         "doc://com.apple.documentation/documentation/uikit/app_and_environment",
         "doc://com.apple.documentation/documentation/uikit/app_and_environment/multitasking_on_ipad",
         "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+        "doc://com.apple.documentation/documentation/uikit/uiscene"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/windows_and_screens",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+        "doc://com.apple.documentation/documentation/uikit/uiscene"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/multitasking_on_ipad",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+        "doc://com.apple.documentation/documentation/uikit/uiscene"
       ]
     ]
   },
@@ -48,25 +76,30 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UISceneDestructionRequestOptions",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -109,6 +142,14 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication": {
+      "title": "UIApplication",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication"
+    },
     "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes": {
       "title": "Scenes",
       "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
@@ -133,6 +174,14 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/uikit/uiscene": {
+      "title": "UIScene",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscene",
+      "url": "/documentation/uikit/uiscene",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
     "doc://com.apple.documentation/documentation/uikit/uiscenedestructionrequestoptions": {
       "title": "UISceneDestructionRequestOptions",
       "type": "topic",
@@ -143,7 +192,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object you pass to UIKit when you want to permanently remove a scene and its associated session from your app.  "
+          "text": "An object you pass to UIKit to permanently remove a scene and its associated session from your app.  "
         }
       ]
     },
@@ -154,6 +203,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiapplication/3197902-requestscenesessiondestruction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the system to dismiss an existing scene and remove it from the app switcher.   "
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -164,14 +219,6 @@
           "text": "requestSceneSessionDestruction:options:errorHandler:"
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication": {
-      "title": "UIApplication",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication"
     },
     "doc://com.apple.documentation/documentation/uikit/uiwindowscene": {
       "title": "UIWindowScene",
@@ -187,13 +234,7 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiwindowscenedestructionrequestoptions",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiwindowscenedestructionrequestoptions",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object containing information to use when removing a window scene from your app.  "
-        }
-      ]
+      "url": "/documentation/uikit/uiwindowscenedestructionrequestoptions"
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
@@ -203,17 +244,51 @@
       "role": "symbol",
       "url": "/documentation/objectivec/nsobject"
     },
-    "doc://com.apple.documentation/documentation/uikit/uisceneactivationconditions": {
-      "title": "UISceneActivationConditions",
+    "doc://com.apple.documentation/documentation/uikit/uiapplication/3197901-requestscenesessionactivation": {
+      "title": "requestSceneSessionActivation:userActivity:options:errorHandler:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uisceneactivationconditions",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/3197901-requestscenesessionactivation",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uisceneactivationconditions",
+      "url": "/documentation/uikit/uiapplication/3197901-requestscenesessionactivation",
       "abstract": [
         {
           "type": "text",
-          "text": "The set of conditions that define when UIKit activates the current scene. "
+          "text": "Asks the system to activate an existing scene, or create a new scene and associate it with your app.   "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "requestSceneSessionActivation:userActivity:options:errorHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication/3197903-requestscenesessionrefresh": {
+      "title": "requestSceneSessionRefresh:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/3197903-requestscenesessionrefresh",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication/3197903-requestscenesessionrefresh",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the system to update any system UI associated with the specified scene. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "requestSceneSessionRefresh:"
         }
       ]
     },
@@ -227,7 +302,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object containing information you want the system to use when activating the session associated with a scene.  "
+          "text": "An object that contains information you want the system to use when activating the session associated with a scene.  "
         }
       ]
     },
@@ -252,11 +327,12 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uisceneactivationconditions",
-        "doc://com.apple.documentation/documentation/uikit/uisceneactivationrequestoptions",
-        "doc://com.apple.documentation/documentation/uikit/uiwindowscenedestructionrequestoptions"
+        "doc://com.apple.documentation/documentation/uikit/uiapplication/3197901-requestscenesessionactivation",
+        "doc://com.apple.documentation/documentation/uikit/uiapplication/3197902-requestscenesessiondestruction",
+        "doc://com.apple.documentation/documentation/uikit/uiapplication/3197903-requestscenesessionrefresh",
+        "doc://com.apple.documentation/documentation/uikit/uisceneactivationrequestoptions"
       ],
-      "title": "Activation and Destruction",
+      "title": "Creating, Destroying, and Updating Scenes",
       "generated": true
     }
   ],
@@ -294,6 +370,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -367,7 +444,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

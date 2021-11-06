@@ -36,37 +36,47 @@
         "name": "iOS",
         "introducedAt": "5.0",
         "deprecatedAt": "11.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "deprecatedAt": "11.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.8",
         "deprecatedAt": "10.13",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "11.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)AVPlayerItem(im)selectedMediaOptionInMediaSelectionGroup:",
+    "parent": {
+      "title": "AVPlayerItem"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -119,7 +129,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to model the timing and presentation state of an asset played by the player."
+          "text": "An object that models the timing and presentation state of an asset that a player object presents."
         }
       ]
     },
@@ -147,14 +157,6 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avmediaselectionoption"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmediaselectiongroup": {
-      "title": "AVMediaSelectionGroup",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediaselectiongroup",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmediaselectiongroup"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1386519-currentmediaselection": {
       "title": "currentMediaSelection",
       "type": "topic",
@@ -168,6 +170,14 @@
           "text": "The current media selections for each of the receiver's media selection groups."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmediaselectiongroup": {
+      "title": "AVMediaSelectionGroup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediaselectiongroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmediaselectiongroup"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389610-selectmediaoption": {
       "title": "selectMediaOption:inMediaSelectionGroup:",
@@ -250,6 +260,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1386519-currentmediaselection"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
@@ -321,6 +351,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -435,7 +466,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

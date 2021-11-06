@@ -41,25 +41,33 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.14",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)NSItemProvider(py)suggestedName",
+    "parent": {
+      "title": "NSItemProvider"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -138,14 +146,6 @@
       "title": "NSData",
       "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/OldStylePlists/OldStylePLists.html#//apple_ref/doc/uid/20001012-47169"
     },
-    "doc://com.apple.documentation/documentation/foundation/nsitemproviderwriting": {
-      "title": "NSItemProviderWriting",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemproviderwriting",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsitemproviderwriting"
-    },
     "doc://com.apple.documentation/documentation/foundation/nsstring": {
       "title": "NSString",
       "type": "topic",
@@ -154,117 +154,45 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
-    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888319-registerdatarepresentationfortyp": {
-      "title": "registerDataRepresentationForTypeIdentifier:visibility:loadHandler:",
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1528574-preferredpresentationsize": {
+      "title": "preferredPresentationSize",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888319-registerdatarepresentationfortyp",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1528574-preferredpresentationsize",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider/2888319-registerdatarepresentationfortyp",
+      "url": "/documentation/foundation/nsitemprovider/1528574-preferredpresentationsize",
       "abstract": [
         {
           "type": "text",
-          "text": "Registers a data-backed representation for an item, specifiying item visibility and a load handler."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "registerDataRepresentationForTypeIdentifier:visibility:loadHandler:"
+          "text": "The ideal presentation size of the item."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888337-registerfilerepresentationfortyp": {
-      "title": "registerFileRepresentationForTypeIdentifier:fileOptions:visibility:loadHandler:",
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2921257-preferredpresentationstyle": {
+      "title": "preferredPresentationStyle",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888337-registerfilerepresentationfortyp",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2921257-preferredpresentationstyle",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider/2888337-registerfilerepresentationfortyp",
+      "url": "/documentation/foundation/nsitemprovider/2921257-preferredpresentationstyle",
       "abstract": [
         {
           "type": "text",
-          "text": "Registers a file-backed representation for an item, specifying file options, item visibility, and a load handler."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "registerFileRepresentationForTypeIdentifier:fileOptions:visibility:loadHandler:"
+          "text": "The preferred style for presenting the item provider's data."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888321-registerobject": {
-      "title": "registerObject:visibility:",
+    "doc://com.apple.documentation/documentation/uikit/uipreferredpresentationstyle": {
+      "title": "UIPreferredPresentationStyle",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888321-registerobject",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipreferredpresentationstyle",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider/2888321-registerobject",
+      "url": "/documentation/uikit/uipreferredpresentationstyle",
       "abstract": [
         {
           "type": "text",
-          "text": "Adds representations of a specified object to an item provider, based on the object’s implementation of the "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemproviderwriting"
-        },
-        {
-          "type": "text",
-          "text": " protocol and adhering to a visibility specification."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "registerObject:visibility:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888329-registerobjectofclass": {
-      "title": "registerObjectOfClass:visibility:loadHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888329-registerobjectofclass",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsitemprovider/2888329-registerobjectofclass",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Lazily adds representations of a specified object to an item provider, based on the object’s implementation of the "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemproviderwriting"
-        },
-        {
-          "type": "text",
-          "text": " protocol and adhering to a visibility specification."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "registerObjectOfClass:visibility:loadHandler:"
+          "text": "The presentation styles that determine how a view should show an item provider's data."
         }
       ]
     },
@@ -282,6 +210,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2909055-teamdata": {
+      "title": "teamData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2909055-teamdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider/2909055-teamdata"
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -290,25 +226,15 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888319-registerdatarepresentationfortyp",
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888337-registerfilerepresentationfortyp",
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888321-registerobject",
-        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888329-registerobjectofclass"
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1528574-preferredpresentationsize",
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2921257-preferredpresentationstyle",
+        "doc://com.apple.documentation/documentation/uikit/uipreferredpresentationstyle",
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2909055-teamdata"
       ],
-      "title": "Providing the Item’s Data",
+      "title": "Configuring the Provider",
       "generated": true
     }
   ],
@@ -350,6 +276,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -387,7 +314,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

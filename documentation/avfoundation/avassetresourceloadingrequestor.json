@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An object that contains information about the originator of a loading request."
+      "text": "An object that contains information about the originator of a resource-loading request."
     }
   ],
   "documentVersion": 0,
@@ -34,30 +34,35 @@
       {
         "name": "iOS",
         "introducedAt": "12.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "12.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.14",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "12.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetResourceLoadingRequestor",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -146,7 +151,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Methods you can implement to handle resource loading requests coming from a URL asset. "
+          "text": "Methods you can implement to handle resource-loading requests coming from a URL asset. "
         }
       ]
     },
@@ -160,7 +165,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that encapsulates information about a resource request issued by a resource loader object."
+          "text": "An object that encapsulates information about a resource request from a resource loader object."
         }
       ]
     },
@@ -174,7 +179,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that encapsulates information about a resource request issued by a resource loader to renew a previously issued request."
+          "text": "An object that encapsulates information about a resource request from a resource loader to renew a previously issued request."
         }
       ]
     },
@@ -188,7 +193,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that contains information about the originator of a loading request."
+          "text": "An object that contains information about the originator of a resource-loading request."
         }
       ]
     },
@@ -202,7 +207,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to request data from a resource referenced by an asset resource loading request."
+          "text": "An object for requesting data from a resource that an asset resource-loading request references."
         }
       ]
     },
@@ -216,7 +221,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A query used to get essential information about a resource referenced by an asset resource loading request."
+          "text": "A query for retrieving essential information about a resource that an asset resource-loading request references."
         }
       ]
     },
@@ -244,7 +249,8 @@
       "title": "Retrieving Expired Session Reports",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetresourceloadingrequestor/2966511-providesexpiredsessionreports"
-      ]
+      ],
+      "anchor": "3016431"
     }
   ],
   "seeAlsoSections": [
@@ -295,6 +301,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -304,7 +311,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

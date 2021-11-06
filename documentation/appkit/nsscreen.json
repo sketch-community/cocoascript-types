@@ -34,15 +34,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSScreen",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -84,14 +84,6 @@
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nswindow/1419741-devicedescription": {
-      "title": "deviceDescription",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419741-devicedescription",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nswindow/1419741-devicedescription"
     },
     "doc://com.apple.documentation/documentation/appkit/nsscreen": {
       "title": "NSScreen",
@@ -247,16 +239,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "These constants are the keys for device description dictionaries used by "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419741-devicedescription"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "These constants are the keys for device description dictionaries."
         }
       ]
     },
@@ -285,20 +268,6 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/appkit/nsscreen/1388369-visibleframe": {
-      "title": "visibleFrame",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsscreen/1388369-visibleframe",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsscreen/1388369-visibleframe",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The current location and dimensions of the visible screen."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/appkit/nsscreen/1388383-colorspace": {
       "title": "colorSpace",
       "type": "topic",
@@ -310,6 +279,20 @@
         {
           "type": "text",
           "text": "The color space of the screen."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsscreen/3228043-localizedname": {
+      "title": "localizedName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsscreen/3228043-localizedname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsscreen/3228043-localizedname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The localized name of the display."
         }
       ]
     },
@@ -445,6 +428,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nsscreen/1388369-visibleframe": {
+      "title": "visibleFrame",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsscreen/1388369-visibleframe",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsscreen/1388369-visibleframe",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The current location and dimensions of the visible screen."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsscreen/3882821-safeareainsets": {
+      "title": "safeAreaInsets",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsscreen/3882821-safeareainsets",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsscreen/3882821-safeareainsets",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The distances from the screen’s edges at which content isn’t obscured."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nsscreen/3180381-maximumpotentialextendeddynamicr": {
       "title": "maximumPotentialExtendedDynamicRangeColorComponentValue",
       "type": "topic",
@@ -487,6 +498,76 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nsscreen/3824745-maximumframespersecond": {
+      "title": "maximumFramesPerSecond",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsscreen/3824745-maximumframespersecond",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsscreen/3824745-maximumframespersecond",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The maximum number of frames per second that the screen supports."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsscreen/3824747-minimumrefreshinterval": {
+      "title": "minimumRefreshInterval",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsscreen/3824747-minimumrefreshinterval",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsscreen/3824747-minimumrefreshinterval",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The shortest refresh interval that the screen supports. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsscreen/3824746-maximumrefreshinterval": {
+      "title": "maximumRefreshInterval",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsscreen/3824746-maximumrefreshinterval",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsscreen/3824746-maximumrefreshinterval",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The largest refresh interval that the screen supports."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsscreen/3824743-displayupdategranularity": {
+      "title": "displayUpdateGranularity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsscreen/3824743-displayupdategranularity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsscreen/3824743-displayupdategranularity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number of seconds between the screen’s supported update rates, for screens that support fixed update rates. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsscreen/3824744-lastdisplayupdatetimestamp": {
+      "title": "lastDisplayUpdateTimestamp",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsscreen/3824744-lastdisplayupdatetimestamp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsscreen/3824744-lastdisplayupdatetimestamp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The time of the last framebuffer update, expressed as the number of seconds since system startup."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nsscreencolorspacedidchangenotification": {
       "title": "NSScreenColorSpaceDidChangeNotification",
       "type": "topic",
@@ -501,13 +582,21 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsscreen/3228043-localizedname": {
-      "title": "localizedName",
+    "doc://com.apple.documentation/documentation/appkit/nsscreen/3882819-auxiliarytopleftarea": {
+      "title": "auxiliaryTopLeftArea",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsscreen/3228043-localizedname",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsscreen/3882819-auxiliarytopleftarea",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsscreen/3228043-localizedname"
+      "url": "/documentation/appkit/nsscreen/3882819-auxiliarytopleftarea"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsscreen/3882820-auxiliarytoprightarea": {
+      "title": "auxiliaryTopRightArea",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsscreen/3882820-auxiliarytoprightarea",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsscreen/3882820-auxiliarytoprightarea"
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -522,8 +611,8 @@
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.0 beta 5",
-        "12.3 Release Candidate"
+        "13.0",
+        "13.2 beta 1"
       ]
     }
   },
@@ -545,7 +634,8 @@
         "doc://com.apple.documentation/documentation/appkit/nsscreen/1388371-mainscreen",
         "doc://com.apple.documentation/documentation/appkit/nsscreen/1388374-deepestscreen",
         "doc://com.apple.documentation/documentation/appkit/nsscreen/1388393-screens"
-      ]
+      ],
+      "anchor": "1665009"
     },
     {
       "kind": "taskGroup",
@@ -557,45 +647,72 @@
         "doc://com.apple.documentation/documentation/appkit/nsscreen/1388360-devicedescription",
         "doc://com.apple.documentation/documentation/appkit/nsdevicedescriptionkey",
         "doc://com.apple.documentation/documentation/appkit/nsscreen/1388375-userspacescalefactor",
-        "doc://com.apple.documentation/documentation/appkit/nsscreen/1388369-visibleframe",
         "doc://com.apple.documentation/documentation/appkit/nsscreen/1388383-colorspace",
+        "doc://com.apple.documentation/documentation/appkit/nsscreen/3228043-localizedname",
         "doc://com.apple.documentation/documentation/appkit/nsscreen/2138325-canrepresentdisplaygamut",
         "doc://com.apple.documentation/documentation/appkit/nsdisplaygamut",
         "doc://com.apple.documentation/documentation/appkit/nsscreen/1388365-screenshaveseparatespaces"
-      ]
+      ],
+      "anchor": "1679336"
     },
     {
       "kind": "taskGroup",
-      "title": "Screen Backing Coordinate Conversion",
+      "title": "Converting Between Screen and Backing Coordinates",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsscreen/1388381-backingalignedrect",
         "doc://com.apple.documentation/documentation/appkit/nsscreen/1388385-backingscalefactor",
         "doc://com.apple.documentation/documentation/appkit/nsscreen/1388364-convertrectfrombacking",
         "doc://com.apple.documentation/documentation/appkit/nsscreen/1388389-convertrecttobacking"
-      ]
+      ],
+      "anchor": "1665129"
     },
     {
       "kind": "taskGroup",
-      "title": "Extended Dynamic Range",
+      "title": "Getting the Visible Portion of the Screen",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsscreen/1388369-visibleframe",
+        "doc://com.apple.documentation/documentation/appkit/nsscreen/3882821-safeareainsets"
+      ],
+      "anchor": "3885524"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Extended Dynamic Range Details",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsscreen/3180381-maximumpotentialextendeddynamicr",
         "doc://com.apple.documentation/documentation/appkit/nsscreen/1388362-maximumextendeddynamicrangecolor",
         "doc://com.apple.documentation/documentation/appkit/nsscreen/3180382-maximumreferenceextendeddynamicr"
-      ]
+      ],
+      "anchor": "1679398"
     },
     {
       "kind": "taskGroup",
-      "title": "Notifications",
+      "title": "Getting Variable Refresh Rate Details",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsscreen/3824745-maximumframespersecond",
+        "doc://com.apple.documentation/documentation/appkit/nsscreen/3824747-minimumrefreshinterval",
+        "doc://com.apple.documentation/documentation/appkit/nsscreen/3824746-maximumrefreshinterval",
+        "doc://com.apple.documentation/documentation/appkit/nsscreen/3824743-displayupdategranularity",
+        "doc://com.apple.documentation/documentation/appkit/nsscreen/3824744-lastdisplayupdatetimestamp"
+      ],
+      "anchor": "3885523"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Receiving Screen-Related Notifications",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsscreencolorspacedidchangenotification"
-      ]
+      ],
+      "anchor": "1679412"
     },
     {
       "kind": "taskGroup",
       "title": "Instance Properties",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsscreen/3228043-localizedname"
-      ]
+        "doc://com.apple.documentation/documentation/appkit/nsscreen/3882819-auxiliarytopleftarea",
+        "doc://com.apple.documentation/documentation/appkit/nsscreen/3882820-auxiliarytoprightarea"
+      ],
+      "anchor": "3893727"
     }
   ],
   "primaryContentSections": [
@@ -659,7 +776,7 @@
             },
             {
               "type": "text",
-              "text": " object to retrieve information about a screen and use this information to decide what to display upon that screen. For example, an app may use the "
+              "text": " object to retrieve information about a screen and use this information to decide what to display on that screen. For example, an app may use the "
             },
             {
               "type": "reference",
@@ -668,7 +785,7 @@
             },
             {
               "type": "text",
-              "text": " method to find out which of the available screens can best represent color and then may choose to display all of its windows on that screen."
+              "text": " method to find out which of the available screens can best represent color and then might choose to display all of its windows on that screen."
             }
           ]
         },
@@ -677,7 +794,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The application object should be created before you use the methods in this class, so that the application object can make the necessary connection to the window system. You can make sure the application object exists by invoking the "
+              "text": "Create the application object before you use the methods in this class, so that the application object can make the necessary connection to the window system. You can make sure the application object exists by invoking the "
             },
             {
               "type": "reference",
@@ -716,7 +833,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " class is for getting information about the available displays only. If you need additional information or want to change the attributes relating to a display, you must use Quartz Services. For more information, see "
+                  "text": " class is only for getting information about the available displays. If you need additional information or want to change the attributes relating to a display, you must use Quartz Services. For more information, see "
                 },
                 {
                   "type": "reference",
@@ -737,7 +854,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

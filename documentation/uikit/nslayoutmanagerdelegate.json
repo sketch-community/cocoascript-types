@@ -11,18 +11,8 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts",
+        "doc://com.apple.documentation/documentation/uikit/textkit",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/textkit"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
@@ -54,30 +44,35 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.6",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)NSLayoutManagerDelegate",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,27 +109,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts": {
-      "title": "Text Display and Fonts",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts",
-      "url": "/documentation/uikit/text_display_and_fonts",
+    "doc://com.apple.documentation/documentation/uikit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit",
+      "url": "/documentation/uikit/textkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/uikit/nslayoutmanager": {
       "title": "NSLayoutManager",
-      "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanager",
-      "kind": "symbol",
-      "role": "symbol",
       "url": "/documentation/uikit/nslayoutmanager",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that coordinates the layout and display of text characters."
-        }
-      ]
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/appkit": {
       "title": "AppKit",
@@ -513,6 +502,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1402920-delegate": {
+      "title": "delegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1402920-delegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nslayoutmanager/1402920-delegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The layout manager’s delegate."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate": {
       "title": "NSLayoutManagerDelegate",
       "type": "topic",
@@ -524,34 +527,6 @@
         {
           "type": "text",
           "text": "A set of optional methods that delegates of layout manager objects implement."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/nstextlayoutorientationprovider": {
-      "title": "NSTextLayoutOrientationProvider",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextlayoutorientationprovider",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/nstextlayoutorientationprovider",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A set of methods that define the orientation of text for an object. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout": {
-      "title": "Display Text with a Custom Layout",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout",
-      "kind": "article",
-      "role": "sampleCode",
-      "url": "/documentation/uikit/text_storage/display_text_with_a_custom_layout",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Lay out text in a custom-shaped container and apply glyph substitutions."
         }
       ]
     },
@@ -582,7 +557,8 @@
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate/1403073-layoutmanager",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate/1403167-layoutmanager",
         "doc://com.apple.documentation/documentation/uikit/nscontrolcharacteraction"
-      ]
+      ],
+      "anchor": "1661273"
     },
     {
       "kind": "taskGroup",
@@ -590,7 +566,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate/1402926-layoutmanager",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate/1403049-layoutmanager"
-      ]
+      ],
+      "anchor": "1661315"
     },
     {
       "kind": "taskGroup",
@@ -603,31 +580,32 @@
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate/1403177-layoutmanager",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate/1402922-layoutmanager",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate/1403122-layoutmanager"
-      ]
+      ],
+      "anchor": "1661351"
     },
     {
       "kind": "taskGroup",
       "title": "Managing Temporary Attribute Support",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nslayoutmanagerdelegate/1403085-layoutmanager"
-      ]
+      ],
+      "anchor": "1661428"
     },
     {
       "kind": "taskGroup",
       "title": "Deprecated",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/1619233-control_characters"
-      ]
+      ],
+      "anchor": "3680641"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/nslayoutmanager",
-        "doc://com.apple.documentation/documentation/uikit/nstextlayoutorientationprovider",
-        "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout"
+        "doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1402920-delegate"
       ],
-      "title": "Layout",
+      "title": "Managing the Layout Process",
       "generated": true
     }
   ],
@@ -655,6 +633,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -664,7 +643,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

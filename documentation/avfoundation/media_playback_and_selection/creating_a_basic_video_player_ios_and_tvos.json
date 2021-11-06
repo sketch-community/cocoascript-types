@@ -32,8 +32,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -94,21 +94,21 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioncategoryplayback": {
+    "doc://com.apple.documentation/documentation/avfaudio/avaudiosessioncategoryplayback": {
       "title": "AVAudioSessionCategoryPlayback",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioncategoryplayback",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avaudiosessioncategoryplayback",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avaudiosessioncategoryplayback"
+      "url": "/documentation/avfaudio/avaudiosessioncategoryplayback"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmodemovieplayback": {
+    "doc://com.apple.documentation/documentation/avfaudio/avaudiosessionmodemovieplayback": {
       "title": "AVAudioSessionModeMoviePlayback",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmodemovieplayback",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avaudiosessionmodemovieplayback",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avaudiosessionmodemovieplayback"
+      "url": "/documentation/avfaudio/avaudiosessionmodemovieplayback"
     },
     "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos#2943540": {
       "title": "Listing 1",
@@ -133,20 +133,21 @@
             "2x"
           ],
           "size": {
-            "width": 416,
-            "height": 424
+            "width": 367,
+            "height": 374
           },
-          "url": "https://docs-assets.developer.apple.com/published/caa5f3bbe0/b6bef4e4-4c5a-4f73-8a5b-5c9f0a73681c.png"
+          "url": "https://docs-assets.developer.apple.com/published/eb1c341325/2943577@2x.png"
         },
         {
           "traits": [
-            "1x"
+            "dark",
+            "2x"
           ],
           "size": {
-            "width": 416,
-            "height": 424
+            "width": 367,
+            "height": 374
           },
-          "url": "https://docs-assets.developer.apple.com/published/1fda0a0d60/54f16e3d-7fdf-48f7-83ff-de37c7ce6503.png"
+          "url": "https://docs-assets.developer.apple.com/published/3f653192f0/2943577~dark@2x.png"
         }
       ],
       "alt": "Xcode constraints window with the horizontal and vertical alignment options selected.",
@@ -212,7 +213,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Create a simple video playback app with built-in controls."
+          "text": "Build a simple video playback app with built-in controls by using minimal code and effort."
         }
       ]
     },
@@ -274,7 +275,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/enabling_background_audio",
         "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/playing_audio_from_a_video_asset_in_the_background",
         "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/controlling_background_audio"
-      ]
+      ],
+      "anchor": "2943661"
     }
   ],
   "seeAlsoSections": [
@@ -375,7 +377,7 @@
                     {
                       "type": "reference",
                       "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioncategoryplayback"
+                      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avaudiosessioncategoryplayback"
                     },
                     {
                       "type": "text",
@@ -384,7 +386,7 @@
                     {
                       "type": "reference",
                       "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmodemovieplayback"
+                      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avaudiosessionmodemovieplayback"
                     },
                     {
                       "type": "text",
@@ -640,7 +642,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " method, add the following implementation:"
+                      "text": " method, add the following code, making sure to replace the URL with one that points to a real video file available on the public internet:"
                     }
                   ]
                 }
@@ -652,9 +654,8 @@
           "type": "codeListing",
           "code": [
             "@IBAction func playVideo(_ sender: UIButton) {",
-            "    guard let url = URL(string: \"https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_adv_example_hevc/master.m3u8\") else {",
-            "        return",
-            "    }",
+            "    guard let url = URL(string: \"https://example.com/my-example-video.m3u8\") else { return }",
+            "",
             "    // Create an AVPlayer, passing it the HTTP Live Streaming URL.",
             "    let player = AVPlayer(url: url)",
             "",
@@ -687,7 +688,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

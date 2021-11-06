@@ -34,32 +34,37 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "8.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Foundation3URLV",
@@ -76,8 +81,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -173,6 +178,102 @@
         {
           "kind": "identifier",
           "text": "NSURL"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession": {
+      "title": "URLSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession"
+    },
+    "doc://com.apple.documentation/documentation/swift/string": {
+      "title": "String",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/string",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/string"
+    },
+    "doc://com.apple.documentation/documentation/swift/string/3126736-init": {
+      "title": "init(contentsOf:encoding:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/string/3126736-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/string/3126736-init"
+    },
+    "doc://com.apple.documentation/documentation/foundation/data": {
+      "title": "Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data"
+    },
+    "doc://com.apple.documentation/documentation/foundation/data/3126626-init": {
+      "title": "init(contentsOf:options:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data/3126626-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data/3126626-init"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url/3767316-resourcebytes": {
+      "title": "resourceBytes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url/3767316-resourcebytes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/url/3767316-resourcebytes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The URL’s resource data, as an asynchronous sequence of bytes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "resourceBytes"
+        },
+        {
+          "kind": "text",
+          "text": ": URL.AsyncBytes"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/url/3767315-lines": {
+      "title": "lines",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url/3767315-lines",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/url/3767315-lines",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The URL’s resource data, as an asynchronous sequence of lines of text."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "lines"
+        },
+        {
+          "kind": "text",
+          "text": ": AsyncLineSequence<URL.AsyncBytes>"
         }
       ]
     },
@@ -2256,6 +2357,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/url/asyncbytes": {
+      "title": "URL.AsyncBytes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url/asyncbytes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/url/asyncbytes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An asynchronous sequence of bytes loaded from the URL."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "URL.AsyncBytes"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/url/1779781-checkpromiseditemisreachable": {
       "title": "checkPromisedItemIsReachable()",
       "type": "topic",
@@ -2830,16 +2955,16 @@
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.2 Release Candidate",
-        "12.3 Release Candidate"
+        "13.1",
+        "13.2 beta 1"
       ]
     },
     "major": {
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.0 beta 5",
-        "12.3 Release Candidate"
+        "13.0",
+        "13.2 beta 1"
       ]
     }
   },
@@ -2865,7 +2990,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/url/3126806-init",
         "doc://com.apple.documentation/documentation/foundation/url/3126807-init"
-      ]
+      ],
+      "anchor": "2851030"
     },
     {
       "kind": "taskGroup",
@@ -2877,7 +3003,8 @@
         "doc://com.apple.documentation/documentation/foundation/url/3126802-init",
         "doc://com.apple.documentation/documentation/foundation/url/3126799-init",
         "doc://com.apple.documentation/documentation/foundation/url/2142903-init"
-      ]
+      ],
+      "anchor": "2902599"
     },
     {
       "kind": "taskGroup",
@@ -2887,7 +3014,8 @@
         "doc://com.apple.documentation/documentation/foundation/url/3126804-init",
         "doc://com.apple.documentation/documentation/foundation/url/bookmarkresolutionoptions",
         "doc://com.apple.documentation/documentation/foundation/nsurl/bookmarkresolutionoptions"
-      ]
+      ],
+      "anchor": "2902608"
     },
     {
       "kind": "taskGroup",
@@ -2895,7 +3023,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/url/2908802-init",
         "doc://com.apple.documentation/documentation/foundation/url/2908793-encode"
-      ]
+      ],
+      "anchor": "2928578"
     },
     {
       "kind": "taskGroup",
@@ -2903,7 +3032,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/url/3126798-init",
         "doc://com.apple.documentation/documentation/foundation/url/1780182-datarepresentation"
-      ]
+      ],
+      "anchor": "2851031"
     },
     {
       "kind": "taskGroup",
@@ -2927,7 +3057,8 @@
         "doc://com.apple.documentation/documentation/foundation/url/2293229-standardizedfileurl",
         "doc://com.apple.documentation/documentation/foundation/url/1779699-user",
         "doc://com.apple.documentation/documentation/foundation/url/1780348-password"
-      ]
+      ],
+      "anchor": "2902598"
     },
     {
       "kind": "taskGroup",
@@ -2940,7 +3071,8 @@
         "doc://com.apple.documentation/documentation/foundation/url/1780285-settemporaryresourcevalue",
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey",
         "doc://com.apple.documentation/documentation/foundation/urlresourcevalues"
-      ]
+      ],
+      "anchor": "2902604"
     },
     {
       "kind": "taskGroup",
@@ -2952,7 +3084,8 @@
         "doc://com.apple.documentation/documentation/foundation/url/1780208-resolvesymlinksinpath",
         "doc://com.apple.documentation/documentation/foundation/url/1779822-resolvingsymlinksinpath",
         "doc://com.apple.documentation/documentation/foundation/url/2293141-standardize"
-      ]
+      ],
+      "anchor": "2902596"
     },
     {
       "kind": "taskGroup",
@@ -2962,7 +3095,8 @@
         "doc://com.apple.documentation/documentation/foundation/url/1780403-appendpathcomponent",
         "doc://com.apple.documentation/documentation/foundation/url/1780239-appendingpathcomponent",
         "doc://com.apple.documentation/documentation/foundation/url/1779992-appendingpathcomponent"
-      ]
+      ],
+      "anchor": "2902600"
     },
     {
       "kind": "taskGroup",
@@ -2970,7 +3104,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/url/1779923-appendpathextension",
         "doc://com.apple.documentation/documentation/foundation/url/1780122-appendingpathextension"
-      ]
+      ],
+      "anchor": "2902602"
     },
     {
       "kind": "taskGroup",
@@ -2978,7 +3113,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/url/1780315-deletelastpathcomponent",
         "doc://com.apple.documentation/documentation/foundation/url/1780471-deletinglastpathcomponent"
-      ]
+      ],
+      "anchor": "2902601"
     },
     {
       "kind": "taskGroup",
@@ -2986,7 +3122,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/url/1780400-deletepathextension",
         "doc://com.apple.documentation/documentation/foundation/url/1780065-deletingpathextension"
-      ]
+      ],
+      "anchor": "2902603"
     },
     {
       "kind": "taskGroup",
@@ -2998,14 +3135,26 @@
         "doc://com.apple.documentation/documentation/foundation/url/1780391-resourcevalues",
         "doc://com.apple.documentation/documentation/foundation/url/bookmarkcreationoptions",
         "doc://com.apple.documentation/documentation/foundation/nsurl/bookmarkcreationoptions"
-      ]
+      ],
+      "anchor": "2902594"
     },
     {
       "kind": "taskGroup",
       "title": "Checking Reachability",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/url/1779667-checkresourceisreachable"
-      ]
+      ],
+      "anchor": "2902607"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Loading URL Contents Asynchronously",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/url/3767316-resourcebytes",
+        "doc://com.apple.documentation/documentation/foundation/url/3767315-lines",
+        "doc://com.apple.documentation/documentation/foundation/url/asyncbytes"
+      ],
+      "anchor": "3849753"
     },
     {
       "kind": "taskGroup",
@@ -3013,7 +3162,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/url/1779781-checkpromiseditemisreachable",
         "doc://com.apple.documentation/documentation/foundation/url/1779804-promiseditemresourcevalues"
-      ]
+      ],
+      "anchor": "2902597"
     },
     {
       "kind": "taskGroup",
@@ -3021,7 +3171,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/url/1779698-startaccessingsecurityscopedreso",
         "doc://com.apple.documentation/documentation/foundation/url/1780153-stopaccessingsecurityscopedresou"
-      ]
+      ],
+      "anchor": "2851032"
     },
     {
       "kind": "taskGroup",
@@ -3029,7 +3180,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/url/2882982",
         "doc://com.apple.documentation/documentation/foundation/url/2293156"
-      ]
+      ],
+      "anchor": "2851034"
     },
     {
       "kind": "taskGroup",
@@ -3038,7 +3190,8 @@
         "doc://com.apple.documentation/documentation/foundation/url/1779854-description",
         "doc://com.apple.documentation/documentation/foundation/url/1780061-debugdescription",
         "doc://com.apple.documentation/documentation/foundation/url/1779950-customplaygroundquicklook"
-      ]
+      ],
+      "anchor": "2902595"
     },
     {
       "kind": "taskGroup",
@@ -3046,7 +3199,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/url/1780338-hashvalue",
         "doc://com.apple.documentation/documentation/foundation/url/3236799-hash"
-      ]
+      ],
+      "anchor": "3528441"
     },
     {
       "kind": "taskGroup",
@@ -3054,7 +3208,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsurl",
         "doc://com.apple.documentation/documentation/foundation/url/referencetype"
-      ]
+      ],
+      "anchor": "2878100"
     },
     {
       "kind": "taskGroup",
@@ -3062,7 +3217,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/url/3580302-init",
         "doc://com.apple.documentation/documentation/foundation/url/3580303-init"
-      ]
+      ],
+      "anchor": "3581044"
     },
     {
       "kind": "taskGroup",
@@ -3072,7 +3228,8 @@
         "doc://com.apple.documentation/documentation/foundation/url/3585029-appendpathextension",
         "doc://com.apple.documentation/documentation/foundation/url/3566235-appendingpathcomponent",
         "doc://com.apple.documentation/documentation/foundation/url/3585030-appendingpathextension"
-      ]
+      ],
+      "anchor": "3567576"
     }
   ],
   "seeAlsoSections": [
@@ -3109,6 +3266,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -3131,7 +3289,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You can construct URLs and access their parts. For URLs that represent local files, you can also manipulate properties of those files directly, such as changing the file’s last modification date. Finally, you can pass URLs to other APIs to retrieve the contents of those URLs. For example, you can use the URLSession classes to access the contents of remote resources, as described in URL Session Programming Guide."
+              "text": "You can construct URLs and access their parts. For URLs that represent local files, you can also manipulate properties of those files directly, such as changing the file’s last modification date. Finally, you can pass URLs to other APIs to retrieve the contents of those URLs. For example, you can use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession"
+            },
+            {
+              "type": "text",
+              "text": " and its related classes to access the contents of remote resources."
             }
           ]
         },
@@ -3143,36 +3310,101 @@
               "text": "URLs are the preferred way to refer to local files. Most objects that read data from or write data to a file have methods that accept a URL instead of a pathname as the file reference. For example, you can get the contents of a local file URL as "
             },
             {
-              "type": "codeVoice",
-              "code": "String"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/string"
             },
             {
               "type": "text",
               "text": " by calling "
             },
             {
-              "type": "codeVoice",
-              "code": "func init(contentsOf:encoding) throws"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/string/3126736-init"
             },
             {
               "type": "text",
               "text": ", or as a "
             },
             {
-              "type": "codeVoice",
-              "code": "Data"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/data"
             },
             {
               "type": "text",
               "text": " by calling "
             },
             {
-              "type": "codeVoice",
-              "code": "func init(contentsOf:options) throws"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/data/3126626-init"
             },
             {
               "type": "text",
               "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As a convenience, you can use Swift’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "async"
+            },
+            {
+              "type": "text",
+              "text": "-"
+            },
+            {
+              "type": "codeVoice",
+              "code": "await"
+            },
+            {
+              "type": "text",
+              "text": " syntax to asynchronously access the contents of a "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/url"
+            },
+            {
+              "type": "text",
+              "text": " through the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/url/3767316-resourcebytes"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/url/3767315-lines"
+            },
+            {
+              "type": "text",
+              "text": " properties. These properties use the shared "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession"
+            },
+            {
+              "type": "text",
+              "text": " instance to load the resoruce."
             }
           ]
         }
@@ -3180,7 +3412,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

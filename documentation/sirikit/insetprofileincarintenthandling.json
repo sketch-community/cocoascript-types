@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/carplay"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -34,20 +34,31 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(pl)INSetProfileInCarIntentHandling",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -82,10 +93,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/carplay": {
-      "title": "CarPlay",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/carplay",
-      "url": "/documentation/sirikit/carplay",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -102,7 +113,8 @@
           "type": "text",
           "text": "The handler interface for restoring vehicle environment settings from a user-specified profile."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintent": {
       "title": "INSetProfileInCarIntent",
@@ -116,7 +128,16 @@
           "type": "text",
           "text": "A request to change the user’s vehicle environment settings to the ones from the specified profile."
         }
-      ]
+      ],
+      "deprecated": true
+    },
+    "link-3866840": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3866840",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject": {
       "title": "NSObject",
@@ -157,7 +178,8 @@
           "kind": "identifier",
           "text": "resolveProfileNumberForSetProfileInCar:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintenthandling/2726870-resolveprofilenameforsetprofilei": {
       "title": "resolveProfileNameForSetProfileInCar:withCompletion:",
@@ -182,7 +204,8 @@
           "kind": "identifier",
           "text": "resolveProfileNameForSetProfileInCar:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintenthandling/3019576-resolvecarnameforsetprofileincar": {
       "title": "resolveCarNameForSetProfileInCar:withCompletion:",
@@ -207,7 +230,8 @@
           "kind": "identifier",
           "text": "resolveCarNameForSetProfileInCar:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintenthandling/2102247-resolvedefaultprofileforsetprofi": {
       "title": "resolveDefaultProfileForSetProfileInCar:withCompletion:",
@@ -258,7 +282,8 @@
           "kind": "identifier",
           "text": "confirmSetProfileInCar:completion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintenthandling/2102246-handlesetprofileincar": {
       "title": "handleSetProfileInCar:completion:",
@@ -283,7 +308,8 @@
           "kind": "identifier",
           "text": "handleSetProfileInCar:completion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintentresponse": {
       "title": "INSetProfileInCarIntentResponse",
@@ -297,7 +323,8 @@
           "type": "text",
           "text": "Your app’s response to a set profile in car intent."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -307,6 +334,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -334,21 +381,24 @@
         "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintenthandling/2726870-resolveprofilenameforsetprofilei",
         "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintenthandling/3019576-resolvecarnameforsetprofileincar",
         "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintenthandling/2102247-resolvedefaultprofileforsetprofi"
-      ]
+      ],
+      "anchor": "2315101"
     },
     {
       "kind": "taskGroup",
       "title": "Confirming the Response",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintenthandling/2102249-confirmsetprofileincar"
-      ]
+      ],
+      "anchor": "2315100"
     },
     {
       "kind": "taskGroup",
       "title": "Handling the Intent",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintenthandling/2102246-handlesetprofileincar"
-      ]
+      ],
+      "anchor": "2315096"
     }
   ],
   "seeAlsoSections": [
@@ -357,7 +407,7 @@
         "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintent",
         "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintentresponse"
       ],
-      "title": "Set Profile in Car",
+      "title": "CarPlay Profile Settings",
       "generated": true
     }
   ],
@@ -385,6 +435,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -439,7 +490,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

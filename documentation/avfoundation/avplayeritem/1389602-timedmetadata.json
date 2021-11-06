@@ -36,37 +36,47 @@
         "name": "iOS",
         "introducedAt": "4.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "deprecatedAt": "13.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
         "deprecatedAt": "10.15",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)AVPlayerItem(py)timedMetadata",
+    "parent": {
+      "title": "AVPlayerItem"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -119,7 +129,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to model the timing and presentation state of an asset played by the player."
+          "text": "An object that models the timing and presentation state of an asset that a player object presents."
         }
       ]
     },
@@ -131,6 +141,14 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avmetadataitem"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemmetadataoutput": {
+      "title": "AVPlayerItemMetadataOutput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemmetadataoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritemmetadataoutput"
+    },
     "doc://com.apple.documentation/documentation/foundation/nsarray": {
       "title": "NSArray",
       "type": "topic",
@@ -138,20 +156,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsarray"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388177-asset": {
-      "title": "asset",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388177-asset",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem/1388177-asset",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The asset provided during initialization."
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1386361-tracks": {
       "title": "tracks",
@@ -164,6 +168,34 @@
         {
           "type": "text",
           "text": "An array of player item track objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack": {
+      "title": "AVPlayerItemTrack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritemtrack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that represents the presentation state of an asset track that the player presents."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1627623-externalmetadata": {
+      "title": "externalMetadata",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1627623-externalmetadata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/1627623-externalmetadata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of additional metadata for the player item to supplement or replace an asset’s embedded metadata."
         }
       ]
     },
@@ -190,23 +222,34 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemmetadataoutput"
+        },
+        {
+          "type": "text",
+          "text": " to access timed metadata."
+        }
       ]
     }
-  },
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388177-asset",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1386361-tracks"
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1386361-tracks",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1627623-externalmetadata"
       ],
-      "title": "Accessing the Asset and Tracks",
+      "title": "Accessing Tracks",
       "generated": true
     }
   ],
@@ -258,6 +301,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -316,7 +360,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Prior to the player item loading its media, this property value will be "
+              "text": "Prior to the player item loading its media, this property value is "
             },
             {
               "type": "codeVoice",
@@ -324,7 +368,7 @@
             },
             {
               "type": "text",
-              "text": ". You can key-value observe this property to be notified when metadata becomes available."
+              "text": ". You can key-value observe this property to monitor when metadata becomes available."
             }
           ]
         }
@@ -332,7 +376,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

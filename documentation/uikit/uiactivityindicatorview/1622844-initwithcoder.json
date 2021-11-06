@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates an activity-indicator view using data from a decoder."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIActivityIndicatorView(im)initWithCoder:",
+    "parent": {
+      "title": "UIActivityIndicatorView"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -122,7 +136,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes and returns an activity-indicator object."
+          "text": "Creates an activity-indicator view."
         }
       ],
       "fragments": [
@@ -143,6 +157,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiactivityindicatorview/1622841-initwithframe",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an activity-indicator view with the specified frame rectangle."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -161,6 +181,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiactivityindicatorview/1622844-initwithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an activity-indicator view using data from a decoder."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -244,15 +270,38 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "coder",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "An unarchiver object."
+                }
+              ]
+            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

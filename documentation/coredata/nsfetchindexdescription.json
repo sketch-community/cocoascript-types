@@ -35,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSFetchIndexDescription",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -145,6 +150,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/coredata/nsfetchindexdescription/2887053-initwithname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a fetch index description using the specified name and element descriptions."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -162,7 +173,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nsfetchindexdescription/2887054-elements",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsfetchindexdescription/2887054-elements"
+      "url": "/documentation/coredata/nsfetchindexdescription/2887054-elements",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of fetch index element descriptions."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nsfetchindexdescription/2887055-entity": {
       "title": "entity",
@@ -170,7 +187,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nsfetchindexdescription/2887055-entity",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsfetchindexdescription/2887055-entity"
+      "url": "/documentation/coredata/nsfetchindexdescription/2887055-entity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The entity description for the fetch index description."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nsfetchindexdescription/2887056-name": {
       "title": "name",
@@ -178,7 +201,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nsfetchindexdescription/2887056-name",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsfetchindexdescription/2887056-name"
+      "url": "/documentation/coredata/nsfetchindexdescription/2887056-name",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The name of the fetch index description."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nsfetchindexdescription/2887058-partialindexpredicate": {
       "title": "partialIndexPredicate",
@@ -186,7 +215,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nsfetchindexdescription/2887058-partialindexpredicate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsfetchindexdescription/2887058-partialindexpredicate"
+      "url": "/documentation/coredata/nsfetchindexdescription/2887058-partialindexpredicate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A predicate that selects rows for indexing, if the index is a partial index."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nsfetchindexelementtype": {
       "title": "NSFetchIndexElementType",
@@ -238,16 +273,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -273,7 +298,8 @@
       "title": "Creating an Index Description",
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsfetchindexdescription/2887053-initwithname"
-      ]
+      ],
+      "anchor": "2887859"
     },
     {
       "kind": "taskGroup",
@@ -283,7 +309,8 @@
         "doc://com.apple.documentation/documentation/coredata/nsfetchindexdescription/2887055-entity",
         "doc://com.apple.documentation/documentation/coredata/nsfetchindexdescription/2887056-name",
         "doc://com.apple.documentation/documentation/coredata/nsfetchindexdescription/2887058-partialindexpredicate"
-      ]
+      ],
+      "anchor": "2887860"
     }
   ],
   "seeAlsoSections": [
@@ -330,6 +357,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -340,7 +368,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

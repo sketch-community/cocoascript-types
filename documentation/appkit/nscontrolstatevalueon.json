@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A constant value that indicates a control is on or selected."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -7,6 +13,13 @@
         "doc://com.apple.documentation/documentation/appkit",
         "doc://com.apple.documentation/documentation/appkit/views_and_controls",
         "doc://com.apple.documentation/documentation/appkit/nscell",
+        "doc://com.apple.documentation/documentation/appkit/nscontrolstatevalue"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls",
+        "doc://com.apple.documentation/documentation/appkit/nscontrol",
         "doc://com.apple.documentation/documentation/appkit/nscontrolstatevalue"
       ]
     ]
@@ -30,15 +43,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@NSControlStateValueOn",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -97,6 +110,56 @@
       "role": "symbol",
       "url": "/documentation/appkit/nscontrolstatevalue"
     },
+    "doc://com.apple.documentation/documentation/appkit/nscontrol": {
+      "title": "NSControl",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol",
+      "url": "/documentation/appkit/nscontrol",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscontrolstatevalueon": {
+      "title": "NSControlStateValueOn",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrolstatevalueon",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscontrolstatevalueon",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A constant value that indicates a control is on or selected."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscontrolstatevalueoff": {
+      "title": "NSControlStateValueOff",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrolstatevalueoff",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscontrolstatevalueoff",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A constant value that indicates a control is off or unselected."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscontrolstatevaluemixed": {
+      "title": "NSControlStateValueMixed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrolstatevaluemixed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscontrolstatevaluemixed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A constant value that indicates a control is in a mixed state, neither on nor off."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -105,6 +168,16 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nscontrolstatevalueoff",
+        "doc://com.apple.documentation/documentation/appkit/nscontrolstatevaluemixed"
+      ],
+      "title": "Setting a Control’s State",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -149,7 +222,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

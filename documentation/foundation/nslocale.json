@@ -44,35 +44,40 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSLocale",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -415,7 +420,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The list of known country codes."
+          "text": "The list of known country or region codes."
         }
       ]
     },
@@ -629,7 +634,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The country code for the locale."
+          "text": "The country or region code for the locale."
         }
       ]
     },
@@ -891,7 +896,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the localized string for the specified country code."
+          "text": "Returns the localized string for a country or region code."
         }
       ],
       "fragments": [
@@ -1233,16 +1238,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -1270,7 +1265,8 @@
         "doc://com.apple.documentation/documentation/foundation/nslocale/1488627-localewithlocaleidentifier",
         "doc://com.apple.documentation/documentation/foundation/nslocale/1414217-initwithlocaleidentifier",
         "doc://com.apple.documentation/documentation/foundation/nslocale/1415424-initwithcoder"
-      ]
+      ],
+      "anchor": "1653962"
     },
     {
       "kind": "taskGroup",
@@ -1280,7 +1276,8 @@
         "doc://com.apple.documentation/documentation/foundation/nslocale/1409990-currentlocale",
         "doc://com.apple.documentation/documentation/foundation/nscurrentlocaledidchangenotification",
         "doc://com.apple.documentation/documentation/foundation/nslocale/1407691-systemlocale"
-      ]
+      ],
+      "anchor": "2897848"
     },
     {
       "kind": "taskGroup",
@@ -1291,7 +1288,8 @@
         "doc://com.apple.documentation/documentation/foundation/nslocale/1418015-isolanguagecodes",
         "doc://com.apple.documentation/documentation/foundation/nslocale/1417834-isocurrencycodes",
         "doc://com.apple.documentation/documentation/foundation/nslocale/1407272-commonisocurrencycodes"
-      ]
+      ],
+      "anchor": "1654060"
     },
     {
       "kind": "taskGroup",
@@ -1303,7 +1301,8 @@
         "doc://com.apple.documentation/documentation/foundation/nslocale/1413069-canonicallanguageidentifierfroms",
         "doc://com.apple.documentation/documentation/foundation/nslocale/1412710-localeidentifierfromwindowslocal",
         "doc://com.apple.documentation/documentation/foundation/nslocale/1412214-windowslocalecodefromlocaleident"
-      ]
+      ],
+      "anchor": "1654108"
     },
     {
       "kind": "taskGroup",
@@ -1327,7 +1326,8 @@
         "doc://com.apple.documentation/documentation/foundation/nslocale/1643162-quotationenddelimiter",
         "doc://com.apple.documentation/documentation/foundation/nslocale/1643238-alternatequotationbegindelimiter",
         "doc://com.apple.documentation/documentation/foundation/nslocale/1642885-alternatequotationenddelimiter"
-      ]
+      ],
+      "anchor": "1654021"
     },
     {
       "kind": "taskGroup",
@@ -1343,7 +1343,8 @@
         "doc://com.apple.documentation/documentation/foundation/nslocale/1643179-localizedstringforcurrencycode",
         "doc://com.apple.documentation/documentation/foundation/nslocale/2242780-localizedstringforcalendaridenti",
         "doc://com.apple.documentation/documentation/foundation/nslocale/locale_calendar_identifiers"
-      ]
+      ],
+      "anchor": "1844491"
     },
     {
       "kind": "taskGroup",
@@ -1352,14 +1353,16 @@
         "doc://com.apple.documentation/documentation/foundation/nslocale/1418430-objectforkey",
         "doc://com.apple.documentation/documentation/foundation/nslocale/1415931-displaynameforkey",
         "doc://com.apple.documentation/documentation/foundation/nslocalekey"
-      ]
+      ],
+      "anchor": "1654225"
     },
     {
       "kind": "taskGroup",
       "title": "Getting the User's Preferred Languages",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nslocale/1415614-preferredlanguages"
-      ]
+      ],
+      "anchor": "1654178"
     },
     {
       "kind": "taskGroup",
@@ -1368,7 +1371,8 @@
         "doc://com.apple.documentation/documentation/foundation/nslocale/1417681-characterdirectionforlanguage",
         "doc://com.apple.documentation/documentation/foundation/nslocale/1414007-linedirectionforlanguage",
         "doc://com.apple.documentation/documentation/foundation/nslocalelanguagedirection"
-      ]
+      ],
+      "anchor": "1654199"
     }
   ],
   "seeAlsoSections": [
@@ -1415,6 +1419,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1693,7 +1698,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

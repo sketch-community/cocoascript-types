@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Persist or cache data and support undo on a single device."
+      "text": "Persist or cache data on a single device, or sync data to multiple devices with CloudKit."
     }
   ],
   "documentVersion": 0,
@@ -27,33 +27,38 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -92,23 +97,24 @@
       "variants": [
         {
           "traits": [
-            "1x"
-          ],
-          "size": {
-            "width": 218,
-            "height": 186
-          },
-          "url": "https://docs-assets.developer.apple.com/published/5770f06627/73cb5bb3-06ab-4017-89da-84ddacd20279.png"
-        },
-        {
-          "traits": [
             "2x"
           ],
           "size": {
-            "width": 218,
-            "height": 186
+            "width": 213,
+            "height": 175
           },
-          "url": "https://docs-assets.developer.apple.com/published/7d6b410668/95d28eec-4652-4824-bac8-a413ede649ea.png"
+          "url": "https://docs-assets.developer.apple.com/published/9ce9c70ee1/CD-Persistence@2x.png"
+        },
+        {
+          "traits": [
+            "dark",
+            "2x"
+          ],
+          "size": {
+            "width": 213,
+            "height": 175
+          },
+          "url": "https://docs-assets.developer.apple.com/published/74bfc36784/CD-Persistence~dark@2x.png"
         }
       ],
       "alt": "Flow diagram showing an app saving data to and loading data from a persistent store.",
@@ -126,23 +132,24 @@
       "variants": [
         {
           "traits": [
-            "1x"
-          ],
-          "size": {
-            "width": 552,
-            "height": 203
-          },
-          "url": "https://docs-assets.developer.apple.com/published/843104c2e8/8ff27b5a-9441-4054-91ec-152843782ce2.png"
-        },
-        {
-          "traits": [
             "2x"
           ],
           "size": {
-            "width": 552,
-            "height": 203
+            "width": 540,
+            "height": 197
           },
-          "url": "https://docs-assets.developer.apple.com/published/6e6259c804/9ec0237d-0f5c-4f01-ac35-b6b55de236a9.png"
+          "url": "https://docs-assets.developer.apple.com/published/8d7dbc10a8/CD-Undo@2x.png"
+        },
+        {
+          "traits": [
+            "dark",
+            "2x"
+          ],
+          "size": {
+            "width": 540,
+            "height": 197
+          },
+          "url": "https://docs-assets.developer.apple.com/published/9232e513a7/CD-Undo~dark@2x.png"
         }
       ],
       "alt": "Figure showing a shake to undo gesture causing an element to be removed from a list.",
@@ -160,23 +167,24 @@
       "variants": [
         {
           "traits": [
-            "1x"
-          ],
-          "size": {
-            "width": 260,
-            "height": 196
-          },
-          "url": "https://docs-assets.developer.apple.com/published/1b9da4c41b/efc8be3c-1e32-4579-9356-4e029b99268a.png"
-        },
-        {
-          "traits": [
             "2x"
           ],
           "size": {
-            "width": 260,
-            "height": 196
+            "width": 248,
+            "height": 184
           },
-          "url": "https://docs-assets.developer.apple.com/published/d090c20938/df1bcb18-0917-4fa0-a269-62e23d0ac3c9.png"
+          "url": "https://docs-assets.developer.apple.com/published/97484139fe/CD-BackgroundTask@2x.png"
+        },
+        {
+          "traits": [
+            "dark",
+            "2x"
+          ],
+          "size": {
+            "width": 248,
+            "height": 184
+          },
+          "url": "https://docs-assets.developer.apple.com/published/a903db10e0/CD-BackgroundTask~dark@2x.png"
         }
       ],
       "alt": "Flow diagram showing data from an endpoint populating objects in the background before updating the UI.",
@@ -192,7 +200,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Create a data model file to contain your app’s object structure."
+          "text": "Define your app’s object structure with a data model file."
         }
       ]
     },
@@ -360,7 +368,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Share data between a user’s devices using Core Data with CloudKit."
+          "text": "Share data between a user’s devices and other iCloud users."
         }
       ]
     },
@@ -374,7 +382,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A container that encapsulates the Core Data stack in your app and mirrors select persistent stores to a CloudKit private database."
+          "text": "A container that encapsulates the Core Data stack in your app, and mirrors select persistent stores to a CloudKit private database."
         }
       ]
     },
@@ -392,13 +400,13 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/accessing_data_when_the_store_has_changed": {
-      "title": "Accessing Data When the Store Has Changed",
+    "doc://com.apple.documentation/documentation/coredata/accessing_data_when_the_store_changes": {
+      "title": "Accessing Data When the Store Changes",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/accessing_data_when_the_store_has_changed",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/accessing_data_when_the_store_changes",
       "kind": "article",
       "role": "article",
-      "url": "/documentation/coredata/accessing_data_when_the_store_has_changed",
+      "url": "/documentation/coredata/accessing_data_when_the_store_changes",
       "abstract": [
         {
           "type": "text",
@@ -445,20 +453,6 @@
         {
           "type": "text",
           "text": "Use Core Data in both a single-threaded and multithreaded app."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed": {
-      "title": "Loading and Displaying a Large Data Feed",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed",
-      "kind": "article",
-      "role": "sampleCode",
-      "url": "/documentation/coredata/loading_and_displaying_a_large_data_feed",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Consume data in the background, and lower memory usage by batching imports and preventing duplicate records."
         }
       ]
     },
@@ -518,38 +512,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerevent": {
-      "title": "NSPersistentCloudKitContainerEvent",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerevent",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentcloudkitcontainerevent"
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventrequest": {
-      "title": "NSPersistentCloudKitContainerEventRequest",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventrequest",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentcloudkitcontainereventrequest"
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventresult": {
-      "title": "NSPersistentCloudKitContainerEventResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentcloudkitcontainereventresult"
-    },
-    "doc://com.apple.documentation/documentation/coredata/core_data_enumerations": {
-      "title": "Core Data Enumerations",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/core_data_enumerations",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/coredata/core_data_enumerations"
-    },
     "doc://com.apple.documentation/documentation/coredata/core_data_constants": {
       "title": "Core Data Constants",
       "type": "topic",
@@ -560,7 +522,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "This document describes the constants defined in the Core Data framework and not described in a document for an individual class."
+          "text": "Keys to use with persistent stores and notifications from Core Data."
         }
       ]
     },
@@ -570,16 +532,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "topicSections": [
@@ -592,7 +544,8 @@
         "doc://com.apple.documentation/documentation/coredata/core_data_stack",
         "doc://com.apple.documentation/documentation/coredata/handling_different_data_types_in_core_data",
         "doc://com.apple.documentation/documentation/coredata/linking_data_between_two_core_data_stores"
-      ]
+      ],
+      "anchor": "2874818"
     },
     {
       "kind": "taskGroup",
@@ -600,7 +553,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/modeling_data",
         "doc://com.apple.documentation/documentation/coredata/core_data_model"
-      ]
+      ],
+      "anchor": "3036906"
     },
     {
       "kind": "taskGroup",
@@ -611,6 +565,7 @@
         "doc://com.apple.documentation/documentation/coredata/nsasynchronousfetchresult",
         "doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller"
       ],
+      "anchor": "2874817",
       "abstract": [
         {
           "type": "text",
@@ -626,26 +581,28 @@
         "doc://com.apple.documentation/documentation/coredata/synchronizing_a_local_store_to_the_cloud",
         "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer",
         "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontaineroptions"
-      ]
+      ],
+      "anchor": "3171995"
     },
     {
       "kind": "taskGroup",
       "title": "Change Processing",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/accessing_data_when_the_store_has_changed",
+        "doc://com.apple.documentation/documentation/coredata/accessing_data_when_the_store_changes",
         "doc://com.apple.documentation/documentation/coredata/consuming_relevant_store_changes",
         "doc://com.apple.documentation/documentation/coredata/persistent_history"
-      ]
+      ],
+      "anchor": "3178626"
     },
     {
       "kind": "taskGroup",
       "title": "Background Tasks",
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/using_core_data_in_the_background",
-        "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed",
         "doc://com.apple.documentation/documentation/coredata/conflict_resolution",
         "doc://com.apple.documentation/documentation/coredata/batch_processing"
-      ]
+      ],
+      "anchor": "2874825"
     },
     {
       "kind": "taskGroup",
@@ -654,6 +611,7 @@
         "doc://com.apple.documentation/documentation/coredata/using_lightweight_migration",
         "doc://com.apple.documentation/documentation/coredata/heavyweight_migration"
       ],
+      "anchor": "2874820",
       "abstract": [
         {
           "type": "text",
@@ -663,20 +621,11 @@
     },
     {
       "kind": "taskGroup",
-      "title": "Classes",
+      "title": "Related Types",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerevent",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventrequest",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventresult"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Reference",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/core_data_enumerations",
         "doc://com.apple.documentation/documentation/coredata/core_data_constants"
-      ]
+      ],
+      "anchor": "3786740"
     }
   ],
   "primaryContentSections": [
@@ -694,7 +643,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Use Core Data to save your application’s permanent data for offline use, to cache temporary data, and to add undo functionality to your app on a single device."
+              "text": "Use Core Data to save your application’s permanent data for offline use, to cache temporary data, and to add undo functionality to your app on a single device. To sync data across multiple devices in a single iCloud account, Core Data automatically mirrors your schema to a CloudKit container."
             }
           ]
         },
@@ -825,7 +774,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -35,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSWindow(im)saveFrameUsingName:",
+    "parent": {
+      "title": "NSWindow"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -152,7 +155,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nswindowframeautosavename",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nswindowframeautosavename"
+      "url": "/documentation/appkit/nswindowframeautosavename",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The type of a window’s frame autosave name."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nswindow/1419313-removeframeusingname": {
       "title": "removeFrameUsingName:",
@@ -226,6 +235,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nswindow/1419509-setframeautosavename": {
+      "title": "setFrameAutosaveName:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419509-setframeautosavename",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindow/1419509-setframeautosavename",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the name AppKit uses to automatically save the window’s frame rectangle data in the defaults system."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setFrameAutosaveName:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nswindow/1419362-frameautosavename": {
       "title": "frameAutosaveName",
       "type": "topic",
@@ -270,7 +303,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nswindowpersistableframedescriptor",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nswindowpersistableframedescriptor"
+      "url": "/documentation/appkit/nswindowpersistableframedescriptor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The type of a window’s frame descriptor."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -286,10 +325,11 @@
         "doc://com.apple.documentation/documentation/appkit/nswindow/1419313-removeframeusingname",
         "doc://com.apple.documentation/documentation/appkit/nswindow/1419723-setframeusingname",
         "doc://com.apple.documentation/documentation/appkit/nswindow/1419226-setframeusingname",
+        "doc://com.apple.documentation/documentation/appkit/nswindow/1419509-setframeautosavename",
         "doc://com.apple.documentation/documentation/appkit/nswindow/1419362-frameautosavename",
+        "doc://com.apple.documentation/documentation/appkit/nswindowframeautosavename",
         "doc://com.apple.documentation/documentation/appkit/nswindow/1419515-stringwithsavedframe",
         "doc://com.apple.documentation/documentation/appkit/nswindow/1419759-setframefromstring",
-        "doc://com.apple.documentation/documentation/appkit/nswindowframeautosavename",
         "doc://com.apple.documentation/documentation/appkit/nswindowpersistableframedescriptor"
       ],
       "title": "Managing Window Frames in User Defaults",
@@ -428,7 +468,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

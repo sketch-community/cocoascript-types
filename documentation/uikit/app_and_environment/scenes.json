@@ -42,8 +42,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,7 +116,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A specific type of scene that manages one or more windows for your app.  "
+          "text": "A scene that manages one or more windows for your app."
         }
       ]
     },
@@ -146,23 +146,24 @@
       "variants": [
         {
           "traits": [
-            "1x"
-          ],
-          "size": {
-            "width": 663,
-            "height": 512
-          },
-          "url": "https://docs-assets.developer.apple.com/published/a6bbdf0e42/95f3c63b-b2a8-49a9-8fc6-9de4ab6571a5.png"
-        },
-        {
-          "traits": [
             "2x"
           ],
           "size": {
-            "width": 663,
-            "height": 512
+            "width": 651,
+            "height": 500
           },
-          "url": "https://docs-assets.developer.apple.com/published/8ce996907a/fc0975ae-c186-438c-abdd-5280f650c377.png"
+          "url": "https://docs-assets.developer.apple.com/published/c779ad18a7/3335652@2x.png"
+        },
+        {
+          "traits": [
+            "dark",
+            "2x"
+          ],
+          "size": {
+            "width": 651,
+            "height": 500
+          },
+          "url": "https://docs-assets.developer.apple.com/published/174939984e/3335652~dark@2x.png"
         }
       ],
       "alt": "An image showing two instances of the Notes app running side-by-side on iPad.",
@@ -178,7 +179,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of methods that you use to manage shared behaviors for your app. "
+          "text": "A set of methods to manage shared behaviors for your app. "
         }
       ]
     },
@@ -210,6 +211,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiscene": {
+      "title": "UIScene",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscene",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiscene",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that represents one instance of your app’s user interface."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uiscenedelegate": {
       "title": "UISceneDelegate",
       "type": "topic",
@@ -221,20 +236,6 @@
         {
           "type": "text",
           "text": "The core methods you use to respond to life-cycle events occurring within a scene. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiscene": {
-      "title": "UIScene",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscene",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiscene",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that represents one instance of your app's user interface."
         }
       ]
     },
@@ -303,7 +304,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object containing information about one of your app's scenes.  "
+          "text": "An object that contains information about one of your app's scenes.  "
         }
       ]
     },
@@ -331,7 +332,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object containing information you want the system to use when activating the session associated with a scene.  "
+          "text": "An object that contains information you want the system to use when activating the session associated with a scene.  "
         }
       ]
     },
@@ -345,7 +346,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object containing information to use when removing a window scene from your app.  "
+          "text": "An object that contains information to use when removing a window scene from your app.  "
         }
       ]
     },
@@ -359,7 +360,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object you pass to UIKit when you want to permanently remove a scene and its associated session from your app.  "
+          "text": "An object you pass to UIKit to permanently remove a scene and its associated session from your app.  "
         }
       ]
     },
@@ -401,7 +402,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Error codes involving issues with scenes."
+          "text": "Error codes for issues with scenes."
         }
       ]
     },
@@ -483,16 +484,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "topicSections": [
     {
       "kind": "taskGroup",
@@ -500,7 +491,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_foreground",
         "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background"
-      ]
+      ],
+      "anchor": "3325424"
     },
     {
       "kind": "taskGroup",
@@ -508,9 +500,10 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiwindowscenedelegate",
         "doc://com.apple.documentation/documentation/uikit/uiwindowscene",
-        "doc://com.apple.documentation/documentation/uikit/uiscenedelegate",
-        "doc://com.apple.documentation/documentation/uikit/uiscene"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiscene",
+        "doc://com.apple.documentation/documentation/uikit/uiscenedelegate"
+      ],
+      "anchor": "3325421"
     },
     {
       "kind": "taskGroup",
@@ -520,7 +513,8 @@
         "doc://com.apple.documentation/documentation/bundleresources/information_property_list/uiapplicationscenemanifest",
         "doc://com.apple.documentation/documentation/uikit/uisceneconfiguration",
         "doc://com.apple.documentation/documentation/uikit/uiscenesession"
-      ]
+      ],
+      "anchor": "3325426"
     },
     {
       "kind": "taskGroup",
@@ -530,7 +524,8 @@
         "doc://com.apple.documentation/documentation/uikit/uisceneactivationrequestoptions",
         "doc://com.apple.documentation/documentation/uikit/uiwindowscenedestructionrequestoptions",
         "doc://com.apple.documentation/documentation/uikit/uiscenedestructionrequestoptions"
-      ]
+      ],
+      "anchor": "3325423"
     },
     {
       "kind": "taskGroup",
@@ -538,7 +533,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiopenurlcontext",
         "doc://com.apple.documentation/documentation/uikit/uisceneopenexternalurloptions"
-      ]
+      ],
+      "anchor": "3325422"
     },
     {
       "kind": "taskGroup",
@@ -546,7 +542,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uisceneerrorcode",
         "doc://com.apple.documentation/documentation/uikit/uisceneerrordomain"
-      ]
+      ],
+      "anchor": "3198535"
     }
   ],
   "seeAlsoSections": [
@@ -646,7 +643,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates a new URL session task."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -30,44 +36,54 @@
         "name": "iOS",
         "introducedAt": "7.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "deprecatedAt": "13.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
         "deprecatedAt": "10.15",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
         "deprecatedAt": "6.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSURLSessionTask(cm)new",
+    "parent": {
+      "title": "NSURLSessionTask"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -124,6 +140,64 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsession": {
+      "title": "NSURLSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsession"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/3240624-init": {
+      "title": "init",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/3240624-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontask/3240624-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes an empty URL sesson task."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "init"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/3240625-new": {
+      "title": "new",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/3240625-new",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontask/3240625-new",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new URL session task."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "new"
+        }
+      ],
+      "deprecated": true
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -132,6 +206,15 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/3240624-init"
+      ],
+      "title": "Deprecated",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -164,6 +247,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -171,10 +255,39 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Don’t call this method directly. Instead, create tasks from a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

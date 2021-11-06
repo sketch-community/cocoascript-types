@@ -39,20 +39,20 @@
       {
         "name": "macOS",
         "introducedAt": "10.6",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.1",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@F@CGDisplaySetDisplayMode",
     "symbolKind": "func"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -89,11 +89,11 @@
     },
     "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services": {
       "title": "Quartz Display Services",
-      "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services",
+      "url": "/documentation/coregraphics/quartz_display_services",
+      "type": "topic",
       "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/coregraphics/quartz_display_services"
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/coregraphics/core_graphics_functions": {
       "title": "Core Graphics Functions",
@@ -102,14 +102,6 @@
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services#1656506": {
-      "title": "Getting Information About a Display Mode",
-      "type": "section",
-      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services#1656506",
-      "kind": "article",
-      "role": "task",
-      "url": "/documentation/coregraphics/quartz_display_services#1656506"
     },
     "doc://com.apple.documentation/documentation/coregraphics/1455235-cgbegindisplayconfiguration": {
       "title": "CGBeginDisplayConfiguration",
@@ -416,7 +408,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The identifier of the display to be accessed."
+                  "text": "The identifier of the display to configure."
                 }
               ]
             }
@@ -430,16 +422,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "A display mode that contains information about the display mode to set. For information on the display-mode opaque-type properties, see"
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services#1656506"
-                },
-                {
-                  "type": "text",
-                  "text": "."
+                  "text": "A display mode that contains information about the display mode to set."
                 }
               ]
             }
@@ -483,15 +466,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "A result code. See "
+              "text": "A Core Graphics result code. To interpret the result code, see "
             },
             {
-              "type": "codeVoice",
-              "code": "Core Graphics Data Types and Constants"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgerror"
             },
             {
               "type": "text",
-              "text": ". "
+              "text": "."
             }
           ]
         }
@@ -511,7 +495,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This function switches the display mode of the specified display. The operation is always synchronous; the function does not return until the mode switch is complete. Note that after switching, display parameters and addresses may change. "
+              "text": "This function switches the display mode of the specified display. The operation is always synchronous; the function doesn’t return until the mode switch is complete. Note that after switching, display parameters and addresses may change. "
             }
           ]
         },
@@ -529,7 +513,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "When you change the display mode of a display in a mirroring set, other displays in the mirroring set are assigned a mode that's capable of mirroring the bounds of the display being adjusted. To avoid this automatic behavior, you can use the following procedure: call "
+              "text": "When you change the display mode of a display in a mirroring set, your change switches other displays in the mirroring set to a mode capable of mirroring the bounds of the adjusted display. To avoid this automatic behavior, you can use the following procedure: call "
             },
             {
               "type": "reference",
@@ -564,7 +548,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

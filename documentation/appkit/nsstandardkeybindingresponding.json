@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Methods that responder subclasses implement to support key binding commands, such as inserting tabs and newlines, or moving the insertion point."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,15 +35,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.14",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSStandardKeyBindingResponding",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -82,19 +88,11 @@
     },
     "doc://com.apple.documentation/documentation/appkit/nsresponder": {
       "title": "NSResponder",
+      "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder",
-      "url": "/documentation/appkit/nsresponder",
-      "type": "topic",
-      "kind": "symbol",
-      "role": "symbol"
-    },
-    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject": {
-      "title": "NSObject",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/objectivec/1418956-nsobject"
+      "url": "/documentation/appkit/nsresponder"
     },
     "doc://com.apple.documentation/documentation/appkit/nstextview": {
       "title": "NSTextView",
@@ -104,14 +102,28 @@
       "role": "symbol",
       "url": "/documentation/appkit/nstextview"
     },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005196-canceloperation": {
-      "title": "cancelOperation:",
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject": {
+      "title": "NSObject",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005196-canceloperation",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005196-canceloperation",
+      "url": "/documentation/objectivec/1418956-nsobject"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005211-docommandbyselector": {
+      "title": "doCommandBySelector:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005211-docommandbyselector",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005211-docommandbyselector",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs the given selector if possible."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -119,18 +131,24 @@
         },
         {
           "kind": "identifier",
-          "text": "cancelOperation:"
+          "text": "doCommandBySelector:"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005197-capitalizeword": {
-      "title": "capitalizeWord:",
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005213-insertbacktab": {
+      "title": "insertBacktab:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005197-capitalizeword",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005213-insertbacktab",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005197-capitalizeword",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005213-insertbacktab",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts a backtab character."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -138,18 +156,24 @@
         },
         {
           "kind": "identifier",
-          "text": "capitalizeWord:"
+          "text": "insertBacktab:"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005198-centerselectioninvisiblearea": {
-      "title": "centerSelectionInVisibleArea:",
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005214-insertcontainerbreak": {
+      "title": "insertContainerBreak:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005198-centerselectioninvisiblearea",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005214-insertcontainerbreak",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005198-centerselectioninvisiblearea",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005214-insertcontainerbreak",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts a container break, such as a new page break."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -157,18 +181,24 @@
         },
         {
           "kind": "identifier",
-          "text": "centerSelectionInVisibleArea:"
+          "text": "insertContainerBreak:"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005199-changecaseofletter": {
-      "title": "changeCaseOfLetter:",
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005215-insertdoublequoteignoringsubstit": {
+      "title": "insertDoubleQuoteIgnoringSubstitution:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005199-changecaseofletter",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005215-insertdoublequoteignoringsubstit",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005199-changecaseofletter",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005215-insertdoublequoteignoringsubstit",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts a double quotation mark without substituting a curly quotation mark."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -176,17 +206,117 @@
         },
         {
           "kind": "identifier",
-          "text": "changeCaseOfLetter:"
+          "text": "insertDoubleQuoteIgnoringSubstitution:"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005200-complete": {
-      "title": "complete:",
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005216-insertlinebreak": {
+      "title": "insertLineBreak:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005200-complete",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005216-insertlinebreak",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005200-complete",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005216-insertlinebreak",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts a line break character."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "insertLineBreak:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005217-insertnewline": {
+      "title": "insertNewline:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005217-insertnewline",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005217-insertnewline",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts a newline character."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "insertNewline:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005218-insertnewlineignoringfieldeditor": {
+      "title": "insertNewlineIgnoringFieldEditor:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005218-insertnewlineignoringfieldeditor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005218-insertnewlineignoringfieldeditor",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts a newline character without invoking the field editor’s normal handling to end editing."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "insertNewlineIgnoringFieldEditor:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005219-insertparagraphseparator": {
+      "title": "insertParagraphSeparator:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005219-insertparagraphseparator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005219-insertparagraphseparator",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts a paragraph separator."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "insertParagraphSeparator:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005220-insertsinglequoteignoringsubstit": {
+      "title": "insertSingleQuoteIgnoringSubstitution:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005220-insertsinglequoteignoringsubstit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005220-insertsinglequoteignoringsubstit",
       "required": false,
       "fragments": [
         {
@@ -195,7 +325,76 @@
         },
         {
           "kind": "identifier",
-          "text": "complete:"
+          "text": "insertSingleQuoteIgnoringSubstitution:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005221-inserttab": {
+      "title": "insertTab:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005221-inserttab",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005221-inserttab",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts a tab character."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "insertTab:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005222-inserttabignoringfieldeditor": {
+      "title": "insertTabIgnoringFieldEditor:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005222-inserttabignoringfieldeditor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005222-inserttabignoringfieldeditor",
+      "required": false,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "insertTabIgnoringFieldEditor:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005223-inserttext": {
+      "title": "insertText:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005223-inserttext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005223-inserttext",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts the text you specify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "insertText:"
         }
       ]
     },
@@ -207,6 +406,12 @@
       "role": "symbol",
       "url": "/documentation/appkit/nsstandardkeybindingresponding/3005201-deletebackward",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deletes content moving backward from the current insertion point."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -264,6 +469,12 @@
       "role": "symbol",
       "url": "/documentation/appkit/nsstandardkeybindingresponding/3005204-deletetobeginningofline",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deletes content from the insertion point to the beginning of the current line."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -283,6 +494,12 @@
       "role": "symbol",
       "url": "/documentation/appkit/nsstandardkeybindingresponding/3005205-deletetobeginningofparagraph",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deletes content from the insertion point to the beginning of the current paragraph."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -302,6 +519,12 @@
       "role": "symbol",
       "url": "/documentation/appkit/nsstandardkeybindingresponding/3005206-deletetoendofline",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deletes content from the insertion point to the end of the current line."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -321,6 +544,12 @@
       "role": "symbol",
       "url": "/documentation/appkit/nsstandardkeybindingresponding/3005207-deletetoendofparagraph",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deletes content from the insertion point to the end of the current paragraph."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -332,25 +561,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005208-deletetomark": {
-      "title": "deleteToMark:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005208-deletetomark",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005208-deletetomark",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "deleteToMark:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005209-deletewordbackward": {
       "title": "deleteWordBackward:",
       "type": "topic",
@@ -359,6 +569,12 @@
       "role": "symbol",
       "url": "/documentation/appkit/nsstandardkeybindingresponding/3005209-deletewordbackward",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deletes the word preceding the current insertion point."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -389,14 +605,20 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005211-docommandbyselector": {
-      "title": "doCommandBySelector:",
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005290-yank": {
+      "title": "yank:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005211-docommandbyselector",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005290-yank",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005211-docommandbyselector",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005290-yank",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deletes the current selection, placing it in a temporary buffer, such as the Clipboard."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -404,7 +626,632 @@
         },
         {
           "kind": "identifier",
-          "text": "doCommandBySelector:"
+          "text": "yank:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005231-movebackward": {
+      "title": "moveBackward:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005231-movebackward",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005231-movebackward",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Moves the insertion pointer backward in the current content."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "moveBackward:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005233-movedown": {
+      "title": "moveDown:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005233-movedown",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005233-movedown",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Moves the insertion pointer down in the current content."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "moveDown:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005235-moveforward": {
+      "title": "moveForward:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005235-moveforward",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005235-moveforward",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Moves the insertion pointer forward in the current content."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "moveForward:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005237-moveleft": {
+      "title": "moveLeft:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005237-moveleft",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005237-moveleft",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Moves the insertion pointer left in the current content."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "moveLeft:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005241-moveright": {
+      "title": "moveRight:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005241-moveright",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005241-moveright",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Moves the insertion pointer right in the current content."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "moveRight:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005259-moveup": {
+      "title": "moveUp:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005259-moveup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005259-moveup",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Moves the insertion pointer up in the current content."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "moveUp:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005232-movebackwardandmodifyselection": {
+      "title": "moveBackwardAndModifySelection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005232-movebackwardandmodifyselection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005232-movebackwardandmodifyselection",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Extends the selection to include the content before the current selection."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "moveBackwardAndModifySelection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005234-movedownandmodifyselection": {
+      "title": "moveDownAndModifySelection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005234-movedownandmodifyselection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005234-movedownandmodifyselection",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Extends the selection to include the content below the current selection."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "moveDownAndModifySelection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005236-moveforwardandmodifyselection": {
+      "title": "moveForwardAndModifySelection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005236-moveforwardandmodifyselection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005236-moveforwardandmodifyselection",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Extends the selection to include the content after the current selection."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "moveForwardAndModifySelection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005238-moveleftandmodifyselection": {
+      "title": "moveLeftAndModifySelection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005238-moveleftandmodifyselection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005238-moveleftandmodifyselection",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Extends the selection to include the content to the left of the current selection."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "moveLeftAndModifySelection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005242-moverightandmodifyselection": {
+      "title": "moveRightAndModifySelection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005242-moverightandmodifyselection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005242-moverightandmodifyselection",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Extends the selection to include the content to the right of the current selection."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "moveRightAndModifySelection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005260-moveupandmodifyselection": {
+      "title": "moveUpAndModifySelection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005260-moveupandmodifyselection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005260-moveupandmodifyselection",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Extends the selection to include the content above the current selection."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "moveUpAndModifySelection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005276-scrollpagedown": {
+      "title": "scrollPageDown:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005276-scrollpagedown",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005276-scrollpagedown",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Scrolls the content down by a page."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "scrollPageDown:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005277-scrollpageup": {
+      "title": "scrollPageUp:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005277-scrollpageup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005277-scrollpageup",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Scrolls the content up by a page."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "scrollPageUp:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005274-scrolllinedown": {
+      "title": "scrollLineDown:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005274-scrolllinedown",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005274-scrolllinedown",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Scrolls the content down by a line."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "scrollLineDown:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005275-scrolllineup": {
+      "title": "scrollLineUp:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005275-scrolllineup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005275-scrolllineup",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Scrolls the content up by a line."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "scrollLineUp:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005278-scrolltobeginningofdocument": {
+      "title": "scrollToBeginningOfDocument:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005278-scrolltobeginningofdocument",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005278-scrolltobeginningofdocument",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Scrolls the content to the beginning of the document."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "scrollToBeginningOfDocument:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005279-scrolltoendofdocument": {
+      "title": "scrollToEndOfDocument:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005279-scrolltoendofdocument",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005279-scrolltoendofdocument",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Scrolls the content to the end of the document."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "scrollToEndOfDocument:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005269-pagedown": {
+      "title": "pageDown:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005269-pagedown",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005269-pagedown",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Moves the visible content region down by a page."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "pageDown:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005271-pageup": {
+      "title": "pageUp:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005271-pageup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005271-pageup",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Moves the visible content region up by a page."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "pageUp:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005270-pagedownandmodifyselection": {
+      "title": "pageDownAndModifySelection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005270-pagedownandmodifyselection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005270-pagedownandmodifyselection",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Moves the visible content region down by a page, and extends the current selection."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "pageDownAndModifySelection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005272-pageupandmodifyselection": {
+      "title": "pageUpAndModifySelection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005272-pageupandmodifyselection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005272-pageupandmodifyselection",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Moves the visible content region up by a page, and extends the current selection."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "pageUpAndModifySelection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005198-centerselectioninvisiblearea": {
+      "title": "centerSelectionInVisibleArea:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005198-centerselectioninvisiblearea",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005198-centerselectioninvisiblearea",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Moves the visible content region so the current selection is visually centered."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "centerSelectionInVisibleArea:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005287-transpose": {
+      "title": "transpose:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005287-transpose",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005287-transpose",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Transposes the content around the current selection."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "transpose:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005288-transposewords": {
+      "title": "transposeWords:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005288-transposewords",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005288-transposewords",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Transposes the words around the current selection."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "transposeWords:"
         }
       ]
     },
@@ -416,6 +1263,12 @@
       "role": "symbol",
       "url": "/documentation/appkit/nsstandardkeybindingresponding/3005212-indent",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indents the content at the current selection."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -427,14 +1280,20 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005213-insertbacktab": {
-      "title": "insertBacktab:",
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005196-canceloperation": {
+      "title": "cancelOperation:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005213-insertbacktab",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005196-canceloperation",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005213-insertbacktab",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005196-canceloperation",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Cancels the current operation."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -442,37 +1301,24 @@
         },
         {
           "kind": "identifier",
-          "text": "insertBacktab:"
+          "text": "cancelOperation:"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005214-insertcontainerbreak": {
-      "title": "insertContainerBreak:",
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005273-quicklookpreviewitems": {
+      "title": "quickLookPreviewItems:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005214-insertcontainerbreak",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005273-quicklookpreviewitems",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005214-insertcontainerbreak",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005273-quicklookpreviewitems",
       "required": false,
-      "fragments": [
+      "abstract": [
         {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "insertContainerBreak:"
+          "type": "text",
+          "text": "Invokes QuickLook to preview the current selection."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005215-insertdoublequoteignoringsubstit": {
-      "title": "insertDoubleQuoteIgnoringSubstitution:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005215-insertdoublequoteignoringsubstit",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005215-insertdoublequoteignoringsubstit",
-      "required": false,
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -480,178 +1326,7 @@
         },
         {
           "kind": "identifier",
-          "text": "insertDoubleQuoteIgnoringSubstitution:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005216-insertlinebreak": {
-      "title": "insertLineBreak:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005216-insertlinebreak",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005216-insertlinebreak",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "insertLineBreak:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005217-insertnewline": {
-      "title": "insertNewline:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005217-insertnewline",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005217-insertnewline",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "insertNewline:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005218-insertnewlineignoringfieldeditor": {
-      "title": "insertNewlineIgnoringFieldEditor:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005218-insertnewlineignoringfieldeditor",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005218-insertnewlineignoringfieldeditor",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "insertNewlineIgnoringFieldEditor:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005219-insertparagraphseparator": {
-      "title": "insertParagraphSeparator:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005219-insertparagraphseparator",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005219-insertparagraphseparator",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "insertParagraphSeparator:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005220-insertsinglequoteignoringsubstit": {
-      "title": "insertSingleQuoteIgnoringSubstitution:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005220-insertsinglequoteignoringsubstit",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005220-insertsinglequoteignoringsubstit",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "insertSingleQuoteIgnoringSubstitution:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005221-inserttab": {
-      "title": "insertTab:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005221-inserttab",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005221-inserttab",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "insertTab:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005222-inserttabignoringfieldeditor": {
-      "title": "insertTabIgnoringFieldEditor:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005222-inserttabignoringfieldeditor",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005222-inserttabignoringfieldeditor",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "insertTabIgnoringFieldEditor:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005223-inserttext": {
-      "title": "insertText:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005223-inserttext",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005223-inserttext",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "insertText:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005224-lowercaseword": {
-      "title": "lowercaseWord:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005224-lowercaseword",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005224-lowercaseword",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "lowercaseWord:"
+          "text": "quickLookPreviewItems:"
         }
       ]
     },
@@ -769,13 +1444,13 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005231-movebackward": {
-      "title": "moveBackward:",
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005197-capitalizeword": {
+      "title": "capitalizeWord:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005231-movebackward",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005197-capitalizeword",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005231-movebackward",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005197-capitalizeword",
       "required": false,
       "fragments": [
         {
@@ -784,17 +1459,17 @@
         },
         {
           "kind": "identifier",
-          "text": "moveBackward:"
+          "text": "capitalizeWord:"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005232-movebackwardandmodifyselection": {
-      "title": "moveBackwardAndModifySelection:",
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005199-changecaseofletter": {
+      "title": "changeCaseOfLetter:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005232-movebackwardandmodifyselection",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005199-changecaseofletter",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005232-movebackwardandmodifyselection",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005199-changecaseofletter",
       "required": false,
       "fragments": [
         {
@@ -803,17 +1478,17 @@
         },
         {
           "kind": "identifier",
-          "text": "moveBackwardAndModifySelection:"
+          "text": "changeCaseOfLetter:"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005233-movedown": {
-      "title": "moveDown:",
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005224-lowercaseword": {
+      "title": "lowercaseWord:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005233-movedown",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005224-lowercaseword",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005233-movedown",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005224-lowercaseword",
       "required": false,
       "fragments": [
         {
@@ -822,17 +1497,17 @@
         },
         {
           "kind": "identifier",
-          "text": "moveDown:"
+          "text": "lowercaseWord:"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005234-movedownandmodifyselection": {
-      "title": "moveDownAndModifySelection:",
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005289-uppercaseword": {
+      "title": "uppercaseWord:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005234-movedownandmodifyselection",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005289-uppercaseword",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005234-movedownandmodifyselection",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005289-uppercaseword",
       "required": false,
       "fragments": [
         {
@@ -841,159 +1516,7 @@
         },
         {
           "kind": "identifier",
-          "text": "moveDownAndModifySelection:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005235-moveforward": {
-      "title": "moveForward:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005235-moveforward",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005235-moveforward",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "moveForward:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005236-moveforwardandmodifyselection": {
-      "title": "moveForwardAndModifySelection:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005236-moveforwardandmodifyselection",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005236-moveforwardandmodifyselection",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "moveForwardAndModifySelection:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005237-moveleft": {
-      "title": "moveLeft:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005237-moveleft",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005237-moveleft",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "moveLeft:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005238-moveleftandmodifyselection": {
-      "title": "moveLeftAndModifySelection:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005238-moveleftandmodifyselection",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005238-moveleftandmodifyselection",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "moveLeftAndModifySelection:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005239-moveparagraphbackwardandmodifyse": {
-      "title": "moveParagraphBackwardAndModifySelection:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005239-moveparagraphbackwardandmodifyse",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005239-moveparagraphbackwardandmodifyse",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "moveParagraphBackwardAndModifySelection:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005240-moveparagraphforwardandmodifysel": {
-      "title": "moveParagraphForwardAndModifySelection:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005240-moveparagraphforwardandmodifysel",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005240-moveparagraphforwardandmodifysel",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "moveParagraphForwardAndModifySelection:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005241-moveright": {
-      "title": "moveRight:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005241-moveright",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005241-moveright",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "moveRight:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005242-moverightandmodifyselection": {
-      "title": "moveRightAndModifySelection:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005242-moverightandmodifyselection",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005242-moverightandmodifyselection",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "moveRightAndModifySelection:"
+          "text": "uppercaseWord:"
         }
       ]
     },
@@ -1035,13 +1558,13 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005245-movetobeginningofline": {
-      "title": "moveToBeginningOfLine:",
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005249-movetoendofdocument": {
+      "title": "moveToEndOfDocument:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005245-movetobeginningofline",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005249-movetoendofdocument",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005245-movetobeginningofline",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005249-movetoendofdocument",
       "required": false,
       "fragments": [
         {
@@ -1050,17 +1573,17 @@
         },
         {
           "kind": "identifier",
-          "text": "moveToBeginningOfLine:"
+          "text": "moveToEndOfDocument:"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005246-movetobeginningoflineandmodifyse": {
-      "title": "moveToBeginningOfLineAndModifySelection:",
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005250-movetoendofdocumentandmodifysele": {
+      "title": "moveToEndOfDocumentAndModifySelection:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005246-movetobeginningoflineandmodifyse",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005250-movetoendofdocumentandmodifysele",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005246-movetobeginningoflineandmodifyse",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005250-movetoendofdocumentandmodifysele",
       "required": false,
       "fragments": [
         {
@@ -1069,7 +1592,45 @@
         },
         {
           "kind": "identifier",
-          "text": "moveToBeginningOfLineAndModifySelection:"
+          "text": "moveToEndOfDocumentAndModifySelection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005239-moveparagraphbackwardandmodifyse": {
+      "title": "moveParagraphBackwardAndModifySelection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005239-moveparagraphbackwardandmodifyse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005239-moveparagraphbackwardandmodifyse",
+      "required": false,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "moveParagraphBackwardAndModifySelection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005240-moveparagraphforwardandmodifysel": {
+      "title": "moveParagraphForwardAndModifySelection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005240-moveparagraphforwardandmodifysel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005240-moveparagraphforwardandmodifysel",
+      "required": false,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "moveParagraphForwardAndModifySelection:"
         }
       ]
     },
@@ -1111,13 +1672,13 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005249-movetoendofdocument": {
-      "title": "moveToEndOfDocument:",
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005253-movetoendofparagraph": {
+      "title": "moveToEndOfParagraph:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005249-movetoendofdocument",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005253-movetoendofparagraph",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005249-movetoendofdocument",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005253-movetoendofparagraph",
       "required": false,
       "fragments": [
         {
@@ -1126,17 +1687,17 @@
         },
         {
           "kind": "identifier",
-          "text": "moveToEndOfDocument:"
+          "text": "moveToEndOfParagraph:"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005250-movetoendofdocumentandmodifysele": {
-      "title": "moveToEndOfDocumentAndModifySelection:",
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005254-movetoendofparagraphandmodifysel": {
+      "title": "moveToEndOfParagraphAndModifySelection:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005250-movetoendofdocumentandmodifysele",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005254-movetoendofparagraphandmodifysel",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005250-movetoendofdocumentandmodifysele",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005254-movetoendofparagraphandmodifysel",
       "required": false,
       "fragments": [
         {
@@ -1145,7 +1706,45 @@
         },
         {
           "kind": "identifier",
-          "text": "moveToEndOfDocumentAndModifySelection:"
+          "text": "moveToEndOfParagraphAndModifySelection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005245-movetobeginningofline": {
+      "title": "moveToBeginningOfLine:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005245-movetobeginningofline",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005245-movetobeginningofline",
+      "required": false,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "moveToBeginningOfLine:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005246-movetobeginningoflineandmodifyse": {
+      "title": "moveToBeginningOfLineAndModifySelection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005246-movetobeginningoflineandmodifyse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005246-movetobeginningoflineandmodifyse",
+      "required": false,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "moveToBeginningOfLineAndModifySelection:"
         }
       ]
     },
@@ -1184,44 +1783,6 @@
         {
           "kind": "identifier",
           "text": "moveToEndOfLineAndModifySelection:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005253-movetoendofparagraph": {
-      "title": "moveToEndOfParagraph:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005253-movetoendofparagraph",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005253-movetoendofparagraph",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "moveToEndOfParagraph:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005254-movetoendofparagraphandmodifysel": {
-      "title": "moveToEndOfParagraphAndModifySelection:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005254-movetoendofparagraphandmodifysel",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005254-movetoendofparagraphandmodifysel",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "moveToEndOfParagraphAndModifySelection:"
         }
       ]
     },
@@ -1301,13 +1862,13 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005259-moveup": {
-      "title": "moveUp:",
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005280-selectall": {
+      "title": "selectAll:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005259-moveup",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005280-selectall",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005259-moveup",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005280-selectall",
       "required": false,
       "fragments": [
         {
@@ -1316,17 +1877,17 @@
         },
         {
           "kind": "identifier",
-          "text": "moveUp:"
+          "text": "selectAll:"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005260-moveupandmodifyselection": {
-      "title": "moveUpAndModifySelection:",
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005281-selectline": {
+      "title": "selectLine:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005260-moveupandmodifyselection",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005281-selectline",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005260-moveupandmodifyselection",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005281-selectline",
       "required": false,
       "fragments": [
         {
@@ -1335,7 +1896,140 @@
         },
         {
           "kind": "identifier",
-          "text": "moveUpAndModifySelection:"
+          "text": "selectLine:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005282-selectparagraph": {
+      "title": "selectParagraph:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005282-selectparagraph",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005282-selectparagraph",
+      "required": false,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "selectParagraph:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005284-selectword": {
+      "title": "selectWord:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005284-selectword",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005284-selectword",
+      "required": false,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "selectWord:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005285-setmark": {
+      "title": "setMark:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005285-setmark",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005285-setmark",
+      "required": false,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setMark:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005283-selecttomark": {
+      "title": "selectToMark:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005283-selecttomark",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005283-selecttomark",
+      "required": false,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "selectToMark:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005208-deletetomark": {
+      "title": "deleteToMark:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005208-deletetomark",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005208-deletetomark",
+      "required": false,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "deleteToMark:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005286-swapwithmark": {
+      "title": "swapWithMark:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005286-swapwithmark",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005286-swapwithmark",
+      "required": false,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "swapWithMark:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005200-complete": {
+      "title": "complete:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005200-complete",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005200-complete",
+      "required": false,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "complete:"
         }
       ]
     },
@@ -1491,424 +2185,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005269-pagedown": {
-      "title": "pageDown:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005269-pagedown",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005269-pagedown",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "pageDown:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005270-pagedownandmodifyselection": {
-      "title": "pageDownAndModifySelection:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005270-pagedownandmodifyselection",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005270-pagedownandmodifyselection",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "pageDownAndModifySelection:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005271-pageup": {
-      "title": "pageUp:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005271-pageup",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005271-pageup",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "pageUp:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005272-pageupandmodifyselection": {
-      "title": "pageUpAndModifySelection:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005272-pageupandmodifyselection",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005272-pageupandmodifyselection",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "pageUpAndModifySelection:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005273-quicklookpreviewitems": {
-      "title": "quickLookPreviewItems:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005273-quicklookpreviewitems",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005273-quicklookpreviewitems",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "quickLookPreviewItems:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005274-scrolllinedown": {
-      "title": "scrollLineDown:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005274-scrolllinedown",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005274-scrolllinedown",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "scrollLineDown:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005275-scrolllineup": {
-      "title": "scrollLineUp:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005275-scrolllineup",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005275-scrolllineup",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "scrollLineUp:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005276-scrollpagedown": {
-      "title": "scrollPageDown:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005276-scrollpagedown",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005276-scrollpagedown",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "scrollPageDown:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005277-scrollpageup": {
-      "title": "scrollPageUp:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005277-scrollpageup",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005277-scrollpageup",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "scrollPageUp:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005278-scrolltobeginningofdocument": {
-      "title": "scrollToBeginningOfDocument:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005278-scrolltobeginningofdocument",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005278-scrolltobeginningofdocument",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "scrollToBeginningOfDocument:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005279-scrolltoendofdocument": {
-      "title": "scrollToEndOfDocument:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005279-scrolltoendofdocument",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005279-scrolltoendofdocument",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "scrollToEndOfDocument:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005280-selectall": {
-      "title": "selectAll:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005280-selectall",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005280-selectall",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "selectAll:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005281-selectline": {
-      "title": "selectLine:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005281-selectline",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005281-selectline",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "selectLine:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005282-selectparagraph": {
-      "title": "selectParagraph:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005282-selectparagraph",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005282-selectparagraph",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "selectParagraph:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005283-selecttomark": {
-      "title": "selectToMark:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005283-selecttomark",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005283-selecttomark",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "selectToMark:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005284-selectword": {
-      "title": "selectWord:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005284-selectword",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005284-selectword",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "selectWord:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005285-setmark": {
-      "title": "setMark:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005285-setmark",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005285-setmark",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setMark:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005286-swapwithmark": {
-      "title": "swapWithMark:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005286-swapwithmark",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005286-swapwithmark",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "swapWithMark:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005287-transpose": {
-      "title": "transpose:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005287-transpose",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005287-transpose",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "transpose:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005288-transposewords": {
-      "title": "transposeWords:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005288-transposewords",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005288-transposewords",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "transposeWords:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005289-uppercaseword": {
-      "title": "uppercaseWord:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005289-uppercaseword",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005289-uppercaseword",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "uppercaseWord:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005290-yank": {
-      "title": "yank:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005290-yank",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding/3005290-yank",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "yank:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/appkit/nsresponder/1535269-supplementaltargetforaction": {
       "title": "supplementalTargetForAction:sender:",
       "type": "topic",
@@ -1939,7 +2215,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsstandardkeybindingresponding"
+      "url": "/documentation/appkit/nsstandardkeybindingresponding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods that responder subclasses implement to support key binding commands, such as inserting tabs and newlines, or moving the insertion point."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsresponder/action_messages": {
       "title": "Action Messages",
@@ -1984,25 +2266,16 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Instance Methods",
+      "title": "Responding to Key Commands",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005196-canceloperation",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005197-capitalizeword",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005198-centerselectioninvisiblearea",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005199-changecaseofletter",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005200-complete",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005201-deletebackward",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005202-deletebackwardbydecomposingprevi",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005203-deleteforward",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005204-deletetobeginningofline",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005205-deletetobeginningofparagraph",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005206-deletetoendofline",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005207-deletetoendofparagraph",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005208-deletetomark",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005209-deletewordbackward",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005210-deletewordforward",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005211-docommandbyselector",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005212-indent",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005211-docommandbyselector"
+      ],
+      "anchor": "3745902"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Inserting Content",
+      "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005213-insertbacktab",
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005214-insertcontainerbreak",
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005215-insertdoublequoteignoringsubstit",
@@ -2013,44 +2286,201 @@
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005220-insertsinglequoteignoringsubstit",
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005221-inserttab",
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005222-inserttabignoringfieldeditor",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005223-inserttext",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005224-lowercaseword",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005223-inserttext"
+      ],
+      "anchor": "3745897"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Deleting Content",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005201-deletebackward",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005202-deletebackwardbydecomposingprevi",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005203-deleteforward",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005204-deletetobeginningofline",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005205-deletetobeginningofparagraph",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005206-deletetoendofline",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005207-deletetoendofparagraph",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005209-deletewordbackward",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005210-deletewordforward",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005290-yank"
+      ],
+      "anchor": "3745908"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Moving the Insertion Pointer",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005231-movebackward",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005233-movedown",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005235-moveforward",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005237-moveleft",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005241-moveright",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005259-moveup"
+      ],
+      "anchor": "3745901"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Modifying the Selection",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005232-movebackwardandmodifyselection",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005234-movedownandmodifyselection",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005236-moveforwardandmodifyselection",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005238-moveleftandmodifyselection",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005242-moverightandmodifyselection",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005260-moveupandmodifyselection"
+      ],
+      "anchor": "3745894"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Scrolling Content",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005276-scrollpagedown",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005277-scrollpageup",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005274-scrolllinedown",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005275-scrolllineup",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005278-scrolltobeginningofdocument",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005279-scrolltoendofdocument",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005269-pagedown",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005271-pageup",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005270-pagedownandmodifyselection",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005272-pageupandmodifyselection",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005198-centerselectioninvisiblearea"
+      ],
+      "anchor": "3745907"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Transposing Elements",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005287-transpose",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005288-transposewords"
+      ],
+      "anchor": "3745912"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Indenting Content",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005212-indent"
+      ],
+      "anchor": "3745910"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Canceling Operations",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005196-canceloperation"
+      ],
+      "anchor": "3745909"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Supporting QuickLook",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005273-quicklookpreviewitems"
+      ],
+      "anchor": "3745904"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Supporting Writing Directions",
+      "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005225-makebasewritingdirectionlefttori",
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005226-makebasewritingdirectionnatural",
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005227-makebasewritingdirectionrighttol",
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005228-maketextwritingdirectionlefttori",
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005229-maketextwritingdirectionnatural",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005230-maketextwritingdirectionrighttol",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005231-movebackward",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005232-movebackwardandmodifyselection",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005233-movedown",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005234-movedownandmodifyselection",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005235-moveforward",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005236-moveforwardandmodifyselection",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005237-moveleft",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005238-moveleftandmodifyselection",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005239-moveparagraphbackwardandmodifyse",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005240-moveparagraphforwardandmodifysel",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005241-moveright",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005242-moverightandmodifyselection",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005230-maketextwritingdirectionrighttol"
+      ],
+      "anchor": "3745903"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Changing Capitalization",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005197-capitalizeword",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005199-changecaseofletter",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005224-lowercaseword",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005289-uppercaseword"
+      ],
+      "anchor": "3745899"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Moving the Selection in Documents",
+      "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005243-movetobeginningofdocument",
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005244-movetobeginningofdocumentandmodi",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005245-movetobeginningofline",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005246-movetobeginningoflineandmodifyse",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005249-movetoendofdocument",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005250-movetoendofdocumentandmodifysele"
+      ],
+      "anchor": "3745900"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Moving the Selection in Paragraphs",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005239-moveparagraphbackwardandmodifyse",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005240-moveparagraphforwardandmodifysel",
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005247-movetobeginningofparagraph",
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005248-movetobeginningofparagraphandmod",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005249-movetoendofdocument",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005250-movetoendofdocumentandmodifysele",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005253-movetoendofparagraph",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005254-movetoendofparagraphandmodifysel"
+      ],
+      "anchor": "3745905"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Moving the Selection in Lines of Text",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005245-movetobeginningofline",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005246-movetobeginningoflineandmodifyse",
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005251-movetoendofline",
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005252-movetoendoflineandmodifyselectio",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005253-movetoendofparagraph",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005254-movetoendofparagraphandmodifysel",
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005255-movetoleftendofline",
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005256-movetoleftendoflineandmodifysele",
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005257-movetorightendofline",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005258-movetorightendoflineandmodifysel",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005259-moveup",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005260-moveupandmodifyselection",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005258-movetorightendoflineandmodifysel"
+      ],
+      "anchor": "3745895"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Changing the Selection",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005280-selectall",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005281-selectline",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005282-selectparagraph",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005284-selectword"
+      ],
+      "anchor": "3745898"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Supporting Marked Selections",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005285-setmark",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005283-selecttomark",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005208-deletetomark",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005286-swapwithmark"
+      ],
+      "anchor": "3745896"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Supporting Autocomplete",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005200-complete"
+      ],
+      "anchor": "3745906"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Moving the Selection by Word Boundaries",
+      "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005261-movewordbackward",
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005262-movewordbackwardandmodifyselecti",
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005263-movewordforward",
@@ -2058,30 +2488,9 @@
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005265-movewordleft",
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005266-movewordleftandmodifyselection",
         "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005267-movewordright",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005268-movewordrightandmodifyselection",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005269-pagedown",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005270-pagedownandmodifyselection",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005271-pageup",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005272-pageupandmodifyselection",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005273-quicklookpreviewitems",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005274-scrolllinedown",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005275-scrolllineup",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005276-scrollpagedown",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005277-scrollpageup",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005278-scrolltobeginningofdocument",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005279-scrolltoendofdocument",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005280-selectall",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005281-selectline",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005282-selectparagraph",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005283-selecttomark",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005284-selectword",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005285-setmark",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005286-swapwithmark",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005287-transpose",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005288-transposewords",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005289-uppercaseword",
-        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005290-yank"
-      ]
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding/3005268-movewordrightandmodifyselection"
+      ],
+      "anchor": "3745911"
     }
   ],
   "seeAlsoSections": [
@@ -2121,10 +2530,44 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder"
+            },
+            {
+              "type": "text",
+              "text": " doesn’t implement any of these methods. "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview"
+            },
+            {
+              "type": "text",
+              "text": " implements a subset of them related to text editing. Your responder subclasses can implement any methods that make sense. You can create your own methods as well, but use these if the concepts map to functionality in your app. If your responder subclass is a view that’s key and uses key binding, and the user types a key sequence bound to a command not implemented in your class, nothing happens by default."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

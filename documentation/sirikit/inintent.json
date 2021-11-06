@@ -10,8 +10,7 @@
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/intents_and_related_classes"
+        "doc://com.apple.documentation/documentation/sirikit"
       ]
     ]
   },
@@ -34,30 +33,35 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)INIntent",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -92,14 +96,6 @@
       "role": "collection",
       "url": "/documentation/sirikit"
     },
-    "doc://com.apple.documentation/documentation/sirikit/intents_and_related_classes": {
-      "title": "Intents and Related Classes",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/intents_and_related_classes",
-      "url": "/documentation/sirikit/intents_and_related_classes",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
     "doc://com.apple.documentation/documentation/sirikit/inintent": {
       "title": "INIntent",
       "type": "topic",
@@ -115,7 +111,7 @@
       ]
     },
     "doc://com.apple.documentation/documentation/sirikit#2863953": {
-      "title": "Siri Domains",
+      "title": "Standard Intents",
       "type": "section",
       "identifier": "doc://com.apple.documentation/documentation/sirikit#2863953",
       "kind": "article",
@@ -274,6 +270,42 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/sirikit/inintent/3850511-donationmetadata": {
+      "title": "donationMetadata",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintent/3850511-donationmetadata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inintent/3850511-donationmetadata"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handlers": {
+      "title": "Dispatching Intents to Handlers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handlers",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/dispatching_intents_to_handlers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide SiriKit with an intent handler capable of handling a given intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents": {
+      "title": "Resolving and Handling Intents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/resolving_and_handling_intents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolve, confirm, and handle user requests for your app’s services."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/sirikit/inintentresponse": {
       "title": "INIntentResponse",
       "type": "topic",
@@ -288,22 +320,68 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure": {
+      "title": "Intent Handling Infrastructure",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/intent_handling_infrastructure",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specify required permissions and provide handlers for the intents your app supports, and configure app extensions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/providing_hands-free_app_control_with_intents": {
+      "title": "Providing Hands-Free App Control with Intents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/providing_hands-free_app_control_with_intents",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/sirikit/providing_hands-free_app_control_with_intents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolve, confirm, and handle intents without an extension."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/resolution_results": {
+      "title": "Resolution Results",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/resolution_results",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/resolution_results",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolve common types of data like strings and dates into specific values that your app recognizes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/common_data_types": {
+      "title": "Common Data Types",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/common_data_types",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/common_data_types",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage common data types such as strings, dates, currencies, images, and contacts."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -334,7 +412,8 @@
         "doc://com.apple.documentation/documentation/sirikit/inintent/2921266-intentdescription",
         "doc://com.apple.documentation/documentation/sirikit/inintent/2962960-suggestedinvocationphrase",
         "doc://com.apple.documentation/documentation/sirikit/inintent/3552187-shortcutavailability"
-      ]
+      ],
+      "anchor": "2421639"
     },
     {
       "kind": "taskGroup",
@@ -343,13 +422,28 @@
         "doc://com.apple.documentation/documentation/sirikit/inintent/2976222-imageforparameternamed",
         "doc://com.apple.documentation/documentation/sirikit/inintent/2976224-setimage",
         "doc://com.apple.documentation/documentation/sirikit/inintent/2976223-keyimage"
-      ]
+      ],
+      "anchor": "2980397"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/inintent/3850511-donationmetadata"
+      ],
+      "anchor": "3853258"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/sirikit/inintentresponse"
+        "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handlers",
+        "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents",
+        "doc://com.apple.documentation/documentation/sirikit/inintentresponse",
+        "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure",
+        "doc://com.apple.documentation/documentation/sirikit/providing_hands-free_app_control_with_intents",
+        "doc://com.apple.documentation/documentation/sirikit/resolution_results",
+        "doc://com.apple.documentation/documentation/sirikit/common_data_types"
       ],
       "title": "Intents",
       "generated": true
@@ -389,6 +483,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
@@ -462,7 +557,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

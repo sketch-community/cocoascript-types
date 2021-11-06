@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIFocusSystem",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -88,7 +93,7 @@
       "role": "collection"
     },
     "doc://com.apple.documentation/documentation/uikit/focus-based_navigation": {
-      "title": "Focus-based Navigation",
+      "title": "Focus-Based Navigation",
       "identifier": "doc://com.apple.documentation/documentation/uikit/focus-based_navigation",
       "url": "/documentation/uikit/focus-based_navigation",
       "type": "topic",
@@ -321,6 +326,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uikeycommand/navigating_an_app_s_user_interface_using_a_keyboard": {
+      "title": "Navigating an App’s User Interface Using a Keyboard",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeycommand/navigating_an_app_s_user_interface_using_a_keyboard",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/uikeycommand/navigating_an_app_s_user_interface_using_a_keyboard",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Navigate between user interface elements using a keyboard and focusable UI elements in iPad apps and apps built with Mac Catalyst."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/focus-based_navigation/about_focus_interactions_for_apple_tv": {
       "title": "About Focus Interactions for Apple TV",
       "type": "topic",
@@ -419,22 +438,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uifocusgrouppriority": {
+      "title": "UIFocusGroupPriority",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifocusgrouppriority",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uifocusgrouppriority"
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -453,14 +470,16 @@
       "title": "Creating a Focus System Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uifocussystem/2865788-focussystemforenvironment"
-      ]
+      ],
+      "anchor": "2868835"
     },
     {
       "kind": "taskGroup",
       "title": "Getting the Currently Focused Item",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uifocussystem/2866087-focuseditem"
-      ]
+      ],
+      "anchor": "2868836"
     },
     {
       "kind": "taskGroup",
@@ -468,21 +487,24 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uifocussystem/2866115-requestfocusupdatetoenvironment",
         "doc://com.apple.documentation/documentation/uikit/uifocussystem/2865914-updatefocusifneeded"
-      ]
+      ],
+      "anchor": "2868837"
     },
     {
       "kind": "taskGroup",
       "title": "Checking the Ancestry of the Environment",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uifocussystem/2873786-environment"
-      ]
+      ],
+      "anchor": "2874351"
     },
     {
       "kind": "taskGroup",
       "title": "Registering Custom Sounds",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uifocussystem/2887479-registerurl"
-      ]
+      ],
+      "anchor": "2888238"
     },
     {
       "kind": "taskGroup",
@@ -492,12 +514,14 @@
         "doc://com.apple.documentation/documentation/uikit/uifocusdidupdatenotification",
         "doc://com.apple.documentation/documentation/uikit/uifocusupdatecontextkey",
         "doc://com.apple.documentation/documentation/uikit/uifocusmovementdidfailnotification"
-      ]
+      ],
+      "anchor": "3001290"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uikeycommand/navigating_an_app_s_user_interface_using_a_keyboard",
         "doc://com.apple.documentation/documentation/uikit/focus-based_navigation/about_focus_interactions_for_apple_tv",
         "doc://com.apple.documentation/documentation/uikit/focus-based_navigation/adding_user-focusable_elements_to_a_tvos_app",
         "doc://com.apple.documentation/documentation/uikit/uifocusenvironment",
@@ -505,7 +529,8 @@
         "doc://com.apple.documentation/documentation/uikit/uifocusitem",
         "doc://com.apple.documentation/documentation/uikit/uifocusmovementhint",
         "doc://com.apple.documentation/documentation/uikit/uifocusitemcontainer",
-        "doc://com.apple.documentation/documentation/uikit/uifocusitemscrollablecontainer"
+        "doc://com.apple.documentation/documentation/uikit/uifocusitemscrollablecontainer",
+        "doc://com.apple.documentation/documentation/uikit/uifocusgrouppriority"
       ],
       "title": "Focus Interactions",
       "generated": true
@@ -545,6 +570,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -600,7 +626,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

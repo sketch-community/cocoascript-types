@@ -67,14 +67,21 @@
         "name": "iOS",
         "introducedAt": "3.0",
         "deprecatedAt": "8.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "deprecatedAt": "8.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
@@ -82,8 +89,8 @@
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -337,8 +344,7 @@
           "type": "text",
           "text": ", that is displayed below a peek when a user swipes the peek upward. "
         }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiaccelerometer": {
       "title": "UIAccelerometer",
@@ -764,8 +770,7 @@
           "type": "text",
           "text": " class."
         }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiacceleration": {
       "title": "UIAcceleration",
@@ -1181,16 +1186,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -1207,7 +1202,8 @@
       "title": "Initializing a Search Bar",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uisearchdisplaycontroller/1620411-initwithsearchbar"
-      ]
+      ],
+      "anchor": "1653176"
     },
     {
       "kind": "taskGroup",
@@ -1215,7 +1211,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uisearchdisplaycontroller/1620406-active",
         "doc://com.apple.documentation/documentation/uikit/uisearchdisplaycontroller/1620397-setactive"
-      ]
+      ],
+      "anchor": "1653211"
     },
     {
       "kind": "taskGroup",
@@ -1230,7 +1227,8 @@
         "doc://com.apple.documentation/documentation/uikit/uisearchdisplaycontroller/1620386-searchresultstitle",
         "doc://com.apple.documentation/documentation/uikit/uisearchdisplaycontroller/1620394-displayssearchbarinnavigationbar",
         "doc://com.apple.documentation/documentation/uikit/uisearchdisplaycontroller/1620408-navigationitem"
-      ]
+      ],
+      "anchor": "1653251"
     }
   ],
   "seeAlsoSections": [
@@ -1290,6 +1288,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -1574,7 +1573,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

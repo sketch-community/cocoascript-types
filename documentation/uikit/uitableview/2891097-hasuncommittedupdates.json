@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A Boolean value indicating whether the table view's appearance contains changes that are not reflected in its data source."
+      "text": "A Boolean value that indicates whether the table view's appearance contains changes that aren't present in its data source."
     }
   ],
   "documentVersion": 0,
@@ -36,25 +36,33 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UITableView(py)hasUncommittedUpdates",
+    "parent": {
+      "title": "UITableView"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -115,7 +123,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A view that presents data using rows arranged in a single column."
+          "text": "A view that presents data using rows in a single column."
         }
       ]
     },
@@ -161,7 +169,31 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value indicating whether the table view's appearance contains changes that are not reflected in its data source."
+          "text": "A Boolean value that indicates whether the table view's appearance contains changes that aren't present in its data source."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview/3801923-reconfigurerowsatindexpaths": {
+      "title": "reconfigureRowsAtIndexPaths:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/3801923-reconfigurerowsatindexpaths",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview/3801923-reconfigurerowsatindexpaths",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Updates the data for the rows at the index paths you specify, preserving the existing cells for the rows."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "reconfigureRowsAtIndexPaths:"
         }
       ]
     },
@@ -175,7 +207,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Reloads the specified rows using a given animation effect."
+          "text": "Reloads the specified rows using the provided animation effect."
         }
       ],
       "fragments": [
@@ -199,7 +231,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Reloads the specified sections using a given animation effect."
+          "text": "Reloads the specified sections using the provided animation effect."
         }
       ],
       "fragments": [
@@ -248,6 +280,7 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableview/3801923-reconfigurerowsatindexpaths",
         "doc://com.apple.documentation/documentation/uikit/uitableview/1614862-reloaddata",
         "doc://com.apple.documentation/documentation/uikit/uitableview/1614935-reloadrowsatindexpaths",
         "doc://com.apple.documentation/documentation/uikit/uitableview/1614954-reloadsections",
@@ -293,6 +326,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -348,7 +382,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

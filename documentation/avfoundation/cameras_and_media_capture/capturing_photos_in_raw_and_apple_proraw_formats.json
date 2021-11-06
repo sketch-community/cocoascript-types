@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Support professional photography workflows by enabling RAW capture in your camera app."
+      "text": "Support professional photography workflows by enabling minimally processed image capture in your camera app."
     }
   ],
   "documentVersion": 0,
@@ -32,8 +32,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -380,7 +380,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Support professional photography workflows by enabling RAW capture in your camera app."
+          "text": "Support professional photography workflows by enabling minimally processed image capture in your camera app."
         }
       ]
     },
@@ -394,7 +394,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Incorporate scanned documents and pictures taken with a user's iPhone, iPad, or iPod touch into your Mac app using Continuity Camera."
+          "text": "Incorporate scanned documents and pictures from a user's iPhone, iPad, or iPod touch into your Mac app using Continuity Camera."
         }
       ]
     },
@@ -408,7 +408,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A container for image data collected by a photo capture output."
+          "text": "A container for image data from a photo capture output."
         }
       ]
     },
@@ -422,7 +422,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A capture output for still image, Live Photo, and other photography workflows."
+          "text": "A capture output for still image, Live Photos, and other photography workflows."
         }
       ]
     },
@@ -476,7 +476,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "By default, the iOS capture pipeline uses advanced computational photography techniques to achieve the highest quality images, and delivers the processed result to your app in a format compressed for efficient storage and display. Processed formats are a great choice in many cases, but because they’re lossy, they typically aren’t a good fit for professional photography workflows. In these cases, the preferred format is RAW."
+              "text": "By default, the image-capture pipeline uses advanced computational photography techniques to achieve the highest quality images, and delivers the processed result to your app in a compressed format for efficient storage and display. Processed formats are a great choice in many cases, but RAW formats contain minimally processed image data from the camera sensor, which gives your app users more creative control."
             }
           ]
         },
@@ -485,7 +485,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "RAW formats capture image data largely as the camera sensor interprets it. Capturing the image data this way results in much larger files than processed formats, but greatly expands your editing capabilities in post-production. One drawback to shooting in standard Bayer RAW format is you no longer benefit from the advanced image processing you get with compressed formats. "
+              "text": "Capturing images in RAW format results in much larger files than compressed formats, but greatly expands editing capabilities in post-production. But, one drawback to shooting in standard RAW format is that it bypasses the advanced processing that the image-capture pipeline provides. "
             }
           ]
         },
@@ -494,7 +494,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Starting in iOS 14, and available on iPhone 12 Pro and Pro Max, you can use the new Apple ProRAW format. Apple ProRAW is a demosaiced RAW format that gives you the benefits of Bayer RAW capture, but applies many of the multi-image fusion techniques previously unavailable to RAW workflows."
+              "text": "Beginning in iOS 14.3, and available on iPhone 12 Pro and Pro Max, you can use the Apple ProRAW format. Apple ProRAW provides the benefits of RAW capture, and applies many of the multi-image fusion techniques previously unavailable to RAW workflows."
             }
           ]
         },
@@ -546,7 +546,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "To determine if your app’s photo output supports Apple ProRAW formats in the current environment, add the output to a capture session that has a connected video source, and query its "
+              "text": "To determine whether your app’s photo output supports Apple ProRAW formats in the current environment, add the output to a capture session that has a connected video source, and query its "
             },
             {
               "type": "reference",
@@ -573,7 +573,7 @@
             },
             {
               "type": "text",
-              "text": ", as shown in the example below."
+              "text": " as the example below shows:"
             }
           ]
         },
@@ -635,7 +635,7 @@
             },
             {
               "type": "text",
-              "text": " array. You can determine if a particular format in the array is an Apple ProRAW or Bayer RAW format by querying the output’s "
+              "text": " array. You can determine whether a particular format in the array is an Apple ProRAW or Bayer RAW format by querying the output’s "
             },
             {
               "type": "reference",
@@ -683,7 +683,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Capturing photos in RAW and Apple ProRAW format requires only minor changes to the basic photography workflow covered in "
+              "text": "Capturing photos in RAW and Apple ProRAW format requires only minor changes to the basic photography workflow in "
             },
             {
               "type": "reference",
@@ -701,7 +701,7 @@
             },
             {
               "type": "text",
-              "text": " object that specifies the RAW format to capture, and optionally, a processed format to capture if your app supports creating RAW+JPEG files. The capture pipeline only supports the RAW formats found in the photo output’s "
+              "text": " object that specifies the RAW format to capture, and optionally, a processed format to capture if your app supports creating RAW+JPEG files. The capture pipeline only supports the RAW formats in the photo output’s "
             },
             {
               "type": "reference",
@@ -719,7 +719,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The example below finds the appropriate RAW format, choosing Apple ProRAW when enabled, and Bayer RAW when not. It creates a photo settings object specifying the RAW and processed formats, and a delegate object to monitor the capture progress. Finally, it calls the photo output’s "
+              "text": "The example below finds the appropriate RAW format, choosing Apple ProRAW when it’s in an enabled state, and Bayer RAW when it’s not. It creates a photo settings object that specifies the RAW and processed formats, and a delegate object to monitor the capture progress. Finally, it calls the photo output’s "
             },
             {
               "type": "reference",
@@ -739,7 +739,7 @@
             "    { AVCapturePhotoOutput.isAppleProRAWPixelFormat($0) } :",
             "    { AVCapturePhotoOutput.isBayerRAWPixelFormat($0) }",
             "",
-            "// Retrieve the RAW format, favoring Apple ProRAW when enabled.",
+            "// Retrieve the RAW format, favoring Apple ProRAW when it's in an enabled state.",
             "guard let rawFormat =",
             "        photoOutput.availableRawPhotoPixelFormatTypes.first(where: query) else {",
             "    fatalError(\"No RAW format found.\")",
@@ -792,7 +792,7 @@
             },
             {
               "type": "text",
-              "text": " method at least once for each format you request, and possibly additional times depending on your capture settings. Using the capture settings defined in the previous section would result in the photo output calling this delegate method twice: once for the RAW image, and again for the processed image. In each invocation, get the photo’s file data by calling its "
+              "text": " method at least once for each format you request, and possibly additional times, depending on your capture settings. Using the capture settings in the previous section results in the photo output calling this delegate method twice: once for the RAW image, and again for the processed image. In each invocation, get the photo’s file data by calling its "
             },
             {
               "type": "reference",
@@ -801,7 +801,7 @@
             },
             {
               "type": "text",
-              "text": " method and store it as needed. If you call this method on a RAW photo, it returns the data packaged in the industry-standard DNG file format. If you call it on processed images, it returns the compressed bitmap image data. "
+              "text": " method and store it as necessary. If you call this method on a RAW photo, it returns the data in the industry-standard DNG file format. If you call it on processed images, it returns the compressed bitmap image data. "
             }
           ]
         },
@@ -884,7 +884,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Optionally Customize the Apple ProRAW Output",
+          "text": "Customize the Apple ProRAW Output",
           "anchor": "3701619"
         },
         {
@@ -901,7 +901,7 @@
             },
             {
               "type": "text",
-              "text": ", passing it a custom object that conforms to the "
+              "text": " and passing it a custom object that conforms to the "
             },
             {
               "type": "reference",
@@ -910,7 +910,7 @@
             },
             {
               "type": "text",
-              "text": " protocol. The following code shows an example implementation of this protocol that applies minimal compression to the output image."
+              "text": " protocol. The following code shows an example implementation of this protocol that applies minimal compression to the output image:"
             }
           ]
         },
@@ -920,10 +920,13 @@
             "class AppleProRAWCustomizer: NSObject, AVCapturePhotoFileDataRepresentationCustomizer {",
             "    ",
             "    // Customize the compression settings.",
-            "    func replacementAppleProRAWCompressionSettings(for photo: AVCapturePhoto, defaultSettings: [String : Any], maximumBitDepth: Int) -> [String : Any] {",
+            "    func replacementAppleProRAWCompressionSettings(for photo: AVCapturePhoto, ",
+            "                                                   defaultSettings: [String : Any], ",
+            "                                                   maximumBitDepth: Int) -> [String : Any] {",
             "        ",
             "        // Reduce the bit depth and quality of the final file.",
-            "        return [AVVideoAppleProRAWBitDepthKey: maximumBitDepth - 2, AVVideoQualityKey: 0.95]",
+            "        return [AVVideoAppleProRAWBitDepthKey: maximumBitDepth - 2, ",
+            "                AVVideoQualityKey: 0.95]",
             "    }",
             "}"
           ],
@@ -947,7 +950,7 @@
             },
             {
               "type": "text",
-              "text": " method as shown below."
+              "text": " method as the example below shows:"
             }
           ]
         },
@@ -975,7 +978,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The photo output indicates it’s finished the capture request by calling the delegate’s "
+              "text": "The photo output indicates when it finishes the capture request by calling the delegate’s "
             },
             {
               "type": "reference",
@@ -1002,7 +1005,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "To save the captured photos to the user’s Photos library as a RAW+JPEG file, create a single Photos asset that associates the RAW and processed data. Create an instance of "
+              "text": "To save the captured photos to the user’s Photos library, create a single Photos asset that associates the RAW and processed data. Create an instance of "
             },
             {
               "type": "reference",
@@ -1011,7 +1014,7 @@
             },
             {
               "type": "text",
-              "text": ", then specify the processed image as the asset’s main "
+              "text": ", then specify the DNG version as the asset’s main "
             },
             {
               "type": "reference",
@@ -1020,7 +1023,7 @@
             },
             {
               "type": "text",
-              "text": " resource and the DNG version as an "
+              "text": " resource, and the processed image as an "
             },
             {
               "type": "reference",
@@ -1029,14 +1032,14 @@
             },
             {
               "type": "text",
-              "text": " resource. Perform the request inside a change block as shown in the example below."
+              "text": " resource. Perform the request inside a change block as the example below shows:"
             }
           ]
         },
         {
           "type": "codeListing",
           "code": [
-            "// After both RAW and compressed versions are delivered, add them to the Photos library.",
+            "// After both RAW and compressed versions are complete, add them to the Photos library.",
             "func photoOutput(_ output: AVCapturePhotoOutput,",
             "                 didFinishCaptureFor resolvedSettings: AVCaptureResolvedPhotoSettings,",
             "                 error: Error?) {",
@@ -1056,24 +1059,29 @@
             "        return",
             "    }",
             "    ",
-            "    // Request add-only access to the user's photo library (if not already granted).",
+            "    // Request add-only access to the user's Photos library (if not already granted).",
             "    PHPhotoLibrary.requestAuthorization(for: .addOnly) { status in",
             "        ",
             "        // Don't continue if not authorized.",
             "        guard status == .authorized else { return }",
             "        ",
             "        PHPhotoLibrary.shared().performChanges {",
-            "            // Add the compressed (HEIF) data as the main resource for the Photos asset.",
-            "            let creationRequest = PHAssetCreationRequest.forAsset()",
-            "            creationRequest.addResource(with: .photo, data: compressedData, options: nil)",
-            "            ",
-            "            // Save the RAW (DNG) file as an alternative resource.",
+            "     ",
+            "            // Save the RAW (DNG) file as the main resource for the Photos asset.",
             "            let options = PHAssetResourceCreationOptions()",
             "            options.shouldMoveFile = true",
-            "            creationRequest.addResource(with: .alternatePhoto, fileURL: rawFileURL, options: options)",
+            "            creationRequest.addResource(with: .photo, ",
+            "                                        fileURL: rawFileURL, ",
+            "                                        options: options)",
+            "",
+            "            // Add the compressed (HEIF) data as an alternative resource. ",
+            "            let creationRequest = PHAssetCreationRequest.forAsset()",
+            "            creationRequest.addResource(with: .alternatePhoto, ",
+            "                                        data: compressedData, ",
+            "                                        options: nil)",
             "            ",
             "        } completionHandler: { success, error in",
-            "            // Process the photo library error.",
+            "            // Process the Photos library error.",
             "        }",
             "    }",
             "}"
@@ -1083,16 +1091,12 @@
             "anchor": "3701429",
             "title": "Listing 6"
           }
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -12,7 +12,8 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
         "doc://com.apple.documentation/documentation/uikit/views_and_controls",
-        "doc://com.apple.documentation/documentation/uikit/uibutton"
+        "doc://com.apple.documentation/documentation/uikit/uibutton",
+        "doc://com.apple.documentation/documentation/uikit/uibutton/deprecated_button_properties_and_methods"
       ]
     ]
   },
@@ -35,25 +36,41 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)UIButton(py)reversesTitleShadowWhenHighlighted",
+    "parent": {
+      "title": "UIButton"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -110,6 +127,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uibutton/deprecated_button_properties_and_methods": {
+      "title": "Deprecated Button Properties and Methods",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/deprecated_button_properties_and_methods",
+      "url": "/documentation/uikit/uibutton/deprecated_button_properties_and_methods",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
     "doc://com.apple.documentation/documentation/objectivec/yes": {
       "title": "YES",
       "type": "topic",
@@ -126,219 +151,50 @@
       "role": "symbol",
       "url": "/documentation/objectivec/no"
     },
-    "doc://com.apple.documentation/documentation/uikit/uibutton/1623992-titlelabel": {
-      "title": "titleLabel",
+    "doc://com.apple.documentation/documentation/uikit/uibutton/1624005-font": {
+      "title": "font",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/1623992-titlelabel",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/1624005-font",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uibutton/1623992-titlelabel",
+      "url": "/documentation/uikit/uibutton/1624005-font",
       "abstract": [
         {
           "type": "text",
-          "text": "A view that displays the value of the "
-        },
-        {
-          "type": "codeVoice",
-          "code": "currentTitle"
-        },
-        {
-          "type": "text",
-          "text": " property for a button."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uibutton/1624022-titleforstate": {
-      "title": "titleForState:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/1624022-titleforstate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uibutton/1624022-titleforstate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the title associated with the specified state."
+          "text": "The font used to display text on the button."
         }
       ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "titleForState:"
-        }
-      ]
+      "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/uikit/uibutton/1624018-settitle": {
-      "title": "setTitle:forState:",
+    "doc://com.apple.documentation/documentation/uikit/uibutton/1623995-linebreakmode": {
+      "title": "lineBreakMode",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/1624018-settitle",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/1623995-linebreakmode",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uibutton/1624018-settitle",
+      "url": "/documentation/uikit/uibutton/1623995-linebreakmode",
       "abstract": [
         {
           "type": "text",
-          "text": "Sets the title to use for the specified state."
+          "text": "The line break mode to use when drawing text."
         }
       ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setTitle:forState:"
-        }
-      ]
+      "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/uikit/uibutton/1623991-attributedtitleforstate": {
-      "title": "attributedTitleForState:",
+    "doc://com.apple.documentation/documentation/uikit/uibutton/1624008-titleshadowoffset": {
+      "title": "titleShadowOffset",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/1623991-attributedtitleforstate",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/1624008-titleshadowoffset",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uibutton/1623991-attributedtitleforstate",
+      "url": "/documentation/uikit/uibutton/1624008-titleshadowoffset",
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the styled title associated with the specified state."
+          "text": "The offset of the shadow used to display the receiver’s title."
         }
       ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "attributedTitleForState:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uibutton/1624012-setattributedtitle": {
-      "title": "setAttributedTitle:forState:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/1624012-setattributedtitle",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uibutton/1624012-setattributedtitle",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sets the styled title to use for the specified state."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setAttributedTitle:forState:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uibutton/1624017-titlecolorforstate": {
-      "title": "titleColorForState:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/1624017-titlecolorforstate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uibutton/1624017-titlecolorforstate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the title color used for a state."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "titleColorForState:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uibutton/1623993-settitlecolor": {
-      "title": "setTitleColor:forState:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/1623993-settitlecolor",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uibutton/1623993-settitlecolor",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sets the color of the title to use for the specified state."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setTitleColor:forState:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uibutton/1624009-titleshadowcolorforstate": {
-      "title": "titleShadowColorForState:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/1624009-titleshadowcolorforstate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uibutton/1624009-titleshadowcolorforstate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the shadow color of the title used for a state."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "titleShadowColorForState:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uibutton/1623994-settitleshadowcolor": {
-      "title": "setTitleShadowColor:forState:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton/1623994-settitleshadowcolor",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uibutton/1623994-settitleshadowcolor",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sets the color of the title shadow to use for the specified state."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setTitleShadowColor:forState:"
-        }
-      ]
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/uikit/uibutton/1624004-reversestitleshadowwhenhighlight": {
       "title": "reversesTitleShadowWhenHighlighted",
@@ -352,7 +208,8 @@
           "type": "text",
           "text": "A Boolean value that determines whether the title shadow changes when the button is highlighted."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -365,17 +222,11 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uibutton/1623992-titlelabel",
-        "doc://com.apple.documentation/documentation/uikit/uibutton/1624022-titleforstate",
-        "doc://com.apple.documentation/documentation/uikit/uibutton/1624018-settitle",
-        "doc://com.apple.documentation/documentation/uikit/uibutton/1623991-attributedtitleforstate",
-        "doc://com.apple.documentation/documentation/uikit/uibutton/1624012-setattributedtitle",
-        "doc://com.apple.documentation/documentation/uikit/uibutton/1624017-titlecolorforstate",
-        "doc://com.apple.documentation/documentation/uikit/uibutton/1623993-settitlecolor",
-        "doc://com.apple.documentation/documentation/uikit/uibutton/1624009-titleshadowcolorforstate",
-        "doc://com.apple.documentation/documentation/uikit/uibutton/1623994-settitleshadowcolor"
+        "doc://com.apple.documentation/documentation/uikit/uibutton/1624005-font",
+        "doc://com.apple.documentation/documentation/uikit/uibutton/1623995-linebreakmode",
+        "doc://com.apple.documentation/documentation/uikit/uibutton/1624008-titleshadowoffset"
       ],
-      "title": "Configuring the Button Title",
+      "title": "Title Effects",
       "generated": true
     }
   ],
@@ -415,6 +266,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -461,7 +313,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

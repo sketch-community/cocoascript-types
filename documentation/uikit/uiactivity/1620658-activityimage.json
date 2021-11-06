@@ -41,20 +41,28 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIActivity(py)activityImage",
+    "parent": {
+      "title": "UIActivity"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -145,7 +153,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the category of the activity, which may be used to group activities in the UI."
+          "text": "The category of the activity, which may be used to group activities in the UI."
         }
       ]
     },
@@ -159,7 +167,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Activities have a defined category, and the activity UI may show activities grouped by category."
+          "text": "An enumeration that defines categories of activities."
         }
       ]
     },
@@ -173,7 +181,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An identifier for the type of service being provided."
+          "text": "The type of service being provided."
         }
       ]
     },
@@ -187,7 +195,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Activity types for which the system has built-in support."
+          "text": "A structure that describes the types of acitivities for which the system has built-in support."
         }
       ]
     },
@@ -201,7 +209,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A user-readable string describing the service."
+          "text": "A user-readable string that describes the service."
         }
       ]
     },
@@ -225,16 +233,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "seeAlsoSections": [
@@ -288,27 +286,8 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "return_value",
-          "level": 2,
-          "text": "Return Value",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "An image that can be presented to the user."
-            }
           ]
         }
       ]
@@ -327,7 +306,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This method returns "
+              "text": "The default value is "
             },
             {
               "type": "codeVoice",
@@ -335,7 +314,7 @@
             },
             {
               "type": "text",
-              "text": " by default. Subclasses must override this method and return a valid image object. The image is used to generate a button for your service in the UI displayed by the "
+              "text": ". Subclasses must override this property to return a valid image object that can be presented to the user. The "
             },
             {
               "type": "reference",
@@ -344,7 +323,7 @@
             },
             {
               "type": "text",
-              "text": " object."
+              "text": " object uses this image to generate a button for your service in its UI."
             }
           ]
         },
@@ -353,7 +332,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The alpha channel of the image is used as a mask to generate the final image that is presented to the user. Any color data in the image itself is ignored. Opaque pixels have a gradient applied to them and this gradient is then laid on top of a standard background. Thus, a completely opaque image would yield a gradient filled rectangle."
+              "text": "The alpha channel of the image is used as a mask to generate the final image that is presented to the user. Any color data in the image itself is ignored. Opaque pixels have a gradient applied to them, and this gradient is then laid on top of a standard background. Thus, a completely opaque image would yield a gradient-filled rectangle."
             }
           ]
         },
@@ -362,7 +341,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "For iPhone and iPod touch, images on iOS 7 should be 60 by 60 points; on earlier versions of iOS, you should use images no larger than 43 by 43 points. For iPad, images on iOS 7 should be 76 by 76 points; on earlier versions of iOS you should use images no larger than 60 by 60 points. On a device with Retina display, the number of pixels is doubled in each direction."
+              "text": "For iPhone and iPod touch, images on iOS 7 should be 60 by 60 points; on earlier versions of iOS, you should use images no larger than 43 by 43 points. For iPad, images on iOS 7 should be 76 by 76 points; on earlier versions of iOS, you should use images no larger than 60 by 60 points. On a device with Retina display, the number of pixels is doubled in each direction."
             }
           ]
         }
@@ -370,7 +349,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

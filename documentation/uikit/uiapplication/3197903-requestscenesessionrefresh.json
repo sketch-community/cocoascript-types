@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIApplication(im)requestSceneSessionRefresh:",
+    "parent": {
+      "title": "UIApplication"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -190,6 +198,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uisceneactivationrequestoptions": {
+      "title": "UISceneActivationRequestOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisceneactivationrequestoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisceneactivationrequestoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that contains information you want the system to use when activating the session associated with a scene.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiscenedestructionrequestoptions": {
+      "title": "UISceneDestructionRequestOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscenedestructionrequestoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiscenedestructionrequestoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object you pass to UIKit to permanently remove a scene and its associated session from your app.  "
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -202,7 +238,9 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplication/3197901-requestscenesessionactivation",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/3197902-requestscenesessiondestruction"
+        "doc://com.apple.documentation/documentation/uikit/uiapplication/3197902-requestscenesessiondestruction",
+        "doc://com.apple.documentation/documentation/uikit/uisceneactivationrequestoptions",
+        "doc://com.apple.documentation/documentation/uikit/uiscenedestructionrequestoptions"
       ],
       "title": "Creating, Destroying, and Updating Scenes",
       "generated": true
@@ -262,6 +300,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -312,7 +351,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

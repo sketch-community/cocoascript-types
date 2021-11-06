@@ -35,20 +35,28 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "introducedAt": "14.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVCaptureDevice(im)setWhiteBalanceModeLockedWithDeviceWhiteBalanceGains:completionHandler:",
+    "parent": {
+      "title": "AVCaptureDevice"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -102,6 +110,54 @@
         {
           "type": "text",
           "text": "A device that provides input (such as audio or video) for capture sessions and offers controls for hardware-specific capture features."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624586-maxwhitebalancegain": {
+      "title": "maxWhiteBalanceGain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624586-maxwhitebalancegain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/1624586-maxwhitebalancegain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The maximum supported value to which a channel in the AVCaptureWhiteBalanceGains may be set."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsinvalidargumentexception": {
+      "title": "NSInvalidArgumentException",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsinvalidargumentexception",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsinvalidargumentexception"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsgenericexception": {
+      "title": "NSGenericException",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsgenericexception",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsgenericexception"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1387810-lockforconfiguration": {
+      "title": "lockForConfiguration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1387810-lockforconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/1387810-lockforconfiguration",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "lockForConfiguration:"
         }
       ]
     },
@@ -162,54 +218,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/avfoundation/avcapturevideodataoutput"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624586-maxwhitebalancegain": {
-      "title": "maxWhiteBalanceGain",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624586-maxwhitebalancegain",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturedevice/1624586-maxwhitebalancegain",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The maximum supported value to which a channel in the AVCaptureWhiteBalanceGains may be set."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsinvalidargumentexception": {
-      "title": "NSInvalidArgumentException",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsinvalidargumentexception",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsinvalidargumentexception"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsgenericexception": {
-      "title": "NSGenericException",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsgenericexception",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsgenericexception"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1387810-lockforconfiguration": {
-      "title": "lockForConfiguration:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1387810-lockforconfiguration",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturedevice/1387810-lockforconfiguration",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "lockForConfiguration:"
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avcapturewhitebalancegains": {
       "title": "AVCaptureWhiteBalanceGains",
@@ -581,6 +589,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -659,7 +668,7 @@
                 },
                 {
                   "type": "text",
-                  "text": ".  The block receives a timestamp matching that of the first buffer to which all settings have been applied. The timestamp is synchronized to the device clock, and thus must be converted to the master clock before comparison  with the timestamps of buffers delivered via an "
+                  "text": ".  The block receives a timestamp matching that of the first buffer to which all settings have been applied. The timestamp is synchronized to the device clock, and thus must be converted to the system clock before comparison with the timestamps of buffers delivered via an "
                 },
                 {
                   "type": "reference",
@@ -792,7 +801,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

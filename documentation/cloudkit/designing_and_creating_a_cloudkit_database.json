@@ -31,8 +31,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -73,7 +73,13 @@
       "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckrecord"
+      "url": "/documentation/cloudkit/ckrecord",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A collection of key-value pairs that store your app’s data."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckreference": {
       "title": "CKReference",
@@ -81,7 +87,13 @@
       "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckreference",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckreference"
+      "url": "/documentation/cloudkit/ckreference",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A relationship between two records in a record zone."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/swift/string": {
       "title": "String",
@@ -233,41 +245,13 @@
       "role": "codeListing",
       "url": "/documentation/cloudkit/designing_and_creating_a_cloudkit_database#3515438"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_cloudkit_dashboard/inspecting_and_editing_an_icloud_container_s_schema": {
+    "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_the_cloudkit_database_app/inspecting_and_editing_an_icloud_container_s_schema": {
       "title": "Inspecting and Editing an iCloud Container’s Schema",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_cloudkit_dashboard/inspecting_and_editing_an_icloud_container_s_schema",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_the_cloudkit_database_app/inspecting_and_editing_an_icloud_container_s_schema",
       "kind": "article",
       "role": "article",
-      "url": "/documentation/cloudkit/managing_icloud_containers_with_cloudkit_dashboard/inspecting_and_editing_an_icloud_container_s_schema"
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/determining_if_cloudkit_is_right_for_your_app": {
-      "title": "Determining if CloudKit Is Right for Your App",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/determining_if_cloudkit_is_right_for_your_app",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/cloudkit/determining_if_cloudkit_is_right_for_your_app",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Explore various ways of storing your app’s data in iCloud."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/enabling_cloudkit_in_your_app": {
-      "title": "Enabling CloudKit in Your App",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/enabling_cloudkit_in_your_app",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/cloudkit/enabling_cloudkit_in_your_app",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Configure your app to store data in iCloud using CloudKit."
-        }
-      ]
+      "url": "/documentation/cloudkit/managing_icloud_containers_with_the_cloudkit_database_app/inspecting_and_editing_an_icloud_container_s_schema"
     },
     "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database": {
       "title": "Designing and Creating a CloudKit Database",
@@ -283,17 +267,59 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_cloudkit_dashboard": {
-      "title": "Managing iCloud Containers with CloudKit Dashboard",
+    "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_the_cloudkit_database_app": {
+      "title": "Managing iCloud Containers with the CloudKit Database App",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_cloudkit_dashboard",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_the_cloudkit_database_app",
       "kind": "article",
       "role": "article",
-      "url": "/documentation/cloudkit/managing_icloud_containers_with_cloudkit_dashboard",
+      "url": "/documentation/cloudkit/managing_icloud_containers_with_the_cloudkit_database_app",
       "abstract": [
         {
           "type": "text",
           "text": "Inspect and modify the schema and data for your app's iCloud container."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecordzone": {
+      "title": "CKRecordZone",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordzone",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecordzone",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A database partition that contains related records."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckasset": {
+      "title": "CKAsset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckasset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckasset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An external file that belongs to a record."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/integrating_a_text-based_schema_into_your_workflow": {
+      "title": "Integrating a Text-Based Schema into Your Workflow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/integrating_a_text-based_schema_into_your_workflow",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/cloudkit/integrating_a_text-based_schema_into_your_workflow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Define and update your schema with the CloudKit Schema Language."
         }
       ]
     },
@@ -308,11 +334,14 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/cloudkit/determining_if_cloudkit_is_right_for_your_app",
-        "doc://com.apple.documentation/documentation/cloudkit/enabling_cloudkit_in_your_app",
-        "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_cloudkit_dashboard"
+        "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_the_cloudkit_database_app",
+        "doc://com.apple.documentation/documentation/cloudkit/ckrecordzone",
+        "doc://com.apple.documentation/documentation/cloudkit/ckrecord",
+        "doc://com.apple.documentation/documentation/cloudkit/ckreference",
+        "doc://com.apple.documentation/documentation/cloudkit/ckasset",
+        "doc://com.apple.documentation/documentation/cloudkit/integrating_a_text-based_schema_into_your_workflow"
       ],
-      "title": "Essentials",
+      "title": "Schemas",
       "generated": true
     }
   ],
@@ -1036,7 +1065,7 @@
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_cloudkit_dashboard/inspecting_and_editing_an_icloud_container_s_schema"
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_the_cloudkit_database_app/inspecting_and_editing_an_icloud_container_s_schema"
             },
             {
               "type": "text",
@@ -1048,7 +1077,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

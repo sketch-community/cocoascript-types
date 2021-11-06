@@ -43,25 +43,33 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "introducedAt": "14.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVCaptureAudioDataOutput(im)recommendedAudioSettingsForAssetWriterWithOutputFileType:",
+    "parent": {
+      "title": "AVCaptureAudioDataOutput"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -126,13 +134,13 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avassetwriter"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats": {
+    "doc://com.apple.documentation/documentation/avfaudio/audio_engine/audio_settings_and_formats": {
       "title": "Audio Settings and Formats",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/audio_engine/audio_settings_and_formats",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats"
+      "url": "/documentation/avfaudio/audio_engine/audio_settings_and_formats"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1449070-assetwriterinputwithmediatype": {
       "title": "assetWriterInputWithMediaType:outputSettings:",
@@ -210,6 +218,14 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsdictionary"
     },
+    "doc://com.apple.documentation/documentation/foundation/nsstring": {
+      "title": "NSString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsstring"
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avfiletype": {
       "title": "AVFileType",
       "type": "topic",
@@ -228,7 +244,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The settings used to decode or re-encode audio before it is output."
+          "text": "The settings used to decode or re-encode audio before it’s output."
         }
       ]
     },
@@ -302,7 +318,25 @@
             },
             {
               "kind": "text",
-              "text": " *"
+              "text": "<"
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSString",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring",
+              "text": "NSString"
+            },
+            {
+              "kind": "text",
+              "text": " *,"
+            },
+            {
+              "kind": "keyword",
+              "text": "id"
+            },
+            {
+              "kind": "text",
+              "text": "> *"
             },
             {
               "kind": "text",
@@ -337,6 +371,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -429,7 +464,7 @@
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats"
+              "identifier": "doc://com.apple.documentation/documentation/avfaudio/audio_engine/audio_settings_and_formats"
             },
             {
               "type": "text",
@@ -532,7 +567,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

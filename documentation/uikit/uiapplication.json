@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIApplication",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -143,7 +148,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Sends an action message identified by selector to a specified target."
+          "text": "Sends an action message identified by the selector to a specified target."
         }
       ],
       "fragments": [
@@ -157,6 +162,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication#3709740": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication#3709740",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uiapplication#3709740"
+    },
     "doc://com.apple.documentation/documentation/uikit/1622933-uiapplicationmain": {
       "title": "UIApplicationMain",
       "type": "topic",
@@ -164,12 +177,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/1622933-uiapplicationmain"
-    },
-    "devLink-1737770": {
-      "identifier": "devLink-1737770",
-      "type": "link",
-      "title": "Singleton",
-      "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Singleton.html#//apple_ref/doc/uid/TP40008195-CH49"
     },
     "doc://com.apple.documentation/documentation/uikit/uiapplication/1622975-sharedapplication": {
       "title": "sharedApplication",
@@ -181,7 +188,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the singleton app instance."
+          "text": "The singleton app instance."
         }
       ]
     },
@@ -219,21 +226,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of methods that you use to manage shared behaviors for your app. "
+          "text": "A set of methods to manage shared behaviors for your app. "
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622961-openurl": {
-      "title": "openURL:",
+    "doc://com.apple.documentation/documentation/uikit/uiapplication/1648685-openurl": {
+      "title": "openURL:options:completionHandler:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622961-openurl",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1648685-openurl",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1622961-openurl",
+      "url": "/documentation/uikit/uiapplication/1648685-openurl",
       "abstract": [
         {
           "type": "text",
-          "text": "Attempts to open the resource at the specified URL."
+          "text": "Attempts to asynchronously open the resource at the specified URL."
         }
       ],
       "fragments": [
@@ -243,10 +250,9 @@
         },
         {
           "kind": "identifier",
-          "text": "openURL:"
+          "text": "openURL:options:completionHandler:"
         }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiapplication/1623047-beginignoringinteractionevents": {
       "title": "beginIgnoringInteractionEvents",
@@ -255,12 +261,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiapplication/1623047-beginignoringinteractionevents",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Tells the receiver to suspend the handling of touch-related events."
-        }
-      ],
       "fragments": [
         {
           "kind": "text",
@@ -270,8 +270,7 @@
           "kind": "identifier",
           "text": "beginIgnoringInteractionEvents"
         }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiapplication/1623078-registerforremotenotifications": {
       "title": "registerForRemoteNotifications",
@@ -283,7 +282,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Register to receive remote notifications via Apple Push Notification service."
+          "text": "Registers to receive remote notifications through Apple Push Notification service."
         }
       ],
       "fragments": [
@@ -321,7 +320,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether an app is available to handle a URL scheme."
+          "text": "Returns a Boolean value that indicates whether an app is available to handle a URL scheme."
         }
       ],
       "fragments": [
@@ -345,7 +344,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Mark the start of a task that should continue if the app enters the background."
+          "text": "Marks the start of a task that should continue if the app enters the background."
         }
       ],
       "fragments": [
@@ -369,7 +368,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Mark the start of a task that should continue if the app enters the background."
+          "text": "Marks the start of a task with a custom name that should continue if the app enters the background."
         }
       ],
       "fragments": [
@@ -390,12 +389,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiapplication/1623005-schedulelocalnotification",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Schedules a local notification for delivery at its encapsulated date and time."
-        }
-      ],
       "fragments": [
         {
           "kind": "text",
@@ -405,8 +398,7 @@
           "kind": "identifier",
           "text": "scheduleLocalNotification:"
         }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiapplication/1623082-cancellocalnotification": {
       "title": "cancelLocalNotification:",
@@ -415,12 +407,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiapplication/1623082-cancellocalnotification",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Cancels the delivery of the specified scheduled local notification."
-        }
-      ],
       "fragments": [
         {
           "kind": "text",
@@ -430,8 +416,7 @@
           "kind": "identifier",
           "text": "cancelLocalNotification:"
         }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiapplication/1623126-beginreceivingremotecontrolevent": {
       "title": "beginReceivingRemoteControlEvents",
@@ -489,120 +474,6 @@
       "role": "task",
       "url": "/documentation/uikit/uiapplication#1657552"
     },
-    "doc://com.apple.documentation/documentation/foundation/nsstring": {
-      "title": "NSString",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsstring"
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory": {
-      "title": "preferredContentSizeCategory",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The font sizing option preferred by the user."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsnumber": {
-      "title": "NSNumber",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsnumber"
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiinterfaceorientation": {
-      "title": "UIInterfaceOrientation",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiinterfaceorientation",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiinterfaceorientation"
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplicationdidchangestatusbarorientationnotification": {
-      "title": "UIApplicationDidChangeStatusBarOrientationNotification",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdidchangestatusbarorientationnotification",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplicationdidchangestatusbarorientationnotification",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Posted when the orientation of the app’s user interface changes."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplicationwillchangestatusbarorientationnotification": {
-      "title": "UIApplicationWillChangeStatusBarOrientationNotification",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationwillchangestatusbarorientationnotification",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplicationwillchangestatusbarorientationnotification",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Posted when the app is about to change the orientation of its interface."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsvalue": {
-      "title": "NSValue",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsvalue"
-    },
-    "doc://com.apple.documentation/documentation/coregraphics/cgrect": {
-      "title": "CGRect",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgrect",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coregraphics/cgrect"
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplicationdidchangestatusbarframenotification": {
-      "title": "UIApplicationDidChangeStatusBarFrameNotification",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdidchangestatusbarframenotification",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplicationdidchangestatusbarframenotification",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Posted when the frame of the status bar changes."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplicationwillchangestatusbarframenotification": {
-      "title": "UIApplicationWillChangeStatusBarFrameNotification",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationwillchangestatusbarframenotification",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplicationwillchangestatusbarframenotification",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Posted when the app is about to change the frame of the status bar."
-        }
-      ],
-      "deprecated": true
-    },
     "doc://com.apple.documentation/documentation/uikit/uiresponder": {
       "title": "UIResponder",
       "type": "topic",
@@ -635,7 +506,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Unregister for all remote notifications received via Apple Push Notification service."
+          "text": "Unregisters for all remote notifications received through Apple Push Notification service."
         }
       ],
       "fragments": [
@@ -659,7 +530,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean indicating whether the app is currently registered for remote notifications."
+          "text": "A Boolean value that indicates whether the app is currently registered for remote notifications."
         }
       ]
     },
@@ -687,7 +558,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The running states of an app"
+          "text": "Constants that indicate the running states of an app."
         }
       ]
     },
@@ -701,7 +572,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value indicating whether the app may display multiple scenes simultaneously."
+          "text": "A Boolean value that indicates whether the app may display multiple scenes simultaneously."
         }
       ]
     },
@@ -805,6 +676,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uisceneactivationrequestoptions": {
+      "title": "UISceneActivationRequestOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisceneactivationrequestoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisceneactivationrequestoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that contains information you want the system to use when activating the session associated with a scene.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiscenedestructionrequestoptions": {
+      "title": "UISceneDestructionRequestOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscenedestructionrequestoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiscenedestructionrequestoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object you pass to UIKit to permanently remove a scene and its associated session from your app.  "
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uiapplication/1622994-backgroundrefreshstatus": {
       "title": "backgroundRefreshStatus",
       "type": "topic",
@@ -829,7 +728,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants indicating whether background execution is enabled for the app."
+          "text": "Constants that indicate whether background execution is enabled for the app."
         }
       ]
     },
@@ -843,7 +742,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the app’s status for downloading content in the background changes."
+          "text": "A notification that posts when the app’s status for downloading content in the background changes."
         }
       ]
     },
@@ -895,7 +794,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The maximum amount of  time remaining for the app to run in the background."
+          "text": "The maximum amount of time remaining for the app to run in the background."
         }
       ]
     },
@@ -927,30 +826,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1648685-openurl": {
-      "title": "openURL:options:completionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1648685-openurl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1648685-openurl",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Attempts to open the resource at the specified URL asynchronously."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "openURL:options:completionHandler:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/uiapplicationopenexternalurloptionskey": {
       "title": "UIApplicationOpenExternalURLOptionsKey",
       "type": "topic",
@@ -975,16 +850,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Used to create a URL that you can pass to the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622961-openurl"
-        },
-        {
-          "type": "text",
-          "text": " method. When you open the URL built from this string, the system launches the Settings app and displays the app’s custom settings, if it has any. "
+          "text": "A string used to create a URL to open Settings."
         }
       ]
     },
@@ -1122,7 +988,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value indicating whether content protection is active."
+          "text": "A Boolean value that indicates whether content protection is active."
         }
       ]
     },
@@ -1136,7 +1002,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the protected files become available for your code to access."
+          "text": "A notification that posts when the protected files become available for your code to access."
         }
       ]
     },
@@ -1150,7 +1016,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted shortly before protected files are locked down and become inaccessible."
+          "text": "A notification that posts shortly before protected files are locked down and become inaccessible."
         }
       ]
     },
@@ -1164,7 +1030,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the layout direction of the user interface."
+          "text": "The layout direction of the user interface."
         }
       ]
     },
@@ -1178,49 +1044,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Specifies the directional flow of the user interface."
+          "text": "Constants that specify the directional flow of the user interface."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622938-endignoringinteractionevents": {
-      "title": "endIgnoringInteractionEvents",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622938-endignoringinteractionevents",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1622938-endignoringinteractionevents",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Tells the receiver to resume the handling of touch-related events."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "endIgnoringInteractionEvents"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/2097536-ignoringinteractionevents": {
-      "title": "ignoringInteractionEvents",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/2097536-ignoringinteractionevents",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/2097536-ignoringinteractionevents",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the receiver is ignoring events initiated by touches on the screen."
-        }
-      ],
-      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/uikit/uiapplication/1622918-applicationiconbadgenumber": {
       "title": "applicationIconBadgeNumber",
@@ -1232,7 +1058,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The number currently set as the badge of the app icon in Springboard."
+          "text": "The number currently set as the badge of the app icon on the Home screen."
         }
       ]
     },
@@ -1246,7 +1072,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value indicating whether the app is allowed to change its icon."
+          "text": "A Boolean value that indicates whether the app is allowed to change its icon."
         }
       ]
     },
@@ -1288,21 +1114,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622924-keywindow": {
-      "title": "keyWindow",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622924-keywindow",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1622924-keywindow",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The app's key window."
-        }
-      ],
-      "deprecated": true
-    },
     "doc://com.apple.documentation/documentation/uikit/uiapplication/1623104-windows": {
       "title": "windows",
       "type": "topic",
@@ -1313,7 +1124,22 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The app's visible and hidden windows."
+          "text": "The app’s visible and hidden windows."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory": {
+      "title": "preferredContentSizeCategory",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The font sizing option preferred by the user."
         }
       ]
     },
@@ -1327,39 +1153,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants indicating the preferred size of your content."
+          "text": "Constants that indicate the preferred size of your content."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorynewvaluekey": {
-      "title": "UIContentSizeCategoryNewValueKey",
+    "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryadjusting": {
+      "title": "UIContentSizeCategoryAdjusting",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorynewvaluekey",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryadjusting",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uicontentsizecategorynewvaluekey",
+      "url": "/documentation/uikit/uicontentsizecategoryadjusting",
       "abstract": [
         {
           "type": "text",
-          "text": "A key whose value is an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring"
-        },
-        {
-          "type": "text",
-          "text": " object reflecting the new value of the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory"
-        },
-        {
-          "type": "text",
-          "text": " property. "
+          "text": "A collection of methods that give controls an easy way to adopt automatic adjustment to content category changes."
         }
       ]
     },
@@ -1373,7 +1181,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the user changes the preferred content size setting. "
+          "text": "A notification that posts when the user changes the preferred content size setting. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorynewvaluekey": {
+      "title": "UIContentSizeCategoryNewValueKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorynewvaluekey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicontentsizecategorynewvaluekey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that reflects the new preferred content size."
         }
       ]
     },
@@ -1411,7 +1233,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The style of the device’s status bar."
+          "text": "Constants that describe the style of the device’s status bar."
         }
       ]
     },
@@ -1425,7 +1247,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The animation applied to the status bar as it is hidden or made visible."
+          "text": "Constants that specify the animation of the status bar as it's hidden or made visible."
         }
       ]
     },
@@ -1439,7 +1261,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The mode set while tracking in controls takes place. "
+          "text": "The mode set while tracking in controls takes place."
         }
       ]
     },
@@ -1453,609 +1275,23 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the user presses the Home and Lock buttons to take a screenshot. "
+          "text": "A notification that posts when the user presses the Home and Lock buttons to take a screenshot. "
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1623100-setminimumbackgroundfetchinterva": {
-      "title": "setMinimumBackgroundFetchInterval:",
+    "doc://com.apple.documentation/documentation/uikit/uiapplication/deprecated_symbols": {
+      "title": "Deprecated Symbols",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623100-setminimumbackgroundfetchinterva",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1623100-setminimumbackgroundfetchinterva",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/deprecated_symbols",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/uikit/uiapplication/deprecated_symbols",
       "abstract": [
         {
           "type": "text",
-          "text": "Specifies the minimum amount of time that must elapse between background fetch operations."
+          "text": "Symbols that are no longer supported."
         }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setMinimumBackgroundFetchInterval:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1623014-statusbarorientationanimationdur": {
-      "title": "statusBarOrientationAnimationDuration",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623014-statusbarorientationanimationdur",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1623014-statusbarorientationanimationdur",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The animation duration in seconds for the status bar during a 90 degree orientation change. "
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplicationstatusbarorientationuserinfokey": {
-      "title": "UIApplicationStatusBarOrientationUserInfoKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationstatusbarorientationuserinfokey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplicationstatusbarorientationuserinfokey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A key whose value is an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
-        },
-        {
-          "type": "text",
-          "text": " object that encapsulates a "
-        },
-        {
-          "type": "codeVoice",
-          "code": "UIInterfaceOrientation"
-        },
-        {
-          "type": "text",
-          "text": " value indicating the current orientation (see "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/uikit/uiinterfaceorientation"
-        },
-        {
-          "type": "text",
-          "text": ").  This key is used with "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdidchangestatusbarorientationnotification"
-        },
-        {
-          "type": "text",
-          "text": " and "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationwillchangestatusbarorientationnotification"
-        },
-        {
-          "type": "text",
-          "text": " notifications."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplicationstatusbarframeuserinfokey": {
-      "title": "UIApplicationStatusBarFrameUserInfoKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationstatusbarframeuserinfokey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplicationstatusbarframeuserinfokey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A key whose value is an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue"
-        },
-        {
-          "type": "text",
-          "text": " object that encapsulates a "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgrect"
-        },
-        {
-          "type": "text",
-          "text": " structure expressing the location and size of the new status bar frame. This key is used with "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdidchangestatusbarframenotification"
-        },
-        {
-          "type": "text",
-          "text": " and "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationwillchangestatusbarframenotification"
-        },
-        {
-          "type": "text",
-          "text": " notifications."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622937-statusbarframe": {
-      "title": "statusBarFrame",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622937-statusbarframe",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1622937-statusbarframe",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The frame rectangle defining the area of the status bar."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1623102-networkactivityindicatorvisible": {
-      "title": "networkActivityIndicatorVisible",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623102-networkactivityindicatorvisible",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1623102-networkactivityindicatorvisible",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that turns an indicator of network activity on or off."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiminimumkeepalivetimeout": {
-      "title": "UIMinimumKeepAliveTimeout",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiminimumkeepalivetimeout",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiminimumkeepalivetimeout",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The minimum amount of time (measured in seconds) an app may run a critical background task in the background."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622932-registerusernotificationsettings": {
-      "title": "registerUserNotificationSettings:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622932-registerusernotificationsettings",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1622932-registerusernotificationsettings",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Registers your preferred options for notifying the user. "
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "registerUserNotificationSettings:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1623092-currentusernotificationsettings": {
-      "title": "currentUserNotificationSettings",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623092-currentusernotificationsettings",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1623092-currentusernotificationsettings",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the user notification settings for the app. "
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiremotenotificationtype": {
-      "title": "UIRemoteNotificationType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiremotenotificationtype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiremotenotificationtype",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Constants indicating the types of notifications the app may display to the user."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622931-presentlocalnotificationnow": {
-      "title": "presentLocalNotificationNow:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622931-presentlocalnotificationnow",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1622931-presentlocalnotificationnow",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Presents a local notification immediately."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "presentLocalNotificationNow:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622990-cancelalllocalnotifications": {
-      "title": "cancelAllLocalNotifications",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622990-cancelalllocalnotifications",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1622990-cancelalllocalnotifications",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Cancels the delivery of all scheduled local notifications."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "cancelAllLocalNotifications"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622993-scheduledlocalnotifications": {
-      "title": "scheduledLocalNotifications",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622993-scheduledlocalnotifications",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1622993-scheduledlocalnotifications",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "All currently scheduled local notifications."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1623016-setnewsstandiconimage": {
-      "title": "setNewsstandIconImage:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623016-setnewsstandiconimage",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1623016-setnewsstandiconimage",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sets the icon of a Newsstand app to an image depicting the current issue of a publication."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setNewsstandIconImage:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622989-setkeepalivetimeout": {
-      "title": "setKeepAliveTimeout:handler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622989-setkeepalivetimeout",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1622989-setkeepalivetimeout",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Configures a periodic handler for VoIP apps in older versions of iOS. "
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setKeepAliveTimeout:handler:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622986-clearkeepalivetimeout": {
-      "title": "clearKeepAliveTimeout",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622986-clearkeepalivetimeout",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1622986-clearkeepalivetimeout",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Removes a previously installed periodic handler block. "
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "clearKeepAliveTimeout"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622949-setstatusbarhidden": {
-      "title": "setStatusBarHidden:withAnimation:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622949-setstatusbarhidden",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1622949-setstatusbarhidden",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Hides or shows the status bar, optionally animating the transition."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setStatusBarHidden:withAnimation:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622982-statusbarhidden": {
-      "title": "statusBarHidden",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622982-statusbarhidden",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1622982-statusbarhidden",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that determines whether the status bar is hidden."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622923-setstatusbarstyle": {
-      "title": "setStatusBarStyle:animated:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622923-setstatusbarstyle",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1622923-setstatusbarstyle",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sets the style of the status bar, optionally animating the transition to the new style."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setStatusBarStyle:animated:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622988-statusbarstyle": {
-      "title": "statusBarStyle",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622988-statusbarstyle",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1622988-statusbarstyle",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The current style of the status bar."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622939-setstatusbarorientation": {
-      "title": "setStatusBarOrientation:animated:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622939-setstatusbarorientation",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1622939-setstatusbarorientation",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sets the app's status bar to the specified orientation, optionally animating the transition."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setStatusBarOrientation:animated:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1623026-statusbarorientation": {
-      "title": "statusBarOrientation",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623026-statusbarorientation",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1623026-statusbarorientation",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The current orientation of the app's status bar."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1623010-registerforremotenotificationtyp": {
-      "title": "registerForRemoteNotificationTypes:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623010-registerforremotenotificationtyp",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1623010-registerforremotenotificationtyp",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Register to receive remote notifications of the specified types via Apple Push Notification service."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "registerForRemoteNotificationTypes:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1623075-enabledremotenotificationtypes": {
-      "title": "enabledRemoteNotificationTypes",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623075-enabledremotenotificationtypes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1623075-enabledremotenotificationtypes",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the types of notifications the app accepts. "
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "enabledRemoteNotificationTypes"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622984-proximitysensingenabled": {
-      "title": "proximitySensingEnabled",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622984-proximitysensingenabled",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1622984-proximitysensingenabled",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that determines whether proximity sensing is enabled."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622942-setstatusbarhidden": {
-      "title": "setStatusBarHidden:animated:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622942-setstatusbarhidden",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/1622942-setstatusbarhidden",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Hides or shows the status bar, optionally animating the transition."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setStatusBarHidden:animated:"
-        }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/app_and_environment/managing_your_app_s_life_cycle": {
       "title": "Managing Your App's Life Cycle",
@@ -2107,16 +1343,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -2133,7 +1359,8 @@
       "title": "Getting the App Instance",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1622975-sharedapplication"
-      ]
+      ],
+      "anchor": "1656870"
     },
     {
       "kind": "taskGroup",
@@ -2141,7 +1368,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1622936-delegate",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate"
-      ]
+      ],
+      "anchor": "1656928"
     },
     {
       "kind": "taskGroup",
@@ -2150,7 +1378,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623078-registerforremotenotifications",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623093-unregisterforremotenotifications",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623069-registeredforremotenotifications"
-      ]
+      ],
+      "anchor": "1657272"
     },
     {
       "kind": "taskGroup",
@@ -2158,7 +1387,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623003-applicationstate",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationstate"
-      ]
+      ],
+      "anchor": "3011217"
     },
     {
       "kind": "taskGroup",
@@ -2167,7 +1397,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiapplication/3197904-supportsmultiplescenes",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/3197899-connectedscenes",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/3197900-opensessions"
-      ]
+      ],
+      "anchor": "3198655"
     },
     {
       "kind": "taskGroup",
@@ -2175,8 +1406,11 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplication/3197901-requestscenesessionactivation",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/3197902-requestscenesessiondestruction",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/3197903-requestscenesessionrefresh"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiapplication/3197903-requestscenesessionrefresh",
+        "doc://com.apple.documentation/documentation/uikit/uisceneactivationrequestoptions",
+        "doc://com.apple.documentation/documentation/uikit/uiscenedestructionrequestoptions"
+      ],
+      "anchor": "3198656"
     },
     {
       "kind": "taskGroup",
@@ -2190,7 +1424,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1622970-endbackgroundtask",
         "doc://com.apple.documentation/documentation/uikit/uibackgroundtaskidentifier",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623029-backgroundtimeremaining"
-      ]
+      ],
+      "anchor": "1657399"
     },
     {
       "kind": "taskGroup",
@@ -2198,7 +1433,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplicationbackgroundfetchintervalminimum",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationbackgroundfetchintervalnever"
-      ]
+      ],
+      "anchor": "3011216"
     },
     {
       "kind": "taskGroup",
@@ -2206,16 +1442,25 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1648685-openurl",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1622952-canopenurl",
-        "doc://com.apple.documentation/documentation/uikit/uiapplicationopenexternalurloptionskey",
+        "doc://com.apple.documentation/documentation/uikit/uiapplicationopenexternalurloptionskey"
+      ],
+      "anchor": "1657182"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Opening Settings",
+      "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplicationopensettingsurlstring"
-      ]
+      ],
+      "anchor": "3678627"
     },
     {
       "kind": "taskGroup",
       "title": "Managing the App Idle Timer",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623070-idletimerdisabled"
-      ]
+      ],
+      "anchor": "1657524"
     },
     {
       "kind": "taskGroup",
@@ -2225,14 +1470,16 @@
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623081-completestaterestoration",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623097-ignoresnapshotonnextapplicationl",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623027-registerobjectforstaterestoratio"
-      ]
+      ],
+      "anchor": "1657552"
     },
     {
       "kind": "taskGroup",
       "title": "Managing Home Screen Quick Actions for 3D Touch",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623033-shortcutitems"
-      ]
+      ],
+      "anchor": "1677002"
     },
     {
       "kind": "taskGroup",
@@ -2241,7 +1488,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1622925-protecteddataavailable",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationprotecteddatadidbecomeavailable",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationprotecteddatawillbecomeunavailable"
-      ]
+      ],
+      "anchor": "1657667"
     },
     {
       "kind": "taskGroup",
@@ -2249,7 +1497,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623126-beginreceivingremotecontrolevent",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623057-endreceivingremotecontrolevents"
-      ]
+      ],
+      "anchor": "1657725"
     },
     {
       "kind": "taskGroup",
@@ -2257,7 +1506,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623025-userinterfacelayoutdirection",
         "doc://com.apple.documentation/documentation/uikit/uiuserinterfacelayoutdirection"
-      ]
+      ],
+      "anchor": "1657784"
     },
     {
       "kind": "taskGroup",
@@ -2265,11 +1515,9 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623043-sendevent",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1622946-sendaction",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1623047-beginignoringinteractionevents",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1622938-endignoringinteractionevents",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/2097536-ignoringinteractionevents",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623127-applicationsupportsshaketoedit"
-      ]
+      ],
+      "anchor": "1657055"
     },
     {
       "kind": "taskGroup",
@@ -2279,15 +1527,16 @@
         "doc://com.apple.documentation/documentation/uikit/uiapplication/2806815-supportsalternateicons",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/2806808-alternateiconname",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/2806818-setalternateiconname"
-      ]
+      ],
+      "anchor": "2851374"
     },
     {
       "kind": "taskGroup",
       "title": "Getting App Windows",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1622924-keywindow",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623104-windows"
-      ]
+      ],
+      "anchor": "1656986"
     },
     {
       "kind": "taskGroup",
@@ -2295,16 +1544,19 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory",
         "doc://com.apple.documentation/documentation/uikit/uicontentsizecategory",
-        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorynewvaluekey",
-        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorydidchangenotification"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryadjusting",
+        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorydidchangenotification",
+        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorynewvaluekey"
+      ],
+      "anchor": "1657887"
     },
     {
       "kind": "taskGroup",
       "title": "Managing the Default Interface Orientations",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623091-supportedinterfaceorientationsfo"
-      ]
+      ],
+      "anchor": "1657918"
     },
     {
       "kind": "taskGroup",
@@ -2312,60 +1564,32 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uistatusbarstyle",
         "doc://com.apple.documentation/documentation/uikit/uistatusbaranimation"
-      ]
+      ],
+      "anchor": "1657963"
     },
     {
       "kind": "taskGroup",
       "title": "Tracking Controls in the Run Loop",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uitrackingrunloopmode"
-      ]
+      ],
+      "anchor": "3199884"
     },
     {
       "kind": "taskGroup",
       "title": "Detecting an App Snapshot",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplicationuserdidtakescreenshotnotification"
-      ]
+      ],
+      "anchor": "1677532"
     },
     {
       "kind": "taskGroup",
-      "title": "Deprecated Symbols",
+      "title": "Deprecated",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1623100-setminimumbackgroundfetchinterva",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1623014-statusbarorientationanimationdur",
-        "doc://com.apple.documentation/documentation/uikit/uiapplicationdidchangestatusbarframenotification",
-        "doc://com.apple.documentation/documentation/uikit/uiapplicationdidchangestatusbarorientationnotification",
-        "doc://com.apple.documentation/documentation/uikit/uiapplicationwillchangestatusbarorientationnotification",
-        "doc://com.apple.documentation/documentation/uikit/uiapplicationwillchangestatusbarframenotification",
-        "doc://com.apple.documentation/documentation/uikit/uiapplicationstatusbarorientationuserinfokey",
-        "doc://com.apple.documentation/documentation/uikit/uiapplicationstatusbarframeuserinfokey",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1622937-statusbarframe",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1623102-networkactivityindicatorvisible",
-        "doc://com.apple.documentation/documentation/uikit/uiminimumkeepalivetimeout",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1622932-registerusernotificationsettings",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1623092-currentusernotificationsettings",
-        "doc://com.apple.documentation/documentation/uikit/uiremotenotificationtype",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1622961-openurl",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1623005-schedulelocalnotification",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1622931-presentlocalnotificationnow",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1623082-cancellocalnotification",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1622990-cancelalllocalnotifications",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1622993-scheduledlocalnotifications",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1623016-setnewsstandiconimage",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1622989-setkeepalivetimeout",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1622986-clearkeepalivetimeout",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1622949-setstatusbarhidden",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1622982-statusbarhidden",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1622923-setstatusbarstyle",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1622988-statusbarstyle",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1622939-setstatusbarorientation",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1623026-statusbarorientation",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1623010-registerforremotenotificationtyp",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1623075-enabledremotenotificationtypes",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1622984-proximitysensingenabled",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1622942-setstatusbarhidden"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiapplication/deprecated_symbols"
+      ],
+      "anchor": "1658014"
     }
   ],
   "seeAlsoSections": [
@@ -2414,6 +1638,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -2452,7 +1677,7 @@
             },
             {
               "type": "text",
-              "text": "). When an app is launched, the system calls the "
+              "text": "). When an app launches, the system calls the "
             },
             {
               "type": "reference",
@@ -2461,16 +1686,7 @@
             },
             {
               "type": "text",
-              "text": " function; among its other tasks, this function creates a "
-            },
-            {
-              "type": "link",
-              "title": "Singleton",
-              "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Singleton.html#//apple_ref/doc/uid/TP40008195-CH49"
-            },
-            {
-              "type": "text",
-              "text": " "
+              "text": " function. Among its other tasks, this function creates a singleton "
             },
             {
               "type": "reference",
@@ -2479,7 +1695,7 @@
             },
             {
               "type": "text",
-              "text": " object. Thereafter you access the object by calling the "
+              "text": " object that you access using "
             },
             {
               "type": "reference",
@@ -2488,7 +1704,7 @@
             },
             {
               "type": "text",
-              "text": " class method."
+              "text": "."
             }
           ]
         },
@@ -2497,7 +1713,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "A major role of your app’s application object is to handle the initial routing of incoming user events. It dispatches action messages forwarded to it by control objects (instances of the "
+              "text": "Your app’s application object handles the initial routing of incoming user events. It dispatches action messages forwarded to it by control objects (instances of the "
             },
             {
               "type": "reference",
@@ -2515,7 +1731,7 @@
             },
             {
               "type": "text",
-              "text": " objects) and through those can retrieve any of the app’s "
+              "text": " objects), which it can use to retrieve any of the app’s "
             },
             {
               "type": "reference",
@@ -2565,7 +1781,7 @@
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622961-openurl"
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1648685-openurl"
             },
             {
               "type": "text",
@@ -2698,7 +1914,7 @@
                     },
                     {
                       "type": "text",
-                      "text": ", "
+                      "text": " and "
                     },
                     {
                       "type": "reference",
@@ -2729,7 +1945,7 @@
                     },
                     {
                       "type": "text",
-                      "text": ", "
+                      "text": " and "
                     },
                     {
                       "type": "reference",
@@ -2760,7 +1976,7 @@
                     },
                     {
                       "type": "text",
-                      "text": ", "
+                      "text": " and "
                     },
                     {
                       "type": "reference",
@@ -2810,7 +2026,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Most apps do not need to subclass "
+              "text": "Most apps don’t need to subclass "
             },
             {
               "type": "reference",
@@ -2855,15 +2071,27 @@
             },
             {
               "type": "text",
-              "text": " methods. For every event you intercept, dispatch it back to the system by calling "
-            },
-            {
-              "type": "codeVoice",
-              "code": "[super sendEvent:event]"
-            },
+              "text": " methods. For every event you intercept, after you handle the event, dispatch it back to the system by calling:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "super.sendEvent(event)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3709740",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
             {
               "type": "text",
-              "text": " after you handle the event. Intercepting events is only rarely required and you should avoid it if possible."
+              "text": "Intercepting events is only rarely required and you should avoid it if possible."
             }
           ]
         }
@@ -2871,7 +2099,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

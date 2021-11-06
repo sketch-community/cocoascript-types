@@ -1,10 +1,17 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Filters a user specifies to redial a call."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/sirikit"
+        "doc://com.apple.documentation/documentation/sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/voip_calling"
       ]
     ]
   },
@@ -27,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)INCallRecordFilter",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -80,6 +92,14 @@
       "kind": "symbol",
       "role": "collection"
     },
+    "doc://com.apple.documentation/documentation/sirikit/voip_calling": {
+      "title": "VoIP Calling",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/voip_calling",
+      "url": "/documentation/sirikit/voip_calling",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
       "type": "topic",
@@ -111,6 +131,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/sirikit/incallrecordfilter/3649664-initwithparticipants",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a filtered call record with the details about a call."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -128,7 +154,13 @@
       "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecordfilter/3649662-callcapability",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/incallrecordfilter/3649662-callcapability"
+      "url": "/documentation/sirikit/incallrecordfilter/3649662-callcapability",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An indicator of whether the call supports audio or video."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/sirikit/incallrecordfilter/3649663-calltypes": {
       "title": "callTypes",
@@ -136,7 +168,13 @@
       "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecordfilter/3649663-calltypes",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/incallrecordfilter/3649663-calltypes"
+      "url": "/documentation/sirikit/incallrecordfilter/3649663-calltypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The various call options that the user can requests."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/sirikit/incallrecordfilter/3649665-participants": {
       "title": "participants",
@@ -144,7 +182,97 @@
       "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecordfilter/3649665-participants",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/incallrecordfilter/3649665-participants"
+      "url": "/documentation/sirikit/incallrecordfilter/3649665-participants",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The recipient of the user’s call request."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incallrecord": {
+      "title": "INCallRecord",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecord",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incallrecord",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The details about a call handled by your app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incallgroup": {
+      "title": "INCallGroup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incallgroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incallgroup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The details of a group call handled by your app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incallrecordfilter": {
+      "title": "INCallRecordFilter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecordfilter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incallrecordfilter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Filters a user specifies to redial a call."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incallrecordtype": {
+      "title": "INCallRecordType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecordtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incallrecordtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants describing the type of the call."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptions": {
+      "title": "INCallRecordTypeOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incallrecordtypeoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants describing the types of calls to include during a search."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incalldestinationtype": {
+      "title": "INCallDestinationType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incalldestinationtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incalldestinationtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants describing the destination of a call."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -152,16 +280,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -189,7 +307,8 @@
       "title": "Initializers",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/incallrecordfilter/3649664-initwithparticipants"
-      ]
+      ],
+      "anchor": "3745181"
     },
     {
       "kind": "taskGroup",
@@ -198,7 +317,21 @@
         "doc://com.apple.documentation/documentation/sirikit/incallrecordfilter/3649662-callcapability",
         "doc://com.apple.documentation/documentation/sirikit/incallrecordfilter/3649663-calltypes",
         "doc://com.apple.documentation/documentation/sirikit/incallrecordfilter/3649665-participants"
-      ]
+      ],
+      "anchor": "3745182"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/incallrecord",
+        "doc://com.apple.documentation/documentation/sirikit/incallgroup",
+        "doc://com.apple.documentation/documentation/sirikit/incallrecordtype",
+        "doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptions",
+        "doc://com.apple.documentation/documentation/sirikit/incalldestinationtype"
+      ],
+      "title": "Describing a Call",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -235,15 +368,48 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use this method to create filters contributed by the user to redial a call. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "INCallRecordFilter"
+            },
+            {
+              "type": "text",
+              "text": " object identifies the person, type of call, and ability to make the call to initiate the user’s request."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

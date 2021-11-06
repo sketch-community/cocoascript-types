@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An object that transcodes the contents of an asset source object to create an output of the form described by a specified export preset."
+      "text": "An object that transcodes the contents of an asset in a format that you specify using an export preset."
     }
   ],
   "documentVersion": 0,
@@ -34,30 +34,35 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetExportSession",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -100,6 +105,98 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset": {
+      "title": "AVAsset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389367-initwithasset": {
+      "title": "initWithAsset:presetName:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389367-initwithasset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetexportsession/1389367-initwithasset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an asset export session that uses the specified preset."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithAsset:presetName:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1564246-exportsessionwithasset": {
+      "title": "exportSessionWithAsset:presetName:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1564246-exportsessionwithasset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetexportsession/1564246-exportsessionwithasset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an asset export session that uses the specified preset."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "exportSessionWithAsset:presetName:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_presets": {
+      "title": "Export Presets",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_presets",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/avfoundation/avassetexportsession/export_presets",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Presets to use when creating or configuring an asset export session."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390467-presetname": {
+      "title": "presetName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390467-presetname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetexportsession/1390467-presetname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The name of the preset that the asset export session uses."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387150-allexportpresets": {
       "title": "allExportPresets",
       "type": "topic",
@@ -134,7 +231,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the identifiers compatible with a given asset."
+          "text": "Returns compatible export presets for the asset."
         }
       ],
       "fragments": [
@@ -148,151 +245,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390467-presetname": {
-      "title": "presetName",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385821-determinecompatibilityofexportpr": {
+      "title": "determineCompatibilityOfExportPreset:withAsset:outputFileType:completionHandler:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390467-presetname",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385821-determinecompatibilityofexportpr",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1390467-presetname",
+      "url": "/documentation/avfoundation/avassetexportsession/1385821-determinecompatibilityofexportpr",
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the preset used to initialize the session."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387110-outputfiletype": {
-      "title": "outputFileType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387110-outputfiletype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1387110-outputfiletype",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The type of file written by the session."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388005-exportasynchronouslywithcompleti": {
-      "title": "exportAsynchronouslyWithCompletionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388005-exportasynchronouslywithcompleti",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1388005-exportasynchronouslywithcompleti",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Starts the asynchronous execution of an export session."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "exportAsynchronouslyWithCompletionHandler:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387530-progress": {
-      "title": "progress",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387530-progress",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1387530-progress",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The progress of the export on a scale from 0 to 1."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390528-status": {
-      "title": "status",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390528-status",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1390528-status",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The status of the export session."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsessionstatus/avassetexportsessionstatuswaiting": {
-      "title": "AVAssetExportSessionStatusWaiting",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsessionstatus/avassetexportsessionstatuswaiting",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsessionstatus/avassetexportsessionstatuswaiting"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385936-error": {
-      "title": "error",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385936-error",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1385936-error",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Describes the error that occurred. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
-      "title": "NSObject",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/nsobject"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389367-initwithasset": {
-      "title": "initWithAsset:presetName:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389367-initwithasset",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1389367-initwithasset",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Creates an asset export session with a specified asset and preset."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithAsset:presetName:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1564246-exportsessionwithasset": {
-      "title": "exportSessionWithAsset:presetName:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1564246-exportsessionwithasset",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1564246-exportsessionwithasset",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns an asset export session configured with a specified asset and preset."
+          "text": "Determines an export preset’s compatibility to export the asset in a container of the output file type."
         }
       ],
       "fragments": [
@@ -302,7 +265,31 @@
         },
         {
           "kind": "identifier",
-          "text": "exportSessionWithAsset:presetName:"
+          "text": "determineCompatibilityOfExportPreset:withAsset:outputFileType:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387907-determinecompatiblefiletypeswith": {
+      "title": "determineCompatibleFileTypesWithCompletionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387907-determinecompatiblefiletypeswith",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetexportsession/1387907-determinecompatiblefiletypeswith",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines the output file types an asset export session supports writing in its current configuration."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "determineCompatibleFileTypesWithCompletionHandler:"
         }
       ]
     },
@@ -316,7 +303,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The URL of the export session’s output."
+          "text": "A URL where an asset export session writes its output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387110-outputfiletype": {
+      "title": "outputFileType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387110-outputfiletype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetexportsession/1387110-outputfiletype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The file type of the output an asset export session writes."
         }
       ]
     },
@@ -334,20 +335,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1622333-filelengthlimit": {
-      "title": "fileLengthLimit",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1622333-filelengthlimit",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1622333-filelengthlimit",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The file length that the output of the session should not exceed."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388728-timerange": {
       "title": "timeRange",
       "type": "topic",
@@ -358,63 +345,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The time range exported from the source."
+          "text": "The time range of the source asset to export."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390453-metadata": {
-      "title": "metadata",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1622333-filelengthlimit": {
+      "title": "fileLengthLimit",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390453-metadata",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1622333-filelengthlimit",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1390453-metadata",
+      "url": "/documentation/avfoundation/avassetexportsession/1622333-filelengthlimit",
       "abstract": [
         {
           "type": "text",
-          "text": "The metadata written to the output file by the export session."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390226-metadataitemfilter": {
-      "title": "metadataItemFilter",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390226-metadataitemfilter",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1390226-metadataitemfilter",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Specifies a filter object used during export to determine which metadata items to transfer from the source asset."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388155-audiomix": {
-      "title": "audioMix",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388155-audiomix",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1388155-audiomix",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The parameters for audio mixing and an indication whether to enable nondefault audio mixing for export."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385835-audiotimepitchalgorithm": {
-      "title": "audioTimePitchAlgorithm",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385835-audiotimepitchalgorithm",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1385835-audiotimepitchalgorithm",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A processing algorithm used to manage audio pitch for scaled audio edits."
+          "text": "The file length that the output of the session must not exceed."
         }
       ]
     },
@@ -428,35 +373,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether to optimize the movie should for network use."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389477-videocomposition": {
-      "title": "videoComposition",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389477-videocomposition",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1389477-videocomposition",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The instructions for video composition, and indicates whether video composition is enabled for export."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388288-customvideocompositor": {
-      "title": "customVideoCompositor",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388288-customvideocompositor",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1388288-customvideocompositor",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The custom video compositor instance used, if any."
+          "text": "A Boolean value that indicates whether to optimize the movie for network use."
         }
       ]
     },
@@ -484,115 +401,105 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A directory that is suitable for containing temporary files generated during the export process."
+          "text": "A directory suitable to store temporary files that the export process generates."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385821-determinecompatibilityofexportpr": {
-      "title": "determineCompatibilityOfExportPreset:withAsset:outputFileType:completionHandler:",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390453-metadata": {
+      "title": "metadata",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385821-determinecompatibilityofexportpr",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390453-metadata",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1385821-determinecompatibilityofexportpr",
+      "url": "/documentation/avfoundation/avassetexportsession/1390453-metadata",
       "abstract": [
         {
           "type": "text",
-          "text": "Reports the compatibility of an export present, asset, and output file type to the specified block."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "+ "
-        },
-        {
-          "kind": "identifier",
-          "text": "determineCompatibilityOfExportPreset:withAsset:outputFileType:completionHandler:"
+          "text": "The metadata an export session writes to the output container file."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_device-appropriate_quicktime_files": {
-      "title": "Export Preset Names for Device-Appropriate QuickTime Files",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390226-metadataitemfilter": {
+      "title": "metadataItemFilter",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_device-appropriate_quicktime_files",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/avfoundation/avassetexportsession/export_preset_names_for_device-appropriate_quicktime_files",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "You use these export options to produce QuickTime movie files with video size appropriate to the current device."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_quicktime_files_of_a_given_size": {
-      "title": "Export Preset Names for QuickTime Files of a Given Size",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_quicktime_files_of_a_given_size",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/avfoundation/avassetexportsession/export_preset_names_for_quicktime_files_of_a_given_size",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "You use these export options to produce QuickTime movie files with a specified video size."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_name_for_itunes_audio": {
-      "title": "Export Preset Name for iTunes Audio",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_name_for_itunes_audio",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/avfoundation/avassetexportsession/export_preset_name_for_itunes_audio",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "You use this export option to produce an audio-only MPEG 4 Audio file with appropriate iTunes gapless playback data."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_apple_devices": {
-      "title": "Export Preset Names for Apple Devices",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_apple_devices",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/avfoundation/avassetexportsession/export_preset_names_for_apple_devices",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "You use these export options to produce playable files for use on specific Apple devices. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_name_for_pass_through": {
-      "title": "Export Preset Name for Pass Through",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_name_for_pass_through",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/avfoundation/avassetexportsession/export_preset_name_for_pass_through",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "You use this export option to let all tracks pass through  as formatted unless otherwise prohibited."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387907-determinecompatiblefiletypeswith": {
-      "title": "determineCompatibleFileTypesWithCompletionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387907-determinecompatiblefiletypeswith",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390226-metadataitemfilter",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1387907-determinecompatiblefiletypeswith",
+      "url": "/documentation/avfoundation/avassetexportsession/1390226-metadataitemfilter",
       "abstract": [
         {
           "type": "text",
-          "text": "Reports the compatible file types for the current export session to the specified block. "
+          "text": "An object the export session uses to filter the metadata items it transfers to the output asset."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389477-videocomposition": {
+      "title": "videoComposition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389477-videocomposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetexportsession/1389477-videocomposition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An optional object that provides instructions for how to composite frames of video."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388288-customvideocompositor": {
+      "title": "customVideoCompositor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388288-customvideocompositor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetexportsession/1388288-customvideocompositor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An optional custom object to use when compositing video frames."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388155-audiomix": {
+      "title": "audioMix",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388155-audiomix",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetexportsession/1388155-audiomix",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The parameters for audio mixing and an indication of whether to enable nondefault audio mixing for export."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385835-audiotimepitchalgorithm": {
+      "title": "audioTimePitchAlgorithm",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385835-audiotimepitchalgorithm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetexportsession/1385835-audiotimepitchalgorithm",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A processing algorithm for managing audio pitch for scaled audio edits."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388005-exportasynchronouslywithcompleti": {
+      "title": "exportAsynchronouslyWithCompletionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388005-exportasynchronouslywithcompleti",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetexportsession/1388005-exportasynchronouslywithcompleti",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Starts the asynchronous execution of an export session."
         }
       ],
       "fragments": [
@@ -602,7 +509,7 @@
         },
         {
           "kind": "identifier",
-          "text": "determineCompatibleFileTypesWithCompletionHandler:"
+          "text": "exportAsynchronouslyWithCompletionHandler:"
         }
       ]
     },
@@ -630,6 +537,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390528-status": {
+      "title": "status",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390528-status",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetexportsession/1390528-status",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The status of the export session."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetexportsessionstatus": {
       "title": "AVAssetExportSessionStatus",
       "type": "topic",
@@ -640,7 +561,59 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of statuses used for relaying the state of an export session."
+          "text": "Values that indicate the state of an export session."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387530-progress": {
+      "title": "progress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387530-progress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetexportsession/1387530-progress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates the progress of the export."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385936-error": {
+      "title": "error",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385936-error",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetexportsession/1385936-error",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An optional error object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/3042921-estimateoutputfilelengthwithcomp": {
+      "title": "estimateOutputFileLengthWithCompletionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/3042921-estimateoutputfilelengthwithcomp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetexportsession/3042921-estimateoutputfilelengthwithcomp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Starts estimating the output file length of the export while considering the asset, preset, and time range configuration of the export session."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "estimateOutputFileLengthWithCompletionHandler:"
         }
       ]
     },
@@ -654,10 +627,34 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The estimated size, in bytes, of the exported file."
+          "text": "The estimated length of the exported file, in bytes."
         }
       ],
       "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/3042920-estimatemaximumdurationwithcompl": {
+      "title": "estimateMaximumDurationWithCompletionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/3042920-estimatemaximumdurationwithcompl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetexportsession/3042920-estimatemaximumdurationwithcompl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Starts estimating the maximum duration of the export while considering the asset, preset, and time range configuration of the export session."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "estimateMaximumDurationWithCompletionHandler:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1622332-maxduration": {
       "title": "maxDuration",
@@ -674,54 +671,6 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/3042920-estimatemaximumdurationwithcompl": {
-      "title": "estimateMaximumDurationWithCompletionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/3042920-estimatemaximumdurationwithcompl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/3042920-estimatemaximumdurationwithcompl",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Asynchronously starts estimating the maximum duration of the export based on the asset, preset, and file length limit associated with the export session."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "estimateMaximumDurationWithCompletionHandler:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/3042921-estimateoutputfilelengthwithcomp": {
-      "title": "estimateOutputFileLengthWithCompletionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/3042921-estimateoutputfilelengthwithcomp",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/3042921-estimateoutputfilelengthwithcomp",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Asynchronously starts estimating the output file length of the export based on the asset, preset, and time range associated with the export session."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "estimateOutputFileLengthWithCompletionHandler:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385690-asset": {
       "title": "asset",
       "type": "topic",
@@ -732,7 +681,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The asset used to initialize the export session."
+          "text": "An asset that a session exports."
         }
       ]
     },
@@ -760,7 +709,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that transcodes the contents of an asset source object to create an output of the form described by a specified export preset."
+          "text": "An object that transcodes the contents of an asset in a format that you specify using an export preset."
         }
       ]
     },
@@ -777,8 +726,8 @@
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+        "13.0",
+        "13.2 beta 1"
       ]
     }
   },
@@ -795,31 +744,13 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Initializing a Session",
+      "title": "Creating an Export Session",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389367-initwithasset",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1564246-exportsessionwithasset"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Configuring Output",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389970-outputurl",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388762-supportedfiletypes",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387110-outputfiletype",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1622333-filelengthlimit",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388728-timerange",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390453-metadata",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390226-metadataitemfilter",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388155-audiomix",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385835-audiotimepitchalgorithm",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390593-shouldoptimizefornetworkuse",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389477-videocomposition",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388288-customvideocompositor",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388797-canperformmultiplepassesoversour",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388699-directoryfortemporaryfiles"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1564246-exportsessionwithasset",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_presets"
+      ],
+      "anchor": "1669762"
     },
     {
       "kind": "taskGroup",
@@ -829,42 +760,97 @@
         "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387150-allexportpresets",
         "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390567-exportpresetscompatiblewithasset",
         "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385821-determinecompatibilityofexportpr",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_device-appropriate_quicktime_files",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_quicktime_files_of_a_given_size",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_name_for_itunes_audio",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_apple_devices",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_name_for_pass_through",
         "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387907-determinecompatiblefiletypeswith"
-      ]
+      ],
+      "anchor": "1669971"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring Output",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389970-outputurl",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387110-outputfiletype",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388762-supportedfiletypes",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388728-timerange",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1622333-filelengthlimit",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390593-shouldoptimizefornetworkuse",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388797-canperformmultiplepassesoversour",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388699-directoryfortemporaryfiles"
+      ],
+      "anchor": "1669796"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring Metadata",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390453-metadata",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390226-metadataitemfilter"
+      ],
+      "anchor": "3845709"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring Video Output",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389477-videocomposition",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388288-customvideocompositor"
+      ],
+      "anchor": "3845710"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring Audio Output",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388155-audiomix",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385835-audiotimepitchalgorithm"
+      ],
+      "anchor": "3845707"
     },
     {
       "kind": "taskGroup",
       "title": "Exporting Media",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388005-exportasynchronouslywithcompleti",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387794-cancelexport",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385936-error",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsessionstatus",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389181-estimatedoutputfilelength",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1622332-maxduration",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/3042920-estimatemaximumdurationwithcompl",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/3042921-estimateoutputfilelengthwithcomp"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387794-cancelexport"
+      ],
+      "anchor": "1670021"
     },
     {
       "kind": "taskGroup",
-      "title": "Getting Export Status",
+      "title": "Determining Export Status",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390528-status",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsessionstatus",
         "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387530-progress",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390528-status"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385936-error"
+      ],
+      "anchor": "1670049"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Estimating File Length",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/3042921-estimateoutputfilelengthwithcomp",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389181-estimatedoutputfilelength"
+      ],
+      "anchor": "3845708"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Estimating Duration",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/3042920-estimatemaximumdurationwithcompl",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1622332-maxduration"
+      ],
+      "anchor": "3845711"
     },
     {
       "kind": "taskGroup",
       "title": "Accessing the Asset",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385690-asset"
-      ]
+      ],
+      "anchor": "1670061"
     }
   ],
   "seeAlsoSections": [
@@ -910,6 +896,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -931,132 +918,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Prior to initializing an instance of "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVAssetExportSession"
-            },
-            {
-              "type": "text",
-              "text": ", you can use "
+              "text": "You configure this object to export an instance of "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387150-allexportpresets"
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset"
             },
             {
               "type": "text",
-              "text": " to get the complete list of presets available. Use "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390567-exportpresetscompatiblewithasset"
-            },
-            {
-              "type": "text",
-              "text": " to get a list of presets that are compatible with a specific asset."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "After you have initialized an export session with the asset that contains the source media, the export preset name ("
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390467-presetname"
-            },
-            {
-              "type": "text",
-              "text": "), and the output file type ("
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387110-outputfiletype"
-            },
-            {
-              "type": "text",
-              "text": "), you can start the export running by invoking "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388005-exportasynchronouslywithcompleti"
-            },
-            {
-              "type": "text",
-              "text": ". Because the export is performed asynchronously, this method returns immediately—you can use "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387530-progress"
-            },
-            {
-              "type": "text",
-              "text": " to check on the progress. Depending on the capabilities of the device, some exports may be queued when multiple exports are attempted. When this happens, the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390528-status"
-            },
-            {
-              "type": "text",
-              "text": " of a queued export will indicate that it's waiting ("
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsessionstatus/avassetexportsessionstatuswaiting"
-            },
-            {
-              "type": "text",
-              "text": ")."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "The completion handler you supply to "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388005-exportasynchronouslywithcompleti"
-            },
-            {
-              "type": "text",
-              "text": " is called whether the export fails, completes, or is cancelled. Upon completion, the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390528-status"
-            },
-            {
-              "type": "text",
-              "text": " property indicates whether the export has completed successfully. If it has failed, the value of the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385936-error"
-            },
-            {
-              "type": "text",
-              "text": " property supplies additional information about the reason for the failure."
+              "text": " by setting an export preset, an output file type, and an output URL."
             }
           ]
         }
@@ -1064,7 +935,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

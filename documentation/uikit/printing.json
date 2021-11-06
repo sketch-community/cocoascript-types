@@ -30,8 +30,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,6 +105,20 @@
         {
           "type": "text",
           "text": "An object that draws pages of content that are to be printed, with or without the assistance of print formatters. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/printing/building_and_improving_your_app_with_mac_catalyst": {
+      "title": "Building and Improving Your App with Mac Catalyst",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/printing/building_and_improving_your_app_with_mac_catalyst",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/printing/building_and_improving_your_app_with_mac_catalyst",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Improve your iPadOS app with Mac Catalyst by supporting native controls, multiple windows, sharing, printing, menus and keyboard shortcuts."
         }
       ]
     },
@@ -206,6 +220,61 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiprintserviceextension": {
+      "title": "UIPrintServiceExtension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiprintserviceextension",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiprintserviceextension",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An extension that locates and sets up a printer without a configuration profile."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiprinterdestination": {
+      "title": "UIPrinterDestination",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiprinterdestination",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiprinterdestination",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A description of a single printer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/uiapplicationsupportsprintcommand": {
+      "title": "UIApplicationSupportsPrintCommand",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/uiapplicationsupportsprintcommand",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/uiapplicationsupportsprintcommand",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the app supports the Command-P keyboard shortcut."
+        }
+      ],
+      "titleStyle": "symbol",
+      "name": "UIApplicationSupportsPrintCommand",
+      "ideTitle": "Supports Print Command",
+      "fragments": [
+        {
+          "kind": "label",
+          "text": "property list key "
+        },
+        {
+          "kind": "identifier",
+          "text": "UIApplicationSupportsPrintCommand"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/images_and_pdf": {
       "title": "Images and PDF",
       "type": "topic",
@@ -256,16 +325,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "topicSections": [
     {
       "kind": "taskGroup",
@@ -273,14 +332,17 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiprintinteractioncontroller",
         "doc://com.apple.documentation/documentation/uikit/uiprinterpickercontroller"
-      ]
+      ],
+      "anchor": "2864510"
     },
     {
       "kind": "taskGroup",
       "title": "Renderer",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uiprintpagerenderer"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiprintpagerenderer",
+        "doc://com.apple.documentation/documentation/uikit/printing/building_and_improving_your_app_with_mac_catalyst"
+      ],
+      "anchor": "2864512"
     },
     {
       "kind": "taskGroup",
@@ -289,7 +351,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiprinter",
         "doc://com.apple.documentation/documentation/uikit/uiprintinfo",
         "doc://com.apple.documentation/documentation/uikit/uiprintpaper"
-      ]
+      ],
+      "anchor": "2864508"
     },
     {
       "kind": "taskGroup",
@@ -299,7 +362,25 @@
         "doc://com.apple.documentation/documentation/uikit/uiviewprintformatter",
         "doc://com.apple.documentation/documentation/uikit/uisimpletextprintformatter",
         "doc://com.apple.documentation/documentation/uikit/uimarkuptextprintformatter"
-      ]
+      ],
+      "anchor": "2864511"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Printer Service Discovery",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiprintserviceextension",
+        "doc://com.apple.documentation/documentation/uikit/uiprinterdestination"
+      ],
+      "anchor": "3762205"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Keyboard Shortcut",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/bundleresources/information_property_list/uiapplicationsupportsprintcommand"
+      ],
+      "anchor": "3835285"
     }
   ],
   "seeAlsoSections": [
@@ -313,7 +394,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The index paths representing the selected rows."
+      "text": "The index paths that represent the selected rows."
     }
   ],
   "documentVersion": 0,
@@ -36,25 +36,33 @@
       {
         "name": "iOS",
         "introducedAt": "5.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UITableView(py)indexPathsForSelectedRows",
+    "parent": {
+      "title": "UITableView"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -115,7 +123,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A view that presents data using rows arranged in a single column."
+          "text": "A view that presents data using rows in a single column."
         }
       ]
     },
@@ -129,7 +137,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An index path identifying the row and section of the selected row."
+          "text": "An index path that identifies the row and section of the selected row."
         }
       ]
     },
@@ -159,7 +167,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The index paths representing the selected rows."
+          "text": "The index paths that represent the selected rows."
         }
       ]
     },
@@ -173,7 +181,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Selects a row in the table view identified by index path, optionally scrolling the row to a location in the table view."
+          "text": "Selects a row in the table view that an index path identifies, optionally scrolling the row to a location in the table view."
         }
       ],
       "fragments": [
@@ -197,7 +205,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Deselects a given row identified by index path, with an option to animate the deselection."
+          "text": "Deselects a row that an index path identifies, with an option to animate the deselection."
         }
       ],
       "fragments": [
@@ -291,7 +299,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the selected row in the posting table view changes."
+          "text": "A notification that posts when the selected row in the posting table view changes."
         }
       ]
     },
@@ -301,16 +309,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "seeAlsoSections": [
@@ -378,6 +376,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -414,7 +413,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

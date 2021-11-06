@@ -53,30 +53,38 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)NSDiffableDataSourceSnapshot(im)reloadItemsWithIdentifiers:",
+    "parent": {
+      "title": "NSDiffableDataSourceSnapshot"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -183,6 +191,44 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsarray"
     },
+    "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot/3801890-reconfigureitemswithidentifiers": {
+      "title": "reconfigureItemsWithIdentifiers:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot/3801890-reconfigureitemswithidentifiers",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsdiffabledatasourcesnapshot/3801890-reconfigureitemswithidentifiers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Updates the data for the items you specify in the snapshot, preserving the existing cells for the items."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "reconfigureItemsWithIdentifiers:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot/3857603-reconfigureditemidentifiers": {
+      "title": "reconfiguredItemIdentifiers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot/3857603-reconfigureditemidentifiers",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsdiffabledatasourcesnapshot/3857603-reconfigureditemidentifiers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the items reconfigured by the changes to the snapshot."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot/3182916-reloaditemswithidentifiers": {
       "title": "reloadItemsWithIdentifiers:",
       "type": "topic",
@@ -204,6 +250,20 @@
         {
           "kind": "identifier",
           "text": "reloadItemsWithIdentifiers:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot/3857604-reloadeditemidentifiers": {
+      "title": "reloadedItemIdentifiers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot/3857604-reloadeditemidentifiers",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsdiffabledatasourcesnapshot/3857604-reloadeditemidentifiers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the items reloaded by the changes to the snapshot."
         }
       ]
     },
@@ -231,6 +291,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot/3857605-reloadedsectionidentifiers": {
+      "title": "reloadedSectionIdentifiers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot/3857605-reloadedsectionidentifiers",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsdiffabledatasourcesnapshot/3857605-reloadedsectionidentifiers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the sections reloaded by the changes to the snapshot."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -242,7 +316,11 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot/3182917-reloadsectionswithidentifiers"
+        "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot/3801890-reconfigureitemswithidentifiers",
+        "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot/3857603-reconfigureditemidentifiers",
+        "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot/3857604-reloadeditemidentifiers",
+        "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot/3182917-reloadsectionswithidentifiers",
+        "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot/3857605-reloadedsectionidentifiers"
       ],
       "title": "Reloading Data",
       "generated": true
@@ -310,6 +388,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -345,7 +424,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

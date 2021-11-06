@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An object used to model the timing and presentation state of an asset played by the player."
+      "text": "An object that models the timing and presentation state of an asset that a player object presents."
     }
   ],
   "documentVersion": 0,
@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVPlayerItem",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -131,7 +136,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes a player item with the specified asset and the asset keys to be automatically loaded."
+          "text": "Creates a player item with the specified asset and the asset keys to automatically load."
         }
       ],
       "fragments": [
@@ -151,13 +156,7 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayer",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that provides the interface to control the player’s transport behavior."
-        }
-      ]
+      "url": "/documentation/avfoundation/avplayer"
     },
     "devLink-1737690": {
       "identifier": "devLink-1737690",
@@ -303,7 +302,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes a player item with a given URL."
+          "text": "Creates a player item with a specified URL."
         }
       ],
       "fragments": [
@@ -327,7 +326,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new player item, prepared to use a given URL."
+          "text": "Returns a new player item with a specified URL."
         }
       ],
       "fragments": [
@@ -351,7 +350,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes a new player item for a given asset."
+          "text": "Creates a player item for a specified asset."
         }
       ],
       "fragments": [
@@ -375,7 +374,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new player item for a given asset."
+          "text": "Returns a new player item for a specified asset."
         }
       ],
       "fragments": [
@@ -399,7 +398,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a player item with the specified asset and the asset keys to be automatically loaded."
+          "text": "Creates a player item with the specified asset and the asset keys to automatically load."
         }
       ],
       "fragments": [
@@ -410,20 +409,6 @@
         {
           "kind": "identifier",
           "text": "playerItemWithAsset:automaticallyLoadedAssetKeys:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388177-asset": {
-      "title": "asset",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388177-asset",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem/1388177-asset",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The asset provided during initialization."
         }
       ]
     },
@@ -438,6 +423,34 @@
         {
           "type": "text",
           "text": "An array of player item track objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack": {
+      "title": "AVPlayerItemTrack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritemtrack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that represents the presentation state of an asset track that the player presents."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1627623-externalmetadata": {
+      "title": "externalMetadata",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1627623-externalmetadata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/1627623-externalmetadata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of additional metadata for the player item to supplement or replace an asset’s embedded metadata."
         }
       ]
     },
@@ -554,13 +567,89 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3726149-variantpreferences": {
+      "title": "variantPreferences",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3726149-variantpreferences",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/3726149-variantpreferences",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The preferences the player item uses when selecting variant playlists."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avvariantpreferences": {
+      "title": "AVVariantPreferences",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvariantpreferences",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avvariantpreferences",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines the preferences the player item uses when selecting variant playlists."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3579514-startsonfirsteligiblevariant": {
       "title": "startsOnFirstEligibleVariant",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3579514-startsonfirsteligiblevariant",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem/3579514-startsonfirsteligiblevariant"
+      "url": "/documentation/avfoundation/avplayeritem/3579514-startsonfirsteligiblevariant",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether playback starts with the first eligible variant that appears in the stream’s main playlist."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3726147-templateplayeritem": {
+      "title": "templatePlayerItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3726147-templateplayeritem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/3726147-templateplayeritem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The template player item that initializes this instance."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3726146-automaticallyhandlesinterstitial": {
+      "title": "automaticallyHandlesInterstitialEvents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3726146-automaticallyhandlesinterstitial",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/3726146-automaticallyhandlesinterstitial",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the player item automatically plays interstitial events according to server-side directives."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3750338-translatesplayerinterstitialeven": {
+      "title": "translatesPlayerInterstitialEvents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3750338-translatesplayerinterstitialeven",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/3750338-translatesplayerinterstitialeven",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the player translates interstitial events to interstitial time ranges."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1385622-forwardplaybackendtime": {
       "title": "forwardPlaybackEndTime",
@@ -967,6 +1056,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3746589-preferredpeakbitrateforexpensive": {
+      "title": "preferredPeakBitRateForExpensiveNetworks",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3746589-preferredpeakbitrateforexpensive",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/3746589-preferredpeakbitrateforexpensive",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A limit of network bandwidth consumption by the item when connecting over expensive networks."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3750308-preferredmaximumresolutionforexp": {
+      "title": "preferredMaximumResolutionForExpensiveNetworks",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3750308-preferredmaximumresolutionforexp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/3750308-preferredmaximumresolutionforexp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An upper limit on the resolution of video to download when connecting over expensive networks."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1386519-currentmediaselection": {
       "title": "currentMediaSelection",
       "type": "topic",
@@ -1064,7 +1181,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An array of text style rules to apply to WebVTT subtitles and other legible text."
+          "text": "An array of text style rules that specify the formatting and presentation of Web Video Text Tracks (WebVTT) subtitles."
         }
       ]
     },
@@ -1078,7 +1195,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that represents text styling rules applied to text in a media item."
+          "text": "An object that represents the text styling rules to apply to a media item’s textual content."
         }
       ]
     },
@@ -1196,7 +1313,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that’s posted when the item plays to its end time."
+          "text": "A notification the system posts when a player item plays to its end time."
         }
       ]
     },
@@ -1210,7 +1327,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that’s posted when the item fails to play to its end time."
+          "text": "A notification that the system posts when a player item fails to play to its end time."
         }
       ]
     },
@@ -1224,7 +1341,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that’s posted when the item’s current time has changed discontinuously."
+          "text": "A notification the system posts when a player item’s time changes discontinuously."
         }
       ]
     },
@@ -1238,7 +1355,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that’s posted when some media doesn’t arrive in time to continue playback."
+          "text": "A notification the system posts when a player item media doesn’t arrive in time to continue playback."
         }
       ]
     },
@@ -1248,7 +1365,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemmediaselectiondidchangenotification",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritemmediaselectiondidchangenotification"
+      "url": "/documentation/avfoundation/avplayeritemmediaselectiondidchangenotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification the player item posts when its media selection changes."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritemrecommendedtimeoffsetfromlivedidchangenotification": {
       "title": "AVPlayerItemRecommendedTimeOffsetFromLiveDidChangeNotification",
@@ -1256,7 +1379,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemrecommendedtimeoffsetfromlivedidchangenotification",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritemrecommendedtimeoffsetfromlivedidchangenotification"
+      "url": "/documentation/avfoundation/avplayeritemrecommendedtimeoffsetfromlivedidchangenotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification the player item posts when its offset from the live time changes."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritemnewaccesslogentrynotification": {
       "title": "AVPlayerItemNewAccessLogEntryNotification",
@@ -1268,7 +1397,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that’s posted when the player item adds a new access log entry."
+          "text": "A notification the system posts when a player item adds a new entry to its access log."
         }
       ]
     },
@@ -1282,7 +1411,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that’s posted when the player item adds a new error log entry."
+          "text": "A notification the system posts when a player item adds a new entry to its error log."
         }
       ]
     },
@@ -1292,15 +1421,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3229855-automaticallypreservestimeoffset",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem/3229855-automaticallypreservestimeoffset"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3227882-configuredtimeoffsetfromlive": {
-      "title": "configuredTimeOffsetFromLive",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3227882-configuredtimeoffsetfromlive",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem/3227882-configuredtimeoffsetfromlive"
+      "url": "/documentation/avfoundation/avplayeritem/3229855-automaticallypreservestimeoffset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the player preserves its time offset from the live time after a buffering operation."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3227883-recommendedtimeoffsetfromlive": {
       "title": "recommendedTimeOffsetFromLive",
@@ -1308,7 +1435,27 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3227883-recommendedtimeoffsetfromlive",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem/3227883-recommendedtimeoffsetfromlive"
+      "url": "/documentation/avfoundation/avplayeritem/3227883-recommendedtimeoffsetfromlive",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A recommended time offset from the live time based on observed network conditions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3227882-configuredtimeoffsetfromlive": {
+      "title": "configuredTimeOffsetFromLive",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3227882-configuredtimeoffsetfromlive",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/3227882-configuredtimeoffsetfromlive",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A time value that indicates the offset from the live time to start playback, or resume playback after a seek to positive infinity."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388962-presentationsize": {
       "title": "presentationSize",
@@ -1372,7 +1519,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3656127-appliesperframehdrdisplaymetadat",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem/3656127-appliesperframehdrdisplaymetadat"
+      "url": "/documentation/avfoundation/avplayeritem/3656127-appliesperframehdrdisplaymetadat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the player item applies per-frame HDR display metadata during playback."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388818-videocomposition": {
       "title": "videoComposition",
@@ -1443,6 +1596,49 @@
           "text": "The processing algorithm used to manage audio pitch for scaled audio edits."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat": {
+      "title": "allowedAudioSpatializationFormats",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The source audio channel layouts the player item supports for spatialization."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats": {
+      "title": "AVAudioSpatializationFormats",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiospatializationformats",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that defines the spatialization formats that a player item supports."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed": {
+      "title": "audioSpatializationAllowed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the player item allows spatialized audio playback."
+        }
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389090-outputs": {
       "title": "outputs",
@@ -1610,20 +1806,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1627623-externalmetadata": {
-      "title": "externalMetadata",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1627623-externalmetadata",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem/1627623-externalmetadata",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An array of additional metadata for the player item to supplement or override that is embedded in the underlying media asset."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1627626-navigationmarkergroups": {
       "title": "navigationMarkerGroups",
       "type": "topic",
@@ -1673,6 +1855,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/avfoundation/avplayeritem/3152863-requestplaybackrestrictionsautho",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines whether this item is subject to parental restrictions, and, if so, prompts the user to enter the restrictions passcode."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -1691,6 +1879,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/avfoundation/avplayeritem/3152862-cancelplaybackrestrictionsauthor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Cancels a pending authorization request and dismisses the passcode entry, if displayed."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -1850,90 +2044,65 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat": {
-      "title": "allowedAudioSpatializationFormats",
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388177-asset": {
+      "title": "asset",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388177-asset",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat"
+      "url": "/documentation/avfoundation/avplayeritem/1388177-asset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The asset provided during initialization."
+        }
+      ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed": {
-      "title": "audioSpatializationAllowed",
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3861797-copy": {
+      "title": "copy",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3861797-copy",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed",
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/seeking_through_media": {
-      "title": "Seeking Through Media",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/seeking_through_media",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/avfoundation/media_playback_and_selection/seeking_through_media",
+      "url": "/documentation/avfoundation/avplayeritem/3861797-copy",
       "abstract": [
         {
           "type": "text",
-          "text": "Seek or scrub across a media item to quickly access a specific time point."
+          "text": "Creates a copy of the object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "copy"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_playback_state": {
-      "title": "Observing Playback State",
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3861798-copywithzone": {
+      "title": "copyWithZone:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_playback_state",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/avfoundation/media_playback_and_selection/observing_playback_state",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3861798-copywithzone",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/3861798-copywithzone",
       "abstract": [
         {
           "type": "text",
-          "text": "Respond to changes in a player's playback state."
+          "text": "Creates a copy of the object with the specified zone."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_the_playback_time": {
-      "title": "Observing the Playback Time",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_the_playback_time",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/avfoundation/media_playback_and_selection/observing_the_playback_time",
-      "abstract": [
+      ],
+      "fragments": [
         {
-          "type": "text",
-          "text": "Observe the playback time for an asset in order to update the player's state."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers": {
-      "title": "Presenting Chapter Markers",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers",
-      "abstract": [
+          "kind": "text",
+          "text": "- "
+        },
         {
-          "type": "text",
-          "text": "Add chapter markers to enable users to quickly navigate your content."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls": {
-      "title": "Creating a Movie Player App with Basic Playback Controls",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls",
-      "kind": "article",
-      "role": "sampleCode",
-      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Play movies using a custom interface that implements simple playback functionality."
+          "kind": "identifier",
+          "text": "copyWithZone:"
         }
       ]
     },
@@ -1947,91 +2116,77 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to model the timing and presentation state of an asset played by the player."
+          "text": "An object that models the timing and presentation state of an asset that a player object presents."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack": {
-      "title": "AVPlayerItemTrack",
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemoutput": {
+      "title": "AVPlayerItemOutput",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemoutput",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritemtrack",
+      "url": "/documentation/avfoundation/avplayeritemoutput",
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to modify the presentation state of an asset track being presented by a player."
+          "text": "An abstract class that defines the common interface to output media data from a player item."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer": {
-      "title": "AVPlayerLayer",
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemvideooutput": {
+      "title": "AVPlayerItemVideoOutput",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemvideooutput",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayerlayer",
+      "url": "/documentation/avfoundation/avplayeritemvideooutput",
       "abstract": [
         {
           "type": "text",
-          "text": "An object that manages a player’s visual output."
+          "text": "An object that outputs video frames from a player item."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer": {
-      "title": "AVQueuePlayer",
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemlegibleoutput": {
+      "title": "AVPlayerItemLegibleOutput",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemlegibleoutput",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avqueueplayer",
+      "url": "/documentation/avfoundation/avplayeritemlegibleoutput",
       "abstract": [
         {
           "type": "text",
-          "text": "A player used to play a number of items in sequence."
+          "text": "An object that vends attributed strings for media with a legible characteristic."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper": {
-      "title": "AVPlayerLooper",
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemmetadataoutput": {
+      "title": "AVPlayerItemMetadataOutput",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemmetadataoutput",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayerlooper",
+      "url": "/documentation/avfoundation/avplayeritemmetadataoutput",
       "abstract": [
         {
           "type": "text",
-          "text": "An object that simplifies the playing of looping media content using a queue player."
+          "text": "An object that vends collections of metadata items that a player item’s tracks carry."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avsynchronizedlayer": {
-      "title": "AVSynchronizedLayer",
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemoutputpushdelegate": {
+      "title": "AVPlayerItemOutputPushDelegate",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsynchronizedlayer",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemoutputpushdelegate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avsynchronizedlayer",
+      "url": "/documentation/avfoundation/avplayeritemoutputpushdelegate",
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to synchronize with a specific player item."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs": {
-      "title": "Player Item Outputs",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/avfoundation/media_playback_and_selection/player_item_outputs",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Objects that provide access to the content of a player item’s tracks."
+          "text": "A protocol that defines the methods to implement to respond to changes in the media data sequence."
         }
       ]
     },
@@ -2041,16 +2196,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -2082,23 +2227,27 @@
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1588087-playeritemwithasset",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1387529-initwithasset",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1588088-playeritemwithasset"
-      ]
+      ],
+      "anchor": "1668783"
     },
     {
       "kind": "taskGroup",
-      "title": "Accessing the Asset and Tracks",
+      "title": "Accessing Tracks",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388177-asset",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1386361-tracks",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1627623-externalmetadata",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389602-timedmetadata"
-      ]
+      ],
+      "anchor": "3697790"
     },
     {
       "kind": "taskGroup",
       "title": "Configuring Property Loading",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388633-automaticallyloadedassetkeys"
-      ]
+      ],
+      "anchor": "3697792"
     },
     {
       "kind": "taskGroup",
@@ -2107,7 +2256,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389493-status",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritemstatus",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389185-error"
-      ]
+      ],
+      "anchor": "3697785"
     },
     {
       "kind": "taskGroup",
@@ -2118,14 +2268,28 @@
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1390493-canplayfastreverse",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388078-canplayslowforward",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1390598-canplayslowreverse"
-      ]
+      ],
+      "anchor": "1669014"
     },
     {
       "kind": "taskGroup",
       "title": "Setting Variant Behavior",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3726149-variantpreferences",
+        "doc://com.apple.documentation/documentation/avfoundation/avvariantpreferences",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3579514-startsonfirsteligiblevariant"
-      ]
+      ],
+      "anchor": "1668842"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring Interstitial Events",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3726147-templateplayeritem",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3726146-automaticallyhandlesinterstitial",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3750338-translatesplayerinterstitialeven"
+      ],
+      "anchor": "3742598"
     },
     {
       "kind": "taskGroup",
@@ -2133,7 +2297,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1385622-forwardplaybackendtime",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388438-reverseplaybackendtime"
-      ]
+      ],
+      "anchor": "3697788"
     },
     {
       "kind": "taskGroup",
@@ -2142,7 +2307,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389656-canstepforward",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1386796-canstepbackward",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1387968-stepbycount"
-      ]
+      ],
+      "anchor": "3697793"
     },
     {
       "kind": "taskGroup",
@@ -2155,7 +2321,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1390153-seektotime",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1385620-seektotime",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389067-seektodate"
-      ]
+      ],
+      "anchor": "1668932"
     },
     {
       "kind": "taskGroup",
@@ -2165,7 +2332,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1386188-currentdate",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389386-duration",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1387605-timebase"
-      ]
+      ],
+      "anchor": "1669078"
     },
     {
       "kind": "taskGroup",
@@ -2173,7 +2341,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389953-loadedtimeranges",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1386155-seekabletimeranges"
-      ]
+      ],
+      "anchor": "3697794"
     },
     {
       "kind": "taskGroup",
@@ -2182,7 +2351,17 @@
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1390348-playbacklikelytokeepup",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388852-playbackbufferfull",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1386960-playbackbufferempty"
-      ]
+      ],
+      "anchor": "3697789"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring Expensive Network Behavior",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3746589-preferredpeakbitrateforexpensive",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3750308-preferredmaximumresolutionforexp"
+      ],
+      "anchor": "3762328"
     },
     {
       "kind": "taskGroup",
@@ -2192,15 +2371,17 @@
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389610-selectmediaoption",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388268-selectmediaoptionautomaticallyin",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1386314-selectedmediaoptioninmediaselect"
-      ]
+      ],
+      "anchor": "1669278"
     },
     {
       "kind": "taskGroup",
-      "title": "Accessing the Text Style Rules",
+      "title": "Accessing Text Style Rules",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389681-textstylerules",
         "doc://com.apple.documentation/documentation/avfoundation/avtextstylerule"
-      ]
+      ],
+      "anchor": "1669321"
     },
     {
       "kind": "taskGroup",
@@ -2212,7 +2393,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1387573-errorlog",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritemerrorlog",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritemerrorlogevent"
-      ]
+      ],
+      "anchor": "1669194"
     },
     {
       "kind": "taskGroup",
@@ -2226,16 +2408,18 @@
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritemrecommendedtimeoffsetfromlivedidchangenotification",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritemnewaccesslogentrynotification",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritemnewerrorlogentrynotification"
-      ]
+      ],
+      "anchor": "1679338"
     },
     {
       "kind": "taskGroup",
       "title": "Managing Time Offsets",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3229855-automaticallypreservestimeoffset",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3227882-configuredtimeoffsetfromlive",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3227883-recommendedtimeoffsetfromlive"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3227883-recommendedtimeoffsetfromlive",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3227882-configuredtimeoffsetfromlive"
+      ],
+      "anchor": "3697786"
     },
     {
       "kind": "taskGroup",
@@ -2245,14 +2429,16 @@
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/2867324-preferredmaximumresolution",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/2868499-videoaperturemode",
         "doc://com.apple.documentation/documentation/avfoundation/avvideoaperturemode"
-      ]
+      ],
+      "anchor": "3697782"
     },
     {
       "kind": "taskGroup",
       "title": "Configuring HDR Settings",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3656127-appliesperframehdrdisplaymetadat"
-      ]
+      ],
+      "anchor": "3697779"
     },
     {
       "kind": "taskGroup",
@@ -2261,15 +2447,20 @@
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388818-videocomposition",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1390669-customvideocompositor",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1385726-seekingwaitsforvideocompositionr"
-      ]
+      ],
+      "anchor": "3697787"
     },
     {
       "kind": "taskGroup",
-      "title": "Configuring Audio Rendering",
+      "title": "Configuring Audio",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388037-audiomix",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1385855-audiotimepitchalgorithm"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1385855-audiotimepitchalgorithm",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed"
+      ],
+      "anchor": "1669123"
     },
     {
       "kind": "taskGroup",
@@ -2278,7 +2469,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389090-outputs",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389782-addoutput",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388756-removeoutput"
-      ]
+      ],
+      "anchor": "1669340"
     },
     {
       "kind": "taskGroup",
@@ -2287,7 +2479,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1624161-mediadatacollectors",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1624164-addmediadatacollector",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1624163-removemediadatacollector"
-      ]
+      ],
+      "anchor": "2528250"
     },
     {
       "kind": "taskGroup",
@@ -2296,17 +2489,18 @@
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388541-preferredpeakbitrate",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1643630-preferredforwardbufferduration",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388752-canusenetworkresourcesforlivestr"
-      ]
+      ],
+      "anchor": "2528249"
     },
     {
       "kind": "taskGroup",
       "title": "Configuring Player Items for AVKit",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1627623-externalmetadata",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1627626-navigationmarkergroups",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1627628-interstitialtimeranges",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1650942-nextcontentproposal"
-      ]
+      ],
+      "anchor": "2528251"
     },
     {
       "kind": "taskGroup",
@@ -2314,7 +2508,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3152863-requestplaybackrestrictionsautho",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3152862-cancelplaybackrestrictionsauthor"
-      ]
+      ],
+      "anchor": "3697781"
     },
     {
       "kind": "taskGroup",
@@ -2327,7 +2522,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389746-contentauthorizationrequeststatu",
         "doc://com.apple.documentation/documentation/avfoundation/avcontentauthorizationstatus",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1387726-cancelcontentauthorizationreques"
-      ]
+      ],
+      "anchor": "1669215"
     },
     {
       "kind": "taskGroup",
@@ -2335,34 +2531,37 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1627766-externalsubtitleoptionlanguages",
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1627765-selectedexternalsubtitleoptionla"
-      ]
+      ],
+      "anchor": "3697784"
     },
     {
       "kind": "taskGroup",
-      "title": "Instance Properties",
+      "title": "Accessing the Asset",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1388177-asset"
+      ],
+      "anchor": "3801353"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Copying an Asset",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3861797-copy",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3861798-copywithzone"
+      ],
+      "anchor": "3875773"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/seeking_through_media",
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_playback_state",
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_the_playback_time",
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers",
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayer",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer",
-        "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper",
-        "doc://com.apple.documentation/documentation/avfoundation/avsynchronizedlayer",
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs"
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritemoutput",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritemvideooutput",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritemlegibleoutput",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritemmetadataoutput",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritemoutputpushdelegate"
       ],
-      "title": "Media Playback",
+      "title": "Player Items",
       "generated": true
     }
   ],
@@ -2400,6 +2599,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -2784,7 +2984,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

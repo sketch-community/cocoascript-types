@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/lists_and_notes"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -34,25 +34,38 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(pl)INDeleteTasksIntentHandling",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -87,10 +100,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/lists_and_notes": {
-      "title": "Lists and Notes",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/lists_and_notes",
-      "url": "/documentation/sirikit/lists_and_notes",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -107,7 +120,8 @@
           "type": "text",
           "text": "An interface that handles requests to delete tasks from a task list."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/indeletetasksintent": {
       "title": "INDeleteTasksIntent",
@@ -121,7 +135,16 @@
           "type": "text",
           "text": "A request to delete one or more tasks."
         }
-      ]
+      ],
+      "deprecated": true
+    },
+    "link-3872625": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3872625",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject": {
       "title": "NSObject",
@@ -154,7 +177,8 @@
           "kind": "identifier",
           "text": "resolveTaskListForDeleteTasks:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/indeletetasksintenthandling/3141693-resolvetasksfordeletetasks": {
       "title": "resolveTasksForDeleteTasks:withCompletion:",
@@ -179,7 +203,8 @@
           "kind": "identifier",
           "text": "resolveTasksForDeleteTasks:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/indeletetasksintenthandling/3141690-confirmdeletetasks": {
       "title": "confirmDeleteTasks:completion:",
@@ -204,7 +229,8 @@
           "kind": "identifier",
           "text": "confirmDeleteTasks:completion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/indeletetasksintenthandling/3141691-handledeletetasks": {
       "title": "handleDeleteTasks:completion:",
@@ -229,7 +255,8 @@
           "kind": "identifier",
           "text": "handleDeleteTasks:completion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/indeletetasksintentresponse": {
       "title": "INDeleteTasksIntentResponse",
@@ -243,7 +270,38 @@
           "type": "text",
           "text": "Your response to a request to delete tasks."
         }
-      ]
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/sirikit/indeletetaskstasklistresolutionresult": {
+      "title": "INDeleteTasksTaskListResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/indeletetaskstasklistresolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/indeletetaskstasklistresolutionresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A resolution result for deleting task lists."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/sirikit/indeletetaskstaskresolutionresult": {
+      "title": "INDeleteTasksTaskResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/indeletetaskstaskresolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/indeletetaskstaskresolutionresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A resolution result for deleting tasks."
+        }
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -253,6 +311,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -270,30 +348,35 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/indeletetasksintenthandling/3141692-resolvetasklistfordeletetasks",
         "doc://com.apple.documentation/documentation/sirikit/indeletetasksintenthandling/3141693-resolvetasksfordeletetasks"
-      ]
+      ],
+      "anchor": "3162194"
     },
     {
       "kind": "taskGroup",
       "title": "Confirming the Response",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/indeletetasksintenthandling/3141690-confirmdeletetasks"
-      ]
+      ],
+      "anchor": "3162193"
     },
     {
       "kind": "taskGroup",
       "title": "Handling the Intent",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/indeletetasksintenthandling/3141691-handledeletetasks"
-      ]
+      ],
+      "anchor": "3144221"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/indeletetasksintent",
-        "doc://com.apple.documentation/documentation/sirikit/indeletetasksintentresponse"
+        "doc://com.apple.documentation/documentation/sirikit/indeletetasksintentresponse",
+        "doc://com.apple.documentation/documentation/sirikit/indeletetaskstasklistresolutionresult",
+        "doc://com.apple.documentation/documentation/sirikit/indeletetaskstaskresolutionresult"
       ],
-      "title": "Delete a Task",
+      "title": "Task Deletion",
       "generated": true
     }
   ],
@@ -321,6 +404,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -376,7 +460,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

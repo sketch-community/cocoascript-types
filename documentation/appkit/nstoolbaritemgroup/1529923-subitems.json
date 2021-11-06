@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The subitems for the receiver."
+      "text": "The subitems of the grouped toolbar item."
     }
   ],
   "documentVersion": 0,
@@ -43,20 +43,23 @@
       {
         "name": "macOS",
         "introducedAt": "10.5",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)NSToolbarItemGroup(py)subitems",
+    "parent": {
+      "title": "NSToolbarItemGroup"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -169,7 +172,69 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The subitems for the receiver."
+          "text": "The subitems of the grouped toolbar item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242766-selectedindex": {
+      "title": "selectedIndex",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242766-selectedindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstoolbaritemgroup/3242766-selectedindex",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The index value for the most recently selected subitem of a grouped toolbar item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242765-isselectedatindex": {
+      "title": "isSelectedAtIndex:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242765-isselectedatindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstoolbaritemgroup/3242765-isselectedatindex",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates whether a specified index is currently selected."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "isSelectedAtIndex:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242768-setselected": {
+      "title": "setSelected:atIndex:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242768-setselected",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstoolbaritemgroup/3242768-setselected",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the selected state of a subitem in a grouped toolbar item."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setSelected:atIndex:"
         }
       ]
     },
@@ -182,6 +247,15 @@
     }
   },
   "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242766-selectedindex",
+        "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242765-isselectedatindex",
+        "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242768-setselected"
+      ],
+      "title": "Working with Subitems",
+      "generated": true
+    },
     {
       "title": "Related Documentation",
       "generated": false,
@@ -281,7 +355,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

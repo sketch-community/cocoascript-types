@@ -36,23 +36,33 @@
         "name": "iOS",
         "introducedAt": "10.2",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.2",
+        "deprecatedAt": "13.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)AVCapturePhotoOutput(py)dualCameraFusionSupported",
+    "parent": {
+      "title": "AVCapturePhotoOutput"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,7 +115,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A capture output for still image, Live Photo, and other photography workflows."
+          "text": "A capture output for still image, Live Photos, and other photography workflows."
         }
       ]
     },
@@ -147,105 +157,6 @@
       "title": "Key-value observing",
       "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KVO.html#//apple_ref/doc/uid/TP40008195-CH16"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/3566331-contentawaredistortioncorrection": {
-      "title": "contentAwareDistortionCorrectionSupported",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/3566331-contentawaredistortioncorrection",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturephotooutput/3566331-contentawaredistortioncorrection",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the session’s current configuration supports content-aware distortion correction."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/3566330-contentawaredistortioncorrection": {
-      "title": "contentAwareDistortionCorrectionEnabled",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/3566330-contentawaredistortioncorrection",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturephotooutput/3566330-contentawaredistortioncorrection",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the photo render pipeline can perform content-aware distortion correction."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648607-lensstabilizationduringbracketed": {
-      "title": "lensStabilizationDuringBracketedCaptureSupported",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648607-lensstabilizationduringbracketed",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturephotooutput/1648607-lensstabilizationduringbracketed",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value indicating whether the capture output currently supports lens stabilization during bracketed image capture."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648702-maxbracketedcapturephotocount": {
-      "title": "maxBracketedCapturePhotoCount",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648702-maxbracketedcapturephotocount",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturephotooutput/1648702-maxbracketedcapturephotocount",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The maximum number of images that the photo capture output can support in a single bracketed capture."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648766-supportedflashmodes": {
-      "title": "supportedFlashModes",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648766-supportedflashmodes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturephotooutput/1648766-supportedflashmodes",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The flash settings this capture output currently supports."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2968219-autoredeyereductionsupported": {
-      "title": "autoRedEyeReductionSupported",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2968219-autoredeyereductionsupported",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturephotooutput/2968219-autoredeyereductionsupported",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value indicating whether the capture output supports automatic red-eye reduction."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648698-stillimagestabilizationsupported": {
-      "title": "stillImageStabilizationSupported",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648698-stillimagestabilizationsupported",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturephotooutput/1648698-stillimagestabilizationsupported",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value indicating whether the capture output currently supports automatic stabilization for still image capture."
-        }
-      ],
-      "deprecated": true
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2726864-dualcamerafusionsupported": {
       "title": "dualCameraFusionSupported",
       "type": "topic",
@@ -261,6 +172,50 @@
       ],
       "deprecated": true
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2890245-dualcameradualphotodeliverysuppo": {
+      "title": "dualCameraDualPhotoDeliverySupported",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2890245-dualcameradualphotodeliverysuppo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotooutput/2890245-dualcameradualphotodeliverysuppo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value indicating whether the capture output currently supports simultaneous photo capture with both cameras on a dual-camera device."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2890248-cameracalibrationdatadeliverysup": {
+      "title": "cameraCalibrationDataDeliverySupported",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2890248-cameracalibrationdatadeliverysup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotooutput/2890248-cameracalibrationdatadeliverysup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value indicating whether the capture output currently supports delivery of camera calibration data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2890246-dualcameradualphotodeliveryenabl": {
+      "title": "dualCameraDualPhotoDeliveryEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2890246-dualcameradualphotodeliveryenabl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotooutput/2890246-dualcameradualphotodeliveryenabl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that specifies whether to configure the capture pipeline for simultaneous photo capture with both cameras on a dual-camera device."
+        }
+      ],
+      "deprecated": true
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -272,15 +227,11 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/3566331-contentawaredistortioncorrection",
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/3566330-contentawaredistortioncorrection",
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648607-lensstabilizationduringbracketed",
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648702-maxbracketedcapturephotocount",
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648766-supportedflashmodes",
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2968219-autoredeyereductionsupported",
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648698-stillimagestabilizationsupported"
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2890245-dualcameradualphotodeliverysuppo",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2890248-cameracalibrationdatadeliverysup",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2890246-dualcameradualphotodeliveryenabl"
       ],
-      "title": "Determining Available Settings",
+      "title": "Configuring Dual Camera Capture",
       "generated": true
     }
   ],
@@ -320,6 +271,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -443,7 +395,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

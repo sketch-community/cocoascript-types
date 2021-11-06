@@ -34,30 +34,35 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@EKParticipantScheduleStatus",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -108,45 +113,19 @@
       "role": "symbol",
       "url": "/documentation/objectivec/nsinteger"
     },
-    "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatuscannotdeliver": {
-      "title": "EKParticipantScheduleStatusCannotDeliver",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatuscannotdeliver",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatuscannotdeliver"
-    },
-    "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusdelivered": {
-      "title": "EKParticipantScheduleStatusDelivered",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusdelivered",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusdelivered"
-    },
-    "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusdeliveryfailed": {
-      "title": "EKParticipantScheduleStatusDeliveryFailed",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusdeliveryfailed",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusdeliveryfailed"
-    },
-    "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusnoprivileges": {
-      "title": "EKParticipantScheduleStatusNoPrivileges",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusnoprivileges",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusnoprivileges"
-    },
     "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusnone": {
       "title": "EKParticipantScheduleStatusNone",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusnone",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusnone"
+      "url": "/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusnone",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The invitation hasn't been sent yet."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatuspending": {
       "title": "EKParticipantScheduleStatusPending",
@@ -154,23 +133,13 @@
       "identifier": "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatuspending",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatuspending"
-    },
-    "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusrecipientnotallowed": {
-      "title": "EKParticipantScheduleStatusRecipientNotAllowed",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusrecipientnotallowed",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusrecipientnotallowed"
-    },
-    "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusrecipientnotrecognized": {
-      "title": "EKParticipantScheduleStatusRecipientNotRecognized",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusrecipientnotrecognized",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusrecipientnotrecognized"
+      "url": "/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatuspending",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The invitation is in the process of being sent."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatussent": {
       "title": "EKParticipantScheduleStatusSent",
@@ -178,7 +147,97 @@
       "identifier": "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatussent",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatussent"
+      "url": "/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatussent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The invitation has been sent, but it's unclear if it was successfully delivered."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusdelivered": {
+      "title": "EKParticipantScheduleStatusDelivered",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusdelivered",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusdelivered",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The invitation has been sent and successfully delivered."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusrecipientnotrecognized": {
+      "title": "EKParticipantScheduleStatusRecipientNotRecognized",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusrecipientnotrecognized",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusrecipientnotrecognized",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The invitation wasn't delivered because the source doesn't recognize the recipient."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusnoprivileges": {
+      "title": "EKParticipantScheduleStatusNoPrivileges",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusnoprivileges",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusnoprivileges",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The invitation wasn’t delivered because of insufficient privileges."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusdeliveryfailed": {
+      "title": "EKParticipantScheduleStatusDeliveryFailed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusdeliveryfailed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusdeliveryfailed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The invitation wasn't delivered due to a temporary failure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatuscannotdeliver": {
+      "title": "EKParticipantScheduleStatusCannotDeliver",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatuscannotdeliver",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatuscannotdeliver",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The invitation wasn't delivered because the system is unsure of how to deliver it."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusrecipientnotallowed": {
+      "title": "EKParticipantScheduleStatusRecipientNotAllowed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusrecipientnotallowed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusrecipientnotallowed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The invitation wasn't delivered because scheduling with the participant isn't allowed."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/eventkit/ekparticipantrole": {
       "title": "EKParticipantRole",
@@ -249,16 +308,17 @@
       "kind": "taskGroup",
       "title": "Constants",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatuscannotdeliver",
-        "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusdelivered",
-        "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusdeliveryfailed",
-        "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusnoprivileges",
         "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusnone",
         "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatuspending",
-        "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusrecipientnotallowed",
+        "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatussent",
+        "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusdelivered",
         "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusrecipientnotrecognized",
-        "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatussent"
-      ]
+        "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusnoprivileges",
+        "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusdeliveryfailed",
+        "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatuscannotdeliver",
+        "doc://com.apple.documentation/documentation/eventkit/ekparticipantschedulestatus/ekparticipantschedulestatusrecipientnotallowed"
+      ],
+      "anchor": "3712340"
     }
   ],
   "seeAlsoSections": [
@@ -334,6 +394,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "watchOS"
@@ -343,7 +404,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

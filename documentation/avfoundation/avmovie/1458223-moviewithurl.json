@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVMovie(cm)movieWithURL:options:",
+    "parent": {
+      "title": "AVMovie"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -101,7 +109,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that represents the audiovisual containers that conform to a QuickTime or ISO-based media file format."
+          "text": "An object that represents an audiovisual container that conforms to the QuickTime movie file format or a related format like MPEG-4."
         }
       ]
     },
@@ -120,14 +128,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/avfoundation/avmovietrack/1386868-mediadatastorage"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsdata": {
-      "title": "NSData",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsdata"
     },
     "doc://com.apple.documentation/documentation/foundation/nsurl": {
       "title": "NSURL",
@@ -153,30 +153,6 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmovie/1387923-initwithurl": {
-      "title": "initWithURL:options:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmovie/1387923-initwithurl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmovie/1387923-initwithurl",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Creates a movie object from a movie header stored in a QuickTime movie file of ISO base media file."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithURL:options:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avmovie/1458223-moviewithurl": {
       "title": "movieWithURL:options:",
       "type": "topic",
@@ -201,26 +177,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmovie/1388090-initwithdata": {
-      "title": "initWithData:options:",
+    "doc://com.apple.documentation/documentation/avfoundation/avmovie/1387923-initwithurl": {
+      "title": "initWithURL:options:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmovie/1388090-initwithdata",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmovie/1387923-initwithurl",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmovie/1388090-initwithdata",
+      "url": "/documentation/avfoundation/avmovie/1387923-initwithurl",
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a movie object from a movie stored in an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata"
-        },
-        {
-          "type": "text",
-          "text": " object."
+          "text": "Creates a movie object from a movie header stored in a QuickTime movie file of ISO base media file."
         }
       ],
       "fragments": [
@@ -230,7 +197,7 @@
         },
         {
           "kind": "identifier",
-          "text": "initWithData:options:"
+          "text": "initWithURL:options:"
         }
       ]
     },
@@ -244,16 +211,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a movie object from a movie stored in an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata"
-        },
-        {
-          "type": "text",
-          "text": " object."
+          "text": "Returns a new movie object from a movie file’s data."
         }
       ],
       "fragments": [
@@ -264,6 +222,44 @@
         {
           "kind": "identifier",
           "text": "movieWithData:options:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmovie/1388090-initwithdata": {
+      "title": "initWithData:options:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmovie/1388090-initwithdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmovie/1388090-initwithdata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a movie object from a movie file’s data."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithData:options:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmovie/initialization_options": {
+      "title": "Initialization Options",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmovie/initialization_options",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/avfoundation/avmovie/initialization_options",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configuration options you use to initialize a movie."
         }
       ]
     },
@@ -279,8 +275,9 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avmovie/1387923-initwithurl",
+        "doc://com.apple.documentation/documentation/avfoundation/avmovie/1458261-moviewithdata",
         "doc://com.apple.documentation/documentation/avfoundation/avmovie/1388090-initwithdata",
-        "doc://com.apple.documentation/documentation/avfoundation/avmovie/1458261-moviewithdata"
+        "doc://com.apple.documentation/documentation/avfoundation/avmovie/initialization_options"
       ],
       "title": "Creating a Movie",
       "generated": true
@@ -388,6 +385,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "watchOS"
@@ -507,7 +505,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The altitude, measured in meters."
+      "text": "The altitude above mean sea level associated with a location, measured in meters."
     }
   ],
   "documentVersion": 0,
@@ -34,35 +34,43 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.6",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CLLocation(py)altitude",
+    "parent": {
+      "title": "CLLocation"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,6 +119,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/corelocation/cllocation/1423820-altitude": {
+      "title": "altitude",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation/1423820-altitude",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocation/1423820-altitude",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The altitude above mean sea level associated with a location, measured in meters."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/corelocation/cllocation/1423550-verticalaccuracy": {
       "title": "verticalAccuracy",
       "type": "topic",
@@ -121,7 +143,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The accuracy of the altitude value, measured in meters."
+          "text": "The validity of the altitude values, and their estimated uncertainty, measured in meters."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocation/3861801-ellipsoidalaltitude": {
+      "title": "ellipsoidalAltitude",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation/3861801-ellipsoidalaltitude",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocation/3861801-ellipsoidalaltitude",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The altitude as a height above the World Geodetic System 1984 (WGS84) ellipsoid, measured in meters."
         }
       ]
     },
@@ -144,20 +180,6 @@
         {
           "type": "text",
           "text": "The geographical coordinate information."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corelocation/cllocation/1423820-altitude": {
-      "title": "altitude",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation/1423820-altitude",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corelocation/cllocation/1423820-altitude",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The altitude, measured in meters."
         }
       ]
     },
@@ -189,34 +211,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/corelocation/cllocation/3524340-speedaccuracy": {
-      "title": "speedAccuracy",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation/3524340-speedaccuracy",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corelocation/cllocation/3524340-speedaccuracy",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The accuracy of the speed value, measured in meters per second."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/corelocation/cllocation/3524338-courseaccuracy": {
-      "title": "courseAccuracy",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation/3524338-courseaccuracy",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corelocation/cllocation/3524338-courseaccuracy",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The accuracy of the course value, measured in degrees."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/corelocation/cllocation/1423589-timestamp": {
       "title": "timestamp",
       "type": "topic",
@@ -231,6 +225,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/corelocation/cllocation/3861803-sourceinformation": {
+      "title": "sourceInformation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation/3861803-sourceinformation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocation/3861803-sourceinformation"
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -243,12 +245,12 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/corelocation/cllocation/1423504-coordinate",
+        "doc://com.apple.documentation/documentation/corelocation/cllocation/3861801-ellipsoidalaltitude",
         "doc://com.apple.documentation/documentation/corelocation/cllocation/1616762-floor",
         "doc://com.apple.documentation/documentation/corelocation/cllocation/1423599-horizontalaccuracy",
         "doc://com.apple.documentation/documentation/corelocation/cllocation/1423550-verticalaccuracy",
-        "doc://com.apple.documentation/documentation/corelocation/cllocation/3524340-speedaccuracy",
-        "doc://com.apple.documentation/documentation/corelocation/cllocation/3524338-courseaccuracy",
-        "doc://com.apple.documentation/documentation/corelocation/cllocation/1423589-timestamp"
+        "doc://com.apple.documentation/documentation/corelocation/cllocation/1423589-timestamp",
+        "doc://com.apple.documentation/documentation/corelocation/cllocation/3861803-sourceinformation"
       ],
       "title": "Getting the Location Attributes",
       "generated": true
@@ -292,6 +294,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -314,46 +317,136 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Positive values indicate altitudes above sea level. Negative values indicate altitudes below sea level."
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation/1423820-altitude"
+            },
+            {
+              "type": "text",
+              "text": " property represents an orthometric height, which is the height above the approximate mean sea level. Positive values indicate altitudes above mean sea level. Negative values indicate altitudes below mean sea level. "
             }
           ]
-        },
-        {
-          "level": 3,
-          "type": "heading",
-          "text": "Special Considerations",
-          "anchor": "1678066"
         },
         {
           "type": "paragraph",
           "inlineContent": [
             {
               "type": "text",
-              "text": "In iOS, this property is declared as "
+              "text": "When "
             },
             {
-              "type": "codeVoice",
-              "code": "nonatomic"
-            },
-            {
-              "type": "text",
-              "text": ". In macOS, it is declared as "
-            },
-            {
-              "type": "codeVoice",
-              "code": "atomic"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation/1423550-verticalaccuracy"
             },
             {
               "type": "text",
-              "text": "."
+              "text": " contains "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0"
+            },
+            {
+              "type": "text",
+              "text": " or a negative number, the value of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation/1423820-altitude"
+            },
+            {
+              "type": "text",
+              "text": " is invalid. The value of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation/1423820-altitude"
+            },
+            {
+              "type": "text",
+              "text": " is valid when "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation/1423550-verticalaccuracy"
+            },
+            {
+              "type": "text",
+              "text": " contains a postive number."
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In most cases, Core Location approximates mean sea level using the Earth Gravitational Model 2008 (EGM 2008) geoid associated with the World Geodetic System 1984 (WGS84) standard. In some rare cases, Core Location approximates mean sea level using the DMA 10x10 geoid grid. The discrepancy between these two geoids is typically less than 5 meters."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation/3861801-ellipsoidalaltitude"
+            },
+            {
+              "type": "text",
+              "text": " if your application uses an altitude with respect to the WGS84 reference frame."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "In iOS, this property is declared as "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "nonatomic"
+                },
+                {
+                  "type": "text",
+                  "text": ". In macOS, it is declared as "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "atomic"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -35,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSURLSessionStreamTask",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -200,7 +205,8 @@
           "kind": "identifier",
           "text": "streamTaskWithNetService:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/nsurlsessiondatatask": {
       "title": "NSURLSessionDataTask",
@@ -521,14 +527,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsurlsessionstreamtask/1411604-readdataofminlength",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessionstreamtask/1411602-writedata"
-      ]
+      ],
+      "anchor": "1679079"
     },
     {
       "kind": "taskGroup",
       "title": "Capturing Streams",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsurlsessionstreamtask/1410132-capturestreams"
-      ]
+      ],
+      "anchor": "1679094"
     },
     {
       "kind": "taskGroup",
@@ -536,7 +544,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsurlsessionstreamtask/1411558-closeread",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessionstreamtask/1411347-closewrite"
-      ]
+      ],
+      "anchor": "1679098"
     },
     {
       "kind": "taskGroup",
@@ -544,21 +553,24 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsurlsessionstreamtask/1411567-startsecureconnection",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessionstreamtask/1407337-stopsecureconnection"
-      ]
+      ],
+      "anchor": "1679114"
     },
     {
       "kind": "taskGroup",
       "title": "Initializers",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsurlsessionstreamtask/3240622-init"
-      ]
+      ],
+      "anchor": "3256436"
     },
     {
       "kind": "taskGroup",
       "title": "Type Methods",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsurlsessionstreamtask/3240623-new"
-      ]
+      ],
+      "anchor": "3256437"
     }
   ],
   "seeAlsoSections": [
@@ -606,6 +618,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -714,7 +727,7 @@
             },
             {
               "type": "text",
-              "text": " methods. They may also created as a result of an "
+              "text": " methods. They may also be created as a result of an "
             },
             {
               "type": "reference",
@@ -809,7 +822,7 @@
             },
             {
               "type": "text",
-              "text": " object perform sasynchronous reads and writes, which are enqueued and executed serially, calling a handler upon completion being on the session delegate queue. If the task is canceled, all enqueued reads and writes will call their completion handlers with an appropriate error."
+              "text": " object performs asynchronous reads and writes, which are enqueued on the session delegate queue and executed serially. If the task completes, the session handler executes. If the task is canceled, all enqueued reads and writes will call their completion handlers with an appropriate error."
             }
           ]
         },
@@ -871,7 +884,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

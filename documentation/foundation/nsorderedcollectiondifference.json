@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An object representing the difference between two ordered collections."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -35,35 +41,40 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSOrderedCollectionDifference",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -122,6 +133,52 @@
       "kind": "symbol",
       "role": "symbol"
     },
+    "doc://com.apple.documentation/documentation/foundation/nsarray/3152166-differencefromarray": {
+      "title": "differenceFromArray:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsarray/3152166-differencefromarray",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsarray/3152166-differencefromarray",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Compares two arrays to create a difference object that represents the changes between them."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "differenceFromArray:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference": {
+      "title": "NSOrderedCollectionDifference",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsorderedcollectiondifference",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object representing the difference between two ordered collections."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference#3736266": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference#3736266",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/nsorderedcollectiondifference#3736266"
+    },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
       "type": "topic",
@@ -144,7 +201,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference/3152184-haschanges",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsorderedcollectiondifference/3152184-haschanges"
+      "url": "/documentation/foundation/nsorderedcollectiondifference/3152184-haschanges",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates if the difference has changes."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference/3152188-insertions": {
       "title": "insertions",
@@ -152,7 +215,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference/3152188-insertions",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsorderedcollectiondifference/3152188-insertions"
+      "url": "/documentation/foundation/nsorderedcollectiondifference/3152188-insertions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A collection of insertion change objects."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference/3152189-removals": {
       "title": "removals",
@@ -160,7 +229,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference/3152189-removals",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsorderedcollectiondifference/3152189-removals"
+      "url": "/documentation/foundation/nsorderedcollectiondifference/3152189-removals",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A collection of removal change objects."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsorderedcollectionchange": {
       "title": "NSOrderedCollectionChange",
@@ -168,7 +243,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsorderedcollectionchange",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsorderedcollectionchange"
+      "url": "/documentation/foundation/nsorderedcollectionchange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that represents an indexed change within an ordered collection."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nscollectionchangetype": {
       "title": "NSCollectionChangeType",
@@ -176,7 +257,37 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nscollectionchangetype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nscollectionchangetype"
+      "url": "/documentation/foundation/nscollectionchangetype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The type of change represented in computing the difference of an ordered collection."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference/3180114-inversedifference": {
+      "title": "inverseDifference",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference/3180114-inversedifference",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsorderedcollectiondifference/3180114-inversedifference",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculate the difference between two objects in the reverse direction of comparison."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "inverseDifference"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference/3152185-initwithchanges": {
       "title": "initWithChanges:",
@@ -185,6 +296,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsorderedcollectiondifference/3152185-initwithchanges",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an ordered collection difference using an array of ordered collection changes."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -203,6 +320,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsorderedcollectiondifference/3152186-initwithinsertindexes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an ordered collection difference from arrays of inserted and removed objects with corresponding sets of indices."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -221,6 +344,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsorderedcollectiondifference/3152187-initwithinsertindexes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an ordered collection difference from arrays of inserted and removed objects with corresponding sets of indices, in addition to an array of ordered collection changes."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -232,24 +361,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference/3180114-inversedifference": {
-      "title": "inverseDifference",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference/3180114-inversedifference",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsorderedcollectiondifference/3180114-inversedifference",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "inverseDifference"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference/3152183-differencebytransformingchangesw": {
       "title": "differenceByTransformingChangesWithBlock:",
       "type": "topic",
@@ -257,6 +368,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsorderedcollectiondifference/3152183-differencebytransformingchangesw",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a new ordered collection difference by mapping over this difference’s members, processing the change objects with the block provided."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -268,24 +385,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsarray/3152166-differencefromarray": {
-      "title": "differenceFromArray:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsarray/3152166-differencefromarray",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsarray/3152166-differencefromarray",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "differenceFromArray:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/nsarray/3152167-differencefromarray": {
       "title": "differenceFromArray:withOptions:",
       "type": "topic",
@@ -293,6 +392,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsarray/3152167-differencefromarray",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Compares two arrays, with options, to create a difference object that represents the changes between them."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -311,6 +416,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsarray/3152168-differencefromarray",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Compares two arrays, using the provided block and with options, to create a difference object that represents the changes between them."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -322,21 +433,19 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference": {
-      "title": "NSOrderedCollectionDifference",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsorderedcollectiondifference"
-    },
     "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifferencecalculationoptions": {
       "title": "NSOrderedCollectionDifferenceCalculationOptions",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifferencecalculationoptions",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsorderedcollectiondifferencecalculationoptions"
+      "url": "/documentation/foundation/nsorderedcollectiondifferencecalculationoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify the options to use when creating an ordered collection difference."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -344,16 +453,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -384,24 +483,34 @@
         "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference/3152189-removals",
         "doc://com.apple.documentation/documentation/foundation/nsorderedcollectionchange",
         "doc://com.apple.documentation/documentation/foundation/nscollectionchangetype"
-      ]
+      ],
+      "anchor": "3638507"
     },
     {
       "kind": "taskGroup",
-      "title": "Initializers",
+      "title": "Inverting a Difference Object",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference/3180114-inversedifference"
+      ],
+      "anchor": "3736192"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Creating a Collection Difference Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference/3152185-initwithchanges",
         "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference/3152186-initwithinsertindexes",
         "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference/3152187-initwithinsertindexes"
-      ]
+      ],
+      "anchor": "3736185"
     },
     {
       "kind": "taskGroup",
-      "title": "Instance Methods",
+      "title": "Updating Changes from a Difference Object",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference/3180114-inversedifference",
         "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference/3152183-differencebytransformingchangesw"
-      ]
+      ],
+      "anchor": "3736190"
     }
   ],
   "seeAlsoSections": [
@@ -458,6 +567,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -465,10 +575,80 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsarray/3152166-differencefromarray"
+            },
+            {
+              "type": "text",
+              "text": " or one of its variations to get an instance of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference"
+            },
+            {
+              "type": "text",
+              "text": ", which represents the difference between two ordered collections."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, the following sample compares two arrays of strings to create a difference that represents the changes:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "NSArray *original = @[@\"Red\", @\"Green\", @\"Blue\"];",
+            "NSArray *modified = @[@\"Red\", @\"Blue\", @\"Green\"];",
+            "",
+            "NSOrderedCollectionDifference *diff = [original differenceFromArray:modified];",
+            "",
+            "// diff.hasChanges == TRUE",
+            "// diff.insertions.count == 1",
+            "// diff.removals.count == 1",
+            ""
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "3736266",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "introducedAt": "14.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVCaptureDevice(py)focusMode",
+    "parent": {
+      "title": "AVCaptureDevice"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -232,6 +240,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3751762-minimumfocusdistance": {
+      "title": "minimumFocusDistance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3751762-minimumfocusdistance",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/3751762-minimumfocusdistance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The capture device’s minimum focus distance in millimeters."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1390215-isfocusmodesupported": {
       "title": "isFocusModeSupported:",
       "type": "topic",
@@ -280,7 +302,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates whether the device supports a point of interest for focus."
+          "text": "A Boolean value that indicates whether the device supports a point of interest for focus."
         }
       ]
     },
@@ -294,7 +316,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates whether the device is currently adjusting its focus setting."
+          "text": "A Boolean value that indicates whether the device is currently adjusting its focus setting."
         }
       ]
     },
@@ -308,7 +330,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that determines whether the device has smooth autofocus enabled."
+          "text": "A Boolean value that determines whether smooth autofocus is in an enabled state on the device."
         }
       ]
     },
@@ -336,7 +358,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A value controlling the allowable range for automatic focusing."
+          "text": "A value that controls the allowable range for automatic focusing."
         }
       ]
     },
@@ -379,6 +401,7 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/3751762-minimumfocusdistance",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1390215-isfocusmodesupported",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1385853-focuspointofinterest",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1390436-focuspointofinterestsupported",
@@ -441,6 +464,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -523,7 +547,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

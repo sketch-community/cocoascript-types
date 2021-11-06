@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Add code to respond quickly and seamlessly when a user launches your App Clip."
+      "text": "Add code to respond to invocations and offer a focused launch experience."
     }
   ],
   "documentVersion": 0,
@@ -26,8 +26,8 @@
     "roleHeading": "Article"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -70,6 +70,28 @@
       "role": "symbol",
       "url": "/documentation/bundleresources/entitlements/com_apple_developer_associated-domains"
     },
+    "doc://com.apple.documentation/documentation/app_clips/associating_your_app_clip_with_your_website": {
+      "title": "Associating Your App Clip with Your Website",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/associating_your_app_clip_with_your_website",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/associating_your_app_clip_with_your_website"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/configuring_the_launch_experience_of_your_app_clip": {
+      "title": "Configuring the Launch Experience of Your App Clip",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/configuring_the_launch_experience_of_your_app_clip",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/configuring_the_launch_experience_of_your_app_clip",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Review how users launch your App Clip, identify invocation URLs, and configure experiences in App Store Connect."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/nsuseractivity": {
       "title": "NSUserActivity",
       "type": "topic",
@@ -86,21 +108,21 @@
       "role": "symbol",
       "url": "/documentation/swiftui/view/oncontinueuseractivity(_:perform:)"
     },
-    "doc://com.apple.documentation/documentation/uikit/uiscenedelegate": {
-      "title": "UISceneDelegate",
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/restoring_your_app_s_state_with_swiftui": {
+      "title": "Restoring Your App’s State with SwiftUI",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscenedelegate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiscenedelegate"
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/restoring_your_app_s_state_with_swiftui",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/view_controllers/restoring_your_app_s_state_with_swiftui"
     },
-    "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3238056-scene": {
-      "title": "scene:continueUserActivity:",
+    "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3197914-scene": {
+      "title": "scene:willConnectToSession:options:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3238056-scene",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3197914-scene",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiscenedelegate/3238056-scene",
+      "url": "/documentation/uikit/uiscenedelegate/3197914-scene",
       "fragments": [
         {
           "kind": "text",
@@ -108,7 +130,25 @@
         },
         {
           "kind": "identifier",
-          "text": "scene:continueUserActivity:"
+          "text": "scene:willConnectToSession:options:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3238060-scene": {
+      "title": "scene:willContinueUserActivityWithType:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3238060-scene",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiscenedelegate/3238060-scene",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "scene:willContinueUserActivityWithType:"
         }
       ]
     },
@@ -180,6 +220,36 @@
       "role": "article",
       "url": "/documentation/uikit/app_and_environment/managing_your_app_s_life_cycle"
     },
+    "doc://com.apple.documentation/documentation/xcode/supporting-universal-links-in-your-app": {
+      "title": "Supporting Universal Links in Your App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/xcode/supporting-universal-links-in-your-app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/xcode/supporting-universal-links-in-your-app"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app": {
+      "title": "Sharing Data Between Your App Clip and Your Full App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/supporting_invocations_from_your_website_and_the_messages_app": {
+      "title": "Supporting Invocations from Your Website and the Messages App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/supporting_invocations_from_your_website_and_the_messages_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/supporting_invocations_from_your_website_and_the_messages_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Display a Smart App Banner and the App Clip card on your website that users tap to launch your App Clip, and add support for invocations from the Messages app."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/app_clips/responding_to_invocations": {
       "title": "Responding to Invocations",
       "type": "topic",
@@ -190,7 +260,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Add code to respond quickly and seamlessly when a user launches your App Clip."
+          "text": "Add code to respond to invocations and offer a focused launch experience."
         }
       ]
     },
@@ -260,6 +330,8 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/app_clips/configuring_the_launch_experience_of_your_app_clip",
+        "doc://com.apple.documentation/documentation/app_clips/supporting_invocations_from_your_website_and_the_messages_app",
         "doc://com.apple.documentation/documentation/app_clips/confirming_the_user_s_physical_location",
         "doc://com.apple.documentation/documentation/app_clips/apactivationpayload",
         "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsappclip"
@@ -283,7 +355,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "A great launch experience is key to the user’s experience with your App Clip. When a user invokes your App Clip, the operating system verifies it. Then, when the user launches the App Clip, the system makes the "
+              "text": "A great launch experience that helps the user complete a task as quickly as possible is key to your App Clip. Upon launch, your App Clip needs to be aware of the user’s context and update its UI accordingly. For example, say an App Clip provides functionality to order a drink from a local coffee shop that has multiple physical locations. Instead of making the user select a location before displaying the drink menu, the App Clip recognizes the user’s context and updates its UI accordingly. The user doesn’t have to select a location, and can complete their task — ordering coffee to go — with fewer taps. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To enable the App Clip to respond to the user’s context upon launch, the system makes the "
             },
             {
               "type": "emphasis",
@@ -296,16 +377,7 @@
             },
             {
               "type": "text",
-              "text": " available to the App Clip. In your code, access the invocation URL upon launch and take the user to the part of the App Clip that best fits their current context."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "Because the full app replaces the App Clip when users install it, users expect the full app to offer at least the same functionality as the App Clip, and they expect a familiar launch experience. Leverage the invocation URL in your full app to offer a focused user experience that reduces the number of steps in a task when using the full app and ensure that the user experiences a seamless upgrade."
+              "text": " available to the App Clip. Configuring the launch experience of your App Clip and choosing invocation URLs are key tasks when creating an App Clip. However, configuring invocation URLs in App Store Connect isn’t enough to provide a streamlined launch experience. You also need to add code to your App Clip that handles the invocation URL and updates its UI."
             }
           ]
         },
@@ -320,24 +392,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Both the App Clip and the full app need to respond to the invocation URL and update the user interface to provide a smooth launch. For example, consider an App Clip for a business with multiple physical locations. You can configure the business domain "
-            },
-            {
-              "type": "codeVoice",
-              "code": "https://example.com"
-            },
-            {
-              "type": "text",
-              "text": " to launch the App Clip and ask the user to select a physical location from a list. However, this results in an extra step that slows down the user. You can avoid the extra step by configuring the invocation URL and passing additional URL parameters with the invocation."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "For both your App Clip and your full app:"
+              "text": "Both the App Clip and the full app need to respond to the invocation URL and update their UI to help the user quickly complete their task at hand. Consider the example of the coffee shop with multiple physical locations. The user shouldn’t have to select the location that matches their context before they can order a drink. Instead, the App Clip can make use of the invocation URL to update its UI to display the shop’s drink menu right away. For example, use an invocation URL with additional URL parameters that help the App Clip recognize the user’s context and update its UI:"
             }
           ]
         },
@@ -360,11 +415,11 @@
                     },
                     {
                       "type": "text",
-                      "text": " entitlement. For the example described above, you’d add "
+                      "text": ". For the example described above, you add "
                     },
                     {
                       "type": "codeVoice",
-                      "code": "myexample.com"
+                      "code": "example.com"
                     },
                     {
                       "type": "text",
@@ -381,7 +436,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "Use invocation URLs that contain additional parameters; for example "
+                      "text": "Use invocation URLs that contain additional parameters; for example, "
                     },
                     {
                       "type": "codeVoice",
@@ -410,7 +465,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "On launch, respond to the URLs by persisting any unsaved data in case the user switches from one location to another and update the user interface to match the new location."
+                      "text": "On launch, respond to the URLs by persisting any unsaved data in case the user switches from one location to another. Then, update the UI to match the new location."
                     }
                   ]
                 }
@@ -423,16 +478,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Invocations from the Maps app and location-based suggestions from Siri Suggestions use the URL you register for an App Clip experience as the invocation URL. When users launch your App Clip from a shared link in the messages app or your website, the site’s URL is the App Clip’s invocation URL. "
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "If you configure a generic URL both your App Clip and your full app must always be able to handle the URL, even if you intend to only use it as a prefix for your actual invocation URLs. For example, you might register "
+              "text": "If you configure a generic URL, both your App Clip and your full app must always be able to handle the URL, even if you only intend to use it as a prefix for your actual invocation URLs. For example, you can register "
             },
             {
               "type": "codeVoice",
@@ -440,11 +486,11 @@
             },
             {
               "type": "text",
-              "text": " as part of an advanced App Store experience. For invocations, you might use a URL like "
+              "text": " as part of an advanced App Store experience. For the actual invocations — such as in your App Clip Codes — you can use URLs like "
             },
             {
               "type": "codeVoice",
-              "code": "https://example.com/menu/lunch/item/1234"
+              "code": "https://example.com/location1"
             },
             {
               "type": "text",
@@ -452,7 +498,7 @@
             },
             {
               "type": "codeVoice",
-              "code": "https://example.com/menu/lunch/item/5678"
+              "code": "https://example.com/location2"
             },
             {
               "type": "text",
@@ -461,6 +507,33 @@
             {
               "type": "codeVoice",
               "code": "https://example.com"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For additional information on associating your App Clip with your website and configuring experiences, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/app_clips/associating_your_app_clip_with_your_website"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/app_clips/configuring_the_launch_experience_of_your_app_clip"
             },
             {
               "type": "text",
@@ -479,7 +552,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "When users launch an App Clip, it receives an "
+              "text": "To respond to an invocation, you need to access the invocation URL so your App Clip can tailor itself to the experience. To access the URL, query the "
             },
             {
               "type": "reference",
@@ -488,35 +561,21 @@
             },
             {
               "type": "text",
-              "text": " object you can use to respond to the invocation. "
+              "text": " object the system passes to the App Clip upon launch. If a user installs the full app, it replaces the App Clip, and the system launches it with each invocation. To offer the same functionality and provide an equivalent user experience as the App Clip, the full app also needs to handle all invocation URLs. In most cases, it makes sense to share the code that handles your URL between full app and App Clip, and also have the App Clip store state information in a shared container. This way, the full app can access any data stored by the App Clip, and, upon launch, take the user to the part of the app that best matches their context. "
             }
           ]
-        },
-        {
-          "type": "aside",
-          "content": [
-            {
-              "type": "paragraph",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "When users install an App Clip’s corresponding app, the full app replaces the App Clip. Every invocation from that point on launches the full app instead of the App Clip. Therefore, your full app must also handle all invocations and include the App Clip’s functionality."
-                }
-              ]
-            }
-          ],
-          "style": "important"
         },
         {
           "type": "paragraph",
           "inlineContent": [
             {
               "type": "text",
-              "text": "To persist any state and data, and to access the "
+              "text": "To access the "
             },
             {
-              "type": "codeVoice",
-              "code": "NSUserActivity"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity"
             },
             {
               "type": "text",
@@ -534,7 +593,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "For a SwiftUI-based App Clip and full app, implement SwiftUI’s life-cycle callbacks; for example, use the "
+                      "text": "If you use the SwiftUI lifecycle, apply the "
                     },
                     {
                       "type": "reference",
@@ -543,7 +602,16 @@
                     },
                     {
                       "type": "text",
-                      "text": " modifier."
+                      "text": " modifier. For additional information on implementing lifecycle callbacks for your SwiftUI app, see "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/restoring_your_app_s_state_with_swiftui"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
                     }
                   ]
                 }
@@ -556,25 +624,43 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "For a UIKit-based App Clip and full app that support scene-based app life-cycle events, implement the callbacks defined in "
+                      "text": "If you use a scene-based lifecycle, implement the "
                     },
                     {
                       "type": "reference",
                       "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscenedelegate"
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3197914-scene"
                     },
                     {
                       "type": "text",
-                      "text": ". For example, implement "
+                      "text": " and "
                     },
                     {
                       "type": "reference",
                       "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3238056-scene"
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3238060-scene"
                     },
                     {
                       "type": "text",
-                      "text": " callback to access the user activity object."
+                      "text": " callbacks. On the first launch, the system calls the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3197914-scene"
+                    },
+                    {
+                      "type": "text",
+                      "text": " callback. If the app or App Clip is suspended in memory and the user launches it, the system calls "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3238060-scene"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
                     }
                   ]
                 }
@@ -587,7 +673,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "For a UIKit-based App Clip and full app that respond to app-based life-cycle events, implement the callbacks defined in "
+                      "text": "If you use the "
                     },
                     {
                       "type": "reference",
@@ -596,7 +682,7 @@
                     },
                     {
                       "type": "text",
-                      "text": ". Be sure to implement the "
+                      "text": " object to respond to lifecycle events, be sure to implement the "
                     },
                     {
                       "type": "reference",
@@ -605,7 +691,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " callback, because you don’t have access to the "
+                      "text": " callback. Note that you don’t have access to the "
                     },
                     {
                       "type": "reference",
@@ -636,7 +722,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "On launch, make sure that the invocation is of type "
+              "text": "On launch, confirm that the invocation is of type "
             },
             {
               "type": "reference",
@@ -645,7 +731,7 @@
             },
             {
               "type": "text",
-              "text": ", then access the URL that launched the App Clip. The following code shows a function that extracts components from the invocation URL:"
+              "text": ", then access the URL that the system passes to the App Clip. The following code shows a function that extracts components from the invocation URL:"
             }
           ]
         },
@@ -655,9 +741,8 @@
             "func respondTo(_ activity: NSUserActivity?) {",
             "        ",
             "    // Guard against faulty data.",
-            "    guard activity != nil else { return }",
-            "    guard activity!.activityType == NSUserActivityTypeBrowsingWeb else { return }",
-            "    guard let incomingURL = activity?.webpageURL else { return }",
+            "    guard let activity, activity.activityType == NSUserActivityTypeBrowsingWeb else { return }",
+            "    let incomingURL = activity.webpageURL",
             "    guard let components = NSURLComponents(url: incomingURL, resolvingAgainstBaseURL: true) else { return }",
             "",
             "    // Update the user interface based on URL components passed to the App Clip or full app.",
@@ -674,7 +759,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "For more information about responding to life-cycle events, see "
+              "text": "For more information about responding to lifecycle events, see "
             },
             {
               "type": "reference",
@@ -683,15 +768,118 @@
             },
             {
               "type": "text",
+              "text": ". For general information on handling links, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/xcode/supporting-universal-links-in-your-app"
+            },
+            {
+              "type": "text",
               "text": "."
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To learn more about sharing data between the App Clip and the full app, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Ensure Your Code Handles All Invocations",
+          "anchor": "3730260"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A fast, consistent user experience that fits the user’s context is key to the App Clip user experience, and it’s why designing and configuring your App Clip experiences is so important. As a result, spending time to write resilient code, handling all possible invocation URLs, and testing the code is very important. Make sure you guard against faulty data and handle the following scenarios:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Invocations from the Maps app and location-based suggestions from Siri Suggestions use the URL you register for an App Clip experience as the invocation URL."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Invocations from Messages app or your website use the site’s URL as the invocation URL."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If a user returns to a previously launched App Clip from the App Library or Spotlight, the App Clip uses the invocation URL that it previously used to launch the App Clip."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If a user returns to a previously launched App Clip from a notification or the App Switcher, the App Clip launches without an invocation URL. To address this case, save the state of your App Clip before the user leaves it, and restore the saved state if the invocation URL isn’t available upon launch."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

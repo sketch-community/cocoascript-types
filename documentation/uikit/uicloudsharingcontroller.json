@@ -12,6 +12,11 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
         "doc://com.apple.documentation/documentation/uikit/view_controllers"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/cloudkit",
+        "doc://com.apple.documentation/documentation/cloudkit/shared_records"
       ]
     ]
   },
@@ -34,20 +39,25 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UICloudSharingController",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -86,6 +96,22 @@
       "title": "View Controllers",
       "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers",
       "url": "/documentation/uikit/view_controllers",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit": {
+      "title": "CloudKit",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit",
+      "url": "/documentation/cloudkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/shared_records": {
+      "title": "Shared Records",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/shared_records",
+      "url": "/documentation/cloudkit/shared_records",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -366,16 +392,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -393,7 +409,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontroller/1649607-initwithpreparationhandler",
         "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontroller/1649597-initwithshare"
-      ]
+      ],
+      "anchor": "2859127"
     },
     {
       "kind": "taskGroup",
@@ -401,7 +418,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontroller/1649595-delegate",
         "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontrollerdelegate"
-      ]
+      ],
+      "anchor": "2878895"
     },
     {
       "kind": "taskGroup",
@@ -409,21 +427,24 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontroller/1649602-availablepermissions",
         "doc://com.apple.documentation/documentation/uikit/uicloudsharingpermissionoptions"
-      ]
+      ],
+      "anchor": "2881673"
     },
     {
       "kind": "taskGroup",
       "title": "Getting the Share",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontroller/1649601-share"
-      ]
+      ],
+      "anchor": "2859128"
     },
     {
       "kind": "taskGroup",
       "title": "Getting an Activity Item Source",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontroller/1649594-activityitemsource"
-      ]
+      ],
+      "anchor": "2859129"
     }
   ],
   "primaryContentSections": [
@@ -460,6 +481,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -1275,7 +1297,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

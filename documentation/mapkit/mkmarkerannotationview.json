@@ -34,30 +34,35 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)MKMarkerAnnotationView",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -292,7 +297,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A string-based annotation that you apply to a specific map point."
+          "text": "A string-based piece of location-specific data that you apply to a specific point on a map."
         }
       ]
     },
@@ -322,7 +327,8 @@
           "type": "text",
           "text": "An annotation view that displays a pin image on the map.  "
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -330,16 +336,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -358,7 +354,8 @@
       "title": "Setting the Marker Color",
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkmarkerannotationview/2873822-markertintcolor"
-      ]
+      ],
+      "anchor": "2878713"
     },
     {
       "kind": "taskGroup",
@@ -368,7 +365,8 @@
         "doc://com.apple.documentation/documentation/mapkit/mkmarkerannotationview/2873823-glyphimage",
         "doc://com.apple.documentation/documentation/mapkit/mkmarkerannotationview/2873824-glyphtintcolor",
         "doc://com.apple.documentation/documentation/mapkit/mkmarkerannotationview/2873815-selectedglyphimage"
-      ]
+      ],
+      "anchor": "2878714"
     },
     {
       "kind": "taskGroup",
@@ -377,14 +375,16 @@
         "doc://com.apple.documentation/documentation/mapkit/mkmarkerannotationview/2873816-titlevisibility",
         "doc://com.apple.documentation/documentation/mapkit/mkmarkerannotationview/2873813-subtitlevisibility",
         "doc://com.apple.documentation/documentation/mapkit/mkfeaturevisibility"
-      ]
+      ],
+      "anchor": "2878712"
     },
     {
       "kind": "taskGroup",
       "title": "Animating the Marker onto the Screen",
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkmarkerannotationview/2873821-animateswhenadded"
-      ]
+      ],
+      "anchor": "2878715"
     }
   ],
   "seeAlsoSections": [
@@ -432,6 +432,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -497,7 +498,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

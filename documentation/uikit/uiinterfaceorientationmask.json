@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "These constants are mask bits for specifying a view controller’s supported interface orientations."
+      "text": "Constants that specify a view controller’s supported interface orientations."
     }
   ],
   "documentVersion": 0,
@@ -42,20 +42,25 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@T@UIInterfaceOrientationMask",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -140,7 +145,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The orientation of the app's user interface."
+          "text": "Constants that specify the orientation of the app's user interface."
         }
       ]
     },
@@ -161,14 +166,6 @@
           "text": "supportedInterfaceOrientationsForWindow:"
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621438-preferredinterfaceorientationfor": {
-      "title": "preferredInterfaceOrientationForPresentation",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621438-preferredinterfaceorientationfor",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiviewcontroller/1621438-preferredinterfaceorientationfor"
     },
     "doc://com.apple.documentation/documentation/objectivec/nsuinteger": {
       "title": "NSUInteger",
@@ -311,7 +308,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "These constants are mask bits for specifying a view controller’s supported interface orientations."
+          "text": "Constants that specify a view controller’s supported interface orientations."
         }
       ]
     },
@@ -325,24 +322,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "This exception is thrown if a view controller or the app returns "
-        },
-        {
-          "type": "codeVoice",
-          "code": "0"
-        },
-        {
-          "type": "text",
-          "text": " instead of a valid set of supported interface orientation values. It is also thrown if the orientation returned by a view controller’s "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621438-preferredinterfaceorientationfor"
-        },
-        {
-          "type": "text",
-          "text": " method does not match one of the view controller’s supported orientations."
+          "text": "An exception that’s thrown if a view controller or the app returns an invalid set of supported interface orientations. "
         }
       ]
     },
@@ -366,7 +346,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiinterfaceorientationmask/uiinterfaceorientationmasklandscape",
         "doc://com.apple.documentation/documentation/uikit/uiinterfaceorientationmask/uiinterfaceorientationmaskall",
         "doc://com.apple.documentation/documentation/uikit/uiinterfaceorientationmask/uiinterfaceorientationmaskallbutupsidedown"
-      ]
+      ],
+      "anchor": "1627000"
     }
   ],
   "seeAlsoSections": [
@@ -442,6 +423,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -514,7 +496,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

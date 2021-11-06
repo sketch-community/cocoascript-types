@@ -11,13 +11,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
       ]
     ]
@@ -42,15 +42,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSAccessibility(py)accessibilityMarkerTypeDescription",
+    "parent": {
+      "title": "NSAccessibility"
+    },
     "symbolKind": "intfp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -75,10 +78,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -93,7 +96,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The complete list of properties and methods implemented by accessible elements."
+          "text": "The complete list of properties and methods for accessible elements."
         }
       ]
     },
@@ -113,34 +116,6 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulermarkertype": {
-      "title": "NSAccessibilityRulerMarkerType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulermarkertype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityrulermarkertype",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Values that indicate the marker type of an element."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityunits": {
-      "title": "NSAccessibilityUnits",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityunits",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityunits",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Values that indicate the unit values of a ruler or layout area. "
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535081-accessibilitymarkergroupuielemen": {
       "title": "accessibilityMarkerGroupUIElement",
       "type": "topic",
@@ -152,7 +127,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The user interface element that functions as a marker group for this ruler element."
+          "text": "The user interface element that functions as a marker group for the ruler accessibility element."
         }
       ]
     },
@@ -182,7 +157,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An array of marker elements for this ruler."
+          "text": "An array of marker accessibility elements for the ruler."
         }
       ]
     },
@@ -197,7 +172,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The marker values for this ruler."
+          "text": "The marker values for the ruler."
         }
       ]
     },
@@ -212,7 +187,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The type of markers used on this ruler."
+          "text": "The type of markers for the ruler."
         }
       ]
     },
@@ -227,7 +202,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The units used on this ruler."
+          "text": "The units for the ruler."
         }
       ]
     },
@@ -242,7 +217,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A human-readable description of this ruler’s units."
+          "text": "A human-readable description of the ruler’s units."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulermarkertype": {
+      "title": "NSAccessibilityRulerMarkerType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulermarkertype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityrulermarkertype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values that indicate the marker type of an accessibility element."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityunits": {
+      "title": "NSAccessibilityUnits",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityunits",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityunits",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values that indicate the unit values of a ruler or layout area. "
         }
       ]
     },
@@ -257,14 +260,14 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulermarkertype",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityunits",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535081-accessibilitymarkergroupuielemen",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535037-accessibilitymarkeruielements",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535076-accessibilitymarkervalues",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535099-accessibilityrulermarkertype",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535029-accessibilityunits",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535094-accessibilityunitdescription"
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535094-accessibilityunitdescription",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulermarkertype",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityunits"
       ],
       "title": "Configuring Ruler Views",
       "generated": true
@@ -314,7 +317,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An object that wraps, or contains, Interface Builder nib files. "
+      "text": "An object that contains Interface Builder nib files. "
     }
   ],
   "documentVersion": 0,
@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UINib",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -95,13 +100,43 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/foundation/nsdictionary": {
-      "title": "NSDictionary",
+    "doc://com.apple.documentation/documentation/uikit/uinib": {
+      "title": "UINib",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdictionary",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uinib",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsdictionary"
+      "url": "/documentation/uikit/uinib",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that contains Interface Builder nib files. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uinib/1614137-instantiatewithowner": {
+      "title": "instantiateWithOwner:options:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uinib/1614137-instantiatewithowner",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uinib/1614137-instantiatewithowner",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Unarchives and instantiates the in-memory contents of the nib object’s nib file, creating a distinct object tree and set of top-level objects."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "instantiateWithOwner:options:"
+        }
+      ]
     },
     "devLink-1695419": {
       "identifier": "devLink-1695419",
@@ -127,15 +162,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a "
-        },
-        {
-          "type": "codeVoice",
-          "code": "UINib"
-        },
-        {
-          "type": "text",
-          "text": " object initialized to the nib file in the specified bundle."
+          "text": "Returns a nib object from the nib file in the specified bundle."
         }
       ],
       "fragments": [
@@ -159,15 +186,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a "
-        },
-        {
-          "type": "codeVoice",
-          "code": "UINib"
-        },
-        {
-          "type": "text",
-          "text": " object from nib data stored in memory."
+          "text": "Creates a nib object from nib data stored in memory."
         }
       ],
       "fragments": [
@@ -181,27 +200,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uinib/1614137-instantiatewithowner": {
-      "title": "instantiateWithOwner:options:",
+    "doc://com.apple.documentation/documentation/uikit/uiniboptionskey": {
+      "title": "UINibOptionsKey",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uinib/1614137-instantiatewithowner",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiniboptionskey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uinib/1614137-instantiatewithowner",
+      "url": "/documentation/uikit/uiniboptionskey",
       "abstract": [
         {
           "type": "text",
-          "text": "Unarchives and instantiates the in-memory contents of the receiver’s nib file, creating a distinct object tree and set of top level objects."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "instantiateWithOwner:options:"
+          "text": "Options that specify how to unarchive and instantiate the nib."
         }
       ]
     },
@@ -215,55 +224,10 @@
       "abstract": [
         {
           "type": "text",
-          "text": "In iOS 2.x, the value for this key is a dictionary that contains the runtime replacement objects for any proxy objects used in the nib file. In this dictionary, the keys are the names associated with the proxy objects and the values are the actual objects from your code that should be used in their place. "
+          "text": "The runtime replacement objects for any proxy objects in the nib file. "
         }
       ],
       "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uinibexternalobjects": {
-      "title": "UINibExternalObjects",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uinibexternalobjects",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uinibexternalobjects",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The replacements for any proxy objects in the nib file. The value for this key is an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsdictionary"
-        },
-        {
-          "type": "text",
-          "text": " object. The keys of the dictionary are the names of any proxy objects in the nib file, and the value for each key is the actual object to use in place of the proxy."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiniboptionskey": {
-      "title": "UINibOptionsKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiniboptionskey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiniboptionskey"
-    },
-    "doc://com.apple.documentation/documentation/uikit/uinib": {
-      "title": "UINib",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uinib",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uinib",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that wraps, or contains, Interface Builder nib files. "
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -290,17 +254,25 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uinib/1614138-nibwithnibname",
         "doc://com.apple.documentation/documentation/uikit/uinib/1614135-nibwithdata"
-      ]
+      ],
+      "anchor": "1654143"
     },
     {
       "kind": "taskGroup",
       "title": "Retrieving Objects from the Nib File",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uinib/1614137-instantiatewithowner",
-        "doc://com.apple.documentation/documentation/uikit/uinibproxiedobjectskey",
-        "doc://com.apple.documentation/documentation/uikit/uinibexternalobjects",
         "doc://com.apple.documentation/documentation/uikit/uiniboptionskey"
-      ]
+      ],
+      "anchor": "1654203"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Deprecated",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uinibproxiedobjectskey"
+      ],
+      "anchor": "3677841"
     }
   ],
   "primaryContentSections": [
@@ -337,6 +309,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -360,36 +333,49 @@
               "text": "A "
             },
             {
-              "type": "codeVoice",
-              "code": "UINib"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uinib"
             },
             {
               "type": "text",
-              "text": " object caches the contents of a nib file in memory, ready for unarchiving and instantiation. When your application needs to instantiate the contents of the nib file it can do so without having to load the data from the nib file first, improving performance. The "
+              "text": " object caches the contents of a nib file in memory, ready for unarchiving and instantiation. When your app needs to instantiate the contents of the nib file, it can do so without having to load the data from the nib file first, which improves performance. The "
             },
             {
-              "type": "codeVoice",
-              "code": "UINib"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uinib"
             },
             {
               "type": "text",
-              "text": " object can automatically release this cached nib data to free up memory for your application under low-memory conditions, reloading that data the next time your application instantiates the nib. Your application should use "
+              "text": " object can automatically release this cached nib data to free up memory for your app under low-memory conditions, reloading that data the next time your app instantiates the nib. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your app should use "
             },
             {
-              "type": "codeVoice",
-              "code": "UINib"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uinib"
             },
             {
               "type": "text",
               "text": " objects whenever it needs to repeatedly instantiate the same nib data. For example, if your table view uses a nib file to instantiate table view cells, caching the nib in a "
             },
             {
-              "type": "codeVoice",
-              "code": "UINib"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uinib"
             },
             {
               "type": "text",
-              "text": " object can provide a significant performance improvement."
+              "text": " object can improve performance."
             }
           ]
         },
@@ -401,36 +387,31 @@
               "text": "When you create a "
             },
             {
-              "type": "codeVoice",
-              "code": "UINib"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uinib"
             },
             {
               "type": "text",
-              "text": " object using the contents of a nib file, the object loads the object graph in the referenced nib file, but it does not yet unarchive it. To unarchive all of the nib data and thus truly instantiate the nib your application calls the "
+              "text": " object using the contents of a nib file, the object loads the object graph in the referenced nib file, but it doesn’t unarchive it yet. To unarchive all of the nib data and instantiate the nib, your app calls the "
             },
             {
-              "type": "codeVoice",
-              "code": "instantiateWithOwner:options:"
-            },
-            {
-              "type": "text",
-              "text": " method on the "
-            },
-            {
-              "type": "codeVoice",
-              "code": "UINib"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uinib/1614137-instantiatewithowner"
             },
             {
               "type": "text",
-              "text": " object. The steps that the "
+              "text": " method. For more information about the steps that the "
             },
             {
-              "type": "codeVoice",
-              "code": "UINib"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uinib"
             },
             {
               "type": "text",
-              "text": " object follows to instantiate the nib’s object graph are described in detail in "
+              "text": " object follows to instantiate the nib’s object graph, see "
             },
             {
               "type": "link",
@@ -447,7 +428,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

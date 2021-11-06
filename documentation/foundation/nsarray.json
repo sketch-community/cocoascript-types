@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSArray",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -852,7 +857,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Copies the objects contained in the array that fall within the specified range to "
+          "text": "Copies references to objects contained in the array that fall within the specified range to "
         },
         {
           "type": "codeVoice",
@@ -2082,6 +2087,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsarray/3152166-differencefromarray",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Compares two arrays to create a difference object that represents the changes between them."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -2100,6 +2111,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsarray/3152167-differencefromarray",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Compares two arrays, with options, to create a difference object that represents the changes between them."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -2118,6 +2135,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsarray/3152168-differencefromarray",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Compares two arrays, using the provided block and with options, to create a difference object that represents the changes between them."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -2135,7 +2158,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsorderedcollectiondifference"
+      "url": "/documentation/foundation/nsorderedcollectiondifference",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object representing the difference between two ordered collections."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifferencecalculationoptions": {
       "title": "NSOrderedCollectionDifferenceCalculationOptions",
@@ -2143,7 +2172,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifferencecalculationoptions",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsorderedcollectiondifferencecalculationoptions"
+      "url": "/documentation/foundation/nsorderedcollectiondifferencecalculationoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify the options to use when creating an ordered collection difference."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsarray/1407810-initwithcoder": {
       "title": "initWithCoder:",
@@ -2230,6 +2265,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsarray/3152165-arraybyapplyingdifference",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new array by applying a difference object to an existing array."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -2337,16 +2378,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -2380,7 +2411,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsarray/1411981-arraywithobject",
         "doc://com.apple.documentation/documentation/foundation/nsarray/1460145-arraywithobjects",
         "doc://com.apple.documentation/documentation/foundation/nsarray/1460096-arraywithobjects"
-      ]
+      ],
+      "anchor": "1651576"
     },
     {
       "kind": "taskGroup",
@@ -2393,7 +2425,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsarray/1410518-initwithcontentsofurl",
         "doc://com.apple.documentation/documentation/foundation/nsarray/1460068-initwithobjects",
         "doc://com.apple.documentation/documentation/foundation/nsarray/1415056-initwithobjects"
-      ]
+      ],
+      "anchor": "1651622"
     },
     {
       "kind": "taskGroup",
@@ -2410,7 +2443,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsarray/1411296-objectsatindexes",
         "doc://com.apple.documentation/documentation/foundation/nsarray/1416048-objectenumerator",
         "doc://com.apple.documentation/documentation/foundation/nsarray/1415734-reverseobjectenumerator"
-      ]
+      ],
+      "anchor": "1651682"
     },
     {
       "kind": "taskGroup",
@@ -2427,7 +2461,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsarray/1415087-indexesofobjectswithoptions",
         "doc://com.apple.documentation/documentation/foundation/nsarray/1413512-indexesofobjectsatindexes",
         "doc://com.apple.documentation/documentation/foundation/nsarray/1412722-indexofobject"
-      ]
+      ],
+      "anchor": "1651747"
     },
     {
       "kind": "taskGroup",
@@ -2438,7 +2473,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsarray/1415846-enumerateobjectsusingblock",
         "doc://com.apple.documentation/documentation/foundation/nsarray/1413010-enumerateobjectswithoptions",
         "doc://com.apple.documentation/documentation/foundation/nsarray/1417577-enumerateobjectsatindexes"
-      ]
+      ],
+      "anchor": "1651812"
     },
     {
       "kind": "taskGroup",
@@ -2446,7 +2482,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsarray/1408825-firstobjectcommonwitharray",
         "doc://com.apple.documentation/documentation/foundation/nsarray/1411770-isequaltoarray"
-      ]
+      ],
+      "anchor": "1651840"
     },
     {
       "kind": "taskGroup",
@@ -2456,7 +2493,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsarray/1412087-arraybyaddingobjectsfromarray",
         "doc://com.apple.documentation/documentation/foundation/nsarray/1411033-filteredarrayusingpredicate",
         "doc://com.apple.documentation/documentation/foundation/nsarray/1415157-subarraywithrange"
-      ]
+      ],
+      "anchor": "1651855"
     },
     {
       "kind": "taskGroup",
@@ -2470,14 +2508,16 @@
         "doc://com.apple.documentation/documentation/foundation/nsarray/1411195-sortedarrayusingcomparator",
         "doc://com.apple.documentation/documentation/foundation/nsarray/1417804-sortedarraywithoptions",
         "doc://com.apple.documentation/documentation/foundation/nscomparator"
-      ]
+      ],
+      "anchor": "1651886"
     },
     {
       "kind": "taskGroup",
       "title": "Working with String Elements",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsarray/1412075-componentsjoinedbystring"
-      ]
+      ],
+      "anchor": "1651934"
     },
     {
       "kind": "taskGroup",
@@ -2486,7 +2526,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsarray/1413042-description",
         "doc://com.apple.documentation/documentation/foundation/nsarray/1412374-descriptionwithlocale",
         "doc://com.apple.documentation/documentation/foundation/nsarray/1416257-descriptionwithlocale"
-      ]
+      ],
+      "anchor": "1651945"
     },
     {
       "kind": "taskGroup",
@@ -2494,14 +2535,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsarray/1414742-writetofile",
         "doc://com.apple.documentation/documentation/foundation/nsarray/1411480-writetourl"
-      ]
+      ],
+      "anchor": "1681114"
     },
     {
       "kind": "taskGroup",
       "title": "Collecting Paths",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsarray/1418275-pathsmatchingextensions"
-      ]
+      ],
+      "anchor": "1651983"
     },
     {
       "kind": "taskGroup",
@@ -2513,7 +2556,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsarray/1408305-removeobserver",
         "doc://com.apple.documentation/documentation/foundation/nsarray/1411404-addobserver",
         "doc://com.apple.documentation/documentation/foundation/nsarray/1407434-removeobserver"
-      ]
+      ],
+      "anchor": "1652002"
     },
     {
       "kind": "taskGroup",
@@ -2521,7 +2565,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsarray/1408301-setvalue",
         "doc://com.apple.documentation/documentation/foundation/nsarray/1412219-valueforkey"
-      ]
+      ],
+      "anchor": "1652058"
     },
     {
       "kind": "taskGroup",
@@ -2529,7 +2574,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsarray/1640855-shuffledarray",
         "doc://com.apple.documentation/documentation/foundation/nsarray/1640687-shuffledarraywithrandomsource"
-      ]
+      ],
+      "anchor": "1844588"
     },
     {
       "kind": "taskGroup",
@@ -2540,28 +2586,32 @@
         "doc://com.apple.documentation/documentation/foundation/nsarray/3152168-differencefromarray",
         "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifference",
         "doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifferencecalculationoptions"
-      ]
+      ],
+      "anchor": "3638510"
     },
     {
       "kind": "taskGroup",
       "title": "New Methods",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsarray/1407810-initwithcoder"
-      ]
+      ],
+      "anchor": "1844608"
     },
     {
       "kind": "taskGroup",
       "title": "Constants",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsbinarysearchingoptions"
-      ]
+      ],
+      "anchor": "1681246"
     },
     {
       "kind": "taskGroup",
       "title": "Initializers",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsarray/2879134-initwithcontentsofurl"
-      ]
+      ],
+      "anchor": "2855526"
     },
     {
       "kind": "taskGroup",
@@ -2569,14 +2619,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsarray/2879138-writetourl",
         "doc://com.apple.documentation/documentation/foundation/nsarray/3152165-arraybyapplyingdifference"
-      ]
+      ],
+      "anchor": "2855528"
     },
     {
       "kind": "taskGroup",
       "title": "Type Methods",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsarray/2879153-arraywithcontentsofurl"
-      ]
+      ],
+      "anchor": "2879662"
     }
   ],
   "seeAlsoSections": [
@@ -2634,6 +2686,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -3348,7 +3401,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

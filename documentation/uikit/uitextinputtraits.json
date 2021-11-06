@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UITextInputTraits",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -125,7 +130,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyinput",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uikeyinput"
+      "url": "/documentation/uikit/uikeyinput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of methods a responder uses to implement simple text entry.  "
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uisearchbar": {
       "title": "UISearchBar",
@@ -469,6 +480,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uitextinput": {
+      "title": "UITextInput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextinput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of methods for interacting with the text input system and enabling features, such as autocorrect and multistage text input, in documents."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextinputdelegate": {
+      "title": "UITextInputDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextinputdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An intermediary between a document and the text input system."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uitextinputtraits": {
       "title": "UITextInputTraits",
       "type": "topic",
@@ -480,6 +519,20 @@
         {
           "type": "text",
           "text": "A set of methods that defines features for keyboard input to a text object. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextinputmode": {
+      "title": "UITextInputMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextinputmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The current text input mode. "
         }
       ]
     },
@@ -497,38 +550,26 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uidictationphrase": {
+      "title": "UIDictationPhrase",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidictationphrase",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidictationphrase",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that represents the textual interpretation of a spoken phrase that the user dictates."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "minor": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.1.1 Release Candidate",
-        "12.3 Release Candidate"
-      ]
-    },
-    "beta": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.3 beta 1",
-        "12.3 Release Candidate"
-      ]
-    },
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -570,7 +611,8 @@
         "doc://com.apple.documentation/documentation/uikit/uireturnkeytype",
         "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1649656-textcontenttype",
         "doc://com.apple.documentation/documentation/uikit/uitextcontenttype"
-      ]
+      ],
+      "anchor": "2882243"
     },
     {
       "kind": "taskGroup",
@@ -578,7 +620,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1624427-securetextentry",
         "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1624432-enablesreturnkeyautomatically"
-      ]
+      ],
+      "anchor": "1652845"
     },
     {
       "kind": "taskGroup",
@@ -590,7 +633,8 @@
         "doc://com.apple.documentation/documentation/uikit/uitextautocorrectiontype",
         "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1624461-spellcheckingtype",
         "doc://com.apple.documentation/documentation/uikit/uitextspellcheckingtype"
-      ]
+      ],
+      "anchor": "2882244"
     },
     {
       "kind": "taskGroup",
@@ -602,22 +646,29 @@
         "doc://com.apple.documentation/documentation/uikit/uitextsmartdashestype",
         "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/2865828-smartinsertdeletetype",
         "doc://com.apple.documentation/documentation/uikit/uitextsmartinsertdeletetype"
-      ]
+      ],
+      "anchor": "2882242"
     },
     {
       "kind": "taskGroup",
       "title": "Configuring Password AutoFill",
       "identifiers": [
         "doc://com.apple.documentation/documentation/security/password_autofill"
-      ]
+      ],
+      "anchor": "3002025"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uitextinputassistantitem"
+        "doc://com.apple.documentation/documentation/uikit/uitextinput",
+        "doc://com.apple.documentation/documentation/uikit/uitextinputdelegate",
+        "doc://com.apple.documentation/documentation/uikit/uikeyinput",
+        "doc://com.apple.documentation/documentation/uikit/uitextinputmode",
+        "doc://com.apple.documentation/documentation/uikit/uitextinputassistantitem",
+        "doc://com.apple.documentation/documentation/uikit/uidictationphrase"
       ],
-      "title": "Configuration",
+      "title": "Text Input",
       "generated": true
     }
   ],
@@ -645,6 +696,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -691,7 +743,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

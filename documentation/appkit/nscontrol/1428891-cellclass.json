@@ -12,7 +12,8 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
         "doc://com.apple.documentation/documentation/appkit/views_and_controls",
-        "doc://com.apple.documentation/documentation/appkit/nscontrol"
+        "doc://com.apple.documentation/documentation/appkit/nscontrol",
+        "doc://com.apple.documentation/documentation/appkit/nscontrol/deprecated_symbols"
       ]
     ]
   },
@@ -36,16 +37,19 @@
         "name": "macOS",
         "introducedAt": "10.0",
         "deprecatedAt": "10.10",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSControl(cpy)cellClass",
+    "parent": {
+      "title": "NSControl"
+    },
     "symbolKind": "cldata"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -98,9 +102,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A definition of the fundamental behavior for controls, which are specialized views that notify your app of relevant events by using the target-action design pattern. "
+          "text": "A specialized view, such as a button or text field, that notifies your app of relevant events using the target-action design pattern."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscontrol/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol/deprecated_symbols",
+      "url": "/documentation/appkit/nscontrol/deprecated_symbols",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/appkit/nscontrol/1428960-cell": {
       "title": "cell",
@@ -114,7 +126,8 @@
           "type": "text",
           "text": "The receiver’s cell object."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/appkit/nscontrol/1428891-cellclass": {
       "title": "cellClass",
@@ -141,11 +154,11 @@
   },
   "seeAlsoSections": [
     {
-      "title": "Related Documentation",
-      "generated": false,
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscontrol/1428960-cell"
-      ]
+      ],
+      "title": "Deprecated Properties",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -218,7 +231,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

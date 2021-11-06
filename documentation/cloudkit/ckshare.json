@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A reference to a share record."
+      "text": "A specialized record type that manages a collection of shared records."
     }
   ],
   "documentVersion": 0,
@@ -10,7 +10,8 @@
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/cloudkit"
+        "doc://com.apple.documentation/documentation/cloudkit",
+        "doc://com.apple.documentation/documentation/cloudkit/shared_records"
       ]
     ]
   },
@@ -33,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKShare",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -95,6 +101,240 @@
       "type": "topic",
       "kind": "symbol",
       "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/shared_records": {
+      "title": "Shared Records",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/shared_records",
+      "url": "/documentation/cloudkit/shared_records",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640527-parent": {
+      "title": "parent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640527-parent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecord/1640527-parent"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckerror/2325196-alreadyshared": {
+      "title": "alreadyShared",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerror/2325196-alreadyshared",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckerror/2325196-alreadyshared"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation": {
+      "title": "CKModifyRecordsOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckmodifyrecordsoperation"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640465-url": {
+      "title": "URL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640465-url",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckshare/1640465-url",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The URL for inviting participants to the share."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontroller": {
+      "title": "UICloudSharingController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicloudsharingcontroller",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A view controller that presents standard screens for adding and removing people from a CloudKit share record."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640494-publicpermission": {
+      "title": "publicPermission",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640494-publicpermission",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckshare/1640494-publicpermission",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The permission for anyone with access to the share’s URL."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipantpermission/ckshareparticipantpermissionnone": {
+      "title": "CKShareParticipantPermissionNone",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipantpermission/ckshareparticipantpermissionnone",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckshareparticipantpermission/ckshareparticipantpermissionnone"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/cksharingsupported": {
+      "title": "CKSharingSupported",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/cksharingsupported",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/cksharingsupported",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates your app supports CloudKit Sharing."
+        }
+      ],
+      "titleStyle": "symbol",
+      "name": "CKSharingSupported",
+      "fragments": [
+        {
+          "kind": "label",
+          "text": "property list key "
+        },
+        {
+          "kind": "identifier",
+          "text": "CKSharingSupported"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation": {
+      "title": "CKFetchShareMetadataOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchsharemetadataoperation"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata": {
+      "title": "CKShareMetadata",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/cksharemetadata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that describes a shared record’s metadata."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecordid/1500973-recordname": {
+      "title": "recordName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordid/1500973-recordname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecordid/1500973-recordname"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1462229-recordid": {
+      "title": "recordID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1462229-recordid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecord/1462229-recordid"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecordnamezonewideshare": {
+      "title": "CKRecordNameZoneWideShare",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordnamezonewideshare",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecordnamezonewideshare"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare#3783250": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare#3783250",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/ckshare#3783250"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo": {
+      "title": "CKUserIdentityLookupInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckuseridentitylookupinfo"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchshareparticipantsoperation": {
+      "title": "CKFetchShareParticipantsOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchshareparticipantsoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchshareparticipantsoperation"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipant/1640488-useridentity": {
+      "title": "userIdentity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipant/1640488-useridentity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckshareparticipant/1640488-useridentity"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckuseridentity/1640513-hasicloudaccount": {
+      "title": "hasiCloudAccount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckuseridentity/1640513-hasicloudaccount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckuseridentity/1640513-hasicloudaccount"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/no": {
+      "title": "NO",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/no"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640378-share": {
+      "title": "share",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640378-share",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecord/1640378-share"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nil-2gl": {
+      "title": "nil",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nil-2gl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nil-2gl"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare/systemfieldkey": {
+      "title": "CKShare.SystemFieldKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/systemfieldkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckshare/systemfieldkey"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare#3737448": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare#3737448",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/ckshare#3737448"
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckrecord": {
       "title": "CKRecord",
@@ -192,17 +432,69 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640494-publicpermission": {
-      "title": "publicPermission",
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare/3746825-initwithrecordzoneid": {
+      "title": "initWithRecordZoneID:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640494-publicpermission",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/3746825-initwithrecordzoneid",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckshare/1640494-publicpermission",
+      "url": "/documentation/cloudkit/ckshare/3746825-initwithrecordzoneid",
       "abstract": [
         {
           "type": "text",
-          "text": "The permission for anyone with access to the share’s URL."
+          "text": "Creates a new share for the specified record zone."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithRecordZoneID:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640503-owner": {
+      "title": "owner",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640503-owner",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckshare/1640503-owner",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The participant that represents the share’s owner."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640441-currentuserparticipant": {
+      "title": "currentUserParticipant",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640441-currentuserparticipant",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckshare/1640441-currentuserparticipant",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The participant that represents the current user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640453-participants": {
+      "title": "participants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640453-participants",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckshare/1640453-participants",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array that contains the share’s participants."
         }
       ]
     },
@@ -264,63 +556,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A reference to the user who accepts a shared record."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640503-owner": {
-      "title": "owner",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640503-owner",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckshare/1640503-owner",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The participant that represents the share’s owner."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640453-participants": {
-      "title": "participants",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640453-participants",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckshare/1640453-participants",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An array that contains the share’s participants."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640441-currentuserparticipant": {
-      "title": "currentUserParticipant",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640441-currentuserparticipant",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckshare/1640441-currentuserparticipant",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The participant that represents the current user."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640465-url": {
-      "title": "URL",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640465-url",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckshare/1640465-url",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The URL for inviting participants to the share."
+          "text": "An object that describes a user’s participation in a share."
         }
       ]
     },
@@ -366,6 +602,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/cloudkit/shared_records/sharing_cloudkit_data_with_other_icloud_users": {
+      "title": "Sharing CloudKit Data with Other iCloud Users",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/shared_records/sharing_cloudkit_data_with_other_icloud_users",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/cloudkit/shared_records/sharing_cloudkit_data_with_other_icloud_users",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create and share private CloudKit data with other users by implementing the sharing UI."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/cloudkit/ckshare": {
       "title": "CKShare",
       "type": "topic",
@@ -376,35 +626,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A reference to a share record."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/share_operations": {
-      "title": "Share Operations",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/share_operations",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/cloudkit/share_operations",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Operations to communicate share information with CloudKit."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users": {
-      "title": "Sharing CloudKit Data with Other iCloud Users",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users",
-      "kind": "article",
-      "role": "sampleCode",
-      "url": "/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Create and share private CloudKit data with other users by implementing the sharing UI."
+          "text": "A specialized record type that manages a collection of shared records."
         }
       ]
     },
@@ -414,16 +636,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -452,8 +664,21 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640432-initwithcoder",
         "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640448-initwithrootrecord",
-        "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640381-initwithrootrecord"
-      ]
+        "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640381-initwithrootrecord",
+        "doc://com.apple.documentation/documentation/cloudkit/ckshare/3746825-initwithrecordzoneid"
+      ],
+      "anchor": "2557846"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Accessing the Share’s Attributes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640503-owner",
+        "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640441-currentuserparticipant",
+        "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640453-participants",
+        "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640465-url"
+      ],
+      "anchor": "3737308"
     },
     {
       "kind": "taskGroup",
@@ -463,23 +688,16 @@
         "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640443-addparticipant",
         "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640523-removeparticipant",
         "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipant"
-      ]
+      ],
+      "anchor": "3737307"
     },
     {
       "kind": "taskGroup",
-      "title": "Accessing the Participants",
+      "title": "Accessing Metadata",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640503-owner",
-        "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640453-participants",
-        "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640441-currentuserparticipant"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Accessing the URL",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640465-url"
-      ]
+        "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata"
+      ],
+      "anchor": "3737306"
     },
     {
       "kind": "taskGroup",
@@ -488,16 +706,18 @@
         "doc://com.apple.documentation/documentation/cloudkit/cksharetypekey",
         "doc://com.apple.documentation/documentation/cloudkit/cksharetitlekey",
         "doc://com.apple.documentation/documentation/cloudkit/cksharethumbnailimagedatakey"
-      ]
+      ],
+      "anchor": "3693885"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/cloudkit/share_operations",
-        "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users"
+        "doc://com.apple.documentation/documentation/cloudkit/shared_records/sharing_cloudkit_data_with_other_icloud_users",
+        "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontroller",
+        "doc://com.apple.documentation/documentation/bundleresources/information_property_list/cksharingsupported"
       ],
-      "title": "Shared Content",
+      "title": "Collaboration",
       "generated": true
     }
   ],
@@ -535,6 +755,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -542,10 +763,376 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A share is a specialized record type that facilitates the sharing of one or more records with many participants. You store shareable records in a custom record zone in the user’s private database. As you create records in that zone, they become eligible for record zone sharing. If you want to share a specific hierarchy of related records, rather than the entire record zone, set each record’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640527-parent"
+            },
+            {
+              "type": "text",
+              "text": " property to define the relationship with its parent. CloudKit infers the shared hierarchy using only the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640527-parent"
+            },
+            {
+              "type": "text",
+              "text": " property, and ignores any custom reference fields."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You create a share with either the ID of the record zone to share, or the root record, which defines the point in a record hierarchy where you want to start sharing. CloudKit shares all the records in the record zone, or every record in the hierarchy below the root. If you set the root record’s "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640527-parent"
+            },
+            {
+              "type": "text",
+              "text": " property, CloudKit ignores it. A record can take part in only a single share. This applies to every record in the shared record zone or hierarchy. If a record is participating in another share, any attempt to save the share fails, and CloudKit returns an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerror/2325196-alreadyshared"
+            },
+            {
+              "type": "text",
+              "text": " error."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation"
+            },
+            {
+              "type": "text",
+              "text": " to save the share to the server. The initial set of records the share includes must exist on the server or be part of the same save operation to succeed. CloudKit then updates the share’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640465-url"
+            },
+            {
+              "type": "text",
+              "text": " property. Use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontroller"
+            },
+            {
+              "type": "text",
+              "text": " to present options to the user for sharing the URL. Otherwise, distribute the URL to any participants you add to the share. You can allow anyone with the URL to take part in the share by setting "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640494-publicpermission"
+            },
+            {
+              "type": "text",
+              "text": " to a value more permissive than "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipantpermission/ckshareparticipantpermissionnone"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "You must add the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/cksharingsupported"
+                },
+                {
+                  "type": "text",
+                  "text": " key to your app’s "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "Info.plist"
+                },
+                {
+                  "type": "text",
+                  "text": " file with a value of "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "true"
+                },
+                {
+                  "type": "text",
+                  "text": ". This allows the system to launch your app when a user taps or clicks the URL."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After CloudKit saves the share, a participant can fetch its corresponding metadata, which includes a reference to the share, information about the user’s participation, and, for shared hierarchies, the root record’s record ID. Create an instance of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation"
+            },
+            {
+              "type": "text",
+              "text": " using the share’s URL and add it to the container’s queue to execute it. The operation returns an instance of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata"
+            },
+            {
+              "type": "text",
+              "text": " for each URL you provide. This is only applicable if you manually process share acceptance. If a user receives the share URL and taps or clicks it, CloudKit automatically processes their participation."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To determine the configuration of a fetched share, inspect the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordid/1500973-recordname"
+            },
+            {
+              "type": "text",
+              "text": " property of its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1462229-recordid"
+            },
+            {
+              "type": "text",
+              "text": ". If the value is "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordnamezonewideshare"
+            },
+            {
+              "type": "text",
+              "text": ", the share is managing a shared record zone; otherwise, it’s managing a shared record hierarchy."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let isZoneWide = (metadata.share.recordID.recordName == CKRecordNameZoneWideShare)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3783250",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "CloudKit limits the number of participants in a share to 100, and each participant must have an active iCloud account. You don’t create participants. Instead, use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontroller"
+            },
+            {
+              "type": "text",
+              "text": " to manage a share’s participants and their permissions. Alternatively, create an instance of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo"
+            },
+            {
+              "type": "text",
+              "text": " for each user. Provide the user’s email address or phone number, and use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchshareparticipantsoperation"
+            },
+            {
+              "type": "text",
+              "text": " to fetch the corresponding participants. CloudKit queries iCloud for corresponding accounts as part of the operation. If it doesn’t find an account, the server updates the participant’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipant/1640488-useridentity"
+            },
+            {
+              "type": "text",
+              "text": " to reflect that by setting the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckuseridentity/1640513-hasicloudaccount"
+            },
+            {
+              "type": "text",
+              "text": " property to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+            },
+            {
+              "type": "text",
+              "text": ". CloudKit associates the participant with their iCloud account when they accept the share if they launch the process by tapping or clicking the share URL."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Participants with write permissions can modify or delete any record that you include in the share. However, only the owner can delete a shared hierarchy’s root record. If a participant attempts to delete the share, CloudKit removes the participant. The share remains active for all other participants. If the owner deletes a share that manages a record hierarchy, CloudKit sets the root record’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640378-share"
+            },
+            {
+              "type": "text",
+              "text": " property to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nil-2gl"
+            },
+            {
+              "type": "text",
+              "text": ". CloudKit deletes the share if the owner of the shared heirarchy deletes its root record."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can customize the title and image the system displays when initiating a share or accepting an invitation to participate. You can also provide a custom UTI to indicate the content of the shared records. Use the keys that "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/systemfieldkey"
+            },
+            {
+              "type": "text",
+              "text": " defines, as the following example shows:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let share = CKShare(rootRecord: album)",
+            "",
+            "// Configure the share so the system displays the album's ",
+            "// name and cover when the user initiates sharing or accepts ",
+            "// an invitation to participate.",
+            "share[CKShare.SystemFieldKey.title] = album[\"name\"]",
+            "if let cover = album[\"cover\"] as? UIImage, let data = cover.pngData() {",
+            "    share[CKShare.SystemFieldKey.thumbnailImageData] = data",
+            "}",
+            "// Include a custom UTI that describes the share's content.",
+            "share[CKShare.SystemFieldKey.shareType] = \"com.example.app.album\""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3737448",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

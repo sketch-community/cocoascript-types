@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns a Boolean value indicating whether the specified object matches the conditions specified by the predicate."
+      "text": "Returns a Boolean value that indicates whether the specified object matches the conditions that the predicate specifies."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSPredicate(im)evaluateWithObject:",
+    "parent": {
+      "title": "NSPredicate"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,7 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A definition of logical conditions used to constrain a search either for a fetch or for in-memory filtering."
+          "text": "A definition of logical conditions for constraining a search for a fetch or for in-memory filtering."
         }
       ]
     },
@@ -146,7 +154,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the specified object matches the conditions specified by the predicate."
+          "text": "Returns a Boolean value that indicates whether the specified object matches the conditions that the predicate specifies."
         }
       ],
       "fragments": [
@@ -170,7 +178,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the specified object matches the conditions specified by the predicate after substituting in the values in a given variables dictionary."
+          "text": "Returns a Boolean value that indicates whether the specified object matches the conditions that the predicate specifies after substituting in the values from a specified variables dictionary."
         }
       ],
       "fragments": [
@@ -194,7 +202,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Forces a predicate that was securely decoded to allow evaluation."
+          "text": "Forces a securely decoded predicate to allow evaluation."
         }
       ],
       "fragments": [
@@ -274,6 +282,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -348,7 +357,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

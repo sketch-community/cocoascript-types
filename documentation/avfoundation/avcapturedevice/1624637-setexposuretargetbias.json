@@ -35,20 +35,28 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "introducedAt": "14.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVCaptureDevice(im)setExposureTargetBias:completionHandler:",
+    "parent": {
+      "title": "AVCaptureDevice"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -217,7 +225,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The metered exposure level's offset from the target exposure value, in EV units."
+          "text": "The metered exposure level’s offset from the target exposure value, in EV units."
         }
       ]
     },
@@ -426,6 +434,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -477,7 +486,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The block receives a timestamp that matches that of the first buffer to which the setting has been applied. The timestamp is synchronized to the device clock, and thus must be converted to the master clock before comparison with the timestamps of buffers delivered via an "
+                  "text": "The block receives a timestamp that matches that of the first buffer to which the setting has been applied. The timestamp is synchronized to the device clock, and thus must be converted to the system clock before comparison with the timestamps of buffers delivered via an "
                 },
                 {
                   "type": "reference",
@@ -587,7 +596,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

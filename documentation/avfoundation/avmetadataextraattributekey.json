@@ -2,18 +2,12 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A value that defines extra attribute keys."
+      "text": "A structure that defines keys for extra metadata attributes."
     }
   ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/avfoundation",
-        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem"
-      ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/avfoundation",
@@ -41,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@AVMetadataExtraAttributeKey",
     "symbolKind": "tdef"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -112,14 +111,6 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem": {
-      "title": "AVMutableMetadataItem",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem",
-      "url": "/documentation/avfoundation/avmutablemetadataitem",
-      "type": "topic",
-      "kind": "symbol",
-      "role": "symbol"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem": {
       "title": "AVMetadataItem",
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem",
@@ -136,6 +127,20 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataextraattributevalueurikey": {
+      "title": "AVMetadataExtraAttributeValueURIKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataextraattributevalueurikey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataextraattributevalueurikey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that identifies a resource to use as the item’s value."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataextraattributebaseurikey": {
       "title": "AVMetadataExtraAttributeBaseURIKey",
       "type": "topic",
@@ -146,7 +151,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A key identifying the base URI against which other URIs related to the item are resolved."
+          "text": "A key that identifies the base URI the item uses to resolve its related URIs."
         }
       ]
     },
@@ -160,91 +165,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A key providing more information about the item."
+          "text": "A key that identifies more information about the item."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataextraattributevalueurikey": {
-      "title": "AVMetadataExtraAttributeValueURIKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataextraattributevalueurikey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataextraattributevalueurikey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A key identifying the resource to be used as the item's value."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1388296-value": {
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1390537-value": {
       "title": "value",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1388296-value",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1390537-value",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablemetadataitem/1388296-value",
+      "url": "/documentation/avfoundation/avmetadataitem/1390537-value",
       "abstract": [
         {
           "type": "text",
-          "text": "The value for the mutable metadata item."
+          "text": "The value of the metadata item."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1389292-locale": {
-      "title": "locale",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1389292-locale",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablemetadataitem/1389292-locale",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The locale for a mutable metadata item."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1389990-time": {
-      "title": "time",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1389990-time",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablemetadataitem/1389990-time",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The timestamp for a mutable metadata item."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1389980-duration": {
-      "title": "duration",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1389980-duration",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablemetadataitem/1389980-duration",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The duration of a mutable metadata item."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1390397-extraattributes": {
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1389570-extraattributes": {
       "title": "extraAttributes",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1390397-extraattributes",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1389570-extraattributes",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablemetadataitem/1390397-extraattributes",
+      "url": "/documentation/avfoundation/avmetadataitem/1389570-extraattributes",
       "abstract": [
         {
           "type": "text",
-          "text": "A dictionary containing the metadata item’s additional attributes."
+          "text": "A dictionary of additional attributes for a metadata item."
         }
       ]
     },
@@ -258,77 +207,125 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A value that defines extra attribute keys."
+          "text": "A structure that defines keys for extra metadata attributes."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1389471-datatype": {
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1386856-datatype": {
       "title": "dataType",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1389471-datatype",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1386856-datatype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablemetadataitem/1389471-datatype",
+      "url": "/documentation/avfoundation/avmetadataitem/1386856-datatype",
       "abstract": [
         {
           "type": "text",
-          "text": "The data type of the metadata item's value."
+          "text": "The data type of the metadata item’s value."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1386664-extendedlanguagetag": {
-      "title": "extendedLanguageTag",
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1390846-stringvalue": {
+      "title": "stringValue",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1386664-extendedlanguagetag",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1390846-stringvalue",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablemetadataitem/1386664-extendedlanguagetag",
+      "url": "/documentation/avfoundation/avmetadataitem/1390846-stringvalue",
       "abstract": [
         {
           "type": "text",
-          "text": "The IETF BCP 47 (RFC 4646) language identifier of the metadata item."
+          "text": "The value of the metadata item as a string."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1386688-identifier": {
-      "title": "identifier",
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1390681-numbervalue": {
+      "title": "numberValue",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1386688-identifier",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1390681-numbervalue",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablemetadataitem/1386688-identifier",
+      "url": "/documentation/avfoundation/avmetadataitem/1390681-numbervalue",
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates the identifier of the metadata item."
+          "text": "The value of the metadata item as a number."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier": {
-      "title": "AVMetadataIdentifier",
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1387641-datavalue": {
+      "title": "dataValue",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1387641-datavalue",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifier",
+      "url": "/documentation/avfoundation/avmetadataitem/1387641-datavalue",
       "abstract": [
         {
           "type": "text",
-          "text": "A value that defines the metadata identifiers for different file formats."
+          "text": "The value of the metadata item as a data value."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1389966-startdate": {
-      "title": "startDate",
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1385563-datevalue": {
+      "title": "dateValue",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1389966-startdate",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1385563-datevalue",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablemetadataitem/1389966-startdate",
+      "url": "/documentation/avfoundation/avmetadataitem/1385563-datevalue",
       "abstract": [
         {
           "type": "text",
-          "text": "The start date of the timed metadata."
+          "text": "The value of the metadata item as a date."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1387102-loadvaluesasynchronouslyforkeys": {
+      "title": "loadValuesAsynchronouslyForKeys:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1387102-loadvaluesasynchronouslyforkeys",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataitem/1387102-loadvaluesasynchronouslyforkeys",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the receiver to load the values of any of the specified keys that are not already loaded."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadValuesAsynchronouslyForKeys:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1388523-statusofvalueforkey": {
+      "title": "statusOfValueForKey:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1388523-statusofvalueforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataitem/1388523-statusofvalueforkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reports whether the value for a given key is immediately available without blocking."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "statusOfValueForKey:error:"
         }
       ]
     },
@@ -343,29 +340,29 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Metadata Attribute Keys",
+      "title": "Extra Attribute Keys",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataextraattributevalueurikey",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataextraattributebaseurikey",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataextraattributeinfokey",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataextraattributevalueurikey"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataextraattributeinfokey"
+      ],
+      "anchor": "2901757"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1388296-value",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1389292-locale",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1389990-time",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1389980-duration",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1390397-extraattributes",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1389471-datatype",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1386664-extendedlanguagetag",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1386688-identifier",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem/1389966-startdate"
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1390537-value",
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1389570-extraattributes",
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1386856-datatype",
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1390846-stringvalue",
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1390681-numbervalue",
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1387641-datavalue",
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1385563-datevalue",
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1387102-loadvaluesasynchronouslyforkeys",
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1388523-statusofvalueforkey"
       ],
-      "title": "Configuring Metadata Values",
+      "title": "Accessing Values",
       "generated": true
     }
   ],
@@ -407,6 +404,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -417,7 +415,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

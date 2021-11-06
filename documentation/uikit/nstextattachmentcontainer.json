@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_storage"
+        "doc://com.apple.documentation/documentation/uikit/textkit"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
@@ -42,30 +42,35 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)NSTextAttachmentContainer",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -102,10 +107,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/text_storage": {
-      "title": "Text Storage",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage",
-      "url": "/documentation/uikit/text_storage",
+    "doc://com.apple.documentation/documentation/uikit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit",
+      "url": "/documentation/uikit/textkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -144,7 +149,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The values for the attachment attributes of attributed strings and related objects."
+          "text": "The values for the attachment characteristics of attributed strings and related objects."
         }
       ]
     },
@@ -212,6 +217,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/nstextattachmentviewprovider": {
+      "title": "NSTextAttachmentViewProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextattachmentviewprovider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextattachmentviewprovider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A container object that associates a text attachment at a particular document location with a view object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextattachmentlayout": {
+      "title": "NSTextAttachmentLayout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextattachmentlayout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextattachmentlayout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of methods that define the interface to attachment objects from a text layout manager."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -244,20 +277,24 @@
       "title": "Getting the Bounds",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nstextattachmentcontainer/1508382-attachmentboundsfortextcontainer"
-      ]
+      ],
+      "anchor": "1673668"
     },
     {
       "kind": "taskGroup",
       "title": "Getting the Image",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/nstextattachmentcontainer/1508386-imageforbounds"
-      ]
+      ],
+      "anchor": "3665855"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/nstextattachment"
+        "doc://com.apple.documentation/documentation/uikit/nstextattachment",
+        "doc://com.apple.documentation/documentation/uikit/nstextattachmentviewprovider",
+        "doc://com.apple.documentation/documentation/uikit/nstextattachmentlayout"
       ],
       "title": "Attachments",
       "generated": true
@@ -287,6 +324,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -296,7 +334,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

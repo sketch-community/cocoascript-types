@@ -2,20 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A Boolean value that indicates whether the window can be hidden when its application becomes hidden (during execution of the "
-    },
-    {
-      "type": "codeVoice",
-      "code": "NSApplication"
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428733-hide"
-    },
-    {
-      "type": "text",
-      "text": " method)."
+      "text": "A Boolean value that indicates whether the window can hide when its application becomes hidden."
     }
   ],
   "documentVersion": 0,
@@ -48,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSWindow(py)canHide",
+    "parent": {
+      "title": "NSWindow"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -113,6 +103,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
     "doc://com.apple.documentation/documentation/appkit/nsapplication/1428733-hide": {
       "title": "hide:",
       "type": "topic",
@@ -131,14 +129,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/objectivec/yes": {
-      "title": "YES",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/yes"
-    },
     "doc://com.apple.documentation/documentation/objectivec/no": {
       "title": "NO",
       "type": "topic",
@@ -146,6 +136,34 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/objectivec/no"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindow/1419078-stylemask": {
+      "title": "styleMask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419078-stylemask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindow/1419078-stylemask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Flags that describe the window’s current style, such as if it’s resizable or in full-screen mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindowstylemask": {
+      "title": "NSWindowStyleMask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindowstylemask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindowstylemask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify the style of a window, and that you can combine with the C bitwise OR operator."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nswindow/1419527-togglefullscreen": {
       "title": "toggleFullScreen:",
@@ -227,6 +245,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nswindow/1419473-setdynamicdepthlimit": {
+      "title": "setDynamicDepthLimit:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419473-setdynamicdepthlimit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindow/1419473-setdynamicdepthlimit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets a Boolean value that indicates whether the window’s depth limit can change to match the depth of the screen it’s on."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setDynamicDepthLimit:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nswindow/1419725-canhide": {
       "title": "canHide",
       "type": "topic",
@@ -237,20 +279,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the window can be hidden when its application becomes hidden (during execution of the "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSApplication"
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428733-hide"
-        },
-        {
-          "type": "text",
-          "text": " method)."
+          "text": "A Boolean value that indicates whether the window can hide when its application becomes hidden."
         }
       ]
     },
@@ -458,6 +487,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nswindow/2998855-appearancesource": {
+      "title": "appearanceSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/2998855-appearancesource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindow/2998855-appearancesource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that the window inherits its appearance from."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -469,11 +512,14 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nswindow/1419078-stylemask",
+        "doc://com.apple.documentation/documentation/appkit/nswindowstylemask",
         "doc://com.apple.documentation/documentation/appkit/nswindow/1419527-togglefullscreen",
         "doc://com.apple.documentation/documentation/appkit/nswindow/1419220-workswhenmodal",
         "doc://com.apple.documentation/documentation/appkit/nswindow/1419186-alphavalue",
         "doc://com.apple.documentation/documentation/appkit/nswindow/1419751-backgroundcolor",
         "doc://com.apple.documentation/documentation/appkit/nswindow/1419569-colorspace",
+        "doc://com.apple.documentation/documentation/appkit/nswindow/1419473-setdynamicdepthlimit",
         "doc://com.apple.documentation/documentation/appkit/nswindow/1419707-onactivespace",
         "doc://com.apple.documentation/documentation/appkit/nswindow/1419777-hidesondeactivate",
         "doc://com.apple.documentation/documentation/appkit/nswindow/1419471-collectionbehavior",
@@ -484,7 +530,8 @@
         "doc://com.apple.documentation/documentation/appkit/nswindow/1419218-setautorecalculatescontentborder",
         "doc://com.apple.documentation/documentation/appkit/nswindow/1419775-contentborderthicknessforedge",
         "doc://com.apple.documentation/documentation/appkit/nswindow/1419541-setcontentborderthickness",
-        "doc://com.apple.documentation/documentation/appkit/nswindow/1419743-preventsapplicationterminationwh"
+        "doc://com.apple.documentation/documentation/appkit/nswindow/1419743-preventsapplicationterminationwh",
+        "doc://com.apple.documentation/documentation/appkit/nswindow/2998855-appearancesource"
       ],
       "title": "Configuring the Window's Appearance",
       "generated": true
@@ -553,7 +600,20 @@
             },
             {
               "type": "text",
-              "text": " if the window can be hidden when its application becomes hidden; otherwise, "
+              "text": " if the window can hide when its application becomes hidden (during execution of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSApplication"
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428733-hide"
+            },
+            {
+              "type": "text",
+              "text": " method); otherwise, "
             },
             {
               "type": "reference",
@@ -579,7 +639,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

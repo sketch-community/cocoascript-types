@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The system displays the subitems of a grouped toolbar item horizontally."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -11,9 +17,25 @@
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/mac_catalyst/toolbar",
+        "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup",
+        "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupcontrolrepresentation"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
         "doc://com.apple.documentation/documentation/uikit/mac_catalyst",
         "doc://com.apple.documentation/documentation/uikit/mac_catalyst/toolbar",
+        "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupcontrolrepresentation"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/mac_catalyst",
+        "doc://com.apple.documentation/documentation/uikit/mac_catalyst/toolbar",
+        "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup",
         "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupcontrolrepresentation"
       ]
     ]
@@ -37,20 +59,23 @@
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@E@NSToolbarItemGroupControlRepresentation@NSToolbarItemGroupControlRepresentationExpanded",
+    "parent": {
+      "title": "NSToolbarItemGroupControlRepresentation"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -107,7 +132,21 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupcontrolrepresentation",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstoolbaritemgroupcontrolrepresentation"
+      "url": "/documentation/appkit/nstoolbaritemgroupcontrolrepresentation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates the display style for a grouped toolbar item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup": {
+      "title": "NSToolbarItemGroup",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup",
+      "url": "/documentation/appkit/nstoolbaritemgroup",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/uikit": {
       "title": "UIKit",
@@ -125,6 +164,48 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupcontrolrepresentation/nstoolbaritemgroupcontrolrepresentationautomatic": {
+      "title": "NSToolbarItemGroupControlRepresentationAutomatic",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupcontrolrepresentation/nstoolbaritemgroupcontrolrepresentationautomatic",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstoolbaritemgroupcontrolrepresentation/nstoolbaritemgroupcontrolrepresentationautomatic",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The system dynamically changes the display mode based on the available space. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupcontrolrepresentation/nstoolbaritemgroupcontrolrepresentationexpanded": {
+      "title": "NSToolbarItemGroupControlRepresentationExpanded",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupcontrolrepresentation/nstoolbaritemgroupcontrolrepresentationexpanded",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstoolbaritemgroupcontrolrepresentation/nstoolbaritemgroupcontrolrepresentationexpanded",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The system displays the subitems of a grouped toolbar item horizontally."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupcontrolrepresentation/nstoolbaritemgroupcontrolrepresentationcollapsed": {
+      "title": "NSToolbarItemGroupControlRepresentationCollapsed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupcontrolrepresentation/nstoolbaritemgroupcontrolrepresentationcollapsed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstoolbaritemgroupcontrolrepresentation/nstoolbaritemgroupcontrolrepresentationcollapsed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The system displays the subitems of a grouped toolbar item as a menu."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -133,6 +214,16 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupcontrolrepresentation/nstoolbaritemgroupcontrolrepresentationautomatic",
+        "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupcontrolrepresentation/nstoolbaritemgroupcontrolrepresentationcollapsed"
+      ],
+      "title": "Configuring the Display Style",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -156,7 +247,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

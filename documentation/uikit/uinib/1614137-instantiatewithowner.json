@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Unarchives and instantiates the in-memory contents of the receiver’s nib file, creating a distinct object tree and set of top level objects."
+      "text": "Unarchives and instantiates the in-memory contents of the nib object’s nib file, creating a distinct object tree and set of top-level objects."
     }
   ],
   "documentVersion": 0,
@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UINib(im)instantiateWithOwner:options:",
+    "parent": {
+      "title": "UINib"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -106,7 +114,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that wraps, or contains, Interface Builder nib files. "
+          "text": "An object that contains Interface Builder nib files. "
         }
       ]
     },
@@ -116,14 +124,6 @@
       "title": "Resource Programming Guide",
       "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/LoadingResources/Introduction/Introduction.html#//apple_ref/doc/uid/10000051i"
     },
-    "doc://com.apple.documentation/documentation/foundation/nsdictionary": {
-      "title": "NSDictionary",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdictionary",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsdictionary"
-    },
     "doc://com.apple.documentation/documentation/foundation/nsarray": {
       "title": "NSArray",
       "type": "topic",
@@ -132,13 +132,27 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsarray"
     },
+    "doc://com.apple.documentation/documentation/foundation/nsdictionary": {
+      "title": "NSDictionary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdictionary",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdictionary"
+    },
     "doc://com.apple.documentation/documentation/uikit/uiniboptionskey": {
       "title": "UINibOptionsKey",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiniboptionskey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiniboptionskey"
+      "url": "/documentation/uikit/uiniboptionskey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options that specify how to unarchive and instantiate the nib."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/objectivec/id": {
       "title": "id",
@@ -158,7 +172,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Unarchives and instantiates the in-memory contents of the receiver’s nib file, creating a distinct object tree and set of top level objects."
+          "text": "Unarchives and instantiates the in-memory contents of the nib object’s nib file, creating a distinct object tree and set of top-level objects."
         }
       ],
       "fragments": [
@@ -169,44 +183,6 @@
         {
           "kind": "identifier",
           "text": "instantiateWithOwner:options:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uinibproxiedobjectskey": {
-      "title": "UINibProxiedObjectsKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uinibproxiedobjectskey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uinibproxiedobjectskey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "In iOS 2.x, the value for this key is a dictionary that contains the runtime replacement objects for any proxy objects used in the nib file. In this dictionary, the keys are the names associated with the proxy objects and the values are the actual objects from your code that should be used in their place. "
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uinibexternalobjects": {
-      "title": "UINibExternalObjects",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uinibexternalobjects",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uinibexternalobjects",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The replacements for any proxy objects in the nib file. The value for this key is an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsdictionary"
-        },
-        {
-          "type": "text",
-          "text": " object. The keys of the dictionary are the names of any proxy objects in the nib file, and the value for each key is the actual object to use in place of the proxy."
         }
       ]
     },
@@ -221,8 +197,6 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uinibproxiedobjectskey",
-        "doc://com.apple.documentation/documentation/uikit/uinibexternalobjects",
         "doc://com.apple.documentation/documentation/uikit/uiniboptionskey"
       ],
       "title": "Retrieving Objects from the Nib File",
@@ -333,6 +307,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -459,7 +434,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

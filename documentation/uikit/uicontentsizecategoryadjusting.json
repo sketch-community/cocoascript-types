@@ -10,7 +10,9 @@
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/uikit"
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+        "doc://com.apple.documentation/documentation/uikit/uiapplication"
       ]
     ]
   },
@@ -33,25 +35,30 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UIContentSizeCategoryAdjusting",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -85,6 +92,22 @@
       "type": "topic",
       "kind": "symbol",
       "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment": {
+      "title": "App and Environment",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+      "url": "/documentation/uikit/app_and_environment",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication": {
+      "title": "UIApplication",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication",
+      "url": "/documentation/uikit/uiapplication",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject": {
       "title": "NSObject",
@@ -133,6 +156,76 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory": {
+      "title": "preferredContentSizeCategory",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The font sizing option preferred by the user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicontentsizecategory": {
+      "title": "UIContentSizeCategory",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontentsizecategory",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicontentsizecategory",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that indicate the preferred size of your content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryadjusting": {
+      "title": "UIContentSizeCategoryAdjusting",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryadjusting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicontentsizecategoryadjusting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A collection of methods that give controls an easy way to adopt automatic adjustment to content category changes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorydidchangenotification": {
+      "title": "UIContentSizeCategoryDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorydidchangenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicontentsizecategorydidchangenotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that posts when the user changes the preferred content size setting. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorynewvaluekey": {
+      "title": "UIContentSizeCategoryNewValueKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorynewvaluekey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicontentsizecategorynewvaluekey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that reflects the new preferred content size."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -167,7 +260,20 @@
       "title": "Adjusting the Size of Fonts",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryadjusting/1771731-adjustsfontforcontentsizecategor"
-      ]
+      ],
+      "anchor": "2920358"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory",
+        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategory",
+        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorydidchangenotification",
+        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategorynewvaluekey"
+      ],
+      "title": "Getting the Font Sizing Preference",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -194,6 +300,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -202,7 +309,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

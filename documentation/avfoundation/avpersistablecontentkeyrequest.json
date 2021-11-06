@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "10.3",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.3",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.3",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVPersistableContentKeyRequest",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -153,7 +158,49 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to create and track decryption keys for media data."
+          "text": "An object that creates and tracks decryption keys for media data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessiondelegate": {
+      "title": "AVContentKeySessionDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessiondelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeysessiondelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that handles content key requests."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkey": {
+      "title": "AVContentKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that represents the content key decryptor."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyspecifier": {
+      "title": "AVContentKeySpecifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyspecifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeyspecifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that uniquely identifies a content key."
         }
       ]
     },
@@ -185,6 +232,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/3726110-avsamplebufferattachcontentkey": {
+      "title": "AVSampleBufferAttachContentKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/3726110-avsamplebufferattachcontentkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/3726110-avsamplebufferattachcontentkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Attaches a content key to a sample buffer for the purpose of content decryption."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -209,15 +270,20 @@
       "title": "Requesting Persistable Content Key Data",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avpersistablecontentkeyrequest/2799188-persistablecontentkeyfromkeyvend"
-      ]
+      ],
+      "anchor": "2922836"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessiondelegate",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkey",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyspecifier",
         "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequest",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyresponse"
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyresponse",
+        "doc://com.apple.documentation/documentation/avfoundation/3726110-avsamplebufferattachcontentkey"
       ],
       "title": "FairPlay Streaming",
       "generated": true
@@ -257,6 +323,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -287,7 +354,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

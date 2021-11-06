@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates a standard checkbox with the title you specify."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSButton(cm)checkboxWithTitle:target:action:",
+    "parent": {
+      "title": "NSButton"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -90,7 +99,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A control that defines an area on the screen that can be used to trigger actions. "
+          "text": "A control that defines an area on the screen that a user clicks to trigger an action."
         }
       ]
     },
@@ -109,6 +118,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nsbutton/1644525-checkboxwithtitle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a standard checkbox with the title you specify."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -127,6 +142,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nsbutton/1644659-buttonwithimage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a standard push button with the image you specify."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -145,6 +166,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nsbutton/1644340-radiobuttonwithtitle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a standard radio button with the title you specify."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -163,6 +190,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nsbutton/1644719-buttonwithtitle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a standard push button with a title and image."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -181,6 +214,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nsbutton/1644256-buttonwithtitle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a standard push button with the title you specify."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -317,10 +356,60 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "title",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The localized title string to display on the button."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "target",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The target object that receives action messages from the button."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "action",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The action message the button sends to the target."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

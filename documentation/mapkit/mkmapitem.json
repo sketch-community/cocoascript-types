@@ -33,35 +33,40 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.2",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)MKMapItem",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -303,6 +308,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/mapkit/mkmapitem/3395860-openmapswithitems",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Opens the Maps app from a particular scene using the specified map items and options."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -345,6 +356,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/mapkit/mkmapitem/3395859-openinmapswithlaunchoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Opens the Maps app from a particular scene using the specified options."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -407,6 +424,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/mapkit/enabling_maps_capability_in_xcode": {
+      "title": "Enabling Maps Capability in Xcode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/enabling_maps_capability_in_xcode",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/mapkit/enabling_maps_capability_in_xcode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configure your routing app to support providing directions."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/mapkit/mkmapview": {
       "title": "MKMapView",
       "type": "topic",
@@ -417,7 +448,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An embeddable map interface, similar to the one provided by the Maps application.  "
+          "text": "An embeddable map interface, similar to the one that the Maps app provides."
         }
       ]
     },
@@ -427,16 +458,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -456,7 +477,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452002-mapitemforcurrentlocation",
         "doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452285-initwithplacemark"
-      ]
+      ],
+      "anchor": "1657942"
     },
     {
       "kind": "taskGroup",
@@ -469,7 +491,8 @@
         "doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452088-phonenumber",
         "doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452746-url",
         "doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452431-timezone"
-      ]
+      ],
+      "anchor": "1657975"
     },
     {
       "kind": "taskGroup",
@@ -479,14 +502,16 @@
         "doc://com.apple.documentation/documentation/mapkit/mkmapitem/3395860-openmapswithitems",
         "doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452239-openinmapswithlaunchoptions",
         "doc://com.apple.documentation/documentation/mapkit/mkmapitem/3395859-openinmapswithlaunchoptions"
-      ]
+      ],
+      "anchor": "1658055"
     },
     {
       "kind": "taskGroup",
       "title": "Serializing a Map Item",
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkmapitemtypeidentifier"
-      ]
+      ],
+      "anchor": "3020302"
     },
     {
       "kind": "taskGroup",
@@ -494,12 +519,14 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkmapitem/launch_options_dictionary_keys",
         "doc://com.apple.documentation/documentation/mapkit/mkmapitem/directions_mode_values"
-      ]
+      ],
+      "anchor": "1674537"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkit/enabling_maps_capability_in_xcode",
         "doc://com.apple.documentation/documentation/mapkit/mkmapview"
       ],
       "title": "Essentials",
@@ -540,6 +567,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -659,7 +687,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

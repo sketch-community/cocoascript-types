@@ -35,22 +35,28 @@
       {
         "name": "iOS",
         "introducedAt": "14.3",
-        "current": "14.3",
-        "beta": true
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.3",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.3",
-        "current": "14.3",
-        "beta": true
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVCapturePhotoOutput(cm)isAppleProRAWPixelFormat:",
+    "parent": {
+      "title": "AVCapturePhotoOutput"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -103,7 +109,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A capture output for still image, Live Photo, and other photography workflows."
+          "text": "A capture output for still image, Live Photos, and other photography workflows."
         }
       ]
     },
@@ -221,8 +227,7 @@
           "kind": "identifier",
           "text": "isAppleProRAWPixelFormat:"
         }
-      ],
-      "beta": true
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/3697091-isbayerrawpixelformat": {
       "title": "isBayerRAWPixelFormat:",
@@ -246,8 +251,7 @@
           "kind": "identifier",
           "text": "isBayerRAWPixelFormat:"
         }
-      ],
-      "beta": true
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -255,24 +259,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "minor": {
-      "change": "added",
-      "platform": "Xcode",
-      "versions": [
-        "12.1.1 Release Candidate",
-        "12.3 Release Candidate"
-      ]
-    },
-    "major": {
-      "change": "added",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "seeAlsoSections": [
@@ -337,6 +323,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -400,7 +387,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

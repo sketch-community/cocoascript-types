@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates a new window to show as a tab in a tabbed window."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSResponder(im)newWindowForTab:",
+    "parent": {
+      "title": "NSResponder"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -90,7 +99,55 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An abstract class that forms the basis of event and command processing in AppKit. "
+          "text": "An abstract class that forms the basis of event and command processing in AppKit."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller": {
+      "title": "NSDocumentController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsdocumentcontroller"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindow": {
+      "title": "NSWindow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindow"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsapplication": {
+      "title": "NSApplication",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsapplication"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsresponder/1644675-newwindowfortab": {
+      "title": "newWindowForTab:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/1644675-newwindowfortab",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsresponder/1644675-newwindowfortab",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new window to show as a tab in a tabbed window."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "newWindowForTab:"
         }
       ]
     },
@@ -153,10 +210,127 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "sender",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The sender of the action."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The system automatically calls this method to create a window for a new tab when the user clicks the plus button in a tabbed window. The system shows a plus button on a tabbed window only if this method exists on one of the following objects:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In an "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller"
+                    },
+                    {
+                      "type": "text",
+                      "text": " subclass"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In the responder chain starting at "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", such as "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", the window delegate, the window controller, the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication"
+                    },
+                    {
+                      "type": "text",
+                      "text": " delegate, and so on"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

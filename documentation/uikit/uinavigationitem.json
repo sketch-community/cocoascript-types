@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UINavigationItem",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -549,7 +554,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The appearance settings for a compact-height navigation bar. "
+          "text": "The appearance settings for a compact-height navigation bar."
         }
       ]
     },
@@ -563,7 +568,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The appearance settings to use when the edge of any scrollable content reaches the matching edge of the navigation bar."
+          "text": "The appearance settings for a standard-height navigation bar when the edge of scrollable content aligns with the edge of the navigation bar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uinavigationitem/3750866-compactscrolledgeappearance": {
+      "title": "compactScrollEdgeAppearance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uinavigationitem/3750866-compactscrolledgeappearance",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uinavigationitem/3750866-compactscrolledgeappearance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The appearance settings for a compact-height navigation bar when the edge of scrollable content aligns with the edge of the navigation bar."
         }
       ]
     },
@@ -675,7 +694,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An item in a tab bar."
+          "text": "An object that describes an item in a tab bar."
         }
       ]
     },
@@ -699,16 +718,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -736,7 +745,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uinavigationitem/1624943-initwithtitle",
         "doc://com.apple.documentation/documentation/uikit/uinavigationitem/1624950-initwithcoder"
-      ]
+      ],
+      "anchor": "1654125"
     },
     {
       "kind": "taskGroup",
@@ -745,7 +755,8 @@
         "doc://com.apple.documentation/documentation/uikit/uinavigationitem/1624965-title",
         "doc://com.apple.documentation/documentation/uikit/uinavigationitem/2909056-largetitledisplaymode",
         "doc://com.apple.documentation/documentation/uikit/uinavigationitemlargetitledisplaymode"
-      ]
+      ],
+      "anchor": "2910964"
     },
     {
       "kind": "taskGroup",
@@ -757,7 +768,8 @@
         "doc://com.apple.documentation/documentation/uikit/uinavigationitembackbuttondisplaymode",
         "doc://com.apple.documentation/documentation/uikit/uinavigationitem/1624947-hidesbackbutton",
         "doc://com.apple.documentation/documentation/uikit/uinavigationitem/1624934-sethidesbackbutton"
-      ]
+      ],
+      "anchor": "3671160"
     },
     {
       "kind": "taskGroup",
@@ -765,7 +777,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uinavigationitem/1624930-prompt",
         "doc://com.apple.documentation/documentation/uikit/uinavigationitem/1624933-leftitemssupplementbackbutton"
-      ]
+      ],
+      "anchor": "1654150"
     },
     {
       "kind": "taskGroup",
@@ -780,7 +793,8 @@
         "doc://com.apple.documentation/documentation/uikit/uinavigationitem/1624954-setleftbarbuttonitem",
         "doc://com.apple.documentation/documentation/uikit/uinavigationitem/1624939-setrightbarbuttonitems",
         "doc://com.apple.documentation/documentation/uikit/uinavigationitem/1624929-setrightbarbuttonitem"
-      ]
+      ],
+      "anchor": "1654246"
     },
     {
       "kind": "taskGroup",
@@ -788,8 +802,10 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uinavigationitem/3198042-standardappearance",
         "doc://com.apple.documentation/documentation/uikit/uinavigationitem/3198040-compactappearance",
-        "doc://com.apple.documentation/documentation/uikit/uinavigationitem/3198041-scrolledgeappearance"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uinavigationitem/3198041-scrolledgeappearance",
+        "doc://com.apple.documentation/documentation/uikit/uinavigationitem/3750866-compactscrolledgeappearance"
+      ],
+      "anchor": "3282996"
     },
     {
       "kind": "taskGroup",
@@ -797,7 +813,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uinavigationitem/2897305-searchcontroller",
         "doc://com.apple.documentation/documentation/uikit/uinavigationitem/2897296-hidessearchbarwhenscrolling"
-      ]
+      ],
+      "anchor": "2902112"
     }
   ],
   "seeAlsoSections": [
@@ -850,6 +867,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -959,7 +977,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

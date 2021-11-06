@@ -34,20 +34,25 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIDatePicker",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -506,6 +511,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uidatepicker/3791478-roundstominuteinterval": {
+      "title": "roundsToMinuteInterval",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidatepicker/3791478-roundstominuteinterval",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidatepicker/3791478-roundstominuteinterval"
+    },
     "doc://com.apple.documentation/documentation/uikit/uibutton": {
       "title": "UIButton",
       "type": "topic",
@@ -612,16 +625,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -650,7 +653,8 @@
         "doc://com.apple.documentation/documentation/uikit/uidatepicker/1615995-locale",
         "doc://com.apple.documentation/documentation/uikit/uidatepicker/1615971-setdate",
         "doc://com.apple.documentation/documentation/uikit/uidatepicker/1615976-timezone"
-      ]
+      ],
+      "anchor": "1658482"
     },
     {
       "kind": "taskGroup",
@@ -658,7 +662,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uidatepicker/1615997-datepickermode",
         "doc://com.apple.documentation/documentation/uikit/uidatepickermode"
-      ]
+      ],
+      "anchor": "1658563"
     },
     {
       "kind": "taskGroup",
@@ -667,7 +672,8 @@
         "doc://com.apple.documentation/documentation/uikit/uidatepicker/3526123-datepickerstyle",
         "doc://com.apple.documentation/documentation/uikit/uidatepicker/3526124-preferreddatepickerstyle",
         "doc://com.apple.documentation/documentation/uikit/uidatepickerstyle"
-      ]
+      ],
+      "anchor": "3590959"
     },
     {
       "kind": "taskGroup",
@@ -677,7 +683,16 @@
         "doc://com.apple.documentation/documentation/uikit/uidatepicker/1615980-minimumdate",
         "doc://com.apple.documentation/documentation/uikit/uidatepicker/1615998-minuteinterval",
         "doc://com.apple.documentation/documentation/uikit/uidatepicker/1615986-countdownduration"
-      ]
+      ],
+      "anchor": "1658592"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uidatepicker/3791478-roundstominuteinterval"
+      ],
+      "anchor": "3792681"
     }
   ],
   "seeAlsoSections": [
@@ -730,6 +745,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -1773,7 +1789,7 @@
         {
           "type": "codeListing",
           "code": [
-            "\"2 o'clock. Picker item. Adjustable. Swipe up or down with one finger to adjust the value.__\"__"
+            "\"2 o'clock. Picker item. Adjustable. Swipe up or down with one finger to adjust the value.\""
           ],
           "syntax": "occ",
           "metadata": {
@@ -1803,7 +1819,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

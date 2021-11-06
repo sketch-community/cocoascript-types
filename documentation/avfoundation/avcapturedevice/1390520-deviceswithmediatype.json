@@ -36,30 +36,40 @@
         "name": "iOS",
         "introducedAt": "4.0",
         "deprecatedAt": "10.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "deprecatedAt": "10.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
         "deprecatedAt": "10.15",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)AVCaptureDevice(cm)devicesWithMediaType:",
+    "parent": {
+      "title": "AVCaptureDevice"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -230,7 +240,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants to specify the position of a capture device."
+          "text": "Constants that indicate the physical position of a capture device."
         }
       ]
     },
@@ -258,7 +268,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when a new device becomes available."
+          "text": "A notification the system posts when a new capture device becomes available."
         }
       ]
     },
@@ -272,7 +282,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when an existing device becomes unavailable."
+          "text": "A notification the system posts when an existing device becomes unavailable."
         }
       ]
     },
@@ -437,6 +447,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -513,7 +524,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

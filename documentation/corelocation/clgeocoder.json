@@ -33,35 +33,40 @@
       {
         "name": "iOS",
         "introducedAt": "5.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.8",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CLGeocoder",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -432,7 +437,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/corelocation/clgeocoder/2908779-reversegeocodelocation",
         "doc://com.apple.documentation/documentation/corelocation/clgeocoder/1423621-reversegeocodelocation"
-      ]
+      ],
+      "anchor": "1669633"
     },
     {
       "kind": "taskGroup",
@@ -444,7 +450,8 @@
         "doc://com.apple.documentation/documentation/corelocation/clgeocoder/2890752-geocodepostaladdress",
         "doc://com.apple.documentation/documentation/corelocation/clgeocoder/2890750-geocodepostaladdress",
         "doc://com.apple.documentation/documentation/corelocation/clgeocoder/1423693-geocodeaddressdictionary"
-      ]
+      ],
+      "anchor": "1669652"
     },
     {
       "kind": "taskGroup",
@@ -452,14 +459,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/corelocation/clgeocoder/1423562-cancelgeocode",
         "doc://com.apple.documentation/documentation/corelocation/clgeocoder/1423765-geocoding"
-      ]
+      ],
+      "anchor": "1669697"
     },
     {
       "kind": "taskGroup",
       "title": "Processing Requests",
       "identifiers": [
         "doc://com.apple.documentation/documentation/corelocation/clgeocodecompletionhandler"
-      ]
+      ],
+      "anchor": "1676610"
     }
   ],
   "seeAlsoSections": [
@@ -506,6 +515,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -537,7 +547,7 @@
             },
             {
               "type": "text",
-              "text": " class provides services for converting between a coordinate (specified as a latitude and longitude) and the user-friendly representation of that coordinate. A user-friendly representation of the coordinate typically consists of the street, city, state, and country information corresponding to the given location, but it may also contain a relevant point of interest, landmarks, or other identifying information. A geocoder object is a single-shot object that works with a network-based service to look up placemark information for its specified coordinate value."
+              "text": " class provides services for converting between a coordinate (specified as a latitude and longitude) and the user-friendly representation of that coordinate. A user-friendly representation of the coordinate typically consists of the street, city, state, and country or region information corresponding to the given location, but it may also contain a relevant point of interest, landmarks, or other identifying information. A geocoder object is a single-shot object that works with a network-based service to look up placemark information for its specified coordinate value."
             }
           ]
         },
@@ -680,7 +690,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The computer or device must have access to the network in order for the geocoder object to return detailed placemark information. Although, the geocoder stores enough information locally to report the localized country name and ISO country code for many locations. If country information is not available for a specific location, the geocoder may still report an error to your completion block."
+              "text": "The computer or device must have access to the network in order for the geocoder object to return detailed placemark information. Although, the geocoder stores enough information locally to report the localized country or region name and ISO country code for many locations. If this information isn’t available for a specific location, the geocoder may still report an error to your completion block."
             }
           ]
         },
@@ -706,7 +716,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

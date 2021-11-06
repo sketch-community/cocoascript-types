@@ -33,35 +33,40 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSFetchRequest",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -332,6 +337,14 @@
       "role": "symbol",
       "url": "/documentation/foundation/nscoding"
     },
+    "doc://com.apple.documentation/documentation/foundation/nscopying": {
+      "title": "NSCopying",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscopying",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscopying"
+    },
     "doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1563437-fetchrequestwithentityname": {
       "title": "fetchRequestWithEntityName:",
       "type": "topic",
@@ -498,7 +511,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A special property description type intended for use with a fetch request."
+          "text": "An object that describes an expression to include with a fetch request."
         }
       ]
     },
@@ -697,16 +710,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -721,7 +724,8 @@
       "title": "Conforms To",
       "type": "conformsTo",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nscoding"
+        "doc://com.apple.documentation/documentation/foundation/nscoding",
+        "doc://com.apple.documentation/documentation/foundation/nscopying"
       ]
     }
   ],
@@ -737,7 +741,8 @@
         "doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506979-entity",
         "doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506366-includessubentities",
         "doc://com.apple.documentation/documentation/coredata/nsfetchrequestresulttype"
-      ]
+      ],
+      "anchor": "1651162"
     },
     {
       "kind": "taskGroup",
@@ -751,21 +756,24 @@
         "doc://com.apple.documentation/documentation/coredata/nsfetchrequestexpression",
         "doc://com.apple.documentation/documentation/coredata/nsexpressiondescription",
         "doc://com.apple.documentation/documentation/coredata/nsfetchedpropertydescription"
-      ]
+      ],
+      "anchor": "1651237"
     },
     {
       "kind": "taskGroup",
       "title": "Sorting the Results",
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506262-sortdescriptors"
-      ]
+      ],
+      "anchor": "1651327"
     },
     {
       "kind": "taskGroup",
       "title": "Prefetching Related Objects",
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506813-relationshipkeypathsforprefetchi"
-      ]
+      ],
+      "anchor": "1651354"
     },
     {
       "kind": "taskGroup",
@@ -780,7 +788,8 @@
         "doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506756-returnsobjectsasfaults",
         "doc://com.apple.documentation/documentation/coredata/nsfetchrequestresulttype",
         "doc://com.apple.documentation/documentation/coredata/nsfetchrequestresult"
-      ]
+      ],
+      "anchor": "1651390"
     },
     {
       "kind": "taskGroup",
@@ -788,14 +797,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506191-propertiestogroupby",
         "doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506429-havingpredicate"
-      ]
+      ],
+      "anchor": "1651496"
     },
     {
       "kind": "taskGroup",
       "title": "Executing a Fetch Request Directly",
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1640594-execute"
-      ]
+      ],
+      "anchor": "2558441"
     }
   ],
   "seeAlsoSections": [
@@ -851,6 +862,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1273,7 +1285,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.6",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSOrthography",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -397,7 +402,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a localized version of a string."
+          "text": "Returns a localized version of a string from the default table, which Xcode autogenerates when exporting localizations."
         }
       ]
     },
@@ -411,7 +416,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a localized version of a string from the specified table."
+          "text": "Returns a localized version of a string from the table that you specify, which Xcode autogenerates when exporting localizations."
         }
       ]
     },
@@ -425,7 +430,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a localized version of a string from the specified table in the given bundle."
+          "text": "Returns a localized version of a string from the table and bundle that you specify, which Xcode autogenerates when exporting localizations."
         }
       ]
     },
@@ -439,7 +444,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a localized version of a string from the specified table in the given bundle while falling back on the given default value."
+          "text": "Returns a localized version of a string identified by a key in the table that you specify, which Xcode autogenerates when exporting localizations."
         }
       ]
     },
@@ -478,7 +483,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsorthography/2875843-defaultorthographyforlanguage",
         "doc://com.apple.documentation/documentation/foundation/nsorthography/1408708-initwithdominantscript",
         "doc://com.apple.documentation/documentation/foundation/nsorthography/1585529-orthographywithdominantscript"
-      ]
+      ],
+      "anchor": "1661121"
     },
     {
       "kind": "taskGroup",
@@ -491,14 +497,16 @@
         "doc://com.apple.documentation/documentation/foundation/nsorthography/1412606-languagesforscript",
         "doc://com.apple.documentation/documentation/foundation/nsorthography/1410722-allscripts",
         "doc://com.apple.documentation/documentation/foundation/nsorthography/1416205-alllanguages"
-      ]
+      ],
+      "anchor": "2929178"
     },
     {
       "kind": "taskGroup",
       "title": "Initializers",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsorthography/1408410-initwithcoder"
-      ]
+      ],
+      "anchor": "2957473"
     }
   ],
   "seeAlsoSections": [
@@ -548,6 +556,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -764,7 +773,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

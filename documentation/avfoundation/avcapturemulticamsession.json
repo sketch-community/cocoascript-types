@@ -34,20 +34,25 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "introducedAt": "14.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVCaptureMultiCamSession",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -176,6 +181,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avkit/accessing_the_camera_while_multitasking": {
+      "title": "Accessing the Camera While Multitasking",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avkit/accessing_the_camera_while_multitasking",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avkit/accessing_the_camera_while_multitasking",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Operate the camera in Split View, Slide Over, or Picture in Picture mode."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app": {
       "title": "AVCam: Building a Camera App",
       "type": "topic",
@@ -201,6 +220,20 @@
         {
           "type": "text",
           "text": "Simultaneously record the output from the front and back cameras into a single movie file by using a multi-camera capture session."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcambarcode_detecting_barcodes_and_faces": {
+      "title": "AVCamBarcode: Detecting Barcodes and Faces",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcambarcode_detecting_barcodes_and_faces",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcambarcode_detecting_barcodes_and_faces",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identify machine readable codes or faces by using the camera."
         }
       ]
     },
@@ -242,7 +275,8 @@
       "title": "Determining Multi-Camera Support",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturemulticamsession/3183002-multicamsupported"
-      ]
+      ],
+      "anchor": "3197349"
     },
     {
       "kind": "taskGroup",
@@ -250,15 +284,18 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturemulticamsession/3153017-hardwarecost",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturemulticamsession/3153019-systempressurecost"
-      ]
+      ],
+      "anchor": "3153356"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/setting_up_a_capture_session",
+        "doc://com.apple.documentation/documentation/avkit/accessing_the_camera_while_multitasking",
         "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app",
         "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avmulticampip_capturing_from_multiple_cameras",
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcambarcode_detecting_barcodes_and_faces",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturesession"
       ],
       "title": "Capture Sessions",
@@ -299,6 +336,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -382,7 +420,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

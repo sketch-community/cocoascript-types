@@ -36,8 +36,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -182,7 +182,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupcontrolrepresentation",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstoolbaritemgroupcontrolrepresentation"
+      "url": "/documentation/appkit/nstoolbaritemgroupcontrolrepresentation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates the display style for a grouped toolbar item."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupselectionmode": {
       "title": "NSToolbarItemGroupSelectionMode",
@@ -190,7 +196,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupselectionmode",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstoolbaritemgroupselectionmode"
+      "url": "/documentation/appkit/nstoolbaritemgroupselectionmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates how a grouped toolbar item selects its subitems."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsmenutoolbaritem": {
       "title": "NSMenuToolbarItem",
@@ -198,7 +210,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsmenutoolbaritem",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsmenutoolbaritem"
+      "url": "/documentation/appkit/nsmenutoolbaritem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A control that presents a menu in a window’s toolbar."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nssearchtoolbaritem": {
       "title": "NSSearchToolbarItem",
@@ -210,7 +228,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A toolbar item that contains a text field optimized for performing text-based searches."
+          "text": "A toolbar item that contains a search field optimized for performing text-based searches."
         }
       ]
     },
@@ -252,7 +270,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A control that defines an area on the screen that can be used to trigger actions. "
+          "text": "A control that defines an area on the screen that a user clicks to trigger an action."
         }
       ]
     },
@@ -539,16 +557,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0 beta 5",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "topicSections": [
     {
       "kind": "taskGroup",
@@ -557,7 +565,8 @@
         "doc://com.apple.documentation/documentation/appkit/touch_bar/integrating_a_toolbar_and_touch_bar_into_your_app",
         "doc://com.apple.documentation/documentation/appkit/nstoolbar",
         "doc://com.apple.documentation/documentation/appkit/nstoolbaritemvalidation"
-      ]
+      ],
+      "anchor": "2871675"
     },
     {
       "kind": "taskGroup",
@@ -570,14 +579,16 @@
         "doc://com.apple.documentation/documentation/appkit/nsmenutoolbaritem",
         "doc://com.apple.documentation/documentation/appkit/nssearchtoolbaritem",
         "doc://com.apple.documentation/documentation/appkit/nstrackingseparatortoolbaritem"
-      ]
+      ],
+      "anchor": "2871752"
     },
     {
       "kind": "taskGroup",
       "title": "Item Validation",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscloudsharingvalidation"
-      ]
+      ],
+      "anchor": "3369893"
     }
   ],
   "seeAlsoSections": [
@@ -608,7 +619,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

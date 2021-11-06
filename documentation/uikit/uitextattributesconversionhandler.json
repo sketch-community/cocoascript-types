@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_storage"
+        "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts"
       ]
     ]
   },
@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@T@UITextAttributesConversionHandler",
     "symbolKind": "tdef"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -87,10 +92,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/text_storage": {
-      "title": "Text Storage",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage",
-      "url": "/documentation/uikit/text_storage",
+    "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts": {
+      "title": "Text Display and Fonts",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts",
+      "url": "/documentation/uikit/text_display_and_fonts",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -133,20 +138,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uitextformattingcoordinatordelegate": {
-      "title": "UITextFormattingCoordinatorDelegate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextformattingcoordinatordelegate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uitextformattingcoordinatordelegate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The methods that delegates of text-formatting coordinators implement to apply font panel settings to the currently selected text."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/uitextattributesconversionhandler": {
       "title": "UITextAttributesConversionHandler",
       "type": "topic",
@@ -172,8 +163,7 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uitextformattingcoordinator",
-        "doc://com.apple.documentation/documentation/uikit/uitextformattingcoordinatordelegate"
+        "doc://com.apple.documentation/documentation/uikit/uitextformattingcoordinator"
       ],
       "title": "Text Formatting",
       "generated": true
@@ -275,6 +265,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -283,7 +274,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

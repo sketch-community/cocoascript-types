@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An object that represents text styling rules applied to text in a media item."
+      "text": "An object that represents the text styling rules to apply to a media item’s textual content."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,35 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVTextStyleRule",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -307,7 +312,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An array of text style rules to apply to WebVTT subtitles and other legible text."
+          "text": "An array of text style rules that specify the formatting and presentation of Web Video Text Tracks (WebVTT) subtitles."
         }
       ]
     },
@@ -321,7 +326,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that represents text styling rules applied to text in a media item."
+          "text": "An object that represents the text styling rules to apply to a media item’s textual content."
         }
       ]
     },
@@ -331,16 +336,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -371,7 +366,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avtextstylerule/1584361-textstylerulewithtextmarkupattri",
         "doc://com.apple.documentation/documentation/avfoundation/avtextstylerule/1385849-initwithtextmarkupattributes",
         "doc://com.apple.documentation/documentation/avfoundation/avtextstylerule/1389854-initwithtextmarkupattributes"
-      ]
+      ],
+      "anchor": "1668605"
     },
     {
       "kind": "taskGroup",
@@ -379,14 +375,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avtextstylerule/1387945-textmarkupattributes",
         "doc://com.apple.documentation/documentation/avfoundation/avtextstylerule/1389451-textselector"
-      ]
+      ],
+      "anchor": "1668657"
     },
     {
       "kind": "taskGroup",
       "title": "Exporting the Style Rules",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avtextstylerule/1387970-propertylistfortextstylerules"
-      ]
+      ],
+      "anchor": "1668683"
     }
   ],
   "seeAlsoSections": [
@@ -394,7 +392,7 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389681-textstylerules"
       ],
-      "title": "Accessing the Text Style Rules",
+      "title": "Accessing Text Style Rules",
       "generated": true
     }
   ],
@@ -432,6 +430,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -461,7 +460,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

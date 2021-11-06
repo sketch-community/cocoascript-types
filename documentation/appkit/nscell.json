@@ -43,15 +43,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSCell",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -178,7 +178,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A definition of the fundamental behavior for controls, which are specialized views that notify your app of relevant events by using the target-action design pattern. "
+          "text": "A specialized view, such as a button or text field, that notifies your app of relevant events using the target-action design pattern."
         }
       ]
     },
@@ -662,7 +662,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrolstatevalue",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nscontrolstatevalue"
+      "url": "/documentation/appkit/nscontrolstatevalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A constant that indicates whether a control is on, off, or in a mixed state."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nscell/1535822-editable": {
       "title": "editable",
@@ -2074,7 +2080,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants for specifying the position of a button’s image relative to its title. "
+          "text": "A constant for specifying the position of a button’s image relative to its title. "
         }
       ]
     },
@@ -2145,7 +2151,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants for specifying a cell’s size. "
+          "text": "A constant for specifying a cell’s size. "
         }
       ]
     },
@@ -2496,16 +2502,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0 beta 5",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -2535,7 +2531,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscell/1533898-initimagecell",
         "doc://com.apple.documentation/documentation/appkit/nscell/1530851-inittextcell"
-      ]
+      ],
+      "anchor": "1651447"
     },
     {
       "kind": "taskGroup",
@@ -2548,7 +2545,8 @@
         "doc://com.apple.documentation/documentation/appkit/nscell/1530915-stringvalue",
         "doc://com.apple.documentation/documentation/appkit/nscell/1534765-doublevalue",
         "doc://com.apple.documentation/documentation/appkit/nscell/1534292-floatvalue"
-      ]
+      ],
+      "anchor": "1651466"
     },
     {
       "kind": "taskGroup",
@@ -2559,7 +2557,8 @@
         "doc://com.apple.documentation/documentation/appkit/nscell/1524871-type",
         "doc://com.apple.documentation/documentation/appkit/nscell/1533415-enabled",
         "doc://com.apple.documentation/documentation/appkit/nscell/1531576-allowsundo"
-      ]
+      ],
+      "anchor": "1651525"
     },
     {
       "kind": "taskGroup",
@@ -2572,7 +2571,8 @@
         "doc://com.apple.documentation/documentation/appkit/nscell/1524686-backgroundstyle",
         "doc://com.apple.documentation/documentation/appkit/nscell/1526141-interiorbackgroundstyle",
         "doc://com.apple.documentation/documentation/appkit/nsbackgroundstyle"
-      ]
+      ],
+      "anchor": "1651572"
     },
     {
       "kind": "taskGroup",
@@ -2583,7 +2583,8 @@
         "doc://com.apple.documentation/documentation/appkit/nscell/1533557-setnextstate",
         "doc://com.apple.documentation/documentation/appkit/nscell/1527417-state",
         "doc://com.apple.documentation/documentation/appkit/nscontrolstatevalue"
-      ]
+      ],
+      "anchor": "1651612"
     },
     {
       "kind": "taskGroup",
@@ -2603,7 +2604,8 @@
         "doc://com.apple.documentation/documentation/appkit/nscell/1532380-importsgraphics",
         "doc://com.apple.documentation/documentation/appkit/nscell/1535864-setupfieldeditorattributes",
         "doc://com.apple.documentation/documentation/appkit/nscell/1525561-title"
-      ]
+      ],
+      "anchor": "1651654"
     },
     {
       "kind": "taskGroup",
@@ -2613,28 +2615,32 @@
         "doc://com.apple.documentation/documentation/appkit/nscell/1535832-target",
         "doc://com.apple.documentation/documentation/appkit/nscell/1529179-continuous",
         "doc://com.apple.documentation/documentation/appkit/nscell/1528114-sendactionon"
-      ]
+      ],
+      "anchor": "1651742"
     },
     {
       "kind": "taskGroup",
       "title": "Managing the Image",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscell/1526028-image"
-      ]
+      ],
+      "anchor": "1651770"
     },
     {
       "kind": "taskGroup",
       "title": "Managing the Tag",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscell/1532348-tag"
-      ]
+      ],
+      "anchor": "1651783"
     },
     {
       "kind": "taskGroup",
       "title": "Formatting and Validating Data",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscell/1531115-formatter"
-      ]
+      ],
+      "anchor": "1651796"
     },
     {
       "kind": "taskGroup",
@@ -2643,14 +2649,16 @@
         "doc://com.apple.documentation/documentation/appkit/nscell/1531847-defaultmenu",
         "doc://com.apple.documentation/documentation/appkit/nscell/1530019-menu",
         "doc://com.apple.documentation/documentation/appkit/nscell/1535924-menuforevent"
-      ]
+      ],
+      "anchor": "1651810"
     },
     {
       "kind": "taskGroup",
       "title": "Comparing Cells",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscell/1527644-compare"
-      ]
+      ],
+      "anchor": "1651826"
     },
     {
       "kind": "taskGroup",
@@ -2660,7 +2668,8 @@
         "doc://com.apple.documentation/documentation/appkit/nscell/1532415-showsfirstresponder",
         "doc://com.apple.documentation/documentation/appkit/nscell/1525857-refusesfirstresponder",
         "doc://com.apple.documentation/documentation/appkit/nscell/1534984-performclick"
-      ]
+      ],
+      "anchor": "1651842"
     },
     {
       "kind": "taskGroup",
@@ -2672,14 +2681,16 @@
         "doc://com.apple.documentation/documentation/appkit/nscell/1527148-takestringvaluefrom",
         "doc://com.apple.documentation/documentation/appkit/nscell/1526375-takedoublevaluefrom",
         "doc://com.apple.documentation/documentation/appkit/nscell/1535839-takefloatvaluefrom"
-      ]
+      ],
+      "anchor": "1651867"
     },
     {
       "kind": "taskGroup",
       "title": "Representing an Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscell/1533116-representedobject"
-      ]
+      ],
+      "anchor": "1651905"
     },
     {
       "kind": "taskGroup",
@@ -2692,35 +2703,40 @@
         "doc://com.apple.documentation/documentation/appkit/nscell/1527798-mousedownflags",
         "doc://com.apple.documentation/documentation/appkit/nscell/1530790-preferstrackinguntilmouseup",
         "doc://com.apple.documentation/documentation/appkit/nscell/1535611-getperiodicdelay"
-      ]
+      ],
+      "anchor": "1651922"
     },
     {
       "kind": "taskGroup",
       "title": "Hit Testing",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscell/1529601-hittestforevent"
-      ]
+      ],
+      "anchor": "1651970"
     },
     {
       "kind": "taskGroup",
       "title": "Managing the Cursor",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscell/1524496-resetcursorrect"
-      ]
+      ],
+      "anchor": "1651997"
     },
     {
       "kind": "taskGroup",
       "title": "Handling Keyboard Alternatives",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscell/1532218-keyequivalent"
-      ]
+      ],
+      "anchor": "1652009"
     },
     {
       "kind": "taskGroup",
       "title": "Dragging Cells",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscell/1532987-draggingimagecomponentswithframe"
-      ]
+      ],
+      "anchor": "1652032"
     },
     {
       "kind": "taskGroup",
@@ -2730,7 +2746,8 @@
         "doc://com.apple.documentation/documentation/appkit/nscell/1534929-focusringmaskboundsforframe",
         "doc://com.apple.documentation/documentation/appkit/nscell/1525184-defaultfocusringtype",
         "doc://com.apple.documentation/documentation/appkit/nscell/1534132-focusringtype"
-      ]
+      ],
+      "anchor": "1652050"
     },
     {
       "kind": "taskGroup",
@@ -2743,7 +2760,8 @@
         "doc://com.apple.documentation/documentation/appkit/nscell/1533408-imagerectforbounds",
         "doc://com.apple.documentation/documentation/appkit/nscell/1531281-titlerectforbounds",
         "doc://com.apple.documentation/documentation/appkit/nscell/1530780-controlsize"
-      ]
+      ],
+      "anchor": "1652086"
     },
     {
       "kind": "taskGroup",
@@ -2755,7 +2773,8 @@
         "doc://com.apple.documentation/documentation/appkit/nscell/1535913-controlview",
         "doc://com.apple.documentation/documentation/appkit/nscell/1533933-highlight",
         "doc://com.apple.documentation/documentation/appkit/nscell/1530864-highlighted"
-      ]
+      ],
+      "anchor": "1652176"
     },
     {
       "kind": "taskGroup",
@@ -2768,7 +2787,8 @@
         "doc://com.apple.documentation/documentation/appkit/nscell/1535894-wantsnotificationformarkedtext",
         "doc://com.apple.documentation/documentation/appkit/nscell/1532763-fieldeditorforview",
         "doc://com.apple.documentation/documentation/appkit/nscell/1525481-usessinglelinemode"
-      ]
+      ],
+      "anchor": "1652238"
     },
     {
       "kind": "taskGroup",
@@ -2776,14 +2796,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscell/1526362-expansionframewithframe",
         "doc://com.apple.documentation/documentation/appkit/nscell/1528566-drawwithexpansionframe"
-      ]
+      ],
+      "anchor": "1652319"
     },
     {
       "kind": "taskGroup",
       "title": "User Interface Layout Direction",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscell/1529213-userinterfacelayoutdirection"
-      ]
+      ],
+      "anchor": "1652343"
     },
     {
       "kind": "taskGroup",
@@ -2801,14 +2823,16 @@
         "doc://com.apple.documentation/documentation/appkit/nsbackgroundstyle",
         "doc://com.apple.documentation/documentation/appkit/nscell/deprecated_scaling_constants",
         "doc://com.apple.documentation/documentation/appkit/nscell/data_entry_types"
-      ]
+      ],
+      "anchor": "1652425"
     },
     {
       "kind": "taskGroup",
       "title": "Notifications",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscontroltintdidchangenotification"
-      ]
+      ],
+      "anchor": "1653134"
     },
     {
       "kind": "taskGroup",
@@ -2822,7 +2846,8 @@
         "doc://com.apple.documentation/documentation/appkit/nscell/1560878-mnemonic",
         "doc://com.apple.documentation/documentation/appkit/nscell/1560877-setmnemoniclocation",
         "doc://com.apple.documentation/documentation/appkit/nscell/1560903-mnemoniclocation"
-      ]
+      ],
+      "anchor": "1681043"
     },
     {
       "kind": "taskGroup",
@@ -2830,7 +2855,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nscell/1642242-init",
         "doc://com.apple.documentation/documentation/appkit/nscell/1642237-initwithcoder"
-      ]
+      ],
+      "anchor": "2857305"
     }
   ],
   "seeAlsoSections": [
@@ -2971,7 +2997,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

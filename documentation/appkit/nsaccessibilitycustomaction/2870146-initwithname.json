@@ -1,17 +1,25 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates a custom action object with the specified name, target, and selector."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction"
       ]
     ]
@@ -35,15 +43,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSAccessibilityCustomAction(im)initWithName:target:selector:",
+    "parent": {
+      "title": "NSAccessibilityCustomAction"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -78,13 +89,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility": {
+      "title": "NSAccessibility",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
+      "url": "/documentation/appkit/nsaccessibility",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction": {
       "title": "NSAccessibilityCustomAction",
@@ -92,7 +111,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitycustomaction"
+      "url": "/documentation/appkit/nsaccessibilitycustomaction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A custom action to perform on an accessible object."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accessibility": {
       "title": "Accessibility",
@@ -125,6 +150,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nsaccessibilitycustomaction/2870120-initwithname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a custom action object with the specified name and handler."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -143,6 +174,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nsaccessibilitycustomaction/2870146-initwithname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a custom action object with the specified name, target, and selector."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -293,7 +330,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

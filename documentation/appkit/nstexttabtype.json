@@ -23,13 +23,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_storage",
+        "doc://com.apple.documentation/documentation/uikit/textkit",
         "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_storage",
+        "doc://com.apple.documentation/documentation/uikit/textkit",
         "doc://com.apple.documentation/documentation/uikit/nstexttab"
       ]
     ]
@@ -53,15 +53,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@T@NSTextTabType",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -128,10 +128,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/text_storage": {
-      "title": "Text Storage",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage",
-      "url": "/documentation/uikit/text_storage",
+    "doc://com.apple.documentation/documentation/uikit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit",
+      "url": "/documentation/uikit/textkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -236,7 +236,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Aligns columns of numbers by the decimal point."
+          "text": "A tab stop that aligns columns of numbers to each number’s decimal point."
         }
       ]
     },
@@ -247,6 +247,48 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/objectivec/nsuinteger"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1532841-tabstops": {
+      "title": "tabStops",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1532841-tabstops",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsparagraphstyle/1532841-tabstops",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The text tab objects that represent the paragraph’s tab stops."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstexttabtype": {
+      "title": "NSTextTabType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstexttabtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstexttabtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify the type of tab stop."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1535614-defaulttabinterval": {
+      "title": "defaultTabInterval",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1535614-defaulttabinterval",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsparagraphstyle/1535614-defaulttabinterval",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The documentwide default tab interval."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -265,7 +307,18 @@
         "doc://com.apple.documentation/documentation/appkit/nstexttabtype/nsrighttabstoptype",
         "doc://com.apple.documentation/documentation/appkit/nstexttabtype/nscentertabstoptype",
         "doc://com.apple.documentation/documentation/appkit/nstexttabtype/nsdecimaltabstoptype"
-      ]
+      ],
+      "anchor": "1611893"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1532841-tabstops",
+        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1535614-defaulttabinterval"
+      ],
+      "title": "Accessing Tab Information",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -526,7 +579,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " or "
+                      "text": ", or "
                     },
                     {
                       "type": "reference",
@@ -535,7 +588,7 @@
                     },
                     {
                       "type": "text",
-                      "text": ", depending on the user setting"
+                      "text": ", depending on the user setting."
                     }
                   ]
                 }
@@ -553,7 +606,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " with terminator"
+                      "text": " with a terminator"
                     }
                   ]
                 }
@@ -581,7 +634,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

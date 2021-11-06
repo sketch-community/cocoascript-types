@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face"
+        "doc://com.apple.documentation/documentation/sirikit/shortcut-related_ui"
       ]
     ]
   },
@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "12.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "12.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "5.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)INDefaultCardTemplate",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -87,10 +92,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face": {
-      "title": "Relevant Shortcuts for the Siri Watch Face",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face",
-      "url": "/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face",
+    "doc://com.apple.documentation/documentation/sirikit/shortcut-related_ui": {
+      "title": "Shortcut-Related UI",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/shortcut-related_ui",
+      "url": "/documentation/sirikit/shortcut-related_ui",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -161,13 +166,13 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/displaying_shortcut_information_in_a_siri_watch_face_card": {
+    "doc://com.apple.documentation/documentation/sirikit/shortcut-related_ui/displaying_shortcut_information_in_a_siri_watch_face_card": {
       "title": "Displaying Shortcut Information in a Siri Watch Face Card",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/displaying_shortcut_information_in_a_siri_watch_face_card",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/shortcut-related_ui/displaying_shortcut_information_in_a_siri_watch_face_card",
       "kind": "article",
       "role": "article",
-      "url": "/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/displaying_shortcut_information_in_a_siri_watch_face_card",
+      "url": "/documentation/sirikit/shortcut-related_ui/displaying_shortcut_information_in_a_siri_watch_face_card",
       "abstract": [
         {
           "type": "text",
@@ -190,10 +195,21 @@
             "2x"
           ],
           "size": {
-            "width": 429,
-            "height": 432
+            "width": 418,
+            "height": 236
           },
-          "url": "https://docs-assets.developer.apple.com/published/c2e29e2057/83b4f781-d5c9-4ebc-8142-f7320d8886ff.png"
+          "url": "https://docs-assets.developer.apple.com/published/c0e89ab419/SoupeChefCard-Callout_2x@2x.png"
+        },
+        {
+          "traits": [
+            "dark",
+            "2x"
+          ],
+          "size": {
+            "width": 418,
+            "height": 236
+          },
+          "url": "https://docs-assets.developer.apple.com/published/45ac3a96a6/SoupeChefCard-Callout_2x~dark@2x.png"
         }
       ],
       "alt": "A screenshot of the Siri watch face showing a custom default card template with callouts for image, title, and subtitle.",
@@ -275,16 +291,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -310,7 +316,8 @@
       "title": "Creating a Default Card Template",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/indefaultcardtemplate/2962952-initwithtitle"
-      ]
+      ],
+      "anchor": "2980539"
     },
     {
       "kind": "taskGroup",
@@ -319,13 +326,14 @@
         "doc://com.apple.documentation/documentation/sirikit/indefaultcardtemplate/2962954-title",
         "doc://com.apple.documentation/documentation/sirikit/indefaultcardtemplate/2962953-subtitle",
         "doc://com.apple.documentation/documentation/sirikit/indefaultcardtemplate/2962951-image"
-      ]
+      ],
+      "anchor": "2980536"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/displaying_shortcut_information_in_a_siri_watch_face_card"
+        "doc://com.apple.documentation/documentation/sirikit/shortcut-related_ui/displaying_shortcut_information_in_a_siri_watch_face_card"
       ],
       "title": "Siri Watch Face Cards",
       "generated": true
@@ -365,6 +373,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -444,7 +453,7 @@
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/displaying_shortcut_information_in_a_siri_watch_face_card"
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/shortcut-related_ui/displaying_shortcut_information_in_a_siri_watch_face_card"
             },
             {
               "type": "text",
@@ -479,7 +488,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

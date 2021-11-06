@@ -10,7 +10,8 @@
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/mapkit"
+        "doc://com.apple.documentation/documentation/mapkit",
+        "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays"
       ]
     ]
   },
@@ -33,30 +34,35 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.2",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)MKOverlay",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -90,6 +96,14 @@
       "type": "topic",
       "kind": "symbol",
       "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays": {
+      "title": "MapKit Overlays",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays",
+      "url": "/documentation/mapkit/mapkit_overlays",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/mapkit/mkmapview/1451964-addoverlay": {
       "title": "addOverlay:",
@@ -148,13 +162,7 @@
       "identifier": "doc://com.apple.documentation/documentation/mapkit/mkannotation",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/mapkit/mkannotation",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An interface for associating your content with a specific map location. "
-        }
-      ]
+      "url": "/documentation/mapkit/mkannotation"
     },
     "doc://com.apple.documentation/documentation/mapkit/mkcircle": {
       "title": "MKCircle",
@@ -269,34 +277,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/mapkit/mkplacemark": {
-      "title": "MKPlacemark",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkplacemark",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/mapkit/mkplacemark",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A user-friendly description of a location on the map.  "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/mapkit/mkannotationview": {
-      "title": "MKAnnotationView",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkannotationview",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/mapkit/mkannotationview",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The visual representation of one of your annotation objects.  "
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/mapkit/mkoverlay": {
       "title": "MKOverlay",
       "type": "topic",
@@ -325,21 +305,47 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations": {
-      "title": "MapKit Annotations",
+    "doc://com.apple.documentation/documentation/mapkit/mkshape": {
+      "title": "MKShape",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/mapkit/mapkit_annotations"
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkshape",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkshape",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract class that defines the basic properties for all shape-based overlay objects."
+        }
+      ]
     },
-    "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays": {
-      "title": "MapKit Overlays",
+    "doc://com.apple.documentation/documentation/mapkit/mkmultipoint": {
+      "title": "MKMultiPoint",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/mapkit/mapkit_overlays"
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmultipoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkmultipoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract class that defines the common behavior shared by open and closed polygon overlays.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkplacemark": {
+      "title": "MKPlacemark",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkplacemark",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkplacemark",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A user-friendly description of a location on the map.  "
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -379,34 +385,35 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkoverlay/1452113-coordinate",
         "doc://com.apple.documentation/documentation/mapkit/mkoverlay/1452791-boundingmaprect"
-      ]
+      ],
+      "anchor": "1657914"
     },
     {
       "kind": "taskGroup",
       "title": "Determining Map Intersections",
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkoverlay/1452138-intersectsmaprect"
-      ]
+      ],
+      "anchor": "1657936"
     },
     {
       "kind": "taskGroup",
       "title": "Optimizing Map Rendering",
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkoverlay/1452399-canreplacemapcontent"
-      ]
+      ],
+      "anchor": "1657958"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/mapkit/mkplacemark",
-        "doc://com.apple.documentation/documentation/mapkit/mkannotation",
-        "doc://com.apple.documentation/documentation/mapkit/mkannotationview",
         "doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer",
-        "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations",
-        "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays"
+        "doc://com.apple.documentation/documentation/mapkit/mkshape",
+        "doc://com.apple.documentation/documentation/mapkit/mkmultipoint",
+        "doc://com.apple.documentation/documentation/mapkit/mkplacemark"
       ],
-      "title": "Annotations and Overlays",
+      "title": "Shared Behavior",
       "generated": true
     }
   ],
@@ -434,6 +441,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -499,7 +507,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

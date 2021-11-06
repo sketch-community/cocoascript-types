@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVMetadataItem(py)commonKey",
+    "parent": {
+      "title": "AVMetadataItem"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,7 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A metadata item associated with an audiovisual asset or one of its tracks."
+          "text": "A metadata item for an audiovisual asset or one of its tracks."
         }
       ]
     },
@@ -134,14 +142,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadatakeyspacecommon": {
-      "title": "AVMetadataKeySpaceCommon",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadatakeyspacecommon",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadatakeyspacecommon"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1385757-keyspace": {
       "title": "keySpace",
       "type": "topic",
@@ -156,6 +156,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadatakeyspacecommon": {
+      "title": "AVMetadataKeySpaceCommon",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadatakeyspacecommon",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadatakeyspacecommon"
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadatakey": {
       "title": "AVMetadataKey",
       "type": "topic",
@@ -166,21 +174,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A value that specifies a type of metadata."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadatakeyspace": {
-      "title": "AVMetadataKeySpace",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadatakeyspace",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadatakeyspace",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A value that defines a metadata key space."
+          "text": "A structure that defines a metadata key."
         }
       ]
     },
@@ -198,6 +192,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadatakeyspace": {
+      "title": "AVMetadataKeySpace",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadatakeyspace",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadatakeyspace",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that defines a metadata key space."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -206,25 +214,15 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1387843-key",
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadatakey",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1385757-keyspace",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadatakeyspace",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadatakey"
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadatakeyspace"
       ],
-      "title": "Getting Keys and Key Spaces",
+      "title": "Accessing Keys and Key Spaces",
       "generated": true
     }
   ],
@@ -266,6 +264,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -288,7 +287,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This property contains the key that most closely corresponds to the key in the "
+              "text": "This value contains the key that most closely corresponds to the "
             },
             {
               "type": "reference",
@@ -297,16 +296,7 @@
             },
             {
               "type": "text",
-              "text": " property but that belongs to the common key space ("
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadatakeyspacecommon"
-            },
-            {
-              "type": "text",
-              "text": ") as opposed to a format-specific key space. You can use this key to locate metadata items irrespective of the underlying media format. "
+              "text": " property, but that belongs to the common key space. You can use this key to locate metadata items irrespective of the underlying media format. "
             }
           ]
         },
@@ -333,7 +323,7 @@
             },
             {
               "type": "text",
-              "text": ", this property contains the same key as the "
+              "text": ", this property value contains the same key as the "
             },
             {
               "type": "reference",
@@ -350,7 +340,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

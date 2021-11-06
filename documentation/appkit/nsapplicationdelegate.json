@@ -49,15 +49,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.6",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSApplicationDelegate",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -227,6 +227,31 @@
         {
           "kind": "identifier",
           "text": "applicationDidFinishLaunching:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/3787553-applicationshouldautomaticallylo": {
+      "title": "applicationShouldAutomaticallyLocalizeKeyEquivalents:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/3787553-applicationshouldautomaticallylo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsapplicationdelegate/3787553-applicationshouldautomaticallylo",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate to localize keyboard shortcuts."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "applicationShouldAutomaticallyLocalizeKeyEquivalents:"
         }
       ]
     },
@@ -884,6 +909,31 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/3786062-application": {
+      "title": "application:handlerForIntent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/3786062-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsapplicationdelegate/3786062-application",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate for an intent handler capable of handling the specified intent."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:handlerForIntent:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/2887193-application": {
       "title": "application:openURLs:",
       "type": "topic",
@@ -1110,6 +1160,69 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/3752993-applicationprotecteddatadidbecom": {
+      "title": "applicationProtectedDataDidBecomeAvailable:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/3752993-applicationprotecteddatadidbecom",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsapplicationdelegate/3752993-applicationprotecteddatadidbecom",
+      "required": false,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "applicationProtectedDataDidBecomeAvailable:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/3752994-applicationprotecteddatawillbeco": {
+      "title": "applicationProtectedDataWillBecomeUnavailable:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/3752994-applicationprotecteddatawillbeco",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsapplicationdelegate/3752994-applicationprotecteddatawillbeco",
+      "required": false,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "applicationProtectedDataWillBecomeUnavailable:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/3762521-applicationsupportssecurerestora": {
+      "title": "applicationSupportsSecureRestorableState:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/3762521-applicationsupportssecurerestora",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsapplicationdelegate/3762521-applicationsupportssecurerestora",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the app supports secure state restoration."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "applicationSupportsSecureRestorableState:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428693-application": {
       "title": "application:didDecodeRestorableState:",
       "type": "topic",
@@ -1286,8 +1399,10 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428623-applicationwillfinishlaunching",
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428385-applicationdidfinishlaunching",
+        "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/3787553-applicationshouldautomaticallylo",
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/nsapplicationdidfinishlaunching_user_info_keys"
-      ]
+      ],
+      "anchor": "1663280"
     },
     {
       "kind": "taskGroup",
@@ -1297,7 +1412,8 @@
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428577-applicationdidbecomeactive",
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428539-applicationwillresignactive",
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428636-applicationdidresignactive"
-      ]
+      ],
+      "anchor": "1663420"
     },
     {
       "kind": "taskGroup",
@@ -1307,7 +1423,8 @@
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428381-applicationshouldterminateafterl",
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428522-applicationwillterminate",
         "doc://com.apple.documentation/documentation/appkit/nsapplicationterminatereply"
-      ]
+      ],
+      "anchor": "1663346"
     },
     {
       "kind": "taskGroup",
@@ -1317,7 +1434,8 @@
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428552-applicationdidhide",
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428585-applicationwillunhide",
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428755-applicationdidunhide"
-      ]
+      ],
+      "anchor": "1663506"
     },
     {
       "kind": "taskGroup",
@@ -1326,28 +1444,32 @@
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428774-applicationwillupdate",
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428589-applicationdidupdate",
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428638-applicationshouldhandlereopen"
-      ]
+      ],
+      "anchor": "1663607"
     },
     {
       "kind": "taskGroup",
       "title": "Managing the Dock Menu",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428564-applicationdockmenu"
-      ]
+      ],
+      "anchor": "1663682"
     },
     {
       "kind": "taskGroup",
       "title": "Displaying Errors",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428721-application"
-      ]
+      ],
+      "anchor": "1663741"
     },
     {
       "kind": "taskGroup",
       "title": "Managing the Screen",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428424-applicationdidchangescreenparame"
-      ]
+      ],
+      "anchor": "1663855"
     },
     {
       "kind": "taskGroup",
@@ -1357,7 +1479,8 @@
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428471-application",
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428613-application",
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428457-application"
-      ]
+      ],
+      "anchor": "1664184"
     },
     {
       "kind": "taskGroup",
@@ -1366,14 +1489,24 @@
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428766-application",
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428554-application",
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428430-application"
-      ]
+      ],
+      "anchor": "1664047"
     },
     {
       "kind": "taskGroup",
       "title": "Handling CloudKit Invitations",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/2138329-application"
-      ]
+      ],
+      "anchor": "2855733"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Handling SiriKit Intents",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/3786062-application"
+      ],
+      "anchor": "3787545"
     },
     {
       "kind": "taskGroup",
@@ -1386,7 +1519,8 @@
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428742-application",
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428491-applicationopenuntitledfile",
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428444-applicationshouldopenuntitledfil"
-      ]
+      ],
+      "anchor": "1663892"
     },
     {
       "kind": "taskGroup",
@@ -1395,29 +1529,36 @@
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428520-application",
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428713-application",
         "doc://com.apple.documentation/documentation/appkit/nsapplicationprintreply"
-      ]
+      ],
+      "anchor": "1664001"
     },
     {
       "kind": "taskGroup",
       "title": "Restoring Application State",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/3752993-applicationprotecteddatadidbecom",
+        "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/3752994-applicationprotecteddatawillbeco",
+        "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/3762521-applicationsupportssecurerestora",
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428693-application",
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428400-application"
-      ]
+      ],
+      "anchor": "1664126"
     },
     {
       "kind": "taskGroup",
       "title": "Handling Changes to the Occlusion State",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428362-applicationdidchangeocclusionsta"
-      ]
+      ],
+      "anchor": "1664270"
     },
     {
       "kind": "taskGroup",
       "title": "Scripting Your App",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/3005173-application"
-      ]
+      ],
+      "anchor": "3370271"
     }
   ],
   "seeAlsoSections": [
@@ -1461,7 +1602,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

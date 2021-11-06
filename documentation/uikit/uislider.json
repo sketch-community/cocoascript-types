@@ -34,20 +34,25 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UISlider",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -274,7 +279,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The image representing the slider’s minimum value."
+          "text": "The image that represents the slider’s minimum value."
         }
       ]
     },
@@ -672,6 +677,48 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uislider/3752182-behavioralstyle": {
+      "title": "behavioralStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uislider/3752182-behavioralstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uislider/3752182-behavioralstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The style that determines how the slider behaves."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uislider/3752183-preferredbehavioralstyle": {
+      "title": "preferredBehavioralStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uislider/3752183-preferredbehavioralstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uislider/3752183-preferredbehavioralstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The preferred behavioral style."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uibehavioralstyle": {
+      "title": "UIBehavioralStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uibehavioralstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uibehavioralstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that indicate how a control behaves in apps built with Mac Catalyst."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uislider/1621328-minimumtrackimageforstate": {
       "title": "minimumTrackImageForState:",
       "type": "topic",
@@ -912,16 +959,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -947,7 +984,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uislider/1621346-value",
         "doc://com.apple.documentation/documentation/uikit/uislider/1621330-setvalue"
-      ]
+      ],
+      "anchor": "1653150"
     },
     {
       "kind": "taskGroup",
@@ -955,14 +993,19 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uislider/1621345-minimumvalue",
         "doc://com.apple.documentation/documentation/uikit/uislider/1621341-maximumvalue"
-      ]
+      ],
+      "anchor": "1653184"
     },
     {
       "kind": "taskGroup",
       "title": "Modifying the Slider’s Behavior",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uislider/1621340-continuous"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uislider/1621340-continuous",
+        "doc://com.apple.documentation/documentation/uikit/uislider/3752182-behavioralstyle",
+        "doc://com.apple.documentation/documentation/uikit/uislider/3752183-preferredbehavioralstyle",
+        "doc://com.apple.documentation/documentation/uikit/uibehavioralstyle"
+      ],
+      "anchor": "1653217"
     },
     {
       "kind": "taskGroup",
@@ -982,7 +1025,8 @@
         "doc://com.apple.documentation/documentation/uikit/uislider/1621347-currentthumbimage",
         "doc://com.apple.documentation/documentation/uikit/uislider/1621342-thumbimageforstate",
         "doc://com.apple.documentation/documentation/uikit/uislider/1621336-setthumbimage"
-      ]
+      ],
+      "anchor": "1653242"
     },
     {
       "kind": "taskGroup",
@@ -992,7 +1036,8 @@
         "doc://com.apple.documentation/documentation/uikit/uislider/1621327-minimumvalueimagerectforbounds",
         "doc://com.apple.documentation/documentation/uikit/uislider/1621349-trackrectforbounds",
         "doc://com.apple.documentation/documentation/uikit/uislider/1621344-thumbrectforbounds"
-      ]
+      ],
+      "anchor": "1653394"
     }
   ],
   "seeAlsoSections": [
@@ -1045,6 +1090,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -1067,7 +1113,7 @@
               "text": "As you move the "
             },
             {
-              "type": "strong",
+              "type": "emphasis",
               "inlineContent": [
                 {
                   "type": "text",
@@ -1127,7 +1173,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The following steps are required to add a slider to your interface:"
+              "text": "To add a slider to your interface:"
             }
           ]
         },
@@ -1195,7 +1241,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Responding to User Interaction",
+          "text": "Respond to User Interaction",
           "anchor": "2557863"
         },
         {
@@ -1300,7 +1346,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Debugging Sliders",
+          "text": "Debug Sliders",
           "anchor": "2557867"
         },
         {
@@ -1395,7 +1441,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Interface Builder Attributes",
+          "text": "Configure Slider Attributes in Interface Builder",
           "anchor": "2557871"
         },
         {
@@ -1863,7 +1909,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Customizing the Slider’s Appearance",
+          "text": "Customize the Slider’s Appearance",
           "anchor": "1653132"
         },
         {
@@ -2130,7 +2176,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Internationalization",
+          "text": "Provide Localized Strings",
           "anchor": "2557872"
         },
         {
@@ -2198,7 +2244,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Accessibility",
+          "text": "Make Sliders Accessible",
           "anchor": "2557873"
         },
         {
@@ -2222,7 +2268,7 @@
         {
           "type": "codeListing",
           "code": [
-            "\"Sound volume: 13 percent. Adjustable. Swipe up or down with one finger to adjust the value.__\"__"
+            "\"Sound volume: 13 percent. Adjustable. Swipe up or down with one finger to adjust the value.\""
           ],
           "syntax": "occ",
           "metadata": {
@@ -2261,7 +2307,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

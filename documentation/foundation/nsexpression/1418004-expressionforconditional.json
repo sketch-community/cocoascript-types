@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates an expression that returns a result, depending on the value of predicate."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSExpression(cm)expressionForConditional:trueExpression:falseExpression:",
+    "parent": {
+      "title": "NSExpression"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -115,6 +129,30 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nspredicate"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsexpression/1418004-expressionforconditional": {
+      "title": "expressionForConditional:trueExpression:falseExpression:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsexpression/1418004-expressionforconditional",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsexpression/1418004-expressionforconditional",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an expression that returns a result, depending on the value of predicate."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "expressionForConditional:trueExpression:falseExpression:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -244,6 +282,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -251,10 +290,76 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "predicate",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The predicate for determining whether the element belongs in the result collection."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "trueExpression",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The expression for evaluation when the predicate evaluates to "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "true"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "falseExpression",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The expression for evaluation when the predicate evaluates to "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "false"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -38,35 +38,40 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.6",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(pl)CLLocationManagerDelegate",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -687,14 +692,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/3563956-locationmanagerdidchangeauthoriz",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423701-locationmanager"
-      ]
+      ],
+      "anchor": "1669822"
     },
     {
       "kind": "taskGroup",
       "title": "Handling Errors",
       "identifiers": [
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423786-locationmanager"
-      ]
+      ],
+      "anchor": "3380928"
     },
     {
       "kind": "taskGroup",
@@ -703,7 +710,8 @@
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423716-locationmanager",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423537-locationmanager"
-      ]
+      ],
+      "anchor": "1669514"
     },
     {
       "kind": "taskGroup",
@@ -711,7 +719,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1621553-locationmanagerdidpauselocationu",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1621512-locationmanagerdidresumelocation"
-      ]
+      ],
+      "anchor": "1669581"
     },
     {
       "kind": "taskGroup",
@@ -719,7 +728,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1621555-locationmanager",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1621457-locationmanagershoulddisplayhead"
-      ]
+      ],
+      "anchor": "1669621"
     },
     {
       "kind": "taskGroup",
@@ -730,7 +740,8 @@
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423570-locationmanager",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423720-locationmanager",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423842-locationmanager"
-      ]
+      ],
+      "anchor": "1669671"
     },
     {
       "kind": "taskGroup",
@@ -740,14 +751,16 @@
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/3240609-locationmanager",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1621501-locationmanager",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1621483-locationmanager"
-      ]
+      ],
+      "anchor": "1669751"
     },
     {
       "kind": "taskGroup",
       "title": "Responding to Visit Events",
       "identifiers": [
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1621529-locationmanager"
-      ]
+      ],
+      "anchor": "1669787"
     }
   ],
   "seeAlsoSections": [
@@ -784,6 +797,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -857,7 +871,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The methods of your delegate object are called from the thread in which you started the corresponding location services. That thread must itself have an active run loop, like the one found in your app’s main thread."
+              "text": "Core Location calls the methods of your delegate object on the runloop from the thread on which you initialized "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager"
+            },
+            {
+              "type": "text",
+              "text": ". That thread must itself have an active run loop, like the one found in your app’s main thread."
             }
           ]
         }
@@ -865,7 +888,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

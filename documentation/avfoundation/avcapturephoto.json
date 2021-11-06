@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A container for image data collected by a photo capture output."
+      "text": "A container for image data from a photo capture output."
     }
   ],
   "documentVersion": 0,
@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "introducedAt": "14.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVCapturePhoto",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,7 +110,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A capture output for still image, Live Photo, and other photography workflows."
+          "text": "A capture output for still image, Live Photos, and other photography workflows."
         }
       ]
     },
@@ -119,25 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A container for image data collected by a photo capture output."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2977522-filedatarepresentationwithcustom": {
-      "title": "fileDataRepresentationWithCustomizer:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2977522-filedatarepresentationwithcustom",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturephoto/2977522-filedatarepresentationwithcustom",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "fileDataRepresentationWithCustomizer:"
+          "text": "A container for image data from a photo capture output."
         }
       ]
     },
@@ -345,6 +332,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2977522-filedatarepresentationwithcustom": {
+      "title": "fileDataRepresentationWithCustomizer:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2977522-filedatarepresentationwithcustom",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephoto/2977522-filedatarepresentationwithcustom",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets a customized representation of the photo data."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "fileDataRepresentationWithCustomizer:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avcapturephotofiledatarepresentationcustomizer": {
       "title": "AVCapturePhotoFileDataRepresentationCustomizer",
       "type": "topic",
@@ -355,16 +366,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of delegate callbacks to be implemented by callers of "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2977522-filedatarepresentationwithcustom"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "A protocol that defines the methods to implement to customize the packaging of photo data."
         }
       ]
     },
@@ -426,7 +428,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Extracts and returns the captured photo's preview image as a CoreGraphics image object."
+          "text": "Extracts and returns the captured photo's preview image as a Core Graphics image object."
         }
       ],
       "fragments": [
@@ -450,7 +452,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Generates and returns a flat data representation of the photo, using the specified replacements for some or all of its attachments."
+          "text": "Generates and returns a flat data representation of the photo using the specified replacements for some or all of its attachments."
         }
       ],
       "fragments": [
@@ -569,7 +571,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Support professional photography workflows by enabling RAW capture in your camera app."
+          "text": "Support professional photography workflows by enabling minimally processed image capture in your camera app."
         }
       ]
     },
@@ -583,7 +585,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Incorporate scanned documents and pictures taken with a user's iPhone, iPad, or iPod touch into your Mac app using Continuity Camera."
+          "text": "Incorporate scanned documents and pictures from a user's iPhone, iPad, or iPod touch into your Mac app using Continuity Camera."
         }
       ]
     },
@@ -609,24 +611,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "minor": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.1.1 Release Candidate",
-        "12.3 Release Candidate"
-      ]
-    },
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -645,7 +629,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2873898-resolvedsettings",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2873906-photocount",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2873981-timestamp"
-      ]
+      ],
+      "anchor": "2882727"
     },
     {
       "kind": "taskGroup",
@@ -653,7 +638,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2873894-rawphoto",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2873914-pixelbuffer"
-      ]
+      ],
+      "anchor": "2882728"
     },
     {
       "kind": "taskGroup",
@@ -661,7 +647,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2875952-embeddedthumbnailphotoformat",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2873984-previewpixelbuffer"
-      ]
+      ],
+      "anchor": "2882729"
     },
     {
       "kind": "taskGroup",
@@ -674,7 +661,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2890250-sourcedevicetype",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2873982-metadata",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2977523-portraiteffectsmatte"
-      ]
+      ],
+      "anchor": "2882730"
     },
     {
       "kind": "taskGroup",
@@ -686,7 +674,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2873963-cgimagerepresentation",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2873945-previewcgimagerepresentation",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2875953-filedatarepresentationwithreplac"
-      ]
+      ],
+      "anchor": "2882724"
     },
     {
       "kind": "taskGroup",
@@ -696,14 +685,16 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2873946-sequencecount",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2880219-lensstabilizationstatus",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturelensstabilizationstatus"
-      ]
+      ],
+      "anchor": "2882725"
     },
     {
       "kind": "taskGroup",
       "title": "Accessing Segmentation Mattes",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/3153009-semanticsegmentationmattefortype"
-      ]
+      ],
+      "anchor": "3197376"
     }
   ],
   "seeAlsoSections": [
@@ -753,6 +744,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -844,7 +836,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

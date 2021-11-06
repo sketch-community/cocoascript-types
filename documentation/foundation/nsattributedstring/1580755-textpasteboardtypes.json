@@ -11,14 +11,16 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_storage",
-        "doc://com.apple.documentation/documentation/foundation/nsattributedstring"
+        "doc://com.apple.documentation/documentation/uikit/textkit",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/deprecated_symbols"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/foundation",
         "doc://com.apple.documentation/documentation/foundation/strings_and_text",
-        "doc://com.apple.documentation/documentation/foundation/nsattributedstring"
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/deprecated_symbols"
       ]
     ]
   },
@@ -42,16 +44,19 @@
         "name": "macOS",
         "introducedAt": "10.1",
         "deprecatedAt": "10.5",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSAttributedString(cm)textPasteboardTypes",
+    "parent": {
+      "title": "NSAttributedString"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -76,10 +81,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/text_storage": {
-      "title": "Text Storage",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage",
-      "url": "/documentation/uikit/text_storage",
+    "doc://com.apple.documentation/documentation/uikit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit",
+      "url": "/documentation/uikit/textkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -97,6 +102,14 @@
           "text": "A string with associated attributes (such as visual style, hyperlinks, or accessibility data) for portions of its text."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/deprecated_symbols",
+      "url": "/documentation/foundation/nsattributedstring/deprecated_symbols",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/foundation": {
       "title": "Foundation",
@@ -230,81 +243,6 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1525939-initwithpath": {
-      "title": "initWithPath:documentAttributes:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1525939-initwithpath",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsattributedstring/1525939-initwithpath",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Initializes a new attribute string object from RTF or RTFD data in the file at the specified path."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithPath:documentAttributes:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1533913-initwithurl": {
-      "title": "initWithURL:documentAttributes:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1533913-initwithurl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsattributedstring/1533913-initwithurl",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Initializes a new attributed string object from the data at the specified URL."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithURL:documentAttributes:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1620492-initwithfileurl": {
-      "title": "initWithFileURL:options:documentAttributes:error:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1620492-initwithfileurl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsattributedstring/1620492-initwithfileurl",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Initializes a new attributed string object from the data at the specified URL."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithFileURL:options:documentAttributes:error:"
-        }
-      ],
-      "deprecated": true
-    },
     "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1533869-containsattachments": {
       "title": "containsAttachments",
       "type": "topic",
@@ -316,111 +254,6 @@
         {
           "type": "text",
           "text": "A Boolean value that indicates whether the attribute string contains any attachment attributes."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1535059-urlatindex": {
-      "title": "URLAtIndex:effectiveRange:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1535059-urlatindex",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsattributedstring/1535059-urlatindex",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a URL, either from a link attribute or from text at the specified location that appears to be a URL string, for use in automatic link detection."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "URLAtIndex:effectiveRange:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1525782-drawwithrect": {
-      "title": "drawWithRect:options:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1525782-drawwithrect",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsattributedstring/1525782-drawwithrect",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Draws the attributed string with the specified options within the specified rectangle in the current graphics context."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "drawWithRect:options:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1532013-boundingrectwithsize": {
-      "title": "boundingRectWithSize:options:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1532013-boundingrectwithsize",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsattributedstring/1532013-boundingrectwithsize",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Calculates and returns a bounding rectangle for the attributed string using the options specified within the specified rectangle in the current graphics context."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "boundingRectWithSize:options:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/nstextwritingdirection": {
-      "title": "NSTextWritingDirection",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextwritingdirection",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/nstextwritingdirection",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Options for specifying text-writing direction."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsunderlinebywordmask": {
-      "title": "NSUnderlineByWordMask",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsunderlinebywordmask",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsunderlinebywordmask",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Draw the underline only underneath words, not underneath whitespace."
         }
       ],
       "deprecated": true
@@ -459,17 +292,9 @@
         "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1580752-textfiletypes",
         "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1580756-textunfilteredfiletypes",
         "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1580753-textunfilteredpasteboardtypes",
-        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1525939-initwithpath",
-        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1533913-initwithurl",
-        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1620492-initwithfileurl",
-        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1533869-containsattachments",
-        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1535059-urlatindex",
-        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1525782-drawwithrect",
-        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1532013-boundingrectwithsize",
-        "doc://com.apple.documentation/documentation/uikit/nstextwritingdirection",
-        "doc://com.apple.documentation/documentation/appkit/nsunderlinebywordmask"
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1533869-containsattachments"
       ],
-      "title": "Deprecated",
+      "title": "Deprecated Properties",
       "generated": true
     }
   ],
@@ -631,7 +456,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

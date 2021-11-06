@@ -39,35 +39,40 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.5",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSOperationQueue",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -214,7 +219,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The operations currently in the queue. "
+          "text": "The operations currently in the queue."
         }
       ],
       "deprecated": true
@@ -244,7 +249,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The maximum number of queued operations that can execute at the same time."
+          "text": "The maximum number of queued operations that can run at the same time."
         }
       ]
     },
@@ -412,6 +417,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/3172534-addbarrierblock": {
+      "title": "addBarrierBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/3172534-addbarrierblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsoperationqueue/3172534-addbarrierblock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Invokes a block when the queue finishes all enqueued operations, and prevents subsequent operations from starting until the block has completed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addBarrierBlock:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1417849-cancelalloperations": {
       "title": "cancelAllOperations",
       "type": "topic",
@@ -446,7 +475,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Blocks the current thread until all of the receiver’s queued and executing operations finish executing."
+          "text": "Blocks the current thread until all the receiver’s queued and executing operations finish executing."
         }
       ],
       "fragments": [
@@ -470,7 +499,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The default service level to apply to operations executed using the queue."
+          "text": "The default service level to apply to operations that the queue invokes."
         }
       ]
     },
@@ -484,7 +513,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The default maximum number of operations to be executed concurrently in a queue.   "
+          "text": "The default maximum number of operations to invoke concurrently in a queue."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/3172535-progress": {
+      "title": "progress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/3172535-progress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsoperationqueue/3172535-progress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that represents the total progress of the operations executing in the queue."
         }
       ]
     },
@@ -498,33 +541,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The dispatch queue used to execute operations."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/3172535-progress": {
-      "title": "progress",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/3172535-progress",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsoperationqueue/3172535-progress"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/3172534-addbarrierblock": {
-      "title": "addBarrierBlock:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/3172534-addbarrierblock",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsoperationqueue/3172534-addbarrierblock",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "addBarrierBlock:"
+          "text": "The dispatch queue that the operation queue uses to invoke operations."
         }
       ]
     },
@@ -564,16 +581,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -599,7 +606,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1409193-mainqueue",
         "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1413097-currentqueue"
-      ]
+      ],
+      "anchor": "1661191"
     },
     {
       "kind": "taskGroup",
@@ -608,11 +616,13 @@
         "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1410704-addoperation",
         "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1408358-addoperations",
         "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1412949-addoperationwithblock",
-        "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1415168-operations",
-        "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1415115-operationcount",
+        "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/3172534-addbarrierblock",
         "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1417849-cancelalloperations",
-        "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1407971-waituntilalloperationsarefinishe"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1407971-waituntilalloperationsarefinishe",
+        "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1415168-operations",
+        "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1415115-operationcount"
+      ],
+      "anchor": "1661222"
     },
     {
       "kind": "taskGroup",
@@ -621,14 +631,24 @@
         "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1417919-qualityofservice",
         "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1414982-maxconcurrentoperationcount",
         "doc://com.apple.documentation/documentation/foundation/nsoperationqueuedefaultmaxconcurrentoperationcount"
-      ]
+      ],
+      "anchor": "1661293"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Monitoring Progress of Operations",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/3172535-progress"
+      ],
+      "anchor": "3737983"
     },
     {
       "kind": "taskGroup",
       "title": "Suspending Execution",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1415909-suspended"
-      ]
+      ],
+      "anchor": "1661321"
     },
     {
       "kind": "taskGroup",
@@ -636,21 +656,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1418063-name",
         "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1415344-underlyingqueue"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Properties",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/3172535-progress"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Methods",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/3172534-addbarrierblock"
-      ]
+      ],
+      "anchor": "1661335"
     }
   ],
   "seeAlsoSections": [
@@ -698,6 +705,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -720,7 +728,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "An operation queue executes its queued "
+              "text": "An operation queue invokes its queued "
             },
             {
               "type": "reference",
@@ -729,7 +737,7 @@
             },
             {
               "type": "text",
-              "text": " objects based on their priority and readiness. After being added to an operation queue, an operation remains in its queue until it reports that it is finished with its task. You can’t directly remove an operation from a queue after it has been added."
+              "text": " objects based on their priority and readiness. After you add an operation to a queue, it remains in the queue until the operation finishes its task. You can’t directly remove an operation from a queue after you add it."
             }
           ]
         },
@@ -741,7 +749,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Operation queues retain operations until they're finished, and queues themselves are retained until all operations are finished. Suspending an operation queue with operations that aren't finished can result in a memory leak. "
+                  "text": "Operation queues retain operations until the operations finish, and queues themselves are retained until all operations are finished. Suspending an operation queue with operations that aren’t finished can result in a memory leak. "
                 }
               ]
             }
@@ -758,7 +766,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "For more information about using operation queues, see "
+              "text": "For more information about using operation queues, see the "
             },
             {
               "type": "link",
@@ -767,14 +775,14 @@
             },
             {
               "type": "text",
-              "text": ". "
+              "text": "."
             }
           ]
         },
         {
           "level": 3,
           "type": "heading",
-          "text": "Determining Execution Order",
+          "text": "Determine the Execution Order",
           "anchor": "2936058"
         },
         {
@@ -782,7 +790,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Operations within a queue are organized according to their readiness, priority level, and interoperation dependencies, and are executed accordingly. If all of the queued operations have the same "
+              "text": "An operation queue organizes and invokes its operations according to their readiness, priority level, and interoperation dependencies. If all of the queued operations have the same "
             },
             {
               "type": "reference",
@@ -791,7 +799,7 @@
             },
             {
               "type": "text",
-              "text": " and are ready to execute when they are put in the queue—that is, their "
+              "text": " and the "
             },
             {
               "type": "reference",
@@ -809,7 +817,7 @@
             },
             {
               "type": "text",
-              "text": "—they’re executed in the order in which they were submitted to the queue. Otherwise, the operation queue always executes the one with the highest priority relative to the other ready operations. "
+              "text": ", the queue invokes them in the order you added them. Otherwise, the operation queue always invokes the operation with the highest priority relative to the other ready operations. "
             }
           ]
         },
@@ -818,7 +826,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "However, you should never rely on queue semantics to ensure a specific execution order of operations, because changes in the readiness of an operation can change the resulting execution order. Interoperation dependencies provide an absolute execution order for operations, even if those operations are located in different operation queues. An operation object is not considered ready to execute until all of its dependent operations have finished executing. "
+              "text": "However, don’t rely on queue semantics to ensure a specific execution order of operations  because changes in the readiness of an operation can change the resulting execution order. Interoperation dependencies provide an absolute execution order for operations, even if those operations are located in different operation queues. An operation object isn’t ready to run until all of its dependent operations have finished running. "
             }
           ]
         },
@@ -852,7 +860,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Canceling Operations",
+          "text": "Respond to Operation Cancelation",
           "anchor": "2936059"
         },
         {
@@ -881,7 +889,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Canceling an operation causes the operation to ignore any dependencies it may have. This behavior makes it possible for the queue to execute the operation’s "
+                  "text": "Canceling an operation causes the operation to ignore any dependencies it may have. This behavior makes it possible for the queue to invoke the operation’s "
                 },
                 {
                   "type": "reference",
@@ -937,7 +945,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "KVO-Compliant Properties",
+          "text": "Observe Operations Using Key-Value Observing",
           "anchor": "1661144"
         },
         {
@@ -954,7 +962,7 @@
             },
             {
               "type": "text",
-              "text": " class is key-value coding (KVC) and key-value observing (KVO) compliant. You can observe these properties as desired to control other parts of your application. To observe the properties, use the following key paths: "
+              "text": " class is key-value coding (KVC) and key-value observing (KVO) compliant. You can observe these properties to control other parts of your application. To observe the properties, use the following key paths: "
             }
           ]
         },
@@ -973,7 +981,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " - read-only "
+                      "text": " — Read-only "
                     }
                   ]
                 }
@@ -991,7 +999,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " - read-only "
+                      "text": " — Read-only "
                     }
                   ]
                 }
@@ -1009,7 +1017,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " - readable and writable "
+                      "text": " — Readable and writable "
                     }
                   ]
                 }
@@ -1027,7 +1035,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " - readable and writable "
+                      "text": " — Readable and writable "
                     }
                   ]
                 }
@@ -1045,7 +1053,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " - readable and writable"
+                      "text": " — Readable and writable"
                     }
                   ]
                 }
@@ -1058,7 +1066,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Although you can attach observers to these properties, you shouldn’t use Cocoa bindings to bind them to elements of your application’s user interface. Code associated with your user interface typically must execute only in your app’s main thread. However, KVO notifications associated with an operation queue may occur in any thread. "
+              "text": "Although you can attach observers to these properties, don’t use Cocoa bindings to bind these properties to elements of your application’s user interface. Code associated with your user interface typically must run only in your app’s main thread. However, KVO notifications associated with an operation queue may occur in any thread. "
             }
           ]
         },
@@ -1067,7 +1075,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "For more information about key-value observing and how to attach observers to an object, see "
+              "text": "For more information about KVO and how to attach observers to an object, see the "
             },
             {
               "type": "link",
@@ -1083,7 +1091,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Thread Safety",
+          "text": "Plan for Thread Safety",
           "anchor": "1661160"
         },
         {
@@ -1091,7 +1099,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "It is safe to use a single "
+              "text": "You can safely use a single "
             },
             {
               "type": "reference",
@@ -1118,7 +1126,7 @@
             },
             {
               "type": "text",
-              "text": " framework to initiate the execution of their operations. As a result, operations are always executed on a separate thread, regardless of whether they are designated as synchronous or asynchronous."
+              "text": " framework to initiate the execution of their operations. As a result, queues always invoke operations on a separate thread, regardless of whether the operation is synchronous or asynchronous."
             }
           ]
         }
@@ -1126,7 +1134,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

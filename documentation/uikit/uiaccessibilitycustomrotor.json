@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A context-sensitive function that helps Voice Over users find the next instance of a related element."
+      "text": "A context-sensitive function that helps VoiceOver users find the next instance of a related element. "
     }
   ],
   "documentVersion": 0,
@@ -11,12 +11,12 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit"
       ]
     ]
   },
@@ -39,25 +39,30 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIAccessibilityCustomRotor",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -92,10 +97,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -107,6 +112,14 @@
       "type": "topic",
       "kind": "symbol",
       "role": "collection"
+    },
+    "link-3672103": {
+      "title": "VoiceOver Efficiency with Custom Rotors",
+      "type": "topic",
+      "identifier": "link-3672103",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/wwdc20/10116"
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
@@ -198,7 +211,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The block used to retrieve the next or previous rotor. "
+          "text": "The block for retrieving the next or previous rotor. "
         }
       ]
     },
@@ -208,7 +221,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomrotorsearch",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibilitycustomrotorsearch"
+      "url": "/documentation/uikit/uiaccessibilitycustomrotorsearch",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The block type for retrieving the next or previous rotor."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomrotordirection": {
       "title": "UIAccessibilityCustomRotorDirection",
@@ -220,7 +239,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants indicating the search direction."
+          "text": "Constants that indicate the search direction."
         }
       ]
     },
@@ -234,7 +253,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The type of content searched navigated by the rotor."
+          "text": "The type of content that the rotor searches."
         }
       ]
     },
@@ -248,7 +267,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants indicating the type of content represented by the rotor."
+          "text": "Constants that indicate the type of content that the rotor represents."
         }
       ]
     },
@@ -290,7 +309,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A context-sensitive function that helps Voice Over users find the next instance of a related element."
+          "text": "A context-sensitive function that helps VoiceOver users find the next instance of a related element. "
         }
       ]
     },
@@ -304,7 +323,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A target element referenced by a custom rotor."
+          "text": "A target element that a custom rotor references."
         }
       ]
     },
@@ -348,7 +367,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomrotor/2866000-initwithattributedname",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomrotor/1649751-initwithname",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomrotor/2866006-initwithsystemtype"
-      ]
+      ],
+      "anchor": "2859135"
     },
     {
       "kind": "taskGroup",
@@ -357,7 +377,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomrotor/1649800-itemsearchblock",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomrotorsearch",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomrotordirection"
-      ]
+      ],
+      "anchor": "2881674"
     },
     {
       "kind": "taskGroup",
@@ -365,7 +386,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomrotor/2865918-systemrotortype",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomsystemrotortype"
-      ]
+      ],
+      "anchor": "2864755"
     },
     {
       "kind": "taskGroup",
@@ -373,7 +395,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomrotor/1649745-name",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomrotor/2865780-attributedname"
-      ]
+      ],
+      "anchor": "2859136"
     }
   ],
   "seeAlsoSections": [
@@ -420,6 +443,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -440,15 +464,40 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You might use an instance of this class to find the next link in an article or the next misspelled word in a document. "
+              "text": "You might use an instance of this class to find the next link in an article, or the next misspelled word in a document. "
             }
           ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Session 10116: "
+                },
+                {
+                  "type": "link",
+                  "title": "VoiceOver Efficiency with Custom Rotors",
+                  "destination": "https://developer.apple.com/wwdc20/10116"
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Related Sessions from WWDC20"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_storage",
+        "doc://com.apple.documentation/documentation/uikit/textkit",
         "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle"
       ],
       [
@@ -62,35 +62,40 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@NSTextAlignment",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -127,10 +132,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/text_storage": {
-      "title": "Text Storage",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage",
-      "url": "/documentation/uikit/text_storage",
+    "doc://com.apple.documentation/documentation/uikit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit",
+      "url": "/documentation/uikit/textkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -217,7 +222,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Text is visually left-aligned."
+          "text": "Text is left-aligned."
         }
       ]
     },
@@ -231,7 +236,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Text is visually right-aligned."
+          "text": "Text is right-aligned."
         }
       ]
     },
@@ -245,7 +250,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Text is visually center-aligned."
+          "text": "Text is center-aligned."
         }
       ]
     },
@@ -273,7 +278,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Text uses the default alignment for the current localization of the app. "
+          "text": "Text uses the default alignment for the current localization of the app."
         }
       ]
     },
@@ -352,6 +357,20 @@
       ],
       "deprecated": true
     },
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1532321-alignment": {
+      "title": "alignment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1532321-alignment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsparagraphstyle/1532321-alignment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The text alignment of the paragraph."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/nstextalignment": {
       "title": "NSTextAlignment",
       "type": "topic",
@@ -363,6 +382,132 @@
         {
           "type": "text",
           "text": "Constants that specify text alignment."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1527764-firstlineheadindent": {
+      "title": "firstLineHeadIndent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1527764-firstlineheadindent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsparagraphstyle/1527764-firstlineheadindent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The indentation of the first line of the paragraph."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1530760-headindent": {
+      "title": "headIndent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1530760-headindent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsparagraphstyle/1530760-headindent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The indentation of the paragraph’s lines other than the first."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1525556-tailindent": {
+      "title": "tailIndent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1525556-tailindent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsparagraphstyle/1525556-tailindent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The trailing indentation of the paragraph."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1528614-lineheightmultiple": {
+      "title": "lineHeightMultiple",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1528614-lineheightmultiple",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsparagraphstyle/1528614-lineheightmultiple",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The line height multiple."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1533343-maximumlineheight": {
+      "title": "maximumLineHeight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1533343-maximumlineheight",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsparagraphstyle/1533343-maximumlineheight",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The paragraph’s maximum line height."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1535639-minimumlineheight": {
+      "title": "minimumLineHeight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1535639-minimumlineheight",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsparagraphstyle/1535639-minimumlineheight",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The paragraph’s minimum line height."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1524635-linespacing": {
+      "title": "lineSpacing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1524635-linespacing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsparagraphstyle/1524635-linespacing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The distance in points between the bottom of one line fragment and the top of the next."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1530912-paragraphspacing": {
+      "title": "paragraphSpacing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1530912-paragraphspacing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsparagraphstyle/1530912-paragraphspacing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Distance between the bottom of this paragraph and top of next."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1533011-paragraphspacingbefore": {
+      "title": "paragraphSpacingBefore",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1533011-paragraphspacingbefore",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsparagraphstyle/1533011-paragraphspacingbefore",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The distance between the paragraph’s top and the beginning of its text content."
         }
       ]
     },
@@ -384,7 +529,8 @@
         "doc://com.apple.documentation/documentation/uikit/nstextalignment/nstextalignmentcenter",
         "doc://com.apple.documentation/documentation/uikit/nstextalignment/nstextalignmentjustified",
         "doc://com.apple.documentation/documentation/uikit/nstextalignment/nstextalignmentnatural"
-      ]
+      ],
+      "anchor": "1601456"
     },
     {
       "kind": "taskGroup",
@@ -395,7 +541,26 @@
         "doc://com.apple.documentation/documentation/appkit/nscentertextalignment",
         "doc://com.apple.documentation/documentation/appkit/nsjustifiedtextalignment",
         "doc://com.apple.documentation/documentation/appkit/nsnaturaltextalignment"
-      ]
+      ],
+      "anchor": "3013698"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1532321-alignment",
+        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1527764-firstlineheadindent",
+        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1530760-headindent",
+        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1525556-tailindent",
+        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1528614-lineheightmultiple",
+        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1533343-maximumlineheight",
+        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1535639-minimumlineheight",
+        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1524635-linespacing",
+        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1530912-paragraphspacing",
+        "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1533011-paragraphspacingbefore"
+      ],
+      "title": "Accessing Style Information",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -460,6 +625,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -470,7 +636,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

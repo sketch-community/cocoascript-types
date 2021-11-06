@@ -34,30 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVMetadataItemFilter",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -110,7 +120,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an instance of a metadata filter useful for sharing assets."
+          "text": "Returns a metadata filter to use for sharing assets."
         }
       ],
       "fragments": [
@@ -142,7 +152,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Retrieve and filter all of the metadata associated with an asset."
+          "text": "Retrieve and filter all of the metadata for an asset."
         }
       ]
     },
@@ -156,7 +166,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A metadata item associated with an audiovisual asset or one of its tracks."
+          "text": "A metadata item for an audiovisual asset or one of its tracks."
         }
       ]
     },
@@ -170,7 +180,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A mutable metadata item associated with an audiovisual asset or with one of its tracks."
+          "text": "A mutable metadata item for an audiovisual asset or for one of its tracks."
         }
       ]
     },
@@ -184,7 +194,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A value that defines a metadata format."
+          "text": "A structure that defines metadata formats."
         }
       ]
     },
@@ -199,20 +209,6 @@
         {
           "type": "text",
           "text": "An object that filters selected information from a metadata item."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitemvaluerequest": {
-      "title": "AVMetadataItemValueRequest",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitemvaluerequest",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataitemvaluerequest",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object used to respond to a request to load the value of a metadata item."
         }
       ]
     },
@@ -240,7 +236,8 @@
       "title": "Creating a Metadata Item Filter",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataitemfilter/1387905-metadataitemfilterforsharing"
-      ]
+      ],
+      "anchor": "1668849"
     }
   ],
   "seeAlsoSections": [
@@ -249,8 +246,7 @@
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/retrieving_media_metadata",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataformat",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataitemvaluerequest"
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataformat"
       ],
       "title": "Metadata",
       "generated": true
@@ -290,9 +286,11 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
-            "tvOS"
+            "tvOS",
+            "watchOS"
           ]
         }
       ]
@@ -311,7 +309,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Filter instances are opaque, unmodifiable objects, created with the "
+              "text": "Filter instances are opaque, unmodifiable objects, that you create with the "
             },
             {
               "type": "reference",
@@ -328,7 +326,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

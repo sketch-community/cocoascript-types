@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/textkit"
+        "doc://com.apple.documentation/documentation/appkit/text_input"
       ]
     ]
   },
@@ -34,15 +34,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSTextInput",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -77,10 +77,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/textkit": {
-      "title": "TextKit",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/textkit",
-      "url": "/documentation/appkit/textkit",
+    "doc://com.apple.documentation/documentation/appkit/text_input": {
+      "title": "Text Input",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/text_input",
+      "url": "/documentation/appkit/text_input",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -105,13 +105,7 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nstextinputclient",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstextinputclient",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A set of methods that text views must implement to interact properly with the text input management system. "
-        }
-      ]
+      "url": "/documentation/appkit/nstextinputclient"
     },
     "doc://com.apple.documentation/documentation/appkit/nsinputmanager": {
       "title": "NSInputManager",
@@ -469,6 +463,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nstextcontent": {
+      "title": "NSTextContent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextcontent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextcontent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that describes specific kinds of input content types."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -499,7 +507,8 @@
         "doc://com.apple.documentation/documentation/appkit/nstextinput/1412851-setmarkedtext",
         "doc://com.apple.documentation/documentation/appkit/nstextinput/1412840-unmarktext",
         "doc://com.apple.documentation/documentation/appkit/nstextinput/1412825-validattributesformarkedtext"
-      ]
+      ],
+      "anchor": "1679850"
     },
     {
       "kind": "taskGroup",
@@ -507,7 +516,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nstextinput/1412836-attributedsubstringfromrange",
         "doc://com.apple.documentation/documentation/appkit/nstextinput/1412816-inserttext"
-      ]
+      ],
+      "anchor": "1679895"
     },
     {
       "kind": "taskGroup",
@@ -515,29 +525,32 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nstextinput/1412847-characterindexforpoint",
         "doc://com.apple.documentation/documentation/appkit/nstextinput/1412838-firstrectforcharacterrange"
-      ]
+      ],
+      "anchor": "1679917"
     },
     {
       "kind": "taskGroup",
       "title": "Key bindings",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nstextinput/1412853-docommandbyselector"
-      ]
+      ],
+      "anchor": "1679929"
     },
     {
       "kind": "taskGroup",
       "title": "Other",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nstextinput/1412823-conversationidentifier"
-      ]
+      ],
+      "anchor": "1679941"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nstextinputclient",
         "doc://com.apple.documentation/documentation/appkit/nstextinputcontext",
-        "doc://com.apple.documentation/documentation/appkit/nstextalternatives"
+        "doc://com.apple.documentation/documentation/appkit/nstextalternatives",
+        "doc://com.apple.documentation/documentation/appkit/nstextcontent"
       ],
       "title": "Input Management",
       "generated": true
@@ -697,7 +710,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

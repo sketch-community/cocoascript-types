@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The options for specifying media type characteristics."
+      "text": "A structure that defines media data characteristics."
     }
   ],
   "documentVersion": 0,
@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@AVMediaCharacteristic",
     "symbolKind": "tdef"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,31 +110,53 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristic#2936471": {
+    "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristic#3881167": {
       "title": "Listing 1",
       "type": "section",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristic#2936471",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristic#3881167",
       "kind": "article",
       "role": "codeListing",
-      "url": "/documentation/avfoundation/avmediacharacteristic#2936471"
+      "url": "/documentation/avfoundation/avmediacharacteristic#3881167"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1385847-hasmediacharacteristic": {
-      "title": "hasMediaCharacteristic:",
+    "doc://com.apple.documentation/documentation/avfoundation/avfiletypequicktimemovie": {
+      "title": "AVFileTypeQuickTimeMovie",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1385847-hasmediacharacteristic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfiletypequicktimemovie",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassettrack/1385847-hasmediacharacteristic",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "hasMediaCharacteristic:"
-        }
-      ]
+      "url": "/documentation/avfoundation/avfiletypequicktimemovie"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avfiletypeapplem4v": {
+      "title": "AVFileTypeAppleM4V",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfiletypeapplem4v",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avfiletypeapplem4v"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter": {
+      "title": "AVAssetWriter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristic#3881168": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristic#3881168",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/avmediacharacteristic#3881168"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsstring": {
+      "title": "NSString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsstring"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicaudible": {
       "title": "AVMediaCharacteristicAudible",
@@ -141,7 +168,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The media is audible."
+          "text": "A media characteristic that indicates that a track or media selection option includes audible content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiccontainsalphachannel": {
+      "title": "AVMediaCharacteristicContainsAlphaChannel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiccontainsalphachannel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmediacharacteristiccontainsalphachannel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A media characteristic that indicates that a track contains an alpha channel."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiccontainshdrvideo": {
+      "title": "AVMediaCharacteristicContainsHDRVideo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiccontainshdrvideo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmediacharacteristiccontainshdrvideo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A media characteristic that indicates that a track contains HDR video."
         }
       ]
     },
@@ -155,93 +210,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The options present only forced subtitles."
+          "text": "A media characteristic that indicates that a track or media selection option presents only forced subtitles."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristictranscribesspokendialogforaccessibility": {
-      "title": "AVMediaCharacteristicTranscribesSpokenDialogForAccessibility",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristictranscribesspokendialogforaccessibility",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmediacharacteristictranscribesspokendialogforaccessibility",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The option includes legible content in the language of its specified locale that transcribes spoken dialog."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiceasytoread": {
-      "title": "AVMediaCharacteristicEasyToRead",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiceasytoread",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmediacharacteristiceasytoread",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The option provides legible content in the language of its specified locale and that the content so that it's easier to read. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristic#2936472": {
-      "title": "Listing 2",
-      "type": "section",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristic#2936472",
-      "kind": "article",
-      "role": "codeListing",
-      "url": "/documentation/avfoundation/avmediacharacteristic#2936472"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput": {
-      "title": "AVAssetWriterInput",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristic#2936470": {
-      "title": "Listing 3",
-      "type": "section",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristic#2936470",
-      "kind": "article",
-      "role": "codeListing",
-      "url": "/documentation/avfoundation/avmediacharacteristic#2936470"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsstring": {
-      "title": "NSString",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsstring"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiccontainsalphachannel": {
-      "title": "AVMediaCharacteristicContainsAlphaChannel",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiccontainsalphachannel",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmediacharacteristiccontainsalphachannel"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiccontainshdrvideo": {
-      "title": "AVMediaCharacteristicContainsHDRVideo",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiccontainshdrvideo",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmediacharacteristiccontainshdrvideo"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicisoriginalcontent": {
-      "title": "AVMediaCharacteristicIsOriginalContent",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicisoriginalcontent",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmediacharacteristicisoriginalcontent"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicdescribesmusicandsoundforaccessibility": {
       "title": "AVMediaCharacteristicDescribesMusicAndSoundForAccessibility",
@@ -253,7 +224,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The option includes legible content in the language of its specified locale that describes music and sound effects occurring in program audio."
+          "text": "A media characteristic that indicates that a track or media selection option includes legible content in the language of its specified locale."
         }
       ]
     },
@@ -267,7 +238,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The option includes audible content that describes the visual portion of the presentation."
+          "text": "A media characteristic that indicates the media includes audible content that describes the visual portion of the presentation."
         }
       ]
     },
@@ -281,7 +252,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The track or media selection option contains a language or dialect translation of originally or previously produced content."
+          "text": "A media characteristic that indicates that a track or media selection option contains audio language or dialect translation of the original content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiceasytoread": {
+      "title": "AVMediaCharacteristicEasyToRead",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiceasytoread",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmediacharacteristiceasytoread",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A media characteristic that indicates a track or media selection option provides legible content that’s edited for easy reading."
         }
       ]
     },
@@ -295,7 +280,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The media is frame-based."
+          "text": "A media characteristic that indicates that a track or media selection option includes frame-based content."
         }
       ]
     },
@@ -309,7 +294,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The option includes content marked by the content author as secondary to the presentation of the asset."
+          "text": "A media characteristic that indicates a track or media selection option includes content its author indicates is auxiliary to the asset’s presentation."
         }
       ]
     },
@@ -323,7 +308,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The option includes content marked by the content author as intrinsic to the presentation of the asset."
+          "text": "A media characteristic that indicates a track or media selection option includes content its author indicates is essential to the asset’s presentation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicisoriginalcontent": {
+      "title": "AVMediaCharacteristicIsOriginalContent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicisoriginalcontent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmediacharacteristicisoriginalcontent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A media characteristic that indicates that a track or media selection option contains original content."
         }
       ]
     },
@@ -337,7 +336,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The option contains a language or dialect translation of origianlly or previously produced content."
+          "text": "A media characteristic that indicates that a track or media selection option contains a language or dialect translation of the original content."
         }
       ]
     },
@@ -351,7 +350,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The media is legible."
+          "text": "A media characteristic that indicates that a track or media selection option includes legible content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristictranscribesspokendialogforaccessibility": {
+      "title": "AVMediaCharacteristicTranscribesSpokenDialogForAccessibility",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristictranscribesspokendialogforaccessibility",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmediacharacteristictranscribesspokendialogforaccessibility",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A media characteristic that indicates that a media selection option includes legible content that transcribes spoken dialog."
         }
       ]
     },
@@ -365,7 +378,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The track uses a wide gamut color space and can make use of colors that can't be accurately represented otherwise."
+          "text": "A media characteristic that indicates that a track uses a wide-gamut color space."
         }
       ]
     },
@@ -379,7 +392,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The media is visual."
+          "text": "A media characteristic that indicates that a track or media selection option includes visual content."
         }
       ]
     },
@@ -393,7 +406,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The option contains a language translation created by adding a verbal interpretation of dialog and translations."
+          "text": "A media characteristic that indicates that a track or media selection option contains a language translation and verbal interpretation of spoken dialog."
         }
       ]
     },
@@ -421,7 +434,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The options for specifying media type characteristics."
+          "text": "A structure that defines media data characteristics."
         }
       ]
     },
@@ -435,7 +448,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A uniform type identifier for various file formats."
+          "text": "The uniform type identifiers for various file formats."
         }
       ]
     },
@@ -463,17 +476,31 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that specifies a set of parameters for configuring objects that use output settings dictionaries."
+          "text": "An object that builds audio and video output settings dictionaries."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings": {
+    "doc://com.apple.documentation/documentation/avfoundation/1390116-avmakerectwithaspectratioinsider": {
+      "title": "AVMakeRectWithAspectRatioInsideRect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/1390116-avmakerectwithaspectratioinsider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/1390116-avmakerectwithaspectratioinsider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a scaled rectangle that maintains the specified aspect ratio within a bounding rectangle."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/video_settings": {
       "title": "Video Settings",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/video_settings",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/avfoundation/avassetwriterinput/video_settings",
+      "url": "/documentation/avfoundation/avcapturephotosettings/video_settings",
       "abstract": [
         {
           "type": "text",
@@ -494,10 +521,9 @@
       "kind": "taskGroup",
       "title": "Media Characteristics",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicaudible",
         "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiccontainsalphachannel",
         "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiccontainshdrvideo",
-        "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicisoriginalcontent",
-        "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicaudible",
         "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiccontainsonlyforcedsubtitles",
         "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicdescribesmusicandsoundforaccessibility",
         "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicdescribesvideoforaccessibility",
@@ -506,13 +532,15 @@
         "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicframebased",
         "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicisauxiliarycontent",
         "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicismainprogramcontent",
+        "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicisoriginalcontent",
         "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiclanguagetranslation",
         "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiclegible",
         "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristictranscribesspokendialogforaccessibility",
         "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicuseswidegamutcolorspace",
         "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicvisual",
         "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicvoiceovertranslation"
-      ]
+      ],
+      "anchor": "2901729"
     }
   ],
   "seeAlsoSections": [
@@ -522,7 +550,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avfiletype",
         "doc://com.apple.documentation/documentation/avfoundation/avfiletypeprofile",
         "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings"
+        "doc://com.apple.documentation/documentation/avfoundation/1390116-avmakerectwithaspectratioinsider",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/video_settings"
       ],
       "title": "Supporting Types",
       "generated": true
@@ -566,6 +595,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -588,32 +618,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Each track of.mov files and.m4v files (that’s, files of type "
-            },
-            {
-              "type": "codeVoice",
-              "code": "mov"
-            },
-            {
-              "type": "text",
-              "text": " and "
-            },
-            {
-              "type": "codeVoice",
-              "code": "m4v"
-            },
-            {
-              "type": "text",
-              "text": ") can optionally carry one or more tagged media characteristics, each of which declares a purpose, a trait, or some other distinguishing property of the track’s media."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "For example, tag a track containing audio that mixes original program content with additional narrative descriptions of visual action with the media characteristic "
+              "text": "QuickTime Movie and MPEG-4 video files may contain tracks that provide tagged media characteristics to indicate a purpose, trait, or feature of the track’s media. For example, an audio track that mixes original program content with additional narrative descriptions of visual action may have the media characteristic "
             },
             {
               "type": "codeVoice",
@@ -621,7 +626,7 @@
             },
             {
               "type": "text",
-              "text": " in order to distinguish it from other audio tracks stored in the same file that don’t contain additional narrative. "
+              "text": " to distinguish it from other audio tracks stored in the same file that don’t contain additional narrative."
             }
           ]
         },
@@ -630,65 +635,24 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Each tagged media characteristic i"
-            },
-            {
-              "type": "codeVoice",
-              "code": "n.mov"
-            },
-            {
-              "type": "text",
-              "text": " an"
-            },
-            {
-              "type": "codeVoice",
-              "code": "d.m4v"
-            },
-            {
-              "type": "text",
-              "text": " files is stored in track user data as a user data item of type "
-            },
-            {
-              "type": "codeVoice",
-              "code": "'tagc'"
-            },
-            {
-              "type": "text",
-              "text": " (represented as a "
-            },
-            {
-              "type": "codeVoice",
-              "code": "FourCharCode"
-            },
-            {
-              "type": "text",
-              "text": ") that consists of a standard atom header (size and type) followed by an array of US-ASCII characters (8-bit, high bit clear) comprising the value of the tag. The character array isn’t a C string; there’s no terminating zero. The user data item atom size is sum of the standard atom header size (8) and the size of the US-ASCII character array."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "You can inspect the tagged media characteristics of a track as follows:"
+              "text": "You inspect the tagged media characteristics of a track as shown below:"
             }
           ]
         },
         {
           "type": "codeListing",
           "code": [
-            "NSArray *trackUserDataItems = [myAVAssetTrack metadataForFormat:AVMetadataFormatQuickTimeUserData];",
-            "NSArray *trackTaggedMediaCharacteristics = [AVMetadataItem metadataItemsFromArray:trackUserDataItems",
-            "        withKey:AVMetadataQuickTimeUserDataKeyTaggedCharacteristic",
-            "        keySpace:AVMetadataKeySpaceQuickTimeUserData];",
+            "NSArray *userDataItems = [myAVAssetTrack metadataForFormat:AVMetadataFormatQuickTimeUserData];",
+            "NSArray *trackTaggedMediaCharacteristics = [AVMetadataItem metadataItemsFromArray: userDataItems",
+            "        withKey: AVMetadataQuickTimeUserDataKeyTaggedCharacteristic",
+            "        keySpace: AVMetadataKeySpaceQuickTimeUserData];",
             "for (AVMetadataItem *metadataItem in trackTaggedMediaCharacteristics) {",
             "     NSString *thisTrackMediaCharacteristic = [metadataItem stringValue];",
             "}"
           ],
-          "syntax": "occ",
+          "syntax": "swift",
           "metadata": {
-            "anchor": "2936471",
+            "anchor": "3881167",
             "title": "Listing 1"
           }
         },
@@ -697,97 +661,34 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You can use "
+              "text": "You write tagged media characteristics to files of type "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1385847-hasmediacharacteristic"
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfiletypequicktimemovie"
             },
             {
               "type": "text",
-              "text": " to determine whether a track has a particular media characteristic, whether to infer the characteristic from its media type or format descriptions (such as "
+              "text": " and "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicaudible"
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfiletypeapplem4v"
             },
             {
               "type": "text",
-              "text": " or "
+              "text": " by using an instance of "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiccontainsonlyforcedsubtitles"
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter"
             },
             {
               "type": "text",
-              "text": ") or requires explicit tagging (such as "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristictranscribesspokendialogforaccessibility"
-            },
-            {
-              "type": "text",
-              "text": " or "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiceasytoread"
-            },
-            {
-              "type": "text",
-              "text": "). You can’t use explicit tagging to override inferences from tracks' media types or format descriptions; for example, the following returns false for any audio track, even when tagging the track with the visual characteristic."
-            }
-          ]
-        },
-        {
-          "type": "codeListing",
-          "code": [
-            "[anAVAssetTrack hasMediaCharacteristic:AVMediaCharacteristicVisual]"
-          ],
-          "syntax": "occ",
-          "metadata": {
-            "anchor": "2936472",
-            "title": "Listing 2"
-          }
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "You can write tagged media characteristics to the QuickTime user data of an output track associated with an "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput"
-            },
-            {
-              "type": "text",
-              "text": " object as follows, provided that the output file type of the asset writer is either "
-            },
-            {
-              "type": "codeVoice",
-              "code": "mov"
-            },
-            {
-              "type": "text",
-              "text": " or "
-            },
-            {
-              "type": "codeVoice",
-              "code": "m4v"
-            },
-            {
-              "type": "text",
-              "text": ":"
+              "text": ". You indicate tagged characteristics for a track by setting metadata on its associated asset writer input as shown below:"
             }
           ]
         },
@@ -801,10 +702,10 @@
             "[myMutableArrayOfMetadata addObject:myTaggedMediaCharacteristic];",
             "[myAssetWriterInput setMetadata:myMutableArrayOfMetadata];"
           ],
-          "syntax": "occ",
+          "syntax": "swift",
           "metadata": {
-            "anchor": "2936470",
-            "title": "Listing 3"
+            "anchor": "3881168",
+            "title": "Listing 2"
           }
         },
         {
@@ -815,7 +716,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

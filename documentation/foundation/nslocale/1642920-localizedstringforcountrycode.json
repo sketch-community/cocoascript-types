@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns the localized string for the specified country code."
+      "text": "Returns the localized string for a country or region code."
     }
   ],
   "documentVersion": 0,
@@ -47,35 +47,43 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSLocale(im)localizedStringForCountryCode:",
+    "parent": {
+      "title": "NSLocale"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -184,7 +192,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The list of known country codes."
+          "text": "The list of known country or region codes."
         }
       ]
     },
@@ -230,7 +238,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the localized string for the specified country code."
+          "text": "Returns the localized string for a country or region code."
         }
       ],
       "fragments": [
@@ -518,6 +526,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -540,7 +549,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The country code indicating the country whose name you want."
+                  "text": "The code of the country or region that indicates the name you want."
                 }
               ]
             }
@@ -562,7 +571,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The localized name of the country for the given code."
+              "text": "The localized name of the country or region."
             }
           ]
         }
@@ -657,7 +666,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

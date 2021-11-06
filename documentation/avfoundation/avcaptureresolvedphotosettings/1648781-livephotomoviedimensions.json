@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The size, in pixels, of the Live Photo movie content delivered by this capture."
+      "text": "The size, in pixels, of the Live Photo movie content that the capture delivers."
     }
   ],
   "documentVersion": 0,
@@ -36,20 +36,28 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVCaptureResolvedPhotoSettings(py)livePhotoMovieDimensions",
+    "parent": {
+      "title": "AVCaptureResolvedPhotoSettings"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -132,7 +140,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The size, in pixels, of the photo image (in a processed format such as JPEG) delivered by this capture."
+          "text": "The size, in pixels, of the photo image (in a processed format, such as JPEG) that the capture delivers."
         }
       ]
     },
@@ -154,7 +162,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The size, in pixels, of the RAW-format photo image delivered by this capture."
+          "text": "The size, in pixels, of the RAW-format photo image that the capture delivers."
         }
       ]
     },
@@ -168,7 +176,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The size, in pixels, of the preview image delivered along with this capture."
+          "text": "The size, in pixels, of the preview image that the system delivers with the capture."
         }
       ]
     },
@@ -182,7 +190,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The size, in pixels, of the thumbnail image delivered in this capture. "
+          "text": "The size, in pixels, of the thumbnail image that the capture delivers."
         }
       ]
     },
@@ -196,7 +204,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The size, in pixels, of the RAW-format embedded thumbnail image delivered by this capture."
+          "text": "The size, in pixels, of the RAW-format embedded thumbnail image that the capture delivers."
         }
       ]
     },
@@ -210,7 +218,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The size, in pixels, of the Live Photo movie content delivered by this capture."
+          "text": "The size, in pixels, of the Live Photo movie content that the capture delivers."
         }
       ]
     },
@@ -224,7 +232,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The size, in pixels, of the portrait effects matte delivered by this capture."
+          "text": "The size, in pixels, of the portrait effects matte that the capture delivers."
         }
       ]
     },
@@ -235,6 +243,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/avfoundation/avcaptureresolvedphotosettings/3153015-dimensionsforsemanticsegmentatio",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the resolved dimensions of the semantic segmentation mattes that the photo output delivers."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -256,7 +270,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The time range by which the system delivers the photo to the delegate."
+          "text": "The time range in which to expect the system to deliver the photo to the delegate."
         }
       ]
     },
@@ -322,6 +336,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -402,7 +417,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

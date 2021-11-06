@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "This document describes the constants defined in the Core Data framework and not described in a document for an individual class."
+      "text": "Keys to use with persistent stores and notifications from Core Data."
     }
   ],
   "documentVersion": 0,
@@ -30,8 +30,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -66,21 +66,621 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/coredata/nsbinarystoreinsecuredecodingcompatibilityoption": {
-      "title": "NSBinaryStoreInsecureDecodingCompatibilityOption",
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber": {
+      "title": "NSCoreDataVersionNumber",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsbinarystoreinsecuredecodingcompatibilityoption",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsbinarystoreinsecuredecodingcompatibilityoption"
+      "url": "/documentation/coredata/nscoredataversionnumber",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The version of Core Data available in the current process."
+        }
+      ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nsbinarystoresecuredecodingclasses": {
-      "title": "NSBinaryStoreSecureDecodingClasses",
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_10": {
+      "title": "NSCoreDataVersionNumber10_10",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsbinarystoresecuredecodingclasses",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_10",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsbinarystoresecuredecodingclasses"
+      "url": "/documentation/coredata/nscoredataversionnumber10_10",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.10."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_10_2": {
+      "title": "NSCoreDataVersionNumber10_10_2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_10_2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_10_2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.10.2."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_10_3": {
+      "title": "NSCoreDataVersionNumber10_10_3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_10_3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_10_3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.10.3."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_11": {
+      "title": "NSCoreDataVersionNumber10_11",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_11",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_11",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.11."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_11_3": {
+      "title": "NSCoreDataVersionNumber10_11_3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_11_3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_11_3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.11.3."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_4": {
+      "title": "NSCoreDataVersionNumber10_4",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_4",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_4",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.4."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_4_3": {
+      "title": "NSCoreDataVersionNumber10_4_3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_4_3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_4_3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.4.3."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_5": {
+      "title": "NSCoreDataVersionNumber10_5",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_5",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_5",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.5."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_5_3": {
+      "title": "NSCoreDataVersionNumber10_5_3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_5_3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_5_3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.5.3."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_6": {
+      "title": "NSCoreDataVersionNumber10_6",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_6",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_6",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.6."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_6_2": {
+      "title": "NSCoreDataVersionNumber10_6_2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_6_2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_6_2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.6.2."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_6_3": {
+      "title": "NSCoreDataVersionNumber10_6_3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_6_3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_6_3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.6.3."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_7": {
+      "title": "NSCoreDataVersionNumber10_7",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_7",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_7",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.7."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_7_2": {
+      "title": "NSCoreDataVersionNumber10_7_2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_7_2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_7_2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.7.2."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_7_3": {
+      "title": "NSCoreDataVersionNumber10_7_3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_7_3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_7_3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.7.3."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_7_4": {
+      "title": "NSCoreDataVersionNumber10_7_4",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_7_4",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_7_4",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.7.4."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_8": {
+      "title": "NSCoreDataVersionNumber10_8",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_8",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_8",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.8."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_8_2": {
+      "title": "NSCoreDataVersionNumber10_8_2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_8_2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_8_2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.8.2."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_9": {
+      "title": "NSCoreDataVersionNumber10_9",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_9",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_9",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.9."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_9_2": {
+      "title": "NSCoreDataVersionNumber10_9_2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_9_2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_9_2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.9.2."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_9_3": {
+      "title": "NSCoreDataVersionNumber10_9_3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_9_3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_9_3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.9.3."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_3_0": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_3_0",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_3_0",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_3_0",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 3."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_3_1": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_3_1",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_3_1",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_3_1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 3.1."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_3_2": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_3_2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_3_2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_3_2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 3.2."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_4_0": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_4_0",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_4_0",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_4_0",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 4."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_4_1": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_4_1",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_4_1",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_4_1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 4.1."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_4_2": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_4_2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_4_2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_4_2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 4.2."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_4_3": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_4_3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_4_3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_4_3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 4.2."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_5_0": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_5_0",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_5_0",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_5_0",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 5."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_5_1": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_5_1",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_5_1",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_5_1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 5.1."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_6_0": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_6_0",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_6_0",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_6_0",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 6."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_6_1": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_6_1",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_6_1",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_6_1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 6.1."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_7_0": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_7_0",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_7_0",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_7_0",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 7.0."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_7_1": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_7_1",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_7_1",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_7_1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 7.1."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_8_0": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_8_0",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_8_0",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_8_0",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 8.0."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_8_3": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_8_3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_8_3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_8_3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 8.3."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_9_0": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_9_0",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_9_0",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_9_0",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 9.0."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_9_2": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_9_2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_9_2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_9_2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 9.2."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_9_3": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_9_3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_9_3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_9_3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 9.3."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nssqliteerrordomain": {
+      "title": "NSSQLiteErrorDomain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nssqliteerrordomain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nssqliteerrordomain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Domain for SQLite errors."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsaffectedobjectserrorkey": {
+      "title": "NSAffectedObjectsErrorKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsaffectedobjectserrorkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsaffectedobjectserrorkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The key for objects prompting an error."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsaffectedstoreserrorkey": {
+      "title": "NSAffectedStoresErrorKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsaffectedstoreserrorkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsaffectedstoreserrorkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The key for stores prompting an error."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsdetailederrorskey": {
+      "title": "NSDetailedErrorsKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsdetailederrorskey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsdetailederrorskey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "If multiple validation errors occur in one operation, they are collected in an array and added with this key to the “top-level error” of the operation."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nsdeletedobjectidskey": {
       "title": "NSDeletedObjectIDsKey",
@@ -88,7 +688,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nsdeletedobjectidskey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsdeletedobjectidskey"
+      "url": "/documentation/coredata/nsdeletedobjectidskey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A user info key to identify deleted object identifiers in notifications after saving a managed object context."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nsinsertedobjectidskey": {
       "title": "NSInsertedObjectIDsKey",
@@ -96,7 +702,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nsinsertedobjectidskey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsinsertedobjectidskey"
+      "url": "/documentation/coredata/nsinsertedobjectidskey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A user info key to identify inserted object identifiers in notifications after saving a managed object context."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nsinvalidatedobjectidskey": {
       "title": "NSInvalidatedObjectIDsKey",
@@ -104,7 +716,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nsinvalidatedobjectidskey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsinvalidatedobjectidskey"
+      "url": "/documentation/coredata/nsinvalidatedobjectidskey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A user info key to identify invalidated object identifiers in notifications after saving a managed object context."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nspersistenthistorytokenkey": {
       "title": "NSPersistentHistoryTokenKey",
@@ -112,15 +730,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistenthistorytokenkey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nspersistenthistorytokenkey"
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstoreremotechangenotificationpostoptionkey": {
-      "title": "NSPersistentStoreRemoteChangeNotificationPostOptionKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstoreremotechangenotificationpostoptionkey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstoreremotechangenotificationpostoptionkey"
+      "url": "/documentation/coredata/nspersistenthistorytokenkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A user info key to identify the history token in persistent store remote change notifications."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nspersistentstoreurlkey": {
       "title": "NSPersistentStoreURLKey",
@@ -128,7 +744,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstoreurlkey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstoreurlkey"
+      "url": "/documentation/coredata/nspersistentstoreurlkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A user info key to identify the store URL in persistent store remote change notifications."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nsrefreshedobjectidskey": {
       "title": "NSRefreshedObjectIDsKey",
@@ -136,7 +758,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nsrefreshedobjectidskey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsrefreshedobjectidskey"
+      "url": "/documentation/coredata/nsrefreshedobjectidskey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A user info key to identify refreshed object identifiers in notifications after saving a managed object context."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nsupdatedobjectidskey": {
       "title": "NSUpdatedObjectIDsKey",
@@ -144,7 +772,69 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nsupdatedobjectidskey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsupdatedobjectidskey"
+      "url": "/documentation/coredata/nsupdatedobjectidskey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A user info key to identify updated object identifiers in notifications after saving a managed object context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsbinarystoreinsecuredecodingcompatibilityoption": {
+      "title": "NSBinaryStoreInsecureDecodingCompatibilityOption",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsbinarystoreinsecuredecodingcompatibilityoption",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsbinarystoreinsecuredecodingcompatibilityoption",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A flag that indicates Core Data decodes the binary store insecurely."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsbinarystoresecuredecodingclasses": {
+      "title": "NSBinaryStoreSecureDecodingClasses",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsbinarystoresecuredecodingclasses",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsbinarystoresecuredecodingclasses",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An additional set of classes to use while decoding a binary store."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstoreremotechangenotificationpostoptionkey": {
+      "title": "NSPersistentStoreRemoteChangeNotificationPostOptionKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstoreremotechangenotificationpostoptionkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentstoreremotechangenotificationpostoptionkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that indicates a persistent store posts a remote change notification for every write to the store, including writes by other processes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/core_data_constants": {
+      "title": "Core Data Constants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/core_data_constants",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coredata/core_data_constants",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Keys to use with persistent stores and notifications from Core Data."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -157,23 +847,89 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Constants",
+      "title": "Core Data Versions",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nsbinarystoreinsecuredecodingcompatibilityoption",
-        "doc://com.apple.documentation/documentation/coredata/nsbinarystoresecuredecodingclasses",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_10",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_10_2",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_10_3",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_11",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_11_3",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_4",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_4_3",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_5",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_5_3",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_6",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_6_2",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_6_3",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_7",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_7_2",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_7_3",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_7_4",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_8",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_8_2",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_9",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_9_2",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_9_3",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_3_0",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_3_1",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_3_2",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_4_0",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_4_1",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_4_2",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_4_3",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_5_0",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_5_1",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_6_0",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_6_1",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_7_0",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_7_1",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_8_0",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_8_3",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_9_0",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_9_2",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_9_3"
+      ],
+      "anchor": "3787340"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Error Domains",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nssqliteerrordomain"
+      ],
+      "anchor": "3787338"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "User Info Dictionary Keys",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsaffectedobjectserrorkey",
+        "doc://com.apple.documentation/documentation/coredata/nsaffectedstoreserrorkey",
+        "doc://com.apple.documentation/documentation/coredata/nsdetailederrorskey",
         "doc://com.apple.documentation/documentation/coredata/nsdeletedobjectidskey",
         "doc://com.apple.documentation/documentation/coredata/nsinsertedobjectidskey",
         "doc://com.apple.documentation/documentation/coredata/nsinvalidatedobjectidskey",
         "doc://com.apple.documentation/documentation/coredata/nspersistenthistorytokenkey",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstoreremotechangenotificationpostoptionkey",
         "doc://com.apple.documentation/documentation/coredata/nspersistentstoreurlkey",
         "doc://com.apple.documentation/documentation/coredata/nsrefreshedobjectidskey",
         "doc://com.apple.documentation/documentation/coredata/nsupdatedobjectidskey"
-      ]
+      ],
+      "anchor": "3786779"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Persistent Store Metadata Keys",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsbinarystoreinsecuredecodingcompatibilityoption",
+        "doc://com.apple.documentation/documentation/coredata/nsbinarystoresecuredecodingclasses",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstoreremotechangenotificationpostoptionkey"
+      ],
+      "anchor": "3786780"
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

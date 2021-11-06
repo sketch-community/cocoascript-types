@@ -41,25 +41,33 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UINavigationBar(py)delegate",
+    "parent": {
+      "title": "UINavigationBar"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -108,7 +116,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uinavigationbar",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uinavigationbar"
+      "url": "/documentation/uikit/uinavigationbar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Navigational controls that display in a bar along the top of the screen, usually in conjunction with a navigation controller."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/view_controllers": {
       "title": "View Controllers",
@@ -128,24 +142,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The "
-        },
-        {
-          "type": "codeVoice",
-          "code": "UINavigationBarDelegate"
-        },
-        {
-          "type": "text",
-          "text": " protocol defines optional methods that a "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/uikit/uinavigationbar"
-        },
-        {
-          "type": "text",
-          "text": " delegate should implement to update its views when items are pushed and popped from the stack. The navigation bar represents only the bar at the top of the screen, not the view below. It’s the application’s responsibility to implement the behavior when the top item changes."
+          "text": "Methods that a navigation bar calls before and after it modifies its stack of navigation items."
         }
       ]
     },
@@ -181,16 +178,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "seeAlsoSections": [
@@ -256,6 +243,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -310,7 +298,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

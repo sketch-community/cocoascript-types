@@ -34,32 +34,37 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "7.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Foundation20PersonNameComponentsV",
@@ -76,8 +81,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -109,72 +114,6 @@
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/foundation/personnamecomponents": {
-      "title": "PersonNameComponents",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/personnamecomponents",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/personnamecomponents",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The separate parts of a person's name, allowing locale-aware formatting. "
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "struct "
-        },
-        {
-          "kind": "identifier",
-          "text": "PersonNameComponents"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents": {
-      "title": "NSPersonNameComponents",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nspersonnamecomponents",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that manages the separate parts of a person's name that bridges to "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/personnamecomponents"
-        },
-        {
-          "type": "text",
-          "text": "; use "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents"
-        },
-        {
-          "type": "text",
-          "text": " when you need reference semantics or other Foundation-specific behavior."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "class "
-        },
-        {
-          "kind": "identifier",
-          "text": "NSPersonNameComponents"
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/foundation/referenceconvertible": {
       "title": "ReferenceConvertible",
@@ -264,6 +203,38 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/personnamecomponents/2908845-init": {
+      "title": "init(from:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/personnamecomponents/2908845-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/personnamecomponents/2908845-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new instance by decoding from the given decoder."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "from"
+        },
+        {
+          "kind": "text",
+          "text": ": Decoder)"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/personnamecomponents/1780233-nameprefix": {
       "title": "namePrefix",
       "type": "topic",
@@ -274,7 +245,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The portion of a name’s full form of address that precedes the name itself (for example, “Dr.,” “Mr.,” “Ms.”)."
+          "text": "The portion of a name’s full form of address that precedes the name itself."
         }
       ],
       "fragments": [
@@ -302,7 +273,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Name bestowed upon an individual to differentiate them from other members of a group that share a family name (for example, “Johnathan”)."
+          "text": "Name bestowed upon an individual to differentiate them from other members of a group that share a family name."
         }
       ],
       "fragments": [
@@ -330,7 +301,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Secondary name bestowed upon an individual to differentiate them from others that have the same given name (for example, “Maple”)."
+          "text": "Secondary name bestowed upon an individual to differentiate them from others that have the same given name."
         }
       ],
       "fragments": [
@@ -358,7 +329,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Name bestowed upon an individual to denote membership in a group or family. (for example, “Appleseed”)."
+          "text": "Name bestowed upon an individual to denote membership in a group or family."
         }
       ],
       "fragments": [
@@ -386,7 +357,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The portion of a name’s full form of address that follows the name itself (for example, “Esq.,” “Jr.,” “Ph.D.”)."
+          "text": "The portion of a name’s full form of address that follows the name itself."
         }
       ],
       "fragments": [
@@ -414,7 +385,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Name substituted for the purposes of familiarity (for example, \"Johnny\")."
+          "text": "Name substituted for the purposes of familiarity."
         }
       ],
       "fragments": [
@@ -460,59 +431,83 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/personnamecomponents/2883039": {
-      "title": "!=(_:_:)",
+    "doc://com.apple.documentation/documentation/foundation/personnamecomponents/3767265-formatted": {
+      "title": "formatted()",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/personnamecomponents/2883039",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/personnamecomponents/3767265-formatted",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/personnamecomponents/2883039",
+      "url": "/documentation/foundation/personnamecomponents/3767265-formatted",
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether two values are not equal."
+          "text": "Generates a locale-aware string representation of an instance of person name components using the default format style."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "static func "
+          "text": "func "
         },
         {
           "kind": "identifier",
-          "text": "!= "
+          "text": "formatted"
         },
         {
           "kind": "text",
-          "text": "(PersonNameComponents, PersonNameComponents) -> Bool"
+          "text": "() -> String"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/personnamecomponents/2293188": {
-      "title": "==(_:_:)",
+    "doc://com.apple.documentation/documentation/foundation/personnamecomponents/3767266-formatted": {
+      "title": "formatted(_:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/personnamecomponents/2293188",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/personnamecomponents/3767266-formatted",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/personnamecomponents/2293188",
+      "url": "/documentation/foundation/personnamecomponents/3767266-formatted",
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates whether two person name component structures are the same."
+          "text": "Generates a locale-aware string representation of an instance of person name components using the provided format style."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "static func "
+          "text": "func "
         },
         {
           "kind": "identifier",
-          "text": "== "
+          "text": "formatted"
         },
         {
           "kind": "text",
-          "text": "(PersonNameComponents, PersonNameComponents) -> Bool"
+          "text": "<S>(S) -> S.FormatOutput"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/personnamecomponents/formatstyle": {
+      "title": "PersonNameComponents.FormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/personnamecomponents/formatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/personnamecomponents/formatstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type used to format a person’s name with a style appropriate for the given locale."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "PersonNameComponents.FormatStyle"
         }
       ]
     },
@@ -628,53 +623,59 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/personnamecomponents/referencetype": {
-      "title": "PersonNameComponents.ReferenceType",
+    "doc://com.apple.documentation/documentation/foundation/personnamecomponents/2883039": {
+      "title": "!=(_:_:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/personnamecomponents/referencetype",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/personnamecomponents/2883039",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/personnamecomponents/referencetype",
+      "url": "/documentation/foundation/personnamecomponents/2883039",
       "abstract": [
         {
           "type": "text",
-          "text": "An alias for this value type's equivalent reference type."
+          "text": "Returns a Boolean value that indicates whether two values are not equal."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "typealias "
+          "text": "static func "
         },
         {
           "kind": "identifier",
-          "text": "PersonNameComponents.ReferenceType"
+          "text": "!= "
+        },
+        {
+          "kind": "text",
+          "text": "(PersonNameComponents, PersonNameComponents) -> Bool"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/personnamecomponents/2908845-init": {
-      "title": "init(from:)",
+    "doc://com.apple.documentation/documentation/foundation/personnamecomponents/2293188": {
+      "title": "==(_:_:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/personnamecomponents/2908845-init",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/personnamecomponents/2293188",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/personnamecomponents/2908845-init",
+      "url": "/documentation/foundation/personnamecomponents/2293188",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that Indicates whether two values are equal."
+        }
+      ],
       "fragments": [
         {
-          "kind": "identifier",
-          "text": "init"
-        },
-        {
           "kind": "text",
-          "text": "("
+          "text": "static func "
         },
         {
           "kind": "identifier",
-          "text": "from"
+          "text": "== "
         },
         {
           "kind": "text",
-          "text": ": Decoder)"
+          "text": "(PersonNameComponents, PersonNameComponents) -> Bool"
         }
       ]
     },
@@ -685,6 +686,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/personnamecomponents/2908877-encode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Encodes this value into the given encoder."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -715,6 +722,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/personnamecomponents/3236793-hash",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Hashes the essential components of this value by feeding them into the given hasher."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -735,6 +748,164 @@
         {
           "kind": "text",
           "text": ": inout Hasher)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents": {
+      "title": "NSPersonNameComponents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nspersonnamecomponents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that manages the separate parts of a person's name, for use when you need reference semantics or other Foundation-specific behavior."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSPersonNameComponents"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/personnamecomponents/referencetype": {
+      "title": "PersonNameComponents.ReferenceType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/personnamecomponents/referencetype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/personnamecomponents/referencetype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An alias for this value type's equivalent reference type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "typealias "
+        },
+        {
+          "kind": "identifier",
+          "text": "PersonNameComponents.ReferenceType"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/personnamecomponents/3867965-init": {
+      "title": "init(namePrefix:givenName:middleName:familyName:nameSuffix:nickname:phoneticRepresentation:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/personnamecomponents/3867965-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/personnamecomponents/3867965-init",
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "namePrefix"
+        },
+        {
+          "kind": "text",
+          "text": ": String?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "givenName"
+        },
+        {
+          "kind": "text",
+          "text": ": String?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "middleName"
+        },
+        {
+          "kind": "text",
+          "text": ": String?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "familyName"
+        },
+        {
+          "kind": "text",
+          "text": ": String?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "nameSuffix"
+        },
+        {
+          "kind": "text",
+          "text": ": String?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "nickname"
+        },
+        {
+          "kind": "text",
+          "text": ": String?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "phoneticRepresentation"
+        },
+        {
+          "kind": "text",
+          "text": ": PersonNameComponents?)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/personnamecomponents/attributedstyle": {
+      "title": "PersonNameComponents.AttributedStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/personnamecomponents/attributedstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/personnamecomponents/attributedstyle",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "PersonNameComponents.AttributedStyle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/personnamecomponents/parsestrategy": {
+      "title": "PersonNameComponents.ParseStrategy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/personnamecomponents/parsestrategy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/personnamecomponents/parsestrategy",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "PersonNameComponents.ParseStrategy"
         }
       ]
     },
@@ -762,12 +933,46 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/personnamecomponents": {
+      "title": "PersonNameComponents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/personnamecomponents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/personnamecomponents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The separate parts of a person's name, allowing locale-aware formatting. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "PersonNameComponents"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "13.0",
+        "13.2 beta 1"
+      ]
     }
   },
   "relationshipsSections": [
@@ -792,8 +997,10 @@
       "kind": "taskGroup",
       "title": "Creating Person Name Components",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/personnamecomponents/1780277-init"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/personnamecomponents/1780277-init",
+        "doc://com.apple.documentation/documentation/foundation/personnamecomponents/2908845-init"
+      ],
+      "anchor": "2851057"
     },
     {
       "kind": "taskGroup",
@@ -806,15 +1013,18 @@
         "doc://com.apple.documentation/documentation/foundation/personnamecomponents/1779864-namesuffix",
         "doc://com.apple.documentation/documentation/foundation/personnamecomponents/1779821-nickname",
         "doc://com.apple.documentation/documentation/foundation/personnamecomponents/1780070-phoneticrepresentation"
-      ]
+      ],
+      "anchor": "2902152"
     },
     {
       "kind": "taskGroup",
-      "title": "Comparing Person Name Components",
+      "title": "Formatting Person Name Components",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/personnamecomponents/2883039",
-        "doc://com.apple.documentation/documentation/foundation/personnamecomponents/2293188"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/personnamecomponents/3767265-formatted",
+        "doc://com.apple.documentation/documentation/foundation/personnamecomponents/3767266-formatted",
+        "doc://com.apple.documentation/documentation/foundation/personnamecomponents/formatstyle"
+      ],
+      "anchor": "3807460"
     },
     {
       "kind": "taskGroup",
@@ -824,7 +1034,33 @@
         "doc://com.apple.documentation/documentation/foundation/personnamecomponents/1779627-debugdescription",
         "doc://com.apple.documentation/documentation/foundation/personnamecomponents/2427281-custommirror",
         "doc://com.apple.documentation/documentation/foundation/personnamecomponents/1780345-hashvalue"
-      ]
+      ],
+      "anchor": "2851058"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Comparing Person Name Components",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/personnamecomponents/2883039",
+        "doc://com.apple.documentation/documentation/foundation/personnamecomponents/2293188"
+      ],
+      "anchor": "2851059"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Encoding Person Name Components",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/personnamecomponents/2908877-encode"
+      ],
+      "anchor": "3744703"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Hashing Person Name Components",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/personnamecomponents/3236793-hash"
+      ],
+      "anchor": "3744704"
     },
     {
       "kind": "taskGroup",
@@ -832,22 +1068,25 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents",
         "doc://com.apple.documentation/documentation/foundation/personnamecomponents/referencetype"
-      ]
+      ],
+      "anchor": "2881011"
     },
     {
       "kind": "taskGroup",
       "title": "Initializers",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/personnamecomponents/2908845-init"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/personnamecomponents/3867965-init"
+      ],
+      "anchor": "3870214"
     },
     {
       "kind": "taskGroup",
-      "title": "Instance Methods",
+      "title": "Structures",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/personnamecomponents/2908877-encode",
-        "doc://com.apple.documentation/documentation/foundation/personnamecomponents/3236793-hash"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/personnamecomponents/attributedstyle",
+        "doc://com.apple.documentation/documentation/foundation/personnamecomponents/parsestrategy"
+      ],
+      "anchor": "3780616"
     }
   ],
   "seeAlsoSections": [
@@ -883,6 +1122,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -893,7 +1133,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

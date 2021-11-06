@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Methods that provide details about how to display your custom content in the large content viewer."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -28,20 +34,25 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UILargeContentViewerItem",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -92,23 +103,20 @@
       "role": "symbol",
       "url": "/documentation/objectivec/1418956-nsobject"
     },
-    "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183932-largecontentimage": {
-      "title": "largeContentImage",
+    "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183936-showslargecontentviewer": {
+      "title": "showsLargeContentViewer",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183932-largecontentimage",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183936-showslargecontentviewer",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uilargecontentvieweritem/3183932-largecontentimage",
-      "required": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183933-largecontentimageinsets": {
-      "title": "largeContentImageInsets",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183933-largecontentimageinsets",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uilargecontentvieweritem/3183933-largecontentimageinsets",
-      "required": true
+      "url": "/documentation/uikit/uilargecontentvieweritem/3183936-showslargecontentviewer",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether or not to show the item in the large content viewer."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183934-largecontenttitle": {
       "title": "largeContentTitle",
@@ -117,7 +125,43 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uilargecontentvieweritem/3183934-largecontenttitle",
-      "required": true
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A string that describes an item to display in the large content viewer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183932-largecontentimage": {
+      "title": "largeContentImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183932-largecontentimage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uilargecontentvieweritem/3183932-largecontentimage",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An image that represents an item to display in the large content viewer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183933-largecontentimageinsets": {
+      "title": "largeContentImageInsets",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183933-largecontentimageinsets",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uilargecontentvieweritem/3183933-largecontentimageinsets",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Insets to adjust the position of the item’s image so it appears visually centered in the large content viewer."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183935-scaleslargecontentimage": {
       "title": "scalesLargeContentImage",
@@ -126,16 +170,13 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uilargecontentvieweritem/3183935-scaleslargecontentimage",
-      "required": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183936-showslargecontentviewer": {
-      "title": "showsLargeContentViewer",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183936-showslargecontentviewer",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uilargecontentvieweritem/3183936-showslargecontentviewer",
-      "required": true
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the view scales the item’s image to a larger size or not."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteraction": {
       "title": "UILargeContentViewerInteraction",
@@ -143,7 +184,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteraction",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uilargecontentviewerinteraction"
+      "url": "/documentation/uikit/uilargecontentviewerinteraction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interaction that enables a gesture to present the large content viewer for cases when supporting the largest dynamic type sizes isn’t appropriate."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteractiondelegate": {
       "title": "UILargeContentViewerInteractionDelegate",
@@ -151,7 +198,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteractiondelegate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uilargecontentviewerinteractiondelegate"
+      "url": "/documentation/uikit/uilargecontentviewerinteractiondelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that customizes the behavior of the large content viewer interactions."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem": {
       "title": "UILargeContentViewerItem",
@@ -159,7 +212,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uilargecontentvieweritem"
+      "url": "/documentation/uikit/uilargecontentvieweritem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods that provide details about how to display your custom content in the large content viewer."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -167,16 +226,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -192,14 +241,22 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Instance Properties",
+      "title": "Integrating with the Large Content Viewer",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183936-showslargecontentviewer"
+      ],
+      "anchor": "3737975"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring Display Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183934-largecontenttitle",
         "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183932-largecontentimage",
         "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183933-largecontentimageinsets",
-        "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183934-largecontenttitle",
-        "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183935-scaleslargecontentimage",
-        "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183936-showslargecontentviewer"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183935-scaleslargecontentimage"
+      ],
+      "anchor": "3184675"
     }
   ],
   "seeAlsoSections": [
@@ -236,6 +293,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -243,7 +301,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

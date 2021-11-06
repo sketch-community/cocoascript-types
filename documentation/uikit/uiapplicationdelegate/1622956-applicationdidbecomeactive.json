@@ -42,25 +42,33 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UIApplicationDelegate(im)applicationDidBecomeActive:",
+    "parent": {
+      "title": "UIApplicationDelegate"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -113,7 +121,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of methods that you use to manage shared behaviors for your app. "
+          "text": "A set of methods to manage shared behaviors for your app. "
         }
       ]
     },
@@ -161,7 +169,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the app becomes active. "
+          "text": "A notification that posts when the app becomes active. "
         }
       ]
     },
@@ -300,7 +308,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the app enters the background."
+          "text": "A notification that posts when the app enters the background."
         }
       ]
     },
@@ -314,7 +322,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted shortly before an app leaves the background state on its way to becoming the active app."
+          "text": "A notification that posts shortly before an app leaves the background state on its way to becoming the active app."
         }
       ]
     },
@@ -328,7 +336,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the app is no longer active and loses focus."
+          "text": "A notification that posts when the app is no longer active and loses focus."
         }
       ]
     },
@@ -342,7 +350,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the app is about to terminate."
+          "text": "A notification that posts when the app is about to terminate."
         }
       ]
     },
@@ -425,6 +433,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -470,7 +479,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "If you are using scenes (see "
+                  "text": "If you're using scenes (see "
                 },
                 {
                   "type": "reference",
@@ -502,7 +511,7 @@
               ]
             }
           ],
-          "style": "warning"
+          "style": "important"
         },
         {
           "type": "paragraph",
@@ -544,7 +553,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }
