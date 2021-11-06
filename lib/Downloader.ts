@@ -56,7 +56,7 @@ export class Downloader {
   async download(urls: string[], result = new Set()) {
     const { results } = await PromisePool.withConcurrency(MAX_CONCURRENCY)
       .for(urls)
-      .process(async url => {
+      .process(async (url) => {
         if (result.has(url)) {
           return {};
         } else {
@@ -82,7 +82,7 @@ export class Downloader {
     const found = results.reduce((acc, data) => {
       if (data.references) {
         Object.values(data.references).forEach((ref: any) => {
-          if (ref.url && INCLUDE_DOCS.some(doc => ref.url.includes(doc)) && !result.has(ref.url)) {
+          if (ref.url && INCLUDE_DOCS.some((doc) => ref.url.includes(doc)) && !result.has(ref.url)) {
             acc.push(ref.url);
           }
         });

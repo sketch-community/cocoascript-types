@@ -1,11 +1,12 @@
 import { getTokens } from './helpers';
 import { InterfaceDeclaration } from './InterfaceDeclaration';
 import { MethodDeclaration } from './MethodDeclaration';
+import { APPLE_IDENTIFIER_PREFIX } from './constant';
 
 describe('MethodDeclaration', () => {
   const nsview = require('../documentation/appkit/nsview.json');
   const interfaceDecl = InterfaceDeclaration.initFromTokens(
-    '"doc://com.apple.documentation/documentation/appkit/nsview"',
+    `"${APPLE_IDENTIFIER_PREFIX}/documentation/appkit/nsview"`,
     {},
     getTokens(nsview)
   );

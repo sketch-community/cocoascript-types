@@ -1,6 +1,7 @@
 import { CodeGenerator } from './CodeGenerator';
 import { capitalize, normalizeType } from './helpers';
 import { Token } from './types';
+import { getDocumentComment } from './CommentDeclaration';
 
 export class PropertyDeclaration {
   id: string;
@@ -23,9 +24,7 @@ export class PropertyDeclaration {
       if (tokens[index].text.includes('readonly')) {
         property.readonly = true;
       }
-      if (tokens[index].kind === 'typeIdentifier' ||
-      (tokens[index].kind === 'keyword')
-      ) {
+      if (tokens[index].kind === 'typeIdentifier' || tokens[index].kind === 'keyword') {
         property.type = tokens[index].text;
       }
       if (tokens[index].kind === 'identifier') {
@@ -39,7 +38,7 @@ export class PropertyDeclaration {
 
   generate() {
     const code = new CodeGenerator();
-    code.appendLine(`// ${this.id}`);
+    code.appendLine(getDocumentComment(this.id));
     code.appendLine(`${this.identifier}(): ${normalizeType(this.type!)};`);
     code.appendLine(`set${capitalize(this.identifier!)}(): void;`);
     return code.toString();

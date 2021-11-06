@@ -6,6 +6,7 @@ import { TypeDeclaration } from './TypeDeclaration';
 import { UnionTypeDeclaration } from './UnionTypeDeclaration';
 import { ConstDeclaration } from './ConstDeclaration';
 import { StructDeclaration } from './StructDeclaration';
+import { APPLE_IDENTIFIER_PREFIX } from './constant';
 
 type Declaration = InterfaceDeclaration | TypeDeclaration | UnionTypeDeclaration | ConstDeclaration | StructDeclaration;
 
@@ -34,7 +35,7 @@ export class Generator {
   async generate() {
     const refs: any = [
       {
-        identifier: 'doc://com.apple.documentation/documentation/appkit',
+        identifier: `${APPLE_IDENTIFIER_PREFIX}/documentation/appkit`,
         url: '/documentation/appkit',
       },
     ];
@@ -54,7 +55,7 @@ export class Generator {
       if (firstSection && firstSection.kind === 'declarations') {
         const tokens: Token[] = firstSection.declarations[0].tokens;
         if (['@interface', 'interface', '@protocol'].includes(tokens[0].text)) {
-          const idToken = tokens.find(t => t.kind === 'identifier');
+          const idToken = tokens.find((t) => t.kind === 'identifier');
           if (idToken) {
             const decl = InterfaceDeclaration.initFromTokens(doc.identifier.url, doc, tokens);
             await this.write(decl);
@@ -84,14 +85,19 @@ export class Generator {
         }
       });
     }
-    fs.writeFileSync('./types/index.d.ts', Array.from(this.files.keys()).map(file => {
-      return `/// <reference path="./${file}.d.ts" />`;
-    }).join('\n'));
-    this.files.forEach(f => f.close());
+    fs.writeFileSync(
+      './types/index.d.ts',
+      Array.from(this.files.keys())
+        .map((file) => {
+          return `/// <reference path="./${file}.d.ts" />`;
+        })
+        .join('\n')
+    );
+    this.files.forEach((f) => f.close());
   }
 
   fileName(id: string) {
-    const [_, name] = id.match(new RegExp('doc://com.apple.documentation/documentation/(.+?)/.+'))!;
+    const [_, name] = id.match(new RegExp(`${APPLE_IDENTIFIER_PREFIX}/documentation/(.+?)/.+`))!;
     return name;
   }
 

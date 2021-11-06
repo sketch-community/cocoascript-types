@@ -1,7 +1,7 @@
 import { CodeGenerator } from './CodeGenerator';
-import { NAMESPACE } from './constant';
 import { normalizeType } from './helpers';
 import { Token } from './types';
+import { getDocumentComment } from './CommentDeclaration';
 
 export class TypeDeclaration {
   id: string;
@@ -33,10 +33,12 @@ export class TypeDeclaration {
   generate() {
     const code = new CodeGenerator();
     code.namespace(() => {
-      code.appendLine(`// ${this.id}`);
-      code.appendLine(`type ${this.identifier} = ${normalizeType(this.alias!, {
-        withNamespace: true,
-      })};`);
+      code.appendLine(getDocumentComment(this.id));
+      code.appendLine(
+        `type ${this.identifier} = ${normalizeType(this.alias!, {
+          withNamespace: true,
+        })};`
+      );
     });
     code.appendLine();
     return code.toString();

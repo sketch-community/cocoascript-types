@@ -1,12 +1,13 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { CodeGenerator } from './CodeGenerator';
-import { NAMESPACE } from './constant';
+import { APPLE_IDENTIFIER_PREFIX } from './constant';
 import { ConstDeclaration } from './ConstDeclaration';
 import { normalizeType } from './helpers';
 import { MethodDeclaration } from './MethodDeclaration';
 import { PropertyDeclaration } from './PropertyDeclaration';
 import { Token } from './types';
+import { replaceIdToUrl } from './CommentDeclaration';
 
 type InterfaceType = 'interface' | 'protocol';
 
@@ -27,13 +28,8 @@ export class InterfaceDeclaration {
   }
 
   static initFromTokens(id: string, doc: any, tokens: Token[]) {
-    const idToken = tokens.find(t => t.kind === 'identifier')!;
-    const decl = new InterfaceDeclaration(
-      id,
-      tokens[0].text.replace('@', '') as any,
-      idToken.text,
-      doc.abstract?.[0]?.text
-    );
+    const idToken = tokens.find((t) => t.kind === 'identifier')!;
+    const decl = new InterfaceDeclaration(id, tokens[0].text.replace('@', '') as any, idToken.text, doc.abstract?.[0]?.text);
     if (doc.relationshipsSections) {
       const inheritsSection = doc.relationshipsSections.find((s: any) => s.type === 'inheritsFrom');
       if (inheritsSection) {
@@ -52,7 +48,7 @@ export class InterfaceDeclaration {
   }
 
   static createIdentifier(clazz: InterfaceDeclaration, id: string) {
-    const docFile = path.resolve(id.replace('doc://com.apple.documentation/', '') + '.json');
+    const docFile = path.resolve(id.replace(`${APPLE_IDENTIFIER_PREFIX}/`, '') + '.json');
     if (!fs.existsSync(docFile)) {
       return;
     }
@@ -87,7 +83,7 @@ export class InterfaceDeclaration {
       if (this.description) {
         code.appendLine(` * ${this.description}`);
       }
-      code.appendLine(` * ${this.id}`);
+      code.appendLine(` * ${replaceIdToUrl(this.id)}`);
       code.appendLine(' */');
       code.interface(this.identifier, this.inheritsFrom, () => {
         if (this.type === 'interface') {
@@ -103,7 +99,7 @@ export class InterfaceDeclaration {
           init.returnType = 'id';
           this.properties.push(alloc, init);
         }
-        this.properties.forEach(property => {
+        this.properties.forEach((property) => {
           code.appendLine(property.generate());
         });
       });
@@ -116,7 +112,7 @@ export class InterfaceDeclaration {
         })};`
       );
     }
-    this.constants.forEach(constant => {
+    this.constants.forEach((constant) => {
       code.appendLine(constant.generate());
     });
     code.appendLine();

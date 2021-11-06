@@ -2,6 +2,7 @@ import { CodeGenerator } from './CodeGenerator';
 import { normalizeType } from './helpers';
 import { InterfaceDeclaration } from './InterfaceDeclaration';
 import { Token } from './types';
+import { getDocumentComment } from './CommentDeclaration';
 
 interface Identifier {
   id: string;
@@ -13,7 +14,7 @@ const keywordBlacklist = ['unsigned', 'const', '_Nullable', '_Null_unspecified',
 
 const paramsMap: Record<string, string> = {
   function: 'func',
-}
+};
 
 export class MethodDeclaration {
   id: string;
@@ -30,10 +31,7 @@ export class MethodDeclaration {
     let index = 0;
     const method = new MethodDeclaration(id, interfaceDecl);
     while (index < tokens.length) {
-      if (
-        (tokens[index].kind === 'typeIdentifier' && tokens[index].preciseIdentifier) ||
-        tokens[index].kind === 'keyword'
-      ) {
+      if ((tokens[index].kind === 'typeIdentifier' && tokens[index].preciseIdentifier) || tokens[index].kind === 'keyword') {
         method.returnType = tokens[index].text;
       }
 
@@ -80,8 +78,8 @@ export class MethodDeclaration {
 
   generate() {
     const code = new CodeGenerator();
-    code.appendLine(`// ${this.id}`);
-    code.appendLine(this.identifiers.map(i => i.id).join('_'));
+    code.appendLine(getDocumentComment(this.id));
+    code.appendLine(this.identifiers.map((i) => i.id).join('_'));
     code.append('(');
     const params: string[] = [];
     const usedName: Set<string> = new Set();
