@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/sketch-community/cocoascript-types/compare/v0.1.0...v0.1.1) (2021-11-06)
+
+
+### 🐛 Bug Fixes
+
+* 硬编码 size 和 point 属性 ([808c292](https://github.com/sketch-community/cocoascript-types/commit/808c292))
+
 # [0.1.0](https://github.com/sketch-community/cocoascript-types/compare/v0.0.8...v0.1.0) (2021-11-06)
 
 
