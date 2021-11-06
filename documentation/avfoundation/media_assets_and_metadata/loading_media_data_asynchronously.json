@@ -1,0 +1,1327 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Simplify asynchronous property loading using language-level concurrency features."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3845717,
+  "kind": "article",
+  "metadata": {
+    "title": "Loading Media Data Asynchronously",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata": {
+      "title": "Media Assets and Metadata",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata",
+      "url": "/documentation/avfoundation/media_assets_and_metadata",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasyncproperty": {
+      "title": "AVAsyncProperty",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasyncproperty",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasyncproperty"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading": {
+      "title": "AVAsynchronousKeyValueLoading",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasynchronouskeyvalueloading",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol for loading the media and metadata of an asset or asset track without blocking the calling thread."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset": {
+      "title": "AVAsset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassettrack": {
+      "title": "AVAssetTrack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassettrack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that models a track of media that an asset contains."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem": {
+      "title": "AVMetadataItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataitem"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/3747326-load": {
+      "title": "load(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/3747326-load",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasynchronouskeyvalueloading/3747326-load"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845721": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845721",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845721"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845719": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845719",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845719"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845720": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845720",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845720"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845817": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845817",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845817"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/3747334-status": {
+      "title": "status(of:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/3747334-status",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasynchronouskeyvalueloading/3747334-status"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasyncproperty/status": {
+      "title": "AVAsyncProperty.Status",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasyncproperty/status",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasyncproperty/status"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845722": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845722",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845722"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845723": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845723",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845723"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avpartialasyncproperty/3816153-tracks": {
+      "title": "tracks",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avpartialasyncproperty/3816153-tracks",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avpartialasyncproperty/3816153-tracks"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avpartialasyncproperty/3816132-metadata": {
+      "title": "metadata",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avpartialasyncproperty/3816132-metadata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avpartialasyncproperty/3816132-metadata"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1387140-trackswithmediatype": {
+      "title": "tracksWithMediaType:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1387140-trackswithmediatype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1387140-trackswithmediatype",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tracksWithMediaType:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1387759-metadataforformat": {
+      "title": "metadataForFormat:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1387759-metadataforformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1387759-metadataforformat",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "metadataForFormat:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845814": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845814",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845814"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845818": {
+      "title": "Listing 9",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845818",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845818"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1390145-trackwithtrackid": {
+      "title": "trackWithTrackID:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1390145-trackwithtrackid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1390145-trackwithtrackid",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "trackWithTrackID:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/3746529-loadtrackwithtrackid": {
+      "title": "loadTrackWithTrackID:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/3746529-loadtrackwithtrackid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/3746529-loadtrackwithtrackid",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadTrackWithTrackID:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/3746531-loadtrackswithmediatype": {
+      "title": "loadTracksWithMediaType:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/3746531-loadtrackswithmediatype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/3746531-loadtrackswithmediatype",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadTracksWithMediaType:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1389554-trackswithmediacharacteristic": {
+      "title": "tracksWithMediaCharacteristic:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1389554-trackswithmediacharacteristic",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1389554-trackswithmediacharacteristic",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tracksWithMediaCharacteristic:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/3746530-loadtrackswithmediacharacteristi": {
+      "title": "loadTracksWithMediaCharacteristic:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/3746530-loadtrackswithmediacharacteristi",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/3746530-loadtrackswithmediacharacteristi",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadTracksWithMediaCharacteristic:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/3746528-loadmetadataforformat": {
+      "title": "loadMetadataForFormat:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/3746528-loadmetadataforformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/3746528-loadmetadataforformat",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadMetadataForFormat:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1388966-chaptermetadatagroupswithtitlelo": {
+      "title": "chapterMetadataGroupsWithTitleLocale:containingItemsWithCommonKeys:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1388966-chaptermetadatagroupswithtitlelo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1388966-chaptermetadatagroupswithtitlelo",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "chapterMetadataGroupsWithTitleLocale:containingItemsWithCommonKeys:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/3746526-loadchaptermetadatagroupswithtit": {
+      "title": "loadChapterMetadataGroupsWithTitleLocale:containingItemsWithCommonKeys:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/3746526-loadchaptermetadatagroupswithtit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/3746526-loadchaptermetadatagroupswithtit",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadChapterMetadataGroupsWithTitleLocale:containingItemsWithCommonKeys:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1387321-loadvaluesasynchronouslyforkeys": {
+      "title": "loadValuesAsynchronouslyForKeys:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1387321-loadvaluesasynchronouslyforkeys",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasynchronouskeyvalueloading/1387321-loadvaluesasynchronouslyforkeys",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadValuesAsynchronouslyForKeys:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1389400-duration": {
+      "title": "duration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1389400-duration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1389400-duration"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845714": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845714",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845714"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1386816-statusofvalueforkey": {
+      "title": "statusOfValueForKey:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1386816-statusofvalueforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasynchronouskeyvalueloading/1386816-statusofvalueforkey",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "statusOfValueForKey:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845715": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845715",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously#3845715"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously": {
+      "title": "Loading Media Data Asynchronously",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/loading_media_data_asynchronously",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Simplify asynchronous property loading using language-level concurrency features."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avurlasset": {
+      "title": "AVURLAsset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avurlasset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avurlasset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An asset that represents media at a local or remote URL."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avassettrack",
+        "doc://com.apple.documentation/documentation/avfoundation/avurlasset",
+        "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading"
+      ],
+      "title": "Assets",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "AVFoundation uses the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset"
+            },
+            {
+              "type": "text",
+              "text": " class to model timed audiovisual media. You create instances of it to model file-based media, such as an audio file that your app bundle contains, a video file you progressively download from a remote host, and stream-based media that a host serves using HTTP Live Streaming. "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset"
+            },
+            {
+              "type": "text",
+              "text": " provides a consistent interface to play, process, and inspect media, regardless of its format and location."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Creating an asset is a lightweight operation because it defers loading its underlying media data until your app requests it. Depending on the size or location of the media, it may take the asset time to load the media it needs to produce a result. To avoid blocking the calling thread, you load a property value asynchronously before using it by calling an asset’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1387321-loadvaluesasynchronouslyforkeys"
+            },
+            {
+              "type": "text",
+              "text": " method. For example, the code below shows how to use this method to load an asset’s "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1389400-duration"
+            },
+            {
+              "type": "text",
+              "text": " property:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let url: URL = // A URL to a local or remote media resource.",
+            "let asset = AVAsset(url: url)",
+            "// Load the value of the asset's duration property asynchronously.",
+            "asset.loadValuesAsynchronously(forKeys: [\"duration\"]) {",
+            "    var error: NSError?",
+            "    if asset.statusOfValue(forKey: \"duration\", error: &error) == .loaded {",
+            "        // Access the property value synchronously.",
+            "        presentDuration(asset.duration)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3845714",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The code above uses the following three-step process to load a property value:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "It calls "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1387321-loadvaluesasynchronouslyforkeys"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and passes it an array of property name strings to load."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In the method’s completion handler, it calls "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1386816-statusofvalueforkey"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to determine the property value’s state."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If the asset loads the property value successfully, it gets the value from the synchronous property."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For loading a single property value, the code above is verbose, and it doesn’t scale well when you need to load several properties together, or need to perform nested loading operations."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Beginning in iOS 15, tvOS 15, macOS 12, and watchOS 8, AVFoundation introduces an API that builds on the new concurrency features of Swift 5.5. It enables you to write media inspection code that’s simpler and easier to understand, allowing you to rewrite the previous example as the following:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Load the asset’s tracks property value asynchronously.",
+            "let duration = try await asset.load(.duration)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3845715",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Load Properties Asynchronously",
+          "anchor": "3845713"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The framework builds its asynchronous property-loading capabilities around two key types: "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasyncproperty"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading"
+            },
+            {
+              "type": "text",
+              "text": ". The framework uses the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasyncproperty"
+            },
+            {
+              "type": "text",
+              "text": " class to define type-safe identifiers for properties with values that require asynchronous loading, and uses the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading"
+            },
+            {
+              "type": "text",
+              "text": " protocol to define the interface for objects to load properties asynchronously. "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem"
+            },
+            {
+              "type": "text",
+              "text": " adopt this protocol and gain a new "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/3747326-load"
+            },
+            {
+              "type": "text",
+              "text": " method with the following signature:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "public func load<T>(_ property: AVAsyncProperty<Self, T>) async throws -> T"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3845721",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This method uses the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "async"
+            },
+            {
+              "type": "text",
+              "text": " keyword to indicate that it’s an asynchronous method. You need to call it from an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "async"
+            },
+            {
+              "type": "text",
+              "text": " context and specify the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "await"
+            },
+            {
+              "type": "text",
+              "text": " keyword to indicate that execution suspends until the operation returns a result. The method returns a type-safe value for the property, or throws an error if it fails to load the property."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// A CMTime value.",
+            "let duration = try await asset.load(.duration)",
+            "// An array of AVMetadataItem for the asset.",
+            "let metadata = try await asset.load(.metadata)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3845719",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you know in advance that you require loading several asset properties, you can use a variation of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/3747326-load"
+            },
+            {
+              "type": "text",
+              "text": " method that takes multiple identifiers, and returns its result in a tuple. Like loading a single property value, loading several properties at the same time is also a type-safe operation."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// A CMTime value and an array of AVMetadataItem.",
+            "let (duration, metadata) = try await asset.load(.duration, .metadata)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3845720",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Loading several properties at a time can enable AVFoundation to optimize performance by batch loading requests."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Loading properties asynchronously using the new syntax enables you to write simpler code that has clear intent."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Load an asset's artwork metadata and display it in the user interface.",
+            "let metadata = try await asset.load(.commonMetadata)",
+            "let artworkItem = metadata.first(where: {$0.identifier == .commonIdentifierArtwork})",
+            "guard let imageData = try await artworkItem?.load(.dataValue) else { return }",
+            "presentImage(UIImage(data: imageData))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3845817",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Determine a Property Status",
+          "anchor": "3845716"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading"
+            },
+            {
+              "type": "text",
+              "text": " also adds a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/3747334-status"
+            },
+            {
+              "type": "text",
+              "text": " method that returns the status of a property identifier. It returns an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasyncproperty/status"
+            },
+            {
+              "type": "text",
+              "text": " value that indicates the state of the property’s value using the cases in the example below:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Determine the loaded status of the metadata property.",
+            "switch asset.status(of: .metadata) {",
+            "case .notYetLoaded:",
+            "    // The initial state of a property.",
+            "case .loading:",
+            "    // The asset is actively loading the property value.",
+            "case .loaded(let metadata):",
+            "    // The property is ready to use.",
+            "case .failed(let error):",
+            "    // The property value fails to load.",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3845722",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": ".loaded"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": ".failed"
+            },
+            {
+              "type": "text",
+              "text": " cases provide an associated value. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": ".loaded"
+            },
+            {
+              "type": "text",
+              "text": " case contains the previously loaded property value, and the "
+            },
+            {
+              "type": "codeVoice",
+              "code": ".failed"
+            },
+            {
+              "type": "text",
+              "text": " case contains an error that indicates the reason for the failure. Having access to an associated value enables you to perform operations like checking a property’s status and accessing its value in a single step."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Verify the metadata property is in a loaded state.",
+            "if case .loaded(let metadata) = asset.status(of: .metadata) {",
+            "    // Process the loaded value.",
+            "    processMetadata(metadata)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3845723",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Filter Property Collections",
+          "anchor": "3845718"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Some properties provide arrays of values, such as an asset’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avpartialasyncproperty/3816153-tracks"
+            },
+            {
+              "type": "text",
+              "text": " or its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avpartialasyncproperty/3816132-metadata"
+            },
+            {
+              "type": "text",
+              "text": " properties. In many cases, you’re interested in only a subset of those values. The framework provides methods like "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1387140-trackswithmediatype"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1387759-metadataforformat"
+            },
+            {
+              "type": "text",
+              "text": " to filter the collections to the values you require, but they’re synchronous, so you can only call them without blocking the calling thread after you load their related property."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "AVFoundation adds asynchronous replacements for these methods. They use similar names as their synchronous counterparts, but begin their names with "
+            },
+            {
+              "type": "codeVoice",
+              "code": "load"
+            },
+            {
+              "type": "text",
+              "text": " and take a completion handler. The following table provides a sampling of some of the synchronous filtering methods for "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset"
+            },
+            {
+              "type": "text",
+              "text": " and their replacements:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Synchronous"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Asynchronous"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1390145-trackwithtrackid"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/3746529-loadtrackwithtrackid"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1387140-trackswithmediatype"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/3746531-loadtrackswithmediatype"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1389554-trackswithmediacharacteristic"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/3746530-loadtrackswithmediacharacteristi"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1387759-metadataforformat"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/3746528-loadmetadataforformat"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1388966-chaptermetadatagroupswithtitlelo"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/3746526-loadchaptermetadatagroupswithtit"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "3845814",
+            "title": "Table 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You call the loading methods from an asynchronous context using the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "await"
+            },
+            {
+              "type": "text",
+              "text": " keyword."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Load iTunes metadata asynchronously.",
+            "let metadata = try await asset.loadMetadata(for: .iTunesMetadata)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3845818",
+            "title": "Listing 9"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

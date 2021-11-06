@@ -1,0 +1,668 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Provide SiriKit with an intent handler capable of handling a given intent."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handlers",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2864123,
+  "kind": "article",
+  "metadata": {
+    "title": "Dispatching Intents to Handlers",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Intents"
+      },
+      {
+        "name": "IntentsUI"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/dispatching_intents_to_handlers"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/dispatching_intents_to_handlers"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inextension": {
+      "title": "INExtension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inextension",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inextension"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inintenthandlerproviding/1638898-handlerforintent": {
+      "title": "handlerForIntent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintenthandlerproviding/1638898-handlerforintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inintenthandlerproviding/1638898-handlerforintent",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handlerForIntent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit": {
+      "title": "AppKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/appkit"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/3786062-application": {
+      "title": "application:handlerForIntent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/3786062-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsapplicationdelegate/3786062-application",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:handlerForIntent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate": {
+      "title": "NSApplicationDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsapplicationdelegate"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/3548063-application": {
+      "title": "application:handlerForIntent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/3548063-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/3548063-application",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:handlerForIntent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate": {
+      "title": "UIApplicationDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate"
+    },
+    "doc://com.apple.documentation/documentation/swiftui/uiapplicationdelegateadaptor": {
+      "title": "UIApplicationDelegateAdaptor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swiftui/uiapplicationdelegateadaptor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swiftui/uiapplicationdelegateadaptor"
+    },
+    "doc://com.apple.documentation/documentation/swiftui/nsapplicationdelegateadaptor": {
+      "title": "NSApplicationDelegateAdaptor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swiftui/nsapplicationdelegateadaptor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swiftui/nsapplicationdelegateadaptor"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling": {
+      "title": "INSendMessageIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insendmessageintenthandling"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insearchformessagesintenthandling": {
+      "title": "INSearchForMessagesIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insearchformessagesintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insearchformessagesintenthandling"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insetmessageattributeintenthandling": {
+      "title": "INSetMessageAttributeIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetmessageattributeintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insetmessageattributeintenthandling"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling": {
+      "title": "INStartCallIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintenthandling"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handlers#3798606": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handlers#3798606",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/dispatching_intents_to_handlers#3798606"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent": {
+      "title": "INSendMessageIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insendmessageintent"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handlers": {
+      "title": "Dispatching Intents to Handlers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handlers",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/dispatching_intents_to_handlers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide SiriKit with an intent handler capable of handling a given intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents": {
+      "title": "Resolving and Handling Intents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/resolving_and_handling_intents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolve, confirm, and handle user requests for your app’s services."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inintent": {
+      "title": "INIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request to fulfill in your app or Intents extension."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inintentresponse": {
+      "title": "INIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your response to an intent object. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure": {
+      "title": "Intent Handling Infrastructure",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/intent_handling_infrastructure",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specify required permissions and provide handlers for the intents your app supports, and configure app extensions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/providing_hands-free_app_control_with_intents": {
+      "title": "Providing Hands-Free App Control with Intents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/providing_hands-free_app_control_with_intents",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/sirikit/providing_hands-free_app_control_with_intents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolve, confirm, and handle intents without an extension."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/resolution_results": {
+      "title": "Resolution Results",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/resolution_results",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/resolution_results",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolve common types of data like strings and dates into specific values that your app recognizes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/common_data_types": {
+      "title": "Common Data Types",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/common_data_types",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/common_data_types",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage common data types such as strings, dates, currencies, images, and contacts."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents",
+        "doc://com.apple.documentation/documentation/sirikit/inintent",
+        "doc://com.apple.documentation/documentation/sirikit/inintentresponse",
+        "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure",
+        "doc://com.apple.documentation/documentation/sirikit/providing_hands-free_app_control_with_intents",
+        "doc://com.apple.documentation/documentation/sirikit/resolution_results",
+        "doc://com.apple.documentation/documentation/sirikit/common_data_types"
+      ],
+      "title": "Intents",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When a user makes a request of your app as an intent, SiriKit needs a handler that conforms to the corresponding intent handling protocol. Each intent object has an associated protocol based on the name of the intent. For example, to handle an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent"
+            },
+            {
+              "type": "text",
+              "text": ", provide an instance of a type that conforms to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling"
+            },
+            {
+              "type": "text",
+              "text": " protocol. The protocol defines the methods that your handler implements to resolve any intent parameters and to let SiriKit know how your app handled the intent."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Provide a Handler in Your Intents App Extension",
+          "anchor": "3798605"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An Intents app extension helps you respond to the user’s request quickly, without loading your entire app. For intents you support in an extension, SiriKit loads your Intents app extension and creates an instance of your "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inextension"
+            },
+            {
+              "type": "text",
+              "text": " subclass. Implement the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inintenthandlerproviding/1638898-handlerforintent"
+            },
+            {
+              "type": "text",
+              "text": " method on your extension object to provide SiriKit with the handlers that you use to handle specific intents."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Provide a Handler in Your App",
+          "anchor": "3798604"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you support an intent directly in your app, the system asks your app delegate for a handler. In a Mac app that uses "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit"
+            },
+            {
+              "type": "text",
+              "text": ", implement "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/3786062-application"
+            },
+            {
+              "type": "text",
+              "text": " on your "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate"
+            },
+            {
+              "type": "text",
+              "text": ". In an iOS app or an app built with Mac Catalyst, implement "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/3548063-application"
+            },
+            {
+              "type": "text",
+              "text": " on your "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If you’re using SwiftUI, use "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/swiftui/uiapplicationdelegateadaptor"
+                },
+                {
+                  "type": "text",
+                  "text": " or "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/swiftui/nsapplicationdelegateadaptor"
+                },
+                {
+                  "type": "text",
+                  "text": " to include an app delegate in your app. "
+                }
+              ]
+            }
+          ],
+          "style": "tip"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Determine Which Handler Type to Return",
+          "anchor": "3798603"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can define a separate type for handling each intent class to keep your code organized. When the system asks your app delegate or Intents app extension for an intent handler, check the type of the intent you receive to determine which type of handler to return. Return a valid new handler that conforms to the relevant protocol for all intents that your app or extension supports. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code listing shows logic for an app or extension that supports four different intents. The code handles three message intents with one class, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MyMessageHandler"
+            },
+            {
+              "type": "text",
+              "text": ", which implements "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/insearchformessagesintenthandling"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/insetmessageattributeintenthandling"
+            },
+            {
+              "type": "text",
+              "text": ". The code provides a separate handler, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MyCallHandler,"
+            },
+            {
+              "type": "text",
+              "text": " which implements "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling"
+            },
+            {
+              "type": "text",
+              "text": ". After checking the type of the provided intent object, the method creates and returns an instance of the type capable of handling that intent."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Inside your implementation of handler(for:) or application(_:handlerFor:), ",
+            "// use the type of the intent to determine which handler to provide.",
+            "switch intent {",
+            "    case is INSendMessageIntent,",
+            "            is INSearchForMessagesIntent,",
+            "            is INSetMessageAttributeIntent:",
+            "        return MyMessageHandler()",
+            "",
+            "    case is INStartCallIntent:",
+            "        return MyCallHandler()",
+            "    default:",
+            "        // SiriKit doesn't call this method with intents you don't support.",
+            "        return nil",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3798606",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Handle an Intent in Multiple Versions of iOS",
+          "anchor": "3798602"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In iOS 14 and later, you can resolve, confirm, and handle long-running or memory-intensive intents directly in your app. In iOS 13 and earlier, SiriKit required you resolve and confirm all intents in an Intents app extension, then send long-running intents to your app for the final handling step. To continue supporting these intents on earlier versions of iOS, you can implement the methods to resolve and confirm the intent in both your app delegate and Intents app extension. When your extension confirms the intent, respond with a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "INIntentResponseCodeContinueInApp"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "INIntentResponseCodeHandleInApp"
+            },
+            {
+              "type": "text",
+              "text": " response code so the system sends the intent to the app to handle the intent. "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

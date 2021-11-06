@@ -1,0 +1,531 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Change the system’s interpretation of a color value for display by selecting a color space."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/drawing",
+        "doc://com.apple.documentation/documentation/uikit/uicolor"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/uicolor/determining_color_values_with_color_spaces",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3741955,
+  "kind": "article",
+  "metadata": {
+    "title": "Determining Color Values with Color Spaces",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uicolor/determining_color_values_with_color_spaces"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uicolor/determining_color_values_with_color_spaces"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/drawing": {
+      "title": "Drawing",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drawing",
+      "url": "/documentation/uikit/drawing",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicolor": {
+      "title": "UIColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicolor"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/kcgcolorspaceextendedgray": {
+      "title": "kCGColorSpaceExtendedGray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/kcgcolorspaceextendedgray",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/kcgcolorspaceextendedgray"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/kcgcolorspaceextendedsrgb": {
+      "title": "kCGColorSpaceExtendedSRGB",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/kcgcolorspaceextendedsrgb",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/kcgcolorspaceextendedsrgb"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgcolorref": {
+      "title": "CGColorRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcolorref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgcolorref"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgcolorspaceref": {
+      "title": "CGColorSpaceRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcolorspaceref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgcolorspaceref"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicolor/determining_color_values_with_color_spaces": {
+      "title": "Determining Color Values with Color Spaces",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicolor/determining_color_values_with_color_spaces",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/uicolor/determining_color_values_with_color_spaces",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Change the system’s interpretation of a color value for display by selecting a color space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicolor/1621954-cgcolor": {
+      "title": "CGColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicolor/1621954-cgcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicolor/1621954-cgcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Quartz color that corresponds to the color object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicolor/1621943-cgcolor": {
+      "title": "CGColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicolor/1621943-cgcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicolor/1621943-cgcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Quartz color that corresponds to the color object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "CGColor"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicolor/1621951-cicolor": {
+      "title": "CIColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicolor/1621951-cicolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicolor/1621951-cicolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Image color that corresponds to the color object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicolor/1621949-gethue": {
+      "title": "getHue:saturation:brightness:alpha:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicolor/1621949-gethue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicolor/1621949-gethue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the components that form the color in the HSB color space."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "getHue:saturation:brightness:alpha:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicolor/1621919-getred": {
+      "title": "getRed:green:blue:alpha:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicolor/1621919-getred",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicolor/1621919-getred",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the components that form the color in the RGB color space."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "getRed:green:blue:alpha:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicolor/1621927-getwhite": {
+      "title": "getWhite:alpha:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicolor/1621927-getwhite",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicolor/1621927-getwhite",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the grayscale components of the color."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "getWhite:alpha:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicolor/3600314-accessibilityname": {
+      "title": "accessibilityName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicolor/3600314-accessibilityname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicolor/3600314-accessibilityname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A localized description of the color for accessibility attributes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicolor/1621954-cgcolor",
+        "doc://com.apple.documentation/documentation/uikit/uicolor/1621943-cgcolor",
+        "doc://com.apple.documentation/documentation/uikit/uicolor/1621951-cicolor",
+        "doc://com.apple.documentation/documentation/uikit/uicolor/1621949-gethue",
+        "doc://com.apple.documentation/documentation/uikit/uicolor/1621919-getred",
+        "doc://com.apple.documentation/documentation/uikit/uicolor/1621927-getwhite",
+        "doc://com.apple.documentation/documentation/uikit/uicolor/3600314-accessibilityname"
+      ],
+      "title": "Getting the Color Information",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicolor"
+            },
+            {
+              "type": "text",
+              "text": " object typically stores its color value as a Core Graphics color ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcolorref"
+            },
+            {
+              "type": "text",
+              "text": ") in a Core Graphics color space ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcolorspaceref"
+            },
+            {
+              "type": "text",
+              "text": "). When creating a custom color, the underlying color space and the range of values for each color component vary based on the iOS version."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create Colors with Color Spaces",
+          "anchor": "3743231"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For apps running on iOS 9 and earlier, colors use one of two color spaces:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Device-Dependent Gray"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Device-Dependent RGB"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "These device color spaces correspond closely to the display characteristics of the sRGB color space. Component values within these color spaces are in the range "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0.0"
+            },
+            {
+              "type": "text",
+              "text": " to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1.0"
+            },
+            {
+              "type": "text",
+              "text": ". When you create a color, the color object clamps values to ensure they fit within this range."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use Extended Color Spaces",
+          "anchor": "3744824"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For apps running on iOS 10 or later, colors use the following extended color spaces:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coregraphics/kcgcolorspaceextendedgray"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coregraphics/kcgcolorspaceextendedsrgb"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the extended color spaces, "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicolor"
+            },
+            {
+              "type": "text",
+              "text": " doesn’t clamp values to fit inside the color gamut. Component values may be less than "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0.0"
+            },
+            {
+              "type": "text",
+              "text": " or greater than "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1.0"
+            },
+            {
+              "type": "text",
+              "text": ". On an sRGB display, such colors are outside the gamut and won’t render accurately. However, the extended color spaces are useful when you want a pixel format and representation that extended color spaces can convert into other color spaces. For example, you can still convert color in the display P3 color space to an extended sRGB format, even if that color isn’t within the sRGB color gamut. When you convert such a color, some of its values fall outside the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0.0"
+            },
+            {
+              "type": "text",
+              "text": " to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1.0"
+            },
+            {
+              "type": "text",
+              "text": " range. However, the color still renders correctly on a device with a P3 display gamut."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When employing custom colors, use extended color spaces to store your color values. When representing a color as closely as possible, convert the color from the extended color space into the target color space."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,436 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Improve the performance of lists and collections in your app with prefetching and image preparation."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/images_and_pdf",
+        "doc://com.apple.documentation/documentation/uikit/uiimage"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/uiimage/building_high-performance_lists_and_collection_views",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3762164,
+  "kind": "article",
+  "metadata": {
+    "title": "Building High-Performance Lists and Collection Views",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "13.0",
+        "current": "13.2"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uiimage/building_high-performance_lists_and_collection_views",
+        "documentation/uikit/uicollectionview/building_high-performance_lists_and_collection_views",
+        "documentation/uikit/views_and_controls/collection_views/building_high-performance_lists_and_collection_views"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uiimage/building_high-performance_lists_and_collection_views",
+        "documentation/uikit/uicollectionview/building_high-performance_lists_and_collection_views",
+        "documentation/uikit/views_and_controls/collection_views/building_high-performance_lists_and_collection_views"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/images_and_pdf": {
+      "title": "Images and PDF",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/images_and_pdf",
+      "url": "/documentation/uikit/images_and_pdf",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage": {
+      "title": "UIImage",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage",
+      "url": "/documentation/uikit/uiimage",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls": {
+      "title": "Views and Controls",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+      "url": "/documentation/uikit/views_and_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views": {
+      "title": "Collection Views",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views",
+      "url": "/documentation/uikit/views_and_controls/collection_views",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview": {
+      "title": "UICollectionView",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview",
+      "url": "/documentation/uikit/uicollectionview",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "link-3830744": {
+      "title": "10252: Make Blazing Fast Lists and Collection Views",
+      "type": "topic",
+      "identifier": "link-3830744",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/wwdc21/10252/"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/providing_images_for_different_appearances": {
+      "title": "Providing Images for Different Appearances",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/providing_images_for_different_appearances",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/uiimage/providing_images_for_different_appearances",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Supply image resources appropriate for light and dark appearances and for high-contrast environments."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/configuring_and_displaying_symbol_images_in_your_ui": {
+      "title": "Configuring and Displaying Symbol Images in Your UI",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/configuring_and_displaying_symbol_images_in_your_ui",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/uiimage/configuring_and_displaying_symbol_images_in_your_ui",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create scalable images that integrate with your app’s text, and adjust the appearance of those images dynamically."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/creating_custom_symbol_images_for_your_app": {
+      "title": "Creating Custom Symbol Images for Your App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/creating_custom_symbol_images_for_your_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/uiimage/creating_custom_symbol_images_for_your_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create, organize, and annotate symbol images using SF Symbols."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/1624154-imagenamed": {
+      "title": "imageNamed:inBundle:compatibleWithTraitCollection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/1624154-imagenamed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiimage/1624154-imagenamed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an image object using the named image asset that is compatible with the specified trait collection."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "imageNamed:inBundle:compatibleWithTraitCollection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/3294226-imagenamed": {
+      "title": "imageNamed:inBundle:withConfiguration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/3294226-imagenamed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiimage/3294226-imagenamed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an image object using the named image asset that is compatible with the specified configuration."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "imageNamed:inBundle:withConfiguration:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/1624146-imagenamed": {
+      "title": "imageNamed:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/1624146-imagenamed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiimage/1624146-imagenamed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an image object from the specified named asset. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "imageNamed:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/3294234-systemimagenamed": {
+      "title": "systemImageNamed:withConfiguration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/3294234-systemimagenamed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiimage/3294234-systemimagenamed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an image object that contains a system symbol image with the specified configuration. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "systemImageNamed:withConfiguration:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/3295943-systemimagenamed": {
+      "title": "systemImageNamed:compatibleWithTraitCollection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/3295943-systemimagenamed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiimage/3295943-systemimagenamed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an image object that contains a system symbol image appropriate for the specified traits. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "systemImageNamed:compatibleWithTraitCollection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/3294233-systemimagenamed": {
+      "title": "systemImageNamed:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/3294233-systemimagenamed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiimage/3294233-systemimagenamed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an image object that contains a system symbol image."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "systemImageNamed:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/building_high-performance_lists_and_collection_views": {
+      "title": "Building High-Performance Lists and Collection Views",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/building_high-performance_lists_and_collection_views",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/uiimage/building_high-performance_lists_and_collection_views",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Improve the performance of lists and collections in your app with prefetching and image preparation."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/e4ef7fdb15/BuildingHighPerformanceListsAndCollectionViews.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/e4ef7fdb15/BuildingHighPerformanceListsAndCollectionViews.zip",
+      "checksum": "4baf4fc8e531d66ea68b9afc8a73dacfaeaa0c24f40bfd23cf20fcd828928ce917dea89cb9ccee4da13ad657e9424dfdd630c61a1acc35ec32bf992b0b1c609d",
+      "url": "https://docs-assets.developer.apple.com/published/e4ef7fdb15/BuildingHighPerformanceListsAndCollectionViews.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/e4ef7fdb15/BuildingHighPerformanceListsAndCollectionViews.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiimage/providing_images_for_different_appearances",
+        "doc://com.apple.documentation/documentation/uikit/uiimage/configuring_and_displaying_symbol_images_in_your_ui",
+        "doc://com.apple.documentation/documentation/uikit/uiimage/creating_custom_symbol_images_for_your_app",
+        "doc://com.apple.documentation/documentation/uikit/uiimage/1624154-imagenamed",
+        "doc://com.apple.documentation/documentation/uikit/uiimage/3294226-imagenamed",
+        "doc://com.apple.documentation/documentation/uikit/uiimage/1624146-imagenamed",
+        "doc://com.apple.documentation/documentation/uikit/uiimage/3294234-systemimagenamed",
+        "doc://com.apple.documentation/documentation/uikit/uiimage/3295943-systemimagenamed",
+        "doc://com.apple.documentation/documentation/uikit/uiimage/3294233-systemimagenamed"
+      ],
+      "title": "Loading and Caching Images",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "This sample code project is associated with WWDC21 session "
+                },
+                {
+                  "type": "link",
+                  "title": "10252: Make Blazing Fast Lists and Collection Views",
+                  "destination": "https://developer.apple.com/wwdc21/10252/"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

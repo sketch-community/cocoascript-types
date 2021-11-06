@@ -1,0 +1,709 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Minimize the space and the amount of time that iCloud Backup requires for your app data."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/optimizing_app_data_for_icloud_backup",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3405111,
+  "kind": "article",
+  "metadata": {
+    "title": "Optimizing App Data for iCloud Backup",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/optimizing_app_data_for_icloud_backup"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/optimizing_app_data_for_icloud_backup"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1407693-urlfordirectory": {
+      "title": "URLForDirectory:inDomain:appropriateForURL:create:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1407693-urlfordirectory",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilemanager/1407693-urlfordirectory",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "URLForDirectory:inDomain:appropriateForURL:create:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1642996-temporarydirectory": {
+      "title": "temporaryDirectory",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1642996-temporarydirectory",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilemanager/1642996-temporarydirectory"
+    },
+    "doc://com.apple.documentation/documentation/foundation/optimizing_app_data_for_icloud_backup#3682676": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/optimizing_app_data_for_icloud_backup#3682676",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/optimizing_app_data_for_icloud_backup#3682676"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlisexcludedfrombackupkey": {
+      "title": "NSURLIsExcludedFromBackupKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlisexcludedfrombackupkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlisexcludedfrombackupkey"
+    },
+    "doc://com.apple.documentation/documentation/foundation/optimizing_app_data_for_icloud_backup#3405110": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/optimizing_app_data_for_icloud_backup#3405110",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/optimizing_app_data_for_icloud_backup#3405110"
+    },
+    "doc://com.apple.documentation/documentation/foundation/file_system": {
+      "title": "File System",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/file_system",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/file_system",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create, read, write, and examine files and folders in the file system."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/archives_and_serialization": {
+      "title": "Archives and Serialization",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/archives_and_serialization",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/archives_and_serialization",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convert objects and values to and from property list, JSON, and other flat binary representations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/preferences": {
+      "title": "Preferences",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/preferences",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/preferences",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Persistently store domain-scoped pieces of information for configuring your app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/spotlight": {
+      "title": "Spotlight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/spotlight",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/spotlight",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Search for files and other items on the local device, and index your app's content for searching."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/icloud": {
+      "title": "iCloud",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/icloud",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/icloud",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage files and key-value data that automatically synchronize among a user's iCloud devices."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/optimizing_app_data_for_icloud_backup": {
+      "title": "Optimizing App Data for iCloud Backup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/optimizing_app_data_for_icloud_backup",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/foundation/optimizing_app_data_for_icloud_backup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Minimize the space and the amount of time that iCloud Backup requires for your app data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/file_system",
+        "doc://com.apple.documentation/documentation/foundation/archives_and_serialization",
+        "doc://com.apple.documentation/documentation/foundation/preferences",
+        "doc://com.apple.documentation/documentation/foundation/spotlight",
+        "doc://com.apple.documentation/documentation/foundation/icloud"
+      ],
+      "title": "Files and Data Persistence",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "iCloud Backup can automatically back up a user’s device. You can shorten the time it takes to back up your app, and minimize the space necessary for the backup in two ways:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Store your app’s data in the appropriate standard app directories"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Mark files that iCloud doesn’t need to back up"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a File in a Standard App Directory",
+          "anchor": "3682675"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "iCloud Backup backs up standard app directories that contain user documents and app data, and ignores others that contain cached or temporary files. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To back up your app’s files, create them in the directories that iCloud Backup copies from the device:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "User data files, located in "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "<AppHome>/Documents/"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Support files for the app, located in "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "<AppHome>/Library/Application Support/"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Other app data, such as private files, located in "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "<AppHome>/Library/<app created directory>/"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For items that don’t require backing up, create temporary files in the directories iCloud Backup doesn’t copy:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Data that your app can regenerate or download again, located in "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "<AppHome>/Library/Caches/"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Temporary data that the system can remove at any time, located in "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "<AppHome>/tmp/"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". Note that the base path for the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "tmp"
+                    },
+                    {
+                      "type": "text",
+                      "text": " directory may be different in iOS and macOS."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1407693-urlfordirectory"
+            },
+            {
+              "type": "text",
+              "text": " to find the path for the document, library, app support, and cache directories that you want to back up. Use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1642996-temporarydirectory"
+            },
+            {
+              "type": "text",
+              "text": " to find the path for temporary data."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The code below shows how to create a file in any of the standard app directories. Create a file by calling "
+            },
+            {
+              "type": "codeVoice",
+              "code": "createFile(filename:contents:attributes:) "
+            },
+            {
+              "type": "text",
+              "text": "for the desired directory. For example, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CreateFileDirectory.cache.createFile(”myCacheFile”, contents:nil, attributes:nil)"
+            },
+            {
+              "type": "text",
+              "text": " creates a file called "
+            },
+            {
+              "type": "codeVoice",
+              "code": "myCacheFile"
+            },
+            {
+              "type": "text",
+              "text": " in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "<AppHome>/Cache"
+            },
+            {
+              "type": "text",
+              "text": " directory."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To find the base URL for a standard directory, use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "directoryURL"
+            },
+            {
+              "type": "text",
+              "text": ". For example, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CreateFileDirectory.documents.directoryURL"
+            },
+            {
+              "type": "text",
+              "text": " returns the file URL for the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "<AppHome>/Documents"
+            },
+            {
+              "type": "text",
+              "text": " directory."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "enum CreateFileDirectory: Int {",
+            "   case documents",
+            "   case library",
+            "   case cache",
+            "   case tmp",
+            "   case applicationSupport",
+            "   ",
+            "   // Return the base URL for the selected directory.",
+            "   var directoryURL: URL? {",
+            "      // Find the path for the selected directory.",
+            "      let baseDirectory: URL?",
+            "      let fileManager = FileManager.default",
+            "      switch self {",
+            "      case .documents:",
+            "         baseDirectory = try?",
+            "            fileManager.url(for: .documentDirectory,",
+            "                            in: .userDomainMask,",
+            "                            appropriateFor: nil,",
+            "                            create: false)",
+            "      case .library:",
+            "         baseDirectory = try?",
+            "            fileManager.url(for: .libraryDirectory,",
+            "                            in: .userDomainMask,",
+            "                            appropriateFor: nil,",
+            "                            create: false)",
+            "      case .cache:",
+            "         baseDirectory = try?",
+            "            fileManager.url(for: .cachesDirectory,",
+            "                            in: .userDomainMask,",
+            "                            appropriateFor: nil,",
+            "                            create: false)",
+            "      case .tmp:",
+            "         baseDirectory = fileManager.temporaryDirectory",
+            "         ",
+            "      case .applicationSupport:",
+            "         baseDirectory = try?",
+            "            fileManager.url(for: .applicationSupportDirectory,",
+            "                            in: .userDomainMask,",
+            "                            appropriateFor: nil,",
+            "                            create: false)",
+            "      }",
+            "      ",
+            "      return baseDirectory",
+            "   }",
+            "   ",
+            "   // Create a file in the selected App directory.",
+            "   func createFile (_ filename: String,",
+            "                    contents: Data?,",
+            "                    attributes: [FileAttributeKey: Any]? = nil) -> Bool {",
+            "      // Set the base directory URL for the chosen app directory.",
+            "      guard let baseDirectory = self.directoryURL else {",
+            "         // The File Manager couldn't find the directory or create the file.",
+            "         print(\"Unable to locate the directory: \\(self.rawValue).\")",
+            "         return false",
+            "      }",
+            "      ",
+            "      let fileURL = baseDirectory.appendingPathComponent(filename)",
+            "      ",
+            "      return FileManager.default.createFile(atPath: fileURL.path,",
+            "                                            contents: contents,",
+            "                                            attributes: attributes)",
+            "   }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3682676",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Prevent iCloud Backup of a File",
+          "anchor": "3405112"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A file in a standard directory may not need saving by iCloud Backup, such as an automatic backup for an edited document. To prevent backup, set "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlisexcludedfrombackupkey"
+            },
+            {
+              "type": "text",
+              "text": " for the file. Set the key each time you save the file because certain common file operations clear the key."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To prevent backup of multiple files, create a subdirectory, set the directory’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "isExcludedFromBackupKey"
+            },
+            {
+              "type": "text",
+              "text": ", and move the files into that subdirectory."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the code below, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "getExcludedFromiCloudBackup(fileURL)"
+            },
+            {
+              "type": "text",
+              "text": " returns "
+            },
+            {
+              "type": "codeVoice",
+              "code": "true"
+            },
+            {
+              "type": "text",
+              "text": " if iCloud Backup excludes the file or directory. Set the value of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "isExcludedFromBackupKey"
+            },
+            {
+              "type": "text",
+              "text": " for a file or directory using "
+            },
+            {
+              "type": "codeVoice",
+              "code": "setExcludeFromiCloudBackup(fileURL:isExcluded:)"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func setExcludeFromiCloudBackup(_ fileOrDirectoryURL: inout URL, isExcluded: Bool) throws {",
+            "   var values = URLResourceValues()",
+            "   values.isExcludedFromBackup = isExcluded",
+            "   try fileOrDirectoryURL.setResourceValues(values)",
+            "}",
+            "",
+            "func getExcludeFromiCloudBackup(_ fileOrDirectoryURL: URL) throws -> Bool {",
+            "   let keySet: Set<URLResourceKey> = [.isExcludedFromBackupKey]",
+            "   ",
+            "   return try",
+            "      fileOrDirectoryURL.resourceValues(forKeys: keySet).isExcludedFromBackup ?? false",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3405110",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}
