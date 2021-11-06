@@ -2,7 +2,10 @@ declare namespace cocoascript {
   interface CGColorRef {}
 }
 declare namespace cocoascript {
-  interface CGSize {}
+  interface CGSize {
+    width: number;
+    height: number;
+  }
 }
 declare namespace cocoascript {
   interface CGColorSpaceRef {}
@@ -12,10 +15,16 @@ declare namespace cocoascript {
   type CGFloat = number;
 }
 declare namespace cocoascript {
-  interface CGPoint {}
+  interface CGPoint {
+    x: number;
+    y: number;
+  }
 }
 declare namespace cocoascript {
-  interface CGRect {}
+  interface CGRect {
+    origin: CGPoint;
+    size: CGSize;
+  }
 }
 declare namespace cocoascript {
   interface CGImageRef {}
