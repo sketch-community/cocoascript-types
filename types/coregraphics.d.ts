@@ -1,14 +1,14 @@
 declare namespace cocoascript {
-  interface CGColorRef {
-  }
+  interface CGColorRef {}
 }
 declare namespace cocoascript {
   interface CGSize {
+    width: number;
+    height: number;
   }
 }
 declare namespace cocoascript {
-  interface CGColorSpaceRef {
-  }
+  interface CGColorSpaceRef {}
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/coregraphics/cgfloat
@@ -16,23 +16,24 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   interface CGPoint {
+    x: number;
+    y: number;
   }
 }
 declare namespace cocoascript {
   interface CGRect {
+    origin: CGPoint;
+    size: CGSize;
   }
 }
 declare namespace cocoascript {
-  interface CGImageRef {
-  }
+  interface CGImageRef {}
 }
 declare namespace cocoascript {
-  interface CGColorConversionInfoRef {
-  }
+  interface CGColorConversionInfoRef {}
 }
 declare namespace cocoascript {
-  interface CGFontRef {
-  }
+  interface CGFontRef {}
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/coregraphics/cgwindowlevelkey
@@ -63,8 +64,7 @@ declare namespace cocoascript {
   type CGDisplayBlendFraction = number;
 }
 declare namespace cocoascript {
-  interface CGDisplayConfigRef {
-  }
+  interface CGDisplayConfigRef {}
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/coregraphics/cgdisplaycount
@@ -83,8 +83,7 @@ declare namespace cocoascript {
   type CGDisplayFadeReservationToken = number;
 }
 declare namespace cocoascript {
-  interface CGDisplayModeRef {
-  }
+  interface CGDisplayModeRef {}
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/coregraphics/cgdisplayreservationinterval
@@ -107,20 +106,17 @@ declare namespace cocoascript {
   type CGRefreshRate = number;
 }
 declare namespace cocoascript {
-  interface CGScreenUpdateMoveDelta {
-  }
+  interface CGScreenUpdateMoveDelta {}
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/coregraphics/cgwindowlevel
   type CGWindowLevel = number;
 }
 declare namespace cocoascript {
-  interface CGDisplayStreamRef {
-  }
+  interface CGDisplayStreamRef {}
 }
 declare namespace cocoascript {
-  interface CGDisplayStreamUpdateRef {
-  }
+  interface CGDisplayStreamUpdateRef {}
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/coregraphics/cgdisplaystreamframeavailablehandler
@@ -151,8 +147,7 @@ declare namespace cocoascript {
   type CGDisplayStreamFrameStatus = number;
 }
 declare namespace cocoascript {
-  interface CGEventRef {
-  }
+  interface CGEventRef {}
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/coregraphics/cgcolorrenderingintent
@@ -163,16 +158,14 @@ declare namespace cocoascript {
   type CGBitmapInfo = number;
 }
 declare namespace cocoascript {
-  interface CGDataProviderRef {
-  }
+  interface CGDataProviderRef {}
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/coregraphics/cgimagealphainfo
   type CGImageAlphaInfo = number;
 }
 declare namespace cocoascript {
-  interface CGContextRef {
-  }
+  interface CGContextRef {}
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/coregraphics/cgglyph
@@ -183,12 +176,10 @@ declare namespace cocoascript {
   type CGPathRef = cocoascript.CGPath;
 }
 declare namespace cocoascript {
-  interface CGVector {
-  }
+  interface CGVector {}
 }
 declare namespace cocoascript {
-  interface CGAffineTransform {
-  }
+  interface CGAffineTransform {}
 }
 // https://developer.apple.com/documentation/coregraphics/cgsizezero
 declare const CGSizeZero: cocoascript.CGSize;
@@ -209,12 +200,10 @@ declare const kCGColorSpaceExtendedGray: cocoascript.CFStringRef;
 // https://developer.apple.com/documentation/coregraphics/kcgcolorspaceextendedsrgb
 declare const kCGColorSpaceExtendedSRGB: cocoascript.CFStringRef;
 declare namespace cocoascript {
-  interface CGMutablePathRef {
-  }
+  interface CGMutablePathRef {}
 }
 declare namespace cocoascript {
-  interface CGLayerRef {
-  }
+  interface CGLayerRef {}
 }
 // https://developer.apple.com/documentation/coregraphics/1455930-cgcolorgetcomponents
 declare const CGColorGetComponents: cocoascript.CGColorRef;
@@ -267,16 +256,13 @@ declare namespace cocoascript {
   type CGEventSourceKeyboardType = number;
 }
 declare namespace cocoascript {
-  interface CGEventSourceRef {
-  }
+  interface CGEventSourceRef {}
 }
 declare namespace cocoascript {
-  interface CGEventTapInformation {
-  }
+  interface CGEventTapInformation {}
 }
 declare namespace cocoascript {
-  interface CGEventTapProxy {
-  }
+  interface CGEventTapProxy {}
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/coregraphics/cgeventtimestamp
@@ -375,8 +361,7 @@ declare namespace cocoascript {
 // https://developer.apple.com/documentation/coregraphics/cgrectnull
 declare const CGRectNull: cocoascript.CGRect;
 declare namespace cocoascript {
-  interface CGDataConsumerRef {
-  }
+  interface CGDataConsumerRef {}
 }
 // https://developer.apple.com/documentation/coregraphics/kcgpdfcontextcropbox
 declare const kCGPDFContextCropBox: cocoascript.CFStringRef;
@@ -395,8 +380,7 @@ declare namespace cocoascript {
   type CGLineJoin = number;
 }
 declare namespace cocoascript {
-  interface CGPDFPageRef {
-  }
+  interface CGPDFPageRef {}
 }
 // https://developer.apple.com/documentation/coregraphics/kcgcolorspacegenericgraygamma2_2
 declare const kCGColorSpaceGenericGrayGamma2_2: cocoascript.CFStringRef;
@@ -437,8 +421,7 @@ declare namespace cocoascript {
   type CGDataConsumerReleaseInfoCallback = void;
 }
 declare namespace cocoascript {
-  interface CGDataConsumerCallbacks {
-  }
+  interface CGDataConsumerCallbacks {}
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/coregraphics/cgdataprovidergetbytepointercallback
@@ -473,12 +456,10 @@ declare namespace cocoascript {
   type CGDataProviderGetBytesAtPositionCallback = any;
 }
 declare namespace cocoascript {
-  interface CGDataProviderDirectCallbacks {
-  }
+  interface CGDataProviderDirectCallbacks {}
 }
 declare namespace cocoascript {
-  interface CGDataProviderSequentialCallbacks {
-  }
+  interface CGDataProviderSequentialCallbacks {}
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/coregraphics/cgfontpostscriptformat
@@ -493,32 +474,27 @@ declare namespace cocoascript {
   type CGFunctionReleaseInfoCallback = void;
 }
 declare namespace cocoascript {
-  interface CGFunctionRef {
-  }
+  interface CGFunctionRef {}
 }
 declare namespace cocoascript {
-  interface CGFunctionCallbacks {
-  }
+  interface CGFunctionCallbacks {}
 }
 declare namespace cocoascript {
-  interface CGGradientRef {
-  }
+  interface CGGradientRef {}
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/coregraphics/cggradientdrawingoptions
   type CGGradientDrawingOptions = number;
 }
 declare namespace cocoascript {
-  interface CGShadingRef {
-  }
+  interface CGShadingRef {}
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/coregraphics/cgpathapplierfunction
   type CGPathApplierFunction = cocoascript.CGPathElement;
 }
 declare namespace cocoascript {
-  interface CGPathElement {
-  }
+  interface CGPathElement {}
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/coregraphics/cgpathdrawingmode
@@ -537,40 +513,33 @@ declare namespace cocoascript {
   type CGPatternReleaseInfoCallback = void;
 }
 declare namespace cocoascript {
-  interface CGPatternRef {
-  }
+  interface CGPatternRef {}
 }
 declare namespace cocoascript {
-  interface CGPatternCallbacks {
-  }
+  interface CGPatternCallbacks {}
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/coregraphics/cgpatterntiling
   type CGPatternTiling = number;
 }
 declare namespace cocoascript {
-  interface CGPDFDocumentRef {
-  }
+  interface CGPDFDocumentRef {}
 }
 declare namespace cocoascript {
-  interface CGPDFArrayRef {
-  }
+  interface CGPDFArrayRef {}
 }
 declare namespace cocoascript {
-  interface CGPDFContentStreamRef {
-  }
+  interface CGPDFContentStreamRef {}
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/coregraphics/cgpdfdictionaryapplierfunction
   type CGPDFDictionaryApplierFunction = void;
 }
 declare namespace cocoascript {
-  interface CGPDFDictionaryRef {
-  }
+  interface CGPDFDictionaryRef {}
 }
 declare namespace cocoascript {
-  interface CGPDFObjectRef {
-  }
+  interface CGPDFObjectRef {}
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/coregraphics/cgpdfboolean
@@ -593,20 +562,17 @@ declare namespace cocoascript {
   type CGPDFOperatorCallback = void;
 }
 declare namespace cocoascript {
-  interface CGPDFOperatorTableRef {
-  }
+  interface CGPDFOperatorTableRef {}
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/coregraphics/cgpdfbox
   type CGPDFBox = number;
 }
 declare namespace cocoascript {
-  interface CGPDFScannerRef {
-  }
+  interface CGPDFScannerRef {}
 }
 declare namespace cocoascript {
-  interface CGPDFStreamRef {
-  }
+  interface CGPDFStreamRef {}
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/coregraphics/cgpdfdataformat
@@ -615,8 +581,7 @@ declare namespace cocoascript {
 // https://developer.apple.com/documentation/coregraphics/1455978-cgpdfstringgetbyteptr
 declare const CGPDFStringGetBytePtr: cocoascript.CGPDFStringRef;
 declare namespace cocoascript {
-  interface CGPDFStringRef {
-  }
+  interface CGPDFStringRef {}
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/coregraphics/cgpsconverterbegindocumentcallback
@@ -647,20 +612,16 @@ declare namespace cocoascript {
   type CGPSConverterReleaseInfoCallback = void;
 }
 declare namespace cocoascript {
-  interface CGPSConverterRef {
-  }
+  interface CGPSConverterRef {}
 }
 declare namespace cocoascript {
-  interface CGPSConverterCallbacks {
-  }
+  interface CGPSConverterCallbacks {}
 }
 declare namespace cocoascript {
-  interface CGDeviceColor {
-  }
+  interface CGDeviceColor {}
 }
 declare namespace cocoascript {
-  interface CGColorDataFormat {
-  }
+  interface CGColorDataFormat {}
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/coregraphics/cggesturephase
