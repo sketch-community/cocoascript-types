@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/sketch-community/cocoascript-types/compare/v0.1.2...v0.1.3) (2021-11-07)
+
+
+### 🐛 Bug Fixes
+
+* 修正 set 类方法入参丢失问题 ([6e8f9e0](https://github.com/sketch-community/cocoascript-types/commit/6e8f9e0))
+
 ## [0.1.2](https://github.com/sketch-community/cocoascript-types/compare/v0.1.1...v0.1.2) (2021-11-06)
 
 
