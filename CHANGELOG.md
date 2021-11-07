@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.4](https://github.com/sketch-community/cocoascript-types/compare/v0.1.3...v0.1.4) (2021-11-07)
+
+
+### 🐛 Bug Fixes
+
+* 清理暂不需要的类型定义文件 ([32ab2f5](https://github.com/sketch-community/cocoascript-types/commit/32ab2f5))
+
 ## [0.1.3](https://github.com/sketch-community/cocoascript-types/compare/v0.1.2...v0.1.3) (2021-11-07)
 
 
