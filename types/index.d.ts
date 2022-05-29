@@ -1,3 +1,5 @@
+/// <reference path="./_manuallyAdd.d.ts" />
+
 /// <reference path="./appkit.d.ts" />
 /// <reference path="./uikit.d.ts" />
 /// <reference path="./foundation.d.ts" />
@@ -36,5 +38,3 @@
 /// <reference path="./securityinterface.d.ts" />
 /// <reference path="./accelerate.d.ts" />
 /// <reference path="./simd.d.ts" />
-/// <reference path="./mapkitjs.d.ts" />
-/// <reference path="./cloudkitjs.d.ts" />
