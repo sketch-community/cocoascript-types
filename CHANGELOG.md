@@ -1,5 +1,12 @@
 # Changelog
 
+# [0.2.0](https://github.com/sketch-community/cocoascript-types/compare/v0.1.4...v0.2.0) (2022-05-29)
+
+
+### ✨ Features
+
+* 手动补充一些类型定义 ([5b7a52b](https://github.com/sketch-community/cocoascript-types/commit/5b7a52b))
+
 ## [0.1.4](https://github.com/sketch-community/cocoascript-types/compare/v0.1.3...v0.1.4) (2021-11-07)
 
 
